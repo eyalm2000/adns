@@ -43,7 +43,8 @@ fun OnboardingTemplate(
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.background
-                )
+                ),
+                modifier = Modifier.padding(bottom = 24.dp)
             )
         },
         bottomBar = {

@@ -1,37 +1,57 @@
 package com.eyalm.addns
 
+import android.Manifest
+import android.content.ComponentName
 import android.content.Intent
+import android.content.ServiceConnection
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.os.IBinder
+import android.provider.Settings
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
+import androidx.compose.material3.MaterialShapes
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.toShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import android.provider.Settings
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.core.content.ContextCompat
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.addns.ui.theme.AddnsTheme
+import com.eyalm.addns.viewmodel.MainViewModel
 import rikka.shizuku.Shizuku
 import rikka.shizuku.Shizuku.OnRequestPermissionResultListener
 
 
 class MainActivity : ComponentActivity() {
 
+    private val viewModel: MainViewModel by viewModels()
     private var privilegedService: IPrivilegedService? = null
-    private val connection = object : android.content.ServiceConnection {
+    private val connection = object : ServiceConnection {
         override fun onServiceConnected(
-            name: android.content.ComponentName?,
-            binder: android.os.IBinder?
+            name: ComponentName?,
+            binder: IBinder?
         ) {
             privilegedService = IPrivilegedService.Stub.asInterface(binder)
 
@@ -45,7 +65,7 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        override fun onServiceDisconnected(name: android.content.ComponentName?) {
+        override fun onServiceDisconnected(name: ComponentName?) {
             privilegedService = null
         }
     }
@@ -58,11 +78,11 @@ class MainActivity : ComponentActivity() {
         if (privilegedService != null) return
         
         Log.d("shizuku", "Binding to privileged service...")
-        val componentName = android.content.ComponentName(
+        val componentName = ComponentName(
             packageName,
             PrivilegedService::class.java.name
         )
-        val args = rikka.shizuku.Shizuku.UserServiceArgs(componentName)
+        val args = Shizuku.UserServiceArgs(componentName)
             .processNameSuffix("service")
             .debuggable(true)
             .daemon(false)
@@ -76,7 +96,7 @@ class MainActivity : ComponentActivity() {
         }
         
         try {
-            rikka.shizuku.Shizuku.bindUserService(args, connection)
+            Shizuku.bindUserService(args, connection)
             Log.d("shizuku", "bindUserService called")
         } catch (e: Exception) {
             Log.e("shizuku", "bindUserService failed: ${e.message}")
@@ -109,7 +129,7 @@ class MainActivity : ComponentActivity() {
     }
     
     private fun checkWriteSecureSettingsPermission(): Boolean {
-        return checkSelfPermission(android.Manifest.permission.WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED
+        return checkSelfPermission(Manifest.permission.WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED
     }
 
     private fun grantWriteSecureSettings() {
@@ -124,7 +144,7 @@ class MainActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        if (checkSelfPermission(android.Manifest.permission.WRITE_SECURE_SETTINGS) != PackageManager.PERMISSION_GRANTED) {
+        if (checkSelfPermission(Manifest.permission.WRITE_SECURE_SETTINGS) != PackageManager.PERMISSION_GRANTED) {
             startActivity(Intent(this, OnboardingActivity::class.java))
             finish()
             return
@@ -191,10 +211,16 @@ class MainActivity : ComponentActivity() {
             false
         }
     }
+
 }
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-fun Greeting(name: String, onShizukuClick: (code: Int) -> Unit, onTestClick: () -> Unit, modifier: Modifier = Modifier) {
+fun Greeting(name: String, onShizukuClick: (code: Int) -> Unit, onTestClick: () -> Unit, modifier: Modifier = Modifier, viewModel: MainViewModel = viewModel()) {
+    val isEnabled by viewModel.adBlockingState.collectAsState()
+
+
+
     Column(modifier = modifier.padding(16.dp)) {
         Text(
             text = "Hello $name!",
@@ -212,6 +238,34 @@ fun Greeting(name: String, onShizukuClick: (code: Int) -> Unit, onTestClick: () 
             onClick = onTestClick,
             contentPadding = ButtonDefaults.ContentPadding,
         ) { Text("Test perm")}
+        val CookieShape = MaterialShapes.Cookie12Sided.toShape()
+        Button(
+            onClick = { viewModel.toggleDns() },
+            shape = CookieShape,
+            modifier = Modifier
+                .padding(horizontal = 48.dp)
+                .fillMaxWidth()
+                .aspectRatio(1f)
+        ) { }
+        Column(
+            modifier = Modifier.fillMaxSize().padding(32.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            // הצגת ה-State
+            Text(
+                text = if (isEnabled) "Status: ACTIVE" else "Status: OFF",
+                style = MaterialTheme.typography.headlineMedium,
+                color = if (isEnabled) Color.Green else Color.Red
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // כפתור ה-Toggle
+            Button(onClick = { viewModel.toggleDns() }) {
+                Text(if (isEnabled) "Turn OFF" else "Turn ON")
+            }
+        }
     }
 }
 

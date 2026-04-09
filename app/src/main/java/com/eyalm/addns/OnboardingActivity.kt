@@ -1,5 +1,6 @@
 package com.eyalm.addns
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
@@ -54,7 +55,10 @@ class OnboardingActivity : ComponentActivity() {
                         Step.SUCCESS -> {
                             BackHandler { viewModel.previousStep() }
                             SuccessScreen(
-                                onFinishClicked = { finish() }
+                                onFinishClicked = {
+                                    startActivity(Intent(this@OnboardingActivity, MainActivity::class.java))
+                                    finish()
+                                }
                             )
                         }
                     }

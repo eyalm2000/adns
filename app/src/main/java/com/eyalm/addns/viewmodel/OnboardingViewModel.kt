@@ -47,7 +47,8 @@ class OnboardingViewModel : ViewModel() {
                     isPermissionGranted = true
                     nextStep()
                 }
-                delay(1000) 
+                delay(1000)
+            }
         }
     }
 }
