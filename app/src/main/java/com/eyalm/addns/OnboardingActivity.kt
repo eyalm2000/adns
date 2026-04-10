@@ -13,13 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.addns.ui.screens.ActivationMethodScreen
 import com.eyalm.addns.ui.screens.AdbActivationScreen
+import com.eyalm.addns.ui.screens.ShizukuActivationScreen
 import com.eyalm.addns.ui.screens.SuccessScreen
 import com.eyalm.addns.ui.screens.WelcomeScreen
 import com.eyalm.addns.ui.theme.AddnsTheme
 import com.eyalm.addns.viewmodel.OnboardingViewModel
 
 class OnboardingActivity : ComponentActivity() {
-    enum class Step { INTRO , ACTIVATION_METHOD, ADB, SUCCESS }
+    enum class Step { INTRO , ACTIVATION_METHOD, ADB, SHIZUKU, SUCCESS }
 
     @OptIn(ExperimentalMaterial3ExpressiveApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +43,7 @@ class OnboardingActivity : ComponentActivity() {
                                 onBackClick = { viewModel.previousStep() },
                                 onNextClick = { _, isAdb ->
                                     if (isAdb) viewModel.nextStep()
+                                    else viewModel.goToShizuku()
                                 }
                             )
                         }
@@ -51,6 +53,11 @@ class OnboardingActivity : ComponentActivity() {
                             AdbActivationScreen(
                                 onBack = { viewModel.previousStep() }
                             )
+                        }
+                        Step.SHIZUKU -> {
+                            BackHandler { viewModel.previousStep() }
+
+                            ShizukuActivationScreen()
                         }
                         Step.SUCCESS -> {
                             BackHandler { viewModel.previousStep() }

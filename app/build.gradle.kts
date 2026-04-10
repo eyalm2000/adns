@@ -70,5 +70,6 @@ dependencies {
     implementation("dev.rikka.shizuku:api:${shizuku_version}")
     implementation("dev.rikka.shizuku:provider:${shizuku_version}")
     implementation("androidx.compose.material3:material3:1.5.0-alpha16")
+    implementation(libs.androidx.graphics.shapes)
 
 }
