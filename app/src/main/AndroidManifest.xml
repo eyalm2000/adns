@@ -29,7 +29,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Adns">
+            android:theme="@style/Theme.Adns.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,7 +40,7 @@
         <service
             android:name=".services.AdnsTileService"
             android:exported="true"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@drawable/ic_qs_adns"
             android:label="ADNS Block"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>

@@ -34,6 +34,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.eyalm.adns.ui.components.DnsSwitch
 import com.eyalm.adns.ui.theme.AdnsTheme
 import com.eyalm.adns.viewmodel.MainViewModel
@@ -45,11 +46,14 @@ class MainActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
+
         if (checkSelfPermission(Manifest.permission.WRITE_SECURE_SETTINGS) != PackageManager.PERMISSION_GRANTED) {
             startActivity(Intent(this, OnboardingActivity::class.java))
             finish()
             return
         }
+
 
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -145,15 +149,12 @@ fun Greeting(
                         }
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(text = "Server")
-                        Text(text = "dns.adguard-dns.com") // TODO: Custom severs
+                        Text(text = "dns.adguard-dns.com") // TODO: Custom servers
                         Spacer(modifier = Modifier.height(16.dp))
-                        if (isEnabled) {
-                            Text(text = "Uptime")
-                            Text(text = "$runningTime")
-                        }
+                        Text(text = if (isEnabled) "Uptime" else "")
+                        Text(text = if (isEnabled) "$runningTime" else "")
                     }
                 }
-
             }
 
             Spacer(modifier = Modifier.weight(1f))

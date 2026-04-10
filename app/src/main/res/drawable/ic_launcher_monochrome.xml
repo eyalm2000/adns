@@ -3,12 +3,12 @@
     android:height="108dp"
     android:viewportWidth="960"
     android:viewportHeight="960">
-  <group android:scaleX="0.53533334"
-      android:scaleY="0.53533334"
-      android:translateX="223.04"
-      android:translateY="223.04">
+  <group android:scaleX="0.55"
+      android:scaleY="0.55"
+      android:translateX="216"
+      android:translateY="216">
     <path
         android:pathData="M480,880q-139,-35 -229.5,-159.5T160,444v-244l320,-120 320,120v244q0,152 -90.5,276.5T480,880ZM480,796q104,-33 172,-132t68,-220v-189l-240,-90 -240,90v189q0,121 68,220t172,132ZM480,480Z"
-        android:fillColor="#e3e3e3"/>
+        android:fillColor="@color/splash_icon_tint"/>
   </group>
 </vector>
