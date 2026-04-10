@@ -16,3 +16,5 @@ local.properties
 
 .idea/deploymentTargetSelector.xml
 
+/app/release
+/app/debug
