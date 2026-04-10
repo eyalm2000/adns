@@ -160,11 +160,12 @@ fun Greeting(
 
             DnsSwitch(
                 modifier = Modifier
-                    .align(Alignment.CenterHorizontally)
-                    .padding(bottom = 48.dp),
+                    .align(Alignment.CenterHorizontally),
                 isEnabled = isEnabled,
                 onToggle = onToggle
             )
+
+            Spacer(modifier = Modifier.weight(1f))
         }
     }
 }
