@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.eyalm.addns"
+    namespace = "com.eyalm.adns"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -16,7 +16,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.eyalm.addns"
+        applicationId = "com.eyalm.adns"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

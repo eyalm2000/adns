@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "addns"
+rootProject.name = "adns"
 include(":app")
