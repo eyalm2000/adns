@@ -27,7 +27,6 @@ import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -69,8 +68,9 @@ fun AdbActivationScreen(onBack: () -> Unit = { }) {
         ) {
             Text(
                 text = "Activation",
-                style = MaterialTheme.typography.headlineLarge,
-                fontWeight = FontWeight.Bold,
+                style = MaterialTheme.typography.headlineMedium,
+                fontSize = 36.sp,
+                color = MaterialTheme.colorScheme.onBackground,
                 modifier = Modifier.padding(top = 16.dp)
             )
 

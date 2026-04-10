@@ -14,6 +14,7 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 class DnsRepository(context: Context) {
 
     private val resolver = context.contentResolver
+    private val sharedPrefs = context.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
 
     fun isAdBlockingActive(): Boolean {
         return try {
@@ -30,8 +31,17 @@ class DnsRepository(context: Context) {
     fun getDnsStatusFlow(): Flow<Boolean> = callbackFlow {
 
         val observer = object : ContentObserver(Handler(Looper.getMainLooper())) {
+
             override fun onChange(selfChange: Boolean) {
-                trySend(isAdBlockingActive())
+
+                val isActive = isAdBlockingActive()
+                if (!isActive) {
+                    saveStartTime(0L)
+                } else if (isActive && getStartTime() == 0L) {
+                    saveStartTime(System.currentTimeMillis())
+                }
+
+                trySend(isActive)
             }
         }
 
@@ -61,11 +71,19 @@ class DnsRepository(context: Context) {
                     DnsConstants.MODE_KEY,
                     DnsConstants.MODE_HOSTNAME
                 )
+                saveStartTime(System.currentTimeMillis())
             } else {
                 Settings.Global.putString(resolver, DnsConstants.MODE_KEY, DnsConstants.MODE_OFF)
+                saveStartTime(0L)
             }
         } catch (e: SecurityException) {
             Log.e("DnsRepository", "Permission denied: app activated?")
         }
     }
+
+    fun saveStartTime(time: Long) {
+        sharedPrefs.edit().putLong("start_time", time).apply()
+    }
+
+    fun getStartTime(): Long = sharedPrefs.getLong("start_time", 0L)
 }

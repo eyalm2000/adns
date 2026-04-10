@@ -12,9 +12,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.eyalm.adns.ui.components.OnboardingTemplate
 import com.eyalm.adns.ui.components.SelectableCard
 import com.eyalm.adns.ui.components.StandardBottomBar
@@ -71,18 +71,16 @@ fun ActivationMethodScreen(
             item {
                 Text(
                     text = "Activation",
-                    style = MaterialTheme.typography.headlineLarge,
-                    fontWeight = FontWeight.Bold,
+                    style = MaterialTheme.typography.headlineMedium,
+                    fontSize = 36.sp,
                     color = MaterialTheme.colorScheme.onBackground,
                     modifier = Modifier.padding(top = 16.dp)
                 )
-            }
 
+            }
             item {
                 Text(
                     text = "Please choose an activation method.",
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontWeight = FontWeight.SemiBold,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }

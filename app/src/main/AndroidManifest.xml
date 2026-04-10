@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Adns">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.Adns" />
+        <activity
             android:name=".OnboardingActivity"
             android:exported="false"
             android:label="@string/title_activity_onboarding"
@@ -34,10 +39,10 @@
 
         <service
             android:name=".services.AdnsTileService"
-            android:label="ADNS Block"
+            android:exported="true"
             android:icon="@drawable/ic_launcher_foreground"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-            android:exported="true">
+            android:label="ADNS Block"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
