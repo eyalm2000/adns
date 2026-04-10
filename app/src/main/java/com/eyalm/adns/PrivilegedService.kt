@@ -5,6 +5,10 @@ import androidx.annotation.Keep
 @Keep
 class PrivilegedService : IPrivilegedService.Stub() {
     override fun grantWriteSecureSettings(packageName: String): Boolean {
+        if (packageName != BuildConfig.APPLICATION_ID) {
+            throw SecurityException("Refusing to grant permission to non-app package")
+        }
+
         val proc = ProcessBuilder(
             "pm", "grant",
             packageName,

@@ -17,11 +17,18 @@ class AdnsTileService : TileService() {
         super.onStartListening()
 
         updateTile(repository.isAdBlockingActive())
+        job?.cancel()
         job = CoroutineScope(Dispatchers.Main).launch {
             repository.getDnsStatusFlow().collect { isActive ->
                 updateTile(isActive)
             }
         }
+    }
+
+    override fun onStopListening() {
+        super.onStopListening()
+        job?.cancel()
+        job = null
     }
 
     override fun onClick() {

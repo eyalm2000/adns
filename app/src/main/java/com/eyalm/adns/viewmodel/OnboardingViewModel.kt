@@ -12,6 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.eyalm.adns.BuildConfig
 import com.eyalm.adns.IPrivilegedService
 import com.eyalm.adns.OnboardingActivity
 import com.eyalm.adns.PrivilegedService
@@ -102,7 +103,7 @@ class OnboardingViewModel(application: Application) : AndroidViewModel(applicati
         )
         val args = Shizuku.UserServiceArgs(componentName)
             .processNameSuffix("service")
-            .debuggable(true)
+            .debuggable(BuildConfig.DEBUG)
             .daemon(false)
 
         try {
@@ -135,11 +136,15 @@ class OnboardingViewModel(application: Application) : AndroidViewModel(applicati
     }
 
     private fun onRequestPermissionsResult(requestCode: Int, grantResult: Int): Boolean {
+        if (requestCode != 1) return false
+
         val granted = grantResult == PackageManager.PERMISSION_GRANTED
         if (!granted) {
             Log.w("shizuku", "Permission denied for request code: $requestCode")
             previousStep()
+            return false
         }
+
         bindPrivilegedService()
         return true
     }

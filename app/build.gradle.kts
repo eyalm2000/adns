@@ -13,6 +13,7 @@ android {
 
     buildFeatures {
         aidl = true
+        buildConfig = true
     }
 
     defaultConfig {
@@ -30,7 +31,8 @@ android {
             isMinifyEnabled = false
         }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

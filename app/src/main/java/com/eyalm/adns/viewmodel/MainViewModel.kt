@@ -9,6 +9,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
+import java.util.Locale
 
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
@@ -46,7 +47,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         val seconds = (durationMs / 1000) % 60
         val minutes = (durationMs / (1000 * 60)) % 60
         val hours = (durationMs / (1000 * 60 * 60))
-        return String.format("%02d:%02d:%02d", hours, minutes, seconds)
+        return String.format(Locale.US, "%02d:%02d:%02d", hours, minutes, seconds)
     }
 
 
