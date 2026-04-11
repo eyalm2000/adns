@@ -7,6 +7,7 @@ import android.content.ServiceConnection
 import android.content.pm.PackageManager
 import android.os.IBinder
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -125,13 +126,21 @@ class OnboardingViewModel(application: Application) : AndroidViewModel(applicati
     private fun checkPermission(code: Int): Boolean {
         if (Shizuku.isPreV11()) return false
 
-        if (Shizuku.checkSelfPermission() == PackageManager.PERMISSION_GRANTED) {
-            return true
-        } else if (Shizuku.shouldShowRequestPermissionRationale()) {
-            return false
-        } else {
-            Shizuku.requestPermission(code)
-            return false
+        return try {
+            val permission = Shizuku.checkSelfPermission()
+            if (permission == PackageManager.PERMISSION_GRANTED) {
+                true
+            } else {
+                if (!Shizuku.shouldShowRequestPermissionRationale()) {
+                    Shizuku.requestPermission(code)
+                }
+                false
+            }
+        } catch (e: Exception) {
+            Log.e("shizuku", "Shizuku not running or error: ${e.message}")
+            Toast.makeText(getApplication(), "Make sure shizuku is installed and started", Toast.LENGTH_LONG).show()
+            previousStep()
+            false
         }
     }
 
@@ -153,10 +162,12 @@ class OnboardingViewModel(application: Application) : AndroidViewModel(applicati
         viewModelScope.launch {
             Shizuku.addRequestPermissionResultListener(REQUEST_PERMISSION_RESULT_LISTENER)
             val permission = checkPermission(1)
-            if (permission == true) {
+            if (permission) {
                 onRequestPermissionsResult(1, PackageManager.PERMISSION_GRANTED)
             }
-            startPermissionCheck(context)
+            if (currentStep == OnboardingActivity.Step.SHIZUKU) {
+                startPermissionCheck(context)
+            }
         }
     }
 
