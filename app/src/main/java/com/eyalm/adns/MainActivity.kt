@@ -67,7 +67,8 @@ class MainActivity : ComponentActivity() {
                         isEnabled = isEnabled,
                         runningTime = runningTime,
                         onToggle = { viewModel.toggleDns() },
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.padding(innerPadding),
+                        server = viewModel.getHostname()
                     )
                 }
             }
@@ -81,7 +82,8 @@ fun Greeting(
     isEnabled: Boolean,
     runningTime: String,
     onToggle: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    server: String = "dns.adguard-dns.com"
 ) {
     val localContext = LocalContext.current
     Scaffold(
@@ -150,7 +152,7 @@ fun Greeting(
                         }
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(text = "Server")
-                        Text(text = "dns.adguard-dns.com") // TODO: Custom servers
+                        Text(text = server)
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(text = if (isEnabled) "Uptime" else "")
                         Text(text = if (isEnabled) "$runningTime" else "")

@@ -50,6 +50,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         return String.format(Locale.US, "%02d:%02d:%02d", hours, minutes, seconds)
     }
 
+    fun getHostname(): String {
+        return repository.getDnsUrl()
+    }
+
 
 
 }

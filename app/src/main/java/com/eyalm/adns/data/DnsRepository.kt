@@ -82,11 +82,12 @@ class DnsRepository(context: Context) {
     }
 
     fun setCustomUrl(url: String) {
-        sharedPrefs.edit().putString("custom_url", url).apply()
 
         if (isAdBlockingActive()) {
             setAdBlockingState(true, url)
         }
+
+        sharedPrefs.edit().putString("custom_url", url).apply()
 
     }
 
