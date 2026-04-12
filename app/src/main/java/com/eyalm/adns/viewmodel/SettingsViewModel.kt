@@ -27,8 +27,8 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
                 getApplication<Application>().mainExecutor
             ) { result ->
                 val message = when (result) {
-                    1 -> "Tile added!"
-                    2 -> "Tile already added"
+                    1 -> "Tile already added!"
+                    2 -> "Tile added!"
                     else -> "Tile not added"
                 }
                 Toast.makeText(getApplication(), message, Toast.LENGTH_SHORT).show()
