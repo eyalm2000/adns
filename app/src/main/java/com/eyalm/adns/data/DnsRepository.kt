@@ -21,7 +21,7 @@ class DnsRepository(context: Context) {
             val mode = Settings.Global.getString(resolver, DnsConstants.MODE_KEY)
             val host = Settings.Global.getString(resolver, DnsConstants.SPECIFIER_KEY)
 
-            mode == DnsConstants.MODE_HOSTNAME && host == DnsConstants.ADGUARD_DNS
+            mode == DnsConstants.MODE_HOSTNAME && host == getDnsUrl()
         } catch (e: Exception) {
             Log.e("DnsRepository", "Error checking DNS settings")
             return false
@@ -58,13 +58,13 @@ class DnsRepository(context: Context) {
     }.distinctUntilChanged()
 
 
-    fun setAdBlockingState(enabled: Boolean) {
+    fun setAdBlockingState(enabled: Boolean, url: String = getDnsUrl()) {
         try {
             if (enabled) {
                 Settings.Global.putString(
                     resolver,
                     DnsConstants.SPECIFIER_KEY,
-                    DnsConstants.ADGUARD_DNS
+                    url
                 )
                 Settings.Global.putString(
                     resolver,
@@ -79,6 +79,19 @@ class DnsRepository(context: Context) {
         } catch (e: SecurityException) {
             Log.e("DnsRepository", "Permission denied: app activated?")
         }
+    }
+
+    fun setCustomUrl(url: String) {
+        sharedPrefs.edit().putString("custom_url", url).apply()
+
+        if (isAdBlockingActive()) {
+            setAdBlockingState(true, url)
+        }
+
+    }
+
+    fun getDnsUrl(): String {
+        return sharedPrefs.getString("custom_url", DnsConstants.ADGUARD_DNS) ?: DnsConstants.ADGUARD_DNS
     }
 
     fun saveStartTime(time: Long) {
