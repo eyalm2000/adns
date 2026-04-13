@@ -151,9 +151,6 @@ fun Greeting2(
                     icon = Icons.Filled.Shortcut
                 )
             }
-
-
-
         }
     }
 }

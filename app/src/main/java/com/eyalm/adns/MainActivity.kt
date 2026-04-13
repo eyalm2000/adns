@@ -3,7 +3,9 @@ package com.eyalm.adns
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,15 +21,21 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Update
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -55,6 +63,8 @@ class MainActivity : ComponentActivity() {
         }
 
 
+
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
@@ -62,15 +72,19 @@ class MainActivity : ComponentActivity() {
             AdnsTheme {
                 val isEnabled by viewModel.adBlockingState.collectAsState()
                 val runningTime by viewModel.runningTimeFlow.collectAsState()
+
+
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         isEnabled = isEnabled,
                         runningTime = runningTime,
                         onToggle = { viewModel.toggleDns() },
                         modifier = Modifier.padding(innerPadding),
-                        server = viewModel.getHostname()
+                        server = viewModel.getHostname(),
+                        checkForUpdate = viewModel::checkForUpdate
                     )
                 }
+
             }
         }
     }
@@ -83,9 +97,28 @@ fun Greeting(
     runningTime: String,
     onToggle: () -> Unit,
     modifier: Modifier = Modifier,
-    server: String = "dns.adguard-dns.com"
+    server: String = "dns.adguard-dns.com",
+    checkForUpdate: ((String?) -> Unit) -> Unit = {}
 ) {
     val localContext = LocalContext.current
+    val latestVersion = remember { mutableStateOf<String?>(null) }
+
+    LaunchedEffect(Unit) {
+        checkForUpdate { version ->
+            Log.d("update", "Latest version: $version")
+            latestVersion.value = version
+        }
+    }
+
+    latestVersion.value?.let { version ->
+        UpdateDialog(
+            version = version,
+            onClose = { latestVersion.value = null }
+        )
+    }
+
+
+
     Scaffold(
         /**topBar  = {
             IconButton(
@@ -171,6 +204,61 @@ fun Greeting(
 
             Spacer(modifier = Modifier.weight(1f))
         }
+    }
+}
+
+@Composable
+fun UpdateDialog(
+    version: String,
+    onClose: () -> Unit = {},
+) {
+    val context = LocalContext.current
+    AlertDialog(
+        icon = {
+            Icon(imageVector = Icons.Filled.Update, contentDescription = "Update Icon")
+        },
+        title = {
+            Text(text = "New Update")
+        },
+        text = {
+            Text(text = "Version v$version is available.\nWould you like to download it?")
+        },
+        onDismissRequest = {
+            onClose()
+        },
+        confirmButton = {
+            TextButton(
+                onClick = {
+                    val url = "https://github.com/eyalm2000/adns/releases"
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                    try { context.startActivity(intent) } catch (e: Exception) {}
+                    onClose()
+                }
+            ) {
+                Text("Download")
+            }
+        },
+        dismissButton = {
+            TextButton(
+                onClick = {
+                    onClose()
+                }
+            ) {
+                Text("Dismiss")
+            }
+        }
+    )
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun UpdateDialogPreview() {
+    AdnsTheme {
+        UpdateDialog(
+            version = "1.0.0",
+            onClose = {}
+        )
     }
 }
 
