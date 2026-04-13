@@ -22,7 +22,7 @@ fun WelcomeScreen(
     OnboardingTemplate(
         bottomBarContent = {
             StandardBottomBar(
-                message = "We'll help you set up the blocking on your browser and apps. Stay with us!",
+                message = "Let’s set up blocking for your browser and apps.",
                 onNextClick = onNextClick
             )
         },
@@ -43,7 +43,7 @@ fun WelcomeScreen(
                 )
 
                 Text(
-                    text = "The best Ad blocker in the universe. No root needed!",
+                    text = "A DNS-based ad blocker for Android",
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }

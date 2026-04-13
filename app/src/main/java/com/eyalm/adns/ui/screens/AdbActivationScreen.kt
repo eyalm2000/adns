@@ -51,9 +51,12 @@ fun AdbActivationScreen(onBack: () -> Unit = { }) {
         bottomBarContent = {
             Text(
                 text = "Waiting for permission...",
-                style = MaterialTheme.typography.bodySmall,
-                fontSize = 16.sp,
-                modifier = Modifier.weight(1f).padding(end = 16.dp)
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(end = 16.dp),
+                lineHeight = 20.sp
             )
             LoadingIndicator(modifier = Modifier.size(100.dp))
         }
@@ -93,7 +96,6 @@ fun AdbActivationScreen(onBack: () -> Unit = { }) {
                     }
                 }
             }
-            Text("Don't worry! It's completely safe.")
         }
     }
 }

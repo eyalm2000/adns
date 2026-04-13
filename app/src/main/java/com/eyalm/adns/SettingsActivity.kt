@@ -179,7 +179,7 @@ fun Greeting2(
                         Spacer(modifier = Modifier.height(8.dp))
 
                         Icon(
-                            painter = painterResource(id = R.drawable.ic_launcher_monochrome),
+                            painter = painterResource(id = R.drawable.ic_adns_filled),
                             contentDescription = "App icon",
                             tint = MaterialTheme.colorScheme.primary,
                             modifier = Modifier

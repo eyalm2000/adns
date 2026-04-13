@@ -6,6 +6,16 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.AnimatedContentTransitionScope
+import androidx.compose.animation.SizeTransform
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Surface
@@ -32,41 +42,95 @@ class OnboardingActivity : ComponentActivity() {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     val step = viewModel.currentStep
 
-                    when (step) {
-                        Step.INTRO -> WelcomeScreen(
-                            onNextClick = { viewModel.nextStep() }
-                        )
-                        Step.ACTIVATION_METHOD -> {
-                            BackHandler { viewModel.previousStep() }
-
-                            ActivationMethodScreen(
-                                onBackClick = { viewModel.previousStep() },
-                                onNextClick = { _, isAdb ->
-                                    if (isAdb) viewModel.nextStep()
-                                    else viewModel.goToShizuku()
-                                }
+                    AnimatedContent(
+                        targetState = step,
+                        transitionSpec = {
+                            if (targetState.ordinal > initialState.ordinal) {
+                                (fadeIn(animationSpec = tween(220, delayMillis = 90)) +
+                                        scaleIn(
+                                            initialScale = 0.92f,
+                                            animationSpec = tween(300)
+                                        ) +
+                                        slideIntoContainer(
+                                            towards = AnimatedContentTransitionScope.SlideDirection.Up,
+                                            animationSpec = tween(300, easing = FastOutSlowInEasing),
+                                            initialOffset = { it / 8 }
+                                        )) togetherWith
+                                        (fadeOut(animationSpec = tween(90)) +
+                                                scaleOut(
+                                                    targetScale = 1.08f,
+                                                    animationSpec = tween(300)
+                                                ))
+                            } else {
+                                (fadeIn(animationSpec = tween(220, delayMillis = 90)) +
+                                        scaleIn(
+                                            initialScale = 1.08f,
+                                            animationSpec = tween(300)
+                                        )) togetherWith
+                                        (fadeOut(animationSpec = tween(90)) +
+                                                scaleOut(
+                                                    targetScale = 0.92f,
+                                                    animationSpec = tween(300)
+                                                ) +
+                                                slideOutOfContainer(
+                                                    towards = AnimatedContentTransitionScope.SlideDirection.Down,
+                                                    animationSpec = tween(
+                                                        300,
+                                                        easing = FastOutSlowInEasing
+                                                    ),
+                                                    targetOffset = { it / 8 }
+                                                ))
+                            }.using(
+                                SizeTransform(clip = false)
                             )
-                        }
-                        Step.ADB -> {
-                            BackHandler { viewModel.previousStep() }
-
-                            AdbActivationScreen(
-                                onBack = { viewModel.previousStep() }
+                        },
+                        label = "onboarding_step_transition"
+                    ) { targetStep ->
+                        when (targetStep) {
+                            Step.INTRO -> WelcomeScreen(
+                                onNextClick = { viewModel.nextStep() }
                             )
-                        }
-                        Step.SHIZUKU -> {
-                            BackHandler { viewModel.previousStep() }
 
-                            ShizukuActivationScreen()
-                        }
-                        Step.SUCCESS -> {
-                            BackHandler { viewModel.previousStep() }
-                            SuccessScreen(
-                                onFinishClicked = {
-                                    startActivity(Intent(this@OnboardingActivity, MainActivity::class.java))
-                                    finish()
-                                }
-                            )
+                            Step.ACTIVATION_METHOD -> {
+                                BackHandler { viewModel.previousStep() }
+
+                                ActivationMethodScreen(
+                                    onBackClick = { viewModel.previousStep() },
+                                    onNextClick = { _, isAdb ->
+                                        if (isAdb) viewModel.nextStep()
+                                        else viewModel.goToShizuku()
+                                    }
+                                )
+                            }
+
+                            Step.ADB -> {
+                                BackHandler { viewModel.previousStep() }
+
+                                AdbActivationScreen(
+                                    onBack = { viewModel.previousStep() }
+                                )
+                            }
+
+                            Step.SHIZUKU -> {
+                                BackHandler { viewModel.previousStep() }
+
+                                ShizukuActivationScreen()
+                            }
+
+                            Step.SUCCESS -> {
+                                BackHandler { viewModel.previousStep() }
+                                SuccessScreen(
+                                    onFinishClicked = {
+                                        startActivity(
+                                            Intent(
+                                                this@OnboardingActivity,
+                                                MainActivity::class.java
+                                            )
+                                        )
+                                        finish()
+                                    }
+                                )
+                            }
                         }
                     }
                 }

@@ -45,7 +45,7 @@ fun SuccessScreen(
                 )
 
                 Text(
-                    text = "The permission granted successfully, we're now ready to block all ads!",
+                    text = "All set! You’re now ready to block ads.",
                     style = MaterialTheme.typography.bodyMedium,
                     fontWeight = FontWeight.SemiBold,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
