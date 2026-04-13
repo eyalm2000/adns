@@ -138,7 +138,7 @@ fun Greeting2(
             item {
                 ClickableCardSettings(
                     onClick = { openDnsDialog.value = true },
-                    title = "Change the DNS server",
+                    title = "Change the DNS server (advanced)",
                     description = "Change the DNS server to use",
                     icon = Icons.Filled.BroadcastOnPersonal
                 )
@@ -227,7 +227,7 @@ fun DnsDialog(
                         modifier = Modifier.padding(start = 16.dp)
                     ) {
                         Text(
-                            text = "Custom URL:",
+                            text = "Custom hostname:",
                             style = MaterialTheme.typography.bodyLarge,
                             color = MaterialTheme.colorScheme.onBackground,
                             fontSize = 16.sp
