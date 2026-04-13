@@ -32,6 +32,7 @@ class DnsRepository(context: Context) {
 
         val observer = object : ContentObserver(Handler(Looper.getMainLooper())) {
 
+
             override fun onChange(selfChange: Boolean) {
 
                 val isActive = isAdBlockingActive()
@@ -99,5 +100,14 @@ class DnsRepository(context: Context) {
         sharedPrefs.edit().putLong("start_time", time).apply()
     }
 
-    fun getStartTime(): Long = sharedPrefs.getLong("start_time", 0L)
+    fun getStartTime(): Long {
+        val startTime = sharedPrefs.getLong("start_time", 0L)
+        if (isAdBlockingActive() && startTime == 0L) {
+            val now = System.currentTimeMillis()
+            saveStartTime(now)
+            return now
+        }
+
+        return startTime
+    }
 }
