@@ -1,17 +1,23 @@
 package com.eyalm.adns.data
 
 import android.content.Context
+import android.content.Intent
+import android.content.pm.ShortcutInfo
+import android.content.pm.ShortcutManager
 import android.database.ContentObserver
+import android.graphics.drawable.Icon
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.util.Log
+import com.eyalm.adns.MainActivity
+import com.eyalm.adns.R
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.distinctUntilChanged
 
-class DnsRepository(context: Context) {
+class DnsRepository(private val context: Context) {
 
     private val resolver = context.contentResolver
     private val sharedPrefs = context.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
@@ -41,7 +47,7 @@ class DnsRepository(context: Context) {
                 } else if (isActive && getStartTime() == 0L) {
                     saveStartTime(System.currentTimeMillis())
                 }
-
+                updateShortcuts(isActive)
                 trySend(isActive)
             }
         }
@@ -49,8 +55,9 @@ class DnsRepository(context: Context) {
         resolver.registerContentObserver(Settings.Global.getUriFor(DnsConstants.MODE_KEY), false, observer)
         resolver.registerContentObserver(Settings.Global.getUriFor(DnsConstants.SPECIFIER_KEY), false, observer)
 
-
-        trySend(isAdBlockingActive())
+        val initialActive = isAdBlockingActive()
+        updateShortcuts(initialActive)
+        trySend(initialActive)
 
         awaitClose {
             resolver.unregisterContentObserver(observer)
@@ -109,5 +116,21 @@ class DnsRepository(context: Context) {
         }
 
         return startTime
+    }
+
+    fun updateShortcuts(isActive: Boolean) {
+        val shortcutManager = context.getSystemService(ShortcutManager::class.java) ?: return
+
+        val toggleShortcut = ShortcutInfo.Builder(context, "toggle_dns")
+            .setShortLabel(if (isActive) "Disable Blocker" else "Enable Blocker")
+            .setLongLabel(if (isActive) "Disable Ad Blocker" else "Enable Ad Blocker")
+            .setIcon(Icon.createWithResource(context, R.drawable.ic_launcher_monochrome))
+            .setIntent(Intent(context, MainActivity::class.java).apply {
+                action = "com.eyalm.adns.TOGGLE_ACTION"
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            })
+            .build()
+
+        shortcutManager.dynamicShortcuts = listOf(toggleShortcut)
     }
 }

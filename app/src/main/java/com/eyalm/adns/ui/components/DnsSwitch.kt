@@ -20,7 +20,6 @@ import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialShapes
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -90,7 +89,7 @@ fun DnsSwitch(
         label = "shapeProgress"
     )
 
-    val morph = remember { Morph(MaterialShapes.Cookie4Sided, MaterialShapes.Cookie9Sided) }
+    val morph = remember { Morph(DnsShapes.Cookie4, DnsShapes.Cookie9) }
     val animatedShape = rememberAnimatedShape(morph, shapeProgress)
 
     val rotation = remember { Animatable(0f) }

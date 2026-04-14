@@ -52,6 +52,16 @@ class MainActivity : ComponentActivity() {
 
     private val viewModel: MainViewModel by viewModels()
 
+    private fun handleShortcutIntent(intent: Intent?) {
+        if (intent?.action == "com.eyalm.adns.TOGGLE_ACTION") {
+            viewModel.toggleDns()
+        }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        handleShortcutIntent(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
@@ -67,6 +77,7 @@ class MainActivity : ComponentActivity() {
 
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        handleShortcutIntent(intent)
 
         setContent {
             AdnsTheme {
@@ -87,6 +98,7 @@ class MainActivity : ComponentActivity() {
 
             }
         }
+
     }
 }
 
