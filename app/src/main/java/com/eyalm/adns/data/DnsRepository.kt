@@ -1,5 +1,8 @@
 package com.eyalm.adns.data
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ShortcutInfo
@@ -10,6 +13,7 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.util.Log
+import androidx.core.app.NotificationCompat
 import com.eyalm.adns.MainActivity
 import com.eyalm.adns.R
 import kotlinx.coroutines.channels.awaitClose
@@ -21,6 +25,11 @@ class DnsRepository(private val context: Context) {
 
     private val resolver = context.contentResolver
     private val sharedPrefs = context.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
+
+    init {
+        createNotificationChannel()
+        updateNotification(isAdBlockingActive())
+    }
 
     fun isAdBlockingActive(): Boolean {
         return try {
@@ -48,6 +57,7 @@ class DnsRepository(private val context: Context) {
                     saveStartTime(System.currentTimeMillis())
                 }
                 updateShortcuts(isActive)
+                updateNotification(isActive)
                 trySend(isActive)
             }
         }
@@ -133,4 +143,41 @@ class DnsRepository(private val context: Context) {
 
         shortcutManager.dynamicShortcuts = listOf(toggleShortcut)
     }
+
+    private fun createNotificationChannel() {
+        val channelId = "dns_status_channel"
+        val name = "Ad Blocker state"
+        val importance = NotificationManager.IMPORTANCE_LOW
+
+        val channel = NotificationChannel(channelId, name, importance).apply {
+            description = "Shows the state of the Ad Blocker"
+        }
+
+        val manager = context.getSystemService(NotificationManager::class.java)
+        manager.createNotificationChannel(channel)
+    }
+
+    fun updateNotification(isActive: Boolean) {
+        val channelId = "dns_status_channel"
+        val notificationManager = context.getSystemService(NotificationManager::class.java)
+
+        val intent = Intent(context, MainActivity::class.java)
+        val pendingIntent = PendingIntent.getActivity(
+            context, 0, intent, PendingIntent.FLAG_IMMUTABLE
+        )
+
+        val notification = NotificationCompat.Builder(context, channelId)
+            .setSmallIcon(if (isActive) R.drawable.ic_qs_adns else R.drawable.ic_qs_adns)
+            .setContentTitle("Ad Blocker")
+            .setContentText(if (isActive) "Blocker Enabled" else "Blocker Disabled")
+            .setPriority(NotificationCompat.PRIORITY_LOW)
+            .setOngoing(isActive)
+            .setAutoCancel(false)
+            .setContentIntent(pendingIntent)
+            .build()
+
+        notificationManager.notify(1, notification)
+
+    }
+
 }

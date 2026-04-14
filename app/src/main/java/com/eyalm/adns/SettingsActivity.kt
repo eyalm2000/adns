@@ -3,6 +3,7 @@ package com.eyalm.adns
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -22,7 +23,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.BroadcastOnPersonal
-import androidx.compose.material.icons.filled.Shortcut
+import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.SettingsSuggest
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -146,10 +148,16 @@ fun Greeting2(
             ) }
             item {
                 ClickableCardSettings(
-                    onClick = { openDnsDialog.value = true },
-                    title = "Change the DNS server (advanced)",
-                    description = "Change the DNS server to use",
-                    icon = Icons.Filled.BroadcastOnPersonal
+                    onClick = {
+                        val intent = Intent(Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS).apply {
+                            putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName)
+                            putExtra(Settings.EXTRA_CHANNEL_ID, "dns_status_channel")
+                        }
+                        context.startActivity(intent)
+                    },
+                    title = "State Notifications",
+                    description = "Enable or disable blocker state notifications",
+                    icon = Icons.Filled.Notifications
                 )
             }
             item {
@@ -157,7 +165,15 @@ fun Greeting2(
                     onClick = onAddQuickTile,
                     title = "Add the quick settings tile",
                     description = "Add the quick settings tile to your device",
-                    icon = Icons.Filled.Shortcut
+                    icon = Icons.Filled.SettingsSuggest
+                )
+            }
+            item {
+                ClickableCardSettings(
+                    onClick = { openDnsDialog.value = true },
+                    title = "Change the DNS server (advanced)",
+                    description = "Change the DNS server to use",
+                    icon = Icons.Filled.BroadcastOnPersonal
                 )
             }
             item {
