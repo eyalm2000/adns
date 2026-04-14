@@ -2,7 +2,8 @@
 
 ADNS is a DNS-based ad blocker for Android. No VPN, no background services, no battery drain, no hassle.
 
-ADNS is currently in  alpha. Download from [Releases](https://github.com/eyalm2000/adns/releases).
+
+Download from [Releases](https://github.com/eyalm2000/adns/releases).
 ## Activation
 
 ADNS writes to global DNS settings, which requires elevated access for `WRITE_SECURE_SETTINGS`.
@@ -13,6 +14,8 @@ This app supports activation via:
 - ADB shell (manual)
 
 <br>
-<picture>
-  <img src="assets/screenshot.png" alt="ADNS icon" width="256">
-</picture>
+<br>
+<p align="center">
+  <img src="assets/homescreen.png" alt="ADNS main screen" width="33%">
+  <img src="assets/settings.png" alt="ADNS settings screen" width="33%">
+</p>
