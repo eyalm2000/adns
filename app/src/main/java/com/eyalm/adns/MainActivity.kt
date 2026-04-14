@@ -65,17 +65,13 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
+        super.onCreate(savedInstanceState)
 
         if (checkSelfPermission(Manifest.permission.WRITE_SECURE_SETTINGS) != PackageManager.PERMISSION_GRANTED) {
             startActivity(Intent(this, OnboardingActivity::class.java))
             finish()
             return
         }
-
-
-
-
-        super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         handleShortcutIntent(intent)
 

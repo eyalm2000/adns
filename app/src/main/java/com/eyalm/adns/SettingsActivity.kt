@@ -1,13 +1,19 @@
 package com.eyalm.adns
 
+import android.Manifest
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -68,6 +74,23 @@ class SettingsActivity : ComponentActivity() {
         setContent {
             val viewModel: SettingsViewModel = viewModel()
             val dnsUrl by viewModel.dnsUrl.collectAsState()
+
+            val permissionLauncher = rememberLauncherForActivityResult(
+                contract = ActivityResultContracts.RequestPermission()
+            ) { isGranted: Boolean ->
+                if (isGranted) {
+                    viewModel.refreshNotification()
+                    Log.d("Permission", "Permission Granted")
+                    val intent = Intent(Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS).apply {
+                        putExtra(Settings.EXTRA_APP_PACKAGE, this@SettingsActivity.packageName)
+                        putExtra(Settings.EXTRA_CHANNEL_ID, "dns_status_channel")
+                    }
+                    this@SettingsActivity.startActivity(intent)
+                } else {
+                    Log.d("Permission", "Permission Denied")
+                }
+            }
+
             AdnsTheme {
                 Greeting2(
                     name = "Android",
@@ -76,7 +99,8 @@ class SettingsActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     onBack = { finish() },
                     onAddQuickTile = { viewModel.addQuickTile() },
-                    isValidHostname = { viewModel.isValidHostname(it) }
+                    isValidHostname = { viewModel.isValidHostname(it) },
+                    permissionLauncher = permissionLauncher
                 )
             }
         }
@@ -92,7 +116,8 @@ fun Greeting2(
     modifier: Modifier = Modifier,
     onBack: () -> Unit = {},
     onAddQuickTile: () -> Unit = {},
-    isValidHostname: (url: String) -> Boolean = { false }
+    isValidHostname: (url: String) -> Boolean = { false },
+    permissionLauncher: ActivityResultLauncher<String>
 ) {
     val context = LocalContext.current
     val openDnsDialog = remember { mutableStateOf(false) }
@@ -149,11 +174,9 @@ fun Greeting2(
             item {
                 ClickableCardSettings(
                     onClick = {
-                        val intent = Intent(Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS).apply {
-                            putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName)
-                            putExtra(Settings.EXTRA_CHANNEL_ID, "dns_status_channel")
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                        permissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
                         }
-                        context.startActivity(intent)
                     },
                     title = "State Notifications",
                     description = "Enable or disable blocker state notifications",
@@ -351,7 +374,8 @@ fun GreetingPreview2() {
         Greeting2(
             name = "Android",
             dnsUrl = DnsConstants.ADGUARD_DNS,
-            onDnsUrlChange = {}
+            onDnsUrlChange = {},
+            permissionLauncher = {} as ActivityResultLauncher<String>
         )
     }
 }

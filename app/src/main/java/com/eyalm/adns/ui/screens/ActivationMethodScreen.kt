@@ -88,7 +88,7 @@ fun ActivationMethodScreen(
             item {
                 SelectableCard(
                     title = "Shizuku",
-                    description = "Easiest method. Requires Shizuku or Sui installed and set up.",
+                    description = "Requires Shizuku or Sui installed and set up.",
                     selected = shizukuPressed,
                     onClick = {
                         shizukuPressed = !shizukuPressed
@@ -99,7 +99,7 @@ fun ActivationMethodScreen(
 
                 SelectableCard(
                     title = "ADB Shell",
-                    description = "Requires ADB shell access, usually with a computer, and a little bit of technical knowledge.",
+                    description = "Requires ADB shell access. For advanced users.",
                     selected = adbPressed,
                     onClick = {
                         adbPressed = !adbPressed

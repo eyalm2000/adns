@@ -46,9 +46,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
                 val message = when (result) {
                     1 -> "Tile already added!"
                     2 -> "Tile added!"
-                    else -> "Tile not added"
+                    else -> ""
                 }
-                Toast.makeText(getApplication(), message, Toast.LENGTH_SHORT).show()
+                if (message.isNotEmpty())
+                    Toast.makeText(getApplication(), message, Toast.LENGTH_SHORT).show()
             }
         } else {
             Toast.makeText(
@@ -57,6 +58,11 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
                 Toast.LENGTH_SHORT
             ).show()
         }
+    }
+
+    fun refreshNotification() {
+        repository.updateNotification(repository.isAdBlockingActive())
+
     }
 
 }
