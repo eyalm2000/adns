@@ -28,7 +28,7 @@ class DnsRepository(private val context: Context) {
 
     init {
         createNotificationChannel()
-        updateNotification(isAdBlockingActive())
+        updateNotification()
     }
 
     fun isAdBlockingActive(): Boolean {
@@ -56,8 +56,8 @@ class DnsRepository(private val context: Context) {
                 } else if (isActive && getStartTime() == 0L) {
                     saveStartTime(System.currentTimeMillis())
                 }
-                updateShortcuts(isActive)
-                updateNotification(isActive)
+                updateShortcuts()
+                updateNotification()
                 trySend(isActive)
             }
         }
@@ -66,7 +66,7 @@ class DnsRepository(private val context: Context) {
         resolver.registerContentObserver(Settings.Global.getUriFor(DnsConstants.SPECIFIER_KEY), false, observer)
 
         val initialActive = isAdBlockingActive()
-        updateShortcuts(initialActive)
+        updateShortcuts()
         trySend(initialActive)
 
         awaitClose {
@@ -90,6 +90,7 @@ class DnsRepository(private val context: Context) {
                     DnsConstants.MODE_HOSTNAME
                 )
                 saveStartTime(System.currentTimeMillis())
+                updateNotification()
             } else {
                 Settings.Global.putString(resolver, DnsConstants.MODE_KEY, DnsConstants.MODE_OFF)
                 saveStartTime(0L)
@@ -128,7 +129,8 @@ class DnsRepository(private val context: Context) {
         return startTime
     }
 
-    fun updateShortcuts(isActive: Boolean) {
+    fun updateShortcuts() {
+        val isActive = isAdBlockingActive()
         val shortcutManager = context.getSystemService(ShortcutManager::class.java) ?: return
 
         val toggleShortcut = ShortcutInfo.Builder(context, "toggle_dns")
@@ -157,7 +159,9 @@ class DnsRepository(private val context: Context) {
         manager.createNotificationChannel(channel)
     }
 
-    fun updateNotification(isActive: Boolean) {
+    fun updateNotification() {
+
+        val isActive = isAdBlockingActive()
         val channelId = "dns_status_channel"
         val notificationManager = context.getSystemService(NotificationManager::class.java)
 

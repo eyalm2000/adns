@@ -61,7 +61,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     }
 
     fun refreshNotification() {
-        repository.updateNotification(repository.isAdBlockingActive())
+        repository.updateNotification()
 
     }
 
