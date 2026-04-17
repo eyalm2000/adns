@@ -88,12 +88,15 @@ class SettingsActivity : ComponentActivity() {
                     this@SettingsActivity.startActivity(intent)
                 } else {
                     Log.d("Permission", "Permission Denied")
+                    val intent = Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
+                        putExtra(Settings.EXTRA_APP_PACKAGE, this@SettingsActivity.packageName)
+                    }
+                    this@SettingsActivity.startActivity(intent)
                 }
             }
 
             AdnsTheme {
                 Greeting2(
-                    name = "Android",
                     dnsUrl = dnsUrl,
                     onDnsUrlChange = { viewModel.setDnsUrl(it) },
                     modifier = Modifier.fillMaxSize(),
@@ -110,14 +113,13 @@ class SettingsActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun Greeting2(
-    name: String,
     dnsUrl: String,
     onDnsUrlChange: (String) -> Unit,
     modifier: Modifier = Modifier,
     onBack: () -> Unit = {},
     onAddQuickTile: () -> Unit = {},
     isValidHostname: (url: String) -> Boolean = { false },
-    permissionLauncher: ActivityResultLauncher<String>
+    permissionLauncher: ActivityResultLauncher<String>? = null
 ) {
     val context = LocalContext.current
     val openDnsDialog = remember { mutableStateOf(false) }
@@ -175,7 +177,7 @@ fun Greeting2(
                 ClickableCardSettings(
                     onClick = {
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                        permissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                            permissionLauncher?.launch(Manifest.permission.POST_NOTIFICATIONS)
                         }
                     },
                     title = "State Notifications",
@@ -207,7 +209,7 @@ fun Greeting2(
                     onClick = {
                         val url = "https://github.com/eyalm2000/adns"
                         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                        try { context.startActivity(intent) } catch (e: Exception) {}
+                        try { context.startActivity(intent) } catch (_: Exception) {}
                     }
                 ) {
                     Column(
@@ -367,15 +369,15 @@ fun DnsDialogPreview() {
     }
 }
 
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview2() {
     AdnsTheme {
         Greeting2(
-            name = "Android",
             dnsUrl = DnsConstants.ADGUARD_DNS,
             onDnsUrlChange = {},
-            permissionLauncher = {} as ActivityResultLauncher<String>
+            permissionLauncher = null
         )
     }
 }
