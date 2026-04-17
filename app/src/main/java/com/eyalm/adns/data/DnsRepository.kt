@@ -3,6 +3,7 @@ package com.eyalm.adns.data
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ShortcutInfo
@@ -12,23 +13,31 @@ import android.graphics.drawable.Icon
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
+import android.service.quicksettings.TileService
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.eyalm.adns.MainActivity
 import com.eyalm.adns.R
+import com.eyalm.adns.services.AdnsTileService
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.launch
 
 class DnsRepository(private val context: Context) {
 
     private val resolver = context.contentResolver
     private val sharedPrefs = context.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
+    private val repositoryScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+
+    private var cachedDnsUrl: String? = null
 
     init {
         createNotificationChannel()
-        updateNotification()
     }
 
     fun isAdBlockingActive(): Boolean {
@@ -46,18 +55,18 @@ class DnsRepository(private val context: Context) {
     fun getDnsStatusFlow(): Flow<Boolean> = callbackFlow {
 
         val observer = object : ContentObserver(Handler(Looper.getMainLooper())) {
-
-
             override fun onChange(selfChange: Boolean) {
-
                 val isActive = isAdBlockingActive()
                 if (!isActive) {
                     saveStartTime(0L)
                 } else if (isActive && getStartTime() == 0L) {
                     saveStartTime(System.currentTimeMillis())
                 }
-                updateShortcuts()
-                updateNotification()
+                
+                repositoryScope.launch {
+                    updateShortcuts()
+                    updateNotification()
+                }
                 trySend(isActive)
             }
         }
@@ -66,7 +75,10 @@ class DnsRepository(private val context: Context) {
         resolver.registerContentObserver(Settings.Global.getUriFor(DnsConstants.SPECIFIER_KEY), false, observer)
 
         val initialActive = isAdBlockingActive()
-        updateShortcuts()
+        repositoryScope.launch {
+            updateShortcuts()
+            updateNotification()
+        }
         trySend(initialActive)
 
         awaitClose {
@@ -77,41 +89,44 @@ class DnsRepository(private val context: Context) {
 
 
     fun setAdBlockingState(enabled: Boolean, url: String = getDnsUrl()) {
-        try {
-            if (enabled) {
-                Settings.Global.putString(
-                    resolver,
-                    DnsConstants.SPECIFIER_KEY,
-                    url
-                )
-                Settings.Global.putString(
-                    resolver,
-                    DnsConstants.MODE_KEY,
-                    DnsConstants.MODE_HOSTNAME
-                )
-                saveStartTime(System.currentTimeMillis())
-                updateNotification()
-            } else {
-                Settings.Global.putString(resolver, DnsConstants.MODE_KEY, DnsConstants.MODE_OFF)
-                saveStartTime(0L)
+        repositoryScope.launch {
+            try {
+                if (enabled) {
+                    Settings.Global.putString(
+                        resolver,
+                        DnsConstants.SPECIFIER_KEY,
+                        url
+                    )
+                    Settings.Global.putString(
+                        resolver,
+                        DnsConstants.MODE_KEY,
+                        DnsConstants.MODE_HOSTNAME
+                    )
+                    saveStartTime(System.currentTimeMillis())
+                } else {
+                    Settings.Global.putString(resolver, DnsConstants.MODE_KEY, DnsConstants.MODE_OFF)
+                    saveStartTime(0L)
+                }
+                // Notify the system that the tile state might have changed
+                TileService.requestListeningState(context, ComponentName(context, AdnsTileService::class.java))
+            } catch (e: SecurityException) {
+                Log.e("DnsRepository", "Permission denied: app activated?")
             }
-        } catch (e: SecurityException) {
-            Log.e("DnsRepository", "Permission denied: app activated?")
         }
     }
 
     fun setCustomUrl(url: String) {
-
+        cachedDnsUrl = url
+        sharedPrefs.edit().putString("custom_url", url).apply()
         if (isAdBlockingActive()) {
             setAdBlockingState(true, url)
         }
-
-        sharedPrefs.edit().putString("custom_url", url).apply()
-
     }
 
     fun getDnsUrl(): String {
-        return sharedPrefs.getString("custom_url", DnsConstants.ADGUARD_DNS) ?: DnsConstants.ADGUARD_DNS
+        return cachedDnsUrl ?: sharedPrefs.getString("custom_url", DnsConstants.ADGUARD_DNS).also {
+            cachedDnsUrl = it
+        } ?: DnsConstants.ADGUARD_DNS
     }
 
     fun saveStartTime(time: Long) {
@@ -143,7 +158,11 @@ class DnsRepository(private val context: Context) {
             })
             .build()
 
-        shortcutManager.dynamicShortcuts = listOf(toggleShortcut)
+        try {
+            shortcutManager.dynamicShortcuts = listOf(toggleShortcut)
+        } catch (e: Exception) {
+            Log.e("DnsRepository", "Failed to update shortcuts")
+        }
     }
 
     private fun createNotificationChannel() {
@@ -163,7 +182,7 @@ class DnsRepository(private val context: Context) {
 
         val isActive = isAdBlockingActive()
         val channelId = "dns_status_channel"
-        val notificationManager = context.getSystemService(NotificationManager::class.java)
+        val notificationManager = context.getSystemService(NotificationManager::class.java) ?: return
 
         val intent = Intent(context, MainActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(
@@ -171,7 +190,7 @@ class DnsRepository(private val context: Context) {
         )
 
         val notification = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(if (isActive) R.drawable.ic_qs_adns else R.drawable.ic_qs_adns)
+            .setSmallIcon(R.drawable.ic_qs_adns)
             .setContentTitle("Ad Blocker")
             .setContentText(if (isActive) "Blocker Enabled" else "Blocker Disabled")
             .setPriority(NotificationCompat.PRIORITY_LOW)
@@ -181,7 +200,5 @@ class DnsRepository(private val context: Context) {
             .build()
 
         notificationManager.notify(1, notification)
-
     }
-
 }
