@@ -1,0 +1,1 @@
+A lightweight DNS-based ad blocker for Android
