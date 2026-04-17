@@ -19,6 +19,7 @@ import androidx.core.app.NotificationCompat
 import com.eyalm.adns.MainActivity
 import com.eyalm.adns.R
 import com.eyalm.adns.services.AdnsTileService
+import com.eyalm.adns.services.ToggleReceiver
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -88,8 +89,8 @@ class DnsRepository(private val context: Context) {
     }.distinctUntilChanged()
 
 
-    fun setAdBlockingState(enabled: Boolean, url: String = getDnsUrl()) {
-        repositoryScope.launch {
+    fun setAdBlockingState(enabled: Boolean, url: String = getDnsUrl()): kotlinx.coroutines.Job {
+        return repositoryScope.launch {
             try {
                 if (enabled) {
                     Settings.Global.putString(
@@ -107,6 +108,8 @@ class DnsRepository(private val context: Context) {
                     Settings.Global.putString(resolver, DnsConstants.MODE_KEY, DnsConstants.MODE_OFF)
                     saveStartTime(0L)
                 }
+                updateNotification()
+                updateShortcuts()
                 // Notify the system that the tile state might have changed
                 TileService.requestListeningState(context, ComponentName(context, AdnsTileService::class.java))
             } catch (e: SecurityException) {
@@ -189,6 +192,17 @@ class DnsRepository(private val context: Context) {
             context, 0, intent, PendingIntent.FLAG_IMMUTABLE
         )
 
+        val buttonIntent = Intent(context, ToggleReceiver::class.java).apply {
+            action = "TOGGLE_DNS"
+        }
+
+        val buttonPendingIntent = PendingIntent.getBroadcast(
+            context,
+            0,
+            buttonIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
         val notification = NotificationCompat.Builder(context, channelId)
             .setSmallIcon(R.drawable.ic_qs_adns)
             .setContentTitle("Ad Blocker")
@@ -197,6 +211,11 @@ class DnsRepository(private val context: Context) {
             .setOngoing(isActive)
             .setAutoCancel(false)
             .setContentIntent(pendingIntent)
+            .addAction(
+                R.drawable.ic_qs_adns,
+                if (isActive) "Disable Blocker" else "Enable Blocker",
+                buttonPendingIntent
+            )
             .build()
 
         notificationManager.notify(1, notification)

@@ -50,6 +50,8 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name=".services.ToggleReceiver" />
+
         <service
             android:name=".services.AdnsTileService"
             android:exported="true"
