@@ -1,17 +1,28 @@
 # ADNS
 
-ADNS is a DNS-based ad blocker for Android. No VPN, no background services, no battery drain, no hassle.
+ADNS is a lightweight DNS-based ad blocker for Android. No VPN, no background services, no battery drain, no hassle.
 
+Download it from [Releases](https://github.com/eyalm2000/adns/releases).
 
-Download from [Releases](https://github.com/eyalm2000/adns/releases).
+## Features
+
+Android makes DNS controls hard to find and slow to toggle. ADNS makes it fast and accessible.
+
+- Toggle DNS on/off with a single tap
+- Use your own DNS server
+- Quick Settings tile for instant access
+- State notification for at-a-glance status
+  
+Beautifully crafted with Material You and Jetpack Compose.
+
 ## Activation
 
-ADNS writes to global DNS settings, which requires elevated access for `WRITE_SECURE_SETTINGS`.
+ADNS writes to global DNS settings, which requires access for `WRITE_SECURE_SETTINGS`.
 
-This app supports activation via:
+You can grant access using:
 
-- [Shizuku](https://github.com/RikkaApps/Shizuku)
-- ADB shell (manual)
+- [Shizuku](https://github.com/RikkaApps/Shizuku) (recommended)
+- ADB shell
 
 <br>
 <br>
