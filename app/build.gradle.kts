@@ -11,6 +11,19 @@ android {
         }
     }
 
+    flavorDimensions += "version"
+    productFlavors {
+        create("normal") {
+            dimension = "version"
+            buildConfigField("Boolean", "IS_FOSS", "false")
+        }
+        create("foss") {
+            dimension = "version"
+            buildConfigField("Boolean", "IS_FOSS", "true")
+        }
+    }
+
+
     buildFeatures {
         aidl = true
         buildConfig = true

@@ -111,19 +111,24 @@ fun Greeting(
     val localContext = LocalContext.current
     val latestVersion = remember { mutableStateOf<String?>(null) }
 
-    LaunchedEffect(Unit) {
-        checkForUpdate { version ->
-            Log.d("update", "Latest version: $version")
-            latestVersion.value = version
+    if (!BuildConfig.IS_FOSS) {
+        LaunchedEffect(Unit) {
+            checkForUpdate { version ->
+                Log.d("update", "Latest version: $version")
+                latestVersion.value = version
+            }
+        }
+
+        latestVersion.value?.let { version ->
+            UpdateDialog(
+                version = version,
+                onClose = { latestVersion.value = null }
+            )
         }
     }
 
-    latestVersion.value?.let { version ->
-        UpdateDialog(
-            version = version,
-            onClose = { latestVersion.value = null }
-        )
-    }
+
+
 
 
 
