@@ -66,6 +66,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         return repository.getDnsUrl()
     }
 
+    fun setDnsUrl(url: String) {
+        repository.setCustomUrl(url)
+    }
+
     fun checkForUpdate(onResult: (String?) -> Unit) {
         viewModelScope.launch(Dispatchers.IO) {
             try {

@@ -267,8 +267,7 @@ fun DnsDialog(
         text = {
             Column {
                 Text(text = "Choose a DNS server to use")
-                Spacer(modifier = Modifier.height(16.dp))
-
+                Spacer(modifier = Modifier.height(8.dp))
                 Row(
                     Modifier
                         .fillMaxWidth()

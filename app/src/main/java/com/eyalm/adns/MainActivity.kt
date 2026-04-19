@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Update
 import androidx.compose.material3.AlertDialog
@@ -81,6 +82,8 @@ class MainActivity : ComponentActivity() {
                 val runningTime by viewModel.runningTimeFlow.collectAsState()
 
 
+                val showDialog = remember { mutableStateOf(false) }
+
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         isEnabled = isEnabled,
@@ -88,7 +91,19 @@ class MainActivity : ComponentActivity() {
                         onToggle = { viewModel.toggleDns() },
                         modifier = Modifier.padding(innerPadding),
                         server = viewModel.getHostname(),
+                        onEditClick = { showDialog.value = true },
                         checkForUpdate = viewModel::checkForUpdate
+                    )
+                }
+
+                if (showDialog.value) {
+                    DnsDialog(
+                        onDismissRequest = { showDialog.value = false },
+                        onConfirmation = {
+                            viewModel.setDnsUrl(it)
+                            showDialog.value = false
+                        },
+                        currentUrl = viewModel.getHostname()
                     )
                 }
 
@@ -106,6 +121,7 @@ fun Greeting(
     onToggle: () -> Unit,
     modifier: Modifier = Modifier,
     server: String = "dns.adguard-dns.com",
+    onEditClick: () -> Unit = {},
     checkForUpdate: ((String?) -> Unit) -> Unit = {}
 ) {
     val localContext = LocalContext.current
@@ -197,8 +213,26 @@ fun Greeting(
                             }
                         }
                         Spacer(modifier = Modifier.height(16.dp))
-                        Text(text = "Server")
-                        Text(text = server)
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.Top
+                        ) {
+                            Column {
+                                Text(text = "Server")
+                                Text(text = server)
+                            }
+                            IconButton(
+                                modifier = Modifier
+                                    .align(Alignment.Top),
+                                onClick = onEditClick,
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Filled.Edit,
+                                    contentDescription = "Change DNS Server"
+                                )
+                            }
+                        }
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(text = if (isEnabled) "Uptime" else "")
                         Text(text = if (isEnabled) "$runningTime" else "")
