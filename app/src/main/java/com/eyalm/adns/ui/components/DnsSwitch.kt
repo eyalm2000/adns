@@ -3,7 +3,6 @@ package com.eyalm.adns.ui.components
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
-import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
@@ -94,28 +93,37 @@ fun DnsSwitch(
 
     val rotation = remember { Animatable(0f) }
     val transitionDuration = 1500
+    val continuousTurnDuration = 15000
+    val smoothHandoffEasing = remember {
+
+        androidx.compose.animation.core.CubicBezierEasing(0.4f, 0.0f, 0.2f, 0.96f)
+    }
 
     LaunchedEffect(isEnabled) {
         rotation.snapTo(rotation.value % 360f)
 
         if (isEnabled) {
-            val targetAngle = 360f + 360f
+            val startAngle = rotation.value
+            val startupDelta = 720f
+            val startupDurationNanos = transitionDuration * 1_000_000L
+            val steadyDegreesPerNano = 360f / (continuousTurnDuration * 1_000_000f)
+            var startNanos = 0L
 
-            rotation.animateTo(
-                targetValue = targetAngle,
-                animationSpec = tween(durationMillis = transitionDuration, easing = FastOutSlowInEasing)
-            )
-
-            rotation.snapTo(0f)
             while (true) {
-                rotation.animateTo(
-                    targetValue = rotation.value + 360f,
-                    animationSpec = tween(durationMillis = 15000, easing = LinearEasing)
-                )
+                val frameNanos = androidx.compose.runtime.withFrameNanos { it }
+                if (startNanos == 0L) startNanos = frameNanos
+
+                val elapsedNanos = frameNanos - startNanos
+                val angle = if (elapsedNanos <= startupDurationNanos) {
+                    val t = (elapsedNanos.toFloat() / startupDurationNanos).coerceIn(0f, 1f)
+                    startAngle + startupDelta * smoothHandoffEasing.transform(t)
+                } else {
+                    val afterStartupNanos = elapsedNanos - startupDurationNanos
+                    startAngle + startupDelta + (afterStartupNanos * steadyDegreesPerNano)
+                }
+                rotation.snapTo(angle)
             }
         } else {
-
-            val currentAngle = rotation.value
             val targetAngle = 360f
 
             rotation.animateTo(
