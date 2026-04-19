@@ -2,7 +2,7 @@
 
 ADNS is a lightweight DNS-based ad blocker for Android. No VPN, no background services, no battery drain, no hassle.
 
-Download it from [Releases](https://github.com/eyalm2000/adns/releases).
+Download it from [GitHub Releases](https://github.com/eyalm2000/adns/releases) or [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/com.eyalm.adns).
 
 ## Features
 
