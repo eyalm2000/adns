@@ -1,0 +1,2 @@
+- You can now change the DNS hostname прямо from the home page
+- Improved animation smoothness on the home page
