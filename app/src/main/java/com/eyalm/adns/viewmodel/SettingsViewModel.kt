@@ -3,7 +3,6 @@ package com.eyalm.adns.viewmodel
 import android.app.Application
 import android.app.StatusBarManager
 import android.content.ComponentName
-import android.util.Patterns
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import com.eyalm.adns.R
@@ -21,10 +20,6 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     fun setDnsUrl(url: String) {
         repository.setCustomUrl(url)
         _dnsUrl.value = url
-    }
-
-    fun isValidHostname(hostname: String): Boolean {
-        return hostname.isNotEmpty() && Patterns.DOMAIN_NAME.matcher(hostname).matches()
     }
 
     fun addQuickTile() {

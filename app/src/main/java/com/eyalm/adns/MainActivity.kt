@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
             AdnsTheme {
                 val isEnabled by viewModel.adBlockingState.collectAsState()
                 val runningTime by viewModel.runningTimeFlow.collectAsState()
-
+                val server by viewModel.dnsUrlFlow.collectAsState()
 
                 val showDialog = remember { mutableStateOf(false) }
 
@@ -90,7 +90,7 @@ class MainActivity : ComponentActivity() {
                         runningTime = runningTime,
                         onToggle = { viewModel.toggleDns() },
                         modifier = Modifier.padding(innerPadding),
-                        server = viewModel.getHostname(),
+                        server = server,
                         onEditClick = { showDialog.value = true },
                         checkForUpdate = viewModel::checkForUpdate
                     )
@@ -103,7 +103,7 @@ class MainActivity : ComponentActivity() {
                             viewModel.setDnsUrl(it)
                             showDialog.value = false
                         },
-                        currentUrl = viewModel.getHostname()
+                        currentUrl = server
                     )
                 }
 

@@ -35,7 +35,6 @@ class DnsRepository(private val context: Context) {
     private val sharedPrefs = context.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
     private val repositoryScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
 
-    private var cachedDnsUrl: String? = null
 
     init {
         createNotificationChannel()
@@ -119,17 +118,29 @@ class DnsRepository(private val context: Context) {
     }
 
     fun setCustomUrl(url: String) {
-        cachedDnsUrl = url
+        val isActive = isAdBlockingActive()
         sharedPrefs.edit().putString("custom_url", url).apply()
-        if (isAdBlockingActive()) {
+        Log.d("adnsp", "$isActive")
+        if (isActive) {
             setAdBlockingState(true, url)
         }
     }
 
     fun getDnsUrl(): String {
-        return cachedDnsUrl ?: sharedPrefs.getString("custom_url", DnsConstants.ADGUARD_DNS).also {
-            cachedDnsUrl = it
-        } ?: DnsConstants.ADGUARD_DNS
+        return sharedPrefs.getString("custom_url", DnsConstants.ADGUARD_DNS) ?: DnsConstants.ADGUARD_DNS
+    }
+
+    fun getDnsUrlFlow(): Flow<String> = callbackFlow {
+        val listener = android.content.SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
+            if (key == "custom_url") {
+                trySend(getDnsUrl())
+            }
+        }
+        sharedPrefs.registerOnSharedPreferenceChangeListener(listener)
+        trySend(getDnsUrl())
+        awaitClose {
+            sharedPrefs.unregisterOnSharedPreferenceChangeListener(listener)
+        }
     }
 
     fun saveStartTime(time: Long) {

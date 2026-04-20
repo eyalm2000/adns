@@ -27,6 +27,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = DnsRepository(application)
     private val sharedPrefs = application.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
 
+    val dnsUrlFlow: StateFlow<String> = repository.getDnsUrlFlow()
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = repository.getDnsUrl()
+        )
 
     val adBlockingState: StateFlow<Boolean> = repository.getDnsStatusFlow()
         .stateIn(

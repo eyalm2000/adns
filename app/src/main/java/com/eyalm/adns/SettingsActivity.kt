@@ -7,7 +7,6 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -102,7 +101,6 @@ class SettingsActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     onBack = { finish() },
                     onAddQuickTile = { viewModel.addQuickTile() },
-                    isValidHostname = { viewModel.isValidHostname(it) },
                     permissionLauncher = permissionLauncher
                 )
             }
@@ -118,7 +116,6 @@ fun Greeting2(
     modifier: Modifier = Modifier,
     onBack: () -> Unit = {},
     onAddQuickTile: () -> Unit = {},
-    isValidHostname: (url: String) -> Boolean = { false },
     permissionLauncher: ActivityResultLauncher<String>? = null
 ) {
     val context = LocalContext.current
@@ -129,12 +126,8 @@ fun Greeting2(
             DnsDialog(
                 onDismissRequest = { openDnsDialog.value = false },
                 onConfirmation = {
-                    if (isValidHostname(it)) {
-                        onDnsUrlChange(it)
-                        openDnsDialog.value = false
-                    } else {
-                        Toast.makeText(context, "Invalid hostname!", Toast.LENGTH_SHORT).show()
-                    }
+                    onDnsUrlChange(it)
+                    openDnsDialog.value = false
                 },
                 currentUrl = dnsUrl)
         }
@@ -255,7 +248,11 @@ fun DnsDialog(
     onConfirmation: (String) -> Unit,
     currentUrl: String
 ) {
-    val selectedUrl = remember { mutableStateOf(currentUrl) }
+    val isAdGuard = remember { mutableStateOf(currentUrl == DnsConstants.ADGUARD_DNS) }
+    val customUrlText = remember { mutableStateOf(if (currentUrl == DnsConstants.ADGUARD_DNS) "" else currentUrl) }
+
+    val isCustomValid = customUrlText.value.isNotEmpty() && android.util.Patterns.DOMAIN_NAME.matcher(customUrlText.value).matches()
+    val isConfirmEnabled = isAdGuard.value || isCustomValid
 
     AlertDialog(
         icon = {
@@ -273,14 +270,14 @@ fun DnsDialog(
                         .fillMaxWidth()
                         .height(48.dp)
                         .selectable(
-                            selected = (selectedUrl.value == DnsConstants.ADGUARD_DNS),
-                            onClick = { selectedUrl.value = DnsConstants.ADGUARD_DNS },
+                            selected = isAdGuard.value,
+                            onClick = { isAdGuard.value = true },
                             role = Role.RadioButton
                         ),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     RadioButton(
-                        selected = (selectedUrl.value == DnsConstants.ADGUARD_DNS),
+                        selected = isAdGuard.value,
                         onClick = null
                     )
                     Text(
@@ -296,12 +293,8 @@ fun DnsDialog(
                     Modifier
                         .fillMaxWidth()
                         .selectable(
-                            selected = (selectedUrl.value != DnsConstants.ADGUARD_DNS),
-                            onClick = { 
-                                if (selectedUrl.value == DnsConstants.ADGUARD_DNS) {
-                                    selectedUrl.value = "" 
-                                }
-                            },
+                            selected = !isAdGuard.value,
+                            onClick = { isAdGuard.value = false },
                             role = Role.RadioButton
                         )
                         .padding(vertical = 8.dp),
@@ -310,7 +303,7 @@ fun DnsDialog(
                     RadioButton(
                         modifier = Modifier
                             .align(Alignment.Top),
-                        selected = (selectedUrl.value != DnsConstants.ADGUARD_DNS),
+                        selected = !isAdGuard.value,
                         onClick = null
                     )
                     Column(
@@ -325,8 +318,17 @@ fun DnsDialog(
                         TextField(
                             modifier = Modifier.fillMaxWidth().
                                 padding(top = 8.dp),
-                            value = if (selectedUrl.value == DnsConstants.ADGUARD_DNS) "" else selectedUrl.value,
-                            onValueChange = { selectedUrl.value = it }
+                            value = customUrlText.value,
+                            onValueChange = { 
+                                customUrlText.value = it
+                                isAdGuard.value = false
+                            },
+                            isError = !isAdGuard.value && !isCustomValid,
+                            supportingText = {
+                                if (!isAdGuard.value && !isCustomValid && customUrlText.value.isNotEmpty()) {
+                                    Text("Invalid hostname")
+                                }
+                            }
                         )
                     }
                 }
@@ -338,8 +340,10 @@ fun DnsDialog(
         confirmButton = {
             TextButton(
                 onClick = {
-                    onConfirmation(selectedUrl.value)
-                }
+                    val finalUrl = if (isAdGuard.value) DnsConstants.ADGUARD_DNS else customUrlText.value
+                    onConfirmation(finalUrl)
+                },
+                enabled = isConfirmEnabled
             ) {
                 Text("Confirm")
             }
