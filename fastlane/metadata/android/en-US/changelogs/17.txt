@@ -1,0 +1,3 @@
+- Updated translations for the new 2.1 features
+- Added a new Macedonian translation
+- Fixed a bug that caused the Quick Settings tile to show the wrong state
