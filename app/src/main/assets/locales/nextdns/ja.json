@@ -19,8 +19,8 @@
         "unnamedDevice": "デバイス #{{id}}",
         "firstConfiguration": "最初の設定",
         "list": {
-            "separator": "、",
-            "conjunction": "、"
+            "separator": "、 ",
+            "conjunction": " と "
         }
     },
     "theme": {
@@ -145,10 +145,8 @@
                 "year": "年額"
             },
             "units": {
-                "business": "{{count, number}} 人の従業員",
-                "business_plural": "{{count, number}} 人の従業員",
-                "education": "{{count, number}} 人の学生",
-                "education_plural": "{{count, number}} 人の学生"
+                "business_0": "{{count, number}} 人の従業員",
+                "education_0": "{{count, number}} 人の学生"
             },
             "planFull": "{{plan}}（{{interval}}）",
             "planFullWithUnits": "{{plan}}（{{units}}、{{interval}}）",
@@ -774,8 +772,7 @@
             "name": "ブロックリスト",
             "description": "利用可能な最も人気のあるブロックリストを使用して広告とトラッカーをブロックします。すべてのリストはリアルタイムで更新されます。",
             "add": "ブロックリストを追加する",
-            "entries": "{{count, number}} エントリ",
-            "entries_plural": "{{count, number}} エントリ",
+            "entries_0": "{{count, number}} エントリ",
             "updated": "<1>{{ago}}</1>に更新",
             "blocklists": {
                 "nextdns-recommended": {
@@ -972,20 +969,16 @@
     },
     "analytics": {
         "counters": {
-            "all": "<0>{{count, number}}</0><1>クエリ</1>",
-            "all_plural": "<0>{{count, number}}</0><1>クエリ</1>",
-            "blocked": "<0>{{count, number}}</0><1>ブロックされたクエリ</1>",
-            "blocked_plural": "<0>{{count, number}}</0><1>ブロックされたクエリ</1>",
+            "all_0": "<0>{{count, number}}</0><1>クエリ</1>",
+            "blocked_0": "<0>{{count, number}}</0><1>ブロックされたクエリ</1>",
             "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>ブロックされたクエリ</1></1>"
         },
         "queries": {
             "name": "クエリ",
             "description": "クエリ数の時系列履歴。",
             "queries": {
-                "all": "<0>{{count, number}}</0><1> クエリ</1>",
-                "all_plural": "<0>{{count, number}}</0><1> クエリ</1>",
-                "blocked": "<0>{{count, number}}</0><1> ブロックされたクエリ</1>",
-                "blocked_plural": "<0>{{count, number}}</0><1> ブロックされたクエリ</1>"
+                "all_0": "<0>{{count, number}}</0><1> クエリ</1>",
+                "blocked_0": "<0>{{count, number}}</0><1> ブロックされたクエリ</1>"
             }
         },
         "domains": {
@@ -1024,8 +1017,7 @@
         "gafam": {
             "name": "GAFAM 占有率",
             "description": "「GAFAM」（Google、Amazon、Facebook、Apple、および Microsoft）は、多くの人気のあるサービスを所有する5つの主要なインターネット企業であり、多くの場合、異なる名前で運営されています。",
-            "queries": "{{count, number}} クエリ",
-            "queries_plural": "{{count, number}} クエリ",
+            "queries_0": "{{count, number}} クエリ",
             "companies": {
                 "google": {
                     "name": "Google"
@@ -1061,8 +1053,7 @@
             "name": "トラフィックの宛先",
             "description": "あなたのインターネットトラフィックの宛先国",
             "empty": "まだクエリはありません。",
-            "queries": "{{count, number}} クエリ",
-            "queries_plural": "{{count, number}} クエリ",
+            "queries_0": "{{count, number}} クエリ",
             "topDomains": "トップドメイン"
         }
     },
