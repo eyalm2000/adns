@@ -198,4 +198,15 @@
     <string name="recreation_time_disabled">Nefolosit</string>
     <string name="paused">Pe pauză</string>
     <string name="blocking_enabled">Blocarea este activată</string>
+    <string name="already_linked">Deja legat</string>
+    <string name="set_device_name_in_the_nextdns_settings_section">Setează \"Device name\" (Sau \"Numele dispozitivului\") în setările NextDNS.</string>
+    <string name="adns_app">Aplicația ADNS</string>
+    <string name="setup_another_device">Configurează încă un dispozitiv</string>
+    <string name="download_adns">Descarcă ADNS</string>
+    <string name="api_key_required">Adaugă o cheie API</string>
+    <string name="invalid_api_key">Această cheie API este invalidă.</string>
+    <string name="server_unavailable_try_again">Serviciul NextDNS este indisponibil. Încearcă din nou mai târziu.</string>
+    <string name="login_failed_try_again">Autentificarea a eșuat. Încearcă din nou.</string>
+    <string name="nextdns_session_expired_title">Sesiunea NextDNS a expirat</string>
+    <string name="sign_in">Autentifică-te</string>
 </resources>
