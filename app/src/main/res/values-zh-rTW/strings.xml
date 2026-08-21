@@ -359,4 +359,13 @@
     <string name="color_scheme_system">系統色彩</string>
     <string name="save">儲存</string>
     <string name="nextdns_checking_connection">連線確認中…</string>
+    <string name="just_now">剛才</string>
+    <string name="a_few_seconds_ago">幾秒前</string>
+    <string name="show_on_graph">在圖表上顯示</string>
+    <string name="top_domains">頂級域名</string>
+    <string name="location">位置</string>
+    <string name="country">國家</string>
+    <string name="country_code">國家代碼</string>
+    <string name="max_graph_items_reached">圖表一次最多顯示六個項目</string>
+    <string name="privacy_policy">隱私權政策</string>
 </resources>
