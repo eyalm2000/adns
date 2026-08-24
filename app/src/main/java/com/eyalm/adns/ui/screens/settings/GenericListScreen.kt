@@ -492,25 +492,17 @@ private fun ResourceItemRow(
                 title = item.name,
                 description = item.description,
                 selected = selected,
-                onClick = { if (canEdit) onEditItem() },
+                onClick = {},
                 leading = if (item.icon !is ListIcon.None) {
                     { ListIconView(item.icon, modifier = Modifier.size(36.dp)) }
                 } else null,
                 trailing = {
-                    IconButton(
-                        onClick = { if (canEdit) onEditItem() },
+                    val isAdded = membership != null
+                    Switch(
+                        checked = isAdded,
                         enabled = canEdit,
-                    ) {
-                        Icon(
-                            imageVector = Icons.Default.Edit,
-                            contentDescription = Locales.getString("global", "edit"),
-                            tint = if (canEdit) {
-                                MaterialTheme.colorScheme.onSurfaceVariant
-                            } else {
-                                MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.38f)
-                            },
-                        )
-                    }
+                        onCheckedChange = { if (canEdit) onToggleMembership() },
+                    )
                 },
                 titleContent = {
                     Row(
