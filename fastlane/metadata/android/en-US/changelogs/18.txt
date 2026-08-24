@@ -1,4 +1,2 @@
 - Added Japanese, Traditional Chinese, and Turkish localization
 - Other minor fixes and localization updates
-
-**Full Changelog**: https://github.com/eyalm2000/adns/compare/v2.1.1...v2.1.2
