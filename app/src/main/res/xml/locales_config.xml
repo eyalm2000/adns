@@ -11,4 +11,7 @@
     <locale android:name="bn" />
     <locale android:name="pl" />
     <locale android:name="mk" />
+    <locale android:name="ja" />
+    <locale android:name="zh-Hant" />
+    <locale android:name="tr" />
 </locale-config>
