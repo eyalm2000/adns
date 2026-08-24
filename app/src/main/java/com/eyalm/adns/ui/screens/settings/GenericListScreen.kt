@@ -29,7 +29,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Block
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Delete
-import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Schedule
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Checkbox
@@ -41,7 +40,6 @@ import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
@@ -497,20 +495,11 @@ private fun ResourceItemRow(
                     { ListIconView(item.icon, modifier = Modifier.size(36.dp)) }
                 } else null,
                 trailing = {
-                    IconButton(
-                        onClick = { if (canEdit) onEditItem() },
+                    Checkbox(
+                        checked = selected,
                         enabled = canEdit,
-                    ) {
-                        Icon(
-                            imageVector = Icons.Default.Edit,
-                            contentDescription = Locales.getString("global", "edit"),
-                            tint = if (canEdit) {
-                                MaterialTheme.colorScheme.onSurfaceVariant
-                            } else {
-                                MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.38f)
-                            },
-                        )
-                    }
+                        onCheckedChange = { if (canEdit) onToggleMembership() },
+                    )
                 },
                 titleContent = {
                     Row(
