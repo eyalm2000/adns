@@ -56,7 +56,7 @@
     <string name="finish">Termină</string>
     <string name="general_profile_settings">Setări generale Profil</string>
     <string name="google_dns">DNS Google</string>
-    <string name="goooodbyenads">La Revedereeee,\nReclame!</string>
+    <string name="goooodbyenads">La Revedereee,\nReclame!</string>
     <string name="hide_password">Ascunde parola</string>
     <string name="hint_to_remove_items_from_the_list_swipe_to_the_left">Pentru a scoate elementul din listă, dă swipe spre stânga.</string>
     <string name="invalid_domain">Domeniu Invalid</string>
@@ -254,4 +254,13 @@
     <string name="choose_preset">Alege un mod de protecție</string>
     <string name="choose_activation_mode">Alege cum să folosești ADNS</string>
     <string name="privileged_dns_control">Controlul DNS pe dispozitiv</string>
+    <string name="provider_preset_opendns_standard_description">Rezolvatorul standard public OpenDNS.</string>
+    <string name="provider_preset_opendns_family">Scut de familie</string>
+    <string name="reactivate">Reactivează</string>
+    <string name="activation_status_active">CONTROLUL DNS PRIVAT ACTIV</string>
+    <string name="activation_status_control_only">DOAR-CONTROLUL NEXTDNS ACTIV</string>
+    <string name="activation_status_inactive">CONTROLUL DNS PRIVAT INACTIV</string>
+    <string name="system_level_dns_control">Control DNS la nivel de sistem</string>
+    <string name="system_level_dns_control_description">Controlează DNS-ul Privat al Android fără a folosi un VPN Local.</string>
+    <string name="instant_toggle_description">Activează sau Dezactivează DNS-ul Privat din ADNS, iconița rapidă, sau din scurtătura din lansator.</string>
 </resources>

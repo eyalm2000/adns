@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="a_dnsbased_ad_blocker_for_android">強化版的私人DNS</string>
+    <string name="a_dnsbased_ad_blocker_for_android">私人 DNS 加強版</string>
     <string name="activation">啟動</string>
     <string name="adb_shell">ADB Shell</string>
     <string name="add_item">新增項目</string>
