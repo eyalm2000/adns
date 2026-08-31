@@ -376,4 +376,11 @@
     <string name="a_few_seconds_ago">alguns segundos atrás</string>
     <string name="logout_confirmation_title">Desconectar</string>
     <string name="logout_confirmation_message">Tem certeza de que deseja sair?</string>
+    <string name="theme_oled">OLED</string>
+    <string name="analytics_protocols_title">Protocolos</string>
+    <string name="analytics_protocols_description">Protocolos DNS utilizados para enviar consultas para o NextDNS.</string>
+    <string name="analytics_protocols_empty">Nenhum protocolo.</string>
+    <string name="analytics_query_types_title">Tipos de consulta</string>
+    <string name="analytics_query_types_description">Tipos de registros DNS solicitados.</string>
+    <string name="analytics_query_types_empty">Nenhum tipos de consultas.</string>
 </resources>
