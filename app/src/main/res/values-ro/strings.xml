@@ -58,7 +58,7 @@
     <string name="google_dns">DNS Google</string>
     <string name="goooodbyenads">La Revedereee,\nReclame!</string>
     <string name="hide_password">Ascunde parola</string>
-    <string name="hint_to_remove_items_from_the_list_swipe_to_the_left">Pentru a scoate elementul din listă, dă swipe spre stânga.</string>
+    <string name="hint_to_remove_items_from_the_list_swipe_to_the_left">Pentru a scoate elementul din listă, dă glisează spre stânga.</string>
     <string name="invalid_domain">Domeniu Invalid</string>
     <string name="domain_hidden">Domeniu Ascuns</string>
     <string name="lets_set_up_blocking_for_your_browser_and_apps">Hai să facem blocarea pentru browserul tău și aplicațiile tale.</string>
@@ -66,10 +66,10 @@
     <string name="log_in_with_an_api_key_instead">Loghează-te cu cheia API…</string>
     <string name="log_in_with_credentials_instead">Loghează-te cu Parola și Emailul…</string>
     <string name="logged_in_as">LOGAT CA</string>
-    <string name="login">Logare</string>
+    <string name="login">Autentificare</string>
     <string name="logout">DeLoghează-te</string>
-    <string name="logout_confirmation_title">Vă DeLogați</string>
-    <string name="logout_confirmation_message">Sigur doriți să vă delogați?</string>
+    <string name="logout_confirmation_title">Ieși din cont</string>
+    <string name="logout_confirmation_message">Sigur doriți să ieșiți din cont?</string>
     <string name="logs">Loguri</string>
     <string name="logs_performance_block_page">Performanță, rescrie, acces</string>
     <string name="mynextdnsioaccount">my.nextdns.io/account</string>
@@ -93,7 +93,7 @@
     <string name="providers">Provideri</string>
     <string name="recommended">(Recomandat)</string>
     <string name="requires_adb_shell_access_for_advanced_users">Acces la consola ADB obligatorie. Pentru utilizatorii avansați.</string>
-    <string name="requires_shizuku_or_sui_installed_and_set_up">Aveți nevoie de Shizuku sau Sui (root) și configurări.</string>
+    <string name="requires_shizuku_or_sui_installed_and_set_up">Aveți nevoie de Shizuku sau Sui (root) și configurări suplimentare.</string>
     <string name="remove">Eliminați %1$s?</string>
     <string name="running">Rulează</string>
     <string name="s_2fa_code">Code 2FA (Autentificare în 2 Factori)</string>
@@ -263,4 +263,9 @@
     <string name="system_level_dns_control">Control DNS la nivel de sistem</string>
     <string name="system_level_dns_control_description">Controlează DNS-ul Privat al Android fără a folosi un VPN Local.</string>
     <string name="instant_toggle_description">Activează sau Dezactivează DNS-ul Privat din ADNS, iconița rapidă, sau din scurtătura din lansator.</string>
+    <string name="recreation_day_wednesday">Miercuri</string>
+    <string name="recreation_day_monday">Luni</string>
+    <string name="recreation_day_tuesday">Marți</string>
+    <string name="recreation_day_thursday">Joi</string>
+    <string name="runtime_notification_channel_name">Statut DNS privat</string>
 </resources>
