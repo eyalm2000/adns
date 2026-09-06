@@ -145,10 +145,8 @@
                 "year": "ต่อปี"
             },
             "units": {
-                "business": "พนักงาน {{count, number}} คน",
-                "business_plural": "พนักงาน {{count, number}} คน",
-                "education": "นักเรียน {{count, number}} คน",
-                "education_plural": "นักเรียน {{count, number}} คน"
+                "business_0": "พนักงาน {{count, number}} คน",
+                "education_0": "นักเรียน {{count, number}} คน"
             },
             "planFull": "{{plan}} ({{interval}})",
             "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
@@ -774,8 +772,7 @@
             "name": "บล็อกลิสต์",
             "description": "บล็อกโฆษณาและตัวติดตาม โดยใช้บล็อกลิสต์ที่เป็นที่นิยมมากที่สุด — ทั้งหมดอัปเดตแบบเรียลไทม์",
             "add": "เพิ่มบล็อกลิสต์",
-            "entries": "{{count, number}} รายการ",
-            "entries_plural": "{{count, number}} รายการ",
+            "entries_0": "{{count, number}} รายการ",
             "updated": "อัปเดต <1>{{ago}}</1>",
             "blocklists": {
                 "nextdns-recommended": {
@@ -791,7 +788,7 @@
                 "popularity": "ความนิยม",
                 "name": "ชื่อ",
                 "entries": "รายการ",
-                "updated": "ล่า​สุด"
+                "updated": "ล่าสุด"
             }
         },
         "native": {
@@ -972,20 +969,16 @@
     },
     "analytics": {
         "counters": {
-            "all": "<0>{{count, number}}</0><1>คิวรี</1>",
-            "all_plural": "<0>{{count, number}}</0><1>คิวรี</1>",
-            "blocked": "<0>{{count, number}}</0><1>คิวรีที่ถูกบล็อก</1>",
-            "blocked_plural": "<0>{{count, number}}</0><1>คิวรีที่ถูกบล็อก</1>",
+            "all_0": "<0>{{count, number}}</0><1>คิวรี</1>",
+            "blocked_0": "<0>{{count, number}}</0><1>คิวรีที่ถูกบล็อก</1>",
             "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>ของคิวรีที่ถูกบล็อก</1></1>"
         },
         "queries": {
             "name": "คิวรี",
             "description": "การใช้งานการคิวรีตลอดเวลาที่ผ่านมา",
             "queries": {
-                "all": "<0>{{count, number}}</0><1> คิวรี</1>",
-                "all_plural": "<0>{{count, number}}</0><1> คิวรี</1>",
-                "blocked": "<0>{{count, number}}</0><1> คิวรีที่ถูกบล็อก</1>",
-                "blocked_plural": "<0>{{count, number}}</0><1> คิวรีที่ถูกบล็อก</1>"
+                "all_0": "<0>{{count, number}}</0><1> คิวรี</1>",
+                "blocked_0": "<0>{{count, number}}</0><1> คิวรีที่ถูกบล็อก</1>"
             }
         },
         "domains": {
@@ -1024,8 +1017,7 @@
         "gafam": {
             "name": "GAFAM Dominance",
             "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple และ Microsoft) คือบริษัทอินเทอร์เน็ตชั้นนำ 5 แห่งที่เป็นเจ้าของบริการยอดนิยมมากมาย ซึ่งมักดำเนินงานภายใต้ชื่ออื่น เช่น WhatsApp และ Instagram สำหรับ Facebook",
-            "queries": "{{count, number}} คิวรี",
-            "queries_plural": "{{count, number}} คิวรี",
+            "queries_0": "{{count, number}} คิวรี",
             "companies": {
                 "google": {
                     "name": "Google"
@@ -1061,8 +1053,7 @@
             "name": "ประเทศปลายทางในการส่งข้อมูล",
             "description": "ประเทศที่การใช้งานอินเทอร์เน็ตของคุณส่งไป",
             "empty": "ยังไม่มีคิวรี",
-            "queries": "{{count, number}} คิวรี",
-            "queries_plural": "{{count, number}} คิวรี",
+            "queries_0": "{{count, number}} คิวรี",
             "topDomains": "โดเมนยอดนิยม"
         }
     },
