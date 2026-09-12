@@ -14,7 +14,17 @@ private val securityBooleanKeys = listOf(
     "typosquatting",
     "dga",
     "nrd",
+    "freeHostingDomains",
     "ddns",
+    "tunnelingEndpoints",
+    "dataDropServices",
+    "residentialHosting",
+    "untrustedCertificates",
+    "fastFluxNetworks",
+    "dnsDataExfiltration",
+    "dnsPayloadDelivery",
+    "decentralizedWebGateways",
+    "highRiskTlds",
     "parking",
     "csam",
 )
@@ -110,7 +120,9 @@ private fun JsonObject.itemReferences(name: String, fields: List<String>): JsonA
 private fun JsonObject.copyFields(fields: List<String>): JsonObject {
     val source = this
     return JsonObject().apply {
-        fields.forEach { field -> add(field, source.required(field).deepCopy()) }
+        fields.forEach { field ->
+            source.get(field)?.deepCopy()?.let { add(field, it) }
+        }
     }
 }
 

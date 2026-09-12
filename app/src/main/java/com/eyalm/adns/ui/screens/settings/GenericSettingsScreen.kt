@@ -4,11 +4,11 @@ import android.content.Context
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -45,8 +45,8 @@ import com.eyalm.adns.data.nextdns.model.ListIcon
 import com.eyalm.adns.data.nextdns.model.countryFlag
 import com.eyalm.adns.data.nextdns.resources.NextDnsResourceSpec
 import com.eyalm.adns.data.nextdns.settings.BooleanSettingSpec
+import com.eyalm.adns.data.nextdns.settings.FeatureMaturity
 import com.eyalm.adns.data.nextdns.settings.IntSelectSettingSpec
-import com.eyalm.adns.data.nextdns.settings.LocaleBinding
 import com.eyalm.adns.data.nextdns.settings.ProfileSettingSpec
 import com.eyalm.adns.data.nextdns.settings.SelectOption
 import com.eyalm.adns.data.nextdns.settings.SettingId
@@ -60,6 +60,7 @@ import com.eyalm.adns.ui.components.ToggleSettingRow
 import com.eyalm.adns.ui.components.dialogs.ConfirmationDialog
 import com.eyalm.adns.ui.components.dialogs.DestructiveConfirmationDialog
 import com.eyalm.adns.ui.components.dialogs.FormDialog
+import com.eyalm.adns.ui.components.dialogs.UnreleasedFeatureWarningBottomSheet
 import com.eyalm.adns.ui.components.segmentPosition
 import com.eyalm.adns.ui.theme.pageTitle
 import com.eyalm.adns.ui.theme.settingsLabel
@@ -98,6 +99,17 @@ fun GenericCategoryScreen(
     }
     var selector by remember(settingsPage.page, profileState.selected?.id) {
         mutableStateOf<SettingSelector?>(null)
+    }
+    var pendingUnreleasedSpec by remember(settingsPage.page, profileState.selected?.id) {
+        mutableStateOf<BooleanSettingSpec?>(null)
+    }
+
+    val onBooleanSettingChange: (BooleanSettingSpec, Boolean) -> Unit = { spec, nextValue ->
+        if (spec.maturity == FeatureMaturity.UNRELEASED && nextValue) {
+            pendingUnreleasedSpec = spec
+        } else {
+            scalarViewModel.changeBoolean(spec, nextValue)
+        }
     }
 
     LaunchedEffect(
@@ -180,6 +192,18 @@ fun GenericCategoryScreen(
         }
     }
 
+    pendingUnreleasedSpec?.let { spec ->
+        UnreleasedFeatureWarningBottomSheet(
+            onConfirm = {
+                scalarViewModel.changeBoolean(spec, true)
+                pendingUnreleasedSpec = null
+            },
+            onDismiss = {
+                pendingUnreleasedSpec = null
+            },
+        )
+    }
+
     SettingsScreenLayout(
         title = title,
         onBack = onBack,
@@ -248,6 +272,7 @@ fun GenericCategoryScreen(
                                     title = listSetting.title(context),
                                     description = listSetting.description(context),
                                     onClick = { navigationViewModel.openListScreen(listSetting) },
+                                    maturity = listSetting.maturity,
                                     isBeta = listSetting.isBeta,
                                     trailing = {
                                         Icon(
@@ -270,36 +295,40 @@ fun GenericCategoryScreen(
                 val multiItemGroupKeys = allGroups
                     .filterValues { it.size > 1 }
                     .keys
-
-                visibleGroups
+                allGroups
                     .filterKeys { it in multiItemGroupKeys }
                     .forEach { (groupKey, settings) ->
-                        item {
-                            val logsActions: (@Composable () -> Unit)? =
-                                if (settingsPage.page == "settings" && groupKey == "logs") {
-                                    {
-                                        profileState.selected?.let { profile ->
-                                            LogsActionsSection(
-                                                profile = profile,
-                                                capabilities = profileState.capabilities,
-                                                onLogsCleared = onLogsCleared,
-                                            )
+                        val groupVisible = settings.any { spec ->
+                            spec.visibleWhen?.invoke(scalarSettings.values) ?: true
+                        }
+                        if (groupVisible) {
+                            item {
+                                val logsActions: (@Composable () -> Unit)? =
+                                    if (settingsPage.page == "settings" && groupKey == "logs") {
+                                        {
+                                            profileState.selected?.let { profile ->
+                                                LogsActionsSection(
+                                                    profile = profile,
+                                                    capabilities = profileState.capabilities,
+                                                    onLogsCleared = onLogsCleared,
+                                                )
+                                            }
                                         }
+                                    } else {
+                                        null
                                     }
-                                } else {
-                                    null
-                                }
-                            ScalarSettingsGroup(
-                                title = groupTitle(settingsPage.page, groupKey),
-                                settings = settings,
-                                values = scalarSettings.values,
-                                saving = scalarSettings.saving,
-                                editable = profileState.capabilities.canEditSettings,
-                                onBooleanChange = scalarViewModel::changeBoolean,
-                                onIntSelect = { selector = SettingSelector.IntSelector(it) },
-                                onStringSelect = { selector = SettingSelector.StringSelector(it) },
-                                footer = logsActions,
-                            )
+                                ScalarSettingsGroup(
+                                    title = groupTitle(settingsPage.page, groupKey),
+                                    settings = settings,
+                                    values = scalarSettings.values,
+                                    saving = scalarSettings.saving,
+                                    editable = profileState.capabilities.canEditSettings,
+                                    onBooleanChange = onBooleanSettingChange,
+                                    onIntSelect = { selector = SettingSelector.IntSelector(it) },
+                                    onStringSelect = { selector = SettingSelector.StringSelector(it) },
+                                    footer = logsActions,
+                                )
+                            }
                         }
                     }
 
@@ -318,7 +347,7 @@ fun GenericCategoryScreen(
                             values = scalarSettings.values,
                             saving = scalarSettings.saving,
                             editable = profileState.capabilities.canEditSettings,
-                            onBooleanChange = scalarViewModel::changeBoolean,
+                            onBooleanChange = onBooleanSettingChange,
                             onIntSelect = { selector = SettingSelector.IntSelector(it) },
                             onStringSelect = { selector = SettingSelector.StringSelector(it) },
                         )
@@ -407,6 +436,7 @@ private fun ScalarSettingRow(
                 checked = checked,
                 enabled = editable,
                 saving = saving,
+                maturity = spec.maturity,
                 isBeta = spec.isBeta,
                 toggle = { value, onChange ->
                     Switch(
@@ -432,6 +462,7 @@ private fun ScalarSettingRow(
                     Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
                 },
                 enabled = editable && !saving,
+                maturity = spec.maturity,
                 isBeta = spec.isBeta,
                 position = position,
             )
@@ -449,6 +480,7 @@ private fun ScalarSettingRow(
                     Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
                 },
                 enabled = editable && !saving,
+                maturity = spec.maturity,
                 isBeta = spec.isBeta,
                 position = position,
             )
@@ -499,16 +531,9 @@ private fun <T : Any> SettingSelectionDialog(
     }
 }
 
-private fun LocaleBinding.title(context: Context): String =
-    titleRes?.let(context::getString)
-        ?: Locales.getString(*titlePath.toTypedArray())
-
-private fun LocaleBinding.description(context: Context): String? =
-    descriptionRes?.let(context::getString)
-        ?: descriptionPath?.let { Locales.getString(*it.toTypedArray()) }
-
 private fun <T : Any> SelectOption<T>.label(context: Context): String =
     Locales.getString(*labelPath.toTypedArray())
+
 
 private fun locationFlagIcon(code: String): ListIcon =
     ListIcon.Text(countryFlag(code))

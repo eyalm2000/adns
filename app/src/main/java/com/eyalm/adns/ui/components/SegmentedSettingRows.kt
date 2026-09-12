@@ -28,13 +28,16 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.Placeholder
 import androidx.compose.ui.text.PlaceholderVerticalAlign
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
+import com.eyalm.adns.R
 import com.eyalm.adns.data.Locales
+import com.eyalm.adns.data.nextdns.settings.FeatureMaturity
 
 enum class SegmentPosition {
     Single,
@@ -60,6 +63,62 @@ private fun SegmentPosition.shape() = RoundedCornerShape(
     bottomStart = if (this == SegmentPosition.Single || this == SegmentPosition.Last) 12.dp else 2.dp,
     bottomEnd = if (this == SegmentPosition.Single || this == SegmentPosition.Last) 12.dp else 2.dp,
 )
+
+@Composable
+fun MaturityBadge(
+    maturity: FeatureMaturity,
+    modifier: Modifier = Modifier,
+) {
+    if (maturity == FeatureMaturity.STABLE) return
+    val (label, containerColor, contentColor) = when (maturity) {
+        FeatureMaturity.BETA -> {
+            val betaLabel = Locales.getString("global", "beta")
+                .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                ?: Locales.getString("beta")
+                    .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                ?: "Beta"
+            val formatted = betaLabel.replaceFirstChar {
+                if (it.isLowerCase()) it.titlecase(java.util.Locale.ROOT) else it.toString()
+            }
+            Triple(
+                formatted,
+                MaterialTheme.colorScheme.primaryContainer,
+                MaterialTheme.colorScheme.onPrimaryContainer,
+            )
+        }
+        FeatureMaturity.EARLY_ACCESS -> {
+            val previewLabel = Locales.getString("global", "preview")
+                .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                ?: "Early Access"
+            Triple(
+                previewLabel,
+                MaterialTheme.colorScheme.tertiaryContainer,
+                MaterialTheme.colorScheme.onTertiaryContainer,
+            )
+        }
+        FeatureMaturity.UNRELEASED -> {
+            val unreleasedLabel = stringResource(R.string.unreleased)
+            Triple(
+                unreleasedLabel,
+                MaterialTheme.colorScheme.errorContainer,
+                MaterialTheme.colorScheme.onErrorContainer,
+            )
+        }
+        FeatureMaturity.STABLE -> return
+    }
+    Surface(
+        color = containerColor,
+        contentColor = contentColor,
+        shape = RoundedCornerShape(8.dp),
+        modifier = modifier,
+    ) {
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelSmall,
+            modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
+        )
+    }
+}
 
 @Composable
 fun BetaBadge(
@@ -93,6 +152,7 @@ fun SegmentedSettingRow(
     shape: Shape? = null,
     enabled: Boolean = true,
     selected: Boolean = false,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     leading: (@Composable () -> Unit)? = null,
     trailing: (@Composable () -> Unit)? = null,
@@ -148,30 +208,44 @@ fun SegmentedSettingRow(
             } else Modifier
         ),
         content = {
+            val effectiveMaturity = if (maturity != FeatureMaturity.STABLE) maturity else if (isBeta) FeatureMaturity.BETA else FeatureMaturity.STABLE
             if (titleContent != null) {
                 titleContent.invoke()
-            } else if (isBeta) {
-                val betaLabel = Locales.getString("global", "beta")
-                    .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
-                    ?: Locales.getString("beta")
-                        .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
-                    ?: "Beta"
-                val formattedBeta = betaLabel.replaceFirstChar {
-                    if (it.isLowerCase()) it.titlecase(java.util.Locale.ROOT) else it.toString()
+            } else if (effectiveMaturity != FeatureMaturity.STABLE) {
+                val badgeLabel = when (effectiveMaturity) {
+                    FeatureMaturity.BETA -> {
+                        val betaLabel = Locales.getString("global", "beta")
+                            .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                            ?: Locales.getString("beta")
+                                .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                            ?: "Beta"
+                        betaLabel.replaceFirstChar {
+                            if (it.isLowerCase()) it.titlecase(java.util.Locale.ROOT) else it.toString()
+                        }
+                    }
+                    FeatureMaturity.EARLY_ACCESS -> {
+                        Locales.getString("global", "preview")
+                            .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                            ?: "Early Access"
+                    }
+                    FeatureMaturity.UNRELEASED -> {
+                        stringResource(R.string.unreleased)
+                    }
+                    FeatureMaturity.STABLE -> ""
                 }
-                val betaBadgeId = "betaBadge"
-                val annotatedTitle = remember(title) {
+                val maturityBadgeId = "maturityBadge"
+                val annotatedTitle = remember(title, badgeLabel) {
                     buildAnnotatedString {
                         append(title)
                         append("  ")
-                        appendInlineContent(betaBadgeId, "[beta]")
+                        appendInlineContent(maturityBadgeId, "[$badgeLabel]")
                     }
                 }
-                val inlineContentMap = remember(formattedBeta) {
+                val inlineContentMap = remember(badgeLabel, effectiveMaturity) {
                     mapOf(
-                        betaBadgeId to InlineTextContent(
+                        maturityBadgeId to InlineTextContent(
                             Placeholder(
-                                width = (formattedBeta.length * 0.65 + 1.2).em,
+                                width = (badgeLabel.length * 0.65 + 1.4).em,
                                 height = 1.3.em,
                                 placeholderVerticalAlign = PlaceholderVerticalAlign.TextCenter,
                             )
@@ -180,7 +254,7 @@ fun SegmentedSettingRow(
                                 modifier = Modifier.fillMaxHeight(),
                                 contentAlignment = Alignment.Center,
                             ) {
-                                BetaBadge(text = formattedBeta)
+                                MaturityBadge(maturity = effectiveMaturity)
                             }
                         }
                     )
@@ -210,6 +284,7 @@ fun NavigationSettingRow(
     description: String? = null,
     position: SegmentPosition = SegmentPosition.Single,
     enabled: Boolean = true,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     leading: (@Composable () -> Unit)? = null,
     trailing: (@Composable () -> Unit)? = null,
@@ -219,6 +294,7 @@ fun NavigationSettingRow(
     description = description,
     position = position,
     enabled = enabled,
+    maturity = maturity,
     isBeta = isBeta,
     leading = leading?.let {
         {
@@ -242,6 +318,7 @@ fun ToggleSettingRow(
     position: SegmentPosition = SegmentPosition.Single,
     enabled: Boolean = true,
     saving: Boolean = false,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     leading: (@Composable () -> Unit)? = null,
     toggle: @Composable (Boolean, (Boolean) -> Unit) -> Unit,
@@ -254,6 +331,7 @@ fun ToggleSettingRow(
         position = position,
         enabled = enabled,
         selected = checked,
+        maturity = maturity,
         isBeta = isBeta,
         leading = leading,
         alignment = Alignment.CenterVertically,
@@ -269,6 +347,7 @@ fun RadioSettingRow(
     selected: Boolean, // or to enable second color
     position: SegmentPosition = SegmentPosition.Single,
     enabled: Boolean = true,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     radio: @Composable (Boolean, () -> Unit) -> Unit,
     onClick: () -> Unit,
@@ -278,6 +357,7 @@ fun RadioSettingRow(
     position = position,
     enabled = enabled,
     selected = selected,
+    maturity = maturity,
     isBeta = isBeta,
     trailing = { // prev leading
         radio(selected) { if (enabled) onClick() }
@@ -292,6 +372,7 @@ fun ActionSettingRow(
     description: String? = null,
     position: SegmentPosition = SegmentPosition.Single,
     enabled: Boolean = true,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     leading: (@Composable () -> Unit)? = null,
     trailing: (@Composable () -> Unit)? = null,
@@ -301,6 +382,7 @@ fun ActionSettingRow(
     description = description,
     position = position,
     enabled = enabled,
+    maturity = maturity,
     isBeta = isBeta,
     leading = leading,
     trailing = trailing,
@@ -317,6 +399,7 @@ fun ResourceSettingRow(
     shape: Shape? = null,
     enabled: Boolean = true,
     selected: Boolean = false,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     leading: (@Composable () -> Unit)? = null,
     trailing: (@Composable () -> Unit)? = null,
@@ -333,6 +416,7 @@ fun ResourceSettingRow(
     shape = shape,
     enabled = enabled,
     selected = selected,
+    maturity = maturity,
     isBeta = isBeta,
     leading = leading,
     trailing = trailing,

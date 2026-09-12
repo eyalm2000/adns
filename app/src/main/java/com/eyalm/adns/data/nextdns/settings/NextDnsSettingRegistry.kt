@@ -7,7 +7,7 @@ object NextDnsSettingRegistry {
         page = "security",
         settings = listOf(
             booleanSetting("security", "threatIntelligenceFeeds", "security", "feeds"),
-            booleanSetting("security", "aiThreatDetection", "security", "ai", true),
+            booleanSetting("security", "aiThreatDetection", "security", "ai", FeatureMaturity.BETA),
             booleanSetting("security", "googleSafeBrowsing", "security", "googleSafeBrowsing"),
             booleanSetting("security", "cryptojacking", "security", "cryptojacking"),
             booleanSetting("security", "dnsRebinding", "security", "dnsRebinding"),
@@ -15,7 +15,17 @@ object NextDnsSettingRegistry {
             booleanSetting("security", "typosquatting", "security", "typosquatting"),
             booleanSetting("security", "dga", "security", "dga"),
             booleanSetting("security", "nrd", "security", "nrd"),
-            booleanSetting("security", "ddns", "security", "ddns", true),
+            booleanSetting("security", "freeHostingDomains", "security", "freeHostingDomains", FeatureMaturity.EARLY_ACCESS),
+            booleanSetting("security", "ddns", "security", "ddns", FeatureMaturity.BETA),
+            booleanSetting("security", "tunnelingEndpoints", "security", "tunnelingEndpoints", FeatureMaturity.EARLY_ACCESS),
+            booleanSetting("security", "dataDropServices", "security", "dataDropServices", FeatureMaturity.EARLY_ACCESS),
+            booleanSetting("security", "residentialHosting", "security", "residentialHosting", FeatureMaturity.EARLY_ACCESS),
+            booleanSetting("security", "untrustedCertificates", "security", "untrustedCertificates", FeatureMaturity.UNRELEASED),
+            booleanSetting("security", "fastFluxNetworks", "security", "fastFluxNetworks", FeatureMaturity.UNRELEASED),
+            booleanSetting("security", "dnsDataExfiltration", "security", "dnsDataExfiltration", FeatureMaturity.UNRELEASED),
+            booleanSetting("security", "dnsPayloadDelivery", "security", "dnsPayloadDelivery", FeatureMaturity.UNRELEASED),
+            booleanSetting("security", "decentralizedWebGateways", "security", "decentralizedWebGateways", FeatureMaturity.EARLY_ACCESS),
+            booleanSetting("security", "highRiskTlds", "security", "highRiskTlds", FeatureMaturity.UNRELEASED),
             booleanSetting("security", "parking", "security", "parked"),
             booleanSetting("security", "csam", "security", "csam"),
         ),
@@ -160,7 +170,7 @@ private fun booleanSetting(
     apiKey: String,
     localeCategory: String,
     localeKey: String,
-    isBeta: Boolean = false,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
 ): BooleanSettingSpec = BooleanSettingSpec(
     id = SettingId("$page.$apiKey"),
     api = ApiBinding(page = page, path = listOf(apiKey)),
@@ -168,7 +178,7 @@ private fun booleanSetting(
         titlePath = listOf(localeCategory, localeKey, "name"),
         descriptionPath = listOf(localeCategory, localeKey, "description"),
     ),
-    isBeta = isBeta,
+    maturity = maturity,
 )
 
 private fun retentionOption(value: Int, localeKey: String): SelectOption<Int> = SelectOption(

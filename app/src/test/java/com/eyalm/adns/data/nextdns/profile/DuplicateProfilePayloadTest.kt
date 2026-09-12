@@ -72,4 +72,73 @@ class DuplicateProfilePayloadTest {
         assertFalse(payload["parentalControl"].asJsonObject.has("recreation"))
         assertEquals(true, payload["denylist"].asJsonArray[0].asJsonObject["active"].asBoolean)
     }
+
+    @Test
+    fun `duplicate payload preserves all 22 security settings when present`() {
+        val detail = JsonParser.parseString(
+            """
+            {
+              "security": {
+                "threatIntelligenceFeeds": true,
+                "aiThreatDetection": false,
+                "googleSafeBrowsing": true,
+                "cryptojacking": false,
+                "dnsRebinding": true,
+                "idnHomographs": false,
+                "typosquatting": true,
+                "dga": false,
+                "nrd": true,
+                "freeHostingDomains": true,
+                "ddns": false,
+                "tunnelingEndpoints": true,
+                "dataDropServices": false,
+                "residentialHosting": true,
+                "untrustedCertificates": true,
+                "fastFluxNetworks": false,
+                "dnsDataExfiltration": true,
+                "dnsPayloadDelivery": false,
+                "decentralizedWebGateways": true,
+                "highRiskTlds": true,
+                "parking": false,
+                "csam": true,
+                "tlds": []
+              },
+              "privacy": {
+                "disguisedTrackers": false,
+                "allowAffiliate": true,
+                "blocklists": [],
+                "natives": []
+              },
+              "parentalControl": {
+                "safeSearch": false,
+                "youtubeRestrictedMode": false,
+                "blockBypass": false
+              },
+              "settings": {
+                "logs": {"enabled": false, "drop": {"ip": false, "domain": false}, "retention": 3600, "location": "us"},
+                "blockPage": {"enabled": false},
+                "performance": {"ecs": false, "cacheBoost": false, "cnameFlattening": false},
+                "bav": false,
+                "web3": false
+              }
+            }
+            """.trimIndent(),
+        ).asJsonObject
+
+        val payload = detail.toDuplicateProfilePayload("Cloned")
+        val security = payload["security"].asJsonObject
+
+        assertTrue(security["threatIntelligenceFeeds"].asBoolean)
+        assertFalse(security["aiThreatDetection"].asBoolean)
+        assertTrue(security["freeHostingDomains"].asBoolean)
+        assertTrue(security["tunnelingEndpoints"].asBoolean)
+        assertFalse(security["dataDropServices"].asBoolean)
+        assertTrue(security["residentialHosting"].asBoolean)
+        assertTrue(security["untrustedCertificates"].asBoolean)
+        assertFalse(security["fastFluxNetworks"].asBoolean)
+        assertTrue(security["dnsDataExfiltration"].asBoolean)
+        assertFalse(security["dnsPayloadDelivery"].asBoolean)
+        assertTrue(security["decentralizedWebGateways"].asBoolean)
+        assertTrue(security["highRiskTlds"].asBoolean)
+    }
 }

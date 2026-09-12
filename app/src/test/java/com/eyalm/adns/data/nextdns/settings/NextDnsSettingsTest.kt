@@ -100,5 +100,85 @@ class NextDnsSettingsTest {
         )
         assertTrue(betaSetting.isBeta)
         assertTrue(betaSetting.beta)
+        assertEquals(FeatureMaturity.BETA, betaSetting.maturity)
+    }
+
+    @Test
+    fun `security settings match exact API order and maturity levels`() {
+        val expectedKeysAndMaturities = listOf(
+            "threatIntelligenceFeeds" to FeatureMaturity.STABLE,
+            "aiThreatDetection" to FeatureMaturity.BETA,
+            "googleSafeBrowsing" to FeatureMaturity.STABLE,
+            "cryptojacking" to FeatureMaturity.STABLE,
+            "dnsRebinding" to FeatureMaturity.STABLE,
+            "idnHomographs" to FeatureMaturity.STABLE,
+            "typosquatting" to FeatureMaturity.STABLE,
+            "dga" to FeatureMaturity.STABLE,
+            "nrd" to FeatureMaturity.STABLE,
+            "freeHostingDomains" to FeatureMaturity.EARLY_ACCESS,
+            "ddns" to FeatureMaturity.BETA,
+            "tunnelingEndpoints" to FeatureMaturity.EARLY_ACCESS,
+            "dataDropServices" to FeatureMaturity.EARLY_ACCESS,
+            "residentialHosting" to FeatureMaturity.EARLY_ACCESS,
+            "untrustedCertificates" to FeatureMaturity.UNRELEASED,
+            "fastFluxNetworks" to FeatureMaturity.UNRELEASED,
+            "dnsDataExfiltration" to FeatureMaturity.UNRELEASED,
+            "dnsPayloadDelivery" to FeatureMaturity.UNRELEASED,
+            "decentralizedWebGateways" to FeatureMaturity.EARLY_ACCESS,
+            "highRiskTlds" to FeatureMaturity.UNRELEASED,
+            "parking" to FeatureMaturity.STABLE,
+            "csam" to FeatureMaturity.STABLE,
+        )
+
+        val actual = NextDnsSettingRegistry.security.settings
+            .filterIsInstance<BooleanSettingSpec>()
+            .map { it.api.path.first() to it.maturity }
+
+        assertEquals(expectedKeysAndMaturities, actual)
+    }
+
+    @Test
+    fun `feature maturity correctly maps to isBeta`() {
+        val earlyAccess = BooleanSettingSpec(
+            id = SettingId("test.ea"),
+            api = ApiBinding("test", listOf("ea")),
+            locale = LocaleBinding(titlePath = listOf("test", "title")),
+            maturity = FeatureMaturity.EARLY_ACCESS,
+        )
+        assertFalse(earlyAccess.isBeta)
+        assertEquals(FeatureMaturity.EARLY_ACCESS, earlyAccess.maturity)
+
+        val unreleased = BooleanSettingSpec(
+            id = SettingId("test.unreleased"),
+            api = ApiBinding("test", listOf("unreleased")),
+            locale = LocaleBinding(titlePath = listOf("test", "title")),
+            maturity = FeatureMaturity.UNRELEASED,
+        )
+        assertFalse(unreleased.isBeta)
+        assertEquals(FeatureMaturity.UNRELEASED, unreleased.maturity)
+
+        val beta = BooleanSettingSpec(
+            id = SettingId("test.beta"),
+            api = ApiBinding("test", listOf("beta")),
+            locale = LocaleBinding(titlePath = listOf("test", "title")),
+            maturity = FeatureMaturity.BETA,
+        )
+        assertTrue(beta.isBeta)
+        assertEquals(FeatureMaturity.BETA, beta.maturity)
+    }
+
+    @Test
+    fun `select specs maturity and isBeta resolve without recursion`() {
+        val intSpec = NextDnsSettingRegistry.settings.settings
+            .filterIsInstance<IntSelectSettingSpec>()
+            .first()
+        assertEquals(FeatureMaturity.STABLE, intSpec.maturity)
+        assertFalse(intSpec.isBeta)
+
+        val stringSpec = NextDnsSettingRegistry.settings.settings
+            .filterIsInstance<StringSelectSettingSpec>()
+            .first()
+        assertEquals(FeatureMaturity.STABLE, stringSpec.maturity)
+        assertFalse(stringSpec.isBeta)
     }
 }

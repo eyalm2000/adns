@@ -408,4 +408,8 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="prevalence_tracks_summary">%1$s (tracks %2$s of web traffic)</string>
     <string name="prevalent_format">%1$s prevalent</string>
+    <string name="unreleased">Unreleased</string>
+    <string name="unreleased_warning_title">Unreleased Feature</string>
+    <string name="unreleased_warning_description">This setting is an experimental internal feature not yet officially launched by NextDNS. Enabling it may cause unexpected website breakage, high false positives, or DNS resolution failures. NextDNS may alter or remove it at any time.</string>
+    <string name="unreleased_warning_enable">I Understand the Risks, Enable</string>
 </resources>

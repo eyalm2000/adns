@@ -22,13 +22,16 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.Placeholder
 import androidx.compose.ui.text.PlaceholderVerticalAlign
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
+import com.eyalm.adns.R
 import com.eyalm.adns.data.Locales
+import com.eyalm.adns.data.nextdns.settings.FeatureMaturity
 
 @Composable
 fun ExpressiveCard(
@@ -57,37 +60,52 @@ fun ExpressiveCard(
 fun ExpressiveCardHeader(
     title: String,
     description: String? = null,
+    maturity: FeatureMaturity = FeatureMaturity.STABLE,
     isBeta: Boolean = false,
     badge: (@Composable () -> Unit)? = null,
     trailing: (@Composable () -> Unit)? = null,
 ) {
+    val effectiveMaturity = if (maturity != FeatureMaturity.STABLE) maturity else if (isBeta) FeatureMaturity.BETA else FeatureMaturity.STABLE
     Row(
         modifier = Modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(modifier = Modifier.weight(1f)) {
-            if (isBeta) {
-                val betaLabel = Locales.getString("global", "beta")
-                    .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
-                    ?: Locales.getString("beta")
-                        .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
-                    ?: "Beta"
-                val formattedBeta = betaLabel.replaceFirstChar {
-                    if (it.isLowerCase()) it.titlecase(java.util.Locale.ROOT) else it.toString()
+            if (effectiveMaturity != FeatureMaturity.STABLE) {
+                val badgeLabel = when (effectiveMaturity) {
+                    FeatureMaturity.BETA -> {
+                        val betaLabel = Locales.getString("global", "beta")
+                            .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                            ?: Locales.getString("beta")
+                                .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                            ?: "Beta"
+                        betaLabel.replaceFirstChar {
+                            if (it.isLowerCase()) it.titlecase(java.util.Locale.ROOT) else it.toString()
+                        }
+                    }
+                    FeatureMaturity.EARLY_ACCESS -> {
+                        Locales.getString("global", "preview")
+                            .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                            ?: "Early Access"
+                    }
+                    FeatureMaturity.UNRELEASED -> {
+                        stringResource(R.string.unreleased)
+                    }
+                    else -> {""}
                 }
-                val betaBadgeId = "betaBadge"
-                val annotatedTitle = remember(title) {
+                val maturityBadgeId = "maturityBadge"
+                val annotatedTitle = remember(title, badgeLabel) {
                     buildAnnotatedString {
                         append(title)
                         append("  ")
-                        appendInlineContent(betaBadgeId, "[beta]")
+                        appendInlineContent(maturityBadgeId, "[$badgeLabel]")
                     }
                 }
-                val inlineContentMap = remember(formattedBeta) {
+                val inlineContentMap = remember(badgeLabel, effectiveMaturity) {
                     mapOf(
-                        betaBadgeId to InlineTextContent(
+                        maturityBadgeId to InlineTextContent(
                             Placeholder(
-                                width = (formattedBeta.length * 0.65 + 1.2).em,
+                                width = (badgeLabel.length * 0.65 + 1.4).em,
                                 height = 1.3.em,
                                 placeholderVerticalAlign = PlaceholderVerticalAlign.TextCenter,
                             )
@@ -96,7 +114,7 @@ fun ExpressiveCardHeader(
                                 modifier = Modifier.fillMaxHeight(),
                                 contentAlignment = Alignment.Center,
                             ) {
-                                BetaBadge(text = formattedBeta)
+                                MaturityBadge(maturity = effectiveMaturity)
                             }
                         }
                     )

@@ -4,6 +4,7 @@ import android.content.Context
 import com.eyalm.adns.R
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.model.ListIcon
+import com.eyalm.adns.data.nextdns.settings.FeatureMaturity
 
 data class NextDnsResourceItem(
     val id: String,
@@ -34,11 +35,40 @@ data class NextDnsResourceSpec(
     val customDescriptionRes: Int? = null,
     val customDescription: String? = null,
     val allowsCustomInput: Boolean = false,
-    val isBeta: Boolean = false,
+    val maturity: FeatureMaturity = FeatureMaturity.STABLE,
 ) {
     enum class ParentPage { SECURITY, PRIVACY, PARENTAL_CONTROL }
 
+    val isBeta: Boolean get() = maturity == FeatureMaturity.BETA
     val beta: Boolean get() = isBeta
+
+    constructor(
+        apiPage: String,
+        apiFeature: String,
+        localeCategory: String,
+        localeKey: String,
+        source: NextDnsResourceSource,
+        localePath: List<String>,
+        parentPage: ParentPage? = null,
+        customTitleRes: Int? = null,
+        customDescriptionRes: Int? = null,
+        customDescription: String? = null,
+        allowsCustomInput: Boolean = false,
+        isBeta: Boolean,
+    ) : this(
+        apiPage = apiPage,
+        apiFeature = apiFeature,
+        localeCategory = localeCategory,
+        localeKey = localeKey,
+        source = source,
+        localePath = localePath,
+        parentPage = parentPage,
+        customTitleRes = customTitleRes,
+        customDescriptionRes = customDescriptionRes,
+        customDescription = customDescription,
+        allowsCustomInput = allowsCustomInput,
+        maturity = if (isBeta) FeatureMaturity.BETA else FeatureMaturity.STABLE,
+    )
 
     fun title(context: Context): String =
         customTitleRes?.let(context::getString)

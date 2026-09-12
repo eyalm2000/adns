@@ -406,4 +406,8 @@
     <string name="privacy_policy">מדיניות פרטיות</string>
     <string name="prevalence_tracks_summary">%1$s (עוקב אחרי %2$s מתעבורת האינטרנט)</string>
     <string name="prevalent_format">%1$s נפוץ</string>
+    <string name="unreleased">טרם שוחרר</string>
+    <string name="unreleased_warning_title">תכונה שטרם שוחררה</string>
+    <string name="unreleased_warning_description">הגדרה זו הינה תכונה ניסיונית פנימית שטרם הושקה רשמית על ידי NextDNS. הפעלתה עלולה לגרום לשיבושים בלתי צפויים בגלישה, חסימות שגויות או כשלים בפענוח DNS. ‏NextDNS עשויה לשנות או להסיר תכונה זו בכל עת.</string>
+    <string name="unreleased_warning_enable">אני מבין את הסיכונים, הפעל בכל זאת</string>
 </resources>
