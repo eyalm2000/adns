@@ -228,21 +228,23 @@ private fun StatsOverviewContent(
                     Text(stringResource(R.string.cannot_load_stats))
                 }
             } else {
-                val allowedSeries =
-                    stats?.data?.firstOrNull { it.status == "default" || it.status == "allowed" }?.queries
-                        ?: emptyList()
+                val allSeries = stats?.data ?: emptyList()
                 val blockedSeries =
-                    stats?.data?.firstOrNull { it.status == "blocked" }?.queries
+                    allSeries.firstOrNull { it.status == "blocked" }?.queries
                         ?: emptyList()
 
-                val size = minOf(allowedSeries.size, blockedSeries.size)
+                val size = allSeries.maxOfOrNull { it.queries.size } ?: 0
                 val totalPoints =
-                    (0 until size).map { i -> (allowedSeries[i] + blockedSeries[i]).toFloat() }
-                val blockedPoints = (0 until size).map { i -> blockedSeries[i].toFloat() }
+                    (0 until size).map { i -> allSeries.sumOf { it.queries.getOrElse(i) { 0 } }.toFloat() }
+                val blockedQueriesSum = blockedSeries.sum()
+                val blockedPoints = if (blockedQueriesSum > 0) {
+                    (0 until size).map { i -> blockedSeries.getOrElse(i) { 0 }.toFloat() }
+                } else {
+                    emptyList()
+                }
                 val maxQueries = (totalPoints.maxOrNull() ?: 1f).coerceAtLeast(1f)
 
-                val totalQueriesSum = allowedSeries.sum() + blockedSeries.sum()
-                val blockedQueriesSum = blockedSeries.sum()
+                val totalQueriesSum = allSeries.sumOf { it.queries.sum() }
                 val blockedPercent =
                     if (totalQueriesSum > 0) (blockedQueriesSum.toFloat() / totalQueriesSum * 100).toInt() else 0
 
