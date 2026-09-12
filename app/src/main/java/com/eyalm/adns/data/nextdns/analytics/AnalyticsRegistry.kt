@@ -166,7 +166,7 @@ object StatsRegistry {
         ListCard("destinations.countries", "destinations",
             params = mapOf("type" to "countries", "limit" to "20", "lang" to "en"),
             localePath = listOf("analytics", "destination"),
-            emptyPath  = listOf("analytics", "destination", "empty"),
+            emptyPath  = listOf("analytics", "encrypted", "empty"),
             kind = ListKind.COUNTRIES,
             limit = 8),
     )

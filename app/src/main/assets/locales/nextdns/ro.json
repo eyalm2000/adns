@@ -1,38 +1,34 @@
 {
-    "global": {
-        "beta": "Beta",
-        "cancel": "Anulează",
-        "add": "Adaugă",
-        "save": "Salvează",
-        "continue": "Continuă",
-        "enable": "Activează",
-        "change": "Modifică",
-        "create": "Crează",
-        "subscribe": "Abonează-te",
-        "invite": "Invită",
-        "remove": "Elimină",
-        "leave": "Ieși",
-        "delete": "Șterge",
-        "close": "Închide",
-        "back": "Înapoi",
-        "disable": "Dezactivează",
-        "unnamedDevice": "Dispozitivul #{{id}}",
-        "firstConfiguration": "Primul meu Profil",
-        "list": {
-            "separator": ", ",
-            "conjunction": " și "
-        }
-    },
-    "theme": {
-        "label": "Tema",
-        "system": "Sistem",
-        "light": "Luminos",
-        "dark": "Întunecat"
-    },
-    "pages": {
-        "signup": "Înregistrează-te",
-        "login": "Autentifică-te",
-        "passwordReset": "Resetează-ți parola",
-        "account": "Cont"
-    }
+  "global": {
+    "beta": "Beta",
+    "cancel": "Anulează",
+    "add": "Adaugă",
+    "save": "Salvează",
+    "continue": "Continuă",
+    "enable": "Activează",
+    "change": "Modifică",
+    "create": "Crează",
+    "subscribe": "Abonează-te",
+    "invite": "Invită",
+    "remove": "Elimină",
+    "leave": "Ieși",
+    "delete": "Șterge",
+    "close": "Închide",
+    "back": "Înapoi",
+    "disable": "Dezactivează",
+    "unnamedDevice": "Dispozitivul #{{id}}",
+    "firstConfiguration": "Primul meu Profil"
+  },
+  "theme": {
+    "label": "Tema",
+    "system": "Sistem",
+    "light": "Luminos",
+    "dark": "Întunecat"
+  },
+  "pages": {
+    "signup": "Înregistrează-te",
+    "login": "Autentifică-te",
+    "passwordReset": "Resetează-ți parola",
+    "account": "Cont"
+  }
 }

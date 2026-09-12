@@ -1,1348 +1,1389 @@
 {
-    "global": {
-        "beta": "베타",
-        "cancel": "취소",
-        "add": "추가",
-        "save": "저장",
-        "continue": "계속",
-        "enable": "활성화",
-        "change": "변경",
-        "create": "생성",
-        "subscribe": "구독",
-        "invite": "초대",
-        "remove": "제거",
-        "leave": "떠나다",
-        "delete": "삭제",
-        "close": "닫기",
-        "back": "뒤로",
-        "disable": "비활성화",
-        "unnamedDevice": "장치 #{{id}}",
-        "firstConfiguration": "첫 구성 설정",
-        "list": {
-            "separator": ", ",
-            "conjunction": " 와(과) "
-        }
+  "global": {
+    "beta": "베타",
+    "preview": "얼리 액세스",
+    "cancel": "취소",
+    "add": "추가",
+    "save": "저장",
+    "continue": "계속",
+    "enable": "활성화",
+    "change": "변경",
+    "create": "생성",
+    "subscribe": "구독",
+    "invite": "초대",
+    "remove": "제거",
+    "leave": "나가기",
+    "delete": "삭제",
+    "close": "닫기",
+    "back": "뒤로",
+    "disable": "비활성화",
+    "unnamedDevice": "기기 #{{id}}",
+    "firstConfiguration": "첫 프로필",
+    "error": "오류",
+    "networkError": "네트워크 오류",
+    "requestFailed": "요청 실패",
+    "noProfiles": "아직 프로필이 없습니다.",
+    "search": "검색",
+    "clearSearch": "검색 지우기",
+    "copy": "복사",
+    "actions": "작업",
+    "expand": "펼치기",
+    "collapse": "접기"
+  },
+  "theme": {
+    "label": "테마",
+    "system": "시스템",
+    "light": "라이트",
+    "dark": "다크"
+  },
+  "pages": {
+    "signup": "회원가입",
+    "login": "로그인",
+    "passwordReset": "비밀번호 재설정",
+    "account": "계정",
+    "setup": "설정 가이드",
+    "security": "보안",
+    "privacy": "개인정보 보호",
+    "parentalcontrol": "자녀 보호",
+    "denylist": "거부 목록",
+    "allowlist": "허용 목록",
+    "analytics": "통계",
+    "logs": "로그",
+    "settings": "설정",
+    "help": "도움말"
+  },
+  "banners": {
+    "temporary": "이 임시 계정은 <1><0></0></1>에 만료되며 이 브라우저에서만 접속할 수 있습니다. 지금 무료로 가입하여 설정을 저장하세요.",
+    "nearQuota": "이번 달 쿼리 수가 {{queriesNearQuota, number}}개를 넘어 무료 월간 한도인 {{queriesQuota, number}}개에 가까워졌습니다. NextDNS를 계속 사용하려면 <5>구독하세요</5>.",
+    "overQuota": "이번 달 쿼리 수가 {{queriesQuota, number}}개를 초과하여 모든 기능이 비활성화되었습니다. NextDNS를 계속 사용하려면 <3>구독하세요</3>."
+  },
+  "account": {
+    "email": "이메일",
+    "newEmail": "새 이메일",
+    "password": "비밀번호",
+    "newPassword": "새 비밀번호",
+    "currentPassword": "현재 비밀번호",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "savePassword": "비밀번호 저장",
+    "passwordResetInfo": "계정에 연결된 이메일 주소를 입력하면 비밀번호 재설정 링크를 보내드립니다.",
+    "sendEmail": "이메일 보내기",
+    "passwordResetLinkSentMessage": "비밀번호 재설정 링크를 <1>{{email}}</1>(으)로 보냈습니다.",
+    "code": "2FA 코드",
+    "login": "로그인",
+    "noAccountYet": "아직 계정이 없으신가요? <1>회원가입</1>",
+    "signup": "회원가입",
+    "alreadyHaveAnAccount": "이미 계정이 있으신가요? <1>로그인</1>",
+    "convertingNotice": "임시 계정을 정식 계정으로 전환합니다. 모든 설정은 그대로 유지됩니다.",
+    "convertingDeviceOnlyNotice": "기기 전용 계정을 정식 계정으로 전환합니다. 모든 설정은 그대로 유지됩니다.",
+    "logout": "로그아웃",
+    "errors": {
+      "email": {
+        "required": "이메일을 입력하세요.",
+        "invalid": "유효한 이메일을 입력하세요.",
+        "taken": "이 이메일은 이미 사용 중입니다."
+      },
+      "password": {
+        "required": "비밀번호를 입력하세요.",
+        "invalidCombination": "이메일/비밀번호 조합이 잘못되었습니다."
+      },
+      "currentPassword": {
+        "required": "현재 비밀번호를 입력하세요.",
+        "incorrect": "입력한 비밀번호가 올바르지 않습니다."
+      },
+      "code": {
+        "required": "2FA 코드를 입력하세요.",
+        "invalid": "6자리 코드를 입력하세요.",
+        "incorrect": "2FA 코드가 잘못되었습니다."
+      },
+      "resetPasswordToken": {
+        "invalid": "유효하지 않거나 만료된 토큰입니다."
+      }
     },
-    "theme": {
-        "label": "테마",
-        "system": "시스템",
-        "light": "라이트",
-        "dark": "다크"
-    },
-    "pages": {
-        "signup": "가입하기",
-        "login": "로그인",
-        "passwordReset": "비밀번호 재설정",
-        "account": "계정",
-        "setup": "설정",
-        "security": "보안",
-        "privacy": "개인정보 보호",
-        "parentalcontrol": "자녀 보호 설정",
-        "denylist": "차단 목록",
-        "allowlist": "허용 목록",
-        "analytics": "통계",
-        "logs": "로그",
-        "settings": "설정",
-        "help": "도움말"
-    },
-    "banners": {
-        "temporary": "이 임시 계정은  <1><0>{{in}}</0></1>에 만료되며, 오직 이 브라우저에서만 접속할 수 있습니다. 지금 무료로 가입하여 설정을 저장하십시오.",
-        "nearQuota": "{{queriesNearQuota, number}}개의 쿼리가 이번 달에 처리되어, 무료 제공량인 {{queriesQuota, number}}개의 쿼리에 근접했습니다. <5>구독하여</5> NextDNS를 계속 사용하십시오.",
-        "overQuota": "{{queriesQuota, number}}개 이상의 쿼리가 이번 달에 처리되어, 모든 기능이 비활성화되었습니다. <3>구독하여</3> NextDNS를 계속 사용하십시오."
-    },
-    "account": {
-        "email": "이메일",
-        "newEmail": "새 이메일",
-        "password": "비밀번호",
-        "newPassword": "새 비밀번호",
-        "currentPassword": "현재 비밀번호",
-        "forgotPassword": "비밀번호를 잊으셨나요?",
-        "savePassword": "비밀번호 저장",
-        "passwordResetInfo": "귀하의 계정과 연결된 이메일 주소를 입력하면 비밀번호 재설정 링크를 보내드립니다.",
-        "sendEmail": "이메일 보내기",
-        "passwordResetLinkSentMessage": "비밀번호 재설정 링크가 <1>{{email}}으로 전송되었습니다. </1> .",
-        "code": "2FA 코드",
-        "login": "로그인",
-        "noAccountYet": "아직 계정이 없으신가요? <1>$t(account.signup)</1>",
-        "signup": "회원가입",
-        "alreadyHaveAnAccount": "이미 계정이 있으신가요? <1>$t(account.login)</1>",
-        "convertingNotice": "임시 계정을 실제 계정으로 전환하고 있으며 모든 설정이 저장됩니다.",
-        "convertingDeviceOnlyNotice": "기기 전용 계정을 전체 계정으로 전환하는 중이며, 모든 설정이 저장됩니다.",
-        "logout": "로그아웃",
-        "errors": {
-            "email": {
-                "required": "이메일을 입력하세요.",
-                "invalid": "유효한 이메일을 입력하세요.",
-                "taken": "이 이메일은 이미 사용 중입니다."
-            },
-            "password": {
-                "required": "비밀번호를 입력하세요.",
-                "invalidCombination": "이메일 / 비밀번호 조합이 잘못되었습니다."
-            },
-            "currentPassword": {
-                "required": "현재 비밀번호를 입력하세요.",
-                "incorrect": "입력한 비밀번호가 올바르지 않습니다."
-            },
-            "code": {
-                "required": "2FA 코드를 입력하십시오.",
-                "invalid": "6자리 코드를 입력하세요.",
-                "incorrect": "2FA 코드가 잘못되었습니다."
-            },
-            "resetPasswordToken": {
-                "invalid": "유효하지 않거나 만료 된 토큰입니다."
-            }
-        },
-        "affiliation": {
-            "name": "초대",
-            "description": "<1> {{link}} </1> <3>{{share, percentage}} 받기 </3> 첫 번째 <5> {{months, number}} 개월 </5>.\n우리의 뜻을 널리 알릴 수 있도록 공유해주세요. 이 링크 (<1>{{link}}</1>) 를 통해 가입한 사람의 첫 <5>{{months, number}} 개월</5> 동안 결제한 금액의 <3>{{share, percentage}}</3>를 받을 수 있습니다.",
-            "balance": {
-                "name": "잔액"
-            },
-            "availableBalance": {
-                "name": "사용 가능한 잔액",
-                "description": "잠재적 인 환불을 처리하기 위해 한 달 후에 잔액을 지불 할 수 있습니다."
-            },
-            "payout": {
-                "button": "지불",
-                "minimum": "결제 시 사용 가능한 잔액이 {{amount, price}} 이상 필요합니다.",
-                "form": {
-                    "paypalEmail": "PayPal 이메일",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "PayPal 이메일을 입력하세요.",
-                            "invalid": "유효한 PayPal 이메일을 입력하세요."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "무료 사용량",
-            "description": "NextDNS는 매월 최대 {{queries, number}} 쿼리까지 무료로 사용할 수 있으며, 그 후 모든 기능이 다음 달까지 일시적으로 비활성화 됩니다.",
-            "queries": "<0> {{current, number}} </0> <1> / {{quota, number}} 쿼리 </1>",
-            "overQuota": {
-                "message": "이번 달에 {{queries, number}} 이상의 쿼리를 사용하였습니다.",
-                "info": "NextDNS는 계속 DNS 쿼리에 응답하지만 모든 기능은 다음 달까지 일시적으로 비활성화됩니다."
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "{{amount, price}}/ 월부터 무제한 쿼리를 받으세요."
-            }
-        },
-        "subscription": {
-            "name": "구독",
-            "plans": {
-                "pro": "Pro",
-                "business": "기업용",
-                "education": "교육용"
-            },
-            "intervals": {
-                "month": "월간 구독",
-                "year": "연간 구독"
-            },
-            "per": {
-                "month": "매월",
-                "year": "매년"
-            },
-            "units": {
-                "business": "{{count, number}} 직원",
-                "business_plural": "{{count, number}} 직원",
-                "education": "{{count, number}} 학생",
-                "education_plural": "{{count, number}} 학생"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "구독이 {{date, LL}} 에 만료됩니다.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "구독 다시 시작"
-            },
-            "changePlan": {
-                "button": "요금제 변경"
-            },
-            "renewal": "{{date, date}} 에 {{amount, price}} 가 자동 결제될 예정입니다.",
-            "changePaymentMethod": {
-                "button": "결제 수단 변경"
-            },
-            "cancel": {
-                "button": "구독 취소",
-                "confirm": {
-                    "text": "현재 구독은 {{date, date}} 까지 유효합니다.",
-                    "submit": "구독 취소"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "요금제 선택",
-                "addPaymentMethod": "결제 수단 추가",
-                "included": "모든 구독에는 모든 기능에 대한 <1> 액세스가 포함됩니다. </1> , <3> 무제한 장치 </3> 및 <5> 무제한 쿼리 </5> .",
-                "savings": "월간 구독으로 {{percent, percentage}} 절약",
-                "familyOnly": "* Pro 요금제는 개인 (및 가까운 가족) 전용입니다.",
-                "unitsQuestion": {
-                    "business": "귀사에는 몇 명의 <1> 직원 </1>이 있습니까?",
-                    "education": "귀하의 학교(또는 시설)에는 몇 명의 <1> 학생 </1> 이 있습니까?"
-                },
-                "asYouGrow": {
-                    "business": "* 직원 수가 증가함에 따라 구독을 업데이트하는 것을 잊지 마십시오.",
-                    "education": "* 학생 수가 증가함에 따라 구독을 업데이트하는 것을 잊지 마십시오."
-                },
-                "starting": {
-                    "business": "<0> 시작 </0> <1>{{price, price}}</1> {{units, number}} 직원 </2>",
-                    "education": "<0> 시작 </0> <1>{{price, price}}</1> {{units, number}} 학생 </2>"
-                },
-                "card": {
-                    "number": "카드 번호",
-                    "expiration": "만료일",
-                    "code": "보안 코드",
-                    "stripe": "우리는 업계 최고의 결제대행사인 Stripe를 사용하여 카드 정보에 직접 액세스하지 않고도 안전한 방법으로 카드 결제를 처리합니다."
-                },
-                "paypal": {
-                    "text": "PayPal로 구독하려면 Continue to PayPal 버튼을 클릭하십시오."
-                },
-                "bitpay": {
-                    "text": "Cryptocurrency로 결제하려면 Continue to BitPay 버튼을 클릭하십시오.",
-                    "toYearly": "월간 구독에 대한 암호화폐 결제는 허용되지 않습니다. <1> 계속 진행하면 연간 구독으로 자동 전환됩니다. </1>",
-                    "remainder": "현재 구독은 {{date, date}}까지 이미 결제되었습니다. 지금 청구되며 나머지는 자동으로 새 만료일에 추가됩니다."
-                },
-                "continueTo": "<1> </1> 로 계속"
-            }
-        },
-        "business": {
-            "name": "사업",
-            "description": "세금 목적을 위해 귀하의 상호, 주소 및 VAT 번호 (또는 이에 상응하는 번호)가 필요합니다. 이는 법에 의해 요구되며 모든 송장에 표시됩니다.",
-            "button": {
-                "add": "회사 정보 추가",
-                "update": "업데이트"
-            },
-            "form": {
-                "name": {
-                    "label": "이름",
-                    "placeholder": "(주) 삼송",
-                    "errors": {
-                        "required": "업체명을 입력하세요."
-                    }
-                },
-                "address": {
-                    "label": "주소",
-                    "placeholder": "서울특별시&#10;중구&#10;세종대로 110",
-                    "errors": {
-                        "required": "업체 주소를 입력하세요."
-                    }
-                },
-                "vatNumber": {
-                    "label": "VAT 번호 (또는 이에 상응하는 번호)"
-                }
-            }
-        },
-        "invoices": {
-            "name": "명세서",
-            "description": "계정에 대한 청구 내역 및 모든 명세서.",
-            "pending": "{{amount, price}} (보류 중)",
-            "show-more": "더 보기",
-            "show-less": "간략히 보기",
-            "invoice": {
-                "title": "명세서 #{{code}}",
-                "to": "받는 사람 : <1>{{email}}</1>",
-                "vatNumber": "VAT 번호 (또는 이에 상응하는 번호) : {{number}}",
-                "columns": {
-                    "plan": "요금제",
-                    "period": "기간",
-                    "amount": "양"
-                },
-                "vat": "VAT ({{rate, percentage}})",
-                "total": "합계",
-                "footer": {
-                    "reverseCharged": "VAT (또는 이에 상응하는 금액)가 취소됩니다.",
-                    "currency": "표시된 모든 금액은 {{code}}입니다."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "이메일",
-            "description": "계정에 로그인하고 중요한 이메일 알림을받는 데 사용되는 이메일 주소를 변경합니다.",
-            "button": "이메일 변경"
-        },
-        "changePassword": {
-            "name": "비밀번호",
-            "description": "계정에 로그인하는 데 사용되는 비밀번호를 변경하고 중요한 작업을 수행 할 때 묻습니다.",
-            "button": "비밀번호 변경"
-        },
-        "2fa": {
-            "name": "2단계 인증 (2FA)",
-            "description": "2 단계 인증 (2FA)은 계정에 로그인 할 때 추가 시간 기반 6 자리 코드가 필요한 추가 보안 계층입니다.",
-            "enabled": "계정에 2단계 인증이 활성화되어 있습니다.",
-            "enable": {
-                "button": "2단계 인증 활성화",
-                "modal": {
-                    "howto": "<1>Google Authenticator</1>와 같은 인증 앱 또는 2FA를 지원하는 암호 관리자를 사용하십시오. QR코드를 스캔하거나, QR코드를 눌러 <3>{{otpauth}}<3> 링크를 열거나, 수동으로 암호를 복사하여 붙여넣을 수 있습니다."
-                }
-            },
-            "recovery": {
-                "button": "복구 코드",
-                "modal": {
-                    "howto": "장치에 액세스할 수 없고 이중 인증 코드를 받을 수 없는 경우 이 복구 코드를 사용하여 계정에 액세스하십시오. 각 코드는 한 번만 사용할 수 있습니다.",
-                    "download": "다운로드",
-                    "regen": "재생성"
-                }
-            },
-            "disable": {
-                "button": "2단계 인증 비활성화"
-            }
-        },
-        "api": {
-            "description": "프로필을 프로그래밍 방식으로 만들고 관리하세요. <1>{{link}}</1>에서 문서를 읽으십시오.",
-            "create": {
-                "button": "API 키 생성"
-            }
-        },
-        "delete": {
-            "button": "계정 삭제",
-            "warning": "계정과 모든 구성이 영구적으로 삭제됩니다.",
-            "confirm": {
-                "text": "계정을 삭제 하시겠습니까? 이 작업은 취소할 수 없습니다."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "만료됨",
-                    "text": "임시 계정이 만료되었습니다. 지금 등록하여 설정을 저장하고 NextDNS를 계속 사용하세요. 무료입니다."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "새",
+    "affiliation": {
+      "name": "제휴 프로그램",
+      "description": "<1>{{link}}</1> 링크를 공유하여 NextDNS를 알리고, 추천으로 가입한 사용자가 첫 유료 구독을 시작한 후 <5>{{months, number}}개월</5> 동안 납부하는 구독료의 <3>{{share, percentage}}</3>를 받으세요.",
+      "balance": {
+        "name": "잔액"
+      },
+      "availableBalance": {
+        "name": "사용 가능한 잔액",
+        "description": "환불 가능성에 대비해 한 달이 지난 뒤 잔액을 출금할 수 있습니다."
+      },
+      "payout": {
+        "button": "출금",
+        "minimum": "출금하려면 사용 가능한 잔액이 최소 {{amount, price}} 이상이어야 합니다.",
         "form": {
-            "title": "새로운 구성",
-            "name": {
-                "label": "이름",
-                "placeholder": "가정, 아이, 사무실, ...",
-                "errors": {
-                    "required": "이름을 입력하십시오.",
-                    "taken": "해당 이름의 구성이 이미 있습니다."
-                }
+          "paypalEmail": "PayPal 이메일",
+          "errors": {
+            "paypalEmail": {
+              "required": "PayPal 이메일을 입력하세요.",
+              "invalid": "유효한 PayPal 이메일을 입력하세요."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "좋습니다!",
-                "secondary": "이 장치는 해당 구성으로 NextDNS를 사용하고 있습니다."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "이 장치는 구성 없이 NextDNS를 사용하고 있습니다.",
-                    "secondary": {
-                        "clients": "앱 설정에서 아래 표시된 구성 ID를 설정했는지 확인하십시오.",
-                        "firefox": "Firefox에서 아래 표시된 DNS-over-HTTPS 엔드 포인트를 설정했는지 확인하십시오.",
-                        "doh": "아래 표시된 DNS-over-HTTPS 엔드 포인트를 사용하고 있는지 확인하십시오.",
-                        "dot": "아래 표시된 DNS-over-TLS 엔드 포인트를 사용하고 있는지 확인하십시오.",
-                        "ipv6": "아래 표시된 IPv6 주소를 사용하는지 확인하십시오.",
-                        "servers": "아래의 연결된 IP 섹션에 표시된 DNS 서버를 사용해야합니다 (DNS 서버는 구성간에 변경됨).",
-                        "link": "아래의 연결된 IP 섹션에서 IP 주소를 연결해야합니다."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "이 장치는 다른 구성으로 NextDNS를 사용하고 있습니다.",
-                    "secondary": {
-                        "sameAccount": "이 장치는 현재 ”{{name}}”을 (를) 사용하고 있습니다.",
-                        "otherAccount": "이 페이지에 나열된 엔드 포인트 중 하나를 사용하고 있는지 확인하십시오."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "이 장치는 NextDNS를 사용하고 있지 않습니다.",
-                "secondary": "이 장치는 현재 \"{{resolver}}\"을 DNS resolver로 사용하고 있습니다."
-            },
-            "error": {
-                "primary": "현재 상태를 확인하는 동안 오류가 발생했습니다.",
-                "secondary": "페이지를 새로고침한 후에도 이 문제가 계속되면 저희에게 알려주십시오."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
-            }
-        },
-        "endpoints": {
-            "name": "엔드포인트",
-            "description": "아래 엔드포인트 중 하나를 사용하여 이 구성으로 NextDNS를 설정합니다.",
-            "help": "어떻게 사용하는지 잘 모르시겠습니까? <1>$t(setup.guide.name)따르십시오 </1> ."
-        },
-        "linkedIp": {
-            "name": "연결된 IP",
-            "description": "당사 앱, DNS-over-TLS, DNS-over-HTTPS 또는 IPv6를 사용하여 NextDNS를 설정할 수 없는 경우 아래 DNS 서버를 사용하고 IP를 연결하십시오. 이것은 대부분 홈 네트워크에서 사용하기 위한 것이며 모바일에서는 권장되지 않습니다.",
-            "servers": {
-                "name": "DNS 서버"
-            },
-            "ip": {
-                "name": "연결된 IP",
-                "link": "IP 연결"
-            },
-            "showAdvanced": "고급 옵션 표시",
-            "ddns": {
-                "explanation": "동적 DNS (DDNS)를 사용하여 연결된 IP를 자동으로 업데이트할 수 있습니다.",
-                "set": "DDNS 구성",
-                "status": "현재 DDNS 호스트 이름으로 <1>{{hostname}}<1>을 사용하고 있습니다. IP가 매 분마다 자동으로 업데이트됩니다.",
-                "unset": "삭제",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS 호스트 이름",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "호스트 이름을 입력하십시오.",
-                            "invalid": "유효한 호스트 이름을 입력하십시오.",
-                            "ip": "IP 주소가 아닌 호스트 이름을 입력하십시오.",
-                            "error": "이 호스트 이름의 IP 주소를 가져오는 동안 오류가 발생했습니다.",
-                            "empty": "이 호스트 이름은 IP 주소를 반환하지 않습니다.",
-                            "multiple": "이 호스트 이름은 여러 IP 주소를 반환합니다.",
-                            "different": "보안상의 이유로 동적 DNS를 추가할 때 DDNS 호스트 이름에 의해 반환되는 IP 주소는 현재 IP 주소와 동일해야 합니다."
-                        }
-                    }
-                }
-            },
-            "programmatically": "다음을 호출하여 프로그래밍 방식으로 연결된 IP를 업데이트 할 수도 있습니다."
-        },
-        "guide": {
-            "name": "설정 가이드",
-            "description": "아래 지침에 따라 장치, 브라우저 또는 라우터에서 NextDNS를 설정하십시오.",
-            "or": "또는",
-            "ipv4": {
-                "title": "IPv4 (연결된 IP 사용)"
-            },
-            "ipv6": {
-                "supported": "네트워크가 IPv6을 지원합니다",
-                "notSupported": "네트워크가 IPv6를 지원하지 않습니다"
-            },
-            "tags": {
-                "recommended": "추천",
-                "advanced": "고급"
-            },
-            "use": "<1>{{file}}에서 다음을 사용하십시오. </1> :",
-            "appleConfigurationProfile": {
-                "name": "NextDNS ({{configuration}})",
-                "description": "이 프로파일은 새로운 native 암호화된 DNS 기능을 사용하는 모든 네트워크에서 NextDNS를 활성화합니다."
-            },
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "비공개 DNS",
-                            "requirements": "Android 9 이상",
-                            "steps": {
-                                "1": "1. 설정 → 네트워크 및 인터넷 → 고급 → 프라이빗 DNS로 이동합니다.",
-                                "2": "2. 비공개 DNS 제공업체 호스트 이름 옵션을 선택합니다.",
-                                "3": "3. <1>{{endpoint}}</1>를 입력하고 저장을 누르세요."
-                            }
-                        },
-                        "app": {
-                            "title": "Android 용 NextDNS",
-                            "steps": {
-                                "1": "1. Play 스토어에서 공식 앱을 설치하세요.",
-                                "2": "NextDNS 앱의 Settings -> Configuration ID에 <1>{{id}}</1> 를 입력한 후 수정합니다."
-                            }
-                        },
-                        "ip": {
-                            "ipv4": {
-                                "title": "IPv4 (연결된 IP 사용)"
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "구성 프로파일",
-                            "requirements": "iOS14 및 이후 버전",
-                            "step": "<1>{{link}}</1>에서 Apple 구성 프로파일을 생성기를 사용하십시오."
-                        },
-                        "app": {
-                            "title": "iOS 용 NextDNS",
-                            "steps": {
-                                "1": "1. App Store에서 공식 앱을 설치합니다.",
-                                "2": "2. 앱을 열고 설정으로 이동하여 \"사용자 지정 구성 사용\"을 전환합니다. <1>{{id}}입력 </1> 구성 ID로.",
-                                "3": "3. NextDNS를 활성화합니다."
-                            }
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "윈도우",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS over HTTPS 사용",
-                            "requirements": "윈도우 11",
-                            "steps": [
-                                "<1>설정 열기</1> 앱.",
-                                "<1>네트워크 및 인터넷으로 이동</1>.",
-                                "<1>Wi-Fi를 클릭합니다.</1> (또는 <3>이더넷</3>).",
-                                "<1>하드웨어 속성을 클릭합니다.</1>, 또는 <3>이더넷을 클릭한 경우 이 단계를 무시하십시오.</3>.",
-                                "<1>편집을 클릭합니다.</1> <3>DNS 서버 할당 옆의 버튼</3>.",
-                                "<1>수동 선택</1>.",
-                                "<1>IPv{{version}} 활성화</1>.",
-                                "<1>{{ip}} 입력</1> <3>기본 DNS로</3> 을 누른 다음 <5>켜기(수동 템플릿) 를 선택합니다.</5> 입력 <7>{{endpoint}}</7>.",
-                                "<1>{{ip}} 입력</1> <3>기본 DNS로</3> 을 누른 다음 <5>켜기(수동 템플릿) 를 선택합니다.</5> 입력 <7>{{endpoint}}</7>.",
-                                "<1>저장을 클릭합니다.</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "Windows 용 NextDNS",
-                            "steps": {
-                                "1": "1. <1> 여기에서 설치 프로그램을 다운로드하십시오. </1> .",
-                                "2": "2. 설치 후 Systray에서 NextDNS 아이콘을 마우스 오른쪽 버튼으로 클릭하고 설정을 엽니 다. <1>{{id}}설정 </1> 구성 ID로.",
-                                "3": "3. Systray에서 NextDNS 아이콘을 마우스 오른쪽 버튼으로 클릭 한 다음 Enable을 클릭합니다."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. 시작 메뉴를 클릭 한 다음 제어판을 클릭합니다.",
-                                "2": "2. 네트워크 및 인터넷을 클릭 한 다음 네트워크 및 공유 센터를 클릭합니다.",
-                                "3": "3. 어댑터 설정 변경을 클릭합니다.",
-                                "4": "4. 연결된 Wi-Fi 네트워크를 마우스 오른쪽 버튼으로 클릭 한 다음 속성을 클릭합니다.",
-                                "5": "5. 인터넷 프로토콜 버전 {{version}}선택합니다.",
-                                "6": "6. 속성을 클릭합니다.",
-                                "7": "7. 다음 DNS 서버 주소 사용을 클릭합니다.",
-                                "8": "8. 현재 주소 (있는 경우)를 <1>{{dns1}}바꿉니다. </1> 및 <3>{{dns2}}</3> .",
-                                "9": "9. 확인을 클릭 한 다음 닫기를 클릭합니다. 브라우저를 다시 시작해야 할 수 있습니다."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. <1>{{link}}에서 YogaDNS 설치 </1> .",
-                                "2": "2. <1>{{link}}에서 NextDNS에 대한 지침을 따릅니다. </1> <3>{{id}}</3> 구성 ID로."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "맥 OS",
-                    "guides": {
-                        "app": {
-                            "title": "macOS 용 NextDNS",
-                            "steps": {
-                                "1": "1. Mac App Store에서 공식 앱을 설치합니다.",
-                                "2": "2. 앱 상태 표시 줄 메뉴에서 기본 설정을 클릭하고 구성 탭으로 이동합니다.",
-                                "3": "3. \"사용자 지정 구성 사용\"을 선택하고 <1>{{id}}입력합니다. </1> 구성 ID로.",
-                                "4": "4. NextDNS를 활성화합니다."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur 및 이후 버전"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. 시스템 환경 설정을 연 다음 네트워크를 클릭합니다.",
-                                "2": "2. 연결된 네트워크를 선택한 다음 고급 버튼을 클릭합니다.",
-                                "3": "3. DNS 섹션으로 이동합니다.",
-                                "4": "4. DNS 서버 목록에서 모든 주소 (있는 경우)를 제거한 다음 <1>{{dns1}}을 추가합니다. </1> 및 <3>{{dns2}}</3> .",
-                                "5": "5. 확인을 클릭 한 다음 적용을 클릭합니다."
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS 명령 줄 클라이언트",
-                            "steps": {
-                                "1": "1. 다음 명령을 실행합니다. <1>{{command}}</1>",
-                                "2": "2. 지침을 따릅니다."
-                            },
-                            "manual": "<1>{{link}}의 오픈 소스 저장소로 이동하십시오. </1> 수동 설치 지침."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "리눅스",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS 명령 줄 클라이언트",
-                            "steps": {
-                                "1": "1. 다음 명령을 실행합니다. <1>{{command}}</1>",
-                                "2": "2. 지침을 따릅니다."
-                            },
-                            "manual": "<1>{{link}}의 오픈 소스 저장소로 이동하십시오. </1> 수동 설치 지침."
-                        },
-                        "ip": {
-                            "step": "DNS 서버를 <1>{{dns1}}변경하십시오. </1> 및 <3>{{dns2}}</3> ."
-                        },
-                        "stubby": {
-                            "warning": "Stubby가 <1> OpenSSL 1.1.1 이상과 연결되어 있는지 확인하십시오. </1> 이전 버전은 NextDNS에서 작동하지 않습니다."
-                        },
-                        "unbound": {
-                            "warning": "재귀 적 해결 자로서 Unbound는 CNAME을 추적합니다. 이로 인해 <1> 예기치 않은 동작이 발생할 수 있습니다. </1> NextDNS와 같은 차단 DNS 확인자와 함께 사용할 때. <3>{{link}}참조 </3> ."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "크롬 OS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "보안 DNS",
-                            "steps": [
-                                "<1>설정 열기</1> 앱.",
-                                "\"보안 및 개인 정보 보호\"로 이동합니다.",
-                                "활성화 <1>보안 DNS 사용</1>.",
-                                "4. \"Custom\"을 선택한 다음 <1>{{endpoint}}</1>을(를) 입력합니다."
-                            ]
-                        },
-                        "ip": {
-                            "step": "DNS 서버를 <1>{{dns1}}변경하십시오. </1> 및 <3>{{dns2}}</3> ."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "브라우저",
-                    "guides": {
-                        "chrome": {
-                            "title": "구글 크롬",
-                            "steps": {
-                                "1": "1. 설정으로 이동합니다.",
-                                "2": "2. 개인 정보 및 보안 섹션에서 보안을 클릭합니다.",
-                                "3": "3. 고급 섹션에서 보안 DNS 사용을 활성화합니다.",
-                                "4": "4. With : Custom을 선택한 다음 <1>{{endpoint}}을 입력합니다. </1> ."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Windows, macOS 및 Linux 전용",
-                            "steps": {
-                                "1": "1. 환경 설정 열기.",
-                                "2": "2. Click Privacy & Security.",
-                                "3": "3. Scroll down to Enable DNS over HTTPS.",
-                                "4": "4. Choose Increased Protection or Max Protection.",
-                                "5": "5. Select Custom in the menu.",
-                                "6": "6. Enter <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. 설정으로 이동합니다.",
-                                "2": "2. 개인 정보, 검색 및 서비스 섹선으로 이동합니다.",
-                                "3": "3. 보안 항목에서 '보안 DNS를 사용하여 웹 사이트의 네트워크 주소를 조회하는 방법을 지정합니다.'를 활성화합니다.",
-                                "4": "4. '서비스 공급자 선택'을 선택하고, <1>{{endpoint}}</1>를 입력합니다."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. 설정으로 이동합니다.",
-                                "2": "2. Privacy and security (추가 설정 아래)에서 보안으로 이동합니다.",
-                                "3": "3. \"Advanced\" 설정에서 보안 DNS 사용을 활성화합니다.",
-                                "4": "4. \"Custom\"을 선택한 다음 <1>{{endpoint}}</1>을(를) 입력합니다."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "라우터",
-                    "guides": {
-                        "cli": {
-                            "title": "라우터 용 NextDNS",
-                            "requirements": "실행 파일을 실행할 수있는 라우터에서만 작동합니다.",
-                            "step": "<1>{{link}}의 오픈 소스 저장소로 이동하십시오. </1> 설치 지침."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "일부 라우터는 위의 IPv6 표기법을 지원하지 않을 수 있습니다. 이 경우 <1>{{dns1}}</1> 및 <3>{{dns2}}</3> ."
-                            },
-                            "steps": {
-                                "1": "1. 라우터의 기본 설정을 엽니 다. 일반적으로 URL (예 : http://192.168.0.1/ 또는 http://192.168.1.1/)을 통해 브라우저에서 액세스 할 수 있습니다.",
-                                "2": "2. 인터페이스 내에서 DNS 설정을 찾습니다.",
-                                "3": "3. 모든 주소 (있는 경우)를 제거한 다음 <1>{{dns1}}을 추가합니다. </1> 및 <3>{{dns2}}</3> .",
-                                "4": "4. 저장 (또는 유사)을 클릭합니다."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. 서비스 → DNS 확인 자로 이동하고 일반 설정 탭에서 사용자 지정 옵션 상자까지 아래로 스크롤합니다.",
-                                "2": "2. 다음 행을 입력하십시오."
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "다음을 실행하십시오."
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "설정 지침은 <2>{{link}}</2>의 Tailscale 문서로 이동하세요."
-                        }
-                    }
-                }
-            }
-        },
-        "identify": {
-            "name": "장치 식별",
-            "description": "아래 지침에 따라 분석 및 로그에서 기기를 식별하세요.",
-            "apps": {
-                "name": "앱",
-                "instructions": "앱 설정에서 \"장치 이름 보내기\"를 활성화합니다."
-            },
-            "dot": {
-                "instructions": "제공된 도메인 앞에 이름을 추가합니다 (이름에는 <1> az 만 포함해야합니다. </1> , <3> AZ </3> , <5> 0-9 </5> 및 <7>- </7> ). <9> 사용- </9> 공간.",
-                "example": "\"<1> John Router의 경우 </1> \", <3> John--Router-{{configuration}}.dns.nextdns.io를 사용합니다. </3> DNS-over-TLS 엔드 포인트로."
-            },
-            "doh": {
-                "instructions": "제공된 URL에 이름을 추가합니다 (이름은 URL로 인코딩되어야 함).",
-                "example": "\"<1> John 's Firefox </1> \", <3> https://dns.nextdns.io/{{configuration}}/ John 's%20Firefox를 사용합니다. </3> DNS-over-HTTPS 엔드 포인트로."
-            }
+    "usage": {
+      "name": "무료 사용량",
+      "description": "NextDNS는 매월 쿼리 {{queries, number}}개까지 무료로 사용할 수 있으며, 이를 초과하면 다음 달까지 모든 기능이 일시적으로 비활성화됩니다.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} 쿼리</1>",
+      "overQuota": {
+        "message": "이번 달 쿼리 수가 {{queries, number}}개를 넘었습니다.",
+        "info": "NextDNS는 계속 DNS 쿼리에 응답하지만 모든 기능은 다음 달까지 일시적으로 비활성화됩니다."
+      },
+      "subscribe": {
+        "ios": "서비스를 구독하려면 브라우저에서 my.nextdns.io에 접속하세요.",
+        "upsell": "월 {{amount, price}}부터 무제한 쿼리를 이용하세요."
+      }
+    },
+    "subscription": {
+      "name": "구독",
+      "plans": {
+        "pro": "Pro",
+        "business": "기업용",
+        "education": "교육용"
+      },
+      "intervals": {
+        "month": "월간 요금제",
+        "year": "연간 요금제"
+      },
+      "per": {
+        "month": "매월",
+        "year": "매년"
+      },
+      "units": {
+        "business_other": "직원 {{count, number}}명",
+        "education_other": "학생 {{count, number}}명"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "구독은 {{date, date}}에 만료됩니다.",
+      "managedByApple": "구독은 Apple 계정을 통해 관리됩니다. 변경하거나 취소하려면 Apple의 구독 설정을 이용하세요.",
+      "manageOnApple": "Apple에서 구독 관리",
+      "restart": {
+        "button": "구독 다시 시작"
+      },
+      "changePlan": {
+        "button": "요금제 변경"
+      },
+      "renewal": "다음 자동 결제는 {{date, date}}에 {{amount, price}} 금액으로 진행됩니다.",
+      "changePaymentMethod": {
+        "button": "결제 수단 변경"
+      },
+      "cancel": {
+        "button": "구독 취소",
+        "confirm": {
+          "text": "현재 구독은 {{date, date}}까지 유효합니다.",
+          "submit": "구독 취소"
         }
+      },
+      "subscribe": {
+        "choosePlan": "요금제 선택",
+        "addPaymentMethod": "결제 수단 추가",
+        "included": "모든 요금제에는 <1>모든 기능 이용</1>, <3>무제한 기기</3>, <5>무제한 쿼리</5>가 포함됩니다.",
+        "savings": "월간 요금제보다 {{percent, percentage}} 절약",
+        "familyOnly": "* Pro 요금제는 개인(및 가까운 가족) 전용입니다.",
+        "unitsQuestion": {
+          "business": "회사의 <1>직원</1>은 몇 명인가요?",
+          "education": "학교(또는 교육구)의 <1>학생</1>은 몇 명인가요?"
+        },
+        "unitsLabel": {
+          "business": "직원 수",
+          "education": "학생 수"
+        },
+        "asYouGrow": {
+          "business": "* 직원 수가 늘어나면 요금제를 업데이트하는 것을 잊지 마세요.",
+          "education": "* 학생 수가 늘어나면 요금제를 업데이트하는 것을 잊지 마세요."
+        },
+        "starting": {
+          "business": "<2>직원 {{units, number}}명 기준 월 </2><1>{{price, price}}</1><0>부터</0>",
+          "education": "<2>학생 {{units, number}}명 기준 월 </2><1>{{price, price}}</1><0>부터</0>"
+        },
+        "card": {
+          "number": "카드 번호",
+          "expiration": "만료일",
+          "code": "보안 코드",
+          "stripe": "NextDNS는 선도적인 결제 게이트웨이인 Stripe를 통해 카드 정보에 직접 접근하지 않고 안전하게 카드 결제를 처리합니다."
+        },
+        "paypal": {
+          "text": "PayPal로 구독하려면 “PayPal로 계속” 버튼을 클릭하세요."
+        },
+        "bitpay": {
+          "text": "암호화폐로 결제하려면 “BitPay로 계속” 버튼을 클릭하세요.",
+          "toYearly": "월간 요금제는 암호화폐로 결제할 수 없습니다. <1>계속 진행하면 연간 요금제로 자동 전환됩니다.</1>",
+          "remainder": "현재 구독은 {{date, date}}까지 결제되어 있습니다. 요금은 지금 청구되며, 현재 구독의 남은 기간은 새 만료일에 자동으로 더해집니다."
+        },
+        "continueTo": "<1></1>로 계속"
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "위협 인텔리전스 피드",
-            "description": "가장 평판이 좋은 위협 인텔리전스 피드의 조합을 사용하여 맬웨어를 배포하고 피싱 공격을 시작하며 명령 및 제어 서버를 호스팅하는 것으로 알려진 도메인을 차단합니다. 모두 실시간으로 업데이트됩니다.",
-            "enable": "$t(security.feeds.name)사용",
-            "covid": "COVID-19 피싱으로부터 보호합니다."
-        },
-        "ai": {
-            "name": "AI-Driven Threat Detection",
-            "description": "수백 개의 신호와 테라바이트에 이르는 학습 데이터, 실시간 선택 기능을 갖춘 DNS용 AI 엔진으로 수백만 개의 위협을 감지하고 차단합니다.",
-            "enable": "AI 위협 탐지 활성화"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google 세이프 브라우징",
-            "description": "안전하지 않은 웹 사이트를 찾기 위해 매일 수십억 개의 URL을 검사하는 기술인 Google 세이프 브라우징을 사용하여 멀웨어 및 피싱 도메인을 차단합니다. 일부 브라우저에 포함 된 버전과 달리 이것은 공용 IP 주소를 위협에 연결하지 않으며 차단 우회를 허용하지 않습니다.",
-            "enable": "활성화 $t(security.googleSafeBrowsing.name)"
-        },
-        "cryptojacking": {
-            "name": "크립토 재킹 보호",
-            "description": "암호 화폐를 채굴하기 위해 장치의 무단 사용을 방지합니다.",
-            "enable": "활성화 $t(security.cryptojacking.name)"
-        },
-        "dnsRebinding": {
-            "name": "DNS 리 바인딩 보호",
-            "description": "개인 IP 주소가 포함 된 DNS 응답을 자동으로 차단하여 공격자가 인터넷을 통해 로컬 장치를 제어하는 것을 방지합니다.",
-            "enable": "활성화 $t(security.dnsRebinding.name)"
-        },
-        "homograph": {
-            "name": "IDN Homograph 공격 보호",
-            "description": "국제화 도메인 이름 (IDN)의 도착과 함께 사용할 수있는 큰 문자 집합을 남용하여 다른 도메인을 가장하는 도메인을 차단합니다. 예를 들어 라틴 문자 \"e\"를 키릴 문자 \"е\"로 대체합니다.",
-            "enable": "활성화 $t(security.homograph.name)"
-        },
-        "typosquatting": {
-            "name": "타이포 스쿼팅 보호",
-            "description": "브라우저에 웹 사이트 주소를 잘못 입력하는 사용자를 대상으로하는 악의적 인 행위자가 등록한 도메인 (예 : google.com 대신 gooogle.com)을 차단합니다.",
-            "enable": "활성화 $t(security.typosquatting.name)"
-        },
-        "dga": {
-            "name": "도메인 생성 알고리즘 (DGA) 보호",
-            "description": "DGA (Domain Generation Algorithms)에 의해 생성 된 도메인을 명령 및 제어 서버와의 랑데부 지점으로 사용할 수있는 다양한 악성 코드 제품군에서 볼 수 있습니다.",
-            "enable": "DGA 보호 활성화"
-        },
-        "nrd": {
-            "name": "새로 등록 된 도메인 (NRD) 차단",
-            "description": "등록 된 지 30 일이 지나지 않은 도메인을 차단합니다. 이러한 도메인은 악의적 인 캠페인을 시작하기 위해 위협 행위자들이 선호하는 것으로 알려져 있습니다.",
-            "enable": "$t(security.nrd.name)"
-        },
-        "ddns": {
-            "name": "동적 DNS 호스트 이름 차단",
-            "description": "동적 DNS (또는 DDNS) 서비스를 사용하면 악의적인 행위자가 검증이나 신원 확인 없이 호스트 이름을 무료로 신속하게 설정할 수 있습니다. 합법적인 DDNS 호스트 이름은 일상적으로 거의 액세스되지 않지만, 악성 호스트 이름은 paypal‑login.duckdns.org와 같은 피싱 캠페인에 많이 사용됩니다.",
-            "disclaimer": "DDNS를 사용하는 경우 이 설정은 DDNS 서비스의 자체 웹사이트나 업데이트 API를 차단하지 않습니다.",
-            "enable": "동적 DNS 호스트 이름 차단"
-        },
-        "parked": {
-            "name": "파킹 된 도메인 차단",
-            "description": "파킹 된 도메인은 종종 광고가 가득하고 가치가없는 단일 페이지 웹 사이트입니다. 선점 도메인 수익 창출은 의심스러운 관행 및 악성 콘텐츠와 혼동 될 수 있습니다.",
-            "enable": "$t(security.parked.name)"
-        },
-        "tld": {
-            "name": "최상위 도메인 (TLD) 차단",
-            "description": "특정 TLD에 속한 모든 도메인 및 하위 도메인을 차단합니다.",
-            "add": "TLD 추가",
-            "sections": {
-                "spamhaus": "Spamhaus 가장 많이 학대받는 TLD",
-                "all": "모든 TLD"
-            }
-        },
-        "csam": {
-            "name": "아동 성적 학대 자료 차단",
-            "description": "캐나다 아동 보호 센터에서 운영하는 Project Arachnid의 도움으로 아동 성적 학대 자료를 호스팅하는 도메인을 차단하세요. 도메인이 차단되면 정보가 Project Arachnid로 다시 전송되지 않습니다.",
-            "enable": "$t(security.csam.name)"
-        }
-    },
-    "privacy": {
-        "blocklists": {
-            "name": "차단 목록",
-            "description": "실시간으로 업데이트되는 가장 인기있는 차단 목록을 사용하여 광고 및 추적기를 차단합니다.",
-            "add": "차단 목록 추가",
-            "entries": "{{count, number}} 항목",
-            "entries_plural": "{{count, number}} 항목",
-            "updated": "업데이트 됨 <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS 광고 및 추적기 차단 목록",
-                    "description": "모든 국가에서 광고 및 추적기를 차단하는 포괄적 인 차단 목록입니다. 이것은 권장되는 스타터 차단 목록입니다."
-                }
-            },
-            "search": {
-                "placeholder": "Search blocklists",
-                "noResults": "No blocklists found."
-            },
-            "sortBy": {
-                "popularity": "인기순",
-                "name": "이름순",
-                "entries": "항목순",
-                "updated": "최근 업데이트 순"
-            }
-        },
-        "native": {
-            "name": "기본 추적 보호",
-            "description": "장치에서의 활동을 추적하는 광범위한 스펙트럼 추적기 (종종 운영 체제 수준에서 작동)를 차단합니다. 여기에는 방문하는 모든 웹 사이트, 입력하는 모든 것 또는 항상 위치가 포함될 수 있습니다.",
-            "add": "더하다",
-            "systems": {
-                "xiaomi": {
-                    "name": "샤오 미",
-                    "devices": "전화 및 태블릿, 스마트 TV, 라우터"
-                },
-                "huawei": {
-                    "name": "화웨이",
-                    "devices": "휴대폰 및 태블릿"
-                },
-                "samsung": {
-                    "name": "삼성",
-                    "devices": "전화, 태블릿, 스마트 TV"
-                },
-                "alexa": {
-                    "name": "아마존 알렉사",
-                    "devices": "Alexa 지원 장치"
-                },
-                "windows": {
-                    "name": "윈도우",
-                    "devices": "모든 버전"
-                },
-                "apple": {
-                    "name": "사과",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "모든 Roku 기기"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "연사"
-                }
-            }
-        },
-        "disguised": {
-            "name": "위장 된 타사 추적기 차단",
-            "description": "ITP와 같은 최근 브라우저의 개인 정보 보호를 우회하기 위해 자사를 자사로 가장 한 타사 추적기를 자동으로 감지하고 차단합니다.",
-            "enable": "$t(privacy.disguised.name)"
-        },
-        "affiliate": {
-            "name": "제휴 및 추적 링크 허용",
-            "description": "거래 웹 사이트, 이메일 또는 검색 결과에서 공통적 인 제휴 및 추적 도메인을 허용합니다. 보통 수동으로 링크를 클릭 한 후에 만 호출됩니다.",
-            "relay": "귀하의 IP 주소는 귀하의 개인 정보를 보호하기 위해 해당 웹사이트에서 자동으로 숨겨집니다.",
-            "enable": "$t(privacy.affiliate.name)"
-        }
-    },
-    "parentalControl": {
-        "services": {
-            "name": "웹 사이트, 앱 및 게임",
-            "description": "특정 웹 사이트, 앱 및 게임에 대한 액세스를 제한합니다.",
-            "add": "웹 사이트, 앱 또는 게임 추가",
-            "services": {
-                "9gag": "9 개그",
-                "amazon": "아마존",
-                "bereal": "BeReal",
-                "blizzard": "눈보라",
-                "chatgpt": "채팅GPT",
-                "dailymotion": "Dailymotion",
-                "discord": "불일치",
-                "disneyplus": "디즈니 +",
-                "ebay": "이베이",
-                "facebook": "페이스 북",
-                "fortnite": "포트 나이트",
-                "google-chat": "Google 채팅",
-                "hbomax": "HBO 맥스",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "인스 타 그램",
-                "leagueoflegends": "리그 오브 레전드",
-                "mastodon": "Mastodon",
-                "messenger": "전령",
-                "minecraft": "마인 크래프트",
-                "netflix": "넷플릭스",
-                "pinterest": "핀터 레스트",
-                "playstation-network": "PlayStation™Network",
-                "primevideo": "Prime 비디오",
-                "reddit": "레딧",
-                "roblox": "로 블록 스",
-                "signal": "Signal",
-                "skype": "스카이프",
-                "snapchat": "Snapchat",
-                "spotify": "스포티 파이",
-                "steam": "증기",
-                "telegram": "전보",
-                "tiktok": "Tik의 톡",
-                "tinder": "부싯깃",
-                "tumblr": "텀블러",
-                "twitch": "경련",
-                "twitter": "트위터",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "유튜브",
-                "zoom": "줌"
-            }
-        },
-        "categories": {
-            "name": "카테고리",
-            "description": "특정 범주의 웹 사이트 및 앱에 대한 액세스를 제한합니다.",
-            "add": "카테고리 추가",
-            "categories": {
-                "dating": {
-                    "name": "데이트",
-                    "description": "모든 데이트 웹 사이트 및 앱을 차단합니다."
-                },
-                "gambling": {
-                    "name": "도박",
-                    "description": "도박 콘텐츠를 차단합니다."
-                },
-                "gaming": {
-                    "name": "온라인 게임",
-                    "description": "온라인 게임 웹 사이트, 온라인 게임 앱 및 네트워크(Xbox Live, PlayStation Network 등)를 차단합니다."
-                },
-                "piracy": {
-                    "name": "불법 복제",
-                    "description": "주로 저작권이있는 콘텐츠를 불법 배포하는 데 사용되는 P2P 웹 사이트, 프로토콜, 저작권 침해 스트리밍 웹 사이트 및 일반 비디오 호스팅 웹 사이트를 차단합니다."
-                },
-                "porn": {
-                    "name": "포르노",
-                    "description": "성인 및 포르노 콘텐츠를 차단합니다. 에스코트 사이트, pornhub.com 및 유사한 도메인이 포함됩니다."
-                },
-                "social-networks": {
-                    "name": "소셜 네트워크",
-                    "description": "모든 소셜 네트워크 사이트 및 앱 (Facebook, Instagram, TikTok, reddit 등)을 차단합니다. 메시징 앱을 차단하지 않습니다."
-                },
-                "video-streaming": {
-                    "name": "비디오 스트리밍",
-                    "description": "비디오 스트리밍 서비스(YouTube, Netflix, Disney+, 불법 스트리밍 사이트, 비디오 포르노 사이트 등) 및 동영상 기반 소셜 네트워크(TikTok 등)를 차단합니다. 네트워크에서 대역폭 사용량을 줄이는 데 도움이 될 수 있습니다."
-                }
-            }
-        },
-        "recreation": {
-            "name": "오락(놀이) 시간",
-            "description": "위의 웹 사이트, 앱, 게임 또는 카테고리가 차단되지 않는 특정 요일을 설정합니다. 예를 들어, 월요일과 화요일 오후 6시에서 8시 사이에 Facebook을 허용할 수 있습니다.",
-            "set": "오락(놀이) 시간 설정",
-            "howto": "오락(놀이) 시간을 활성화하려면 위 섹션의 <1></1> 버튼을 누르십시오."
-        },
-        "safesearch": {
-            "name": "안전 검색",
-            "description": "이미지 및 비디오를 포함한 모든 주요 검색 엔진에서 성인 콘텐츠를 필터링합니다. 이 기능을 지원하지 않는 검색 엔진에 대한 액세스도 차단됩니다.",
-            "enable": "시행 $t(parentalControl.safesearch.name)"
-        },
-        "youtubeRestricted": {
-            "name": "YouTube 제한 모드",
-            "description": "YouTube에서 성인용 동영상을 필터링하고 삽입 된 성인용 동영상이 다른 웹 사이트에서 시청되지 않도록 차단합니다. 모든 댓글도 숨겨집니다.",
-            "enable": "시행 $t(parentalControl.youtubeRestricted.name)"
-        },
-        "bypass": {
-            "name": "차단 우회 방법",
-            "description": "네트워크에서 NextDNS 필터링을 우회하는 데 도움이되는 방법의 사용을 방지하거나 방해합니다. 여기에는 VPN, 프록시, Tor 관련 소프트웨어 및 암호화 된 DNS 공급자가 포함됩니다.",
-            "enable": "$t(parentalControl.bypass.name)"
-        }
-    },
-    "xlist": {
-        "placeholder": "도메인 추가 ...",
-        "errors": {
-            "required": "도메인을 입력하세요.",
-            "ip": "IP 주소가 아닌 도메인을 입력하십시오.",
-            "invalid": "유효한 도메인을 입력하십시오.",
-            "tld": "전체 TLD를 차단하려는 것 같습니다. 보안 섹션에서 TLD 차단 기능을 사용하세요.",
-            "exists": "이 도메인은 이미 추가되었습니다."
-        },
-        "empty": "아직 도메인이 없습니다.",
-        "denylist": {
-            "info": "도메인을 거부하면 모든 하위 도메인이 자동으로 거부됩니다."
-        },
-        "allowlist": {
-            "info": "도메인을 허용하면 모든 하위 도메인이 자동으로 허용됩니다. 허용은 보안 기능을 포함하여 다른 모든 것보다 우선합니다."
-        }
-    },
-    "analytics": {
-        "counters": {
-            "all": "<0> {{count, number}} </0> <1> 쿼리 </1>",
-            "all_plural": "<0> {{count, number}} </0> <1> 쿼리 </1>",
-            "blocked": "<0> {{count, number}} </0> <1> 차단 된 쿼리 </1>",
-            "blocked_plural": "<0> {{count, number}} </0> <1> 차단 된 쿼리 </1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> 차단 된 쿼리 </1></1>"
-        },
-        "queries": {
-            "name": "쿼리",
-            "description": "시간 경과에 따른 쿼리의 진화.",
-            "queries": {
-                "all": "<0> {{count, number}} </0> <1> 쿼리 </1>",
-                "all_plural": "<0> {{count, number}} </0> <1> 쿼리 </1>",
-                "blocked": "<0> {{count, number}} </0> <1> 차단 된 쿼리 </1>",
-                "blocked_plural": "<0> {{count, number}} </0> <1> 차단 된 쿼리 </1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "해결 된 도메인",
-                "description": "설정에 의해 차단되지 않았거나 수동으로 허용 되었기 때문에 해결 된 도메인입니다."
-            },
-            "blocked": {
-                "name": "차단 된 도메인",
-                "description": "보안, 개인 정보 보호 및 / 또는 자녀 보호 설정에 의해 차단되었거나 수동으로 거부 되었기 때문에 도메인이 차단되었습니다."
-            },
-            "root": {
-                "name": "루트 도메인",
-                "description": "루트 도메인 및 모든 하위 도메인에 대해 작성된 모든 쿼리를 집계합니다."
-            },
-            "empty": "아직 도메인이 없습니다."
-        },
-        "reasons": {
-            "name": "차단 된 이유",
-            "description": "대부분의 쿼리를 차단 한 보안, 개인 정보 및 / 또는 자녀 보호 설정.",
-            "empty": "아직 차단 된 도메인이 없습니다."
-        },
-        "devices": {
-            "name": "장치",
-            "description": "쿼리를 만드는 장치.",
-            "empty": "아직 기기가 없습니다.",
-            "unidentified": {
-                "name": "알 수없는 장치"
-            }
-        },
-        "ips": {
-            "name": "IP",
-            "description": "쿼리를 만드는 IP 주소.",
-            "empty": "아직 IP가 없습니다."
-        },
-        "gafam": {
-            "name": "GAFAM 지배력",
-            "description": "\"GAFAM\"(구글, 아마존, 페이스 북, 애플, 마이크로 소프트)은 많은 인기 서비스를 소유 한 5 대 인터넷 기업으로, 페이스 북용 WhatsApp 및 Instagram과 같은 다른 이름으로 운영됩니다.",
-            "queries": "{{count, number}} 쿼리",
-            "queries_plural": "{{count, number}} 쿼리",
-            "companies": {
-                "google": {
-                    "name": "구글"
-                },
-                "amazon": {
-                    "name": "아마존"
-                },
-                "facebook": {
-                    "name": "페이스 북"
-                },
-                "apple": {
-                    "name": "사과"
-                },
-                "microsoft": {
-                    "name": "마이크로 소프트"
-                },
-                "others": {
-                    "name": "기타"
-                }
-            }
-        },
-        "encrypted": {
-            "name": "암호화 된 DNS",
-            "description": "암호화 된 전송 (DNS-over-HTTPS, DNS-over-TLS 또는 공식 NextDNS 앱)을 사용하여 생성 된 쿼리의 비율입니다.",
-            "empty": "아직 쿼리가 없습니다."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "DNSSEC로 검증 된 쿼리의 비율입니다.",
-            "empty": "아직 쿼리가 없습니다."
-        },
-        "destination": {
-            "name": "교통 목적지 국가",
-            "description": "인터넷 트래픽이가는 국가.",
-            "empty": "아직 쿼리가 없습니다.",
-            "queries": "{{count, number}} 쿼리",
-            "queries_plural": "{{count, number}} 쿼리",
-            "topDomains": "상위 도메인"
-        }
-    },
-    "logs": {
-        "blockedOnly": "차단 된 쿼리 만",
-        "raw": "가공되지 않은 DNS 로그",
-        "empty": "아직 로그가 없습니다.",
-        "log": {
-            "actionBlock": "차단",
-            "actionAllow": "허용",
-            "dnssec": "DNSSEC로 검증되었습니다.",
-            "clients": {
-                "nextdns-ios": "iOS 용 NextDNS",
-                "nextdns-android": "Android 용 NextDNS",
-                "nextdns-macos": "macOS 용 NextDNS",
-                "nextdns-windows": "Windows 용 NextDNS",
-                "nextdns-cli": "NextDNS CLI 클라이언트",
-                "nextdns-chromeos": "Chrome OS 용 NextDNS",
-                "firefox": "Firefox",
-                "google-chrome": "구글 크롬",
-                "dnscrypt": "DNSCrypt",
-                "intra": "인트라",
-                "surge": "큰 파도",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Apple 구성 프로파일"
-            },
-            "blockedBy": "<1>{{lists}}의해 차단됨 </1> .",
-            "allowedBy": "<1>{{lists}}허용 </1> .",
-            "manual": {
-                "deny": "수동으로 거부되었습니다.",
-                "allow": "수동으로 허용됩니다."
-            },
-            "insights": {
-                "name": "트래커 인사이트",
-                "show": "보기 $t(logs.log.insights.name)",
-                "hide": "숨기기 $t(logs.log.insights.name)",
-                "categories": {
-                    "advertising": {
-                        "description": "데이터 수집, 행동 분석 또는 리 타게팅과 같은 광고 또는 광고 관련 서비스를 제공합니다."
-                    },
-                    "comments": {
-                        "description": "기사 및 제품 리뷰에 대한 댓글 섹션을 활성화합니다."
-                    },
-                    "customer_interaction": {
-                        "description": "채팅, 이메일 메시징, 고객 지원 및 기타 상호 작용 도구가 포함됩니다."
-                    },
-                    "essential": {
-                        "description": "웹 사이트의 기능에 중요한 태그 관리자, 개인 정보 보호 정책 및 기술이 포함됩니다."
-                    },
-                    "adult_advertsing": {
-                        "description": "일반적으로 성인 콘텐츠 사이트에 나타나는 광고를 제공합니다."
-                    },
-                    "site_analytics": {
-                        "description": "사이트 사용 및 성능과 관련된 데이터를 수집하고 분석합니다."
-                    },
-                    "social_media": {
-                        "description": "소셜 미디어 사이트와 관련된 기능을 통합합니다."
-                    },
-                    "audio_video_player": {
-                        "description": "웹 사이트에서 비디오 및 오디오 콘텐츠를 게시, 배포 및 최적화 할 수 있습니다."
-                    },
-                    "cdn": {
-                        "description": "다양한 사이트 유틸리티 및 일반적으로 다양한 고객을위한 리소스를 제공하는 콘텐츠 전송 네트워크입니다."
-                    },
-                    "misc": {
-                        "description": "이 추적기는 다른 카테고리에 맞지 않거나 아직 라벨이 지정되지 않았습니다."
-                    },
-                    "pornvertising": {
-                        "description": "일반적으로 성인 콘텐츠 사이트에 나타나는 광고를 제공합니다."
-                    },
-                    "hosting": {
-                        "description": "콘텐츠 제공 업체 또는 사이트 소유자가 사용하는 서비스입니다."
-                    },
-                    "extensions": {
-                        "description": "브라우저 트래픽을 가로 채고 분석 할 수있는 사용자 장치의 소프트웨어 (중간자)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "위험하게 만연",
-                        "extremely": "매우 만연",
-                        "very": "매우 만연",
-                        "commonly": "일반적으로 만연",
-                        "relatively": "상대적으로 만연"
-                    },
-                    "summary": "{{prevalence}} <3> (웹 트래픽의 {{percent, percentage}} 을 추적) </3>"
-                },
-                "ownedBy": "<0> 소유 </0> <1>{{company}}</1>",
-                "source": "트래커 인사이트"
-            }
-        }
-    },
-    "deviceSelector": {
-        "all": "모든 장치",
-        "howto": "설정 페이지에서 장치를 식별하는 방법을 알아보십시오."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "지난 30 분",
-            "6h": "지난 6 시간",
-            "24h": "지난 24 시간",
-            "7d": "지난 7 일",
-            "30d": "지난 30 일",
-            "3M": "지난 3 개월"
-        }
-    },
-    "settings": {
+    "business": {
+      "name": "사업자 정보",
+      "description": "세금 처리를 위해 회사명, 주소, VAT 번호(또는 이에 상응하는 세금 식별 번호)가 필요합니다. 법률상 요구되는 정보이며 모든 청구서에 표시됩니다.",
+      "button": {
+        "add": "회사 정보 추가",
+        "update": "업데이트"
+      },
+      "form": {
         "name": {
-            "name": "이름",
-            "description": "이 구성의 이름을 선택하십시오."
+          "label": "이름",
+          "placeholder": "(주)ACME",
+          "errors": {
+            "required": "업체명을 입력하세요."
+          }
         },
-        "logs": {
-            "name": "로그",
-            "description": "로그 설정을 미세 조정하십시오.",
-            "enable": "활성화 $t(settings.logs.name)",
-            "privacy": {
-                "name": "개인 정보 조정",
-                "ip": "클라이언트 IP 기록",
-                "domains": "로그 도메인"
-            },
-            "retention": {
-                "name": "보유",
-                "options": {
-                    "1h": "1시간",
-                    "6h": "6시간",
-                    "1d": "1일",
-                    "1w": "1주",
-                    "1m": "1개월",
-                    "3m": "3개월",
-                    "6m": "6개월",
-                    "1y": "1년",
-                    "2y": "2년"
-                }
-            },
-            "location": {
-                "name": "보관 장소",
-                "locations": {
-                    "us": {
-                        "name": "미국",
-                        "description": "로그는 미국 내에서 저장됩니다. 이것이 기본값입니다."
-                    },
-                    "eu": {
-                        "name": "유럽 연합",
-                        "description": "로그는 유럽 연합 회원국 내에 저장됩니다."
-                    },
-                    "gb": {
-                        "name": "United Kingdom",
-                        "description": "Logs will be stored in London, United Kingdom."
-                    },
-                    "ch": {
-                        "name": "스위스",
-                        "description": "로그는 강력한 개인 정보 보호법으로 알려진 관할권 인 스위스 취리히에 저장됩니다."
-                    }
-                },
-                "confirm": {
-                    "title": "저장 위치 변경",
-                    "text": "로그의 저장 위치를 변경하면이 구성에 대한 모든 과거 로그 및 분석이 삭제됩니다."
-                }
-            },
-            "download": {
-                "button": "다운로드 내역"
-            },
-            "clear": {
-                "button": "로그 지우기",
-                "confirm": {
-                    "text": "이 구성에 대한 모든 로그를 지우시겠습니까? 이 작업은 취소 할 수 없습니다.",
-                    "submit": "명확한"
-                }
-            }
+        "address": {
+          "label": "주소",
+          "placeholder": "서울특별시 중구 세종대로 110\n04524\n대한민국",
+          "errors": {
+            "required": "업체 주소를 입력하세요."
+          }
+        },
+        "vatNumber": {
+          "label": "VAT 번호(또는 이에 상응하는 번호)"
+        }
+      }
+    },
+    "invoices": {
+      "name": "청구서",
+      "description": "계정의 결제 내역과 모든 청구서입니다.",
+      "pending": "{{amount, price}} (보류 중)",
+      "show-more": "더 보기",
+      "show-less": "간략히 보기",
+      "invoice": {
+        "title": "청구서 #{{code}}",
+        "to": "받는 사람: <1>{{email}}</1>",
+        "vatNumber": "VAT 번호(또는 이에 상응하는 번호): {{number}}",
+        "columns": {
+          "plan": "요금제",
+          "period": "기간",
+          "amount": "금액"
+        },
+        "vat": "VAT ({{rate, percentage}})",
+        "total": "합계",
+        "footer": {
+          "reverseCharged": "VAT(또는 이에 상응하는 세금)에 대리납부가 적용됩니다.",
+          "currency": "표시된 모든 금액은 {{code}} 기준입니다."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "이메일",
+      "description": "계정 로그인과 중요한 알림 수신에 사용하는 이메일 주소를 변경합니다.",
+      "button": "이메일 변경"
+    },
+    "changePassword": {
+      "name": "비밀번호",
+      "description": "계정에 로그인하고 민감한 작업을 확인하는 데 사용하는 비밀번호를 변경합니다.",
+      "button": "비밀번호 변경"
+    },
+    "2fa": {
+      "name": "2단계 인증(2FA)",
+      "description": "2단계 인증(2FA)은 계정에 로그인할 때 시간 기반 6자리 코드를 추가로 요구하는 보안 강화 기능입니다.",
+      "enabled": "계정에 2단계 인증이 활성화되어 있습니다.",
+      "enable": {
+        "button": "2단계 인증 활성화",
+        "secret": "2단계 인증 비밀 키",
+        "modal": {
+          "howto": "<1>Google Authenticator</1> 같은 인증 앱이나 2단계 인증을 지원하는 비밀번호 관리자를 사용하세요. QR 코드를 스캔하거나, QR 코드를 눌러 <3>{{otpauth}}</3> 링크를 열거나, 비밀 키를 직접 복사하여 붙여넣을 수 있습니다."
+        }
+      },
+      "recovery": {
+        "button": "복구 코드",
+        "modal": {
+          "howto": "기기에 접근할 수 없어 2단계 인증 코드를 받을 수 없을 때 이 복구 코드로 계정에 로그인할 수 있습니다. 각 코드는 한 번만 사용할 수 있습니다.",
+          "download": "다운로드",
+          "regen": "재생성"
+        }
+      },
+      "disable": {
+        "button": "2단계 인증 비활성화"
+      }
+    },
+    "api": {
+      "description": "프로필을 프로그래밍 방식으로 만들고 관리하세요. <1>{{link}}</1>에서 문서를 확인하세요.",
+      "copy": "API 키 복사",
+      "remove": "API 키 제거",
+      "create": {
+        "button": "API 키 생성"
+      }
+    },
+    "delete": {
+      "button": "계정 삭제",
+      "warning": "계정과 모든 프로필이 영구적으로 삭제됩니다.",
+      "confirm": {
+        "text": "계정을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "만료됨",
+          "text": "임시 계정이 만료되었습니다. 지금 가입하여 설정을 저장하고 NextDNS를 계속 사용하세요. 무료입니다."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "새로 만들기",
+    "form": {
+      "title": "새 프로필",
+      "name": {
+        "label": "이름",
+        "placeholder": "집, 아이들, 사무실, ...",
+        "errors": {
+          "required": "이름을 입력하세요.",
+          "taken": "이미 같은 이름의 프로필이 있습니다."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "모두 정상입니다!",
+        "secondary": "이 기기는 이 프로필로 NextDNS를 사용하고 있습니다."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "이 기기는 프로필 없이 NextDNS를 사용하고 있습니다.",
+          "secondary": {
+            "clients": "앱 설정에 아래 표시된 프로필 ID를 입력했는지 확인하세요.",
+            "firefox": "Firefox에서 아래 표시된 DNS-over-HTTPS 엔드포인트를 설정했는지 확인하세요.",
+            "doh": "아래 표시된 DNS-over-HTTPS 엔드포인트를 사용하고 있는지 확인하세요.",
+            "dot": "아래 표시된 DNS-over-TLS 엔드포인트를 사용하고 있는지 확인하세요.",
+            "ipv6": "아래 표시된 IPv6 주소를 사용하는지 확인하세요.",
+            "servers": "아래 “연결된 IP” 섹션에 표시된 DNS 서버를 사용하고 있는지 확인하세요. DNS 서버는 프로필마다 다릅니다.",
+            "link": "아래 “연결된 IP” 섹션에서 IP 주소를 연결했는지 확인하세요."
+          }
+        },
+        "withConfiguration": {
+          "primary": "이 기기는 다른 프로필로 NextDNS를 사용하고 있습니다.",
+          "secondary": {
+            "sameAccount": "이 기기는 현재 “{{name}}”을(를) 사용하고 있습니다.",
+            "otherAccount": "이 페이지에 나열된 엔드포인트 중 하나를 사용하고 있는지 확인하세요."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "이 기기는 NextDNS를 사용하고 있지 않습니다.",
+        "secondary": "이 기기는 현재 “{{resolver}}”을(를) DNS 리졸버로 사용하고 있습니다."
+      },
+      "error": {
+        "primary": "현재 상태를 확인하는 동안 오류가 발생했습니다.",
+        "secondary": "페이지를 새로고침한 후에도 이 문제가 계속되면 알려 주세요."
+      },
+      "apr": {
+        "ok": {
+          "primary": "이 기기는 iCloud 비공개 릴레이와 함께 NextDNS를 사용하고 있습니다.",
+          "secondary": "세이프서치, YouTube 제한 모드, 재작성 같은 기능은 iCloud 비공개 릴레이와 호환되지 않습니다."
         },
         "blockpage": {
-            "name": "페이지 차단",
-            "description": "도메인이 차단 될 때 차단 페이지를 표시합니다. 이로 인해 페이지로드 시간이 약간 늘어날 수 있으며 경우에 따라 HTTPS 경고가 나타날 수 있습니다. 비활성화되면 차단 된 쿼리는 지정되지 않은 주소 (0.0.0.0 또는 : :)로 응답됩니다.",
-            "enable": "활성화 $t(settings.blockpage.name)",
-            "ca": {
-                "name": "NextDNS 루트 CA",
-                "description": "<1>{{link}}루트 CA를 설치하고 신뢰하여 차단 페이지를로드 할 때 HTTPS 경고를 제거하십시오. </1> . 이 작업을 수행하는 방법에 대한 지침을 <3> 여기에서 읽으십시오. </3> ."
-            }
-        },
-        "performance": {
-            "name": "공연",
-            "description": "브라우징 속도를 높이십시오.",
-            "ecs": {
-                "name": "익명화 된 EDNS 클라이언트 서브넷",
-                "description": "IP 주소를 노출하지 않고도 콘텐츠 전송 네트워크에서 데이터 전송 속도를 높일 수 있습니다.",
-                "enable": "활성화 $t(settings.performance.ecs.name)"
-            },
-            "cache": {
-                "name": "캐시 부스트",
-                "description": "최소 TTL (Time to Live)을 적용하여 DNS 쿼리를 최소화합니다.",
-                "enable": "활성화 $t(settings.performance.cache.name)"
-            },
-            "flatten": {
-                "name": "CNAME 병합",
-                "description": "CNAME 추적 해석기가 불필요한 쿼리를 작성하지 못하도록 방지하고 중간 도메인으로 로그를 오염시킵니다.",
-                "enable": "활성화 $t(settings.performance.flatten.name)"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3는 분산화되고 검열에 대응할 수 있는 온라인 생태계를 뜻하며, 블록체인 기반의 도메인 레지스트리(예: ENS), 분산 데이터 저장 및 제공 네트워크(예: IPFS)와 같은 혁신적인 기술로 구성됩니다. 이 옵션을 활성화하면 Web3를 사용하기 위해 다른 소프트웨어를 설치할 필요 없이 직접 경험할 수 있도록 필터링되지 않은 게이트웨이로 동작합니다.",
-            "tips": "아직은 많은 브라우저들이 기존 방식의 TLD만을 지원하기 때문에, Web3 도메인에 직접 접속할 때에는 도메인 뒤에 슬래시 (\"<1>/</1>\")를 붙혀야 합니다. 예를 들어, \"<5>vitalik.eth</5>\" 대신 \"<3>vitalik.eth/</3>\"를 입력해야 합니다.",
-            "enable": "Web3 지원 활성화"
-        },
-        "rewrites": {
-            "name": "재 작성",
-            "description": "도메인에 대한 DNS 응답을 설정하거나 재정의합니다. 재 작성은 하위 도메인에도 적용되며 로컬 IP 주소가 답변으로 지원됩니다.",
-            "new": "새로운 재 작성",
-            "form": {
-                "domain": {
-                    "label": "도메인",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "도메인을 입력하세요.",
-                        "ip": "IP 주소가 아닌 도메인을 입력하십시오.",
-                        "invalid": "유효한 도메인을 입력하십시오.",
-                        "taken": "해당 도메인에 대한 재 작성이 이미 있습니다."
-                    }
-                },
-                "answer": {
-                    "label": "대답",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "답을 입력하세요.",
-                        "invalid": "응답은 유효한 IP 주소 또는 도메인이어야합니다."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "접근",
-            "description": "이 프로필에 대한 편집 또는 보기 전용 액세스 권한을 다른 사람에게 제공합니다.",
-            "roles": {
-                "editor": "Editor",
-                "viewer": "보기"
-            },
-            "pending": "초대장 보냄",
-            "form": {
-                "email": {
-                    "label": "이메일",
-                    "errors": {
-                        "required": "이메일을 입력하세요.",
-                        "invalid": "유효한 이메일 주소를 입력하세요.",
-                        "duplicate": "이미 초대한 이메일입니다."
-                    }
-                },
-                "role": {
-                    "label": "역할"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "<1>{{name}}</1> 복제",
-            "description": "이 프로필의 모든 설정을 새 프로필에 복사합니다.",
-            "form": {
-                "name": {
-                    "label": "이름",
-                    "placeholder": "집, 어린이, 사무실, ...",
-                    "errors": {
-                        "required": "이름을 입력하세요.",
-                        "taken": "해당 이름의 프로필이 이미 있습니다."
-                    }
-                },
-                "button": "복제"
-            }
-        },
-        "delete": {
-            "button": "<1>{{name}}삭제 </1>",
-            "warning": "이렇게하면이 구성 및 이와 관련된 모든 로그가 영구적으로 삭제됩니다.",
-            "confirm": {
-                "text": "<1>{{name}}를) 삭제 하시겠습니까? </1> ? 이 작업은 취소 할 수 없습니다."
-            }
-        },
-        "leave": {
-            "button": "<1>{{name}}</1> 떠나기",
-            "warning": "이 프로필에 액세스할 수 없게 됩니다.",
-            "confirm": {
-                "text": "정말로 <1>{{name}}</1>을(를) 떠나시겠습니까? 이 작업은 취소할 수 없습니다."
-            }
+          "primary": "이 기기는 iCloud 비공개 릴레이와 함께 NextDNS를 사용하고 있습니다.",
+          "secondary": "iCloud 비공개 릴레이를 사용하는 동안 차단 페이지 설정을 활성화하면 차단 기능에 문제가 생깁니다."
         }
+      }
+    },
+    "endpoints": {
+      "name": "엔드포인트",
+      "description": "아래 엔드포인트 중 하나를 사용하여 이 프로필로 NextDNS를 설정하세요.",
+      "help": "사용 방법이 궁금하다면 <1>설정 가이드</1>를 따르세요."
+    },
+    "linkedIp": {
+      "name": "연결된 IP",
+      "description": "NextDNS 앱, DNS-over-TLS, DNS-over-HTTPS 또는 IPv6를 사용하여 NextDNS를 설정할 수 없는 경우 아래 DNS 서버를 사용하고 IP를 연결하세요. 이 방법은 주로 홈 네트워크용이며 모바일에서는 권장하지 않습니다.",
+      "servers": {
+        "name": "DNS 서버"
+      },
+      "ip": {
+        "name": "연결된 IP",
+        "link": "IP 연결"
+      },
+      "showAdvanced": "고급 옵션 표시",
+      "ddns": {
+        "explanation": "동적 DNS(DDNS)를 사용하여 연결된 IP를 자동으로 업데이트할 수 있습니다.",
+        "set": "DDNS 구성",
+        "status": "현재 <1>{{hostname}}</1>을(를) DDNS 호스트 이름으로 사용하고 있으며, IP 주소는 매분 자동으로 업데이트됩니다.",
+        "unset": "제거",
+        "form": {
+          "hostname": {
+            "label": "DDNS 호스트 이름",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "호스트 이름을 입력하세요.",
+              "invalid": "유효한 호스트 이름을 입력하세요.",
+              "ip": "IP 주소가 아닌 호스트 이름을 입력하세요.",
+              "error": "이 호스트 이름의 IP 주소를 가져오는 동안 오류가 발생했습니다.",
+              "empty": "이 호스트 이름은 IP 주소를 반환하지 않습니다.",
+              "different": "보안상의 이유로 동적 DNS를 추가할 때는 DDNS 호스트 이름이 반환하는 IP 주소가 현재 IP 주소와 같아야 합니다."
+            }
+          }
+        }
+      },
+      "programmatically": "다음을 호출하여 연결된 IP를 프로그래밍 방식으로 업데이트할 수도 있습니다."
+    },
+    "guide": {
+      "name": "설정 가이드",
+      "description": "아래 안내에 따라 기기, 브라우저 또는 라우터에서 NextDNS를 설정하세요.",
+      "or": "또는",
+      "ipv4": {
+        "title": "IPv4 (연결된 IP 사용)"
+      },
+      "ipv6": {
+        "supported": "네트워크가 IPv6를 지원합니다",
+        "notSupported": "네트워크가 IPv6를 지원하지 않습니다"
+      },
+      "tags": {
+        "recommended": "추천",
+        "advanced": "고급"
+      },
+      "use": "<1>{{file}}</1>에 다음 내용을 입력하세요.",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "비공개 DNS",
+              "requirements": "Android 9 이상",
+              "steps": {
+                "1": "1. 설정 → 네트워크 및 인터넷 → 비공개 DNS로 이동하세요(일부 버전에서는 고급 아래에 있습니다).",
+                "2": "2. 비공개 DNS 제공업체 호스트 이름 옵션을 선택하세요.",
+                "3": "3. <1>{{endpoint}}</1>를 입력하고 저장을 누르세요."
+              }
+            }
+          }
+        },
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "구성 프로파일",
+              "requirements": "iOS 14 이상",
+              "step": "<1>{{link}}</1>에서 Apple 구성 프로파일 생성기를 사용하세요."
+            },
+            "app": {
+              "title": "iOS용 NextDNS",
+              "qrAlt": "iPhone 또는 iPad에 NextDNS를 설치하고 설정하기 위한 앱 클립 코드",
+              "qrText": "이 코드를 스캔하여 iPhone 또는 iPad에 NextDNS를 설치하고 설정하세요",
+              "qrTextIos": "다른 휴대폰으로 이 코드를 스캔하거나 <1>여기를 탭하여 이 기기에서 NextDNS를 설정하세요</1>."
+            }
+          }
+        },
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS over HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "<1>설정</1> 앱을 여세요.",
+                "<1>네트워크 및 인터넷</1>으로 이동하세요.",
+                "<1>Wi-Fi</1>(또는 <3>이더넷</3>)을 클릭하세요.",
+                "<1>하드웨어 속성</1>을 클릭하세요. <3>이더넷</3>을 선택했다면 이 단계를 건너뛰세요.",
+                "<3>DNS 서버 할당</3> 옆의 <1>편집</1> 버튼을 클릭하세요.",
+                "<1>수동</1>을 선택하세요.",
+                "<1>IPv{{version}}</1>을(를) 활성화하세요.",
+                "<3>기본 설정 DNS</3>에 <1>{{ip}}</1>을(를) 입력한 다음 <5>켬(수동 템플릿)</5>을 선택하고 <7>{{endpoint}}</7>을(를) 입력하세요.",
+                "<3>대체 DNS</3>에 <1>{{ip}}</1>을(를) 입력한 다음 <5>켬(수동 템플릿)</5>을 선택하고 <7>{{endpoint}}</7>을(를) 입력하세요.",
+                "<1>저장</1>을 클릭하세요."
+              ]
+            },
+            "app": {
+              "title": "Windows용 NextDNS",
+              "steps": {
+                "1": "1. <1>여기</1>에서 설치 프로그램을 다운로드하세요.",
+                "2": "2. 설치한 후 시스템 트레이의 NextDNS 아이콘을 마우스 오른쪽 버튼으로 클릭하여 “Settings...”를 여세요. Configuration ID에 <1>{{id}}</1> 값을 입력하세요.",
+                "3": "3. 시스템 트레이에서 NextDNS 아이콘을 마우스 오른쪽 버튼으로 클릭한 다음 Enable을 클릭하세요."
+              }
+            },
+            "ip": {
+              "steps": {
+                "1": "1. 시작을 열고 제어판을 검색한 다음 여세요.",
+                "2": "2. 네트워크 및 인터넷을 클릭한 다음 네트워크 및 공유 센터를 클릭하세요.",
+                "3": "3. 어댑터 설정 변경을 클릭하세요.",
+                "4": "4. 연결된 Wi-Fi 네트워크를 마우스 오른쪽 버튼으로 클릭한 다음 속성을 클릭하세요.",
+                "5": "5. 인터넷 프로토콜 버전 {{version}} 항목을 선택하세요.",
+                "6": "6. 속성을 클릭하세요.",
+                "7": "7. 다음 DNS 서버 주소 사용을 선택하세요.",
+                "8": "8. 현재 주소가 있다면 <1>{{dns1}}</1> 및 <3>{{dns2}}</3>(으)로 바꾸세요.",
+                "9": "9. 확인을 클릭한 다음 닫기를 클릭하세요. 브라우저를 다시 시작해야 할 수 있습니다."
+              }
+            },
+            "yoga": {
+              "steps": {
+                "1": "1. <1>{{link}}</1>에서 YogaDNS를 설치하세요.",
+                "2": "2. <1>{{link}}</1>의 NextDNS 안내를 따르고 Configuration ID에 <3>{{id}}</3>을(를) 입력하세요."
+              }
+            }
+          }
+        },
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "macOS용 NextDNS",
+              "steps": {
+                "1": "1. 공식 앱을 <1>다운로드</1>하여 설치하세요.",
+                "2": "2. 화면의 안내를 따르세요.",
+                "3": "3. 프로필 ID를 입력하라는 안내가 나오면 <1>{{id}}</1>을(를) 입력하세요."
+              }
+            },
+            "profile": {
+              "requirements": "macOS Big Sur 이상"
+            },
+            "ip": {
+              "steps": {
+                "1": "1. 시스템 설정(이전 macOS 버전에서는 시스템 환경설정)을 열고 네트워크를 클릭하세요.",
+                "2": "2. 사용 중인 네트워크 연결을 선택하고 세부사항(이전 macOS 버전에서는 고급)을 클릭하세요.",
+                "3": "3. DNS 섹션으로 이동하세요.",
+                "4": "4. DNS 서버 목록에서 기존 주소를 모두 삭제한 다음 <1>{{dns1}}</1> 및 <3>{{dns2}}</3>을(를) 추가하세요.",
+                "5": "5. 확인을 클릭하고, 적용 버튼이 표시되면 클릭하세요."
+              }
+            },
+            "cli": {
+              "title": "NextDNS 명령줄 클라이언트",
+              "steps": {
+                "1": "1. 다음 명령을 실행하세요: <1>{{command}}</1>",
+                "2": "2. 화면의 안내를 따르세요."
+              },
+              "manual": "수동 설치 방법은 <1>{{link}}</1>의 오픈 소스 저장소를 참고하세요."
+            }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS 명령줄 클라이언트",
+              "steps": {
+                "1": "1. 다음 명령을 실행하세요: <1>{{command}}</1>",
+                "2": "2. 화면의 안내를 따르세요."
+              },
+              "manual": "수동 설치 방법은 <1>{{link}}</1>의 오픈 소스 저장소를 참고하세요."
+            },
+            "ip": {
+              "step": "DNS 서버를 <1>{{dns1}}</1> 및 <3>{{dns2}}</3>(으)로 변경하세요."
+            },
+            "stubby": {
+              "warning": "Stubby가 <1>OpenSSL 1.1.1 이상</1>과 링크되어 있는지 확인하세요. 이전 버전은 NextDNS와 호환되지 않습니다."
+            },
+            "unbound": {
+              "warning": "재귀 리졸버인 Unbound는 CNAME 레코드를 따라갑니다. NextDNS처럼 차단 기능이 있는 DNS 리졸버와 함께 사용하면 <1>예기치 않은 동작</1>이 발생할 수 있습니다. <3>{{link}}</3>를 참고하세요."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "ChromeOS",
+          "guides": {
+            "secure-dns": {
+              "title": "보안 DNS",
+              "steps": [
+                "<1>설정</1> 앱을 여세요.",
+                "<1>개인 정보 보호 및 보안</1>으로 이동하세요.",
+                "<1>보안 연결을 사용하여 사이트 조회하기</1>를 활성화하세요.",
+                "<1>맞춤 DNS 서비스 제공업체 추가</1>를 선택하고 <3>{{endpoint}}</3>을(를) 입력하세요."
+              ]
+            },
+            "ip": {
+              "step": "DNS 서버를 <1>{{dns1}}</1> 및 <3>{{dns2}}</3>(으)로 변경하세요."
+            }
+          }
+        },
+        "browsers": {
+          "name": "브라우저",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. 설정으로 이동하세요.",
+                "2": "2. 개인 정보 보호 및 보안 섹션에서 보안을 클릭하세요.",
+                "3": "3. 고급 섹션에서 보안 DNS 사용을 활성화하세요.",
+                "4": "4. “맞춤 DNS 서비스 제공업체 추가”를 선택하고 <1>{{endpoint}}</1>을(를) 입력하세요."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Windows, macOS 및 Linux 전용",
+              "steps": {
+                "1": "1. 설정(일부 버전에서는 환경 설정)을 여세요.",
+                "2": "2. 개인 정보 및 보안을 클릭하세요.",
+                "3": "3. DNS over HTTPS 항목까지 아래로 스크롤하고 고급 설정이 표시되면 여세요.",
+                "4": "4. 사용자 지정(일부 버전에서는 향상된 보호 또는 최대 보호)을 선택하세요.",
+                "5": "5. 공급자 메뉴에서 사용자 지정을 선택하세요.",
+                "6": "6. <1>{{endpoint}}</1>을(를) 입력하세요."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. 설정을 여세요.",
+                "2": "2. 개인 정보, 검색 및 서비스 섹션으로 이동하세요.",
+                "3": "3. 보안 항목에서 “보안 DNS 사용” 옵션을 활성화하세요.",
+                "4": "4. “서비스 공급자 선택”을 선택하고 <1>{{endpoint}}</1>을(를) 입력하세요."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. 설정을 여세요.",
+                "2": "2. 개인 정보 보호 및 보안 섹션에서 보안으로 이동하세요.",
+                "3": "3. 고급 섹션에서 보안 DNS 사용을 활성화하세요.",
+                "4": "4. “맞춤 DNS 서비스 제공업체 추가”를 선택하고 <1>{{endpoint}}</1>을(를) 입력하세요."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "라우터",
+          "guides": {
+            "cli": {
+              "title": "라우터용 NextDNS",
+              "requirements": "실행 파일을 실행할 수 있는 라우터에서만 작동합니다.",
+              "step": "설치 방법은 <1>{{link}}</1>의 오픈 소스 저장소를 참고하세요."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "일부 라우터는 위의 IPv6 표기법을 지원하지 않을 수 있습니다. 이 경우 <1>{{dns1}}</1> 및 <3>{{dns2}}</3>을(를) 사용하세요."
+              },
+              "steps": {
+                "1": "1. 라우터 설정을 여세요. 일반적으로 브라우저에서 URL(예: http://192.168.0.1/ 또는 http://192.168.1.1/)을 통해 접속할 수 있습니다.",
+                "2": "2. 인터페이스 내에서 DNS 설정을 찾으세요.",
+                "3": "3. 기존 주소를 모두 삭제한 다음 <1>{{dns1}}</1> 및 <3>{{dns2}}</3>을(를) 추가하세요.",
+                "4": "4. 저장(또는 이에 해당하는 버튼)을 클릭하세요."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. 서비스 → DNS 해석기로 이동하세요. 일반 설정 탭에서 아래로 스크롤한 다음, 필요한 경우 “사용자 지정 옵션 표시”를 클릭하여 사용자 지정 옵션 상자를 표시하세요.",
+                "2": "2. 다음 행을 입력하세요."
+              }
+            },
+            "mikrotik": {
+              "run": "다음을 실행하세요."
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "설정 방법은 <2>{{link}}</2>의 Tailscale 문서를 참고하세요."
+            }
+          }
+        }
+      }
+    },
+    "identify": {
+      "name": "기기 식별",
+      "description": "아래 안내에 따라 통계와 로그에서 기기를 식별하세요.",
+      "apps": {
+        "name": "앱",
+        "instructions": "앱 설정에서 “Send Device Name”(Windows에서는 “Report Device Name”)을 활성화하세요."
+      },
+      "dot": {
+        "instructions": "제공된 도메인 앞에 이름을 붙이세요. 이름에는 <1>a-z</1>, <3>A-Z</3>, <5>0-9</5>, <7>-</7>만 사용할 수 있습니다. 공백 대신 <9>--</9>를 사용하세요.",
+        "example": "“<1>John Router</1>”의 경우 DNS-over-TLS 엔드포인트로 <3>John--Router-{{profile}}.dns.nextdns.io</3>를 사용하세요."
+      },
+      "doh": {
+        "instructions": "제공된 URL 뒤에 이름을 붙이세요(이름은 URL 인코딩되어야 합니다).",
+        "example": "“<1>John's Firefox</1>”의 경우 DNS-over-HTTPS 엔드포인트로 <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3>를 사용하세요."
+      }
     }
+  },
+  "security": {
+    "feeds": {
+      "name": "위협 인텔리전스 피드",
+      "description": "가장 신뢰받는 위협 인텔리전스 피드를 결합하여 악성코드 배포, 피싱 공격, 명령 및 제어 서버 호스팅에 사용되는 것으로 알려진 도메인을 차단합니다. 모든 피드는 실시간으로 업데이트됩니다.",
+      "enable": "위협 인텔리전스 피드 사용"
+    },
+    "ai": {
+      "name": "AI 기반 위협 탐지",
+      "description": "DNS를 위해 처음부터 설계한 독자적인 AI 엔진으로 수백만 개의 위협을 탐지하고 차단합니다. 이 엔진은 수백 개의 신호, 테라바이트 규모의 학습 데이터, 실시간 의사 결정을 활용합니다. IDN 호모그래프, 타이포스쿼팅, 콤보스쿼팅, DGA 도메인, 브랜드 사칭, 인증 정보 탈취, 악성코드 배포, 악성 인프라를 숨기는 데 사용되는 위장 웹사이트를 탐지합니다.",
+      "enable": "AI 기반 위협 탐지 활성화"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google 세이프 브라우징",
+      "description": "매일 수십억 개의 URL을 검사하여 안전하지 않은 웹사이트를 찾는 Google 세이프 브라우징 기술로 악성코드 및 피싱 도메인을 차단합니다. 일부 브라우저에 내장된 버전과 달리 공인 IP 주소를 위협과 연결하지 않으며 차단 우회를 허용하지 않습니다.",
+      "enable": "Google 세이프 브라우징 활성화"
+    },
+    "cryptojacking": {
+      "name": "크립토재킹",
+      "description": "기기가 암호화폐 채굴에 무단으로 사용되는 것을 방지합니다.",
+      "enable": "크립토재킹 차단"
+    },
+    "dnsRebinding": {
+      "name": "DNS 리바인딩",
+      "description": "사설 IP 주소가 포함된 DNS 응답을 자동으로 차단하여 공격자가 인터넷을 통해 로컬 기기를 제어하지 못하도록 합니다.",
+      "enable": "DNS 리바인딩 차단"
+    },
+    "homograph": {
+      "name": "IDN 호모그래프",
+      "description": "모양이 비슷한 문자를 사용하여 다른 도메인을 사칭하는 국제화 도메인 이름(IDN)을 차단합니다. 예를 들어 라틴 문자 “e”를 키릴 문자 “е”로 바꾸는 경우입니다.",
+      "enable": "IDN 호모그래프 차단"
+    },
+    "typosquatting": {
+      "name": "타이포스쿼팅",
+      "description": "브라우저에 웹사이트 주소를 잘못 입력하는 사용자를 노리고 공격자가 등록한 도메인을 차단합니다. 예를 들어 google.com 대신 gooogle.com을 입력하는 경우입니다.",
+      "enable": "타이포스쿼팅 차단"
+    },
+    "dga": {
+      "name": "도메인 생성 알고리즘",
+      "description": "도메인 생성 알고리즘(DGA)으로 생성되어 여러 악성코드 계열이 명령 및 제어 서버와 통신하는 접점으로 사용하는 도메인을 차단합니다.",
+      "enable": "DGA 도메인 차단"
+    },
+    "nrd": {
+      "name": "신규 등록 도메인",
+      "description": "등록된 지 30일이 지나지 않은 도메인을 차단합니다. 공격자들은 악성 캠페인을 시작할 때 이러한 도메인을 선호하는 것으로 알려져 있습니다.",
+      "enable": "신규 등록 도메인 차단"
+    },
+    "ddns": {
+      "name": "동적 DNS 호스트 이름",
+      "description": "동적 DNS(DDNS) 서비스를 이용하면 공격자가 검증이나 신원 확인 없이 호스트 이름을 무료로 신속하게 설정할 수 있습니다. 정상적인 DDNS 호스트 이름은 일상적인 사용에서 거의 접속되지 않지만, 악성 DDNS 호스트 이름은 피싱 캠페인에 널리 사용됩니다.",
+      "disclaimer": "DDNS를 사용하는 경우 이 설정은 DDNS 서비스의 자체 웹사이트나 업데이트 API를 차단하지 않습니다.",
+      "enable": "동적 DNS 호스트 이름 차단"
+    },
+    "parked": {
+      "name": "파킹된 도메인",
+      "description": "파킹된 도메인은 광고로 가득하고 실질적인 가치가 없는 단일 페이지 웹사이트인 경우가 많습니다. 파킹된 도메인의 수익화는 광고 네트워크와 리디렉션을 통해 방문자를 사기, 피싱 페이지, 악성 다운로드에 노출시킬 수 있습니다.",
+      "enable": "파킹된 도메인 차단"
+    },
+    "tld": {
+      "name": "최상위 도메인(TLD)",
+      "description": "특정 TLD에 속한 모든 도메인 및 하위 도메인을 차단합니다.",
+      "add": "TLD 추가",
+      "sections": {
+        "spamhaus": "Spamhaus 선정 악용이 가장 많은 TLD",
+        "all": "모든 TLD"
+      }
+    },
+    "csam": {
+      "name": "아동 성적 학대 자료(CSAM)",
+      "description": "캐나다 아동 보호 센터에서 운영하는 Project Arachnid의 도움으로 아동 성적 학대 자료를 호스팅하는 도메인을 차단합니다. 도메인이 차단될 때 Project Arachnid로 어떠한 정보도 전송되지 않습니다.",
+      "enable": "아동 성적 학대 자료 차단"
+    },
+    "newlyActiveDomains": {
+      "name": "신규 활성 도메인",
+      "description": "처음으로 접속되는 도메인이나 과거 활동이 적은 도메인을 차단합니다. 도메인을 신뢰하기 전에 정상적인 사용 이력이 입증되어야 하므로 제로데이 공격과 ‘잠복형’ 위협을 방지하고, 악성 도메인에 미리 접속하여 신뢰도를 쌓으려는 ‘사전 워밍업’ 시도를 효과적으로 무력화합니다.",
+      "enable": "신규 활성 도메인 차단"
+    },
+    "freeHostingDomains": {
+      "name": "무료 호스팅 도메인",
+      "description": "무료 웹 호스팅 서비스가 기본으로 제공하는 하위 도메인(예: *.pages.dev, *.vercel.app, *.netlify.app)을 차단합니다. 이러한 ‘무료 호스팅 도메인’(FHD)은 공격자가 피싱 사이트를 호스팅하고 평판 필터를 우회하는 데 널리 악용됩니다. 이 설정은 자체 도메인 이름으로 이러한 호스팅 서비스를 사용하는 정상적인 웹사이트에는 영향을 주지 않습니다.",
+      "enable": "무료 호스팅 도메인 차단"
+    },
+    "tunnelingEndpoints": {
+      "name": "터널링 엔드포인트",
+      "description": "로컬 트래픽을 터널을 통해 공용 인터넷에 노출하는 서비스(예: ngrok, Cloudflare Tunnel)를 차단합니다. 공격자는 이러한 도구를 자주 이용하여 방화벽을 우회하고, 실제 인프라를 숨긴 채 임의의 하위 도메인에서 피싱 페이지를 호스팅합니다.",
+      "enable": "터널링 엔드포인트 차단"
+    },
+    "dataDropServices": {
+      "name": "데이터 드롭 서비스",
+      "description": "텍스트, 파일, JSON·설정 데이터를 공유하거나 웹훅 요청, DNS 쿼리, 이메일 등 수신 데이터를 수집하는 전용 서비스에 대한 접근을 차단합니다. 이러한 서비스의 정상적인 이용도 차단 대상에 포함됩니다.",
+      "enable": "데이터 드롭 서비스 차단"
+    },
+    "residentialHosting": {
+      "name": "주거용 호스팅",
+      "description": "상업용 데이터 센터가 아닌 인터넷 서비스 제공업체(ISP)의 가정용 IP 대역으로 해석되는 도메인을 차단합니다. 정상적인 웹 서비스가 일반 가정용 회선에서 호스팅되는 경우는 드물지만, 봇넷 C2 서버와 피싱 프록시는 침해된 가정용 라우터에서 자주 실행됩니다.",
+      "enable": "주거용 호스팅 차단"
+    },
+    "untrustedCertificates": {
+      "name": "신뢰되지 않는 인증서",
+      "description": "신뢰되지 않거나 알 수 없는 인증 기관이 서명한 SSL/TLS 인증서(예: 자체 서명 인증서)를 제공하는 도메인을 차단합니다. 정상적인 웹사이트는 거의 예외 없이 신뢰할 수 있는 인증서를 사용하지만, 널리 유통되는 악성코드의 명령 및 제어(C2) 서버 중 거의 60%는 자체 서명 인증서나 신뢰되지 않는 기관이 발급한 인증서를 사용하여 추적 가능한 기록을 남기지 않고 트래픽을 암호화합니다.",
+      "enable": "신뢰되지 않는 인증서 차단"
+    },
+    "fastFluxNetworks": {
+      "name": "Fast Flux 네트워크",
+      "description": "탐지를 피하기 위해 침해된 기기의 분산 네트워크(봇넷)에서 IP 주소를 빠르게 바꾸는 도메인을 차단합니다. 이 휴리스틱은 DNS 생존 시간(TTL)과 IP 주소의 다양성에서 나타나는 특정 이상 징후를 식별합니다. 이러한 징후는 악성 인프라의 특징으로, 정상적인 콘텐츠 전송 네트워크(CDN)와 구별됩니다.",
+      "enable": "Fast Flux 네트워크 차단"
+    },
+    "dnsDataExfiltration": {
+      "name": "DNS 데이터 유출",
+      "description": "DNS 프로토콜을 사용하여 네트워크 밖으로 데이터를 몰래 빼내거나 숨겨진 명령(C2)을 수신하는 도메인을 차단합니다. 이 휴리스틱은 비정상적으로 긴 하위 도메인, 높은 엔트로피, 특이한 쿼리 유형(예: TXT) 등 DNS 쿼리 패턴을 실시간으로 분석합니다. 이를 통해 기존 방화벽을 우회하면서 소량씩 천천히 이루어지는 데이터 탈취와 악성코드 비콘 통신(예: Cobalt Strike)을 탐지하고 차단합니다.",
+      "enable": "DNS 데이터 유출 차단"
+    },
+    "dnsPayloadDelivery": {
+      "name": "DNS 페이로드 전달",
+      "description": "DNS 응답을 이용하여 숨겨진 명령이나 페이로드를 기기에 전달하지 못하도록 합니다. TXT나 NULL처럼 임의의 데이터를 담을 수 있지만 일상적인 웹 탐색에는 필요하지 않은 레코드 유형에 대한 쿼리는 모두 차단됩니다. CNAME 체인은 최종 주소로 평탄화되어 숨겨진 데이터를 인코딩할 수 있는 중간 레코드가 제거됩니다. A와 AAAA 같은 표준 레코드 유형에서는 지나치게 큰 응답 섹션을 무작위로 잘라내어 정상적인 DNS 기능을 유지하면서 여러 레코드에 걸쳐 인코딩된 데이터를 손상시킵니다.",
+      "enable": "DNS 페이로드 전달 차단"
+    },
+    "decentralizedWebGateways": {
+      "name": "탈중앙화 웹 게이트웨이",
+      "description": "탈중앙화 웹(예: IPFS)을 일반 브라우저와 연결하는 공용 게이트웨이를 차단합니다. 공격자는 이러한 서비스를 널리 악용하여 ‘변경 불가능한’ 피싱 페이지와 악성코드를 호스팅하고, 기존의 삭제 조치와 평판 필터를 회피하여 위협을 지속시킵니다.",
+      "enable": "탈중앙화 웹 게이트웨이 차단"
+    },
+    "highRiskTlds": {
+      "name": "고위험 TLD",
+      "description": "통계상 악성 활동이 대부분을 차지하는 최상위 도메인(TLD)을 자동으로 차단합니다(예: .zip, .mov, .top). 이 목록은 전 세계의 악용 관련 평판 데이터를 바탕으로 실시간으로 업데이트되므로 수동으로 설정할 필요 없이 피싱과 스팸에 사용되는 저렴한 일회용 도메인의 대규모 네트워크로부터 보호합니다.",
+      "enable": "고위험 TLD 차단"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "차단 목록",
+      "description": "실시간으로 업데이트되는 가장 인기 있는 차단 목록을 사용하여 광고 및 추적기를 차단합니다.",
+      "add": "차단 목록 추가",
+      "entries_other": "{{count, number}}개 항목",
+      "updated": "<1></1> 업데이트됨",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS 광고 및 추적기 차단 목록",
+          "description": "모든 국가의 광고와 추적기를 차단하는 포괄적인 차단 목록입니다. 처음 사용할 때 권장하는 차단 목록입니다."
+        }
+      },
+      "sortBy": {
+        "popularity": "인기순",
+        "name": "이름순",
+        "entries": "항목순",
+        "updated": "최근 업데이트순"
+      }
+    },
+    "native": {
+      "name": "네이티브 추적 보호",
+      "description": "기기 활동을 광범위하게 추적하며 주로 운영체제 수준에서 작동하는 추적기를 차단합니다. 방문한 모든 웹사이트, 입력한 모든 내용, 실시간 위치 등이 추적 대상에 포함될 수 있습니다.",
+      "add": "추가",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "휴대폰 및 태블릿, 스마트 TV, 라우터"
+        },
+        "huawei": {
+          "name": "Huawei",
+          "devices": "휴대폰 및 태블릿"
+        },
+        "samsung": {
+          "name": "Samsung",
+          "devices": "휴대폰, 태블릿, 스마트 TV"
+        },
+        "alexa": {
+          "name": "Alexa",
+          "devices": "Alexa 지원 기기"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "모든 버전"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "모든 Roku 기기"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "스피커"
+        }
+      }
+    },
+    "disguised": {
+      "name": "위장된 타사 추적기 차단",
+      "description": "ITP 같은 브라우저의 개인정보 보호 기능을 우회하기 위해 자사 서비스로 위장하는 타사 추적기를 자동으로 탐지하고 차단합니다.",
+      "enable": "위장된 타사 추적기 차단"
+    },
+    "affiliate": {
+      "name": "제휴 및 추적 링크 허용",
+      "description": "할인 정보 사이트, 이메일 또는 검색 결과에서 흔히 사용되는 제휴 및 추적 도메인을 허용합니다. 이러한 도메인은 보통 링크를 직접 클릭한 후에만 호출됩니다.",
+      "relay": "개인정보를 보호하기 위해 해당 웹사이트에 IP 주소가 자동으로 숨겨집니다.",
+      "enable": "제휴 및 추적 링크 허용"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "웹사이트, 앱 및 게임",
+      "description": "특정 웹사이트, 앱 및 게임에 대한 접근을 제한합니다.",
+      "add": "웹사이트, 앱 또는 게임 추가",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "블리자드",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "포트나이트",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "리그 오브 레전드",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "핀터레스트",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "로블록스",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "스포티파이",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "틱톡",
+        "tinder": "틴더",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "X",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "카테고리",
+      "description": "특정 카테고리의 웹사이트 및 앱에 대한 접근을 제한합니다.",
+      "add": "카테고리 추가",
+      "categories": {
+        "dating": {
+          "name": "데이팅",
+          "description": "모든 데이팅 웹사이트 및 앱을 차단합니다."
+        },
+        "gambling": {
+          "name": "도박",
+          "description": "도박 콘텐츠를 차단합니다."
+        },
+        "gaming": {
+          "name": "온라인 게임",
+          "description": "온라인 게임 웹사이트, 온라인 게임 앱 및 온라인 게임 네트워크(Xbox, PlayStation Network 등)를 차단합니다."
+        },
+        "piracy": {
+          "name": "불법 복제",
+          "description": "P2P 웹사이트와 프로토콜, 저작권 침해 스트리밍 웹사이트, 그리고 주로 저작권 콘텐츠를 불법 배포하는 데 사용되는 일반 동영상 호스팅 웹사이트를 차단합니다."
+        },
+        "porn": {
+          "name": "음란물",
+          "description": "성인 및 포르노 콘텐츠를 차단합니다. 에스코트 사이트, pornhub.com 및 유사한 도메인이 포함됩니다."
+        },
+        "social-networks": {
+          "name": "SNS",
+          "description": "모든 소셜 네트워크 사이트 및 앱(Facebook, Instagram, 틱톡, Reddit 등)을 차단합니다. 메시징 앱은 차단하지 않습니다."
+        },
+        "video-streaming": {
+          "name": "동영상 스트리밍",
+          "description": "동영상 스트리밍 서비스(YouTube, Netflix, Disney+, 불법 스트리밍 웹사이트, 동영상 포르노 웹사이트 등)와 동영상 기반 소셜 네트워크(틱톡 등)를 차단합니다. 어떤 네트워크에서든 대역폭 사용량을 줄이는 데에도 도움이 될 수 있습니다."
+        }
+      }
+    },
+    "recreation": {
+      "name": "자유 시간",
+      "start": "시작 시간",
+      "end": "종료 시간",
+      "description": "위의 웹사이트, 앱, 게임 또는 카테고리 중 일부를 차단하지 않을 시간대를 요일별로 설정하세요. 예를 들어 월요일과 화요일 오후 6시부터 8시까지 Facebook을 허용할 수 있습니다.",
+      "set": "자유 시간 설정",
+      "howto": "자유 시간을 활성화하려면 위 섹션의 <1></1> 버튼을 사용하세요."
+    },
+    "safesearch": {
+      "name": "세이프서치",
+      "description": "이미지와 동영상을 포함하여 모든 주요 검색 엔진에서 선정적인 검색 결과를 필터링합니다. 이 기능을 지원하지 않는 검색 엔진에 대한 접근도 차단됩니다.",
+      "enable": "세이프서치 적용"
+    },
+    "youtubeRestricted": {
+      "name": "YouTube 제한 모드",
+      "description": "YouTube에서 성인용 동영상을 필터링하고 삽입된 성인용 동영상이 다른 웹사이트에서 시청되지 않도록 차단합니다. 모든 댓글도 숨겨집니다.",
+      "enable": "YouTube 제한 모드 적용"
+    },
+    "bypass": {
+      "name": "우회 방법 차단",
+      "description": "네트워크에서 NextDNS 필터링을 우회하는 데 사용될 수 있는 방법을 막거나 방해합니다. VPN, 프록시, Tor 관련 소프트웨어, 암호화된 DNS 제공업체가 여기에 포함됩니다.",
+      "enable": "우회 방법 차단"
+    }
+  },
+  "xlist": {
+    "placeholder": "도메인 추가...",
+    "errors": {
+      "required": "도메인을 입력하세요.",
+      "ip": "IP 주소가 아닌 도메인을 입력하세요.",
+      "invalid": "유효한 도메인을 입력하세요.",
+      "tld": "전체 TLD를 차단하려는 것 같습니다. 보안 섹션에서 최상위 도메인(TLD) 기능을 사용하세요.",
+      "exists": "이 도메인은 이미 추가되었습니다."
+    },
+    "empty": "아직 도메인이 없습니다.",
+    "denylist": {
+      "info": "도메인을 거부하면 모든 하위 도메인이 자동으로 거부됩니다."
+    },
+    "allowlist": {
+      "info": "도메인을 허용하면 모든 하위 도메인이 자동으로 허용됩니다. 허용은 보안 기능을 포함하여 다른 모든 것보다 우선합니다."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "all_other": "<0>{{count, number}}</0><1>쿼리</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>차단된 쿼리</1>",
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0>의 </0><1>쿼리가 차단됨</1></1>"
+    },
+    "queries": {
+      "name": "쿼리",
+      "description": "시간에 따른 쿼리 수 변화입니다.",
+      "queries": {
+        "all_other": "<0>{{count, number}}</0><1> 쿼리</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> 차단된 쿼리</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "해석된 도메인",
+        "description": "설정에 의해 차단되지 않았거나 수동으로 허용되어 정상적으로 해석된 도메인입니다."
+      },
+      "blocked": {
+        "name": "차단된 도메인",
+        "description": "보안, 개인정보 보호 또는 자녀 보호 설정에 의해 차단되었거나 수동으로 거부된 도메인입니다."
+      },
+      "root": {
+        "name": "루트 도메인",
+        "description": "루트 도메인과 그 모든 하위 도메인에 대한 쿼리를 모두 집계한 것입니다."
+      },
+      "empty": "아직 도메인이 없습니다."
+    },
+    "reasons": {
+      "name": "차단 이유",
+      "description": "가장 많은 쿼리를 차단한 보안, 개인정보 보호 또는 자녀 보호 설정입니다.",
+      "empty": "아직 차단된 도메인이 없습니다."
+    },
+    "devices": {
+      "name": "기기",
+      "description": "쿼리를 보내는 기기입니다.",
+      "empty": "아직 기기가 없습니다.",
+      "unidentified": {
+        "name": "식별되지 않은 기기"
+      }
+    },
+    "ips": {
+      "name": "IP",
+      "description": "쿼리를 보내는 IP 주소입니다.",
+      "empty": "아직 IP가 없습니다."
+    },
+    "gafam": {
+      "name": "GAFAM 지배력",
+      "description": "“GAFAM”(Google, Amazon, Facebook(현 Meta), Apple, Microsoft)은 인기 서비스 다수를 소유한 5대 인터넷 기업입니다. 이러한 서비스는 종종 다른 이름으로 운영되며, Meta가 소유한 WhatsApp과 Instagram이 그 예입니다.",
+      "queries_other": "쿼리 {{count, number}}개",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Meta"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "기타"
+        }
+      }
+    },
+    "encrypted": {
+      "name": "암호화된 DNS",
+      "description": "암호화된 전송(DNS-over-HTTPS, DNS-over-TLS 또는 공식 NextDNS 앱)을 사용한 쿼리의 비율입니다.",
+      "empty": "아직 쿼리가 없습니다."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "DNSSEC로 검증된 쿼리의 비율입니다.",
+      "empty": "아직 쿼리가 없습니다."
+    },
+    "destination": {
+      "name": "트래픽 목적지",
+      "description": "DNS 쿼리를 기반으로 추정한 목적지 국가입니다.",
+      "queries_other": "쿼리 {{count, number}}개",
+      "topDomains": "상위 도메인"
+    }
+  },
+  "logs": {
+    "blockedOnly": "차단된 쿼리만",
+    "raw": "원시 DNS 로그",
+    "empty": "아직 로그가 없습니다.",
+    "log": {
+      "actionBlock": "차단",
+      "actionAllow": "허용",
+      "dnssec": "DNSSEC로 검증되었습니다.",
+      "clients": {
+        "nextdns-ios": "iOS용 NextDNS",
+        "nextdns-android": "Android용 NextDNS",
+        "nextdns-macos": "macOS용 NextDNS",
+        "nextdns-windows": "Windows용 NextDNS",
+        "nextdns-cli": "NextDNS CLI 클라이언트",
+        "nextdns-chromeos": "ChromeOS용 NextDNS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "MikroTik",
+        "apple-profile": "Apple 구성 프로파일",
+        "yogadns": "YogaDNS",
+        "tailscale": "Tailscale"
+      },
+      "blockedBy": "<1>{{lists, list}}</1>에 의해 차단되었습니다.",
+      "allowedBy": "<1>{{lists, list}}</1>에 의해 허용되었습니다.",
+      "manual": {
+        "deny": "수동으로 거부되었습니다.",
+        "allow": "수동으로 허용되었습니다."
+      },
+      "insights": {
+        "show": "추적기 상세 정보 표시",
+        "hide": "추적기 상세 정보 숨기기",
+        "categories": {
+          "advertising": {
+            "description": "데이터 수집, 행동 분석 또는 리타게팅과 같은 광고 또는 광고 관련 서비스를 제공합니다."
+          },
+          "comments": {
+            "description": "기사 및 제품 리뷰에 대한 댓글 섹션을 활성화합니다."
+          },
+          "customer_interaction": {
+            "description": "채팅, 이메일 메시징, 고객 지원 및 기타 상호 작용 도구가 포함됩니다."
+          },
+          "essential": {
+            "description": "태그 관리자, 개인정보 보호 고지 등 웹사이트 기능에 필수적인 기술이 포함됩니다."
+          },
+          "adult_advertsing": {
+            "description": "일반적으로 성인 콘텐츠 사이트에 나타나는 광고를 제공합니다."
+          },
+          "site_analytics": {
+            "description": "사이트 사용 및 성능과 관련된 데이터를 수집하고 분석합니다."
+          },
+          "social_media": {
+            "description": "소셜 미디어 사이트와 관련된 기능을 통합합니다."
+          },
+          "audio_video_player": {
+            "description": "웹사이트에서 동영상 및 오디오 콘텐츠를 게시, 배포, 최적화할 수 있게 합니다."
+          },
+          "cdn": {
+            "description": "다양한 사이트 기능에 필요한 리소스를 제공하는 콘텐츠 전송 네트워크로, 보통 여러 고객이 함께 사용합니다."
+          },
+          "misc": {
+            "description": "이 추적기는 다른 카테고리에 속하지 않거나 아직 분류되지 않았습니다."
+          },
+          "pornvertising": {
+            "description": "일반적으로 성인 콘텐츠 사이트에 나타나는 광고를 제공합니다."
+          },
+          "hosting": {
+            "description": "콘텐츠 제공업체 또는 사이트 소유자가 사용하는 서비스입니다."
+          },
+          "extensions": {
+            "description": "브라우저 트래픽을 가로채 분석할 수 있는 사용자 기기의 소프트웨어입니다(중간자 방식)."
+          }
+        },
+        "prevalence": {
+          "intensity": {
+            "dangerously": "위험할 정도로 광범위함",
+            "extremely": "극히 광범위함",
+            "very": "매우 광범위함",
+            "commonly": "일반적으로 광범위함",
+            "relatively": "비교적 광범위함"
+          },
+          "summary": "{{prevalence}} <2>(웹 트래픽의 {{percent, percentage}}를 추적)</2>"
+        },
+        "ownedBy": "<1>{{company}}</1><0> 소유</0>",
+        "source": "추적기 정보 제공:"
+      }
+    },
+    "settings": "로그 옵션",
+    "streaming": "실시간 로그 업데이트",
+    "toggleTimeFormat": "타임스탬프 형식 전환"
+  },
+  "deviceSelector": {
+    "all": "모든 기기",
+    "howto": "설정 가이드 페이지에서 기기를 식별하는 방법을 알아보세요."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "지난 30분",
+      "6h": "지난 6시간",
+      "24h": "지난 24시간",
+      "7d": "지난 7일",
+      "30d": "지난 30일",
+      "3M": "지난 3개월"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "이름",
+      "description": "이 프로필의 이름을 정하세요."
+    },
+    "logs": {
+      "name": "로그",
+      "description": "로그 설정을 미세 조정하세요.",
+      "enable": "로그 활성화",
+      "privacy": {
+        "name": "개인정보 보호 설정",
+        "ip": "클라이언트 IP 주소 기록",
+        "domains": "도메인 기록"
+      },
+      "retention": {
+        "name": "보관 기간",
+        "options": {
+          "1h": "1시간",
+          "6h": "6시간",
+          "1d": "1일",
+          "1w": "1주",
+          "1m": "1개월",
+          "3m": "3개월",
+          "6m": "6개월",
+          "1y": "1년",
+          "2y": "2년"
+        }
+      },
+      "location": {
+        "name": "저장 위치",
+        "locations": {
+          "us": {
+            "name": "미국",
+            "description": "로그는 미국 내에 저장됩니다. 이 옵션이 기본값입니다."
+          },
+          "eu": {
+            "name": "유럽 연합",
+            "description": "로그는 유럽 연합 회원국 내에 저장됩니다."
+          },
+          "ch": {
+            "name": "스위스",
+            "description": "로그는 강력한 개인정보 보호법으로 잘 알려진 스위스 취리히에 저장됩니다."
+          }
+        },
+        "confirm": {
+          "title": "저장 위치 변경",
+          "text": "로그 저장 위치를 변경하면 이 프로필의 기존 로그와 통계가 모두 삭제됩니다."
+        }
+      },
+      "download": {
+        "button": "로그 다운로드"
+      },
+      "clear": {
+        "button": "로그 지우기",
+        "confirm": {
+          "text": "이 프로필의 로그를 모두 지우시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+          "submit": "지우기"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "차단 페이지",
+      "description": "도메인이 차단되면 차단 페이지를 표시합니다. 페이지 로딩 시간이 조금 늘어날 수 있으며, 경우에 따라 HTTPS 경고가 나타날 수 있습니다. 비활성화하면 차단된 쿼리에 지정되지 않은 주소(0.0.0.0 또는 ::)로 응답합니다.",
+      "enable": "차단 페이지 활성화",
+      "ca": {
+        "name": "NextDNS 루트 CA",
+        "description": "<1>{{link}}</1>의 루트 CA를 설치하고 신뢰하도록 설정하면 차단 페이지를 불러올 때 나타나는 HTTPS 경고를 없앨 수 있습니다. 방법은 <3>여기</3>를 참고하세요."
+      }
+    },
+    "performance": {
+      "name": "성능",
+      "description": "브라우징 속도를 높이세요.",
+      "ecs": {
+        "name": "익명화된 EDNS 클라이언트 서브넷",
+        "description": "IP 주소를 노출하지 않고도 콘텐츠 전송 네트워크에서 데이터 전송 속도를 높일 수 있습니다.",
+        "enable": "익명화된 EDNS 클라이언트 서브넷 활성화"
+      },
+      "cache": {
+        "name": "캐시 부스트",
+        "description": "최소 TTL(Time to Live)을 적용하여 DNS 쿼리를 최소화합니다.",
+        "enable": "캐시 부스트 활성화"
+      },
+      "flatten": {
+        "name": "CNAME 평탄화",
+        "description": "CNAME을 추적하는 리졸버가 불필요한 쿼리를 보내거나 중간 도메인으로 로그를 채우지 않도록 합니다.",
+        "enable": "CNAME 평탄화 활성화"
+      }
+    },
+    "ageVerification": {
+      "name": "연령 확인 우회",
+      "description": "성인 콘텐츠 사이트 등 일부 웹사이트에서 접근을 허용하기 전에 방문자의 나이를 확인하기 위해 사용하는 연령 확인 절차를 자동으로 우회합니다.",
+      "acknowledgment": "이 기능을 활성화함으로써 해당 콘텐츠에 접근할 수 있는 법정 연령에 도달했음을 확인합니다."
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3는 블록체인 기반 도메인 등록 시스템(예: Ethereum Name Service)과 분산 콘텐츠 저장 및 전송 네트워크(예: IPFS) 같은 혁신적인 기술로 구성된, 탈중앙화되고 검열에 강한 온라인 생태계를 뜻합니다. 이 기능을 활성화하면 NextDNS가 이 새로운 웹의 필터링 없는 게이트웨이로 작동하므로, 아무것도 설치하지 않고 직접 경험할 수 있습니다.",
+      "tips": "아직은 대부분의 브라우저가 기존 최상위 도메인만 지원하므로, Web3 도메인에 직접 접속할 때에는 끝에 슬래시(“<1>/</1>”)를 붙여야 합니다. 예를 들어 “<5>vitalik.eth</5>” 대신 “<3>vitalik.eth/</3>”를 입력하세요.",
+      "enable": "Web3 활성화"
+    },
+    "rewrites": {
+      "name": "재작성",
+      "description": "모든 도메인의 DNS 응답을 설정하거나 덮어쓸 수 있습니다. 재작성 규칙은 하위 도메인에도 적용되며, 로컬 IP 주소를 응답으로 사용할 수 있습니다.",
+      "new": "새 재작성 규칙",
+      "form": {
+        "domain": {
+          "label": "도메인",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
+            "required": "도메인을 입력하세요.",
+            "ip": "IP 주소가 아닌 도메인을 입력하세요.",
+            "invalid": "유효한 도메인을 입력하세요.",
+            "taken": "이 도메인에는 이미 재작성 규칙이 있습니다."
+          }
+        },
+        "answer": {
+          "label": "응답",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "응답을 입력하세요.",
+            "invalid": "응답은 유효한 IP 주소 또는 도메인이어야 합니다."
+          }
+        }
+      }
+    },
+    "access": {
+      "name": "접근 권한",
+      "description": "이 프로필에 대한 편집 또는 보기 전용 접근 권한을 다른 사람에게 제공합니다.",
+      "roles": {
+        "editor": "편집자",
+        "viewer": "뷰어"
+      },
+      "pending": "초대 보냄",
+      "form": {
+        "email": {
+          "label": "이메일",
+          "errors": {
+            "required": "이메일 주소를 입력하세요.",
+            "invalid": "유효한 이메일 주소를 입력하세요.",
+            "duplicate": "이미 초대한 이메일입니다."
+          }
+        },
+        "role": {
+          "label": "역할"
+        }
+      }
+    },
+    "duplicate": {
+      "button": "<1>{{name}}</1> 복제",
+      "description": "이 프로필의 모든 설정을 새 프로필에 복사합니다.",
+      "form": {
+        "name": {
+          "label": "이름",
+          "placeholder": "집, 아이들, 사무실, ...",
+          "errors": {
+            "required": "이름을 입력하세요.",
+            "taken": "이미 같은 이름의 프로필이 있습니다."
+          }
+        },
+        "button": "복제"
+      }
+    },
+    "delete": {
+      "button": "<1>{{name}}</1> 삭제",
+      "warning": "이 프로필과 연결된 모든 로그가 영구적으로 삭제됩니다.",
+      "confirm": {
+        "text": "<1>{{name}}</1>을(를) 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+      }
+    },
+    "leave": {
+      "button": "<1>{{name}}</1>에서 나가기",
+      "warning": "이 프로필에 더 이상 접근할 수 없게 됩니다.",
+      "confirm": {
+        "text": "<1>{{name}}</1>에서 나가시겠습니까? 이 작업은 되돌릴 수 없습니다."
+      }
+    }
+  }
 }

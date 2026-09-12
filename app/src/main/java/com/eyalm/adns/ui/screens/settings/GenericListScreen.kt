@@ -719,15 +719,17 @@ private fun ParentalControlItemBottomSheet(
 private fun ResourceMetadata(item: NextDnsResourceItem, showWebsite: Boolean) {
     val metadata = buildList {
         item.entries?.let { count ->
+            val formattedCount = NumberFormat.getIntegerInstance().format(count)
             add(
                 Locales.getPlainString(
                     path = arrayOf(
                         "privacy",
                         "blocklists",
-                        if (count == 1) "entries" else "entries_plural",
+                        if (count == 1) "entries_one" else "entries_other",
                     ),
                     values = mapOf(
-                        "count, number" to NumberFormat.getIntegerInstance().format(count)
+                        "count, number" to formattedCount,
+                        "count" to formattedCount,
                     ),
                 )
             )
@@ -738,12 +740,12 @@ private fun ResourceMetadata(item: NextDnsResourceItem, showWebsite: Boolean) {
                     System.currentTimeMillis(),
                     DateUtils.MINUTE_IN_MILLIS,
                 ).toString()
-            add(
-                Locales.getPlainString(
-                    path = arrayOf("privacy", "blocklists", "updated"),
-                    values = mapOf("ago" to relative),
-                )
-            )
+            val formatted = Locales.getPlainString(
+                path = arrayOf("privacy", "blocklists", "updated"),
+                values = mapOf("ago" to relative),
+            ).trim()
+            val text = if (formatted.contains(relative)) formatted else "$formatted $relative"
+            add(text.trim())
         }
         if (showWebsite) item.website?.let(::add)
     }

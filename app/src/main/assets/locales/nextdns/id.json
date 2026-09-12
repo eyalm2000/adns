@@ -1,1339 +1,1310 @@
 {
-    "global": {
-        "beta": "beta",
-        "cancel": "Batal",
-        "add": "Tambah",
-        "save": "Simpan",
-        "continue": "Lanjutkan",
-        "enable": "Aktifkan",
-        "change": "Ubah",
-        "create": "Buat",
-        "subscribe": "Berlangganan",
-        "invite": "Undang",
-        "remove": "Hapus",
-        "leave": "Keluar",
-        "delete": "Hapus",
-        "close": "Tutup",
-        "back": "Kembali",
-        "disable": "Nonaktifkan",
-        "unnamedDevice": "Perangkat #{{id}}",
-        "firstConfiguration": "Konfigurasi Pertama Saya",
-        "list": {
-            "separator": ", ",
-            "conjunction": " dan "
-        }
+  "global": {
+    "beta": "beta",
+    "cancel": "Batal",
+    "add": "Tambah",
+    "save": "Simpan",
+    "continue": "Lanjutkan",
+    "enable": "Aktifkan",
+    "change": "Ubah",
+    "create": "Buat",
+    "subscribe": "Berlangganan",
+    "invite": "Undang",
+    "remove": "Hapus",
+    "leave": "Keluar",
+    "delete": "Hapus",
+    "close": "Tutup",
+    "back": "Kembali",
+    "disable": "Nonaktifkan",
+    "unnamedDevice": "Perangkat #{{id}}",
+    "firstConfiguration": "Konfigurasi Pertama Saya"
+  },
+  "theme": {
+    "label": "Tema",
+    "system": "Sistem",
+    "light": "Terang",
+    "dark": "Gelap"
+  },
+  "pages": {
+    "signup": "Daftar",
+    "login": "Masuk",
+    "passwordReset": "Atur ulang kata sandi Anda",
+    "account": "Akun",
+    "setup": "Konfigurasi",
+    "security": "Keamanan",
+    "privacy": "Privasi",
+    "parentalcontrol": "Kontrol Orang Tua",
+    "denylist": "Daftar Hitam",
+    "allowlist": "Daftar Putih",
+    "analytics": "Analitik",
+    "logs": "Log",
+    "settings": "Pengaturan",
+    "help": "Bantuan"
+  },
+  "banners": {
+    "temporary": "Akun sementara ini akan kedaluwarsa dalam <1><0>{{in}}</0></1> dan hanya dapat diakses dari peramban ini. Daftar sekarang gratis untuk menyimpan pengaturan Anda.",
+    "nearQuota": "Anda telah membuat lebih dari {{queriesNearQuota, number}} kueri bulan ini, kuota gratis bulanan sebesar {{queriesQuota, number}} kueri akan segera habis. <5>Berlangganan</5> untuk terus menggunakan NextDNS.",
+    "overQuota": "Anda telah membuat lebih dari {{queriesQuota, number}} kueri bulan ini dan semua fitur telah dinonaktifkan. <3>Berlangganan</3> untuk terus menggunakan NextDNS."
+  },
+  "account": {
+    "email": "Email",
+    "newEmail": "Email baru",
+    "password": "Kata sandi",
+    "newPassword": "Kata sandi baru",
+    "currentPassword": "Kata sandi saat ini",
+    "forgotPassword": "Lupa kata sandi?",
+    "savePassword": "Simpan kata sandi",
+    "passwordResetInfo": "Masukkan alamat email yang terkait dengan akun Anda dan kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda.",
+    "sendEmail": "Kirim email",
+    "passwordResetLinkSentMessage": "Tautan untuk mengatur ulang kata sandi Anda telah dikirim ke <1>{{email}}</1>.",
+    "code": "Kode 2FA",
+    "login": "Masuk",
+    "noAccountYet": "Belum punya akun? <1>Daftar</1>",
+    "signup": "Daftar",
+    "alreadyHaveAnAccount": "Sudah memiliki akun? <1>Masuk</1>",
+    "convertingNotice": "Anda mengubah akun sementara menjadi akun permanen, semua pengaturan Anda akan disimpan.",
+    "convertingDeviceOnlyNotice": "Anda sedang mengubah akun khusus perangkat menjadi akun penuh, semua pengaturan Anda akan disimpan.",
+    "logout": "Keluar",
+    "errors": {
+      "email": {
+        "required": "Masukkan email.",
+        "invalid": "Masukkan email yang valid.",
+        "taken": "Email ini sudah digunakan."
+      },
+      "password": {
+        "required": "Masukkan kata sandi.",
+        "invalidCombination": "Kombinasi email/kata sandi tidak valid."
+      },
+      "currentPassword": {
+        "required": "Masukkan kata sandi Anda saat ini.",
+        "incorrect": "Kata sandi yang Anda masukkan salah."
+      },
+      "code": {
+        "required": "Masukkan kode 2FA.",
+        "invalid": "Masukkan kode 6 digit.",
+        "incorrect": "Kode 2FA salah."
+      },
+      "resetPasswordToken": {
+        "invalid": "Token tidak valid atau kedaluwarsa."
+      }
     },
-    "theme": {
-        "label": "Tema",
-        "system": "Sistem",
-        "light": "Terang",
-        "dark": "Gelap"
-    },
-    "pages": {
-        "signup": "Daftar",
-        "login": "Masuk",
-        "passwordReset": "Atur ulang kata sandi Anda",
-        "account": "Akun",
-        "setup": "Konfigurasi",
-        "security": "Keamanan",
-        "privacy": "Privasi",
-        "parentalcontrol": "Kontrol Orang Tua",
-        "denylist": "Daftar Hitam",
-        "allowlist": "Daftar Putih",
-        "analytics": "Analitik",
-        "logs": "Log",
-        "settings": "Pengaturan",
-        "help": "Bantuan"
-    },
-    "banners": {
-        "temporary": "Akun sementara ini akan kedaluwarsa dalam <1><0>{{in}}</0></1> dan hanya dapat diakses dari peramban ini. Daftar sekarang gratis untuk menyimpan pengaturan Anda.",
-        "nearQuota": "Anda telah membuat lebih dari {{queriesNearQuota, number}} kueri bulan ini, kuota gratis bulanan sebesar {{queriesQuota, number}} kueri akan segera habis. <5>Berlangganan</5> untuk terus menggunakan NextDNS.",
-        "overQuota": "Anda telah membuat lebih dari {{queriesQuota, number}} kueri bulan ini dan semua fitur telah dinonaktifkan. <3>Berlangganan</3> untuk terus menggunakan NextDNS."
-    },
-    "account": {
-        "email": "Email",
-        "newEmail": "Email baru",
-        "password": "Kata sandi",
-        "newPassword": "Kata sandi baru",
-        "currentPassword": "Kata sandi saat ini",
-        "forgotPassword": "Lupa kata sandi?",
-        "savePassword": "Simpan kata sandi",
-        "passwordResetInfo": "Masukkan alamat email yang terkait dengan akun Anda dan kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda.",
-        "sendEmail": "Kirim email",
-        "passwordResetLinkSentMessage": "Tautan untuk mengatur ulang kata sandi Anda telah dikirim ke <1>{{email}}</1>.",
-        "code": "Kode 2FA",
-        "login": "Masuk",
-        "noAccountYet": "Belum punya akun? <1>Daftar</1>",
-        "signup": "Daftar",
-        "alreadyHaveAnAccount": "Sudah memiliki akun? <1>Masuk</1>",
-        "convertingNotice": "Anda mengubah akun sementara menjadi akun permanen, semua pengaturan Anda akan disimpan.",
-        "convertingDeviceOnlyNotice": "Anda sedang mengubah akun khusus perangkat menjadi akun penuh, semua pengaturan Anda akan disimpan.",
-        "logout": "Keluar",
-        "errors": {
-            "email": {
-                "required": "Masukkan email.",
-                "invalid": "Masukkan email yang valid.",
-                "taken": "Email ini sudah digunakan."
-            },
-            "password": {
-                "required": "Masukkan kata sandi.",
-                "invalidCombination": "Kombinasi email/kata sandi tidak valid."
-            },
-            "currentPassword": {
-                "required": "Masukkan kata sandi Anda saat ini.",
-                "incorrect": "Kata sandi yang Anda masukkan salah."
-            },
-            "code": {
-                "required": "Masukkan kode 2FA.",
-                "invalid": "Masukkan kode 6 digit.",
-                "incorrect": "Kode 2FA salah."
-            },
-            "resetPasswordToken": {
-                "invalid": "Token tidak valid atau kedaluwarsa."
-            }
-        },
-        "affiliation": {
-            "name": "Afiliasi",
-            "description": "Bantu kami menyebarkan berita dengan membagikan <1>{{link}}</1> dan menerima <3>{{share, percentage}}</3> dari semua langganan untuk <5>{{months, number}} bulan pertama</5>.",
-            "balance": {
-                "name": "Saldo"
-            },
-            "availableBalance": {
-                "name": "Saldo tersedia",
-                "description": "Saldo tersedia untuk ditarik setelah satu bulan untuk menutupi potensi pengembalian dana."
-            },
-            "payout": {
-                "button": "Tarik Saldo",
-                "minimum": "Saldo yang tersedia minimal {{amount, price}} untuk menarik saldo.",
-                "form": {
-                    "paypalEmail": "Email PayPal",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "Masukkan email PayPal.",
-                            "invalid": "Masukkan email PayPal yang valid."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "Penggunaan gratis",
-            "description": "NextDNS dapat digunakan secara gratis hingga {{queries, number}} kueri setiap bulan, setelah itu semua fitur akan dinonaktifkan sementara hingga bulan depan.",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} kueri</1>",
-            "overQuota": {
-                "message": "Anda telah membuat lebih dari {{queries, number}} kueri bulan ini.",
-                "info": "NextDNS akan terus merespon kueri DNS tetapi semua fitur dinonaktifkan sementara hingga bulan depan."
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "Dapatkan kueri tak terbatas, mulai dari {{amount, price}}/bulan."
-            }
-        },
-        "subscription": {
-            "name": "Langganan",
-            "plans": {
-                "pro": "Pro",
-                "business": "Bisnis",
-                "education": "Pendidikan"
-            },
-            "intervals": {
-                "month": "paket bulanan",
-                "year": "paket tahunan"
-            },
-            "per": {
-                "month": "per bulan",
-                "year": "per tahun"
-            },
-            "units": {
-                "business_0": "{{count, number}} karyawan",
-                "education_0": "{{count, number}} siswa"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "Langganan Anda akan berakhir pada {{date, date}}.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "Mulai ulang langganan"
-            },
-            "changePlan": {
-                "button": "Ubah paket"
-            },
-            "renewal": "Pembayaran otomatis Anda berikutnya adalah {{amount, price}} pada {{date, date}}.",
-            "changePaymentMethod": {
-                "button": "Ubah metode pembayaran"
-            },
-            "cancel": {
-                "button": "Batalkan langganan",
-                "confirm": {
-                    "text": "Langganan Anda saat ini akan tetap berlaku sampai {{date, date}}.",
-                    "submit": "Batalkan langganan"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "Pilih paket",
-                "addPaymentMethod": "Tambahkan metode pembayaran",
-                "included": "Semua paket termasuk <1>akses ke semua fitur</1>, <3>perangkat tak terbatas</3> dan <5>kueri tak terbatas</5>.",
-                "savings": "Hemat {{percent, percentage}} dari paket bulanan",
-                "familyOnly": "* Paket Pro hanya untuk penggunaan pribadi (dan keluarga dekat).",
-                "unitsQuestion": {
-                    "business": "Berapa jumlah <1>karyawan</1> yang bekerja di bisnis Anda?",
-                    "education": "Berapa jumlah <1>siswa</1> di sekolah (atau daerah) Anda?"
-                },
-                "asYouGrow": {
-                    "business": "* Jangan lupa untuk memperbarui paket Anda saat jumlah karyawan Anda bertambah.",
-                    "education": "* Jangan lupa untuk memperbarui paket Anda saat jumlah siswa Anda bertambah."
-                },
-                "starting": {
-                    "business": "<0>Mulai dari </0><1>{{price, price}}</1><2> per bulan untuk {{units, number}} karyawan</2>",
-                    "education": "<0>Mulai dari </0><1>{{price, price}}</1><2> per bulan untuk {{units, number}} siswa</2>"
-                },
-                "card": {
-                    "number": "Nomor kartu",
-                    "expiration": "Tanggal kedaluwarsa",
-                    "code": "Kode keamanan",
-                    "stripe": "Kami menggunakan Stripe — gerbang pembayaran terkemuka — untuk memproses pembayaran kartu dengan cara yang aman tanpa pernah memiliki akses ke informasi kartu Anda secara langsung."
-                },
-                "paypal": {
-                    "text": "Klik tombol Lanjutkan ke PayPal untuk berlangganan menggunakan PayPal."
-                },
-                "bitpay": {
-                    "text": "Klik tombol Lanjutkan ke BitPay untuk membayar dengan mata uang kripto.",
-                    "toYearly": "Kami tidak menerima pembayaran dengan mata uang kripto untuk paket bulanan. <1>Dengan melanjutkan, Anda akan secara otomatis dialihkan ke paket tahunan.</1>",
-                    "remainder": "Langganan Anda saat ini sudah dibayar hingga {{date, date}}. Anda akan ditagih sekarang dan sisanya akan ditambahkan secara otomatis ke tanggal kedaluwarsa yang baru."
-                },
-                "continueTo": "Lanjutkan ke <1></1>"
-            }
-        },
-        "business": {
-            "name": "Bisnis",
-            "description": "Untuk alasan perpajakan, kami memerlukan nama bisnis, alamat, dan nomor PPN Anda (atau yang setara). Ini diwajibkan oleh hukum dan akan muncul di semua faktur.",
-            "button": {
-                "add": "Tambahkan info bisnis",
-                "update": "Perbarui"
-            },
-            "form": {
-                "name": {
-                    "label": "Nama",
-                    "placeholder": "PT. Mencari Cinta Sejati.",
-                    "errors": {
-                        "required": "Masukkan nama bisnis Anda."
-                    }
-                },
-                "address": {
-                    "label": "Alamat",
-                    "placeholder": "Jl. Medan Merdeka Utara No.3, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat&#10;Daerah Khusus Ibukota Jakarta 10110&#10;Indonesia",
-                    "errors": {
-                        "required": "Masukkan alamat bisnis Anda."
-                    }
-                },
-                "vatNumber": {
-                    "label": "Nomor PPN"
-                }
-            }
-        },
-        "invoices": {
-            "name": "Faktur",
-            "description": "Riwayat penagihan dan semua faktur untuk akun Anda.",
-            "pending": "{{amount, price}} (Tertunda)",
-            "show-more": "Tampilkan lainnya",
-            "show-less": "Tampilkan sedikit",
-            "invoice": {
-                "title": "Faktur #{{code}}",
-                "to": "Kepada: <1>{{email}}</1>",
-                "vatNumber": "Nomor PPN: {{number}}",
-                "columns": {
-                    "plan": "Paket",
-                    "period": "Periode",
-                    "amount": "Jumlah"
-                },
-                "vat": "PPN ({{rate, percentage}})",
-                "total": "Total",
-                "footer": {
-                    "reverseCharged": "PPN dibebankan.",
-                    "currency": "Semua jumlah ditampilkan dalam {{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "Email",
-            "description": "Ubah alamat email yang digunakan untuk masuk ke akun Anda dan menerima pemberitahuan penting.",
-            "button": "Ubah email"
-        },
-        "changePassword": {
-            "name": "Kata Sandi",
-            "description": "Ubah kata sandi yang digunakan untuk masuk ke akun Anda dan ditanyakan saat melakukan tindakan sensitif.",
-            "button": "Ubah kata sandi"
-        },
-        "2fa": {
-            "name": "Autentikasi Dua Faktor (2FA)",
-            "description": "Autentikasi dua faktor (2FA) adalah lapisan keamanan tambahan yang memerlukan kode 6 digit yang berbasis waktu saat masuk ke akun Anda.",
-            "enabled": "2FA diaktifkan untuk akun Anda.",
-            "enable": {
-                "button": "Aktifkan 2FA",
-                "modal": {
-                    "howto": "Gunakan aplikasi pengautentikasi seperti <1>Pengesah Google</1> atau pengelola kata sandi yang mendukung 2FA. Anda juga dapat memindai kode QR berikut ini, ketuk di atasnya untuk membuka tautan <3>{{otpauth}}</3> atau salin & tempel kode rahasia Anda secara manual."
-                }
-            },
-            "recovery": {
-                "button": "Kode pemulihan",
-                "modal": {
-                    "howto": "Gunakan kode pemulihan ini untuk mengakses akun Anda jika Anda kehilangan akses ke perangkat Anda dan tidak dapat menerima kode autentikasi dua faktor. Setiap kode hanya dapat digunakan sekali.",
-                    "download": "Unduh",
-                    "regen": "Perbarui"
-                }
-            },
-            "disable": {
-                "button": "Nonaktifkan 2FA"
-            }
-        },
-        "api": {
-            "description": "Buat dan kelola profil Anda secara terprogram. Baca dokumentasinya di <1>{{link}}</1>.",
-            "create": {
-                "button": "Buat kunci API"
-            }
-        },
-        "delete": {
-            "button": "Hapus akun",
-            "warning": "Ini akan menghapus akun Anda dan semua konfigurasi Anda selamanya.",
-            "confirm": {
-                "text": "Anda yakin ingin menghapus akun Anda? Tindakan ini tidak bisa dibatalkan."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "Kedaluwarsa",
-                    "text": "Akun sementara Anda telah kedaluwarsa. Daftar sekarang untuk menyimpan pengaturan Anda dan terus menggunakan NextDNS, gratis."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "Baru",
+    "affiliation": {
+      "name": "Afiliasi",
+      "description": "Bantu kami menyebarkan berita dengan membagikan <1>{{link}}</1> dan menerima <3>{{share, percentage}}</3> dari semua langganan untuk <5>{{months, number}} bulan pertama</5>.",
+      "balance": {
+        "name": "Saldo"
+      },
+      "availableBalance": {
+        "name": "Saldo tersedia",
+        "description": "Saldo tersedia untuk ditarik setelah satu bulan untuk menutupi potensi pengembalian dana."
+      },
+      "payout": {
+        "button": "Tarik Saldo",
+        "minimum": "Saldo yang tersedia minimal {{amount, price}} untuk menarik saldo.",
         "form": {
-            "title": "Profil baru",
-            "name": {
-                "label": "Nama",
-                "placeholder": "Rumah, Anak-anak, Kantor, ...",
-                "errors": {
-                    "required": "Masukkan nama.",
-                    "taken": "Anda sudah memiliki profil dengan nama itu."
-                }
+          "paypalEmail": "Email PayPal",
+          "errors": {
+            "paypalEmail": {
+              "required": "Masukkan email PayPal.",
+              "invalid": "Masukkan email PayPal yang valid."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "Semuanya oke!",
-                "secondary": "Perangkat ini menggunakan NextDNS dengan konfigurasi ini."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "Perangkat ini menggunakan NextDNS tanpa konfigurasi.",
-                    "secondary": {
-                        "clients": "Pastikan Anda mengatur ID konfigurasi yang ditunjukkan di bawah ini dalam pengaturan aplikasi.",
-                        "firefox": "Pastikan Anda mengatur titik akhir DNS-over-HTTPS yang ditunjukkan di bawah ini di Firefox.",
-                        "doh": "Pastikan Anda menggunakan titik akhir DNS-over-HTTPS yang ditunjukkan di bawah ini.",
-                        "dot": "Pastikan Anda menggunakan titik akhir DNS-over-TLS yang ditunjukkan di bawah ini.",
-                        "ipv6": "Pastikan Anda menggunakan alamat IPv6 yang ditunjukkan di bawah ini.",
-                        "servers": "Pastikan untuk menggunakan Server DNS yang ditunjukkan di bagian IP Tertaut di bawah ini (Server DNS berubah antar konfigurasi).",
-                        "link": "Pastikan untuk menautkan alamat IP Anda di bagian IP Tertaut di bawah."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "Perangkat ini menggunakan NextDNS dengan konfigurasi lain.",
-                    "secondary": {
-                        "sameAccount": "Perangkat ini sedang menggunakan \"{{name}}\".",
-                        "otherAccount": "Pastikan Anda menggunakan salah satu titik akhir yang tercantum di halaman ini."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "Perangkat ini tidak menggunakan NextDNS.",
-                "secondary": "Perangkat ini sedang menggunakan ”{{resolver}}” sebagai resolver DNS."
-            },
-            "error": {
-                "primary": "Terjadi kesalahan saat memeriksa status saat ini.",
-                "secondary": "Silakan hubungi kami jika masalah ini terus berlanjut setelah menyegarkan halaman."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
+    "usage": {
+      "name": "Penggunaan gratis",
+      "description": "NextDNS dapat digunakan secara gratis hingga {{queries, number}} kueri setiap bulan, setelah itu semua fitur akan dinonaktifkan sementara hingga bulan depan.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} kueri</1>",
+      "overQuota": {
+        "message": "Anda telah membuat lebih dari {{queries, number}} kueri bulan ini.",
+        "info": "NextDNS akan terus merespon kueri DNS tetapi semua fitur dinonaktifkan sementara hingga bulan depan."
+      },
+      "subscribe": {
+        "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+        "upsell": "Dapatkan kueri tak terbatas, mulai dari {{amount, price}}/bulan."
+      }
+    },
+    "subscription": {
+      "name": "Langganan",
+      "plans": {
+        "pro": "Pro",
+        "business": "Bisnis",
+        "education": "Pendidikan"
+      },
+      "intervals": {
+        "month": "paket bulanan",
+        "year": "paket tahunan"
+      },
+      "per": {
+        "month": "per bulan",
+        "year": "per tahun"
+      },
+      "units": {
+        "business_one": "{{count, number}} karyawan",
+        "business_other": "{{count, number}} karyawan",
+        "education_one": "{{count, number}} siswa",
+        "education_other": "{{count, number}} siswa"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "Langganan Anda akan berakhir pada {{date, date}}.",
+      "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
+      "manageOnApple": "Manage subscription on Apple",
+      "restart": {
+        "button": "Mulai ulang langganan"
+      },
+      "changePlan": {
+        "button": "Ubah paket"
+      },
+      "renewal": "Pembayaran otomatis Anda berikutnya adalah {{amount, price}} pada {{date, date}}.",
+      "changePaymentMethod": {
+        "button": "Ubah metode pembayaran"
+      },
+      "cancel": {
+        "button": "Batalkan langganan",
+        "confirm": {
+          "text": "Langganan Anda saat ini akan tetap berlaku sampai {{date, date}}.",
+          "submit": "Batalkan langganan"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "Pilih paket",
+        "addPaymentMethod": "Tambahkan metode pembayaran",
+        "included": "Semua paket termasuk <1>akses ke semua fitur</1>, <3>perangkat tak terbatas</3> dan <5>kueri tak terbatas</5>.",
+        "savings": "Hemat {{percent, percentage}} dari paket bulanan",
+        "familyOnly": "* Paket Pro hanya untuk penggunaan pribadi (dan keluarga dekat).",
+        "unitsQuestion": {
+          "business": "Berapa jumlah <1>karyawan</1> yang bekerja di bisnis Anda?",
+          "education": "Berapa jumlah <1>siswa</1> di sekolah (atau daerah) Anda?"
+        },
+        "asYouGrow": {
+          "business": "* Jangan lupa untuk memperbarui paket Anda saat jumlah karyawan Anda bertambah.",
+          "education": "* Jangan lupa untuk memperbarui paket Anda saat jumlah siswa Anda bertambah."
+        },
+        "starting": {
+          "business": "<0>Mulai dari </0><1>{{price, price}}</1><2> per bulan untuk {{units, number}} karyawan</2>",
+          "education": "<0>Mulai dari </0><1>{{price, price}}</1><2> per bulan untuk {{units, number}} siswa</2>"
+        },
+        "card": {
+          "number": "Nomor kartu",
+          "expiration": "Tanggal kedaluwarsa",
+          "code": "Kode keamanan",
+          "stripe": "Kami menggunakan Stripe — gerbang pembayaran terkemuka — untuk memproses pembayaran kartu dengan cara yang aman tanpa pernah memiliki akses ke informasi kartu Anda secara langsung."
+        },
+        "paypal": {
+          "text": "Klik tombol Lanjutkan ke PayPal untuk berlangganan menggunakan PayPal."
+        },
+        "bitpay": {
+          "text": "Klik tombol Lanjutkan ke BitPay untuk membayar dengan mata uang kripto.",
+          "toYearly": "Kami tidak menerima pembayaran dengan mata uang kripto untuk paket bulanan. <1>Dengan melanjutkan, Anda akan secara otomatis dialihkan ke paket tahunan.</1>",
+          "remainder": "Langganan Anda saat ini sudah dibayar hingga {{date, date}}. Anda akan ditagih sekarang dan sisanya akan ditambahkan secara otomatis ke tanggal kedaluwarsa yang baru."
+        },
+        "continueTo": "Lanjutkan ke <1></1>"
+      }
+    },
+    "business": {
+      "name": "Bisnis",
+      "description": "Untuk alasan perpajakan, kami memerlukan nama bisnis, alamat, dan nomor PPN Anda (atau yang setara). Ini diwajibkan oleh hukum dan akan muncul di semua faktur.",
+      "button": {
+        "add": "Tambahkan info bisnis",
+        "update": "Perbarui"
+      },
+      "form": {
+        "name": {
+          "label": "Nama",
+          "placeholder": "PT. Mencari Cinta Sejati.",
+          "errors": {
+            "required": "Masukkan nama bisnis Anda."
+          }
+        },
+        "address": {
+          "label": "Alamat",
+          "placeholder": "Jl. Medan Merdeka Utara No.3, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat&#10;Daerah Khusus Ibukota Jakarta 10110&#10;Indonesia",
+          "errors": {
+            "required": "Masukkan alamat bisnis Anda."
+          }
+        },
+        "vatNumber": {
+          "label": "Nomor PPN"
+        }
+      }
+    },
+    "invoices": {
+      "name": "Faktur",
+      "description": "Riwayat penagihan dan semua faktur untuk akun Anda.",
+      "pending": "{{amount, price}} (Tertunda)",
+      "show-more": "Tampilkan lainnya",
+      "show-less": "Tampilkan sedikit",
+      "invoice": {
+        "title": "Faktur #{{code}}",
+        "to": "Kepada: <1>{{email}}</1>",
+        "vatNumber": "Nomor PPN: {{number}}",
+        "columns": {
+          "plan": "Paket",
+          "period": "Periode",
+          "amount": "Jumlah"
+        },
+        "vat": "PPN ({{rate, percentage}})",
+        "total": "Total",
+        "footer": {
+          "reverseCharged": "PPN dibebankan.",
+          "currency": "Semua jumlah ditampilkan dalam {{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "Email",
+      "description": "Ubah alamat email yang digunakan untuk masuk ke akun Anda dan menerima pemberitahuan penting.",
+      "button": "Ubah email"
+    },
+    "changePassword": {
+      "name": "Kata Sandi",
+      "description": "Ubah kata sandi yang digunakan untuk masuk ke akun Anda dan ditanyakan saat melakukan tindakan sensitif.",
+      "button": "Ubah kata sandi"
+    },
+    "2fa": {
+      "name": "Autentikasi Dua Faktor (2FA)",
+      "description": "Autentikasi dua faktor (2FA) adalah lapisan keamanan tambahan yang memerlukan kode 6 digit yang berbasis waktu saat masuk ke akun Anda.",
+      "enabled": "2FA diaktifkan untuk akun Anda.",
+      "enable": {
+        "button": "Aktifkan 2FA",
+        "modal": {
+          "howto": "Gunakan aplikasi pengautentikasi seperti <1>Pengesah Google</1> atau pengelola kata sandi yang mendukung 2FA. Anda juga dapat memindai kode QR berikut ini, ketuk di atasnya untuk membuka tautan <3>{{otpauth}}</3> atau salin & tempel kode rahasia Anda secara manual."
+        }
+      },
+      "recovery": {
+        "button": "Kode pemulihan",
+        "modal": {
+          "howto": "Gunakan kode pemulihan ini untuk mengakses akun Anda jika Anda kehilangan akses ke perangkat Anda dan tidak dapat menerima kode autentikasi dua faktor. Setiap kode hanya dapat digunakan sekali.",
+          "download": "Unduh",
+          "regen": "Perbarui"
+        }
+      },
+      "disable": {
+        "button": "Nonaktifkan 2FA"
+      }
+    },
+    "api": {
+      "description": "Buat dan kelola profil Anda secara terprogram. Baca dokumentasinya di <1>{{link}}</1>.",
+      "create": {
+        "button": "Buat kunci API"
+      }
+    },
+    "delete": {
+      "button": "Hapus akun",
+      "warning": "Ini akan menghapus akun Anda dan semua konfigurasi Anda selamanya.",
+      "confirm": {
+        "text": "Anda yakin ingin menghapus akun Anda? Tindakan ini tidak bisa dibatalkan."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "Kedaluwarsa",
+          "text": "Akun sementara Anda telah kedaluwarsa. Daftar sekarang untuk menyimpan pengaturan Anda dan terus menggunakan NextDNS, gratis."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "Baru",
+    "form": {
+      "title": "Profil baru",
+      "name": {
+        "label": "Nama",
+        "placeholder": "Rumah, Anak-anak, Kantor, ...",
+        "errors": {
+          "required": "Masukkan nama.",
+          "taken": "Anda sudah memiliki profil dengan nama itu."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "Semuanya oke!",
+        "secondary": "Perangkat ini menggunakan NextDNS dengan konfigurasi ini."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "Perangkat ini menggunakan NextDNS tanpa konfigurasi.",
+          "secondary": {
+            "clients": "Pastikan Anda mengatur ID konfigurasi yang ditunjukkan di bawah ini dalam pengaturan aplikasi.",
+            "firefox": "Pastikan Anda mengatur titik akhir DNS-over-HTTPS yang ditunjukkan di bawah ini di Firefox.",
+            "doh": "Pastikan Anda menggunakan titik akhir DNS-over-HTTPS yang ditunjukkan di bawah ini.",
+            "dot": "Pastikan Anda menggunakan titik akhir DNS-over-TLS yang ditunjukkan di bawah ini.",
+            "ipv6": "Pastikan Anda menggunakan alamat IPv6 yang ditunjukkan di bawah ini.",
+            "servers": "Pastikan untuk menggunakan Server DNS yang ditunjukkan di bagian IP Tertaut di bawah ini (Server DNS berubah antar konfigurasi).",
+            "link": "Pastikan untuk menautkan alamat IP Anda di bagian IP Tertaut di bawah."
+          }
+        },
+        "withConfiguration": {
+          "primary": "Perangkat ini menggunakan NextDNS dengan konfigurasi lain.",
+          "secondary": {
+            "sameAccount": "Perangkat ini sedang menggunakan \"{{name}}\".",
+            "otherAccount": "Pastikan Anda menggunakan salah satu titik akhir yang tercantum di halaman ini."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "Perangkat ini tidak menggunakan NextDNS.",
+        "secondary": "Perangkat ini sedang menggunakan ”{{resolver}}” sebagai resolver DNS."
+      },
+      "error": {
+        "primary": "Terjadi kesalahan saat memeriksa status saat ini.",
+        "secondary": "Silakan hubungi kami jika masalah ini terus berlanjut setelah menyegarkan halaman."
+      },
+      "apr": {
+        "ok": {
+          "primary": "This device is using NextDNS with iCloud Private Relay",
+          "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
+        },
+        "blockpage": {
+          "primary": "This device is using NextDNS with iCloud Private Relay.",
+          "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+        }
+      }
+    },
+    "endpoints": {
+      "name": "Titik Akhir",
+      "description": "Siapkan NextDNS dengan konfigurasi ini menggunakan salah satu titik akhir di bawah.",
+      "help": "Tidak yakin bagaimana cara menggunakannya? Ikuti <1>Panduan Konfigurasi</1>."
+    },
+    "linkedIp": {
+      "name": "IP Tertaut",
+      "description": "Jika Anda tidak dapat mengatur NextDNS menggunakan aplikasi kami, DNS-over-TLS, DNS-over-HTTPS atau IPv6, gunakan server DNS di bawah ini dan tautkan IP Anda. Ini sebagian besar untuk digunakan di jaringan rumah dan tidak disarankan di seluler.",
+      "servers": {
+        "name": "Server DNS"
+      },
+      "ip": {
+        "name": "IP Tertaut",
+        "link": "Tautkan IP"
+      },
+      "showAdvanced": "Tampilkan opsi lanjutan",
+      "ddns": {
+        "explanation": "Anda dapat menggunakan DNS Dinamis (DDNS) agar IP tertaut Anda diperbarui secara otomatis.",
+        "set": "Konfigurasi DDNS",
+        "status": "Anda saat ini menggunakan <1>{{hostname}}</1> sebagai nama host DDNS, IP Anda akan diperbarui secara otomatis setiap menit.",
+        "unset": "Hapus",
+        "form": {
+          "hostname": {
+            "label": "Nama host DDNS",
+            "placeholder": "contoh.tanpa-ip.org",
+            "errors": {
+              "required": "Masukkan nama host.",
+              "invalid": "Masukkan nama host yang valid.",
+              "ip": "Masukkan nama host, bukan alamat IP.",
+              "error": "Terjadi kesalahan saat mendapatkan alamat IP di belakang nama host ini.",
+              "empty": "Nama host ini tidak mengembalikan alamat IP apa pun.",
+              "different": "Untuk alasan keamanan, saat menambahkan DNS Dinamis, alamat IP yang dikembalikan oleh nama host DDNS harus sama dengan alamat IP Anda saat ini."
             }
+          }
+        }
+      },
+      "programmatically": "Anda juga dapat memperbarui IP tertaut Anda secara terprogram dengan memanggil:"
+    },
+    "guide": {
+      "name": "Panduan Konfigurasi",
+      "description": "Ikuti petunjuk di bawah ini untuk menyiapkan NextDNS di perangkat, peramban, atau router Anda.",
+      "or": "Atau",
+      "ipv4": {
+        "title": "IPv4 (dengan IP Tertaut)"
+      },
+      "ipv6": {
+        "supported": "Jaringan Anda mendukung IPv6",
+        "notSupported": "Jaringan Anda tidak mendukung IPv6"
+      },
+      "tags": {
+        "recommended": "Direkomendasikan",
+        "advanced": "Tingkat Lanjut"
+      },
+      "use": "Gunakan berikut ini pada <1>{{file}}</1>:",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "DNS Pribadi",
+              "requirements": "Android 9 atau lebih tinggi",
+              "steps": {
+                "1": "1. Buka Setelan → Jaringan & internet → Lanjutan → DNS Pribadi.",
+                "2": "2. Pilih opsi Hostname penyedia DNS Pribadi.",
+                "3": "3. Masukkan <1>{{endpoint}}</1> dan tekan Simpan."
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "Titik Akhir",
-            "description": "Siapkan NextDNS dengan konfigurasi ini menggunakan salah satu titik akhir di bawah.",
-            "help": "Tidak yakin bagaimana cara menggunakannya? Ikuti <1>Panduan Konfigurasi</1>."
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "Profil konfigurasi",
+              "requirements": "iOS 14 atau lebih tinggi",
+              "step": "Gunakan pembuat profil konfigurasi Apple kami yang tersedia di <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS untuk iOS"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "IP Tertaut",
-            "description": "Jika Anda tidak dapat mengatur NextDNS menggunakan aplikasi kami, DNS-over-TLS, DNS-over-HTTPS atau IPv6, gunakan server DNS di bawah ini dan tautkan IP Anda. Ini sebagian besar untuk digunakan di jaringan rumah dan tidak disarankan di seluler.",
-            "servers": {
-                "name": "Server DNS"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS melalui HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "Buka aplikasi <1>Pengaturan</1>.",
+                "Buka <1>Jaringan dan internet</1>.",
+                "Klik <1>Wi-Fi</1> (atau <3>Ethernet</3>).",
+                "Klik <1>Properti perangkat keras</1>, atau abaikan langkah ini jika Anda mengklik <3>Ethernet</3>.",
+                "Klik tombol <1>Edit</1> di sebelah <3>Penetapan server DNS</3>.",
+                "Pilih <1>Manual</1>.",
+                "Aktifkan <1>IPv{{version}}</1>.",
+                "Masukkan <1>{{ip}}</1> sebagai <3>DNS Pilihan</3>, lalu pilih <5>Aktif (templat manual)</5> dan masukkan <7>{{endpoint}}</7>.",
+                "Masukkan <1>{{ip}}</1> sebagai <3>DNS Alternatif</3>, lalu pilih <5>Aktif (templat manual)</5> dan masukkan <7>{{endpoint}}</7>.",
+                "Klik <1>Simpan</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS untuk Windows",
+              "steps": {
+                "1": "1. Unduh penginstal <1>di sini</1>.",
+                "2": "2. Setelah menginstal, klik kanan ikon NextDNS di Systray lalu buka Settings. Setel <1>{{id}}</1> sebagai ID Konfigurasi.",
+                "3": "3. Klik kanan ikon NextDNS di Systray, lalu klik Enable."
+              }
             },
             "ip": {
-                "name": "IP Tertaut",
-                "link": "Tautkan IP"
+              "steps": {
+                "1": "1. Klik pada menu Start, lalu klik Control Panel.",
+                "2": "2. Klik Jaringan dan Internet, lalu Network and Sharing Center.",
+                "3": "3. Klik Change adapter settings.",
+                "4": "4. Klik kanan pada jaringan Wi-Fi yang Anda sambungkan, lalu klik Properties.",
+                "5": "5. Pilih Internet Protocol Version {{version}}.",
+                "6": "6. Klik Properties.",
+                "7": "7. Klik Use the following DNS server addresses.",
+                "8": "8. Ganti alamat saat ini (jika ada) dengan <1>{{dns1}}</1> dan <3>{{dns2}}</3>.",
+                "9": "9. Klik OK, lalu Tutup. Anda mungkin perlu memulai ulang peramban Anda."
+              }
             },
-            "showAdvanced": "Tampilkan opsi lanjutan",
-            "ddns": {
-                "explanation": "Anda dapat menggunakan DNS Dinamis (DDNS) agar IP tertaut Anda diperbarui secara otomatis.",
-                "set": "Konfigurasi DDNS",
-                "status": "Anda saat ini menggunakan <1>{{hostname}}</1> sebagai nama host DDNS, IP Anda akan diperbarui secara otomatis setiap menit.",
-                "unset": "Hapus",
-                "form": {
-                    "hostname": {
-                        "label": "Nama host DDNS",
-                        "placeholder": "contoh.tanpa-ip.org",
-                        "errors": {
-                            "required": "Masukkan nama host.",
-                            "invalid": "Masukkan nama host yang valid.",
-                            "ip": "Masukkan nama host, bukan alamat IP.",
-                            "error": "Terjadi kesalahan saat mendapatkan alamat IP di belakang nama host ini.",
-                            "empty": "Nama host ini tidak mengembalikan alamat IP apa pun.",
-                            "multiple": "Nama host ini mengembalikan beberapa alamat IP.",
-                            "different": "Untuk alasan keamanan, saat menambahkan DNS Dinamis, alamat IP yang dikembalikan oleh nama host DDNS harus sama dengan alamat IP Anda saat ini."
-                        }
-                    }
-                }
-            },
-            "programmatically": "Anda juga dapat memperbarui IP tertaut Anda secara terprogram dengan memanggil:"
-        },
-        "guide": {
-            "name": "Panduan Konfigurasi",
-            "description": "Ikuti petunjuk di bawah ini untuk menyiapkan NextDNS di perangkat, peramban, atau router Anda.",
-            "or": "Atau",
-            "ipv4": {
-                "title": "IPv4 (dengan IP Tertaut)"
-            },
-            "ipv6": {
-                "supported": "Jaringan Anda mendukung IPv6",
-                "notSupported": "Jaringan Anda tidak mendukung IPv6"
-            },
-            "tags": {
-                "recommended": "Direkomendasikan",
-                "advanced": "Tingkat Lanjut"
-            },
-            "use": "Gunakan berikut ini pada <1>{{file}}</1>:",
-            "appleConfigurationProfile": {
-                "name": "NextDNS ({{configuration}})",
-                "description": "Profil ini mengaktifkan NextDNS di semua jaringan menggunakan fitur DNS Terenkripsi asli yang baru."
-            },
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "DNS Pribadi",
-                            "requirements": "Android 9 atau lebih tinggi",
-                            "steps": {
-                                "1": "1. Buka Setelan → Jaringan & internet → Lanjutan → DNS Pribadi.",
-                                "2": "2. Pilih opsi Hostname penyedia DNS Pribadi.",
-                                "3": "3. Masukkan <1>{{endpoint}}</1> dan tekan Simpan."
-                            }
-                        },
-                        "app": {
-                            "title": "NextDNS untuk Android",
-                            "steps": {
-                                "1": "1. Instal aplikasi resmi kami dari Play Store.",
-                                "2": "2. Dalam aplikasi NextDNS, masukkan <1>{{id}}</1> di Pengaturan → ID Konfigurasi, lalu hubungkan."
-                            }
-                        },
-                        "ip": {
-                            "ipv4": {
-                                "title": "IPv4 (dengan IP Tertaut)"
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "Profil konfigurasi",
-                            "requirements": "iOS 14 atau lebih tinggi",
-                            "step": "Gunakan pembuat profil konfigurasi Apple kami yang tersedia di <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS untuk iOS",
-                            "steps": {
-                                "1": "1. Instal aplikasi resmi kami dari App Store.",
-                                "2": "2. Buka aplikasi, lalu buka Pengaturan dan pilih \"Gunakan Konfigurasi Khusus\". Masukkan <1>{{id}}</1> sebagai ID Konfigurasi.",
-                                "3": "3. Aktifkan NextDNS."
-                            }
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS melalui HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "Buka aplikasi <1>Pengaturan</1>.",
-                                "Buka <1>Jaringan dan internet</1>.",
-                                "Klik <1>Wi-Fi</1> (atau <3>Ethernet</3>).",
-                                "Klik <1>Properti perangkat keras</1>, atau abaikan langkah ini jika Anda mengklik <3>Ethernet</3>.",
-                                "Klik tombol <1>Edit</1> di sebelah <3>Penetapan server DNS</3>.",
-                                "Pilih <1>Manual</1>.",
-                                "Aktifkan <1>IPv{{version}}</1>.",
-                                "Masukkan <1>{{ip}}</1> sebagai <3>DNS Pilihan</3>, lalu pilih <5>Aktif (templat manual)</5> dan masukkan <7>{{endpoint}}</7>.",
-                                "Masukkan <1>{{ip}}</1> sebagai <3>DNS Alternatif</3>, lalu pilih <5>Aktif (templat manual)</5> dan masukkan <7>{{endpoint}}</7>.",
-                                "Klik <1>Simpan</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS untuk Windows",
-                            "steps": {
-                                "1": "1. Unduh penginstal <1>di sini</1>.",
-                                "2": "2. Setelah menginstal, klik kanan ikon NextDNS di Systray lalu buka Settings. Setel <1>{{id}}</1> sebagai ID Konfigurasi.",
-                                "3": "3. Klik kanan ikon NextDNS di Systray, lalu klik Enable."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Klik pada menu Start, lalu klik Control Panel.",
-                                "2": "2. Klik Jaringan dan Internet, lalu Network and Sharing Center.",
-                                "3": "3. Klik Change adapter settings.",
-                                "4": "4. Klik kanan pada jaringan Wi-Fi yang Anda sambungkan, lalu klik Properties.",
-                                "5": "5. Pilih Internet Protocol Version {{version}}.",
-                                "6": "6. Klik Properties.",
-                                "7": "7. Klik Use the following DNS server addresses.",
-                                "8": "8. Ganti alamat saat ini (jika ada) dengan <1>{{dns1}}</1> dan <3>{{dns2}}</3>.",
-                                "9": "9. Klik OK, lalu Tutup. Anda mungkin perlu memulai ulang peramban Anda."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. Instal YogaDNS dari <1>{{link}}</1>.",
-                                "2": "2. Ikuti instruksi untuk NextDNS di <1>{{link}}</1> dan gunakan <3>{{id}}</3> sebagai ID Konfigurasi."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS untuk macOS",
-                            "steps": {
-                                "1": "1. Instal aplikasi resmi kami dari Mac App Store.",
-                                "2": "2. Klik Preferences di menu bilah status aplikasi dan buka tab Configuration.",
-                                "3": "3. Centang \"Use Custom Configuration\" dan masukkan <1>{{id}}</1> sebagai ID Konfigurasi.",
-                                "4": "4. Aktifkan NextDNS."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur atau lebih tinggi"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Buka System Preferences, lalu klik Network.",
-                                "2": "2. Pilih jaringan tempat Anda terhubung, lalu klik tombol Advanced.",
-                                "3": "3. Buka seksi DNS.",
-                                "4": "4. Dalam daftar Server DNS, hapus semua alamat (jika ada) lalu tambahkan <1>{{dns1}}</1> dan <3>{{dns2}}</3>.",
-                                "5": "5. Klik OK, lalu klik Apply."
-                            }
-                        },
-                        "cli": {
-                            "title": "Klien Baris Perintah NextDNS",
-                            "steps": {
-                                "1": "1. Jalankan perintah berikut: <1>{{command}}</1>",
-                                "2": "2. Ikuti instruksi."
-                            },
-                            "manual": "Buka repositori sumber-terbuka kami di <1>{{link}}</1> untuk petunjuk penginstalan manual."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "Klien Baris Perintah NextDNS",
-                            "steps": {
-                                "1": "1. Jalankan perintah berikut: <1>{{command}}</1>",
-                                "2": "2. Ikuti instruksi."
-                            },
-                            "manual": "Buka repositori sumber-terbuka kami di <1>{{link}}</1> untuk petunjuk penginstalan manual."
-                        },
-                        "ip": {
-                            "step": "Ubah server DNS Anda menjadi <1>{{dns1}}</1> dan <3>{{dns2}}</3>."
-                        },
-                        "stubby": {
-                            "warning": "Pastikan Stubby ditautkan dengan <1>OpenSSL 1.1.1 atau lebih tinggi</1> karena versi sebelumnya tidak akan berfungsi dengan NextDNS."
-                        },
-                        "unbound": {
-                            "warning": "Sebagai resolver rekursif, Unbound mengejar CNAME. Ini dapat menyebabkan <1>perilaku tidak terduga</1> bila digunakan bersama dengan resolver DNS yang memblokir seperti NextDNS. Lihat <3>{{link}}</3>."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "Chrome OS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "DNS aman",
-                            "steps": [
-                                "Buka aplikasi <1>Pengaturan</1>.",
-                                "Buka <1>Privasi dan keamanan</1>.",
-                                "Aktifkan <1>Gunakan DNS aman</1>.",
-                                "Pilih opsi <1>Dengan: Sesuaikan</1>, lalu masukkan <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "Ubah server DNS Anda menjadi <1>{{dns1}}</1> dan <3>{{dns2}}</3>."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "Peramban",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. Buka Setelan.",
-                                "2": "2. Di bagian Privasi dan keamanan, klik Keamanan.",
-                                "3": "3. Di bagian Lanjutan, aktifkan Gunakan DNS aman.",
-                                "4": "4. Pilih Dengan: Sesuaikan, lalu masukkan <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Khusus Windows, macOS dan Linux",
-                            "steps": {
-                                "1": "1. Buka Preferensi.",
-                                "2": "2. Klik Privasi & Keamanan.",
-                                "3": "3. Gulir ke bawah untuk Mengaktifkan DNS melalui HTTPS.",
-                                "4": "4. Pilih Perlindungan Lebih atau Perlindungan Maksimum.",
-                                "5": "5. Pilih Kustom di menu.",
-                                "6": "6. Masukkan <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. Buka Pengaturan.",
-                                "2": "2. Buka bagian Privasi, pencarian, dan layanan.",
-                                "3": "3. Di bagian Keamanan, aktifkan Gunakan DNS aman untuk menentukan cara mencari alamat jaringan situs web.",
-                                "4": "4. Pilih opsi Pilih penyedia layanan, lalu masukkan <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. Buka Pengaturan.",
-                                "2": "2. Pada bagian Privasi dan keamanan (di bawah Setelan tambahan), buka Keamanan.",
-                                "3": "3. Pada bagian Lanjutan, aktifkan Gunakan DNS aman.",
-                                "4": "4. Pilih opsi Dengan: Sesuaikan, lalu masukkan <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "Router",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS untuk Router",
-                            "requirements": "Hanya berfungsi pada router yang dapat menjalankan file yang dapat dieksekusi",
-                            "step": "Buka repositori sumber-terbuka kami di <1>{{link}}</1> untuk petunjuk penginstalan."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "Beberapa router mungkin tidak mendukung notasi IPv6 di atas. Dalam hal ini, gunakan <1>{{dns1}}</1> dan <3>{{dns2}}</3>."
-                            },
-                            "steps": {
-                                "1": "1. Buka preferensi untuk router Anda. Biasanya Anda dapat mengaksesnya dari browser Anda melalui URL (seperti http://192.168.0.1/ atau http://192.168.1.1/).",
-                                "2": "2. Temukan pengaturan DNS.",
-                                "3": "3. Hapus semua alamat (jika ada) lalu tambahkan <1>{{dns1}}</1> dan <3>{{dns2}}</3>.",
-                                "4": "4. Klik Simpan (atau sejenisnya)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. Buka Services → DNS Resolver dan pada tab General Settings gulir ke bawah ke kotak Custom Options.",
-                                "2": "2. Masukkan baris berikut:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "Jalankan perintah berikut:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "Buka dokumentasi Tailscale di <2>{{link}}</2> untuk instruksi pemasangan."
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. Instal YogaDNS dari <1>{{link}}</1>.",
+                "2": "2. Ikuti instruksi untuk NextDNS di <1>{{link}}</1> dan gunakan <3>{{id}}</3> sebagai ID Konfigurasi."
+              }
             }
+          }
         },
-        "identify": {
-            "name": "Identifikasi perangkat Anda",
-            "description": "Ikuti petunjuk di bawah ini untuk mengidentifikasi perangkat Anda di Analitik dan Log.",
-            "apps": {
-                "name": "Aplikasi",
-                "instructions": "Aktifkan \"Kirim Nama Perangkat\" di setelan aplikasi."
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS untuk macOS",
+              "steps": {
+                "1": "1. Instal aplikasi resmi kami dari Mac App Store.",
+                "2": "2. Klik Preferences di menu bilah status aplikasi dan buka tab Configuration.",
+                "3": "3. Centang \"Use Custom Configuration\" dan masukkan <1>{{id}}</1> sebagai ID Konfigurasi."
+              }
             },
-            "dot": {
-                "instructions": "Tambahkan nama ke domain yang disediakan (nama hanya boleh berisi <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> dan <7>-</7>). Gunakan <9>--</9> untuk spasi.",
-                "example": "Untuk \"<1>Router Fulan</1>\", Anda dapat menggunakan <3>Router--Fulan-{{profile}}.dns.nextdns.io</3> sebagai titik akhir DNS-over-TLS Anda."
+            "profile": {
+              "requirements": "macOS Big Sur atau lebih tinggi"
             },
-            "doh": {
-                "instructions": "Tambahkan nama ke URL yang disediakan (nama harus dienkode URL).",
-                "example": "Untuk \"<1>Firefox Fulan</1>\", Anda dapat menggunakan <3>https://dns.nextdns.io/{{profile}}/Firefox%20Fulan</3> sebagai titik akhir DNS-over-HTTPS Anda."
+            "ip": {
+              "steps": {
+                "1": "1. Buka System Preferences, lalu klik Network.",
+                "2": "2. Pilih jaringan tempat Anda terhubung, lalu klik tombol Advanced.",
+                "3": "3. Buka seksi DNS.",
+                "4": "4. Dalam daftar Server DNS, hapus semua alamat (jika ada) lalu tambahkan <1>{{dns1}}</1> dan <3>{{dns2}}</3>.",
+                "5": "5. Klik OK, lalu klik Apply."
+              }
+            },
+            "cli": {
+              "title": "Klien Baris Perintah NextDNS",
+              "steps": {
+                "1": "1. Jalankan perintah berikut: <1>{{command}}</1>",
+                "2": "2. Ikuti instruksi."
+              },
+              "manual": "Buka repositori sumber-terbuka kami di <1>{{link}}</1> untuk petunjuk penginstalan manual."
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "Klien Baris Perintah NextDNS",
+              "steps": {
+                "1": "1. Jalankan perintah berikut: <1>{{command}}</1>",
+                "2": "2. Ikuti instruksi."
+              },
+              "manual": "Buka repositori sumber-terbuka kami di <1>{{link}}</1> untuk petunjuk penginstalan manual."
+            },
+            "ip": {
+              "step": "Ubah server DNS Anda menjadi <1>{{dns1}}</1> dan <3>{{dns2}}</3>."
+            },
+            "stubby": {
+              "warning": "Pastikan Stubby ditautkan dengan <1>OpenSSL 1.1.1 atau lebih tinggi</1> karena versi sebelumnya tidak akan berfungsi dengan NextDNS."
+            },
+            "unbound": {
+              "warning": "Sebagai resolver rekursif, Unbound mengejar CNAME. Ini dapat menyebabkan <1>perilaku tidak terduga</1> bila digunakan bersama dengan resolver DNS yang memblokir seperti NextDNS. Lihat <3>{{link}}</3>."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "Chrome OS",
+          "guides": {
+            "secure-dns": {
+              "title": "DNS aman",
+              "steps": [
+                "Buka aplikasi <1>Pengaturan</1>.",
+                "Buka <1>Privasi dan keamanan</1>.",
+                "Aktifkan <1>Gunakan DNS aman</1>.",
+                "Pilih opsi <1>Dengan: Sesuaikan</1>, lalu masukkan <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "Ubah server DNS Anda menjadi <1>{{dns1}}</1> dan <3>{{dns2}}</3>."
+            }
+          }
+        },
+        "browsers": {
+          "name": "Peramban",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. Buka Setelan.",
+                "2": "2. Di bagian Privasi dan keamanan, klik Keamanan.",
+                "3": "3. Di bagian Lanjutan, aktifkan Gunakan DNS aman.",
+                "4": "4. Pilih Dengan: Sesuaikan, lalu masukkan <1>{{endpoint}}</1>."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Khusus Windows, macOS dan Linux",
+              "steps": {
+                "1": "1. Buka Preferensi.",
+                "2": "2. Klik Privasi & Keamanan.",
+                "3": "3. Gulir ke bawah untuk Mengaktifkan DNS melalui HTTPS.",
+                "4": "4. Pilih Perlindungan Lebih atau Perlindungan Maksimum.",
+                "5": "5. Pilih Kustom di menu.",
+                "6": "6. Masukkan <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. Buka Pengaturan.",
+                "2": "2. Buka bagian Privasi, pencarian, dan layanan.",
+                "3": "3. Di bagian Keamanan, aktifkan Gunakan DNS aman untuk menentukan cara mencari alamat jaringan situs web.",
+                "4": "4. Pilih opsi Pilih penyedia layanan, lalu masukkan <1>{{endpoint}}</1>."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. Buka Pengaturan.",
+                "2": "2. Pada bagian Privasi dan keamanan (di bawah Setelan tambahan), buka Keamanan.",
+                "3": "3. Pada bagian Lanjutan, aktifkan Gunakan DNS aman.",
+                "4": "4. Pilih opsi Dengan: Sesuaikan, lalu masukkan <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "Router",
+          "guides": {
+            "cli": {
+              "title": "NextDNS untuk Router",
+              "requirements": "Hanya berfungsi pada router yang dapat menjalankan file yang dapat dieksekusi",
+              "step": "Buka repositori sumber-terbuka kami di <1>{{link}}</1> untuk petunjuk penginstalan."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "Beberapa router mungkin tidak mendukung notasi IPv6 di atas. Dalam hal ini, gunakan <1>{{dns1}}</1> dan <3>{{dns2}}</3>."
+              },
+              "steps": {
+                "1": "1. Buka preferensi untuk router Anda. Biasanya Anda dapat mengaksesnya dari browser Anda melalui URL (seperti http://192.168.0.1/ atau http://192.168.1.1/).",
+                "2": "2. Temukan pengaturan DNS.",
+                "3": "3. Hapus semua alamat (jika ada) lalu tambahkan <1>{{dns1}}</1> dan <3>{{dns2}}</3>.",
+                "4": "4. Klik Simpan (atau sejenisnya)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. Buka Services → DNS Resolver dan pada tab General Settings gulir ke bawah ke kotak Custom Options.",
+                "2": "2. Masukkan baris berikut:"
+              }
+            },
+            "mikrotik": {
+              "run": "Jalankan perintah berikut:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "Buka dokumentasi Tailscale di <2>{{link}}</2> untuk instruksi pemasangan."
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "Umpan Intelijen Ancaman",
-            "description": "Blokir domain yang diketahui mendistribusikan malware, meluncurkan serangan phishing dan menghosting server perintah dan kontrol menggunakan perpaduan umpan intelijen ancaman paling terkemuka — semuanya diperbarui secara langsung.",
-            "enable": "Gunakan Umpan Intelijen Ancaman",
-            "covid": "Melindungi dari phishing COVID-19."
-        },
-        "ai": {
-            "name": "Deteksi Ancaman Berbasis AI",
-            "description": "Blokir jutaan ancaman yang terdeteksi oleh teknologi AI kami — mesin AI eksklusif kami yang dirancang sejak awal untuk DNS dengan ratusan sinyal, data pelatihan berukuran terabyte dan pengambilan keputusan secara real-time.",
-            "enable": "Aktifkan Deteksi Ancaman Berbasis AI"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google Safe Browsing",
-            "description": "Blokir malware dan domain phishing menggunakan Google Safe Browsing — teknologi yang memeriksa miliaran URL setiap hari untuk mencari situs web yang tidak aman. Tidak seperti versi yang disematkan di beberapa browser, ini tidak mengaitkan alamat IP publik Anda untuk ancaman dan tidak memungkinkan untuk melewati pemblokiran.",
-            "enable": "Aktifkan Google Safe Browsing"
-        },
-        "cryptojacking": {
-            "name": "Perlindungan Pembajakan Kripto",
-            "description": "Cegah penggunaan yang tidak sah untuk menambang mata uang kripto di perangkat Anda.",
-            "enable": "Aktifkan Perlindungan Pembajakan Kripto"
-        },
-        "dnsRebinding": {
-            "name": "Perlindungan Pengikatan Ulang DNS",
-            "description": "Cegah penyerang mengambil kendali perangkat lokal Anda melalui Internet dengan secara otomatis memblokir tanggapan DNS yang berisi alamat IP pribadi.",
-            "enable": "Aktifkan Perlindungan Pengikatan Ulang DNS"
-        },
-        "homograph": {
-            "name": "Perlindungan Serangan Homograf IDN",
-            "description": "Blokir domain yang meniru domain lain dengan menyalahgunakan kumpulan karakter besar yang tersedia dengan kedatangan Nama Domain Internasional (IDN) — misalnya mengganti huruf Latin \"e\" dengan huruf Sirilik \"е\".",
-            "enable": "Aktifkan Perlindungan Serangan Homograf"
-        },
-        "typosquatting": {
-            "name": "Perlindungan Typosquatting",
-            "description": "Blokir domain yang didaftarkan oleh pelaku jahat yang menargetkan pengguna yang salah mengetik alamat situs web ke dalam peramban mereka — mis. gooogle.co.id bukan google.co.id.",
-            "enable": "Aktifkan Perlindungan Typosquatting"
-        },
-        "dga": {
-            "name": "Perlindungan Algoritma Pembuatan Domain (DGA)",
-            "description": "Blokir domain yang dihasilkan oleh Domain Generation Algorithms (DGAs) yang terlihat di berbagai keluarga malware yang dapat digunakan sebagai titik pertemuan dengan server perintah dan kontrol mereka.",
-            "enable": "Aktifkan Perlindungan DGA"
-        },
-        "nrd": {
-            "name": "Blokir Domain Baru Terdaftar (NRD)",
-            "description": "Blokir domain yang terdaftar kurang dari 30 hari yang lalu. Domain tersebut diketahui disukai oleh pelaku ancaman untuk meluncurkan kampanye jahat.",
-            "enable": "Blokir Domain Baru Terdaftar (NRD)"
-        },
-        "ddns": {
-            "name": "Blokir Dynamic DNS Hostnames",
-            "description": "Layanan DNS dinamis (atau DDNS) memungkinkan pelaku kejahatan dengan cepat mengatur nama host secara gratis dan tanpa validasi atau verifikasi identitas. Sementara nama host DDNS yang sah jarang diakses dalam penggunaan sehari-hari, rekan-rekan jahat mereka banyak digunakan dalam kampanye phishing — misalnya paypal‑login.duckdns.org.",
-            "disclaimer": "Jika Anda menggunakan DDNS, perhatikan bahwa pengaturan ini tidak akan memblokir situs web layanan DDNS itu sendiri atau API pembaruannya.",
-            "enable": "Blokir Dynamic DNS Hostnames"
-        },
-        "parked": {
-            "name": "Blokir Domain Terparkir",
-            "description": "Domain terparkir adalah situs web satu halaman yang sering sarat dengan iklan dan tanpa nilai apa pun. Monetisasi domain terparkir terkadang dapat tercampur dengan praktik mencurigakan dan konten berbahaya.",
-            "enable": "Blokir Domain Terparkir"
-        },
-        "tld": {
-            "name": "Blokir Domain Tingkat Atas (TLD)",
-            "description": "Blokir semua domain dan subdomain milik TLD tertentu.",
-            "add": "Tambah TLD",
-            "sections": {
-                "spamhaus": "Spamhaus TLD yang Paling Banyak Disalahgunakan",
-                "all": "Semua TLD"
-            }
-        },
-        "csam": {
-            "name": "Blokir Materi Pelecehan Seksual Anak",
-            "description": "Blokir domain yang menghosting materi pelecehan seksual terhadap anak dengan bantuan Project Arachnid, yang dioperasikan oleh Pusat Perlindungan Anak Kanada. Tidak ada informasi yang dikirim kembali ke Project Arachnid ketika domain diblokir.",
-            "enable": "Blokir Materi Pelecehan Seksual Anak"
+    "identify": {
+      "name": "Identifikasi perangkat Anda",
+      "description": "Ikuti petunjuk di bawah ini untuk mengidentifikasi perangkat Anda di Analitik dan Log.",
+      "apps": {
+        "name": "Aplikasi",
+        "instructions": "Aktifkan \"Kirim Nama Perangkat\" di setelan aplikasi."
+      },
+      "dot": {
+        "instructions": "Tambahkan nama ke domain yang disediakan (nama hanya boleh berisi <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> dan <7>-</7>). Gunakan <9>--</9> untuk spasi.",
+        "example": "Untuk \"<1>Router Fulan</1>\", Anda dapat menggunakan <3>Router--Fulan-{{profile}}.dns.nextdns.io</3> sebagai titik akhir DNS-over-TLS Anda."
+      },
+      "doh": {
+        "instructions": "Tambahkan nama ke URL yang disediakan (nama harus dienkode URL).",
+        "example": "Untuk \"<1>Firefox Fulan</1>\", Anda dapat menggunakan <3>https://dns.nextdns.io/{{profile}}/Firefox%20Fulan</3> sebagai titik akhir DNS-over-HTTPS Anda."
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "Umpan Intelijen Ancaman",
+      "description": "Blokir domain yang diketahui mendistribusikan malware, meluncurkan serangan phishing dan menghosting server perintah dan kontrol menggunakan perpaduan umpan intelijen ancaman paling terkemuka — semuanya diperbarui secara langsung.",
+      "enable": "Gunakan Umpan Intelijen Ancaman"
+    },
+    "ai": {
+      "name": "Deteksi Ancaman Berbasis AI",
+      "description": "Blokir jutaan ancaman yang terdeteksi oleh teknologi AI kami — mesin AI eksklusif kami yang dirancang sejak awal untuk DNS dengan ratusan sinyal, data pelatihan berukuran terabyte dan pengambilan keputusan secara real-time.",
+      "enable": "Aktifkan Deteksi Ancaman Berbasis AI"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google Safe Browsing",
+      "description": "Blokir malware dan domain phishing menggunakan Google Safe Browsing — teknologi yang memeriksa miliaran URL setiap hari untuk mencari situs web yang tidak aman. Tidak seperti versi yang disematkan di beberapa browser, ini tidak mengaitkan alamat IP publik Anda untuk ancaman dan tidak memungkinkan untuk melewati pemblokiran.",
+      "enable": "Aktifkan Google Safe Browsing"
+    },
+    "cryptojacking": {
+      "name": "Perlindungan Pembajakan Kripto",
+      "description": "Cegah penggunaan yang tidak sah untuk menambang mata uang kripto di perangkat Anda.",
+      "enable": "Aktifkan Perlindungan Pembajakan Kripto"
+    },
+    "dnsRebinding": {
+      "name": "Perlindungan Pengikatan Ulang DNS",
+      "description": "Cegah penyerang mengambil kendali perangkat lokal Anda melalui Internet dengan secara otomatis memblokir tanggapan DNS yang berisi alamat IP pribadi.",
+      "enable": "Aktifkan Perlindungan Pengikatan Ulang DNS"
+    },
+    "homograph": {
+      "name": "Perlindungan Serangan Homograf IDN",
+      "description": "Blokir domain yang meniru domain lain dengan menyalahgunakan kumpulan karakter besar yang tersedia dengan kedatangan Nama Domain Internasional (IDN) — misalnya mengganti huruf Latin \"e\" dengan huruf Sirilik \"е\".",
+      "enable": "Aktifkan Perlindungan Serangan Homograf"
+    },
+    "typosquatting": {
+      "name": "Perlindungan Typosquatting",
+      "description": "Blokir domain yang didaftarkan oleh pelaku jahat yang menargetkan pengguna yang salah mengetik alamat situs web ke dalam peramban mereka — mis. gooogle.co.id bukan google.co.id.",
+      "enable": "Aktifkan Perlindungan Typosquatting"
+    },
+    "dga": {
+      "name": "Perlindungan Algoritma Pembuatan Domain (DGA)",
+      "description": "Blokir domain yang dihasilkan oleh Domain Generation Algorithms (DGAs) yang terlihat di berbagai keluarga malware yang dapat digunakan sebagai titik pertemuan dengan server perintah dan kontrol mereka.",
+      "enable": "Aktifkan Perlindungan DGA"
+    },
+    "nrd": {
+      "name": "Blokir Domain Baru Terdaftar (NRD)",
+      "description": "Blokir domain yang terdaftar kurang dari 30 hari yang lalu. Domain tersebut diketahui disukai oleh pelaku ancaman untuk meluncurkan kampanye jahat.",
+      "enable": "Blokir Domain Baru Terdaftar (NRD)"
+    },
+    "ddns": {
+      "name": "Blokir Dynamic DNS Hostnames",
+      "description": "Layanan DNS dinamis (atau DDNS) memungkinkan pelaku kejahatan dengan cepat mengatur nama host secara gratis dan tanpa validasi atau verifikasi identitas. Sementara nama host DDNS yang sah jarang diakses dalam penggunaan sehari-hari, rekan-rekan jahat mereka banyak digunakan dalam kampanye phishing — misalnya paypal‑login.duckdns.org.",
+      "disclaimer": "Jika Anda menggunakan DDNS, perhatikan bahwa pengaturan ini tidak akan memblokir situs web layanan DDNS itu sendiri atau API pembaruannya.",
+      "enable": "Blokir Dynamic DNS Hostnames"
+    },
+    "parked": {
+      "name": "Blokir Domain Terparkir",
+      "description": "Domain terparkir adalah situs web satu halaman yang sering sarat dengan iklan dan tanpa nilai apa pun. Monetisasi domain terparkir terkadang dapat tercampur dengan praktik mencurigakan dan konten berbahaya.",
+      "enable": "Blokir Domain Terparkir"
+    },
+    "tld": {
+      "name": "Blokir Domain Tingkat Atas (TLD)",
+      "description": "Blokir semua domain dan subdomain milik TLD tertentu.",
+      "add": "Tambah TLD",
+      "sections": {
+        "spamhaus": "Spamhaus TLD yang Paling Banyak Disalahgunakan",
+        "all": "Semua TLD"
+      }
+    },
+    "csam": {
+      "name": "Blokir Materi Pelecehan Seksual Anak",
+      "description": "Blokir domain yang menghosting materi pelecehan seksual terhadap anak dengan bantuan Project Arachnid, yang dioperasikan oleh Pusat Perlindungan Anak Kanada. Tidak ada informasi yang dikirim kembali ke Project Arachnid ketika domain diblokir.",
+      "enable": "Blokir Materi Pelecehan Seksual Anak"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "Daftar Blokir",
+      "description": "Blokir iklan & pelacak menggunakan daftar blokir paling populer yang tersedia — semuanya diperbarui secara langsung.",
+      "add": "Tambah daftar blokir",
+      "updated": "Diperbarui <1>{{ago}}</1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "Daftar Blokir Iklan & Pelacak NextDNS",
+          "description": "Daftar blokir komprehensif untuk memblokir iklan & pelacak di semua negara. Ini adalah daftar blokir pemula yang direkomendasikan."
         }
+      },
+      "sortBy": {
+        "popularity": "Popularitas",
+        "name": "Nama",
+        "entries": "Entri",
+        "updated": "Terbaru"
+      },
+      "entries_one": "{{count, number}} daftar",
+      "entries_other": "{{count, number}} daftar"
     },
-    "privacy": {
-        "blocklists": {
-            "name": "Daftar Blokir",
-            "description": "Blokir iklan & pelacak menggunakan daftar blokir paling populer yang tersedia — semuanya diperbarui secara langsung.",
-            "add": "Tambah daftar blokir",
-            "entries_0": "{{count, number}} daftar",
-            "updated": "Diperbarui <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "Daftar Blokir Iklan & Pelacak NextDNS",
-                    "description": "Daftar blokir komprehensif untuk memblokir iklan & pelacak di semua negara. Ini adalah daftar blokir pemula yang direkomendasikan."
-                }
-            },
-            "search": {
-                "placeholder": "Cari daftar blokir",
-                "noResults": "Tidak ada daftar blokir yang ditemukan."
-            },
-            "sortBy": {
-                "popularity": "Popularitas",
-                "name": "Nama",
-                "entries": "Entri",
-                "updated": "Terbaru"
-            }
+    "native": {
+      "name": "Perlindungan Native Tracking",
+      "description": "Blokir pelacak spektrum luas — sering kali beroperasi di tingkat sistem operasi — yang melacak aktivitas Anda di perangkat. Ini dapat mencakup semua situs web yang Anda kunjungi, semua yang Anda ketik atau lokasi Anda setiap saat.",
+      "add": "Tambah",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "Ponsel & Tablet, Smart TV, Router"
         },
-        "native": {
-            "name": "Perlindungan Native Tracking",
-            "description": "Blokir pelacak spektrum luas — sering kali beroperasi di tingkat sistem operasi — yang melacak aktivitas Anda di perangkat. Ini dapat mencakup semua situs web yang Anda kunjungi, semua yang Anda ketik atau lokasi Anda setiap saat.",
-            "add": "Tambah",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "Ponsel & Tablet, Smart TV, Router"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "Ponsel & Tablet"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "Ponsel, Tablet, Smart TV"
-                },
-                "alexa": {
-                    "name": "Amazon Alexa",
-                    "devices": "Perangkat dengan Alexa yang diaktifkan"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "Semua versi"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "Semua perangkat Roku"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "Speaker"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "Ponsel & Tablet"
         },
-        "disguised": {
-            "name": "Blokir Pelacak Pihak Ketiga Tersamar",
-            "description": "Secara otomatis mendeteksi dan memblokir pelacak pihak ketiga yang menyamar sebagai pihak pertama untuk menghindari perlindungan privasi peramban terbaru seperti ITP.",
-            "enable": "Blokir Pelacak Pihak Ketiga Tersamar"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "Ponsel, Tablet, Smart TV"
         },
-        "affiliate": {
-            "name": "Izinkan Tautan Afiliasi & Pelacakan",
-            "description": "Izinkan afiliasi & domain pelacakan umum di situs web penawaran, dalam email atau dalam hasil penelusuran. Mereka biasanya hanya dipanggil setelah mengklik tautan secara manual.",
-            "relay": "Alamat IP Anda akan secara otomatis disembunyikan dari situs web tersebut untuk menjaga privasi Anda.",
-            "enable": "Izinkan Tautan Afiliasi & Pelacakan"
+        "alexa": {
+          "name": "Amazon Alexa",
+          "devices": "Perangkat dengan Alexa yang diaktifkan"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "Semua versi"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "Semua perangkat Roku"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "Speaker"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "Situs web, Aplikasi & Permainan",
-            "description": "Batasi akses ke situs web, aplikasi dan permainan tertentu.",
-            "add": "Tambah situs web, aplikasi atau permainan",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Sinyal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "Twitter",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "Blokir Pelacak Pihak Ketiga Tersamar",
+      "description": "Secara otomatis mendeteksi dan memblokir pelacak pihak ketiga yang menyamar sebagai pihak pertama untuk menghindari perlindungan privasi peramban terbaru seperti ITP.",
+      "enable": "Blokir Pelacak Pihak Ketiga Tersamar"
+    },
+    "affiliate": {
+      "name": "Izinkan Tautan Afiliasi & Pelacakan",
+      "description": "Izinkan afiliasi & domain pelacakan umum di situs web penawaran, dalam email atau dalam hasil penelusuran. Mereka biasanya hanya dipanggil setelah mengklik tautan secara manual.",
+      "relay": "Alamat IP Anda akan secara otomatis disembunyikan dari situs web tersebut untuk menjaga privasi Anda.",
+      "enable": "Izinkan Tautan Afiliasi & Pelacakan"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "Situs web, Aplikasi & Permainan",
+      "description": "Batasi akses ke situs web, aplikasi dan permainan tertentu.",
+      "add": "Tambah situs web, aplikasi atau permainan",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Sinyal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox Live",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "Kategori",
+      "description": "Batasi akses ke kategori situs web dan aplikasi tertentu.",
+      "add": "Tambah kategori",
+      "categories": {
+        "dating": {
+          "name": "Kencan",
+          "description": "Blokir semua situs web & aplikasi kencan."
         },
+        "gambling": {
+          "name": "Judi",
+          "description": "Blokir konten judi."
+        },
+        "gaming": {
+          "name": "Game Online",
+          "description": "Blokir situs game online, aplikasi game online dan jaringan game online (Xbox Live, PlayStation Network, dll.)."
+        },
+        "piracy": {
+          "name": "Pembajakan",
+          "description": "Memblokir situs web P2P, protokol, situs web streaming yang melanggar hak cipta, dan situs web hosting video umum yang digunakan terutama untuk mendistribusikan konten berhak cipta secara ilegal."
+        },
+        "porn": {
+          "name": "Porno",
+          "description": "Blokir konten dewasa dan pornografi. Ini termasuk situs pendamping, pornhub.com dan domain serupa."
+        },
+        "social-networks": {
+          "name": "Jejaring Sosial",
+          "description": "Blokir semua situs dan aplikasi jejaring sosial (Facebook, Instagram, TikTok, Reddit, dll.). Tidak memblokir aplikasi perpesanan."
+        },
+        "video-streaming": {
+          "name": "Streaming Video",
+          "description": "Blokir layanan streaming video (YouTube, Netflix, Disney+, situs web streaming ilegal, situs web porno video, dll.) dan jejaring sosial berbasis video (TikTok, dll.). Ini juga dapat membantu mengurangi penggunaan bandwidth di jaringan apa pun."
+        }
+      }
+    },
+    "recreation": {
+      "name": "Waktu Rekreasi",
+      "description": "Mengatur periode pada hari tertentu atau setiap hari di mana beberapa situs web, aplikasi, permainan atau kategori di atas tidak akan diblokir — misalnya, mengizinkan Facebook pada hari Senin dan Selasa antara pukul 18.00 dan 20.00.",
+      "set": "Atur Waktu Rekreasi",
+      "howto": "Gunakan tombol <1></1> di bagian atas untuk mengaktifkan Waktu Rekreasi."
+    },
+    "safesearch": {
+      "name": "SafeSearch",
+      "description": "Filter hasil eksplisit di semua mesin telusur utama, termasuk gambar dan video. Ini juga akan memblokir akses ke mesin pencari yang tidak mendukung fitur ini.",
+      "enable": "Terapkan SafeSearch"
+    },
+    "youtubeRestricted": {
+      "name": "Mode Terbatas YouTube",
+      "description": "Filter video dewasa di YouTube dan blokir video dewasa tersemat agar tidak ditonton di situs web lain. Ini juga akan menyembunyikan semua komentar.",
+      "enable": "Terapkan Mode Terbatas YouTube"
+    },
+    "bypass": {
+      "name": "Blokir Metode Bypass",
+      "description": "Mencegah atau menghalangi penggunaan metode yang dapat membantu melewati pemfilteran NextDNS di jaringan. Ini termasuk VPN, proxy, perangkat lunak yang berhubungan dengan Tor dan penyedia DNS terenkripsi.",
+      "enable": "Blokir Metode Bypass"
+    }
+  },
+  "xlist": {
+    "placeholder": "Tambah domain...",
+    "errors": {
+      "required": "Masukkan domain.",
+      "ip": "Masukkan domain, bukan alamat IP.",
+      "invalid": "Masukkan domain yang valid.",
+      "tld": "Sepertinya Anda mencoba memblokir seluruh TLD, harap gunakan fitur Blokir TLD di bagian Keamanan.",
+      "exists": "Domain ini sudah ditambahkan."
+    },
+    "empty": "Belum ada domain.",
+    "denylist": {
+      "info": "Memblokir domain secara otomatis akan memblokir semua subdomainnya."
+    },
+    "allowlist": {
+      "info": "Mengizinkan domain secara otomatis akan mengizinkan semua subdomainnya. Mengizinkan lebih diutamakan daripada yang lainnya, termasuk fitur keamanan."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>dari kueri yang diblokir</1></1>",
+      "all_one": "<0>{{count, number}}</0><1>kueri</1>",
+      "all_other": "<0>{{count, number}}</0><1>kueri</1>",
+      "blocked_one": "<0>{{count, number}}</0><1>kueri yang diblokir</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>kueri yang diblokir</1>"
+    },
+    "queries": {
+      "name": "Kueri",
+      "description": "Evolusi kueri dari waktu ke waktu.",
+      "queries": {
+        "all_one": "<0>{{count, number}}</0><1> kueri</1>",
+        "all_other": "<0>{{count, number}}</0><1> kueri</1>",
+        "blocked_one": "<0>{{count, number}}</0><1> kueri yang diblokir</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> kueri yang diblokir</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "Domain Terselesaikan",
+        "description": "Domain yang diselesaikan tanpa diblokir oleh setelan apa pun atau karena diizinkan secara manual."
+      },
+      "blocked": {
+        "name": "Domain Diblokir",
+        "description": "Domain diblokir oleh pengaturan Keamanan, Privasi dan/atau Kontrol Orang Tua atau karena diblokir secara manual."
+      },
+      "root": {
+        "name": "Domain Root",
+        "description": "Kumpulan dari semua kueri yang dibuat untuk domain root dan semua subdomainnya."
+      },
+      "empty": "Belum ada domain."
+    },
+    "reasons": {
+      "name": "Alasan Diblokir",
+      "description": "Pengaturan Keamanan, Privasi dan/atau Kontrol Orang Tua yang memblokir sebagian besar kueri.",
+      "empty": "Belum ada domain yang diblokir."
+    },
+    "devices": {
+      "name": "Perangkat",
+      "description": "Perangkat yang membuat kueri.",
+      "empty": "Belum ada perangkat.",
+      "unidentified": {
+        "name": "Perangkat tidak teridentifikasi"
+      }
+    },
+    "ips": {
+      "name": "IP",
+      "description": "Alamat IP yang membuat kueri.",
+      "empty": "Belum ada IP."
+    },
+    "gafam": {
+      "name": "Dominasi GAFAM",
+      "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple dan Microsoft) adalah 5 perusahaan Internet dominan yang memiliki banyak layanan populer, seringkali beroperasi dengan nama yang berbeda, misalnya, WhatsApp dan Instagram dari Facebook.",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Facebook"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "Lainnya"
+        }
+      },
+      "queries_one": "{{count, number}} kueri",
+      "queries_other": "{{count, number}} kueri"
+    },
+    "encrypted": {
+      "name": "DNS Terenkripsi",
+      "description": "Persentase kueri yang dibuat menggunakan transportasi terenkripsi (DNS-over-HTTPS, DNS-over-TLS atau aplikasi resmi NextDNS).",
+      "empty": "Belum ada kueri."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "Persentase kueri yang divalidasi dengan DNSSEC.",
+      "empty": "Belum ada kueri."
+    },
+    "destination": {
+      "name": "Tujuan Lalu Lintas",
+      "description": "Negara tujuan lalu lintas Internet Anda.",
+      "topDomains": "Domain Teratas",
+      "queries_one": "{{count, number}} kueri",
+      "queries_other": "{{count, number}} kueri"
+    }
+  },
+  "logs": {
+    "blockedOnly": "Hanya Kueri Terblokir",
+    "raw": "Log DNS mentah",
+    "empty": "Belum ada log.",
+    "log": {
+      "actionBlock": "Blokir",
+      "actionAllow": "Izinkan",
+      "dnssec": "Divalidasi dengan DNSSEC.",
+      "clients": {
+        "nextdns-ios": "NextDNS untuk iOS",
+        "nextdns-android": "NextDNS untuk Android",
+        "nextdns-macos": "NextDNS untuk macOS",
+        "nextdns-windows": "NextDNS untuk Windows",
+        "nextdns-cli": "Klien CLI NextDNS",
+        "nextdns-chromeos": "NextDNS untuk Chrome OS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "Mikrotik",
+        "apple-profile": "Profil Konfigurasi Apple"
+      },
+      "blockedBy": "Diblokir oleh <1>{{lists}}</1>.",
+      "allowedBy": "Diizinkan oleh <1>{{lists}}</1>.",
+      "manual": {
+        "deny": "Diblokir secara manual.",
+        "allow": "Diizinkan secara manual."
+      },
+      "insights": {
+        "show": "Tampilkan Wawasan Pelacak",
+        "hide": "Sembunyikan Wawasan Pelacak",
         "categories": {
-            "name": "Kategori",
-            "description": "Batasi akses ke kategori situs web dan aplikasi tertentu.",
-            "add": "Tambah kategori",
-            "categories": {
-                "dating": {
-                    "name": "Kencan",
-                    "description": "Blokir semua situs web & aplikasi kencan."
-                },
-                "gambling": {
-                    "name": "Judi",
-                    "description": "Blokir konten judi."
-                },
-                "gaming": {
-                    "name": "Game Online",
-                    "description": "Blokir situs game online, aplikasi game online dan jaringan game online (Xbox Live, PlayStation Network, dll.)."
-                },
-                "piracy": {
-                    "name": "Pembajakan",
-                    "description": "Memblokir situs web P2P, protokol, situs web streaming yang melanggar hak cipta, dan situs web hosting video umum yang digunakan terutama untuk mendistribusikan konten berhak cipta secara ilegal."
-                },
-                "porn": {
-                    "name": "Porno",
-                    "description": "Blokir konten dewasa dan pornografi. Ini termasuk situs pendamping, pornhub.com dan domain serupa."
-                },
-                "social-networks": {
-                    "name": "Jejaring Sosial",
-                    "description": "Blokir semua situs dan aplikasi jejaring sosial (Facebook, Instagram, TikTok, Reddit, dll.). Tidak memblokir aplikasi perpesanan."
-                },
-                "video-streaming": {
-                    "name": "Streaming Video",
-                    "description": "Blokir layanan streaming video (YouTube, Netflix, Disney+, situs web streaming ilegal, situs web porno video, dll.) dan jejaring sosial berbasis video (TikTok, dll.). Ini juga dapat membantu mengurangi penggunaan bandwidth di jaringan apa pun."
-                }
-            }
+          "advertising": {
+            "description": "Menyediakan layanan periklanan atau terkait periklanan seperti pengumpulan data, analisis perilaku atau penargetan ulang."
+          },
+          "comments": {
+            "description": "Mengaktifkan bagian komentar untuk artikel dan ulasan produk."
+          },
+          "customer_interaction": {
+            "description": "Termasuk obrolan, pesan email, dukungan pelanggan, dan alat interaksi lainnya."
+          },
+          "essential": {
+            "description": "Termasuk pengelola tag, pemberitahuan privasi, dan teknologi yang penting untuk fungsionalitas situs web."
+          },
+          "adult_advertsing": {
+            "description": "Memberikan iklan yang umumnya muncul di situs konten dewasa."
+          },
+          "site_analytics": {
+            "description": "Mengumpulkan dan menganalisis data yang terkait dengan penggunaan dan kinerja situs."
+          },
+          "social_media": {
+            "description": "Mengintegrasikan fitur yang terkait dengan situs media sosial."
+          },
+          "audio_video_player": {
+            "description": "Memungkinkan situs web untuk menerbitkan, mendistribusikan, dan mengoptimalkan konten video dan audio."
+          },
+          "cdn": {
+            "description": "Jaringan pengiriman konten yang memberikan sumber daya untuk penggunaan situs yang berbeda dan biasanya untuk banyak pelanggan yang berbeda."
+          },
+          "misc": {
+            "description": "Pelacak ini tidak sesuai dengan kategori lain atau belum diberi label."
+          },
+          "pornvertising": {
+            "description": "Memberikan iklan yang umumnya muncul di situs konten dewasa."
+          },
+          "hosting": {
+            "description": "Ini adalah layanan yang digunakan oleh penyedia konten atau pemilik situs."
+          },
+          "extensions": {
+            "description": "Perangkat lunak pada perangkat pengguna yang dapat mencegat dan menganalisis lalu lintas peramban (man in the middle)."
+          }
         },
-        "recreation": {
-            "name": "Waktu Rekreasi",
-            "description": "Mengatur periode pada hari tertentu atau setiap hari di mana beberapa situs web, aplikasi, permainan atau kategori di atas tidak akan diblokir — misalnya, mengizinkan Facebook pada hari Senin dan Selasa antara pukul 18.00 dan 20.00.",
-            "set": "Atur Waktu Rekreasi",
-            "howto": "Gunakan tombol <1></1> di bagian atas untuk mengaktifkan Waktu Rekreasi."
+        "prevalence": {
+          "intensity": {
+            "dangerously": "Prevalensi berbahaya",
+            "extremely": "Sangat amat lazim",
+            "very": "Sangat lazim",
+            "commonly": "Umum terjadi",
+            "relatively": "Relatif lazim"
+          },
+          "summary": "{{prevalence}} <3>(melacak {{percent, percentage}} dari lalu lintas web)</3>"
         },
-        "safesearch": {
-            "name": "SafeSearch",
-            "description": "Filter hasil eksplisit di semua mesin telusur utama, termasuk gambar dan video. Ini juga akan memblokir akses ke mesin pencari yang tidak mendukung fitur ini.",
-            "enable": "Terapkan SafeSearch"
-        },
-        "youtubeRestricted": {
-            "name": "Mode Terbatas YouTube",
-            "description": "Filter video dewasa di YouTube dan blokir video dewasa tersemat agar tidak ditonton di situs web lain. Ini juga akan menyembunyikan semua komentar.",
-            "enable": "Terapkan Mode Terbatas YouTube"
-        },
-        "bypass": {
-            "name": "Blokir Metode Bypass",
-            "description": "Mencegah atau menghalangi penggunaan metode yang dapat membantu melewati pemfilteran NextDNS di jaringan. Ini termasuk VPN, proxy, perangkat lunak yang berhubungan dengan Tor dan penyedia DNS terenkripsi.",
-            "enable": "Blokir Metode Bypass"
-        }
+        "ownedBy": "<0>Dimiliki oleh </0><1>{{company}}</1>",
+        "source": "Wawasan Pelacak dari"
+      }
+    }
+  },
+  "deviceSelector": {
+    "all": "Semua perangkat",
+    "howto": "Pelajari cara mengidentifikasi perangkat Anda di halaman Konfigurasi."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "30 menit terakhir",
+      "6h": "6 jam terakhir",
+      "24h": "24 jam terakhir",
+      "7d": "7 hari terakhir",
+      "30d": "30 hari terakhir",
+      "3M": "3 bulan terakhir"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "Nama",
+      "description": "Pilih nama untuk konfigurasi ini."
     },
-    "xlist": {
-        "placeholder": "Tambah domain...",
-        "errors": {
+    "logs": {
+      "name": "Log",
+      "description": "Sempurnakan pengaturan Log Anda.",
+      "enable": "Aktifkan Log",
+      "privacy": {
+        "name": "Penyesuaian privasi",
+        "ip": "Log IP klien",
+        "domains": "Log domain"
+      },
+      "retention": {
+        "name": "Retensi",
+        "options": {
+          "1h": "1 jam",
+          "6h": "6 jam",
+          "1d": "1 hari",
+          "1w": "1 minggu",
+          "1m": "1 bulan",
+          "3m": "3 bulan",
+          "6m": "6 bulan",
+          "1y": "1 tahun",
+          "2y": "2 tahun"
+        }
+      },
+      "location": {
+        "name": "Lokasi penyimpanan",
+        "locations": {
+          "us": {
+            "name": "Amerika Serikat",
+            "description": "Log akan disimpan di Amerika Serikat. Ini adalah opsi bawaan."
+          },
+          "eu": {
+            "name": "Uni Eropa",
+            "description": "Log akan disimpan di negara anggota Uni Eropa."
+          },
+          "ch": {
+            "name": "Swiss",
+            "description": "Log akan disimpan di Zürich, Swiss — yurisdiksi yang terkenal dengan undang-undang privasinya yang kuat."
+          }
+        },
+        "confirm": {
+          "title": "Ubah lokasi penyimpanan",
+          "text": "Mengubah lokasi penyimpanan log akan menghapus semua log dan analitik sebelumnya untuk konfigurasi ini."
+        }
+      },
+      "download": {
+        "button": "Unduh log"
+      },
+      "clear": {
+        "button": "Hapus log",
+        "confirm": {
+          "text": "Apakah Anda yakin ingin menghapus semua log untuk konfigurasi ini? Tindakan ini tidak bisa dibatalkan.",
+          "submit": "Hapus"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "Halaman Blokir",
+      "description": "Menampilkan halaman blokir ketika domain sedang diblokir. Ini mungkin akan sedikit meningkatkan waktu buka halaman dan peringatan HTTPS mungkin muncul dalam beberapa kasus. Jika dinonaktifkan, kueri yang diblokir akan dijawab dengan alamat yang tidak ditentukan (0.0.0.0 atau ::).",
+      "enable": "Aktifkan Halaman Blokir",
+      "ca": {
+        "name": "NextDNS Root CA",
+        "description": "Hapus peringatan HTTPS saat memuat halaman blokir dengan menginstal dan mempercayai root CA kami di <1>{{link}}</1>. Baca instruksi tentang cara melakukan ini <3>di sini</3>."
+      }
+    },
+    "performance": {
+      "name": "Performa",
+      "description": "Percepat penjelajahan Anda.",
+      "ecs": {
+        "name": "Anonymized EDNS Client Subnet",
+        "description": "Mempercepat pengiriman data dari jaringan pengiriman konten tanpa mengekspos alamat IP Anda.",
+        "enable": "Aktifkan Anonymized EDNS Client Subnet"
+      },
+      "cache": {
+        "name": "Peningkatan Cache",
+        "description": "Minimalkan kueri DNS dengan menerapkan TTL minimum (Time to live).",
+        "enable": "Aktifkan Peningkatan Cache"
+      },
+      "flatten": {
+        "name": "CNAME Flattening",
+        "description": "Cegah resolver pengejar CNAME membuat kueri yang tidak perlu dan mencemari log dengan domain perantara.",
+        "enable": "Aktifkan CNAME Flattening"
+      }
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 mengacu pada ekosistem online yang terdesentralisasi dan tahan sensor yang terdiri dari teknologi inovatif seperti pendaftar domain berbasis blockchain (misalnya Ethereum Name Service) dan jaringan penyimpanan dan pengiriman konten terdistribusi (misalnya IPFS). Saat diaktifkan, NextDNS akan bertindak sebagai gerbang tanpa filter ke Web baru ini, memungkinkan Anda mengalaminya secara langsung tanpa perlu menginstal apa pun.",
+      "tips": "Karena sebagian besar peramban saat ini hanya mendukung domain tingkat atas klasik, Anda harus menambahkan garis miring (\"<1>/</1>\") ketika mencoba mengakses domain Web3 secara langsung (mis. \"<3>vitalik.eth/</3>\" bukan \"<5>vitalik.eth</5>\").",
+      "enable": "Aktifkan Web3"
+    },
+    "rewrites": {
+      "name": "Rewrites",
+      "description": "Setel atau ganti respon DNS untuk domain apa pun. Rewrites juga berlaku untuk subdomain, dan alamat IP lokal didukung sebagai jawaban.",
+      "new": "Rewrite baru",
+      "form": {
+        "domain": {
+          "label": "Domain",
+          "placeholder": "printersaya.lan, internetboxsaya.com, ...",
+          "errors": {
             "required": "Masukkan domain.",
             "ip": "Masukkan domain, bukan alamat IP.",
             "invalid": "Masukkan domain yang valid.",
-            "tld": "Sepertinya Anda mencoba memblokir seluruh TLD, harap gunakan fitur Blokir TLD di bagian Keamanan.",
-            "exists": "Domain ini sudah ditambahkan."
+            "taken": "Anda sudah memiliki rewrite untuk domain itu."
+          }
         },
-        "empty": "Belum ada domain.",
-        "denylist": {
-            "info": "Memblokir domain secara otomatis akan memblokir semua subdomainnya."
-        },
-        "allowlist": {
-            "info": "Mengizinkan domain secara otomatis akan mengizinkan semua subdomainnya. Mengizinkan lebih diutamakan daripada yang lainnya, termasuk fitur keamanan."
+        "answer": {
+          "label": "Jawaban",
+          "placeholder": "1.2.3.4, sub.contoh.org, ...",
+          "errors": {
+            "required": "Masukkan jawaban.",
+            "invalid": "Jawaban harus berupa alamat IP atau domain yang valid."
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "all_0": "<0>{{count, number}}</0><1>kueri</1>",
-            "blocked_0": "<0>{{count, number}}</0><1>kueri yang diblokir</1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>dari kueri yang diblokir</1></1>"
+    "access": {
+      "name": "Akses",
+      "description": "Berikan akses hanya untuk mengedit atau melihat profil ini kepada orang lain.",
+      "roles": {
+        "editor": "Editor",
+        "viewer": "Pelihat"
+      },
+      "pending": "Undangan terkirim",
+      "form": {
+        "email": {
+          "label": "Email",
+          "errors": {
+            "required": "Masukkan email.",
+            "invalid": "Masukkan alamat email yang valid.",
+            "duplicate": "Email ini telah diundang."
+          }
         },
-        "queries": {
-            "name": "Kueri",
-            "description": "Evolusi kueri dari waktu ke waktu.",
-            "queries": {
-                "all_0": "<0>{{count, number}}</0><1> kueri</1>",
-                "blocked_0": "<0>{{count, number}}</0><1> kueri yang diblokir</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "Domain Terselesaikan",
-                "description": "Domain yang diselesaikan tanpa diblokir oleh setelan apa pun atau karena diizinkan secara manual."
-            },
-            "blocked": {
-                "name": "Domain Diblokir",
-                "description": "Domain diblokir oleh pengaturan Keamanan, Privasi dan/atau Kontrol Orang Tua atau karena diblokir secara manual."
-            },
-            "root": {
-                "name": "Domain Root",
-                "description": "Kumpulan dari semua kueri yang dibuat untuk domain root dan semua subdomainnya."
-            },
-            "empty": "Belum ada domain."
-        },
-        "reasons": {
-            "name": "Alasan Diblokir",
-            "description": "Pengaturan Keamanan, Privasi dan/atau Kontrol Orang Tua yang memblokir sebagian besar kueri.",
-            "empty": "Belum ada domain yang diblokir."
-        },
-        "devices": {
-            "name": "Perangkat",
-            "description": "Perangkat yang membuat kueri.",
-            "empty": "Belum ada perangkat.",
-            "unidentified": {
-                "name": "Perangkat tidak teridentifikasi"
-            }
-        },
-        "ips": {
-            "name": "IP",
-            "description": "Alamat IP yang membuat kueri.",
-            "empty": "Belum ada IP."
-        },
-        "gafam": {
-            "name": "Dominasi GAFAM",
-            "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple dan Microsoft) adalah 5 perusahaan Internet dominan yang memiliki banyak layanan populer, seringkali beroperasi dengan nama yang berbeda, misalnya, WhatsApp dan Instagram dari Facebook.",
-            "queries_0": "{{count, number}} kueri",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "Lainnya"
-                }
-            }
-        },
-        "encrypted": {
-            "name": "DNS Terenkripsi",
-            "description": "Persentase kueri yang dibuat menggunakan transportasi terenkripsi (DNS-over-HTTPS, DNS-over-TLS atau aplikasi resmi NextDNS).",
-            "empty": "Belum ada kueri."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "Persentase kueri yang divalidasi dengan DNSSEC.",
-            "empty": "Belum ada kueri."
-        },
-        "destination": {
-            "name": "Tujuan Lalu Lintas",
-            "description": "Negara tujuan lalu lintas Internet Anda.",
-            "empty": "Belum ada kueri.",
-            "queries_0": "{{count, number}} kueri",
-            "topDomains": "Domain Teratas"
+        "role": {
+          "label": "Peran"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "Hanya Kueri Terblokir",
-        "raw": "Log DNS mentah",
-        "empty": "Belum ada log.",
-        "log": {
-            "actionBlock": "Blokir",
-            "actionAllow": "Izinkan",
-            "dnssec": "Divalidasi dengan DNSSEC.",
-            "clients": {
-                "nextdns-ios": "NextDNS untuk iOS",
-                "nextdns-android": "NextDNS untuk Android",
-                "nextdns-macos": "NextDNS untuk macOS",
-                "nextdns-windows": "NextDNS untuk Windows",
-                "nextdns-cli": "Klien CLI NextDNS",
-                "nextdns-chromeos": "NextDNS untuk Chrome OS",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Profil Konfigurasi Apple"
-            },
-            "blockedBy": "Diblokir oleh <1>{{lists}}</1>.",
-            "allowedBy": "Diizinkan oleh <1>{{lists}}</1>.",
-            "manual": {
-                "deny": "Diblokir secara manual.",
-                "allow": "Diizinkan secara manual."
-            },
-            "insights": {
-                "name": "Wawasan Pelacak",
-                "show": "Tampilkan Wawasan Pelacak",
-                "hide": "Sembunyikan Wawasan Pelacak",
-                "categories": {
-                    "advertising": {
-                        "description": "Menyediakan layanan periklanan atau terkait periklanan seperti pengumpulan data, analisis perilaku atau penargetan ulang."
-                    },
-                    "comments": {
-                        "description": "Mengaktifkan bagian komentar untuk artikel dan ulasan produk."
-                    },
-                    "customer_interaction": {
-                        "description": "Termasuk obrolan, pesan email, dukungan pelanggan, dan alat interaksi lainnya."
-                    },
-                    "essential": {
-                        "description": "Termasuk pengelola tag, pemberitahuan privasi, dan teknologi yang penting untuk fungsionalitas situs web."
-                    },
-                    "adult_advertsing": {
-                        "description": "Memberikan iklan yang umumnya muncul di situs konten dewasa."
-                    },
-                    "site_analytics": {
-                        "description": "Mengumpulkan dan menganalisis data yang terkait dengan penggunaan dan kinerja situs."
-                    },
-                    "social_media": {
-                        "description": "Mengintegrasikan fitur yang terkait dengan situs media sosial."
-                    },
-                    "audio_video_player": {
-                        "description": "Memungkinkan situs web untuk menerbitkan, mendistribusikan, dan mengoptimalkan konten video dan audio."
-                    },
-                    "cdn": {
-                        "description": "Jaringan pengiriman konten yang memberikan sumber daya untuk penggunaan situs yang berbeda dan biasanya untuk banyak pelanggan yang berbeda."
-                    },
-                    "misc": {
-                        "description": "Pelacak ini tidak sesuai dengan kategori lain atau belum diberi label."
-                    },
-                    "pornvertising": {
-                        "description": "Memberikan iklan yang umumnya muncul di situs konten dewasa."
-                    },
-                    "hosting": {
-                        "description": "Ini adalah layanan yang digunakan oleh penyedia konten atau pemilik situs."
-                    },
-                    "extensions": {
-                        "description": "Perangkat lunak pada perangkat pengguna yang dapat mencegat dan menganalisis lalu lintas peramban (man in the middle)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "Prevalensi berbahaya",
-                        "extremely": "Sangat amat lazim",
-                        "very": "Sangat lazim",
-                        "commonly": "Umum terjadi",
-                        "relatively": "Relatif lazim"
-                    },
-                    "summary": "{{prevalence}} <3>(melacak {{percent, percentage}} dari lalu lintas web)</3>"
-                },
-                "ownedBy": "<0>Dimiliki oleh </0><1>{{company}}</1>",
-                "source": "Wawasan Pelacak dari"
-            }
-        }
-    },
-    "deviceSelector": {
-        "all": "Semua perangkat",
-        "howto": "Pelajari cara mengidentifikasi perangkat Anda di halaman Konfigurasi."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "30 menit terakhir",
-            "6h": "6 jam terakhir",
-            "24h": "24 jam terakhir",
-            "7d": "7 hari terakhir",
-            "30d": "30 hari terakhir",
-            "3M": "3 bulan terakhir"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "Buat salinan dari <1>{{name}}</1>",
+      "description": "Salin semua pengaturan profil ini ke profil baru.",
+      "form": {
         "name": {
-            "name": "Nama",
-            "description": "Pilih nama untuk konfigurasi ini."
+          "label": "Nama",
+          "placeholder": "Rumah, Anak-anak, Kantor, ...",
+          "errors": {
+            "required": "Masukkan nama.",
+            "taken": "Anda sudah memiliki profil dengan nama itu."
+          }
         },
-        "logs": {
-            "name": "Log",
-            "description": "Sempurnakan pengaturan Log Anda.",
-            "enable": "Aktifkan Log",
-            "privacy": {
-                "name": "Penyesuaian privasi",
-                "ip": "Log IP klien",
-                "domains": "Log domain"
-            },
-            "retention": {
-                "name": "Retensi",
-                "options": {
-                    "1h": "1 jam",
-                    "6h": "6 jam",
-                    "1d": "1 hari",
-                    "1w": "1 minggu",
-                    "1m": "1 bulan",
-                    "3m": "3 bulan",
-                    "6m": "6 bulan",
-                    "1y": "1 tahun",
-                    "2y": "2 tahun"
-                }
-            },
-            "location": {
-                "name": "Lokasi penyimpanan",
-                "locations": {
-                    "us": {
-                        "name": "Amerika Serikat",
-                        "description": "Log akan disimpan di Amerika Serikat. Ini adalah opsi bawaan."
-                    },
-                    "eu": {
-                        "name": "Uni Eropa",
-                        "description": "Log akan disimpan di negara anggota Uni Eropa."
-                    },
-                    "gb": {
-                        "name": "United Kingdom",
-                        "description": "Log akan disimpan di London, Britania Raya."
-                    },
-                    "ch": {
-                        "name": "Swiss",
-                        "description": "Log akan disimpan di Zürich, Swiss — yurisdiksi yang terkenal dengan undang-undang privasinya yang kuat."
-                    }
-                },
-                "confirm": {
-                    "title": "Ubah lokasi penyimpanan",
-                    "text": "Mengubah lokasi penyimpanan log akan menghapus semua log dan analitik sebelumnya untuk konfigurasi ini."
-                }
-            },
-            "download": {
-                "button": "Unduh log"
-            },
-            "clear": {
-                "button": "Hapus log",
-                "confirm": {
-                    "text": "Apakah Anda yakin ingin menghapus semua log untuk konfigurasi ini? Tindakan ini tidak bisa dibatalkan.",
-                    "submit": "Hapus"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "Halaman Blokir",
-            "description": "Menampilkan halaman blokir ketika domain sedang diblokir. Ini mungkin akan sedikit meningkatkan waktu buka halaman dan peringatan HTTPS mungkin muncul dalam beberapa kasus. Jika dinonaktifkan, kueri yang diblokir akan dijawab dengan alamat yang tidak ditentukan (0.0.0.0 atau ::).",
-            "enable": "Aktifkan Halaman Blokir",
-            "ca": {
-                "name": "NextDNS Root CA",
-                "description": "Hapus peringatan HTTPS saat memuat halaman blokir dengan menginstal dan mempercayai root CA kami di <1>{{link}}</1>. Baca instruksi tentang cara melakukan ini <3>di sini</3>."
-            }
-        },
-        "performance": {
-            "name": "Performa",
-            "description": "Percepat penjelajahan Anda.",
-            "ecs": {
-                "name": "Anonymized EDNS Client Subnet",
-                "description": "Mempercepat pengiriman data dari jaringan pengiriman konten tanpa mengekspos alamat IP Anda.",
-                "enable": "Aktifkan Anonymized EDNS Client Subnet"
-            },
-            "cache": {
-                "name": "Peningkatan Cache",
-                "description": "Minimalkan kueri DNS dengan menerapkan TTL minimum (Time to live).",
-                "enable": "Aktifkan Peningkatan Cache"
-            },
-            "flatten": {
-                "name": "CNAME Flattening",
-                "description": "Cegah resolver pengejar CNAME membuat kueri yang tidak perlu dan mencemari log dengan domain perantara.",
-                "enable": "Aktifkan CNAME Flattening"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 mengacu pada ekosistem online yang terdesentralisasi dan tahan sensor yang terdiri dari teknologi inovatif seperti pendaftar domain berbasis blockchain (misalnya Ethereum Name Service) dan jaringan penyimpanan dan pengiriman konten terdistribusi (misalnya IPFS). Saat diaktifkan, NextDNS akan bertindak sebagai gerbang tanpa filter ke Web baru ini, memungkinkan Anda mengalaminya secara langsung tanpa perlu menginstal apa pun.",
-            "tips": "Karena sebagian besar peramban saat ini hanya mendukung domain tingkat atas klasik, Anda harus menambahkan garis miring (\"<1>/</1>\") ketika mencoba mengakses domain Web3 secara langsung (mis. \"<3>vitalik.eth/</3>\" bukan \"<5>vitalik.eth</5>\").",
-            "enable": "Aktifkan Web3"
-        },
-        "rewrites": {
-            "name": "Rewrites",
-            "description": "Setel atau ganti respon DNS untuk domain apa pun. Rewrites juga berlaku untuk subdomain, dan alamat IP lokal didukung sebagai jawaban.",
-            "new": "Rewrite baru",
-            "form": {
-                "domain": {
-                    "label": "Domain",
-                    "placeholder": "printersaya.lan, internetboxsaya.com, ...",
-                    "errors": {
-                        "required": "Masukkan domain.",
-                        "ip": "Masukkan domain, bukan alamat IP.",
-                        "invalid": "Masukkan domain yang valid.",
-                        "taken": "Anda sudah memiliki rewrite untuk domain itu."
-                    }
-                },
-                "answer": {
-                    "label": "Jawaban",
-                    "placeholder": "1.2.3.4, sub.contoh.org, ...",
-                    "errors": {
-                        "required": "Masukkan jawaban.",
-                        "invalid": "Jawaban harus berupa alamat IP atau domain yang valid."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "Akses",
-            "description": "Berikan akses hanya untuk mengedit atau melihat profil ini kepada orang lain.",
-            "roles": {
-                "editor": "Editor",
-                "viewer": "Pelihat"
-            },
-            "pending": "Undangan terkirim",
-            "form": {
-                "email": {
-                    "label": "Email",
-                    "errors": {
-                        "required": "Masukkan email.",
-                        "invalid": "Masukkan alamat email yang valid.",
-                        "duplicate": "Email ini telah diundang."
-                    }
-                },
-                "role": {
-                    "label": "Peran"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "Buat salinan dari <1>{{name}}</1>",
-            "description": "Salin semua pengaturan profil ini ke profil baru.",
-            "form": {
-                "name": {
-                    "label": "Nama",
-                    "placeholder": "Rumah, Anak-anak, Kantor, ...",
-                    "errors": {
-                        "required": "Masukkan nama.",
-                        "taken": "Anda sudah memiliki profil dengan nama itu."
-                    }
-                },
-                "button": "Duplikasi"
-            }
-        },
-        "delete": {
-            "button": "Hapus <1>{{name}}</1>",
-            "warning": "Ini akan menghapus profil ini dan semua log yang terkait dengan profil ini selamanya.",
-            "confirm": {
-                "text": "Anda yakin ingin menghapus <1>{{name}}</1>? Tindakan ini tidak bisa dibatalkan."
-            }
-        },
-        "leave": {
-            "button": "Keluar dari <1>{{name}}</1>",
-            "warning": "Anda akan kehilangan akses ke profil ini.",
-            "confirm": {
-                "text": "Apakah Anda yakin ingin keluar dari <1>{{name}}</1>? Tindakan ini tidak bisa dibatalkan."
-            }
-        }
+        "button": "Duplikasi"
+      }
+    },
+    "delete": {
+      "button": "Hapus <1>{{name}}</1>",
+      "warning": "Ini akan menghapus profil ini dan semua log yang terkait dengan profil ini selamanya.",
+      "confirm": {
+        "text": "Anda yakin ingin menghapus <1>{{name}}</1>? Tindakan ini tidak bisa dibatalkan."
+      }
+    },
+    "leave": {
+      "button": "Keluar dari <1>{{name}}</1>",
+      "warning": "Anda akan kehilangan akses ke profil ini.",
+      "confirm": {
+        "text": "Apakah Anda yakin ingin keluar dari <1>{{name}}</1>? Tindakan ini tidak bisa dibatalkan."
+      }
     }
+  }
 }

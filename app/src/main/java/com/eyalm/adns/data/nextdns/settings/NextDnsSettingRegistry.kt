@@ -137,8 +137,8 @@ object NextDnsSettingRegistry {
                 id = SettingId("settings.bav"),
                 api = ApiBinding("settings", listOf("bav")),
                 locale = LocaleBinding(
-                    titleRes = R.string.bypass_age_verification,
-                    descriptionRes = R.string.automatically_bypass_age_verification_checks_used_by_certain_websites_such_as_adult_content_sites,
+                    titlePath = listOf("settings", "ageVerification", "name"),
+                    descriptionPath = listOf("settings", "ageVerification", "description"),
                 ),
                 isBeta = true
             ),

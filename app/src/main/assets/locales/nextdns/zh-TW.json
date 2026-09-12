@@ -1,1348 +1,1389 @@
 {
-    "global": {
-        "beta": "測試版",
-        "cancel": "取消",
-        "add": "新增",
-        "save": "儲存",
-        "continue": "繼續",
-        "enable": "啟用",
-        "change": "更改",
-        "create": "建立",
-        "subscribe": "訂閱",
-        "invite": "邀請",
-        "remove": "移除",
-        "leave": "離開",
-        "delete": "刪除",
-        "close": "關閉",
-        "back": "返回",
-        "disable": "停用",
-        "unnamedDevice": "設備 #{{id}}",
-        "firstConfiguration": "我的第一個設定檔",
-        "list": {
-            "separator": "、",
-            "conjunction": " 和 "
-        }
+  "global": {
+    "beta": "測試版",
+    "preview": "搶先體驗",
+    "cancel": "取消",
+    "add": "新增",
+    "save": "儲存",
+    "continue": "繼續",
+    "enable": "啟用",
+    "change": "更改",
+    "create": "建立",
+    "subscribe": "訂閱",
+    "invite": "邀請",
+    "remove": "移除",
+    "leave": "離開",
+    "delete": "刪除",
+    "close": "關閉",
+    "back": "返回",
+    "disable": "停用",
+    "unnamedDevice": "裝置 #{{id}}",
+    "firstConfiguration": "我的第一個設定檔",
+    "error": "錯誤",
+    "networkError": "網路錯誤",
+    "requestFailed": "請求失敗",
+    "noProfiles": "尚無設定檔。",
+    "search": "搜尋",
+    "clearSearch": "清除搜尋",
+    "copy": "複製",
+    "actions": "操作",
+    "expand": "展開",
+    "collapse": "收合"
+  },
+  "theme": {
+    "label": "佈景主題",
+    "system": "系統主題",
+    "light": "淺色模式",
+    "dark": "深色模式"
+  },
+  "pages": {
+    "signup": "註冊",
+    "login": "登入",
+    "passwordReset": "重設密碼",
+    "account": "帳戶",
+    "setup": "設定指南",
+    "security": "安全",
+    "privacy": "隱私",
+    "parentalcontrol": "家長監護",
+    "denylist": "黑名單",
+    "allowlist": "白名單",
+    "analytics": "統計",
+    "logs": "記錄檔",
+    "settings": "設定",
+    "help": "說明"
+  },
+  "banners": {
+    "temporary": "此臨時帳戶將在 <1><0></0></1>到期，且只能透過此瀏覽器存取。立即免費註冊以儲存設定。",
+    "nearQuota": "你本月的查詢次數已超過 {{queriesNearQuota, number}} 次，接近每月 {{queriesQuota, number}} 次的免費額度。<5>訂閱</5>以繼續使用 NextDNS。",
+    "overQuota": "你本月的查詢次數已超過 {{queriesQuota, number}} 次，所有功能均已停用。<3>訂閱</3>以繼續使用 NextDNS。"
+  },
+  "account": {
+    "email": "電子郵件地址",
+    "newEmail": "新電子郵件地址",
+    "password": "密碼",
+    "newPassword": "新密碼",
+    "currentPassword": "目前密碼",
+    "forgotPassword": "忘記密碼？",
+    "savePassword": "儲存密碼",
+    "passwordResetInfo": "輸入與你帳戶關聯的電子郵件地址，我們會寄給你重設密碼的連結。",
+    "sendEmail": "傳送電子郵件",
+    "passwordResetLinkSentMessage": "重設密碼的連結已發送至 <1>{{email}}</1>。",
+    "code": "兩步驟驗證（2FA）驗證碼",
+    "login": "登入",
+    "noAccountYet": "還沒有帳戶嗎？<1>註冊</1>",
+    "signup": "註冊",
+    "alreadyHaveAnAccount": "已經有帳戶了？<1>登入</1>",
+    "convertingNotice": "你正在將臨時帳戶轉換為正式帳戶，所有設定都將保留。",
+    "convertingDeviceOnlyNotice": "你正在將僅限裝置使用的帳戶轉換為完整帳戶，所有設定都將保留。",
+    "logout": "登出",
+    "errors": {
+      "email": {
+        "required": "請輸入電子郵件地址。",
+        "invalid": "請輸入有效的電子郵件地址。",
+        "taken": "此電子郵件地址已被使用。"
+      },
+      "password": {
+        "required": "請輸入密碼。",
+        "invalidCombination": "無效的電子郵件地址或密碼。"
+      },
+      "currentPassword": {
+        "required": "請輸入你目前的密碼。",
+        "incorrect": "你輸入的密碼不正確。"
+      },
+      "code": {
+        "required": "請輸入兩步驟驗證（2FA）驗證碼。",
+        "invalid": "請輸入 6 位數驗證碼。",
+        "incorrect": "兩步驟驗證（2FA）驗證碼錯誤。"
+      },
+      "resetPasswordToken": {
+        "invalid": "權杖無效或已過期。"
+      }
     },
-    "theme": {
-        "label": "佈景主題",
-        "system": "系統主題",
-        "light": "淺色模式",
-        "dark": "深色模式"
-    },
-    "pages": {
-        "signup": "註冊",
-        "login": "登入",
-        "passwordReset": "重設您的密碼",
-        "account": "帳戶",
-        "setup": "設定",
-        "security": "安全",
-        "privacy": "隱私",
-        "parentalcontrol": "家長監護",
-        "denylist": "黑名單",
-        "allowlist": "白名單",
-        "analytics": "統計",
-        "logs": "記錄檔",
-        "settings": "設定",
-        "help": "說明"
-    },
-    "banners": {
-        "temporary": "此臨時帳戶將在 <1><0>{{in}}</0></1>到期並只能通過此瀏覽器瀏覽。立即免費註冊來儲存您的設定。",
-        "nearQuota": "您本月查詢了 {{queriesNearQuota, number}} 次，即將超過每個月 {{queriesQuota, number}} 次的免費額度。<5>立即訂閱</5> 以繼續使用 NextDNS。",
-        "overQuota": "您本月的查詢次數 {{queriesQuota, number}} 已超過額度，所有功能已停用。 <3>立即訂閱</3> 以繼續使用 NextDNS。"
-    },
-    "account": {
-        "email": "電子郵件地址",
-        "newEmail": "新電子郵件地址",
-        "password": "密碼",
-        "newPassword": "新密碼",
-        "currentPassword": "目前密碼",
-        "forgotPassword": "忘記密碼？",
-        "savePassword": "儲存密碼",
-        "passwordResetInfo": "輸入與您帳戶相連結的電子郵件地址，我們將會寄出重設密碼的連結。",
-        "sendEmail": "傳送電子郵件",
-        "passwordResetLinkSentMessage": "重設密碼的連結已發送至 <1>{{email}}</1>。",
-        "code": "兩步驗證（2FA）驗證碼",
-        "login": "登入",
-        "noAccountYet": "還沒有帳號嗎？<1>註冊</1>",
-        "signup": "註冊",
-        "alreadyHaveAnAccount": "已經有帳號了？<1>登入</1>",
-        "convertingNotice": "您正在將一個臨時帳戶轉為永久帳戶，將儲存所有設定。",
-        "convertingDeviceOnlyNotice": "你正在將僅限裝置使用的帳號轉換為完整帳號，所有設定都會被儲存。",
-        "logout": "登出",
-        "errors": {
-            "email": {
-                "required": "請輸入電子郵件地址。",
-                "invalid": "請輸入有效的電子郵件地址。",
-                "taken": "此電子郵件地址已被使用。"
-            },
-            "password": {
-                "required": "請輸入密碼。",
-                "invalidCombination": "無效的電子郵件地址或密碼。"
-            },
-            "currentPassword": {
-                "required": "請輸入您目前的密碼。",
-                "incorrect": "您輸入的密碼不正確。"
-            },
-            "code": {
-                "required": "請輸入兩步驗證（2FA）驗證碼。",
-                "invalid": "請輸入一個六位數的密碼。",
-                "incorrect": "兩步驗證（2FA）驗證碼錯誤。"
-            },
-            "resetPasswordToken": {
-                "invalid": "令牌無效或過期。"
-            }
-        },
-        "affiliation": {
-            "name": "推廣連結",
-            "description": "透過分享 <1>{{link}}</1> 連結來協助我們推廣至全世界，並且獲得前 <5>{{months, number}} 個月</5>訂閱 <3>{{share, percentage}}</3> 折扣優惠。",
-            "balance": {
-                "name": "餘額"
-            },
-            "availableBalance": {
-                "name": "可用餘額",
-                "description": "餘額在一個月後即可領取，以便支付可能的退款。"
-            },
-            "payout": {
-                "button": "提領",
-                "minimum": "提領最低餘額為 {{amount, price}}。",
-                "form": {
-                    "paypalEmail": "PayPal 電子郵件地址",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "請輸入 PayPal 電子郵件地址。",
-                            "invalid": "請輸入有效的 PayPal 電子郵件地址。"
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "免費使用",
-            "description": "NextDNS 每月提供 {{queries, number}} 次免費查詢額度，額度用盡後將暫停所有功能直到下個月。",
-            "queries": "<0>{{current, number}}</0><1>/{{quota, number}} 次查詢</1>",
-            "overQuota": {
-                "message": "您在本月已經查詢 {{queries, number}} 次。",
-                "info": "直到下個月為止 NextDNS 將停用所有功能，但維持基礎回覆 DNS 查詢。"
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "每月僅需 {{amount, price}} 即可獲得無限次數查詢 。"
-            }
-        },
-        "subscription": {
-            "name": "訂閱",
-            "plans": {
-                "pro": "暢享版",
-                "business": "商業版",
-                "education": "教育版"
-            },
-            "intervals": {
-                "month": "月繳方案",
-                "year": "年繳方案"
-            },
-            "per": {
-                "month": "每月",
-                "year": "每年"
-            },
-            "units": {
-                "business": "{{count, number}} 位員工",
-                "business_plural": "{{count, number}} 位員工",
-                "education": "{{count, number}} 位學生",
-                "education_plural": "{{count, number}} 位學生"
-            },
-            "planFull": "{{plan}}（{{interval}}）",
-            "planFullWithUnits": "{{plan}}（{{units}}，{{interval}}）",
-            "expires": "您的訂閱將在 {{date, date}}到期。",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "重新訂閱"
-            },
-            "changePlan": {
-                "button": "更改方案"
-            },
-            "renewal": "您下次的自動扣款日期為 {{date, date}}金額是 {{amount, price}}。",
-            "changePaymentMethod": {
-                "button": "更改付款方式"
-            },
-            "cancel": {
-                "button": "取消訂閱",
-                "confirm": {
-                    "text": "您目前的訂閱到 {{date, date}}為止。",
-                    "submit": "取消訂閱"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "選擇一個方案",
-                "addPaymentMethod": "新增付款方式",
-                "included": "所有方案皆包含<1>所有功能</1>，<3>無設備數量限制</3>和<5>無查詢次數限制</5>。",
-                "savings": "月繳方案每月節省 {{percent, percentage}}",
-                "familyOnly": "* 暢享版方案僅供個人（和家人）使用。",
-                "unitsQuestion": {
-                    "business": "您的企業僱用了多少位<1>員工</1>？",
-                    "education": "您的學校（或校區）有多少位<1>學生</1>？"
-                },
-                "asYouGrow": {
-                    "business": "* 請記得隨著員工人數增加，來更新您的方案。",
-                    "education": "* 請記得隨著學生人數增加，來更新您的方案。"
-                },
-                "starting": {
-                    "business": "<2>每 {{units, number}} 位員工</2><0>每月只要 </0><1>{{price, price}}</1><0> 起</0>",
-                    "education": "<2>每 {{units, number}} 位學生</2><0>每月只要 </0><1>{{price, price}}</1><0> 起</0>"
-                },
-                "card": {
-                    "number": "卡號",
-                    "expiration": "有效期至",
-                    "code": "安全碼",
-                    "stripe": "我們使用 Stripe（最先進的金流服務）以安全的方式處理信用卡付款，而不需直接存取您的信用卡資訊。"
-                },
-                "paypal": {
-                    "text": "點擊「繼續到 PayPal」按鈕透過 PayPal 訂閱。"
-                },
-                "bitpay": {
-                    "text": "點擊「繼續到 BitPay」按鈕用加密貨幣付款。",
-                    "toYearly": "我們不接受以加密貨幣支付月繳方案。<1>若要繼續您將自動切換至年繳方案。</1>",
-                    "remainder": "您目前的訂閱已付款至 {{date, date}}。您將被立即扣款且到期日將自動延長。"
-                },
-                "continueTo": "繼續到 <1></1>"
-            }
-        },
-        "business": {
-            "name": "公司資料",
-            "description": "依照法律課徵相關稅務規定，我們需要您的公司名稱，地址以及增值稅編號（或其他報稅編號）顯示在所有發票上。",
-            "button": {
-                "add": "新增公司資訊",
-                "update": "更新資料"
-            },
-            "form": {
-                "name": {
-                    "label": "名稱",
-                    "placeholder": "某某公司",
-                    "errors": {
-                        "required": "請輸入您的公司名稱。"
-                    }
-                },
-                "address": {
-                    "label": "地址",
-                    "placeholder": "23678 新北市土城區土城工業區自由街 2 號&#10;臺灣",
-                    "errors": {
-                        "required": "請輸入您的公司地址。"
-                    }
-                },
-                "vatNumber": {
-                    "label": "增值稅號（或其他報稅編號）"
-                }
-            }
-        },
-        "invoices": {
-            "name": "發票",
-            "description": "帳單記錄和您帳戶的所有發票。",
-            "pending": "{{amount, price}}（待確認）",
-            "show-more": "顯示更多",
-            "show-less": "顯示更少",
-            "invoice": {
-                "title": "發票編號 #{{code}}",
-                "to": "至：<1>{{email}}</1>",
-                "vatNumber": "增值稅號（或其他報稅編號）：{{number}}",
-                "columns": {
-                    "plan": "方案",
-                    "period": "有效期",
-                    "amount": "金額"
-                },
-                "vat": "增值稅（{{rate, percentage}}）",
-                "total": "總共",
-                "footer": {
-                    "reverseCharged": "增值稅（或其他報稅編號）反向課徵。",
-                    "currency": "所有金額皆以 {{code}} 顯示。"
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "電子郵件地址",
-            "description": "更改登入帳戶以及接收重要通知的電子郵件地址。",
-            "button": "更改電子郵件地址"
-        },
-        "changePassword": {
-            "name": "密碼",
-            "description": "更改登入帳戶以及執行機敏操作所需的密碼。",
-            "button": "更改密碼"
-        },
-        "2fa": {
-            "name": "兩步驗證（2FA）",
-            "description": "兩步驗證（2FA）是額外的安全層，在登錄帳戶時需要附加的基於時間的 6 位代碼。",
-            "enabled": "您的帳戶已啟用兩步驗證（2FA）。",
-            "enable": {
-                "button": "啟用兩步驗證（2FA）",
-                "modal": {
-                    "howto": "使用身份驗證器應用，例如 <1>Google Authenticator</1> 或支持兩步驗證（2FA）的密碼管理器。您可以掃描 QR 碼，點擊它以打開 <3>{{otpauth}}</3> 鏈接或手動複製並粘貼您的秘密。"
-                }
-            },
-            "recovery": {
-                "button": "復原代碼",
-                "modal": {
-                    "howto": "如果您無法訪問設備並且無法收到兩步驗證（2FA）驗證碼，請使用這些復原代碼訪問您的帳戶。每個代碼只能使用一次。",
-                    "download": "下載",
-                    "regen": "重新生成"
-                }
-            },
-            "disable": {
-                "button": "停用兩步驗證（2FA）"
-            }
-        },
-        "api": {
-            "description": "以程式設計方式建立和管理您的設定檔。閱讀 <1>{{link}}處的文檔</1>。",
-            "create": {
-                "button": "產生 API 金鑰"
-            }
-        },
-        "delete": {
-            "button": "刪除帳戶",
-            "warning": "這將會永久刪除您的帳戶和所有已儲存的設定。",
-            "confirm": {
-                "text": "您確定要刪除帳戶嗎？此動作無法還原。"
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "已過期",
-                    "text": "您的臨時帳戶已過期。立即註冊以保存您的設置並繼續使用 NextDNS，它是免費的。"
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "新建",
+    "affiliation": {
+      "name": "推廣連結",
+      "description": "分享 <1>{{link}}</1> 協助我們推廣 NextDNS，即可獲得你推薦的每位使用者在首次付費訂閱開始後的前 <5>{{months, number}} 個月</5>內所支付訂閱費用的 <3>{{share, percentage}}</3>。",
+      "balance": {
+        "name": "餘額"
+      },
+      "availableBalance": {
+        "name": "可用餘額",
+        "description": "為因應可能的退款，餘額將在一個月後才可提領。"
+      },
+      "payout": {
+        "button": "提領",
+        "minimum": "提領至少需要 {{amount, price}} 的可用餘額。",
         "form": {
-            "title": "新的設定",
-            "name": {
-                "label": "名稱",
-                "placeholder": "家、孩子、辦公室……",
-                "errors": {
-                    "required": "請輸入一個名稱。",
-                    "taken": "已經有一個相同名稱的設定。"
-                }
+          "paypalEmail": "PayPal 電子郵件地址",
+          "errors": {
+            "paypalEmail": {
+              "required": "請輸入 PayPal 電子郵件地址。",
+              "invalid": "請輸入有效的 PayPal 電子郵件地址。"
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "一切準備就緒！",
-                "secondary": "該設備正在使用此組設定的 NextDNS。"
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "此設備正在使用沒有任何設定的 NextDNS。",
-                    "secondary": {
-                        "clients": "請確認應用程式設定中顯示正確的設定 ID 識別碼。",
-                        "firefox": "請您確保設置 Firefox 中下面顯示的 DNS-over-HTTPS 終結點。",
-                        "doh": "請您確保使用下面顯示的 DNS-over-HTTPS 終結點。",
-                        "dot": "請您確保使用下面顯示的 DNS-over-TLS 終結點。",
-                        "ipv6": "請您確保使用下面顯示的 IPv6 地址。",
-                        "servers": "請您確保使用下面已連結的 IP 部分中顯示的 DNS 服務器（配置之間的 DNS 服務器有所不同）。",
-                        "link": "請您確保在下面已連結的 IP 部分中連結您的 IP 地址。"
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "該裝置正在使用另一組 NextDNS 設定。",
-                    "secondary": {
-                        "sameAccount": "該設備目前正在使用「{{name}}」。",
-                        "otherAccount": "請您確保正在使用此頁面上列出的終結點之一。"
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "該設備未使用 NextDNS。",
-                "secondary": "該設備目前正在使用「{{resolver}}」作為 DNS 解析器。"
-            },
-            "error": {
-                "primary": "檢查目前狀態時發生錯誤。",
-                "secondary": "如果重新整理頁面後，問題持續存在，請與我們聯絡"
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
-            }
-        },
-        "endpoints": {
-            "name": "端點",
-            "description": "使用以下其中一個端點設定 NextDNS，並使用此設定檔。",
-            "help": "不知道如何使用這些？請按照 <1>設定指南</1>。"
-        },
-        "linkedIp": {
-            "name": "已連結的 IP",
-            "description": "如果您無法使用我們的應用程序、DNS-over-TLS、DNS-over-HTTPS 或 IPv6 來設置 NextDNS，請使用下面的 DNS 服務器並連結您的 IP。這主要用於家庭網絡，不建議在移動設備上使用。",
-            "servers": {
-                "name": "DNS 伺服器"
-            },
-            "ip": {
-                "name": "已連結的 IP",
-                "link": "連結 IP"
-            },
-            "showAdvanced": "顯示進階選項",
-            "ddns": {
-                "explanation": "您可以使用動態 DNS（DDNS）來自動更新已連結的 IP。",
-                "set": "設定 DDNS",
-                "status": "您目前正在使用 <1>{{hostname}}</1> 作為 DDNS 主機名稱，您的 IP 位址會每分鐘自動更新。",
-                "unset": "移除",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS 主機名稱",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "請輸入主機名稱。",
-                            "invalid": "請輸入有效的主機名稱。",
-                            "ip": "請輸入主機名稱，而不是 IP 地址。",
-                            "error": "取得該主機名稱的 IP 位址時發生錯誤",
-                            "empty": "該主機名稱沒有回應 IP 位址。",
-                            "multiple": "該主機名稱回應多種 IP 位址。",
-                            "different": "基於安全理由，新增動態 DNS 時，DDNS 主機的 IP 位址應與您目前的 IP 位址相同。"
-                        }
-                    }
-                }
-            },
-            "programmatically": "您也可以通過調用程序更新您已連結的 IP："
-        },
-        "guide": {
-            "name": "設定指南",
-            "description": "請按照以下說明在設備，瀏覽器或路由器上設定 NextDNS。",
-            "or": "或",
-            "ipv4": {
-                "title": "IPv4 (已連結IP)"
-            },
-            "ipv6": {
-                "supported": "您的網路支援 IPv6",
-                "notSupported": "您的網路不支持 IPv6"
-            },
-            "tags": {
-                "recommended": "推薦",
-                "advanced": "進階"
-            },
-            "use": "在 <1>{{file}}</1> 中使用以下內容：",
-            "appleConfigurationProfile": {
-                "name": "NextDNS（{{configuration}}）",
-                "description": "此配置文件使用新的本機加密 DNS 功能在所有網絡上啟用 NextDNS。"
-            },
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "私人 DNS",
-                            "requirements": "Android 9 及更高版本",
-                            "steps": {
-                                "1": "1. 轉到設定 → 網路和網際網路 → 進階 → 私人 DNS。",
-                                "2": "2. 選擇私人 DNS 供應商主機名稱項。",
-                                "3": "3. 輸入 <1>{{endpoint}}</1> 然後點擊儲存。"
-                            }
-                        },
-                        "app": {
-                            "title": "NextDNS 的 Android 應用程式",
-                            "steps": {
-                                "1": "1. 從 Play 商店安裝我們的官方應用程式。",
-                                "2": "2. 在 NextDNS 應用程式中，於「Settings」→「Configuration ID」中輸入 <1>{{id}}</1>，然後連接。"
-                            }
-                        },
-                        "ip": {
-                            "ipv4": {
-                                "title": "IPv4（已連結的 IP）"
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "描述檔",
-                            "requirements": "iOS 14 及更高版本",
-                            "step": "使用我們的 Apple 描述檔生成器 <1>{{link}}</1>。"
-                        },
-                        "app": {
-                            "title": "NextDNS 的 iOS 應用程式",
-                            "steps": {
-                                "1": "1. 從 App Store 安裝我們的官方應用程式。",
-                                "2": "2. 開啟應用程式，然後到設定並切換「Use Custom Configuration」。輸入 <1>{{id}}</1> 作為「Configuration ID」。",
-                                "3": "3. 啟用 NextDNS。"
-                            }
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS over HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "開啟<1>設定</1>應用程式。",
-                                "前往 <1>網路和網際網路</1>。",
-                                "點選 <1>Wi-Fi</1>(or <3>乙太網路</3>)。",
-                                "點選 <1>硬體屬性</1>，或者如果您已經點選了 <3>乙太網路</3>，則忽略此步驟。",
-                                "點擊 <1>編輯</1> 按鈕，位於 <3>DNS 伺服器分配</3> 旁邊。",
-                                "選擇 <1>手動</1>。",
-                                "啟用 <1>IPv{{version}}</1>。",
-                                "輸入 <1>{{ip}}</1> 作為 <3>優先 DNS</3>，然後選擇 <5>開啟 (手動模板)</5>，並輸入 <7>{{endpoint}}</7>。",
-                                "輸入 <1>{{ip}}</1> 作為 <3>替代 DNS</3>，然後選擇 <5>開啟 (手動模板)</5>，並輸入 <7>{{endpoint}}</7>。",
-                                "點選 <1>保存</1>。"
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS 的 Windows 應用程式",
-                            "steps": {
-                                "1": "1. 在 <1>此處</1> 下載安裝程序。",
-                                "2": "2. 安裝后，右鍵單擊任務欄中的 NextDNS 圖標，然後打開「Settings」。設置 <1>{{id}}</1> 作為「Configuration ID」。",
-                                "3": "3. 右鍵單擊任務欄中的 NextDNS 圖標，然後單擊「Enable」。"
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. 單擊開始菜單，然後打開控制面板。",
-                                "2": "2. 單擊網絡和 Internet，然後單擊網絡和共享中心。",
-                                "3": "3. 單擊更改適配器設置。",
-                                "4": "4. 右鍵單擊您連接到的 Wi-Fi 網絡，然後單擊屬性。",
-                                "5": "5. 選擇 Internet Protocol Version {{version}}。",
-                                "6": "6. 單擊屬性。",
-                                "7": "7. 單擊「使用下面的 DNS 服務器地址」。",
-                                "8": "8. 將目前位址（若有）取代成 <1>{{dns1}}</1> 及 <3>{{dns2}}</3>。",
-                                "9": "9. 單擊確定，然後單擊關閉。您可能需要重新啟動瀏覽器。"
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. 從 <1>{{link}}</1> 安裝 YogaDNS。",
-                                "2": "2. 在 <1>{{link}}</1> 處遵循 NextDNS 的說明並使用 <3>{{id}}</3> 作為「Configuration ID」。"
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS 的 macOS 應用程式",
-                            "steps": {
-                                "1": "1. 從 App Store 安裝我們的官方應用程序。",
-                                "2": "2. 單擊應用程序狀態欄菜單中的「Preferences...」，然後轉到「Configuration」選項卡。",
-                                "3": "3. 選中「Use Custom Configuration」，然後輸入 <1>{{id}}</1> 作為「Configuration ID」。",
-                                "4": "4. 啟用 NextDNS。"
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur 及更高版本"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. 打開系統偏好設置，然後單擊網絡。",
-                                "2": "2. 選擇您要連接的網絡，然後單擊高級按鈕。",
-                                "3": "3. 轉到 DNS 部分。",
-                                "4": "4. 在 DNS 服務器列表中，刪除所有地址（如果有任何），然後添加 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
-                                "5": "5. 單擊好，然後單擊應用。"
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS CLI 客戶端",
-                            "steps": {
-                                "1": "1. 在終端運行以下命令：<1>{{command}}</1>",
-                                "2": "2. 按照說明進行操作。"
-                            },
-                            "manual": "前往 <1>{{link}}</1> 進入我們的開放源代碼存儲庫以獲得手動安裝說明。"
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS CLI 客戶端",
-                            "steps": {
-                                "1": "1. 運行以下命令：<1>{{command}}</1>",
-                                "2": "2. 按照說明進行操作。"
-                            },
-                            "manual": "前往 <1>{{link}}</1> 進入我們的開放源代碼存儲庫以獲得手動安裝說明。"
-                        },
-                        "ip": {
-                            "step": "將您的 DNS 服務器更改為 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
-                        },
-                        "stubby": {
-                            "warning": "確保 Stubby 與 <1>OpenSSL 1.1.1 及更高版本</1>鏈接，因為以前的版本不適用於 NextDNS。"
-                        },
-                        "unbound": {
-                            "warning": "作為遞歸解器，Unbound 請求每一個 CNAME。當與屏蔽的 DNS 解析器（如 NextDNS）一起使用時，這可能會導致<1>意外的行為</1>。請見 <3>{{link}}</3>。"
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "ChromeOS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "安全 DNS",
-                            "steps": [
-                                "打開 <1>設定</1> 應用。",
-                                "轉到 <1>安全與隱私</1>。",
-                                "啟用 <1>使用安全 DNS</1>。",
-                                "選擇 <1>使用：自訂</1>，然後輸入 <3>{{endpoint}}</3>。"
-                            ]
-                        },
-                        "ip": {
-                            "step": "將您的 DNS 服務器更改為 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "瀏覽器",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. 轉到設置。",
-                                "2": "2. 在隱私設置和安全性部分中，單擊安全。",
-                                "3": "3. 在高級部分中，啟用使用安全 DNS。",
-                                "4": "4. 選擇使用：自定義，然後輸入 <1>{{endpoint}}</1>。"
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "僅 Windows、macOS 和 Linux",
-                            "steps": {
-                                "1": "1. 開啟設定",
-                                "2": "2. 點選「隱私權和安全性」",
-                                "3": "3. 向下滾動並啟用「 DNS over HTTPS」。",
-                                "4": "4. 選擇加強保護或最大保護。",
-                                "5": "5. 在選單中選擇自訂。",
-                                "6": "6. 輸入<1>{{endpoint}}</1> 。"
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. 打開設定。",
-                                "2": "2. 轉到隱私權、搜尋與服務部分。",
-                                "3": "3. 在安全性下，啓用「使用安全的 DNS 以指定如何查詢網站的網路位址」。",
-                                "4": "4. 選擇「選擇服務提供者」，然後輸入 <1>{{endpoint}}</1>。"
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. 打開「設定」。",
-                                "2": "2. 在「隱私與安全」區塊（在其他設定下），找到「安全性」。",
-                                "3": "3. 在「進階」選單中開啟「使用加密 DNS」",
-                                "4": "4. 選擇：「自訂」，接著輸入 <1>{{endpoint}}</1>。"
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "路由器",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS 路由器版",
-                            "requirements": "僅在可以運行可執行文件的路由器上工作",
-                            "step": "前往 <1>{{link}}</1> 進入我們的開放源代碼存儲庫以獲得安裝說明。"
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "某些路由器可能不支持上述 IPv6 表示法。在這種情況下，請使用 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
-                            },
-                            "steps": {
-                                "1": "1. 打開路由器的首選項。通常，您可以通過 URL（例如 http://192.168.0.1/ 或 http://192.168.1.1/）從瀏覽器訪問它。",
-                                "2": "2. 在界面內找到 DNS 設置。",
-                                "3": "3. 刪除所有地址（如果有任何），然後添加 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
-                                "4": "4. 單擊保存（或類似按鈕）。"
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. 轉到服務 → DNS 解析器，然後在常規設置選項卡上向下滾動到自定義選項框。",
-                                "2": "2. 輸入下列文字："
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "運行以下命令："
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "前往 Tailscale 文件 <2>{{link}}</2> 查看設定指南。"
-                        }
-                    }
-                }
-            }
-        },
-        "identify": {
-            "name": "識別您的設備",
-            "description": "請按照以下說明在統計和記錄檔中識別您的設備。",
-            "apps": {
-                "name": "應用",
-                "instructions": "在應用程序設置中啟用「發送設備名稱」。"
-            },
-            "dot": {
-                "instructions": "在指定域名前加上名稱（名稱只能包含 <1>a-z</1>、<3>A-Z</3>、<5>0-9</5> 和 <7>-</7>），使用 <9>--</9> 獲取空格。",
-                "example": "對於「<1>張飛的手機</1>」，則可以使用 <3>Zhangfei--shouji-{{profile}}.dns.nextdns.io</3> 作為您的 DNS-over-TLS 端點。"
-            },
-            "doh": {
-                "instructions": "將名稱附加到提供的 URL（名稱應為 URL 編碼）。",
-                "example": "對於「<1>張飛的手機</1>」，您將使用 <3>https://dns.nextdns.io/{{profile}}/張飛的手機</3> 作為您的 DNS-over-HTTPS 端點。"
-            }
+    "usage": {
+      "name": "免費使用",
+      "description": "NextDNS 每月提供 {{queries, number}} 次免費查詢額度，額度用盡後將暫停所有功能直到下個月。",
+      "queries": "<0>{{current, number}}</0><1>/{{quota, number}} 次查詢</1>",
+      "overQuota": {
+        "message": "你本月的查詢次數已超過 {{queries, number}} 次。",
+        "info": "NextDNS 仍會繼續回應 DNS 查詢，但所有功能將暫時停用，直到下個月為止。"
+      },
+      "subscribe": {
+        "ios": "若要訂閱此服務，請在瀏覽器中前往 my.nextdns.io。",
+        "upsell": "每月 {{amount, price}} 起，即可享有無限次數查詢。"
+      }
+    },
+    "subscription": {
+      "name": "訂閱",
+      "plans": {
+        "pro": "Pro",
+        "business": "商業版",
+        "education": "教育版"
+      },
+      "intervals": {
+        "month": "月繳方案",
+        "year": "年繳方案"
+      },
+      "per": {
+        "month": "每月",
+        "year": "每年"
+      },
+      "units": {
+        "business_other": "{{count, number}} 位員工",
+        "education_other": "{{count, number}} 位學生"
+      },
+      "planFull": "{{plan}}（{{interval}}）",
+      "planFullWithUnits": "{{plan}}（{{units}}，{{interval}}）",
+      "expires": "你的訂閱將在 {{date, date}}到期。",
+      "managedByApple": "你的訂閱透過 Apple 帳號管理。若要更改或取消訂閱，請使用 Apple 的訂閱設定。",
+      "manageOnApple": "在 Apple 管理訂閱",
+      "restart": {
+        "button": "重新訂閱"
+      },
+      "changePlan": {
+        "button": "更改方案"
+      },
+      "renewal": "下一次自動扣款將於 {{date, date}}進行，金額為 {{amount, price}}。",
+      "changePaymentMethod": {
+        "button": "更改付款方式"
+      },
+      "cancel": {
+        "button": "取消訂閱",
+        "confirm": {
+          "text": "你目前的訂閱將維持有效至 {{date, date}}。",
+          "submit": "取消訂閱"
         }
+      },
+      "subscribe": {
+        "choosePlan": "選擇一個方案",
+        "addPaymentMethod": "新增付款方式",
+        "included": "所有方案皆包含<1>所有功能</1>，<3>無裝置數量限制</3>和<5>無查詢次數限制</5>。",
+        "savings": "比月繳方案節省 {{percent, percentage}}",
+        "familyOnly": "* Pro 方案僅供個人（及關係親近的家人）使用。",
+        "unitsQuestion": {
+          "business": "你的企業僱用了多少位<1>員工</1>？",
+          "education": "你的學校（或學區）有多少位<1>學生</1>？"
+        },
+        "unitsLabel": {
+          "business": "員工人數",
+          "education": "學生人數"
+        },
+        "asYouGrow": {
+          "business": "* 請記得在員工人數增加時更新你的方案。",
+          "education": "* 請記得在學生人數增加時更新你的方案。"
+        },
+        "starting": {
+          "business": "<2>{{units, number}} 位員工的月費 </2><1>{{price, price}}</1><0> 起</0>",
+          "education": "<2>{{units, number}} 位學生的月費 </2><1>{{price, price}}</1><0> 起</0>"
+        },
+        "card": {
+          "number": "卡號",
+          "expiration": "有效期限",
+          "code": "安全碼",
+          "stripe": "我們使用 Stripe（領先的金流服務）以安全的方式處理卡片付款，而不會直接存取你的卡片資訊。"
+        },
+        "paypal": {
+          "text": "點選「繼續前往 PayPal」按鈕，透過 PayPal 訂閱。"
+        },
+        "bitpay": {
+          "text": "點選「繼續前往 BitPay」按鈕，以加密貨幣付款。",
+          "toYearly": "我們不接受以加密貨幣支付月繳方案。<1>繼續後，你將自動切換至年繳方案。</1>",
+          "remainder": "你目前的訂閱已付款至 {{date, date}}。我們將立即扣款，並將目前訂閱的剩餘時間自動計入新的到期日。"
+        },
+        "continueTo": "繼續前往 <1></1>"
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "威脅情報源",
-            "description": "結合使用最著名的威脅情報源，阻止已知的分發惡意軟件或發起網絡釣魚攻擊和殭屍網絡命令與控制服務器的域——所有這些域均實時更新。",
-            "enable": "啟用威脅情報源",
-            "covid": "防範透過武漢肺炎（COVID-19）進行網路釣魚。"
-        },
-        "ai": {
-            "name": "AI 威脅偵測",
-            "description": "阻擋數百萬種透過 AI 技術偵測到的威脅－這是個經由數百個訊號、 TB級資料訓練出來，專為 DNS 及時處理的人工智慧引擎。",
-            "enable": "啟動 AI 偵測"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google 安全瀏覽",
-            "description": "使用 Google 安全瀏覽來阻止惡意軟件和網上誘騙域，該技術每天檢查數十億個 URL，以查找不安全的網站。與某些瀏覽器中嵌入的版本不同，這不會將您的公共 IP 地址與威脅相關聯，並且不允許繞過該阻止。",
-            "enable": "啟用 Google 安全瀏覽"
-        },
-        "cryptojacking": {
-            "name": "挖礦劫持保護",
-            "description": "防止未經授權使用您的設備來開採加密貨幣。",
-            "enable": "啟用挖礦劫持保護"
-        },
-        "dnsRebinding": {
-            "name": "DNS 重新綁定攻擊保護",
-            "description": "通過自動阻止包含私有 IP 地址的 DNS 響應，防止攻擊者通過 Internet 控制本地設備。",
-            "enable": "啟用 DNS 重新綁定攻擊保護"
-        },
-        "homograph": {
-            "name": "IDN 同構攻擊保護",
-            "description": "通過濫用隨着國際化域名（IDN）的出現而提供的大字符集來阻止冒充其他域的域——例如用西里爾字母「е」替換拉丁字母「e」。",
-            "enable": "啟用 IDN 同構攻擊保護"
-        },
-        "typosquatting": {
-            "name": "誤植域名保護",
-            "description": "阻止惡意行為者注冊的域名，這些域名針對的是錯誤地在浏覽器中鍵入網站地址的用戶——例如錯誤地輸入「taoboa.com」而不是正確的「taobao.com」。",
-            "enable": "啟用誤植域名保護"
-        },
-        "dga": {
-            "name": "域生成算法（DGA）保護",
-            "description": "在各種惡意軟件家族中都可以看到由域生成算法（DGA）生成的塊域，這些域可以用作其命令和控制服務器的集合點。",
-            "enable": "啟用 DGA 保護"
-        },
-        "nrd": {
-            "name": "阻止新註冊的域（NRD）",
-            "description": "不到 30 天前註冊的屏蔽域。那些域受到攻擊者的青睞，用以發起惡意活動。",
-            "enable": "阻止新註冊的域（NRD）"
-        },
-        "ddns": {
-            "name": "阻擋動態DNS主機名稱",
-            "description": "動態 DNS (或稱 DDNS)服務使惡意行為者在無需任何驗證或身份驗證下快速設定主機名稱。雖然合法的 DDNS 主機名稱在日常使用中很少被存取，但它們的惡意主機名稱在網絡釣魚活動中被大量使用 - 例如 paypal‑login.duckdns.org。",
-            "disclaimer": "如果您正在使用 DDNS，請注意此設定不會阻擋 DDNS 服務自己的網站或其更新 API。",
-            "enable": "阻擋動態DNS主機名稱"
-        },
-        "parked": {
-            "name": "封鎖停放網域",
-            "description": "停放域名是單頁網站，經常載有廣告，沒有任何價值。停放域的獲利有時會與可疑的做法和惡意內容混在一起。",
-            "enable": "封鎖停放網域"
-        },
-        "tld": {
-            "name": "阻止頂級域（TLD）",
-            "description": "阻止屬於特定 TLD 的所有域和子域。",
-            "add": "添加一個 TLD",
-            "sections": {
-                "spamhaus": "Spamhaus 最濫用的 TLD",
-                "all": "所有 TLD"
-            }
-        },
-        "csam": {
-            "name": "阻止兒童性虐待內容",
-            "description": "在由 Canadian Centre for Child Protection 運營的 Project Arachnid 的幫助下，阻止兒童性虐待材料的域名。域被阻止時，不會將任何信息傳輸回 Project Arachnid。",
-            "enable": "阻止兒童性虐待內容"
-        }
-    },
-    "privacy": {
-        "blocklists": {
-            "name": "阻止列表",
-            "description": "使用可用的最受歡迎的阻止列表來阻止廣告和跟蹤器——所有這些都實時更新。",
-            "add": "添加阻止列表",
-            "entries": "{{count, number}} 條目",
-            "entries_plural": "{{count, number}} 條目",
-            "updated": "<1>{{ago}}</1>已更新",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS 推薦的廣告和跟蹤器阻止列表",
-                    "description": "全面的黑名單，可阻止所有國家/地區的廣告和跟蹤器。這是推薦的入門黑名單。"
-                }
-            },
-            "search": {
-                "placeholder": "搜尋封鎖清單",
-                "noResults": "未找到封鎖清單。"
-            },
-            "sortBy": {
-                "popularity": "使用率",
-                "name": "名稱",
-                "entries": "項目",
-                "updated": "最新"
-            }
-        },
-        "native": {
-            "name": "深度追蹤保護",
-            "description": "阻止通常在操作系統級別運行的廣譜跟蹤器，該跟蹤器可跟蹤您在設備上的活動。這可能包括您一直訪問的所有網站，您鍵入的所有內容或您的位置。",
-            "add": "添加",
-            "systems": {
-                "xiaomi": {
-                    "name": "小米",
-                    "devices": "手機和平板電腦、智能電視、路由器"
-                },
-                "huawei": {
-                    "name": "華為",
-                    "devices": "手機和平板電腦"
-                },
-                "samsung": {
-                    "name": "三星",
-                    "devices": "手機、平板電腦、智能電視"
-                },
-                "alexa": {
-                    "name": "亞馬遜 Alexa",
-                    "devices": "支持 Alexa 的設備"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "所有版本"
-                },
-                "apple": {
-                    "name": "蘋果",
-                    "devices": "iOS、macOS、tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "所有 Roku 設備"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "音箱"
-                }
-            }
-        },
-        "disguised": {
-            "name": "阻止偽裝的第三方跟蹤器",
-            "description": "自動檢測並阻止偽裝成第一方的第三方跟蹤器，以規避 ITP 等最新瀏覽器的隱私保護。",
-            "enable": "阻止偽裝的第三方跟蹤器"
-        },
-        "affiliate": {
-            "name": "允許營銷和跟蹤鏈接",
-            "description": "允許在交易網站，電子郵件或搜索結果中常見的營銷和跟蹤域。通常只有在手動單擊鏈接后才能調用這些鏈接。",
-            "relay": "您的 IP 位址將自動對這些網站隱藏，以保護您的隱私。",
-            "enable": "允許營銷和跟蹤鏈接"
-        }
-    },
-    "parentalControl": {
-        "services": {
-            "name": "網站、應用程序和遊戲",
-            "description": "限制對特定網站、應用程序和遊戲的訪問。",
-            "add": "添加網站、應用程序或遊戲",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "亞馬遜",
-                "bereal": "BeReal",
-                "blizzard": "暴雪娛樂",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "迪士尼+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "要塞英雄",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "英雄聯盟",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "我的世界",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "機器磚塊（Roblox）",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "抖音",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "Twitter",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
-        },
-        "categories": {
-            "name": "分類目錄",
-            "description": "限制訪問特定類別的網站和應用程序。",
-            "add": "添加類別",
-            "categories": {
-                "dating": {
-                    "name": "約會",
-                    "description": "阻止所有約會網站和應用。"
-                },
-                "gambling": {
-                    "name": "賭博",
-                    "description": "阻止賭博內容。"
-                },
-                "gaming": {
-                    "name": "線上遊戲",
-                    "description": "封鎖線上遊戲網站、線上遊戲應用程式和線上遊戲網路（Xbox Live、PlayStation Network 等）。"
-                },
-                "piracy": {
-                    "name": "盜版",
-                    "description": "屏蔽 P2P 網站、協議、侵犯版權的流媒體網站和主要用於非法傳播版權內容的通用視頻託管網站。"
-                },
-                "porn": {
-                    "name": "色情",
-                    "description": "阻止成人和色情內容。它包括應召女郎網站，pornhub.com 和類似域名。"
-                },
-                "social-networks": {
-                    "name": "社交網絡",
-                    "description": "阻止所有社交網站和應用程序（Facebook、Instagram、抖音、Reddit）。不阻止消息傳遞應用程序。"
-                },
-                "video-streaming": {
-                    "name": "影音串流",
-                    "description": "阻止視頻流服務（YouTube、Netflix、Disney+、非法流媒體網站、視頻色情網站等）和基於視頻的社交網絡（TikTok 等）。這也有助於減少任何網絡上的帶寬使用。"
-                }
-            }
-        },
-        "recreation": {
-            "name": "娛樂時間",
-            "description": "為一周中的某一天或某幾天設置一個時間段，在該時間段內上述所選的網站，應用程序，遊戲及分類目錄可以自由使用—例如，在星期一和星期二的晚上 6 點至晚上 8 點之間允許 Facebook。",
-            "set": "設置娛樂時間",
-            "howto": "使用上面部分中的 <1></1> 按鈕來啓用娛樂時間。"
-        },
-        "safesearch": {
-            "name": "安全搜尋",
-            "description": "過濾所有主要搜索引擎上的明確結果，包括圖像和視頻。這也將阻止對不支持此功能的搜索引擎的訪問。",
-            "enable": "強制安全搜尋"
-        },
-        "youtubeRestricted": {
-            "name": "YouTube 嚴格篩選模式",
-            "description": "過濾 YouTube 上的成人影片，並防止來自其他嵌入式的成人網站。這也將會隱藏所有評論。",
-            "enable": "強制 YouTube 嚴格篩選模式"
-        },
-        "bypass": {
-            "name": "阻止旁路方法",
-            "description": "防止或阻礙使用有助於繞過網絡上的 NextDNS 篩選的方法。這包括 VPN，代理，與 Tor 相關的軟件和加密的 DNS 提供程序。",
-            "enable": "阻止旁路方法"
-        }
-    },
-    "xlist": {
-        "placeholder": "添加一個域名……",
-        "errors": {
-            "required": "請輸入一個域名。",
-            "ip": "請輸入域名，而不是 IP 地址。",
-            "invalid": "請輸入有效的域名。",
-            "tld": "您似乎要阻止整個 TLD，請使用“安全性”部分中的阻止 TLD 功能。",
-            "exists": "該域已被添加。"
-        },
-        "empty": "尚無網域。",
-        "denylist": {
-            "info": "將某個域列入黑名單將自動應用於其所有子域。"
-        },
-        "allowlist": {
-            "info": "將一個域列入白名單將自動應用於其所有子域。白名單優先於其他所有內容，包括安全功能。"
-        }
-    },
-    "analytics": {
-        "counters": {
-            "all": "<0>{{count, number}}</0><1>查詢</1>",
-            "all_plural": "<0>{{count, number}}</0><1>查詢</1>",
-            "blocked": "<0>{{count, number}}</0><1>被阻止的查詢</1>",
-            "blocked_plural": "<0>{{count, number}}</0><1>被阻止的查詢</1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>被阻止的查詢</1></1>"
-        },
-        "queries": {
-            "name": "查詢",
-            "description": "查詢隨時間的演變。",
-            "queries": {
-                "all": "<0>{{count, number}}</0><1> 個查詢</1>",
-                "all_plural": "<0>{{count, number}}</0><1> 個查詢</1>",
-                "blocked": "<0>{{count, number}}</0><1> 個被阻止的查詢</1>",
-                "blocked_plural": "<0>{{count, number}}</0><1> 個被阻止的查詢</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "暢通的域名",
-                "description": "暢通的域名沒有受到任何設置的阻止，也可能因為它手動被允許。"
-            },
-            "blocked": {
-                "name": "被阻止的域名",
-                "description": "域被安全性，隱私和/或家長監護設置阻止，或者由於被手動拒絕而被阻止。"
-            },
-            "root": {
-                "name": "根域名",
-                "description": "匯總針對根域及其所有子域的所有查詢。"
-            },
-            "empty": "尚無域名。"
-        },
-        "reasons": {
-            "name": "被阻止原因",
-            "description": "安全性、隱私和/或家長監護設置阻止了最多的查詢。",
-            "empty": "尚未阻止任何域名。"
-        },
-        "devices": {
-            "name": "設備",
-            "description": "進行查詢的設備。",
-            "empty": "暫無設備。",
-            "unidentified": {
-                "name": "無法識別的設備"
-            }
-        },
-        "ips": {
-            "name": "客戶端 IP 地址",
-            "description": "進行查詢的 IP 地址。",
-            "empty": "暫無 IP 地址。"
-        },
-        "gafam": {
-            "name": "大型科技公司的統治",
-            "description": "GAFAM（Google、Amazon、Facebook、Apple 和 Microsoft）是擁有許多統治服務的 5 家主要互聯網公司，也會以不同的名稱運營，例如 Facebook 的 WhatsApp 和 Instagram。",
-            "queries": "{{count, number}} 個查詢",
-            "queries_plural": "{{count, number}} 個查詢",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "其他"
-                }
-            }
-        },
-        "encrypted": {
-            "name": "加密的 DNS",
-            "description": "使用加密傳輸（DNS-over-HTTPS、DNS-over-TLS 或正式的 NextDNS 應用程序）進行查詢的百分比。",
-            "empty": "暫無查詢。"
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "使用 DNSSEC 驗證的查詢百分比。",
-            "empty": "暫無查詢。"
-        },
-        "destination": {
-            "name": "互聯網流量目的地",
-            "description": "您的互聯網流量所去的國家。",
-            "empty": "暫無查詢。",
-            "queries": "{{count, number}} 個查詢",
-            "queries_plural": "{{count, number}} 個查詢",
-            "topDomains": "最多查詢域名"
-        }
-    },
-    "logs": {
-        "blockedOnly": "僅顯示被阻止的查詢",
-        "raw": "原始 DNS 日志",
-        "empty": "暫無記錄檔。",
-        "log": {
-            "actionBlock": "封鎖",
-            "actionAllow": "允許",
-            "dnssec": "已通過 DNSSEC 驗證。",
-            "clients": {
-                "nextdns-ios": "NextDNS 的 iOS 應用程式",
-                "nextdns-android": "NextDNS 的 Android 應用程式",
-                "nextdns-macos": "NextDNS 的 macOS 應用程式",
-                "nextdns-windows": "NextDNS 的 Windows 應用程式",
-                "nextdns-cli": "NextDNS CLI 客戶端",
-                "nextdns-chromeos": "NextDNS 的 Chrome OS 應用程式",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Apple 組態設定檔"
-            },
-            "blockedBy": "被 <1>{{lists}}</1> 阻止。",
-            "allowedBy": "被 <1>{{lists}}</1> 允許。",
-            "manual": {
-                "deny": "手動阻止了。",
-                "allow": "手動阻止了。"
-            },
-            "insights": {
-                "name": "追蹤器的解析",
-                "show": "顯示追蹤器的解析",
-                "hide": "隱藏追蹤器的解析",
-                "categories": {
-                    "advertising": {
-                        "description": "提供廣告或與廣告相關的服務，例如數據收集，行為分析或重定向。"
-                    },
-                    "comments": {
-                        "description": "為文章和產品評論啟用評論部分。"
-                    },
-                    "customer_interaction": {
-                        "description": "包括聊天，電子郵件消息，客戶支持和其他交互工具。"
-                    },
-                    "essential": {
-                        "description": "包括標籤管理器，隱私聲明和對網站功能至關重要的技術。"
-                    },
-                    "adult_advertsing": {
-                        "description": "提供通常出現在成人內容網站上的廣告。"
-                    },
-                    "site_analytics": {
-                        "description": "收集和分析與網站使用情況和性能有關的數據。"
-                    },
-                    "social_media": {
-                        "description": "集成與社交媒體網站相關的功能。"
-                    },
-                    "audio_video_player": {
-                        "description": "使網站能夠發布，分發和優化視頻和音頻內容。"
-                    },
-                    "cdn": {
-                        "description": "內容交付網絡，可為不同的站點工具（通常為許多不同的客戶）交付資源。"
-                    },
-                    "misc": {
-                        "description": "該跟蹤器不適合其他類別或尚未標記。"
-                    },
-                    "pornvertising": {
-                        "description": "提供通常出現在成人內容網站上的廣告。"
-                    },
-                    "hosting": {
-                        "description": "這是被內容提供商或網站所有者使用的服務。"
-                    },
-                    "extensions": {
-                        "description": "用戶設備上的軟件，可以攔截和分析瀏覽器流量（中間人）。"
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "危險盛行",
-                        "extremely": "極為流行",
-                        "very": "非常流行",
-                        "commonly": "通常流行",
-                        "relatively": "相對流行"
-                    },
-                    "summary": "{{prevalence}}<3>（跟蹤 {{percent, percentage}} 網絡流量）</3>"
-                },
-                "ownedBy": "<0>擁有者 </0><1>{{company}}</1>",
-                "source": "追蹤器的深入解析來自"
-            }
-        }
-    },
-    "deviceSelector": {
-        "all": "所有設備",
-        "howto": "在設定頁面裡瞭解如何辨識設備。"
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "過去 30 分鐘",
-            "6h": "過去 6 小時",
-            "24h": "過去 24 小時",
-            "7d": "過去 7 天",
-            "30d": "過去 30 天",
-            "3M": "過去 3 個月"
-        }
-    },
-    "settings": {
+    "business": {
+      "name": "公司資料",
+      "description": "基於稅務需要，我們需要你的公司名稱、地址和增值稅號（或其他報稅編號）。這是法律規定，並會顯示在所有發票上。",
+      "button": {
+        "add": "新增公司資訊",
+        "update": "更新資料"
+      },
+      "form": {
         "name": {
-            "name": "名稱",
-            "description": "為此設定檔選擇一個名稱。"
+          "label": "名稱",
+          "placeholder": "某某公司",
+          "errors": {
+            "required": "請輸入你的公司名稱。"
+          }
         },
-        "logs": {
-            "name": "記錄檔",
-            "description": "微調您的記錄檔設定。",
-            "enable": "啟用記錄檔",
-            "privacy": {
-                "name": "隱私設定",
-                "ip": "記錄客戶端 IP",
-                "domains": "記錄域名"
-            },
-            "retention": {
-                "name": "保留",
-                "options": {
-                    "1h": "1 小時",
-                    "6h": "6 小時",
-                    "1d": "1 天",
-                    "1w": "1 週",
-                    "1m": "1 個月",
-                    "3m": "3 個月",
-                    "6m": "6 個月",
-                    "1y": "1 年",
-                    "2y": "2 年"
-                }
-            },
-            "location": {
-                "name": "資料儲存位置",
-                "locations": {
-                    "us": {
-                        "name": "美國",
-                        "description": "記錄檔將儲存在美國境內。這是預設儲存位置"
-                    },
-                    "eu": {
-                        "name": "歐盟",
-                        "description": "記錄檔將儲存在歐盟成員國內。"
-                    },
-                    "gb": {
-                        "name": "United Kingdom",
-                        "description": "Logs will be stored in London, United Kingdom."
-                    },
-                    "ch": {
-                        "name": "瑞士",
-                        "description": "記錄檔將儲存在瑞士的蘇黎世，蘇黎世以及其嚴格的隱私法條聞名。"
-                    }
-                },
-                "confirm": {
-                    "title": "更改儲存位置",
-                    "text": "更改記錄檔的資料儲存位置將刪除此設定檔所有記錄檔與統計紀錄。"
-                }
-            },
-            "download": {
-                "button": "下載記錄檔"
-            },
-            "clear": {
-                "button": "清除記錄檔",
-                "confirm": {
-                    "text": "您確定要清除此設定檔的所有記錄檔嗎？此操作無法復原。",
-                    "submit": "清除"
-                }
-            }
+        "address": {
+          "label": "地址",
+          "placeholder": "23678 新北市土城區土城工業區自由街 2 號\n臺灣",
+          "errors": {
+            "required": "請輸入你的公司地址。"
+          }
+        },
+        "vatNumber": {
+          "label": "增值稅號（或其他報稅編號）"
+        }
+      }
+    },
+    "invoices": {
+      "name": "發票",
+      "description": "帳單記錄和你帳戶的所有發票。",
+      "pending": "{{amount, price}}（待確認）",
+      "show-more": "顯示更多",
+      "show-less": "顯示更少",
+      "invoice": {
+        "title": "發票編號 #{{code}}",
+        "to": "致：<1>{{email}}</1>",
+        "vatNumber": "增值稅號（或其他報稅編號）：{{number}}",
+        "columns": {
+          "plan": "方案",
+          "period": "期間",
+          "amount": "金額"
+        },
+        "vat": "增值稅（{{rate, percentage}}）",
+        "total": "總計",
+        "footer": {
+          "reverseCharged": "增值稅（或同等稅款）採反向課徵。",
+          "currency": "所有金額皆以 {{code}} 顯示。"
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "電子郵件地址",
+      "description": "更改登入帳戶以及接收重要通知的電子郵件地址。",
+      "button": "更改電子郵件地址"
+    },
+    "changePassword": {
+      "name": "密碼",
+      "description": "更改用於登入帳戶及確認敏感操作的密碼。",
+      "button": "更改密碼"
+    },
+    "2fa": {
+      "name": "兩步驟驗證（2FA）",
+      "description": "兩步驟驗證（2FA）提供額外的安全防護，登入帳戶時需要輸入依時間產生的 6 位數驗證碼。",
+      "enabled": "你的帳戶已啟用兩步驟驗證（2FA）。",
+      "enable": {
+        "button": "啟用兩步驟驗證（2FA）",
+        "secret": "兩步驟驗證金鑰",
+        "modal": {
+          "howto": "使用 <1>Google Authenticator</1> 等驗證器 App，或支援兩步驟驗證（2FA）的密碼管理器。你可以掃描 QR 碼、點一下 QR 碼以開啟 <3>{{otpauth}}</3> 連結，或手動複製並貼上金鑰。"
+        }
+      },
+      "recovery": {
+        "button": "復原代碼",
+        "modal": {
+          "howto": "如果無法存取裝置，也無法取得兩步驟驗證碼，可以使用這些復原代碼登入帳戶。每個代碼只能使用一次。",
+          "download": "下載",
+          "regen": "重新產生"
+        }
+      },
+      "disable": {
+        "button": "停用兩步驟驗證（2FA）"
+      }
+    },
+    "api": {
+      "description": "以程式方式建立和管理設定檔。請閱讀 <1>{{link}}</1> 上的文件。",
+      "copy": "複製 API 金鑰",
+      "remove": "移除 API 金鑰",
+      "create": {
+        "button": "產生 API 金鑰"
+      }
+    },
+    "delete": {
+      "button": "刪除帳戶",
+      "warning": "這將永久刪除你的帳戶和所有設定檔。",
+      "confirm": {
+        "text": "你確定要刪除帳戶嗎？此操作無法復原。"
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "已過期",
+          "text": "你的臨時帳戶已過期。立即免費註冊以儲存設定，並繼續使用 NextDNS。"
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "新增",
+    "form": {
+      "title": "新增設定檔",
+      "name": {
+        "label": "名稱",
+        "placeholder": "家、孩子、辦公室……",
+        "errors": {
+          "required": "請輸入一個名稱。",
+          "taken": "你已有使用此名稱的設定檔。"
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "一切準備就緒！",
+        "secondary": "此裝置正在使用此設定檔連線至 NextDNS。"
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "此裝置正在使用 NextDNS，但未使用任何設定檔。",
+          "secondary": {
+            "clients": "請確認已在 App 設定中填入下方顯示的設定檔 ID。",
+            "firefox": "請確認已在 Firefox 中設定下方顯示的 DNS-over-HTTPS 端點。",
+            "doh": "請確認使用下方顯示的 DNS-over-HTTPS 端點。",
+            "dot": "請確認使用下方顯示的 DNS-over-TLS 端點。",
+            "ipv6": "請確認使用下方顯示的 IPv6 位址。",
+            "servers": "請使用下方「已連結的 IP」區塊顯示的 DNS 伺服器（不同設定檔的 DNS 伺服器不同）。",
+            "link": "請在下方「已連結的 IP」區塊中連結你的 IP 位址。"
+          }
+        },
+        "withConfiguration": {
+          "primary": "此裝置正在使用另一個設定檔連線至 NextDNS。",
+          "secondary": {
+            "sameAccount": "此裝置目前正在使用「{{name}}」。",
+            "otherAccount": "請確認你正在使用此頁面所列的端點之一。"
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "此裝置未使用 NextDNS。",
+        "secondary": "此裝置目前正在使用「{{resolver}}」作為 DNS 解析器。"
+      },
+      "error": {
+        "primary": "檢查目前狀態時發生錯誤。",
+        "secondary": "如果重新整理頁面後問題仍然存在，請與我們聯絡。"
+      },
+      "apr": {
+        "ok": {
+          "primary": "此裝置正在透過 iCloud 私密轉送使用 NextDNS。",
+          "secondary": "安全搜尋、YouTube 嚴格篩選模式和重寫等功能與 iCloud 私密轉送不相容。"
         },
         "blockpage": {
-            "name": "阻擋頁面",
-            "description": "在瀏覽已被封鎖的網域顯示阻擋頁面。在某些情況下可能會出現 HTTPS 警告並稍微增加網頁載入時間。停用後，被封鎖的網域將回覆未指定位址（0.0.0.0 或 ::）。",
-            "enable": "啟用阻擋頁面",
-            "ca": {
-                "name": "NextDNS 根證書",
-                "description": "通過安裝 <1>{{link}}</1> 並信任我們的根憑證可避免顯示阻擋頁面時出現的 HTTPS 警告。請 <3>相關</3> 指引來執行操做。"
-            }
-        },
-        "performance": {
-            "name": "性能",
-            "description": "加速瀏覽速度。",
-            "ecs": {
-                "name": "匿名 EDNS 客戶端子網",
-                "description": "在不暴露您的 IP 位址下加速網路傳輸內容速度。",
-                "enable": "啟用匿名 EDNS 客戶端子網"
-            },
-            "cache": {
-                "name": "加速快取",
-                "description": "透過覆寫最小 TTL（Time to live）來減少 DNS 查詢次數。",
-                "enable": "啟用加速快取"
-            },
-            "flatten": {
-                "name": "CNAME 簡維",
-                "description": "防止 CNAME 追蹤解析器進行不必要的查詢，並污染具有中間域的記錄檔。",
-                "enable": "啟用 CNAME 簡維"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 是指一個去中心化且抗審查的線上生態系統，由創新技術組成，例如基於區塊鏈的域名註冊（例如 ENS）和分散式內容儲存及遞送網路（例如 IPFS）。啟用後，NextDNS 將作為此新網路的無過濾閘道，讓您無需安裝任何東西即可親身體驗它。",
-            "tips": "由於目前大多數瀏覽器僅支援傳統的頂級域名，因此當您嘗試直接存取 Handshake 網域時，應在其後加上斜線（「<1>/</1>」）（例如：「<3>vitalik.eth/</3>」而不是「<5> vitalik.eth </5>」）。",
-            "enable": "啟用 Web3"
-        },
-        "rewrites": {
-            "name": "響應修改",
-            "description": "設置或覆蓋任何域的 DNS 響應。響應修改也適用於子域，並且支持本地 IP 地址作為答案。",
-            "new": "新響應修改",
-            "form": {
-                "domain": {
-                    "label": "網域",
-                    "placeholder": "wodedayinji.lan、wodewanghe.tw……",
-                    "errors": {
-                        "required": "請輸入一個域名。",
-                        "ip": "請輸入域名，而不是 IP 位址。",
-                        "invalid": "請輸入有效的域名。",
-                        "taken": "您已經對該域進行了響應修改。"
-                    }
-                },
-                "answer": {
-                    "label": "答案",
-                    "placeholder": "1.2.3.4、sub.example.tw……",
-                    "errors": {
-                        "required": "請輸入答案。",
-                        "invalid": "回應應該是有效的 IP 位址或域名。"
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "存取",
-            "description": "向其他人提供對此個人資料的編輯或僅查看權限。",
-            "roles": {
-                "editor": "編輯器",
-                "viewer": "檢視者"
-            },
-            "pending": "已傳送邀請",
-            "form": {
-                "email": {
-                    "label": "電子郵件",
-                    "errors": {
-                        "required": "請輸入電子郵件地址。",
-                        "invalid": "輸入有效的電子郵件地址。",
-                        "duplicate": "已送出邀請至此電子郵件"
-                    }
-                },
-                "role": {
-                    "label": "角色"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "複製 <1>{{name}}</1>",
-            "description": "將此設定檔的所有設定複製到新設定檔中。",
-            "form": {
-                "name": {
-                    "label": "名稱",
-                    "placeholder": "家庭、兒童、辦公室...",
-                    "errors": {
-                        "required": "輸入名稱",
-                        "taken": "已經有一個相同名稱的設定。"
-                    }
-                },
-                "button": "複製"
-            }
-        },
-        "delete": {
-            "button": "刪除<1>{{name}}</1>",
-            "warning": "這會永久刪除此設定與相關的記錄。",
-            "confirm": {
-                "text": "您確定要刪除<1>{{name}}</1>？此動作無法還原。"
-            }
-        },
-        "leave": {
-            "button": "離開<1>{{name}}</1>",
-            "warning": "您將無法存取這個設定檔。",
-            "confirm": {
-                "text": "您確定要刪除<1>{{name}}</1>？此動作無法還原。"
-            }
+          "primary": "此裝置正在透過 iCloud 私密轉送使用 NextDNS。",
+          "secondary": "使用 iCloud 私密轉送時，啟用「封鎖頁面」設定會影響封鎖功能。"
         }
+      }
+    },
+    "endpoints": {
+      "name": "端點",
+      "description": "使用下方任一端點，即可為此設定檔設定 NextDNS。",
+      "help": "不確定如何使用？請參閱<1>設定指南</1>。"
+    },
+    "linkedIp": {
+      "name": "已連結的 IP",
+      "description": "如果無法透過我們的 App、DNS-over-TLS、DNS-over-HTTPS 或 IPv6 設定 NextDNS，請使用下方的 DNS 伺服器並連結你的 IP。此方式主要適用於家用網路，不建議在行動裝置上使用。",
+      "servers": {
+        "name": "DNS 伺服器"
+      },
+      "ip": {
+        "name": "已連結的 IP",
+        "link": "連結 IP"
+      },
+      "showAdvanced": "顯示進階選項",
+      "ddns": {
+        "explanation": "你可以使用動態 DNS（DDNS）來自動更新已連結的 IP。",
+        "set": "設定 DDNS",
+        "status": "你目前正在使用 <1>{{hostname}}</1> 作為 DDNS 主機名稱，你的 IP 位址會每分鐘自動更新。",
+        "unset": "移除",
+        "form": {
+          "hostname": {
+            "label": "DDNS 主機名稱",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "請輸入主機名稱。",
+              "invalid": "請輸入有效的主機名稱。",
+              "ip": "請輸入主機名稱，而不是 IP 位址。",
+              "error": "取得此主機名稱的 IP 位址時發生錯誤。",
+              "empty": "此主機名稱沒有回應任何 IP 位址。",
+              "different": "基於安全理由，新增動態 DNS 時，DDNS 主機的 IP 位址應與你目前的 IP 位址相同。"
+            }
+          }
+        }
+      },
+      "programmatically": "你也可以透過程式存取下列網址，更新已連結的 IP："
+    },
+    "guide": {
+      "name": "設定指南",
+      "description": "請按照以下說明，在裝置、瀏覽器或路由器上設定 NextDNS。",
+      "or": "或",
+      "ipv4": {
+        "title": "IPv4（已連結的 IP）"
+      },
+      "ipv6": {
+        "supported": "你的網路支援 IPv6",
+        "notSupported": "你的網路不支援 IPv6"
+      },
+      "tags": {
+        "recommended": "推薦",
+        "advanced": "進階"
+      },
+      "use": "在 <1>{{file}}</1> 中使用以下內容：",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "私人 DNS",
+              "requirements": "Android 9 及更高版本",
+              "steps": {
+                "1": "1. 前往設定 → 網路與網際網路 → 私人 DNS（部分版本中位於「進階」下）。",
+                "2": "2. 選擇「私人 DNS 供應商主機名稱」選項。",
+                "3": "3. 輸入 <1>{{endpoint}}</1>，然後點選「儲存」。"
+              }
+            }
+          }
+        },
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "描述檔",
+              "requirements": "iOS 14 及更高版本",
+              "step": "使用我們的 Apple 描述檔產生器：<1>{{link}}</1>。"
+            },
+            "app": {
+              "title": "iOS 版 NextDNS",
+              "qrAlt": "用於在 iPhone 或 iPad 上安裝並設定 NextDNS 的輕巧 App 條碼",
+              "qrText": "掃描此條碼，在 iPhone 或 iPad 上安裝並設定 NextDNS",
+              "qrTextIos": "使用另一支手機掃描此條碼，或<1>點一下這裡，在此裝置上設定 NextDNS</1>。"
+            }
+          }
+        },
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS over HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "開啟<1>設定</1>應用程式。",
+                "前往<1>網路和網際網路</1>。",
+                "點選 <1>Wi-Fi</1>（或<3>乙太網路</3>）。",
+                "點選<1>硬體內容</1>；如果你點選的是<3>乙太網路</3>，則略過此步驟。",
+                "點選 <3>DNS 伺服器指派</3>旁的<1>編輯</1>按鈕。",
+                "選擇<1>手動</1>。",
+                "啟用 <1>IPv{{version}}</1>。",
+                "在<3>慣用 DNS</3>中輸入 <1>{{ip}}</1>，選擇<5>開啟（手動範本）</5>，然後輸入 <7>{{endpoint}}</7>。",
+                "在<3>其他 DNS</3>中輸入 <1>{{ip}}</1>，選擇<5>開啟（手動範本）</5>，然後輸入 <7>{{endpoint}}</7>。",
+                "點選<1>儲存</1>。"
+              ]
+            },
+            "app": {
+              "title": "Windows 版 NextDNS",
+              "steps": {
+                "1": "1. 在<1>此處</1>下載安裝程式。",
+                "2": "2. 安裝後，在系統匣的 NextDNS 圖示上按右鍵，開啟「Settings...」，並將「Configuration ID」設為 <1>{{id}}</1>。",
+                "3": "3. 在系統匣的 NextDNS 圖示上按右鍵，然後點選「Enable」。"
+              }
+            },
+            "ip": {
+              "steps": {
+                "1": "1. 開啟「開始」，搜尋「控制台」，然後將其開啟。",
+                "2": "2. 點選「網路和網際網路」，然後點選「網路和共用中心」。",
+                "3": "3. 點選「變更介面卡設定」。",
+                "4": "4. 在目前連線的 Wi-Fi 網路上按右鍵，然後點選「內容」。",
+                "5": "5. 選擇「網際網路通訊協定第 {{version}} 版」。",
+                "6": "6. 點選「內容」。",
+                "7": "7. 選擇「使用下列的 DNS 伺服器位址」。",
+                "8": "8. 將目前位址（若有）取代成 <1>{{dns1}}</1> 及 <3>{{dns2}}</3>。",
+                "9": "9. 點選「確定」，然後點選「關閉」。你可能需要重新啟動瀏覽器。"
+              }
+            },
+            "yoga": {
+              "steps": {
+                "1": "1. 從 <1>{{link}}</1> 安裝 YogaDNS。",
+                "2": "2. 依照 <1>{{link}}</1> 上的 NextDNS 說明操作，並使用 <3>{{id}}</3> 作為「Configuration ID」。"
+              }
+            }
+          }
+        },
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "macOS 版 NextDNS",
+              "steps": {
+                "1": "1. <1>下載</1>並安裝我們的官方 App。",
+                "2": "2. 按照畫面上的指示操作。",
+                "3": "3. 當 App 要求輸入設定檔 ID 時，輸入 <1>{{id}}</1>。"
+              }
+            },
+            "profile": {
+              "requirements": "macOS Big Sur 及更高版本"
+            },
+            "ip": {
+              "steps": {
+                "1": "1. 開啟「系統設定」（舊版 macOS 中為「系統偏好設定」），然後點選「網路」。",
+                "2": "2. 選擇目前使用的網路連線，然後點選「詳細資訊」（舊版 macOS 中為「進階」）。",
+                "3": "3. 前往 DNS 區段。",
+                "4": "4. 在「DNS 伺服器」列表中移除所有現有位址（若有），再新增 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
+                "5": "5. 點選「好」，若顯示「套用」，再點選它。"
+              }
+            },
+            "cli": {
+              "title": "NextDNS CLI 用戶端",
+              "steps": {
+                "1": "1. 在終端機中執行下列指令：<1>{{command}}</1>",
+                "2": "2. 按照說明進行操作。"
+              },
+              "manual": "前往我們的開放原始碼儲存庫 <1>{{link}}</1> 查看手動安裝說明。"
+            }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS CLI 用戶端",
+              "steps": {
+                "1": "1. 執行下列指令：<1>{{command}}</1>",
+                "2": "2. 按照說明進行操作。"
+              },
+              "manual": "前往我們的開放原始碼儲存庫 <1>{{link}}</1> 查看手動安裝說明。"
+            },
+            "ip": {
+              "step": "將你的 DNS 伺服器更改為 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
+            },
+            "stubby": {
+              "warning": "請確認 Stubby 已與 <1>OpenSSL 1.1.1 或更高版本</1>連結，因為舊版本無法與 NextDNS 搭配使用。"
+            },
+            "unbound": {
+              "warning": "作為遞迴解析器，Unbound 會追蹤 CNAME 記錄。與 NextDNS 等具有封鎖功能的 DNS 解析器搭配使用時，這可能導致<1>非預期行為</1>。請參閱 <3>{{link}}</3>。"
+            }
+          }
+        },
+        "chromeos": {
+          "name": "ChromeOS",
+          "guides": {
+            "secure-dns": {
+              "title": "安全 DNS",
+              "steps": [
+                "開啟<1>設定</1>應用程式。",
+                "前往<1>隱私權和安全性</1>。",
+                "啟用<1>使用安全連線查詢網站</1>。",
+                "選擇<1>新增自訂 DNS 服務供應商</1>，然後輸入 <3>{{endpoint}}</3>。"
+              ]
+            },
+            "ip": {
+              "step": "將你的 DNS 伺服器更改為 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
+            }
+          }
+        },
+        "browsers": {
+          "name": "瀏覽器",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. 前往「設定」。",
+                "2": "2. 在「隱私權和安全性」區塊中，點選「安全性」。",
+                "3": "3. 在「進階」區塊中，啟用「使用安全 DNS」。",
+                "4": "4. 選擇「新增自訂 DNS 服務供應商」，然後輸入 <1>{{endpoint}}</1>。"
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "僅 Windows、macOS 和 Linux",
+              "steps": {
+                "1": "1. 開啟「設定」（部分版本中為「偏好設定」）。",
+                "2": "2. 點選「隱私權與安全性」。",
+                "3": "3. 向下捲動至「DNS over HTTPS」，若顯示「進階設定」，請將其開啟。",
+                "4": "4. 選擇「自訂」（部分版本中為「加強保護」或「最大保護」）。",
+                "5": "5. 在提供者選單中選擇「自訂」。",
+                "6": "6. 輸入 <1>{{endpoint}}</1>。"
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. 開啟「設定」。",
+                "2": "2. 前往「隱私權、搜尋與服務」區段。",
+                "3": "3. 在「安全性」下，啟用「使用安全 DNS」。",
+                "4": "4. 選擇「選擇服務提供者」，然後輸入 <1>{{endpoint}}</1>。"
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. 開啟「設定」。",
+                "2": "2. 在「隱私權和安全性」區塊，前往「安全性」。",
+                "3": "3. 在「進階」區塊中，啟用「使用安全 DNS」。",
+                "4": "4. 選擇「新增自訂 DNS 服務供應商」，然後輸入 <1>{{endpoint}}</1>。"
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "路由器",
+          "guides": {
+            "cli": {
+              "title": "路由器版 NextDNS",
+              "requirements": "僅適用於能執行可執行檔的路由器",
+              "step": "前往我們的開放原始碼儲存庫 <1>{{link}}</1> 查看安裝說明。"
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "某些路由器可能不支援上述 IPv6 表示法。在這種情況下，請使用 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
+              },
+              "steps": {
+                "1": "1. 開啟路由器設定。通常可以透過瀏覽器存取網址（例如 http://192.168.0.1/ 或 http://192.168.1.1/）。",
+                "2": "2. 在介面內找到 DNS 設定。",
+                "3": "3. 移除所有現有位址（若有），再新增 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
+                "4": "4. 點選「儲存」（或類似按鈕）。"
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. 前往系統服務 → DNS 解析。在基礎設定分頁中向下捲動，視需要點選「顯示自定義選項」以顯示「自定義選項」輸入框。",
+                "2": "2. 輸入下列文字："
+              }
+            },
+            "mikrotik": {
+              "run": "執行下列指令："
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "前往 Tailscale 文件 <2>{{link}}</2> 查看設定說明。"
+            }
+          }
+        }
+      }
+    },
+    "identify": {
+      "name": "識別你的裝置",
+      "description": "請按照以下說明在統計和記錄檔中識別你的裝置。",
+      "apps": {
+        "name": "App",
+        "instructions": "在 App 設定中啟用「Send Device Name」（Windows 上為「Report Device Name」）。"
+      },
+      "dot": {
+        "instructions": "在提供的網域前加上名稱（名稱只能包含 <1>a-z</1>、<3>A-Z</3>、<5>0-9</5> 和 <7>-</7>）。使用 <9>--</9> 代替空格。",
+        "example": "對於「<1>John Router</1>」，請使用 <3>John--Router-{{profile}}.dns.nextdns.io</3> 作為 DNS-over-TLS 端點。"
+      },
+      "doh": {
+        "instructions": "將名稱附加到提供的 URL（名稱應為 URL 編碼）。",
+        "example": "對於「<1>John's Firefox</1>」，請使用 <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> 作為 DNS-over-HTTPS 端點。"
+      }
     }
+  },
+  "security": {
+    "feeds": {
+      "name": "威脅情報來源",
+      "description": "結合多個最受信賴的威脅情報來源，封鎖已知用於散布惡意軟體、發動網路釣魚攻擊或託管命令與控制伺服器的網域。所有情報來源均即時更新。",
+      "enable": "使用威脅情報來源"
+    },
+    "ai": {
+      "name": "AI 驅動的威脅偵測",
+      "description": "封鎖由我們的 AI 技術偵測到的數百萬個威脅——這是專為 DNS 從零設計的專有 AI 引擎，結合數百個訊號、TB 級訓練資料與即時決策能力。涵蓋 IDN 同形異義字、誤植網域、組合式網域搶註、DGA 網域、品牌仿冒、認證資料竊取、惡意軟體散布，以及用於掩蓋惡意基礎設施的偽裝網站。",
+      "enable": "啟用 AI 驅動的威脅偵測"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google 安全瀏覽",
+      "description": "使用 Google 安全瀏覽封鎖惡意軟體和網路釣魚網域。這項技術每天檢查數十億個網址，以找出不安全的網站。與部分瀏覽器內建的版本不同，此功能不會將你的公開 IP 位址與威脅建立關聯，也不允許略過封鎖。",
+      "enable": "啟用 Google 安全瀏覽"
+    },
+    "cryptojacking": {
+      "name": "挖礦劫持",
+      "description": "防止未經授權使用你的裝置來開採加密貨幣。",
+      "enable": "封鎖挖礦劫持"
+    },
+    "dnsRebinding": {
+      "name": "DNS 重新綁定",
+      "description": "自動封鎖包含私有 IP 位址的 DNS 回應，防止攻擊者透過網際網路控制本機裝置。",
+      "enable": "封鎖 DNS 重新綁定"
+    },
+    "homograph": {
+      "name": "IDN 同形異義字",
+      "description": "封鎖利用外觀相似的字元冒充其他網域的國際化網域名稱（IDN），例如用西里爾字母「е」取代拉丁字母「e」。",
+      "enable": "封鎖 IDN 同形異義字"
+    },
+    "typosquatting": {
+      "name": "誤植網域",
+      "description": "封鎖惡意人士註冊的網域，這些網域以在瀏覽器中輸錯網址的使用者為目標，例如將 google.com 誤輸為 gooogle.com。",
+      "enable": "封鎖誤植網域"
+    },
+    "dga": {
+      "name": "網域生成演算法",
+      "description": "封鎖由網域生成演算法（DGA）產生的網域，這些網域被各類惡意軟體用作與其命令與控制伺服器的聯絡點。",
+      "enable": "封鎖 DGA 網域"
+    },
+    "nrd": {
+      "name": "新註冊網域",
+      "description": "封鎖註冊未滿 30 天的網域。攻擊者經常使用這類網域發動惡意活動。",
+      "enable": "封鎖新註冊網域"
+    },
+    "ddns": {
+      "name": "動態 DNS 主機名稱",
+      "description": "動態 DNS（DDNS）服務讓攻擊者無需任何驗證或身分查核，就能快速免費建立主機名稱。正常的 DDNS 主機名稱在日常使用中很少被存取，但惡意 DDNS 主機名稱卻經常用於網路釣魚活動。",
+      "disclaimer": "如果你正在使用 DDNS，請注意此設定不會封鎖 DDNS 服務本身的網站或更新 API。",
+      "enable": "封鎖動態 DNS 主機名稱"
+    },
+    "parked": {
+      "name": "停放網域",
+      "description": "停放網域通常是充斥廣告、沒有實質價值的單頁網站。停放網域的營利機制可能透過廣告網路和重新導向，讓訪客接觸到詐騙、網路釣魚頁面及惡意下載。",
+      "enable": "封鎖停放網域"
+    },
+    "tld": {
+      "name": "頂級網域（TLD）",
+      "description": "封鎖屬於指定 TLD 的所有網域和子網域。",
+      "add": "新增 TLD",
+      "sections": {
+        "spamhaus": "Spamhaus 統計的濫用最嚴重 TLD",
+        "all": "所有 TLD"
+      }
+    },
+    "csam": {
+      "name": "兒童性虐待素材（CSAM）",
+      "description": "透過加拿大兒童保護中心營運的 Project Arachnid，封鎖託管兒童性虐待素材的網域。封鎖網域時，不會向 Project Arachnid 傳送任何資訊。",
+      "enable": "封鎖兒童性虐待素材"
+    },
+    "newlyActiveDomains": {
+      "name": "新活躍網域",
+      "description": "封鎖首次被存取或過往活躍度偏低的網域。網域必須具備可驗證的正常使用紀錄才會受到信任，藉此防範零日攻擊和「潛伏」威脅，並有效遏止透過事先存取惡意網域來「預熱」、偽裝信譽的行為。",
+      "enable": "封鎖新活躍網域"
+    },
+    "freeHostingDomains": {
+      "name": "免費託管網域",
+      "description": "封鎖免費網站託管服務提供的預設子網域（例如 *.pages.dev、*.vercel.app、*.netlify.app）。攻擊者大量濫用這些「免費託管網域」（FHD）來架設網路釣魚網站並繞過信譽篩選器。此設定不會影響使用自訂網域名稱連接這些託管服務的正常網站。",
+      "enable": "封鎖免費託管網域"
+    },
+    "tunnelingEndpoints": {
+      "name": "通道端點",
+      "description": "封鎖透過通道將本機流量轉送至公開網際網路的服務（例如 ngrok、Cloudflare Tunnel）。攻擊者經常利用這些工具繞過防火牆，在隨機子網域上架設網路釣魚頁面，同時隱藏背後的基礎設施。",
+      "enable": "封鎖通道端點"
+    },
+    "dataDropServices": {
+      "name": "資料投遞服務",
+      "description": "封鎖對專門用於分享文字、檔案和 JSON 或設定資料，或收集傳入資料（包括 Webhook 請求、DNS 查詢和電子郵件）的服務的存取。這也包括對這些服務的正常使用。",
+      "enable": "封鎖資料投遞服務"
+    },
+    "residentialHosting": {
+      "name": "住宅網路託管",
+      "description": "封鎖解析至網際網路服務供應商（ISP）住宅 IP 位址範圍，而非商用資料中心的網域。正常的網路服務很少架設在家用網路連線上，但殭屍網路 C2 伺服器和網路釣魚代理伺服器卻經常在遭入侵的家用路由器上運作。",
+      "enable": "封鎖住宅網路託管"
+    },
+    "untrustedCertificates": {
+      "name": "不受信任憑證",
+      "description": "封鎖提供由不受信任或未知憑證授權單位簽署之 SSL/TLS 憑證（例如自我簽署憑證）的網域。正常網站幾乎都使用受信任的憑證，而廣泛流通的惡意軟體命令與控制（C2）伺服器中，有近 60% 仰賴自我簽署憑證或由不受信任單位核發的憑證來加密流量，同時不留下可追溯的紀錄。",
+      "enable": "封鎖不受信任憑證"
+    },
+    "fastFluxNetworks": {
+      "name": "Fast Flux 網路",
+      "description": "封鎖為了逃避偵測，而在遭入侵裝置組成的分散式網路（殭屍網路）中快速輪替 IP 位址的網域。此啟發式偵測會識別 DNS 存留時間（TTL）和 IP 位址多樣性方面的特定異常；這些異常是惡意基礎設施的典型特徵，與正常的內容傳遞網路（CDN）有所區別。",
+      "enable": "封鎖 Fast Flux 網路"
+    },
+    "dnsDataExfiltration": {
+      "name": "DNS 資料外洩",
+      "description": "封鎖利用 DNS 協定將資料偷偷傳出你的網路，或接收隱藏命令（C2）的網域。此啟發式偵測會即時分析 DNS 查詢模式，例如異常長的子網域、高熵值和不常見的查詢類型（如 TXT），以偵測並阻止能繞過傳統防火牆的小流量、慢速資料竊取和惡意軟體信標通訊（如 Cobalt Strike）。",
+      "enable": "封鎖 DNS 資料外洩"
+    },
+    "dnsPayloadDelivery": {
+      "name": "DNS 載荷傳遞",
+      "description": "防止 DNS 回應被用來將隱藏命令或載荷傳送至你的裝置。對於 TXT、NULL 等可攜帶任意資料，但日常網頁瀏覽不需要的記錄類型，其查詢會被全部封鎖。CNAME 鏈會被扁平化為最終位址，移除可能編碼隱藏資料的中間記錄。對於 A、AAAA 等標準記錄類型，過大的回答區段會被隨機截短，以破壞分散編碼於多筆記錄中的資料，同時保留正常的 DNS 功能。",
+      "enable": "封鎖 DNS 載荷傳遞"
+    },
+    "decentralizedWebGateways": {
+      "name": "去中心化 Web 閘道",
+      "description": "封鎖將去中心化網路（例如 IPFS）與一般瀏覽器連接起來的公用閘道。攻擊者大量濫用這些服務來託管「不可變」的網路釣魚頁面和惡意軟體，繞過傳統的下架措施和信譽篩選器，讓威脅持續存在。",
+      "enable": "封鎖去中心化 Web 閘道"
+    },
+    "highRiskTlds": {
+      "name": "高風險 TLD",
+      "description": "自動封鎖統計上以惡意活動為主的頂級網域（TLD），例如 .zip、.mov、.top。此清單依據全球濫用信譽資料即時更新，無需手動設定，就能保護你免受由大量廉價、用後即棄的網域組成的網路釣魚與垃圾郵件網路侵害。",
+      "enable": "封鎖高風險 TLD"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "封鎖清單",
+      "description": "使用最熱門的封鎖清單，封鎖廣告和追蹤器。所有清單均即時更新。",
+      "add": "新增封鎖清單",
+      "entries_other": "{{count, number}} 個項目",
+      "updated": "<1></1>已更新",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS 廣告與追蹤器封鎖清單",
+          "description": "涵蓋所有國家廣告和追蹤器的完整封鎖清單，建議從這份清單開始使用。"
+        }
+      },
+      "sortBy": {
+        "popularity": "使用率",
+        "name": "名稱",
+        "entries": "項目",
+        "updated": "最新"
+      }
+    },
+    "native": {
+      "name": "深度追蹤保護",
+      "description": "封鎖通常在作業系統層級運作、廣泛追蹤裝置活動的追蹤器。追蹤內容可能包括你造訪的所有網站、輸入的所有內容，以及隨時所在的位置。",
+      "add": "新增",
+      "systems": {
+        "xiaomi": {
+          "name": "小米",
+          "devices": "手機和平板電腦、智慧電視、路由器"
+        },
+        "huawei": {
+          "name": "華為",
+          "devices": "手機和平板電腦"
+        },
+        "samsung": {
+          "name": "三星",
+          "devices": "手機、平板電腦、智慧電視"
+        },
+        "alexa": {
+          "name": "Alexa",
+          "devices": "支援 Alexa 的裝置"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "所有版本"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS、macOS、tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "所有 Roku 裝置"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "喇叭"
+        }
+      }
+    },
+    "disguised": {
+      "name": "封鎖偽裝的第三方追蹤器",
+      "description": "自動偵測並封鎖偽裝成第一方的第三方追蹤器，防止其規避 ITP 等瀏覽器隱私保護功能。",
+      "enable": "封鎖偽裝的第三方追蹤器"
+    },
+    "affiliate": {
+      "name": "允許聯盟行銷與追蹤連結",
+      "description": "允許優惠網站、電子郵件或搜尋結果中常見的聯盟行銷與追蹤網域。這些網域通常只會在手動點選連結後被存取。",
+      "relay": "你的 IP 位址將自動對這些網站隱藏，以保護你的隱私。",
+      "enable": "允許聯盟行銷與追蹤連結"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "網站、應用程式和遊戲",
+      "description": "限制存取特定網站、應用程式和遊戲。",
+      "add": "新增網站、應用程式或遊戲",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "暴雪娛樂",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "要塞英雄",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "英雄聯盟",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "X",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "類別",
+      "description": "限制存取特定類別的網站和應用程式。",
+      "add": "新增類別",
+      "categories": {
+        "dating": {
+          "name": "約會",
+          "description": "封鎖所有約會網站和應用程式。"
+        },
+        "gambling": {
+          "name": "賭博",
+          "description": "封鎖賭博內容。"
+        },
+        "gaming": {
+          "name": "線上遊戲",
+          "description": "封鎖線上遊戲網站、線上遊戲應用程式和線上遊戲網路（Xbox、PlayStation Network 等）。"
+        },
+        "piracy": {
+          "name": "盜版",
+          "description": "封鎖 P2P 網站、通訊協定、侵害著作權的串流網站，以及主要用於非法散布受著作權保護內容的一般影片託管網站。"
+        },
+        "porn": {
+          "name": "色情",
+          "description": "封鎖成人和色情內容，包括應召網站、pornhub.com 和類似網域。"
+        },
+        "social-networks": {
+          "name": "社群網路",
+          "description": "封鎖所有社群網站和應用程式（Facebook、Instagram、TikTok、Reddit 等）。不封鎖即時通訊應用程式。"
+        },
+        "video-streaming": {
+          "name": "影音串流",
+          "description": "封鎖影音串流服務（YouTube、Netflix、Disney+、非法串流網站、色情影片網站等），以及以影片為主的社群網路（TikTok 等）。這也有助於減少網路頻寬用量。"
+        }
+      }
+    },
+    "recreation": {
+      "name": "娛樂時間",
+      "start": "開始時間",
+      "end": "結束時間",
+      "description": "為一週中的每一天設定一個時段，在該時段內，上述部分網站、應用程式、遊戲或類別將不會被封鎖，例如在星期一和星期二的下午 6 點至晚上 8 點之間允許使用 Facebook。",
+      "set": "設定娛樂時間",
+      "howto": "使用上方各區塊中的 <1></1> 按鈕來啟用娛樂時間。"
+    },
+    "safesearch": {
+      "name": "安全搜尋",
+      "description": "過濾所有主要搜尋引擎中的露骨搜尋結果，包括圖片和影片。同時封鎖不支援此功能的搜尋引擎。",
+      "enable": "強制安全搜尋"
+    },
+    "youtubeRestricted": {
+      "name": "YouTube 嚴格篩選模式",
+      "description": "過濾 YouTube 上不適合兒童觀看的影片，並封鎖嵌入其他網站的同類影片。同時隱藏所有留言。",
+      "enable": "強制 YouTube 嚴格篩選模式"
+    },
+    "bypass": {
+      "name": "封鎖繞過方法",
+      "description": "防止或阻礙使用能繞過網路上 NextDNS 過濾功能的方法，包括 VPN、代理伺服器、Tor 相關軟體和加密 DNS 供應商。",
+      "enable": "封鎖繞過方法"
+    }
+  },
+  "xlist": {
+    "placeholder": "新增網域……",
+    "errors": {
+      "required": "請輸入網域。",
+      "ip": "請輸入網域，而不是 IP 位址。",
+      "invalid": "請輸入有效的網域。",
+      "tld": "你似乎想封鎖整個 TLD，請使用「安全」頁面中的「頂級網域（TLD）」功能。",
+      "exists": "此網域已新增。"
+    },
+    "empty": "尚無網域。",
+    "denylist": {
+      "info": "封鎖網域會自動封鎖其所有子網域。"
+    },
+    "allowlist": {
+      "info": "允許網域會自動允許其所有子網域。允許規則優先於其他所有設定，包括安全功能。"
+    }
+  },
+  "analytics": {
+    "counters": {
+      "all_other": "<0>{{count, number}}</0><1>查詢</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>被封鎖的查詢</1>",
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> 的</0><1>查詢被封鎖</1></1>"
+    },
+    "queries": {
+      "name": "查詢",
+      "description": "查詢量隨時間的變化。",
+      "queries": {
+        "all_other": "<0>{{count, number}}</0><1> 次查詢</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> 次被封鎖的查詢</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "已解析網域",
+        "description": "未遭任何設定封鎖，或因手動允許而成功解析的網域。"
+      },
+      "blocked": {
+        "name": "已封鎖網域",
+        "description": "被安全、隱私或家長監護設定封鎖，或已手動封鎖的網域。"
+      },
+      "root": {
+        "name": "根網域",
+        "description": "彙整對根網域及其所有子網域發出的查詢。"
+      },
+      "empty": "尚無網域。"
+    },
+    "reasons": {
+      "name": "封鎖原因",
+      "description": "封鎖最多查詢的安全、隱私或家長監護設定。",
+      "empty": "尚未封鎖任何網域。"
+    },
+    "devices": {
+      "name": "裝置",
+      "description": "進行查詢的裝置。",
+      "empty": "尚無裝置。",
+      "unidentified": {
+        "name": "無法識別的裝置"
+      }
+    },
+    "ips": {
+      "name": "用戶端 IP 位址",
+      "description": "發出查詢的 IP 位址。",
+      "empty": "尚無 IP 位址。"
+    },
+    "gafam": {
+      "name": "GAFAM 占比",
+      "description": "「GAFAM」（Google、Amazon、Facebook（現為 Meta）、Apple 和 Microsoft）是五大主導網路產業的公司，擁有許多以其他名稱營運的熱門服務，例如 Meta 旗下的 WhatsApp 和 Instagram。",
+      "queries_other": "{{count, number}} 次查詢",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Meta"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "其他"
+        }
+      }
+    },
+    "encrypted": {
+      "name": "加密 DNS",
+      "description": "使用加密傳輸（DNS-over-HTTPS、DNS-over-TLS 或官方 NextDNS App）進行查詢的百分比。",
+      "empty": "尚無查詢。"
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "使用 DNSSEC 驗證的查詢百分比。",
+      "empty": "尚無查詢。"
+    },
+    "destination": {
+      "name": "網際網路流量目的地",
+      "description": "根據你的 DNS 查詢估算的目的地國家。",
+      "queries_other": "{{count, number}} 次查詢",
+      "topDomains": "查詢最多的網域"
+    }
+  },
+  "logs": {
+    "blockedOnly": "僅顯示被封鎖的查詢",
+    "raw": "原始 DNS 記錄檔",
+    "empty": "尚無記錄檔。",
+    "log": {
+      "actionBlock": "封鎖",
+      "actionAllow": "允許",
+      "dnssec": "已通過 DNSSEC 驗證。",
+      "clients": {
+        "nextdns-ios": "iOS 版 NextDNS",
+        "nextdns-android": "Android 版 NextDNS",
+        "nextdns-macos": "macOS 版 NextDNS",
+        "nextdns-windows": "Windows 版 NextDNS",
+        "nextdns-cli": "NextDNS CLI 用戶端",
+        "nextdns-chromeos": "ChromeOS 版 NextDNS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "MikroTik",
+        "apple-profile": "Apple 描述檔",
+        "yogadns": "YogaDNS",
+        "tailscale": "Tailscale"
+      },
+      "blockedBy": "被 <1>{{lists, list}}</1> 封鎖。",
+      "allowedBy": "被 <1>{{lists, list}}</1> 允許。",
+      "manual": {
+        "deny": "已手動封鎖。",
+        "allow": "已手動允許。"
+      },
+      "insights": {
+        "show": "顯示追蹤器分析",
+        "hide": "隱藏追蹤器分析",
+        "categories": {
+          "advertising": {
+            "description": "提供廣告或廣告相關服務，例如資料收集、行為分析或再行銷。"
+          },
+          "comments": {
+            "description": "為文章和產品評論提供留言區。"
+          },
+          "customer_interaction": {
+            "description": "包括聊天、電子郵件訊息、客戶支援及其他互動工具。"
+          },
+          "essential": {
+            "description": "包括標籤管理工具、隱私權聲明，以及對網站功能至關重要的技術。"
+          },
+          "adult_advertsing": {
+            "description": "提供通常出現在成人內容網站上的廣告。"
+          },
+          "site_analytics": {
+            "description": "收集並分析與網站使用情況和效能相關的資料。"
+          },
+          "social_media": {
+            "description": "整合與社群媒體網站相關的功能。"
+          },
+          "audio_video_player": {
+            "description": "讓網站發布、傳送和最佳化影音內容。"
+          },
+          "cdn": {
+            "description": "內容傳遞網路，為不同網站功能提供資源，通常同時服務許多不同客戶。"
+          },
+          "misc": {
+            "description": "此追蹤器不屬於其他任何類別，或尚未加上標籤。"
+          },
+          "pornvertising": {
+            "description": "提供通常出現在成人內容網站上的廣告。"
+          },
+          "hosting": {
+            "description": "這是內容供應商或網站擁有者所使用的服務。"
+          },
+          "extensions": {
+            "description": "使用者裝置上的軟體，可以攔截和分析瀏覽器流量（中間人）。"
+          }
+        },
+        "prevalence": {
+          "intensity": {
+            "dangerously": "普及程度已構成風險",
+            "extremely": "極為普遍",
+            "very": "非常普遍",
+            "commonly": "普遍存在",
+            "relatively": "相對普遍"
+          },
+          "summary": "{{prevalence}}<2>（追蹤 {{percent, percentage}} 的網路流量）</2>"
+        },
+        "ownedBy": "<0>擁有者：</0><1>{{company}}</1>",
+        "source": "追蹤器分析資料來自"
+      }
+    },
+    "settings": "記錄檔選項",
+    "streaming": "即時記錄檔更新",
+    "toggleTimeFormat": "切換時間戳記格式"
+  },
+  "deviceSelector": {
+    "all": "所有裝置",
+    "howto": "在「設定指南」頁面瞭解如何識別你的裝置。"
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "過去 30 分鐘",
+      "6h": "過去 6 小時",
+      "24h": "過去 24 小時",
+      "7d": "過去 7 天",
+      "30d": "過去 30 天",
+      "3M": "過去 3 個月"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "名稱",
+      "description": "為此設定檔選擇一個名稱。"
+    },
+    "logs": {
+      "name": "記錄檔",
+      "description": "微調你的記錄檔設定。",
+      "enable": "啟用記錄檔",
+      "privacy": {
+        "name": "隱私設定",
+        "ip": "記錄用戶端 IP 位址",
+        "domains": "記錄網域"
+      },
+      "retention": {
+        "name": "保留期間",
+        "options": {
+          "1h": "1 小時",
+          "6h": "6 小時",
+          "1d": "1 天",
+          "1w": "1 週",
+          "1m": "1 個月",
+          "3m": "3 個月",
+          "6m": "6 個月",
+          "1y": "1 年",
+          "2y": "2 年"
+        }
+      },
+      "location": {
+        "name": "資料儲存位置",
+        "locations": {
+          "us": {
+            "name": "美國",
+            "description": "記錄檔將儲存在美國境內。這是預設儲存位置。"
+          },
+          "eu": {
+            "name": "歐盟",
+            "description": "記錄檔將儲存在歐盟成員國內。"
+          },
+          "ch": {
+            "name": "瑞士",
+            "description": "記錄檔將儲存在瑞士蘇黎世，該司法管轄區以嚴格的隱私法律聞名。"
+          }
+        },
+        "confirm": {
+          "title": "更改儲存位置",
+          "text": "更改記錄檔的儲存位置將刪除此設定檔過去的所有記錄檔與統計資料。"
+        }
+      },
+      "download": {
+        "button": "下載記錄檔"
+      },
+      "clear": {
+        "button": "清除記錄檔",
+        "confirm": {
+          "text": "你確定要清除此設定檔的所有記錄檔嗎？此操作無法復原。",
+          "submit": "清除"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "封鎖頁面",
+      "description": "網域遭封鎖時顯示封鎖頁面。這可能稍微增加頁面載入時間，某些情況下也可能出現 HTTPS 警告。停用後，遭封鎖的查詢會以未指定位址（0.0.0.0 或 ::）回應。",
+      "enable": "啟用封鎖頁面",
+      "ca": {
+        "name": "NextDNS 根憑證",
+        "description": "安裝並信任 <1>{{link}}</1> 提供的根憑證，即可避免載入封鎖頁面時出現 HTTPS 警告。請參閱<3>這裡</3>的操作說明。"
+      }
+    },
+    "performance": {
+      "name": "效能",
+      "description": "加快瀏覽速度。",
+      "ecs": {
+        "name": "匿名 EDNS 用戶端子網路",
+        "description": "在不暴露 IP 位址的情況下，加快內容傳遞網路的資料傳送速度。",
+        "enable": "啟用匿名 EDNS 用戶端子網路"
+      },
+      "cache": {
+        "name": "加速快取",
+        "description": "透過強制設定 TTL（存留時間）下限，盡量減少 DNS 查詢次數。",
+        "enable": "啟用加速快取"
+      },
+      "flatten": {
+        "name": "CNAME 扁平化",
+        "description": "防止追蹤 CNAME 的解析器發出不必要的查詢，並避免中間網域干擾記錄檔。",
+        "enable": "啟用 CNAME 扁平化"
+      }
+    },
+    "ageVerification": {
+      "name": "略過年齡驗證",
+      "description": "自動略過某些網站（例如成人內容網站）在允許存取前，用來確認訪客年齡的年齡驗證檢查。",
+      "acknowledgment": "啟用此功能即表示你確認已達到存取該內容的法定年齡。"
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 是指一個去中心化且抗審查的線上生態系統，由區塊鏈網域註冊服務（例如 Ethereum Name Service）和分散式內容儲存與傳遞網路（例如 IPFS）等創新技術組成。啟用後，NextDNS 將作為這個新網路的無過濾閘道，讓你無需安裝任何東西即可親身體驗。",
+      "tips": "由於目前大多數瀏覽器只支援傳統頂級網域，直接存取 Web3 網域時，請在結尾加上斜線（「<1>/</1>」），例如輸入「<3>vitalik.eth/</3>」而非「<5>vitalik.eth</5>」。",
+      "enable": "啟用 Web3"
+    },
+    "rewrites": {
+      "name": "重寫",
+      "description": "設定或覆寫任何網域的 DNS 回應。重寫也適用於子網域，並支援使用區域網路 IP 位址作為回應。",
+      "new": "新增重寫規則",
+      "form": {
+        "domain": {
+          "label": "網域",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
+            "required": "請輸入網域。",
+            "ip": "請輸入網域，而不是 IP 位址。",
+            "invalid": "請輸入有效的網域。",
+            "taken": "你已有針對此網域的重寫規則。"
+          }
+        },
+        "answer": {
+          "label": "回應",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "請輸入回應。",
+            "invalid": "回應應該是有效的 IP 位址或網域。"
+          }
+        }
+      }
+    },
+    "access": {
+      "name": "存取權限",
+      "description": "授予他人編輯或僅檢視此設定檔的權限。",
+      "roles": {
+        "editor": "編輯者",
+        "viewer": "檢視者"
+      },
+      "pending": "已傳送邀請",
+      "form": {
+        "email": {
+          "label": "電子郵件",
+          "errors": {
+            "required": "請輸入電子郵件地址。",
+            "invalid": "請輸入有效的電子郵件地址。",
+            "duplicate": "已傳送邀請至此電子郵件地址。"
+          }
+        },
+        "role": {
+          "label": "角色"
+        }
+      }
+    },
+    "duplicate": {
+      "button": "複製 <1>{{name}}</1>",
+      "description": "將此設定檔的所有設定複製到新設定檔中。",
+      "form": {
+        "name": {
+          "label": "名稱",
+          "placeholder": "家、孩子、辦公室……",
+          "errors": {
+            "required": "請輸入一個名稱。",
+            "taken": "你已有使用此名稱的設定檔。"
+          }
+        },
+        "button": "複製"
+      }
+    },
+    "delete": {
+      "button": "刪除 <1>{{name}}</1>",
+      "warning": "這將永久刪除此設定檔及其所有相關記錄檔。",
+      "confirm": {
+        "text": "你確定要刪除 <1>{{name}}</1> 嗎？此操作無法復原。"
+      }
+    },
+    "leave": {
+      "button": "離開 <1>{{name}}</1>",
+      "warning": "你將無法存取這個設定檔。",
+      "confirm": {
+        "text": "確定要離開 <1>{{name}}</1> 嗎？此操作無法復原。"
+      }
+    }
+  }
 }

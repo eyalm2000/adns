@@ -39,6 +39,7 @@ sealed interface SetupGuideBlock {
 
 object GuideLinks {
     const val WindowsDownload = "https://nextdns.io/download/windows/stable"
+    const val MacDownload = "https://nextdns.io/download/macos/stable"
     const val IosAppStore = "https://apps.apple.com/us/app/nextdns/id1463342498"
     const val MacAppStore = "https://apps.apple.com/us/app/nextdns/id1464122853?mt=12"
     const val YogaDns = "https://yogadns.com"
@@ -47,6 +48,9 @@ object GuideLinks {
     const val CliWiki = "https://github.com/nextdns/nextdns/wiki"
     const val Tailscale = "https://tailscale.com/kb/1218/nextdns"
     const val UnboundCnameIssue = "https://github.com/NLnetLabs/unbound/issues/132"
+
+    fun iosAppClip(profileId: String): String =
+        "https://app.nextdns.io/${Uri.encode(profileId)}"
 
     fun appleProfile(profileId: String): String =
         "https://apple.nextdns.io/?profile=${Uri.encode(profileId)}"
@@ -98,7 +102,7 @@ object SetupGuideCatalogFactory {
                             links = listOf(
                                 externalLink(
                                     context.getString(R.string.setup_open_ios_app_store),
-                                    GuideLinks.IosAppStore,
+                                    GuideLinks.iosAppClip(content.profileId),
                                 ),
                             ),
                             tags = setOf(SetupGuideTag.Recommended),
@@ -172,7 +176,7 @@ object SetupGuideCatalogFactory {
                             links = listOf(
                                 externalLink(
                                     context.getString(R.string.setup_open_mac_app_store),
-                                    GuideLinks.MacAppStore,
+                                    GuideLinks.MacDownload,
                                 ),
                             ),
                         ),
@@ -687,6 +691,9 @@ object SetupGuideCatalogFactory {
         }
         localeString(basePath + "warning")?.let { warning ->
             add(SetupGuideBlock.Warning(GuideRichText(warning, values)))
+        }
+        localeString(basePath + "qrText")?.let { qrText ->
+            add(SetupGuideBlock.Paragraph(GuideRichText(qrText, values)))
         }
     }
 

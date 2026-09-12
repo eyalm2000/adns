@@ -1,1348 +1,1310 @@
 {
-    "global": {
-        "beta": "beta",
-        "cancel": "Peru",
-        "add": "Lisää",
-        "save": "Tallenna",
-        "continue": "Jatka",
-        "enable": "Ota käyttöön",
-        "change": "Muuta",
-        "create": "Luo",
-        "subscribe": "Tilaa",
-        "invite": "Kutsu",
-        "remove": "Poista",
-        "leave": "Poistu",
-        "delete": "Poista",
-        "close": "Sulje",
-        "back": "Takaisin",
-        "disable": "Poista käytöstä",
-        "unnamedDevice": "Laite #{{id}}",
-        "firstConfiguration": "Ensimmäinen konfiguraationi",
-        "list": {
-            "separator": ", ",
-            "conjunction": " ja "
-        }
+  "global": {
+    "beta": "beta",
+    "cancel": "Peru",
+    "add": "Lisää",
+    "save": "Tallenna",
+    "continue": "Jatka",
+    "enable": "Ota käyttöön",
+    "change": "Muuta",
+    "create": "Luo",
+    "subscribe": "Tilaa",
+    "invite": "Kutsu",
+    "remove": "Poista",
+    "leave": "Poistu",
+    "delete": "Poista",
+    "close": "Sulje",
+    "back": "Takaisin",
+    "disable": "Poista käytöstä",
+    "unnamedDevice": "Laite #{{id}}",
+    "firstConfiguration": "Ensimmäinen konfiguraationi"
+  },
+  "theme": {
+    "label": "Teema",
+    "system": "Järjestelmä",
+    "light": "Vaalea",
+    "dark": "Tumma"
+  },
+  "pages": {
+    "signup": "Rekisteröidy",
+    "login": "Kirjaudu sisään",
+    "passwordReset": "Palauta salasanasi",
+    "account": "Tili",
+    "setup": "Käyttöönotto",
+    "security": "Turvallisuus",
+    "privacy": "Tietosuoja",
+    "parentalcontrol": "Vanhempien valvonta",
+    "denylist": "Estolista",
+    "allowlist": "Valkoinen lista",
+    "analytics": "Analytiikka",
+    "logs": "Lokit",
+    "settings": "Asetukset",
+    "help": "Tuki"
+  },
+  "banners": {
+    "temporary": "Tämä väliaikainen tili vanhenee <1><0>{{in}}</0></1> kuluttua ja siihen pääsee käsiksi vain tältä selaimelta. Rekisteröidy nyt ilmaiseksi tallentaaksesi asetuksesi.",
+    "nearQuota": "Olet tehnyt yli {{queriesNearQuota, number}} kyselyä tässä kuussa, joka lähestyy {{queriesQuota, number}} kyselyn ilmaista kuukausikiintiötä. <5>Tilaa</5> jatkaaksesi NextDNS:n käyttöä.",
+    "overQuota": "Olet tehnyt yli {{queriesQuota, number}} kyselyä tässä kuussa ja kaikki ominaisuudet on poistettu käytöstä. <3>Tee tilaus</3> jatkaaksesi NextDNS:n käyttöä."
+  },
+  "account": {
+    "email": "Sähköpostiosoite",
+    "newEmail": "Uusi sähköpostiosoite",
+    "password": "Salasana",
+    "newPassword": "Uusi salasana",
+    "currentPassword": "Nykyinen salasana",
+    "forgotPassword": "Unohtuiko salasana?",
+    "savePassword": "Tallenna salasana",
+    "passwordResetInfo": "Syötä tiliisi liitetty sähköpostiosoite ja lähetämme sinulle linkin salasanasi vaihtamiseksi.",
+    "sendEmail": "Lähetä sähköposti",
+    "passwordResetLinkSentMessage": "Linkki salasanasi vaihtamiseksi lähetettiin osoitteeseen <1>{{email}}</1>.",
+    "code": "Kaksivaiheisen todennuksen koodi",
+    "login": "Kirjaudu sisään",
+    "noAccountYet": "Ei vielä tiliä? <1> Rekisteröidy </1>",
+    "signup": "Rekisteröidy",
+    "alreadyHaveAnAccount": "Onko sinulla jo tili? <1>Kirjaudu sisään</1>",
+    "convertingNotice": "Muunnat väliaikaisen tilin todelliseksi tiliksi, kaikki asetuksesi tallennetaan.",
+    "convertingDeviceOnlyNotice": "Olet muuttamassa vain laitteelle tarkoitettua tiliä täydeksi tiliksi, kaikki asetuksesi tallennetaan.",
+    "logout": "Kirjaudu ulos",
+    "errors": {
+      "email": {
+        "required": "Anna sähköpostiosoite.",
+        "invalid": "Anna kelvollinen sähköpostiosoite.",
+        "taken": "Tämä sähköpostiosoite on jo käytössä."
+      },
+      "password": {
+        "required": "Syötä salasana.",
+        "invalidCombination": "Virheellinen sähköposti- ja salasanayhdistelmä."
+      },
+      "currentPassword": {
+        "required": "Anna nykyinen salasanasi.",
+        "incorrect": "Syöttämäsi salasana on väärin."
+      },
+      "code": {
+        "required": "Anna kaksivaiheisen todennuksen koodi.",
+        "invalid": "Anna 6-numeroinen koodi.",
+        "incorrect": "Virheellinen kaksivaiheisen todennuksen koodi."
+      },
+      "resetPasswordToken": {
+        "invalid": "Virheellinen tai vanhentunut tunnus."
+      }
     },
-    "theme": {
-        "label": "Teema",
-        "system": "Järjestelmä",
-        "light": "Vaalea",
-        "dark": "Tumma"
-    },
-    "pages": {
-        "signup": "Rekisteröidy",
-        "login": "Kirjaudu sisään",
-        "passwordReset": "Palauta salasanasi",
-        "account": "Tili",
-        "setup": "Käyttöönotto",
-        "security": "Turvallisuus",
-        "privacy": "Tietosuoja",
-        "parentalcontrol": "Vanhempien valvonta",
-        "denylist": "Estolista",
-        "allowlist": "Valkoinen lista",
-        "analytics": "Analytiikka",
-        "logs": "Lokit",
-        "settings": "Asetukset",
-        "help": "Tuki"
-    },
-    "banners": {
-        "temporary": "Tämä väliaikainen tili vanhenee <1><0>{{in}}</0></1> kuluttua ja siihen pääsee käsiksi vain tältä selaimelta. Rekisteröidy nyt ilmaiseksi tallentaaksesi asetuksesi.",
-        "nearQuota": "Olet tehnyt yli {{queriesNearQuota, number}} kyselyä tässä kuussa, joka lähestyy {{queriesQuota, number}} kyselyn ilmaista kuukausikiintiötä. <5>Tilaa</5> jatkaaksesi NextDNS:n käyttöä.",
-        "overQuota": "Olet tehnyt yli {{queriesQuota, number}} kyselyä tässä kuussa ja kaikki ominaisuudet on poistettu käytöstä. <3>Tee tilaus</3> jatkaaksesi NextDNS:n käyttöä."
-    },
-    "account": {
-        "email": "Sähköpostiosoite",
-        "newEmail": "Uusi sähköpostiosoite",
-        "password": "Salasana",
-        "newPassword": "Uusi salasana",
-        "currentPassword": "Nykyinen salasana",
-        "forgotPassword": "Unohtuiko salasana?",
-        "savePassword": "Tallenna salasana",
-        "passwordResetInfo": "Syötä tiliisi liitetty sähköpostiosoite ja lähetämme sinulle linkin salasanasi vaihtamiseksi.",
-        "sendEmail": "Lähetä sähköposti",
-        "passwordResetLinkSentMessage": "Linkki salasanasi vaihtamiseksi lähetettiin osoitteeseen <1>{{email}}</1>.",
-        "code": "Kaksivaiheisen todennuksen koodi",
-        "login": "Kirjaudu sisään",
-        "noAccountYet": "Ei vielä tiliä? <1> Rekisteröidy </1>",
-        "signup": "Rekisteröidy",
-        "alreadyHaveAnAccount": "Onko sinulla jo tili? <1>Kirjaudu sisään</1>",
-        "convertingNotice": "Muunnat väliaikaisen tilin todelliseksi tiliksi, kaikki asetuksesi tallennetaan.",
-        "convertingDeviceOnlyNotice": "Olet muuttamassa vain laitteelle tarkoitettua tiliä täydeksi tiliksi, kaikki asetuksesi tallennetaan.",
-        "logout": "Kirjaudu ulos",
-        "errors": {
-            "email": {
-                "required": "Anna sähköpostiosoite.",
-                "invalid": "Anna kelvollinen sähköpostiosoite.",
-                "taken": "Tämä sähköpostiosoite on jo käytössä."
-            },
-            "password": {
-                "required": "Syötä salasana.",
-                "invalidCombination": "Virheellinen sähköposti- ja salasanayhdistelmä."
-            },
-            "currentPassword": {
-                "required": "Anna nykyinen salasanasi.",
-                "incorrect": "Syöttämäsi salasana on väärin."
-            },
-            "code": {
-                "required": "Anna kaksivaiheisen todennuksen koodi.",
-                "invalid": "Anna 6-numeroinen koodi.",
-                "incorrect": "Virheellinen kaksivaiheisen todennuksen koodi."
-            },
-            "resetPasswordToken": {
-                "invalid": "Virheellinen tai vanhentunut tunnus."
-            }
-        },
-        "affiliation": {
-            "name": "Kumppanuusmarkkinointi",
-            "description": "Auta meitä levittämään sanaa jakamalla <1>{{link}}</1> ja vastaanota <3>{{share, percentage}}</3> ensimmäisistä <5>{{months, number}} kuukausista</5>.",
-            "balance": {
-                "name": "Saldo"
-            },
-            "availableBalance": {
-                "name": "Käytettävissä oleva saldo",
-                "description": "Saldo muuttuu maksettavaksi kuukauden kuluttua mahdollisten palautusten kattamiseksi."
-            },
-            "payout": {
-                "button": "Maksa ulos",
-                "minimum": "Maksuja varten vaditaan vähintään {{amount, price}} käytettävissä oleva saldo.",
-                "form": {
-                    "paypalEmail": "PayPal sähköposti",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "Anna PayPal-sähköpostiosoite.",
-                            "invalid": "Anna voimassa oleva PayPal-sähköpostiosoite."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "Ilmainen käyttö",
-            "description": "NextDNS: llä voit tehdä ilmaiseksi jopa {{queries, number}} kyselyä kuukaudessa, jonka jälkeen kaikki ominaisuudet poistetaan käytöstä väliaikaisesti ensi kuuhun asti.",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} kyselyä</1>",
-            "overQuota": {
-                "message": "Olet tehnyt yli {{queries, number}} kyselyä tässä kuussa.",
-                "info": "NextDNS jatkaa DNS-kyselyihin vastaamista, mutta kaikki ominaisuudet ovat väliaikaisesti poissa käytöstä ensi kuuhun asti."
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "Saat rajoittamattomia kyselyitä alkaen {{amount, price}}/kk."
-            }
-        },
-        "subscription": {
-            "name": "Tilaus",
-            "plans": {
-                "pro": "Pro",
-                "business": "Liiketoiminta",
-                "education": "Koulutuslaitoksille"
-            },
-            "intervals": {
-                "month": "kuukausittainen tilaus",
-                "year": "vuosittainen tilaus"
-            },
-            "per": {
-                "month": "kuukaudessa",
-                "year": "vuodessa"
-            },
-            "units": {
-                "business": "{{count, number}} työntekijä",
-                "business_plural": "{{count, number}} työntekijälle",
-                "education": "{{count, number}} opiskelija",
-                "education_plural": "{{count, number}} opiskelijalle"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "Tilauksesi vanhenee {{date, date}}.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "Aloita tilaus uudelleen"
-            },
-            "changePlan": {
-                "button": "Vaihda tilausta"
-            },
-            "renewal": "Seuraava automaattinen maksusi tapahtuu {{date, date}}, summa {{amount, price}}.",
-            "changePaymentMethod": {
-                "button": "Vaihda maksutapaa"
-            },
-            "cancel": {
-                "button": "Peruuta tilaus",
-                "confirm": {
-                    "text": "Nykyinen tilauksesi on voimassa {{date, date}} asti.",
-                    "submit": "Peruuta tilaus"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "Valitse sopimus",
-                "addPaymentMethod": "Lisää maksutapa",
-                "included": "Kaikki sopimukset sisältävät <1>pääsyn kaikkiin ominaisuuksiin</1>, <3>rajoittamattomasti laitteita</3> ja <5>rajattomasti kyselyitä</5>.",
-                "savings": "Säästä {{percent, percentage}} verrattuna kuukausittaiseen maksuun",
-                "familyOnly": "* Pro-sopimukset ovat tarkoitettu vain henkilökohtaiseen (ja perheenjäsenten) käyttöön.",
-                "unitsQuestion": {
-                    "business": "Kuinka monta <1>työntekijää</1> yrityksesi työllistää?",
-                    "education": "Kuinka monta <1>opiskelijaa</1> koulullasi (tai piirilläsi) on?"
-                },
-                "asYouGrow": {
-                    "business": "* Muista päivittää sopimuksesi työntekijöiden määrän kasvaessa.",
-                    "education": "* Muista päivittää suunnitelmasi, kun opiskelijoiden määrä kasvaa."
-                },
-                "starting": {
-                    "business": "<0>Alkaen </0><1>{{price, price}}</1><2> kuukaudessa {{units, number}} työntekijälle</2>",
-                    "education": "<0>Alkaen </0><1>{{price, price}}</1><2> kuukaudessa {{units, number}} opiskelijalle</2>"
-                },
-                "card": {
-                    "number": "Kortin numero",
-                    "expiration": "Viimeinen käyttöpäivä",
-                    "code": "Turvakoodi",
-                    "stripe": "Käytämme Stripeä — johtavaa maksunvälitysjärjestelmää — korttimaksujen käsittelyyn turvallisella tavalla ilman, että pääsisimme koskaan käsiksi suoraan korttisi tietoihin."
-                },
-                "paypal": {
-                    "text": "Napsauta Jatka PayPaliin -painiketta tilataksesi PayPalilla."
-                },
-                "bitpay": {
-                    "text": "Napsauta Jatka BitPayyn -painiketta maksaaksesi kryptovaluutalla.",
-                    "toYearly": "Emme hyväksy kryptovaluutta-maksuja kuukausittaisiin maksuihin. <1>Jatkamalla sinut vaihdetaan automaattisesti vuosisuunnitelmaan.</1>",
-                    "remainder": "Nykyinen tilauksesi on jo maksettu {{date, date}} saakka. Sinulta veloitetaan nyt maksamaton osuus ja loput lisätään automaattisesti uuteen vanhentumispäivään."
-                },
-                "continueTo": "Jatka kohtaan <1></1>"
-            }
-        },
-        "business": {
-            "name": "Liiketoiminta",
-            "description": "Verotusta varten tarvitsemme yrityksesi nimen, osoitteen ja ALV-numeron (tai vastaavan). Tämä vaaditaan laissa ja se näkyy kaikissa laskuissa.",
-            "button": {
-                "add": "Lisää yritystiedot",
-                "update": "Päivitä"
-            },
-            "form": {
-                "name": {
-                    "label": "Nimi",
-                    "placeholder": "Esimerkki Oy",
-                    "errors": {
-                        "required": "Anna yrityksesi nimi."
-                    }
-                },
-                "address": {
-                    "label": "Osoite",
-                    "placeholder": "Mariankatu 2, Kauppatori&#10;Helsinki 00170&#10;Finland",
-                    "errors": {
-                        "required": "Anna yrityksesi osoite."
-                    }
-                },
-                "vatNumber": {
-                    "label": "ALV-numero"
-                }
-            }
-        },
-        "invoices": {
-            "name": "Laskut",
-            "description": "Laskuhistoria ja kaikki tilisi laskut.",
-            "pending": "{{amount, price}} (Avoin)",
-            "show-more": "Näytä lisää",
-            "show-less": "Näytä vähemmän",
-            "invoice": {
-                "title": "Lasku #{{code}}",
-                "to": "Vastaanottaja: <1>{{email}}</1>",
-                "vatNumber": "ALV-numero: {{number}}",
-                "columns": {
-                    "plan": "Sopimus",
-                    "period": "Aikajakso",
-                    "amount": "Määrä"
-                },
-                "vat": "ALV ({{rate, percentage}})",
-                "total": "Kaikki yhteensä",
-                "footer": {
-                    "reverseCharged": "Arvonlisävero ostaja verovelvollisena.",
-                    "currency": "Kaikki näytetyt hinnat ovat {{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "Sähköposti",
-            "description": "Vaihda tiliisi kirjautumiseen ja kriittisten sähköposti-ilmoitusten saamiseen käytettävää sähköpostiosoitetta.",
-            "button": "Vaihda sähköposti"
-        },
-        "changePassword": {
-            "name": "Salasana",
-            "description": "Vaihda salasana, jota käytetään tilillesi kirjautumiseen ja jota pyydetään arkaluontoisia toimintoja suoritettaessa.",
-            "button": "Vaihda salasana"
-        },
-        "2fa": {
-            "name": "Kaksivaiheinen todennus (2FA)",
-            "description": "Kaksivaiheinen todennus (2FA) on ylimääräinen tietoturvakerros, joka vaatii salasanan lisäksi aikaperusteisen 6-numeroisen koodin, kun kirjaudut tilillesi.",
-            "enabled": "Kaksivaiheinen todennus (2FA) on käytössä tililläsi.",
-            "enable": {
-                "button": "Ota 2FA käyttöön",
-                "modal": {
-                    "howto": "Käytä todennussovellusta, kuten <1>Google Authenticator</1> tai salasananhallintaohjelma, joka tukee kaksivaiheista todennusta. Voit joko skannata QR-koodin, napsauttaa sitä avataksesi <3>{{otpauth}}</3> linkin tai kopioida ja liittää salaisen avaimesi manuaalisesti."
-                }
-            },
-            "recovery": {
-                "button": "Palautuskoodit",
-                "modal": {
-                    "howto": "Käytä näitä palautuskoodeja tilisi käyttämiseen, jos menetät pääsyn laitteeseesi etkä voi vastaanottaa kaksivaiheisia todennuskoodeja. Kutakin koodia voidaan käyttää vain kerran.",
-                    "download": "Lataa",
-                    "regen": "Uudista"
-                }
-            },
-            "disable": {
-                "button": "Poista 2FA käytöstä"
-            }
-        },
-        "api": {
-            "description": "Create and manage your profiles programmatically. Read the documentation at <1>{{link}}</1>.",
-            "create": {
-                "button": "Generate API key"
-            }
-        },
-        "delete": {
-            "button": "Poista tili",
-            "warning": "Tämä poistaa tilisi ja kaikki konfiguraatiosi pysyvästi.",
-            "confirm": {
-                "text": "Haluatko varmasti poistaa tilisi? Tätä toimintoa ei voi kumota."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "Vanhentunut",
-                    "text": "Väliaikainen tilisi on vanhentunut. Rekisteröidy nyt tallentaaksesi asetukset ja jatkaaksesi NextDNS:n käyttöä, se on ilmaista."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "Uusi",
+    "affiliation": {
+      "name": "Kumppanuusmarkkinointi",
+      "description": "Auta meitä levittämään sanaa jakamalla <1>{{link}}</1> ja vastaanota <3>{{share, percentage}}</3> ensimmäisistä <5>{{months, number}} kuukausista</5>.",
+      "balance": {
+        "name": "Saldo"
+      },
+      "availableBalance": {
+        "name": "Käytettävissä oleva saldo",
+        "description": "Saldo muuttuu maksettavaksi kuukauden kuluttua mahdollisten palautusten kattamiseksi."
+      },
+      "payout": {
+        "button": "Maksa ulos",
+        "minimum": "Maksuja varten vaditaan vähintään {{amount, price}} käytettävissä oleva saldo.",
         "form": {
-            "title": "Uusi konfiguraatio",
-            "name": {
-                "label": "Nimi",
-                "placeholder": "Koti, Lapset, Toimisto, ...",
-                "errors": {
-                    "required": "Anna nimi.",
-                    "taken": "Sinulla on jo konfiguraatio tällä nimellä."
-                }
+          "paypalEmail": "PayPal sähköposti",
+          "errors": {
+            "paypalEmail": {
+              "required": "Anna PayPal-sähköpostiosoite.",
+              "invalid": "Anna voimassa oleva PayPal-sähköpostiosoite."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "Kaikki hyvin!",
-                "secondary": "Tämä laite käyttää NextDNS:ää tällä konfiguraatiolla."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "Tämä laite käyttää NextDNS:ää ilman konfiguraatiota.",
-                    "secondary": {
-                        "clients": "Varmista, että määritit alla näkyvän konfiguraatiotunnuksen sovelluksen asetuksissa.",
-                        "firefox": "Varmista, että olet määrittänyt alla näkyvän DNS-over-HTTPS-päätepisteen Firefoxissa.",
-                        "doh": "Varmista, että käytät alla näkyvää DNS-over-HTTPS -päätepistettä.",
-                        "dot": "Varmista, että käytät alla näkyvää DNS-over-TLS päätepistettä.",
-                        "ipv6": "Varmista, että käytät alla näkyviä IPv6-osoitteita.",
-                        "servers": "Varmista, että käytät alla olevassa linkitetyn IP:n osiossa näkyviä DNS-palvelimia (DNS-palvelimet vaihtavat konfiguraatioiden välillä).",
-                        "link": "Muista linkittää IP-osoitteesi alla olevassa linkitetty IP osiossa."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "Tämä laite käyttää NextDNS:ää toisen konfiguraation kanssa.",
-                    "secondary": {
-                        "sameAccount": "Tämä laite käyttää tällä hetkellä konfiguraatiota ”{{name}}”.",
-                        "otherAccount": "Varmista, että käytät yhtä tällä sivulla luetelluista päätepisteistä."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "Tämä laite ei käytä NextDNS:ää.",
-                "secondary": "Tämä laite käyttää tällä hetkellä ”{{resolver}}” DNS-palvelimena."
-            },
-            "error": {
-                "primary": "Virhe tarkistettaessa nykyistä tilaa.",
-                "secondary": "Ota yhteyttä, jos ongelma jatkuu sivun päivittämisen jälkeen."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
+    "usage": {
+      "name": "Ilmainen käyttö",
+      "description": "NextDNS: llä voit tehdä ilmaiseksi jopa {{queries, number}} kyselyä kuukaudessa, jonka jälkeen kaikki ominaisuudet poistetaan käytöstä väliaikaisesti ensi kuuhun asti.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} kyselyä</1>",
+      "overQuota": {
+        "message": "Olet tehnyt yli {{queries, number}} kyselyä tässä kuussa.",
+        "info": "NextDNS jatkaa DNS-kyselyihin vastaamista, mutta kaikki ominaisuudet ovat väliaikaisesti poissa käytöstä ensi kuuhun asti."
+      },
+      "subscribe": {
+        "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+        "upsell": "Saat rajoittamattomia kyselyitä alkaen {{amount, price}}/kk."
+      }
+    },
+    "subscription": {
+      "name": "Tilaus",
+      "plans": {
+        "pro": "Pro",
+        "business": "Liiketoiminta",
+        "education": "Koulutuslaitoksille"
+      },
+      "intervals": {
+        "month": "kuukausittainen tilaus",
+        "year": "vuosittainen tilaus"
+      },
+      "per": {
+        "month": "kuukaudessa",
+        "year": "vuodessa"
+      },
+      "units": {
+        "business_one": "{{count, number}} työntekijä",
+        "business_other": "{{count, number}} työntekijälle",
+        "education_one": "{{count, number}} opiskelija",
+        "education_other": "{{count, number}} opiskelijalle"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "Tilauksesi vanhenee {{date, date}}.",
+      "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
+      "manageOnApple": "Manage subscription on Apple",
+      "restart": {
+        "button": "Aloita tilaus uudelleen"
+      },
+      "changePlan": {
+        "button": "Vaihda tilausta"
+      },
+      "renewal": "Seuraava automaattinen maksusi tapahtuu {{date, date}}, summa {{amount, price}}.",
+      "changePaymentMethod": {
+        "button": "Vaihda maksutapaa"
+      },
+      "cancel": {
+        "button": "Peruuta tilaus",
+        "confirm": {
+          "text": "Nykyinen tilauksesi on voimassa {{date, date}} asti.",
+          "submit": "Peruuta tilaus"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "Valitse sopimus",
+        "addPaymentMethod": "Lisää maksutapa",
+        "included": "Kaikki sopimukset sisältävät <1>pääsyn kaikkiin ominaisuuksiin</1>, <3>rajoittamattomasti laitteita</3> ja <5>rajattomasti kyselyitä</5>.",
+        "savings": "Säästä {{percent, percentage}} verrattuna kuukausittaiseen maksuun",
+        "familyOnly": "* Pro-sopimukset ovat tarkoitettu vain henkilökohtaiseen (ja perheenjäsenten) käyttöön.",
+        "unitsQuestion": {
+          "business": "Kuinka monta <1>työntekijää</1> yrityksesi työllistää?",
+          "education": "Kuinka monta <1>opiskelijaa</1> koulullasi (tai piirilläsi) on?"
+        },
+        "asYouGrow": {
+          "business": "* Muista päivittää sopimuksesi työntekijöiden määrän kasvaessa.",
+          "education": "* Muista päivittää suunnitelmasi, kun opiskelijoiden määrä kasvaa."
+        },
+        "starting": {
+          "business": "<0>Alkaen </0><1>{{price, price}}</1><2> kuukaudessa {{units, number}} työntekijälle</2>",
+          "education": "<0>Alkaen </0><1>{{price, price}}</1><2> kuukaudessa {{units, number}} opiskelijalle</2>"
+        },
+        "card": {
+          "number": "Kortin numero",
+          "expiration": "Viimeinen käyttöpäivä",
+          "code": "Turvakoodi",
+          "stripe": "Käytämme Stripeä — johtavaa maksunvälitysjärjestelmää — korttimaksujen käsittelyyn turvallisella tavalla ilman, että pääsisimme koskaan käsiksi suoraan korttisi tietoihin."
+        },
+        "paypal": {
+          "text": "Napsauta Jatka PayPaliin -painiketta tilataksesi PayPalilla."
+        },
+        "bitpay": {
+          "text": "Napsauta Jatka BitPayyn -painiketta maksaaksesi kryptovaluutalla.",
+          "toYearly": "Emme hyväksy kryptovaluutta-maksuja kuukausittaisiin maksuihin. <1>Jatkamalla sinut vaihdetaan automaattisesti vuosisuunnitelmaan.</1>",
+          "remainder": "Nykyinen tilauksesi on jo maksettu {{date, date}} saakka. Sinulta veloitetaan nyt maksamaton osuus ja loput lisätään automaattisesti uuteen vanhentumispäivään."
+        },
+        "continueTo": "Jatka kohtaan <1></1>"
+      }
+    },
+    "business": {
+      "name": "Liiketoiminta",
+      "description": "Verotusta varten tarvitsemme yrityksesi nimen, osoitteen ja ALV-numeron (tai vastaavan). Tämä vaaditaan laissa ja se näkyy kaikissa laskuissa.",
+      "button": {
+        "add": "Lisää yritystiedot",
+        "update": "Päivitä"
+      },
+      "form": {
+        "name": {
+          "label": "Nimi",
+          "placeholder": "Esimerkki Oy",
+          "errors": {
+            "required": "Anna yrityksesi nimi."
+          }
+        },
+        "address": {
+          "label": "Osoite",
+          "placeholder": "Mariankatu 2, Kauppatori&#10;Helsinki 00170&#10;Finland",
+          "errors": {
+            "required": "Anna yrityksesi osoite."
+          }
+        },
+        "vatNumber": {
+          "label": "ALV-numero"
+        }
+      }
+    },
+    "invoices": {
+      "name": "Laskut",
+      "description": "Laskuhistoria ja kaikki tilisi laskut.",
+      "pending": "{{amount, price}} (Avoin)",
+      "show-more": "Näytä lisää",
+      "show-less": "Näytä vähemmän",
+      "invoice": {
+        "title": "Lasku #{{code}}",
+        "to": "Vastaanottaja: <1>{{email}}</1>",
+        "vatNumber": "ALV-numero: {{number}}",
+        "columns": {
+          "plan": "Sopimus",
+          "period": "Aikajakso",
+          "amount": "Määrä"
+        },
+        "vat": "ALV ({{rate, percentage}})",
+        "total": "Kaikki yhteensä",
+        "footer": {
+          "reverseCharged": "Arvonlisävero ostaja verovelvollisena.",
+          "currency": "Kaikki näytetyt hinnat ovat {{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "Sähköposti",
+      "description": "Vaihda tiliisi kirjautumiseen ja kriittisten sähköposti-ilmoitusten saamiseen käytettävää sähköpostiosoitetta.",
+      "button": "Vaihda sähköposti"
+    },
+    "changePassword": {
+      "name": "Salasana",
+      "description": "Vaihda salasana, jota käytetään tilillesi kirjautumiseen ja jota pyydetään arkaluontoisia toimintoja suoritettaessa.",
+      "button": "Vaihda salasana"
+    },
+    "2fa": {
+      "name": "Kaksivaiheinen todennus (2FA)",
+      "description": "Kaksivaiheinen todennus (2FA) on ylimääräinen tietoturvakerros, joka vaatii salasanan lisäksi aikaperusteisen 6-numeroisen koodin, kun kirjaudut tilillesi.",
+      "enabled": "Kaksivaiheinen todennus (2FA) on käytössä tililläsi.",
+      "enable": {
+        "button": "Ota 2FA käyttöön",
+        "modal": {
+          "howto": "Käytä todennussovellusta, kuten <1>Google Authenticator</1> tai salasananhallintaohjelma, joka tukee kaksivaiheista todennusta. Voit joko skannata QR-koodin, napsauttaa sitä avataksesi <3>{{otpauth}}</3> linkin tai kopioida ja liittää salaisen avaimesi manuaalisesti."
+        }
+      },
+      "recovery": {
+        "button": "Palautuskoodit",
+        "modal": {
+          "howto": "Käytä näitä palautuskoodeja tilisi käyttämiseen, jos menetät pääsyn laitteeseesi etkä voi vastaanottaa kaksivaiheisia todennuskoodeja. Kutakin koodia voidaan käyttää vain kerran.",
+          "download": "Lataa",
+          "regen": "Uudista"
+        }
+      },
+      "disable": {
+        "button": "Poista 2FA käytöstä"
+      }
+    },
+    "api": {
+      "description": "Create and manage your profiles programmatically. Read the documentation at <1>{{link}}</1>.",
+      "create": {
+        "button": "Generate API key"
+      }
+    },
+    "delete": {
+      "button": "Poista tili",
+      "warning": "Tämä poistaa tilisi ja kaikki konfiguraatiosi pysyvästi.",
+      "confirm": {
+        "text": "Haluatko varmasti poistaa tilisi? Tätä toimintoa ei voi kumota."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "Vanhentunut",
+          "text": "Väliaikainen tilisi on vanhentunut. Rekisteröidy nyt tallentaaksesi asetukset ja jatkaaksesi NextDNS:n käyttöä, se on ilmaista."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "Uusi",
+    "form": {
+      "title": "Uusi konfiguraatio",
+      "name": {
+        "label": "Nimi",
+        "placeholder": "Koti, Lapset, Toimisto, ...",
+        "errors": {
+          "required": "Anna nimi.",
+          "taken": "Sinulla on jo konfiguraatio tällä nimellä."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "Kaikki hyvin!",
+        "secondary": "Tämä laite käyttää NextDNS:ää tällä konfiguraatiolla."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "Tämä laite käyttää NextDNS:ää ilman konfiguraatiota.",
+          "secondary": {
+            "clients": "Varmista, että määritit alla näkyvän konfiguraatiotunnuksen sovelluksen asetuksissa.",
+            "firefox": "Varmista, että olet määrittänyt alla näkyvän DNS-over-HTTPS-päätepisteen Firefoxissa.",
+            "doh": "Varmista, että käytät alla näkyvää DNS-over-HTTPS -päätepistettä.",
+            "dot": "Varmista, että käytät alla näkyvää DNS-over-TLS päätepistettä.",
+            "ipv6": "Varmista, että käytät alla näkyviä IPv6-osoitteita.",
+            "servers": "Varmista, että käytät alla olevassa linkitetyn IP:n osiossa näkyviä DNS-palvelimia (DNS-palvelimet vaihtavat konfiguraatioiden välillä).",
+            "link": "Muista linkittää IP-osoitteesi alla olevassa linkitetty IP osiossa."
+          }
+        },
+        "withConfiguration": {
+          "primary": "Tämä laite käyttää NextDNS:ää toisen konfiguraation kanssa.",
+          "secondary": {
+            "sameAccount": "Tämä laite käyttää tällä hetkellä konfiguraatiota ”{{name}}”.",
+            "otherAccount": "Varmista, että käytät yhtä tällä sivulla luetelluista päätepisteistä."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "Tämä laite ei käytä NextDNS:ää.",
+        "secondary": "Tämä laite käyttää tällä hetkellä ”{{resolver}}” DNS-palvelimena."
+      },
+      "error": {
+        "primary": "Virhe tarkistettaessa nykyistä tilaa.",
+        "secondary": "Ota yhteyttä, jos ongelma jatkuu sivun päivittämisen jälkeen."
+      },
+      "apr": {
+        "ok": {
+          "primary": "This device is using NextDNS with iCloud Private Relay",
+          "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
+        },
+        "blockpage": {
+          "primary": "This device is using NextDNS with iCloud Private Relay.",
+          "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+        }
+      }
+    },
+    "endpoints": {
+      "name": "Päätepisteet",
+      "description": "Määritä NextDNS tällä konfiguraatiolla käyttämällä yhtä alla olevista päätepisteistä.",
+      "help": "Etkö ole varma, miten näitä käytetään? Seuraa <1>asennusohjetta</1>."
+    },
+    "linkedIp": {
+      "name": "Linkitetty IP",
+      "description": "Jos et pysty määrittämään NextDNS:ää sovelluksillamme, DNS-over-TLS:llä, DNS-over-HTTPS:llä tai IPv6:lla, käytä alla olevia DNS-palvelimia ja linkitä IP-osoitteesi. Tätä käytetään enimmäkseen kotiverkossa eikä sitä suositella käytettäväksi matkapuhelimessa.",
+      "servers": {
+        "name": "DNS-palvelimet"
+      },
+      "ip": {
+        "name": "Linkitetty IP",
+        "link": "Linkitä IP"
+      },
+      "showAdvanced": "Näytä lisäasetukset",
+      "ddns": {
+        "explanation": "Dynaamisen DNS:n (DDNS) avulla päivität linkitetyn IP-osoitteen automaattisesti.",
+        "set": "Määritä DDNS",
+        "status": "Käytät tällä hetkellä <1>{{hostname}}</1> DDNS-isäntänimenä, IP-osoitteesi päivitetään automaattisesti joka minuutti.",
+        "unset": "Poista",
+        "form": {
+          "hostname": {
+            "label": "DDNS-isäntänimi",
+            "placeholder": "esimerkki.no-ip.org",
+            "errors": {
+              "required": "Anna isäntänimi.",
+              "invalid": "Anna kelvollinen isäntänimi.",
+              "ip": "Anna isäntänimi, ei IP-osoitetta.",
+              "error": "Tämän isäntänimen IP-osoitteen hakemisessa tapahtui virhe.",
+              "empty": "Tämä isäntänimi ei palauta IP-osoitetta.",
+              "different": "Turvallisuussyistä, kun lisäät dynaamisen DNS:n, DDNS-isäntänimen palauttaman IP-osoitteen tulee olla sama kuin nykyinen IP-osoitteesi."
             }
+          }
+        }
+      },
+      "programmatically": "Voit myös päivittää linkitetyn IP-osoitteen ohjelmallisesti soittamalla:"
+    },
+    "guide": {
+      "name": "Asennusopas",
+      "description": "Noudata alla olevia ohjeita asentaaksesi NextDNS:n laitteellesi, selaimeesi tai reitittimeesi.",
+      "or": "Tai",
+      "ipv4": {
+        "title": "IPv4 (linkitetty IP-osoite)"
+      },
+      "ipv6": {
+        "supported": "Verkkosi tukee IPv6:ta",
+        "notSupported": "Verkkosi ei tue IPv6:ta"
+      },
+      "tags": {
+        "recommended": "Suositeltu",
+        "advanced": "Monimutkainen"
+      },
+      "use": "Käytä seuraavia kohtia <1>{{file}}</1>:",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "Yksityinen DNS",
+              "requirements": "Android 9 tai uudempi",
+              "steps": {
+                "1": "1. Valitse Asetukset → Verkko ja internet → Lisäasetukset → Yksityinen DNS.",
+                "2": "2. Valitse asetus Yksityisen DNS-tarjoajan isäntänimi.",
+                "3": "3. Syötä <1>{{endpoint}}</1> ja paina Tallenna."
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "Päätepisteet",
-            "description": "Määritä NextDNS tällä konfiguraatiolla käyttämällä yhtä alla olevista päätepisteistä.",
-            "help": "Etkö ole varma, miten näitä käytetään? Seuraa <1>asennusohjetta</1>."
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "Määritysprofiilin",
+              "requirements": "iOS 14 tai uudempi",
+              "step": "Käytä Apple asetusprofiiligeneraattoriamme, joka löytyy täältä <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS iOS:lle"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "Linkitetty IP",
-            "description": "Jos et pysty määrittämään NextDNS:ää sovelluksillamme, DNS-over-TLS:llä, DNS-over-HTTPS:llä tai IPv6:lla, käytä alla olevia DNS-palvelimia ja linkitä IP-osoitteesi. Tätä käytetään enimmäkseen kotiverkossa eikä sitä suositella käytettäväksi matkapuhelimessa.",
-            "servers": {
-                "name": "DNS-palvelimet"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS HTTPS:n kautta",
+              "requirements": "Windows 11",
+              "steps": [
+                "Avaa <1>Asetukset</1>-sovellus.",
+                "Siirry <1>Verkko ja Internet</1> -osioon.",
+                "Klikkaa <1>Wi-Fi</1> (tai <3>Ethernet</3>).",
+                "Klikkaa <1>Laitteiston ominaisuudet</1>, tai ohita tämä vaihe, jos klikkasit <3>Ethernet</3>.",
+                "Klikkaa <1>Muokkaa</1> painiketta <3>DNS-palvelin tehtävän vieressä</3>.",
+                "Valitse <1>Manuaalinen</1>.",
+                "Ota Käyttöön <1>IPv{{version}}</1>.",
+                "Syötä <1>{{ip}}</1> <3>ensisijaisena DNS:nä</3> ja valitse sitten <5>Päällä (manuaalinen malli)</5> ja syötä <7>{{endpoint}}</7>.",
+                "Syötä <1>{{ip}}</1> <3>vaihtoehtoisena DNS:nä</3> ja valitse sitten <5>Päällä (manuaalinen malli)</5> ja syötä <7>{{endpoint}}</7>.",
+                "Napauta <1>Tallenna</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS Windowsille",
+              "steps": {
+                "1": "1. Lataa asennusohjelma <1>täältä</1>.",
+                "2": "2. Asennuksen jälkeen napsauta hiiren kakkospainikkeella NextDNS-kuvaketta piilotetuissa kuvakkeissa (näytön alakulmassa) ja avaa Asetukset. Aseta <1>{{id}}</1> konfigurointitunnuksena.",
+                "3": "3. Napsauta hiiren kakkospainikkeella NextDNS-kuvaketta piilotetuissa kuvakkeissa ja napsauta Ota käyttöön."
+              }
             },
             "ip": {
-                "name": "Linkitetty IP",
-                "link": "Linkitä IP"
+              "steps": {
+                "1": "1. Napsauta Käynnistä-valikkoa ja sitten Ohjauspaneeli.",
+                "2": "2. Napsauta Verkko ja Internet, sitten Verkko- ja jakamiskeskus.",
+                "3": "3. Napsauta Muuta sovittimen asetuksia.",
+                "4": "4. Napsauta hiiren kakkospainikkeella Wi-Fi-verkkoa, johon olet yhteydessä, ja napsauta sitten Ominaisuudet.",
+                "5": "5. Valitse Internet Protokolla Versio {{version}}.",
+                "6": "6. Napsauta Ominaisuudet.",
+                "7": "7. Valitse Käytä seuraavia DNS-palvelinosoitteita.",
+                "8": "8. Korvaa nykyiset osoitteet (jos niitä on) luvuilla <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
+                "9": "9. Napsauta OK ja sulje. Sinun on ehkä käynnistettävä selaimesi uudelleen."
+              }
             },
-            "showAdvanced": "Näytä lisäasetukset",
-            "ddns": {
-                "explanation": "Dynaamisen DNS:n (DDNS) avulla päivität linkitetyn IP-osoitteen automaattisesti.",
-                "set": "Määritä DDNS",
-                "status": "Käytät tällä hetkellä <1>{{hostname}}</1> DDNS-isäntänimenä, IP-osoitteesi päivitetään automaattisesti joka minuutti.",
-                "unset": "Poista",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS-isäntänimi",
-                        "placeholder": "esimerkki.no-ip.org",
-                        "errors": {
-                            "required": "Anna isäntänimi.",
-                            "invalid": "Anna kelvollinen isäntänimi.",
-                            "ip": "Anna isäntänimi, ei IP-osoitetta.",
-                            "error": "Tämän isäntänimen IP-osoitteen hakemisessa tapahtui virhe.",
-                            "empty": "Tämä isäntänimi ei palauta IP-osoitetta.",
-                            "multiple": "Tämä isäntänimi palauttaa useita IP-osoitteita.",
-                            "different": "Turvallisuussyistä, kun lisäät dynaamisen DNS:n, DDNS-isäntänimen palauttaman IP-osoitteen tulee olla sama kuin nykyinen IP-osoitteesi."
-                        }
-                    }
-                }
-            },
-            "programmatically": "Voit myös päivittää linkitetyn IP-osoitteen ohjelmallisesti soittamalla:"
-        },
-        "guide": {
-            "name": "Asennusopas",
-            "description": "Noudata alla olevia ohjeita asentaaksesi NextDNS:n laitteellesi, selaimeesi tai reitittimeesi.",
-            "or": "Tai",
-            "ipv4": {
-                "title": "IPv4 (linkitetty IP-osoite)"
-            },
-            "ipv6": {
-                "supported": "Verkkosi tukee IPv6:ta",
-                "notSupported": "Verkkosi ei tue IPv6:ta"
-            },
-            "tags": {
-                "recommended": "Suositeltu",
-                "advanced": "Monimutkainen"
-            },
-            "use": "Käytä seuraavia kohtia <1>{{file}}</1>:",
-            "appleConfigurationProfile": {
-                "name": "NextDNS ({{configuration}})",
-                "description": "Tämä profiili sallii NextDNS: n kaikissa verkoissa uuden natiivin salatun DNS-ominaisuuden avulla."
-            },
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "Yksityinen DNS",
-                            "requirements": "Android 9 tai uudempi",
-                            "steps": {
-                                "1": "1. Valitse Asetukset → Verkko ja internet → Lisäasetukset → Yksityinen DNS.",
-                                "2": "2. Valitse asetus Yksityisen DNS-tarjoajan isäntänimi.",
-                                "3": "3. Syötä <1>{{endpoint}}</1> ja paina Tallenna."
-                            }
-                        },
-                        "app": {
-                            "title": "NextDNS Androidille",
-                            "steps": {
-                                "1": "1. Asenna virallinen sovelluksemme Play Kaupasta.",
-                                "2": "2. NextDNS-sovelluksessa, syötä <1>{{id}}</1> kohdassa Asetukset → Kokoonpanotunnus ja muodosta sitten yhteys."
-                            }
-                        },
-                        "ip": {
-                            "ipv4": {
-                                "title": "IPv4 (linkitetyllä IP:llä)"
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "Määritysprofiilin",
-                            "requirements": "iOS 14 tai uudempi",
-                            "step": "Käytä Apple asetusprofiiligeneraattoriamme, joka löytyy täältä <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS iOS:lle",
-                            "steps": {
-                                "1": "1. Asenna virallinen sovelluksemme App Storesta.",
-                                "2": "2. Avaa sovellus, siirry Asetuksiin ja valitse \"Use Custom Configuration\". Syötä <1>{{id}}</1> konfigurointitunnuksena.",
-                                "3": "3. Ota NextDNS käyttöön."
-                            }
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS HTTPS:n kautta",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "Avaa <1>Asetukset</1>-sovellus.",
-                                "Siirry <1>Verkko ja Internet</1> -osioon.",
-                                "Klikkaa <1>Wi-Fi</1> (tai <3>Ethernet</3>).",
-                                "Klikkaa <1>Laitteiston ominaisuudet</1>, tai ohita tämä vaihe, jos klikkasit <3>Ethernet</3>.",
-                                "Klikkaa <1>Muokkaa</1> painiketta <3>DNS-palvelin tehtävän vieressä</3>.",
-                                "Valitse <1>Manuaalinen</1>.",
-                                "Ota Käyttöön <1>IPv{{version}}</1>.",
-                                "Syötä <1>{{ip}}</1> <3>ensisijaisena DNS:nä</3> ja valitse sitten <5>Päällä (manuaalinen malli)</5> ja syötä <7>{{endpoint}}</7>.",
-                                "Syötä <1>{{ip}}</1> <3>vaihtoehtoisena DNS:nä</3> ja valitse sitten <5>Päällä (manuaalinen malli)</5> ja syötä <7>{{endpoint}}</7>.",
-                                "Napauta <1>Tallenna</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS Windowsille",
-                            "steps": {
-                                "1": "1. Lataa asennusohjelma <1>täältä</1>.",
-                                "2": "2. Asennuksen jälkeen napsauta hiiren kakkospainikkeella NextDNS-kuvaketta piilotetuissa kuvakkeissa (näytön alakulmassa) ja avaa Asetukset. Aseta <1>{{id}}</1> konfigurointitunnuksena.",
-                                "3": "3. Napsauta hiiren kakkospainikkeella NextDNS-kuvaketta piilotetuissa kuvakkeissa ja napsauta Ota käyttöön."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Napsauta Käynnistä-valikkoa ja sitten Ohjauspaneeli.",
-                                "2": "2. Napsauta Verkko ja Internet, sitten Verkko- ja jakamiskeskus.",
-                                "3": "3. Napsauta Muuta sovittimen asetuksia.",
-                                "4": "4. Napsauta hiiren kakkospainikkeella Wi-Fi-verkkoa, johon olet yhteydessä, ja napsauta sitten Ominaisuudet.",
-                                "5": "5. Valitse Internet Protokolla Versio {{version}}.",
-                                "6": "6. Napsauta Ominaisuudet.",
-                                "7": "7. Valitse Käytä seuraavia DNS-palvelinosoitteita.",
-                                "8": "8. Korvaa nykyiset osoitteet (jos niitä on) luvuilla <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
-                                "9": "9. Napsauta OK ja sulje. Sinun on ehkä käynnistettävä selaimesi uudelleen."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. Asenna YogaDNS <1>{{link}}</1>.",
-                                "2": "2. Seuraa NextDNS:n ohjeita kohdassa <1>{{link}}</1> ja käytä <3>{{id}}</3> konfigurointitunnuksena."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS macOS:lle",
-                            "steps": {
-                                "1": "1. Asenna virallinen sovelluksemme Mac App Storesta.",
-                                "2": "2. Napsauta \"Asetukset\" tilarivivalikossa ja siirry Konfiguraatiot-välilehdelle.",
-                                "3": "3. Valitse \"Käytä mukautettua konfiguraatiota\" ja syötä <1>{{id}}</1> konfigurointitunnuksena.",
-                                "4": "4. Ota NextDNS käyttöön."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur tai uudempi"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Avaa Järjestelmäasetukset ja napsauta Verkko.",
-                                "2": "2. Valitse verkko, johon olet yhteydessä, ja napsauta Lisäasetukset-painiketta.",
-                                "3": "3. Siirry DNS-osioon.",
-                                "4": "4. Poista kaikki osoitteet DNS-palvelinluettelosta (jos niitä on) ja lisää sitten <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
-                                "5": "5. Napsauta OK ja sitten Käytä."
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS-komentorivisovellus",
-                            "steps": {
-                                "1": "1. Suorita seuraava komento: <1>{{command}}</1>",
-                                "2": "2. Noudata ohjeita."
-                            },
-                            "manual": "Siirry avoimen lähdekoodin tietovarastoomme osoitteessa <1>{{link}}</1> manuaalisille asennusohjeille."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS-komentorivisovellus",
-                            "steps": {
-                                "1": "1. Suorita seuraava komento: <1>{{command}}</1>",
-                                "2": "2. Noudata ohjeita."
-                            },
-                            "manual": "Siirry avoimen lähdekoodin tietovarastoomme osoitteessa <1>{{link}}</1> manuaalisille asennusohjeille."
-                        },
-                        "ip": {
-                            "step": "Vaihda DNS-palvelimesi arvoon <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
-                        },
-                        "stubby": {
-                            "warning": "Varmista, että Stubby on linkitetty <1>OpenSSL 1.1.1:een tai uudempaan</1> koska aiemmat versiot eivät toimi NextDNS:n kanssa."
-                        },
-                        "unbound": {
-                            "warning": "Rekursiivisena resolverina Unbound seuraa CNAME:ja. Tämä voi johtaa <1>odottamattomaan käyttäytymiseen</1> kun sitä käytetään yhdessä estävän DNS-resolverin, kuten NextDNS:n kanssa. Katso <3>{{link}}</3>."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "Chrome OS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "Suojattu DNS",
-                            "steps": [
-                                "Avaa <1>Asetukset</1>-sovellus.",
-                                "Siirry <1>Turvallisuus ja yksityisyys</1>.",
-                                "Ota käyttöön <1>Käytä suojattua DNS:ää</1>.",
-                                "4. Valitse <1>mukautettu</1> ja syötä <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "Vaihda DNS-palvelimesi arvoon <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "Selaimet",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. Valitse Asetukset.",
-                                "2": "2. Valitse Tietosuoja ja turvallisuus -osiossa turvallisuus.",
-                                "3": "3. Ota Lisäasetukset-osiossa käyttöön suojattu DNS.",
-                                "4": "4. Valitse mukautettu ja syötä <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Vain Windowsille, macOS:lle ja Linuxille",
-                            "steps": {
-                                "1": "1. Avaa Asetukset.",
-                                "2": "2. Napsauta Yksityisyys & Turvallisuus.",
-                                "3": "Vieritä alaspäin kohtaan ota käyttöön DNS-over-HTTPS.",
-                                "4": "4. Valitse Lisäsuojaus tai Maksimisuojaus.",
-                                "5": "Valitse Mukautettu valikosta.",
-                                "6": "6. Syötä <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. Avaa asetukset.",
-                                "2": "2. Siirry \"Tietosuoja, haku ja palvelut\" -osioon.",
-                                "3": "3. Valitse \"Tietoturva\" -kohdan alta \"Käytä suojattua DNS:ää\" määrittääksesi, miten verkkosivustojen verkko-osoite haetaan.",
-                                "4": "4. Valitse \"Valitse palveluntarjoaja\" ja syötä siihen <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. Avaa asetukset.",
-                                "2": "2. Yksityisyyden suoja ja tietoturva osiossa (lisäasetuksissa), siirry kohtaan Turvallisuus.",
-                                "3": "3. Ota Lisäasetukset-osiossa käyttöön suojattu DNS.",
-                                "4": "4. Valitse mukautettu ja syötä <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "Reitittimet",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS reitittimille",
-                            "requirements": "Toimii vain reitittimissä, jotka voivat suorittaa suoritettavia tiedostoja",
-                            "step": "Siirry avoimen lähdekoodin tietovarastoomme osoitteessa <1>{{link}}</1> asennusohjeille."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "Jotkin reitittimet eivät ehkä tue yllä olevaa IPv6-merkintää. Käytä siinä tapauksessa <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
-                            },
-                            "steps": {
-                                "1": "1. Avaa reitittimen asetukset. Yleensä pääset asetuksiin selaimeltasi URL-osoitteen kautta (kuten http://192.168.0.1/ tai http://192.168.1.1/).",
-                                "2": "2. Etsi DNS-asetukset käyttöliittymästä.",
-                                "3": "3. Poista kaikki osoitteet (jos niitä on) ja lisää sitten <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
-                                "4": "4. Napsauta Tallenna (tai vastaavaa)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. Valitse Palvelut → DNS Resolver ja siirry Yleiset asetukset -välilehdellä Mukautetut asetukset -ruutuun.",
-                                "2": "2. Kirjoita seuraavat rivit:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "Suorita seuraava:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "Siirry Tailscale-dokumentaatioon osoitteessa <2>{{link}}</2> asennusohjeita varten."
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. Asenna YogaDNS <1>{{link}}</1>.",
+                "2": "2. Seuraa NextDNS:n ohjeita kohdassa <1>{{link}}</1> ja käytä <3>{{id}}</3> konfigurointitunnuksena."
+              }
             }
+          }
         },
-        "identify": {
-            "name": "Tunnista laitteesi",
-            "description": "Seuraa alla olevia ohjeita tunnistaaksesi laitteesi analytiikassa ja lokeissa.",
-            "apps": {
-                "name": "Sovellukset",
-                "instructions": "Ota \"Send Device Name\" käyttöön sovelluksen asetuksissa."
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS macOS:lle",
+              "steps": {
+                "1": "1. Asenna virallinen sovelluksemme Mac App Storesta.",
+                "2": "2. Napsauta \"Asetukset\" tilarivivalikossa ja siirry Konfiguraatiot-välilehdelle.",
+                "3": "3. Valitse \"Käytä mukautettua konfiguraatiota\" ja syötä <1>{{id}}</1> konfigurointitunnuksena."
+              }
             },
-            "dot": {
-                "instructions": "Anna verkkotunnukselle nimi (nimen tulisi sisältää vain <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> ja <7>-</7>). Käytä <9>--</9> välilyönteihin.",
-                "example": "Kohteelle \"<1>Matti Reititin</1>\", käyttäisit <3>Matti--Reititin-{{profile}}.dns.nextdns.io</3> DNS-over-TLS-päätepisteenä."
+            "profile": {
+              "requirements": "macOS Big Sur tai uudempi"
             },
-            "doh": {
-                "instructions": "Liitä nimi annettuun URL-osoitteeseen (nimen on oltava URL-koodattu).",
-                "example": "Kohteelle \"<1>Matin Firefox</1>\", käyttäisit <3>https://dns.nextdns.io/{{profile}}/ Matin%20Firefox</3> DNS-over-HTTPS-päätepisteenäsi."
+            "ip": {
+              "steps": {
+                "1": "1. Avaa Järjestelmäasetukset ja napsauta Verkko.",
+                "2": "2. Valitse verkko, johon olet yhteydessä, ja napsauta Lisäasetukset-painiketta.",
+                "3": "3. Siirry DNS-osioon.",
+                "4": "4. Poista kaikki osoitteet DNS-palvelinluettelosta (jos niitä on) ja lisää sitten <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
+                "5": "5. Napsauta OK ja sitten Käytä."
+              }
+            },
+            "cli": {
+              "title": "NextDNS-komentorivisovellus",
+              "steps": {
+                "1": "1. Suorita seuraava komento: <1>{{command}}</1>",
+                "2": "2. Noudata ohjeita."
+              },
+              "manual": "Siirry avoimen lähdekoodin tietovarastoomme osoitteessa <1>{{link}}</1> manuaalisille asennusohjeille."
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS-komentorivisovellus",
+              "steps": {
+                "1": "1. Suorita seuraava komento: <1>{{command}}</1>",
+                "2": "2. Noudata ohjeita."
+              },
+              "manual": "Siirry avoimen lähdekoodin tietovarastoomme osoitteessa <1>{{link}}</1> manuaalisille asennusohjeille."
+            },
+            "ip": {
+              "step": "Vaihda DNS-palvelimesi arvoon <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
+            },
+            "stubby": {
+              "warning": "Varmista, että Stubby on linkitetty <1>OpenSSL 1.1.1:een tai uudempaan</1> koska aiemmat versiot eivät toimi NextDNS:n kanssa."
+            },
+            "unbound": {
+              "warning": "Rekursiivisena resolverina Unbound seuraa CNAME:ja. Tämä voi johtaa <1>odottamattomaan käyttäytymiseen</1> kun sitä käytetään yhdessä estävän DNS-resolverin, kuten NextDNS:n kanssa. Katso <3>{{link}}</3>."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "Chrome OS",
+          "guides": {
+            "secure-dns": {
+              "title": "Suojattu DNS",
+              "steps": [
+                "Avaa <1>Asetukset</1>-sovellus.",
+                "Siirry <1>Turvallisuus ja yksityisyys</1>.",
+                "Ota käyttöön <1>Käytä suojattua DNS:ää</1>.",
+                "4. Valitse <1>mukautettu</1> ja syötä <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "Vaihda DNS-palvelimesi arvoon <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
+            }
+          }
+        },
+        "browsers": {
+          "name": "Selaimet",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. Valitse Asetukset.",
+                "2": "2. Valitse Tietosuoja ja turvallisuus -osiossa turvallisuus.",
+                "3": "3. Ota Lisäasetukset-osiossa käyttöön suojattu DNS.",
+                "4": "4. Valitse mukautettu ja syötä <1>{{endpoint}}</1>."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Vain Windowsille, macOS:lle ja Linuxille",
+              "steps": {
+                "1": "1. Avaa Asetukset.",
+                "2": "2. Napsauta Yksityisyys & Turvallisuus.",
+                "3": "Vieritä alaspäin kohtaan ota käyttöön DNS-over-HTTPS.",
+                "4": "4. Valitse Lisäsuojaus tai Maksimisuojaus.",
+                "5": "Valitse Mukautettu valikosta.",
+                "6": "6. Syötä <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. Avaa asetukset.",
+                "2": "2. Siirry \"Tietosuoja, haku ja palvelut\" -osioon.",
+                "3": "3. Valitse \"Tietoturva\" -kohdan alta \"Käytä suojattua DNS:ää\" määrittääksesi, miten verkkosivustojen verkko-osoite haetaan.",
+                "4": "4. Valitse \"Valitse palveluntarjoaja\" ja syötä siihen <1>{{endpoint}}</1>."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. Avaa asetukset.",
+                "2": "2. Yksityisyyden suoja ja tietoturva osiossa (lisäasetuksissa), siirry kohtaan Turvallisuus.",
+                "3": "3. Ota Lisäasetukset-osiossa käyttöön suojattu DNS.",
+                "4": "4. Valitse mukautettu ja syötä <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "Reitittimet",
+          "guides": {
+            "cli": {
+              "title": "NextDNS reitittimille",
+              "requirements": "Toimii vain reitittimissä, jotka voivat suorittaa suoritettavia tiedostoja",
+              "step": "Siirry avoimen lähdekoodin tietovarastoomme osoitteessa <1>{{link}}</1> asennusohjeille."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "Jotkin reitittimet eivät ehkä tue yllä olevaa IPv6-merkintää. Käytä siinä tapauksessa <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
+              },
+              "steps": {
+                "1": "1. Avaa reitittimen asetukset. Yleensä pääset asetuksiin selaimeltasi URL-osoitteen kautta (kuten http://192.168.0.1/ tai http://192.168.1.1/).",
+                "2": "2. Etsi DNS-asetukset käyttöliittymästä.",
+                "3": "3. Poista kaikki osoitteet (jos niitä on) ja lisää sitten <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
+                "4": "4. Napsauta Tallenna (tai vastaavaa)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. Valitse Palvelut → DNS Resolver ja siirry Yleiset asetukset -välilehdellä Mukautetut asetukset -ruutuun.",
+                "2": "2. Kirjoita seuraavat rivit:"
+              }
+            },
+            "mikrotik": {
+              "run": "Suorita seuraava:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "Siirry Tailscale-dokumentaatioon osoitteessa <2>{{link}}</2> asennusohjeita varten."
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "Uhkatiedon syötteet",
-            "description": "Estä verkkotunnukset, joiden tiedetään levittävän haittaohjelmia, käynnistävän tietojenkalasteluhyökkäykset ja isännöimään komento- ja hallintapalvelimia käyttämällä tunnetuimpien uhkatiedontesyötteiden sekoitusta — kaikki päivitetään reaaliajassa.",
-            "enable": "Käytä uhkatietosyötteitä",
-            "covid": "Suojaa COVID-19-tietojenkalastelulta."
-        },
-        "ai": {
-            "name": "Tekoälyohjattu uhkien tunnistus",
-            "description": "Estä miljoonat AI-teknologiamme havaitsemat uhat — AI-moottorimme, joka on suunniteltu alusta alkaen DNS:lle satojen signaalien, teratavujen koulutustietojen ja reaaliaikaisen päätöksenteon avulla.",
-            "enable": "Ota tekoälyohjattu uhkien tunnistus käyttöön"
-        },
-        "googleSafeBrowsing": {
-            "name": "Googlen selaussuoja",
-            "description": "Estä haittaohjelmat ja tietojenkalasteluverkkotunnukset Google-selaussuojan avulla — tekniikka, joka tutkii miljardeja URL-osoitteita päivässä etsimällä vaarallisia verkkosivustoja. Toisin kuin joissakin selaimissa upotettu versio, tämä ei liitä julkista IP-osoitettasi uhkiin eikä salli eston kiertämistä.",
-            "enable": "Ota Googlen selaussuoja käyttöön"
-        },
-        "cryptojacking": {
-            "name": "Kryptojackaus-suojaus",
-            "description": "Estä laitteidesi luvaton käyttö kryptovaluutan louhintaan.",
-            "enable": "Ota kryptojakkaus-suojaus käyttöön"
-        },
-        "dnsRebinding": {
-            "name": "DNS Rebinding -suojaus",
-            "description": "Estä hyökkääjiä ottamasta paikallisten laitteidesi hallintaa Internetin kautta estämällä automaattisesti yksityisiä IP-osoitteita sisältävät DNS-vastaukset.",
-            "enable": "Ota käyttöön DNS Rebinding -suojaus"
-        },
-        "homograph": {
-            "name": "IDN-homografiahyökkäyksen suojaus",
-            "description": "Estä verkkotunnukset, jotka esiintyvät muina verkkotunnuksina, väärinkäyttämällä kansainvälisten verkkotunnusten (IDN) saapuessa saatavana olevaa suurta merkistöä — esimerkiksi korvaamalla latinalainen kirjain \"e\" kyrillisellä kirjaimella \"e\".",
-            "enable": "Ota IDN-homografiahyökkäyksen suojaus käyttöön"
-        },
-        "typosquatting": {
-            "name": "Kirjoitussuojaus",
-            "description": "Estä haitallisten toimijoiden rekisteröimät verkkotunnukset, jotka on kohdistettu käyttäjille, jotka kirjoittavat verkkosivuston osoitteen väärin selaimeensa — esim. gooogle.fi google.fi:n sijaan.",
-            "enable": "Ota kirjoitusvirheiden suojaus käyttöön"
-        },
-        "dga": {
-            "name": "Verkkotunnusten luontialgoritmien (DGA) suojaus",
-            "description": "Estä eri haittaohjelmaperheissä havaitut toimialueiden luontialgoritmien (DGA) luomat toimialueet, joita voidaan käyttää kohtaamispisteinä komento- ja ohjauspalvelimiensa kanssa.",
-            "enable": "Ota verkkotunnusten luontialgoritmien suojaus käyttöön"
-        },
-        "nrd": {
-            "name": "Estä vastarekisteröidyt verkkotunnukset (NRD)",
-            "description": "Estä alle 30 päivää sitten rekisteröidyt verkkotunnukset. Haitallisten toimijoiden tiedetään suosivan näitä verkkotunnuksia käynnistämään haitallisia kampanjoita.",
-            "enable": "Estä vasta rekisteröidyt verkkotunnukset (NRD)"
-        },
-        "ddns": {
-            "name": "Estä dynaamiset DNS-isäntänimet",
-            "description": "Dynaamisten DNS (ts. DDNS) -palveluiden avulla haitalliset toimijat voivat nopeasti määrittää isäntänimiä veloituksetta ja ilman mitään varmistusta tai henkilöllisyyden todennusta. Vaikka laillisia DDNS-isäntänimiä käytetään harvoin jokapäiväisessä käytössä, niiden haitallisia vastineita käytetään runsaasti tietojenkalastelukampanjoissa — esim. paypal-login.duckdns.org.",
-            "disclaimer": "Jos käytät DDNS-palvelua, huomioi, ettei tämä asetus estä DDNS-palvelun omaa verkkosivustoa tai sen päivitysrajapintaa.",
-            "enable": "Estä dynaamiset DNS-isäntänimet"
-        },
-        "parked": {
-            "name": "Estä pysäköidyt verkkotunnukset",
-            "description": "Pysäköidyt verkkotunnukset ovat yhden sivun verkkosivustoja, jotka ovat usein täynnä mainoksia ja joilla ei ole arvoa. Pysäköidyn verkkotunnuksen kaupallistaminen voi joskus sekoittua epäilyttäviin käytäntöihin ja haitalliseen sisältöön.",
-            "enable": "Estä pysäköidyt verkkotunnukset"
-        },
-        "tld": {
-            "name": "Estä ylätason verkkotunnukset (TLD)",
-            "description": "Estä kaikki tietyille aluetunnuksille kuuluvat verkkotunnukset ja aliverkkotunnukset.",
-            "add": "Lisää TLD",
-            "sections": {
-                "spamhaus": "Spamhaus Useimmat väärinkäytetyt TLD:t",
-                "all": "Kaikki TLD:t"
-            }
-        },
-        "csam": {
-            "name": "Estä lasten seksuaalisen hyväksikäytön materiaali",
-            "description": "Estä lasten seksuaalisen hyväksikäytön materiaalia isännöivät verkkotunnukset Canadian Centre for Child Protectionin ylläpitämän Project Arachnidin avulla. Tietoja ei lähetetä takaisin Project Arachnid -ohjelmaan, kun verkkotunnus on estetty.",
-            "enable": "Estä lasten seksuaalisen hyväksikäytön materiaali"
+    "identify": {
+      "name": "Tunnista laitteesi",
+      "description": "Seuraa alla olevia ohjeita tunnistaaksesi laitteesi analytiikassa ja lokeissa.",
+      "apps": {
+        "name": "Sovellukset",
+        "instructions": "Ota \"Send Device Name\" käyttöön sovelluksen asetuksissa."
+      },
+      "dot": {
+        "instructions": "Anna verkkotunnukselle nimi (nimen tulisi sisältää vain <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> ja <7>-</7>). Käytä <9>--</9> välilyönteihin.",
+        "example": "Kohteelle \"<1>Matti Reititin</1>\", käyttäisit <3>Matti--Reititin-{{profile}}.dns.nextdns.io</3> DNS-over-TLS-päätepisteenä."
+      },
+      "doh": {
+        "instructions": "Liitä nimi annettuun URL-osoitteeseen (nimen on oltava URL-koodattu).",
+        "example": "Kohteelle \"<1>Matin Firefox</1>\", käyttäisit <3>https://dns.nextdns.io/{{profile}}/ Matin%20Firefox</3> DNS-over-HTTPS-päätepisteenäsi."
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "Uhkatiedon syötteet",
+      "description": "Estä verkkotunnukset, joiden tiedetään levittävän haittaohjelmia, käynnistävän tietojenkalasteluhyökkäykset ja isännöimään komento- ja hallintapalvelimia käyttämällä tunnetuimpien uhkatiedontesyötteiden sekoitusta — kaikki päivitetään reaaliajassa.",
+      "enable": "Käytä uhkatietosyötteitä"
+    },
+    "ai": {
+      "name": "Tekoälyohjattu uhkien tunnistus",
+      "description": "Estä miljoonat AI-teknologiamme havaitsemat uhat — AI-moottorimme, joka on suunniteltu alusta alkaen DNS:lle satojen signaalien, teratavujen koulutustietojen ja reaaliaikaisen päätöksenteon avulla.",
+      "enable": "Ota tekoälyohjattu uhkien tunnistus käyttöön"
+    },
+    "googleSafeBrowsing": {
+      "name": "Googlen selaussuoja",
+      "description": "Estä haittaohjelmat ja tietojenkalasteluverkkotunnukset Google-selaussuojan avulla — tekniikka, joka tutkii miljardeja URL-osoitteita päivässä etsimällä vaarallisia verkkosivustoja. Toisin kuin joissakin selaimissa upotettu versio, tämä ei liitä julkista IP-osoitettasi uhkiin eikä salli eston kiertämistä.",
+      "enable": "Ota Googlen selaussuoja käyttöön"
+    },
+    "cryptojacking": {
+      "name": "Kryptojackaus-suojaus",
+      "description": "Estä laitteidesi luvaton käyttö kryptovaluutan louhintaan.",
+      "enable": "Ota kryptojakkaus-suojaus käyttöön"
+    },
+    "dnsRebinding": {
+      "name": "DNS Rebinding -suojaus",
+      "description": "Estä hyökkääjiä ottamasta paikallisten laitteidesi hallintaa Internetin kautta estämällä automaattisesti yksityisiä IP-osoitteita sisältävät DNS-vastaukset.",
+      "enable": "Ota käyttöön DNS Rebinding -suojaus"
+    },
+    "homograph": {
+      "name": "IDN-homografiahyökkäyksen suojaus",
+      "description": "Estä verkkotunnukset, jotka esiintyvät muina verkkotunnuksina, väärinkäyttämällä kansainvälisten verkkotunnusten (IDN) saapuessa saatavana olevaa suurta merkistöä — esimerkiksi korvaamalla latinalainen kirjain \"e\" kyrillisellä kirjaimella \"e\".",
+      "enable": "Ota IDN-homografiahyökkäyksen suojaus käyttöön"
+    },
+    "typosquatting": {
+      "name": "Kirjoitussuojaus",
+      "description": "Estä haitallisten toimijoiden rekisteröimät verkkotunnukset, jotka on kohdistettu käyttäjille, jotka kirjoittavat verkkosivuston osoitteen väärin selaimeensa — esim. gooogle.fi google.fi:n sijaan.",
+      "enable": "Ota kirjoitusvirheiden suojaus käyttöön"
+    },
+    "dga": {
+      "name": "Verkkotunnusten luontialgoritmien (DGA) suojaus",
+      "description": "Estä eri haittaohjelmaperheissä havaitut toimialueiden luontialgoritmien (DGA) luomat toimialueet, joita voidaan käyttää kohtaamispisteinä komento- ja ohjauspalvelimiensa kanssa.",
+      "enable": "Ota verkkotunnusten luontialgoritmien suojaus käyttöön"
+    },
+    "nrd": {
+      "name": "Estä vastarekisteröidyt verkkotunnukset (NRD)",
+      "description": "Estä alle 30 päivää sitten rekisteröidyt verkkotunnukset. Haitallisten toimijoiden tiedetään suosivan näitä verkkotunnuksia käynnistämään haitallisia kampanjoita.",
+      "enable": "Estä vasta rekisteröidyt verkkotunnukset (NRD)"
+    },
+    "ddns": {
+      "name": "Estä dynaamiset DNS-isäntänimet",
+      "description": "Dynaamisten DNS (ts. DDNS) -palveluiden avulla haitalliset toimijat voivat nopeasti määrittää isäntänimiä veloituksetta ja ilman mitään varmistusta tai henkilöllisyyden todennusta. Vaikka laillisia DDNS-isäntänimiä käytetään harvoin jokapäiväisessä käytössä, niiden haitallisia vastineita käytetään runsaasti tietojenkalastelukampanjoissa — esim. paypal-login.duckdns.org.",
+      "disclaimer": "Jos käytät DDNS-palvelua, huomioi, ettei tämä asetus estä DDNS-palvelun omaa verkkosivustoa tai sen päivitysrajapintaa.",
+      "enable": "Estä dynaamiset DNS-isäntänimet"
+    },
+    "parked": {
+      "name": "Estä pysäköidyt verkkotunnukset",
+      "description": "Pysäköidyt verkkotunnukset ovat yhden sivun verkkosivustoja, jotka ovat usein täynnä mainoksia ja joilla ei ole arvoa. Pysäköidyn verkkotunnuksen kaupallistaminen voi joskus sekoittua epäilyttäviin käytäntöihin ja haitalliseen sisältöön.",
+      "enable": "Estä pysäköidyt verkkotunnukset"
+    },
+    "tld": {
+      "name": "Estä ylätason verkkotunnukset (TLD)",
+      "description": "Estä kaikki tietyille aluetunnuksille kuuluvat verkkotunnukset ja aliverkkotunnukset.",
+      "add": "Lisää TLD",
+      "sections": {
+        "spamhaus": "Spamhaus Useimmat väärinkäytetyt TLD:t",
+        "all": "Kaikki TLD:t"
+      }
+    },
+    "csam": {
+      "name": "Estä lasten seksuaalisen hyväksikäytön materiaali",
+      "description": "Estä lasten seksuaalisen hyväksikäytön materiaalia isännöivät verkkotunnukset Canadian Centre for Child Protectionin ylläpitämän Project Arachnidin avulla. Tietoja ei lähetetä takaisin Project Arachnid -ohjelmaan, kun verkkotunnus on estetty.",
+      "enable": "Estä lasten seksuaalisen hyväksikäytön materiaali"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "Estolistat",
+      "description": "Estä mainokset ja seuranta suosituimpien käytettävissä olevien luetteloiden avulla — kaikki päivitetään reaaliajassa.",
+      "add": "Lisää estolista",
+      "updated": "Päivitetty <1>{{ago}}</1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS mainosten ja seurantojen estoluettelo",
+          "description": "Kattava estolista mainosten ja seurantojen estämiseen kaikissa maissa. Tämä on suositeltu aloituslista."
         }
+      },
+      "sortBy": {
+        "popularity": "Suosio",
+        "name": "Nimi",
+        "entries": "Merkinnät",
+        "updated": "Viimeisimmät"
+      },
+      "entries_one": "{{count, number}} merkintä",
+      "entries_other": "{{count, number}} merkintää"
     },
-    "privacy": {
-        "blocklists": {
-            "name": "Estolistat",
-            "description": "Estä mainokset ja seuranta suosituimpien käytettävissä olevien luetteloiden avulla — kaikki päivitetään reaaliajassa.",
-            "add": "Lisää estolista",
-            "entries": "{{count, number}} merkintä",
-            "entries_plural": "{{count, number}} merkintää",
-            "updated": "Päivitetty <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS mainosten ja seurantojen estoluettelo",
-                    "description": "Kattava estolista mainosten ja seurantojen estämiseen kaikissa maissa. Tämä on suositeltu aloituslista."
-                }
-            },
-            "search": {
-                "placeholder": "Hae estoluetteloita",
-                "noResults": "Estoluetteloita ei löytynyt."
-            },
-            "sortBy": {
-                "popularity": "Suosio",
-                "name": "Nimi",
-                "entries": "Merkinnät",
-                "updated": "Viimeisimmät"
-            }
+    "native": {
+      "name": "Sisäänrakennettu seurantasuojaus",
+      "description": "Estä laajakäyttöiset seurantalaitteet, jotka toimivat usein käyttöjärjestelmän tasolla ja jotka seuraavat toimintaasi laitteella. Tämä voi sisältää kaikki vierailemasi verkkosivustot, kaiken kirjoittamasi tai sijaintisi.",
+      "add": "Lisää",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "Puhelimet ja tabletit, älytelevisiot, reitittimet"
         },
-        "native": {
-            "name": "Sisäänrakennettu seurantasuojaus",
-            "description": "Estä laajakäyttöiset seurantalaitteet, jotka toimivat usein käyttöjärjestelmän tasolla ja jotka seuraavat toimintaasi laitteella. Tämä voi sisältää kaikki vierailemasi verkkosivustot, kaiken kirjoittamasi tai sijaintisi.",
-            "add": "Lisää",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "Puhelimet ja tabletit, älytelevisiot, reitittimet"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "Puhelimet ja tabletit"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "Puhelimet, tabletit, älytelevisiot"
-                },
-                "alexa": {
-                    "name": "Amazon Alexa",
-                    "devices": "Alexa-yhteensopivat laitteet"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "Kaikki versiot"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "Kaikki Roku-laitteet"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "Kaiuttimet"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "Puhelimet ja tabletit"
         },
-        "disguised": {
-            "name": "Estä peitetyt kolmannen osapuolen seuraajat",
-            "description": "Tunnista ja estä automaattisesti kolmannen osapuolen seuranta, joka peittää itsensä ensimmäisenä osapuolena kiertääkseen viimeisimmät selaimen tietosuojasuojat, kuten ITP.",
-            "enable": "Estä peitetyt kolmannen osapuolen seuraajat"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "Puhelimet, tabletit, älytelevisiot"
         },
-        "affiliate": {
-            "name": "Salli kumppani- ja seurantalinkit",
-            "description": "Salli kumppanuus- ja seurantaverkkotunnukset, jotka ovat yleisiä kauppasivustoilla, sähköpostiviesteissä tai hakutuloksissa. Niitä yleensä kutsutaan vasta napsauttamalla linkkiä manuaalisesti.",
-            "relay": "IP-osoitteesi piilotetaan automaattisesti näiltä verkkosivustoilta yksityisyytesi säilyttämiseksi.",
-            "enable": "Salli kumppani- ja seurantalinkit"
+        "alexa": {
+          "name": "Amazon Alexa",
+          "devices": "Alexa-yhteensopivat laitteet"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "Kaikki versiot"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "Kaikki Roku-laitteet"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "Kaiuttimet"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "Verkkosivustot, sovellukset ja pelit",
-            "description": "Rajoita pääsyä tiettyihin verkkosivustoihin, sovelluksiin ja peleihin.",
-            "add": "Lisää verkkosivusto, sovellus tai peli",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "Twitter",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "Estä peitetyt kolmannen osapuolen seuraajat",
+      "description": "Tunnista ja estä automaattisesti kolmannen osapuolen seuranta, joka peittää itsensä ensimmäisenä osapuolena kiertääkseen viimeisimmät selaimen tietosuojasuojat, kuten ITP.",
+      "enable": "Estä peitetyt kolmannen osapuolen seuraajat"
+    },
+    "affiliate": {
+      "name": "Salli kumppani- ja seurantalinkit",
+      "description": "Salli kumppanuus- ja seurantaverkkotunnukset, jotka ovat yleisiä kauppasivustoilla, sähköpostiviesteissä tai hakutuloksissa. Niitä yleensä kutsutaan vasta napsauttamalla linkkiä manuaalisesti.",
+      "relay": "IP-osoitteesi piilotetaan automaattisesti näiltä verkkosivustoilta yksityisyytesi säilyttämiseksi.",
+      "enable": "Salli kumppani- ja seurantalinkit"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "Verkkosivustot, sovellukset ja pelit",
+      "description": "Rajoita pääsyä tiettyihin verkkosivustoihin, sovelluksiin ja peleihin.",
+      "add": "Lisää verkkosivusto, sovellus tai peli",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox Live",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "Luokat",
+      "description": "Rajoita pääsy tiettyihin verkkosivusto- ja sovellusluokkiin.",
+      "add": "Lisää luokka",
+      "categories": {
+        "dating": {
+          "name": "Treffaus",
+          "description": "Estää kaikki treffisivustot ja -sovellukset."
         },
+        "gambling": {
+          "name": "Uhkapelaus",
+          "description": "Estää uhkapelisisällön."
+        },
+        "gaming": {
+          "name": "Online-pelaaminen",
+          "description": "Estää online-pelisivustot, online-pelisovellukset ja online-peliverkot (Xbox Live, PlayStation Network jne.)."
+        },
+        "piracy": {
+          "name": "Piratismi",
+          "description": "Estää P2P-verkkosivustot, protokollat, tekijänoikeuksia loukkaavat suoratoistosivustot ja yleiset videopalvelusivustot, joita käytetään pääasiassa tekijänoikeuksien alaisen sisällön laittomaan jakeluun."
+        },
+        "porn": {
+          "name": "Porno",
+          "description": "Estää aikuisille tarkoitettua ja pornografista sisältöä. Se sisältää saattajasivustot, pornhub.com ja vastaavat verkkotunnukset."
+        },
+        "social-networks": {
+          "name": "Sosiaaliset verkostot",
+          "description": "Estää kaikki sosiaalisten verkostojen sivustot ja sovellukset (Facebook, Instagram, TikTok, Reddit jne.). Ei estä viestintäsovelluksia."
+        },
+        "video-streaming": {
+          "name": "Videon suoratoisto",
+          "description": "Estää videoiden suoratoistopalvelut (YouTube, Netflix, Disney+, laittomat suoratoistosivustot, videopornosivustot jne.) ja videopohjaiset sosiaaliset verkostot (TikTok jne.). Tämä voi myös auttaa vähentämään kaistanleveyden käyttöä missä tahansa verkossa."
+        }
+      }
+    },
+    "recreation": {
+      "name": "Vapaa-aika",
+      "description": "Määritä jokaiselle viikonpäivälle ajanjakso, jonka aikana joitain yllä mainituista verkkosivustoista, sovelluksista, peleistä tai luokista ei estetä - esim. salli Facebook maanantaisin ja tiistaisin klo 18–20.",
+      "set": "Aseta vapaa-aika",
+      "howto": "Käytä <1></1> painiketta yllä olevissa osioissa, ottaaaksesi virkistysajan käyttöön."
+    },
+    "safesearch": {
+      "name": "SafeSearch",
+      "description": "Suodata sopimattomat tulokset kaikista suosituimmista hakukoneista, mukaan lukien kuvat ja videot. Tämä estää myös pääsyn hakukoneisiin, jotka eivät tue tätä ominaisuutta.",
+      "enable": "Pakota SafeSearch"
+    },
+    "youtubeRestricted": {
+      "name": "YouTuben rajoitettu tila",
+      "description": "Suodata aikuisille tarkoitettuja videoita YouTubessa ja estä upotettujen aikuisten videoiden katsominen muilla verkkosivustoilla. Tämä piilottaa myös kaikki kommentit.",
+      "enable": "Pakota YouTuben rajoitettu tila"
+    },
+    "bypass": {
+      "name": "Estä ohitusmenetelmät",
+      "description": "Estä tai estä sellaisten menetelmien käyttöä, jotka voivat auttaa ohittamaan NextDNS-suodatuksen verkossa. Tämä sisältää VPN:t, välityspalvelimet, Toriin liittyvät ohjelmistot ja salatut DNS-palveluntarjoajat.",
+      "enable": "Estä ohitusmenetelmät"
+    }
+  },
+  "xlist": {
+    "placeholder": "Lisää verkkotunnus...",
+    "errors": {
+      "required": "Anna verkkotunnus.",
+      "ip": "Anna verkkotunnus, ei IP-osoite.",
+      "invalid": "Anna kelvollinen verkkotunnus.",
+      "tld": "Näyttää siltä, että yrität estää kokonaisen aluetunnuksen. Käytä Suojaus-osion Estä aluetunnuksia -ominaisuutta.",
+      "exists": "Tämä verkkotunnus on jo lisätty."
+    },
+    "empty": "Ei verkkotunnuksia vielä.",
+    "denylist": {
+      "info": "Verkkotunnuksen kieltäminen estää kaikki sen aliverkkotunnukset."
+    },
+    "allowlist": {
+      "info": "Verkkotunnuksen salliminen sallii kaikki sen aliverkkotunnukset automaattisesti. Salliminen on etusijalla kaikkeen muuhun, mukaan lukien turvaominaisuudet."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>estetyistä kyselyistä</1></1>",
+      "all_one": "<0>{{count, number}}</0><1>kysely</1>",
+      "all_other": "<0>{{count, number}}</0><1>kyselyä</1>",
+      "blocked_one": "<0>{{count, number}}</0><1>estetty kysely</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>estetyä kyselyä</1>"
+    },
+    "queries": {
+      "name": "Kyselyt",
+      "description": "Kyselyjen kehitys ajan myötä.",
+      "queries": {
+        "all_one": "<0>{{count, number}}</0><1> kysely</1>",
+        "all_other": "<0>{{count, number}}</0><1> kyselyjä</1>",
+        "blocked_one": "<0>{{count, number}}</0><1> estetty kysely</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> estettyjä kyselyitä</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "Selvitetyt verkkotunnukset",
+        "description": "Verkkotunnukset, jotka selvitettiin ilman estoa asetuksen tai valkolistan takia."
+      },
+      "blocked": {
+        "name": "Estetyt verkkotunnukset",
+        "description": "Verkkotunnukset, jotka on estetty tietoturva-, yksityisyys- ja / tai lapsilukkoasetuksella tai koska ne on manuaalisesti estetty."
+      },
+      "root": {
+        "name": "Juuriverkkotunnukset",
+        "description": "Yhteenveto kaikista juurialueille ja niiden aliverkkotunnuksille tehdyistä kyselyistä."
+      },
+      "empty": "Ei verkkotunnuksia vielä."
+    },
+    "reasons": {
+      "name": "Estojen syyt",
+      "description": "Suojaus-, yksityisyys- ja / tai lapsilukkoasetukset, jotka estivät eniten kyselyjä.",
+      "empty": "Yhtään verkkotunnusta ei ole vielä estetty."
+    },
+    "devices": {
+      "name": "Laitteet",
+      "description": "Laitteet, jotka tekevät kyselyitä.",
+      "empty": "Ei laitteita vielä.",
+      "unidentified": {
+        "name": "Tunnistamattomat laitteet"
+      }
+    },
+    "ips": {
+      "name": "IP-osoitteet",
+      "description": "IP-osoitteet, jotka tekevät kyselyitä.",
+      "empty": "Ei IP-osoitteita vielä."
+    },
+    "gafam": {
+      "name": "GAFAMin hallitsevuus",
+      "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple ja Microsoft) ovat viisi hallitsevaa Internet-yritystä, jotka omistavat monia suosittuja palveluita, jotka toimivat usein eri nimellä, esimerkiksi WhatsApp ja Instagram Facebookilta.",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Facebook"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "Muut"
+        }
+      },
+      "queries_one": "{{count, number}} kysely",
+      "queries_other": "{{count, number}} kyselyä"
+    },
+    "encrypted": {
+      "name": "Salattu DNS",
+      "description": "Prosenttiosuus salatulla siirrolla (DNS-over-HTTPS, DNS-over-TLS tai viralliset NextDNS-sovellukset) tehdyistä kyselyistä.",
+      "empty": "Ei kyselyitä vielä."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "DNSSEC:llä vahvistettujen kyselyjen prosenttiosuus.",
+      "empty": "Ei kyselyitä vielä."
+    },
+    "destination": {
+      "name": "Verkkoliikenteen kohdemaat",
+      "description": "Maat, joihin verkkoliikenteesi kulkee.",
+      "topDomains": "Suosituimmat verkkotunnukset",
+      "queries_one": "{{count, number}} kysely",
+      "queries_other": "{{count, number}} kyselyä"
+    }
+  },
+  "logs": {
+    "blockedOnly": "Vain estetyt kyselyt",
+    "raw": "Raa'at DNS-lokit",
+    "empty": "Ei lokeja vielä.",
+    "log": {
+      "actionBlock": "Estä",
+      "actionAllow": "Salli",
+      "dnssec": "Vahvistettu DNSSEC:llä.",
+      "clients": {
+        "nextdns-ios": "NextDNS iOS:lle",
+        "nextdns-android": "NextDNS Androidille",
+        "nextdns-macos": "NextDNS macOS:lle",
+        "nextdns-windows": "NextDNS Windowsille",
+        "nextdns-cli": "NextDNS komentorivisovellus",
+        "nextdns-chromeos": "NextDNS Chrome OS:lle",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "Mikrotik",
+        "apple-profile": "Apple määritysprofiili"
+      },
+      "blockedBy": "<1>{{lists}}</1> estämä.",
+      "allowedBy": "<1>{{lists}}</1> sallima.",
+      "manual": {
+        "deny": "Manuaalisesti kielletty.",
+        "allow": "Manuaalisesti sallittu."
+      },
+      "insights": {
+        "show": "Näytä seurantakiteytykset",
+        "hide": "Piilota seurantakiteytykset",
         "categories": {
-            "name": "Luokat",
-            "description": "Rajoita pääsy tiettyihin verkkosivusto- ja sovellusluokkiin.",
-            "add": "Lisää luokka",
-            "categories": {
-                "dating": {
-                    "name": "Treffaus",
-                    "description": "Estää kaikki treffisivustot ja -sovellukset."
-                },
-                "gambling": {
-                    "name": "Uhkapelaus",
-                    "description": "Estää uhkapelisisällön."
-                },
-                "gaming": {
-                    "name": "Online-pelaaminen",
-                    "description": "Estää online-pelisivustot, online-pelisovellukset ja online-peliverkot (Xbox Live, PlayStation Network jne.)."
-                },
-                "piracy": {
-                    "name": "Piratismi",
-                    "description": "Estää P2P-verkkosivustot, protokollat, tekijänoikeuksia loukkaavat suoratoistosivustot ja yleiset videopalvelusivustot, joita käytetään pääasiassa tekijänoikeuksien alaisen sisällön laittomaan jakeluun."
-                },
-                "porn": {
-                    "name": "Porno",
-                    "description": "Estää aikuisille tarkoitettua ja pornografista sisältöä. Se sisältää saattajasivustot, pornhub.com ja vastaavat verkkotunnukset."
-                },
-                "social-networks": {
-                    "name": "Sosiaaliset verkostot",
-                    "description": "Estää kaikki sosiaalisten verkostojen sivustot ja sovellukset (Facebook, Instagram, TikTok, Reddit jne.). Ei estä viestintäsovelluksia."
-                },
-                "video-streaming": {
-                    "name": "Videon suoratoisto",
-                    "description": "Estää videoiden suoratoistopalvelut (YouTube, Netflix, Disney+, laittomat suoratoistosivustot, videopornosivustot jne.) ja videopohjaiset sosiaaliset verkostot (TikTok jne.). Tämä voi myös auttaa vähentämään kaistanleveyden käyttöä missä tahansa verkossa."
-                }
-            }
+          "advertising": {
+            "description": "Tarjoaa mainontaa tai mainontaan liittyviä palveluja, kuten tiedonkeruu, käyttäytymisanalyysi tai uudelleen kohdentaminen."
+          },
+          "comments": {
+            "description": "Mahdollistaa artikkeleiden ja tuotearvostelujen kommenttiosuudet."
+          },
+          "customer_interaction": {
+            "description": "Sisältää chatin, sähköpostiviestit, asiakastuen ja muut vuorovaikutustyökalut."
+          },
+          "essential": {
+            "description": "Sisältää tagien hallintaohjelmat, tietosuojailmoitukset ja tekniikat, jotka ovat kriittisiä verkkosivuston toiminnalle."
+          },
+          "adult_advertsing": {
+            "description": "Toimittaa mainoksia, jotka yleensä näkyvät vain aikuisille tarkoitetuilla sivustoilla."
+          },
+          "site_analytics": {
+            "description": "Kerää ja analysoi sivuston käyttöön ja suorituskykyyn liittyviä tietoja."
+          },
+          "social_media": {
+            "description": "Integroi sosiaalisen median sivustoihin liittyvät ominaisuudet."
+          },
+          "audio_video_player": {
+            "description": "Antaa verkkosivustojen julkaista, jakaa ja optimoida video- ja äänisisältöä."
+          },
+          "cdn": {
+            "description": "Sisältötoimitusverkko, joka toimittaa resursseja sivuston eri hyödykkeisiin ja yleensä monille eri asiakkaille."
+          },
+          "misc": {
+            "description": "Tämä seuranta ei sovi muihin luokkiin tai sitä ei ole vielä merkitty."
+          },
+          "pornvertising": {
+            "description": "Toimittaa mainoksia, jotka yleensä näkyvät vain aikuisille tarkoitetuilla sivustoilla."
+          },
+          "hosting": {
+            "description": "Tätä palvelua käyttää sisällöntarjoaja tai sivuston omistaja."
+          },
+          "extensions": {
+            "description": "Ohjelmisto käyttäjän laitteissa, joka voi siepata ja analysoida selainliikennettä (mies välissä -hyökkäys)."
+          }
         },
-        "recreation": {
-            "name": "Vapaa-aika",
-            "description": "Määritä jokaiselle viikonpäivälle ajanjakso, jonka aikana joitain yllä mainituista verkkosivustoista, sovelluksista, peleistä tai luokista ei estetä - esim. salli Facebook maanantaisin ja tiistaisin klo 18–20.",
-            "set": "Aseta vapaa-aika",
-            "howto": "Käytä <1></1> painiketta yllä olevissa osioissa, ottaaaksesi virkistysajan käyttöön."
+        "prevalence": {
+          "intensity": {
+            "dangerously": "Vaarallisen yleinen",
+            "extremely": "Erittäin yleinen",
+            "very": "Erittäin yleinen",
+            "commonly": "Yleisesti yleinen",
+            "relatively": "Suhteellisen yleinen"
+          },
+          "summary": "{{prevalence}} <3>(seuraa {{percent, percentage}} verkkoliikenteestä)</3>"
         },
-        "safesearch": {
-            "name": "SafeSearch",
-            "description": "Suodata sopimattomat tulokset kaikista suosituimmista hakukoneista, mukaan lukien kuvat ja videot. Tämä estää myös pääsyn hakukoneisiin, jotka eivät tue tätä ominaisuutta.",
-            "enable": "Pakota SafeSearch"
-        },
-        "youtubeRestricted": {
-            "name": "YouTuben rajoitettu tila",
-            "description": "Suodata aikuisille tarkoitettuja videoita YouTubessa ja estä upotettujen aikuisten videoiden katsominen muilla verkkosivustoilla. Tämä piilottaa myös kaikki kommentit.",
-            "enable": "Pakota YouTuben rajoitettu tila"
-        },
-        "bypass": {
-            "name": "Estä ohitusmenetelmät",
-            "description": "Estä tai estä sellaisten menetelmien käyttöä, jotka voivat auttaa ohittamaan NextDNS-suodatuksen verkossa. Tämä sisältää VPN:t, välityspalvelimet, Toriin liittyvät ohjelmistot ja salatut DNS-palveluntarjoajat.",
-            "enable": "Estä ohitusmenetelmät"
-        }
+        "ownedBy": "<0>Omistaja: </0><1>{{company}}</1>",
+        "source": "Seurantakiteytyksiä sivulta"
+      }
+    }
+  },
+  "deviceSelector": {
+    "all": "Kaikki laitteet",
+    "howto": "Opi tunnistamaan laitteesi asetussivulta."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "Viimeiset 30 minuuttia",
+      "6h": "Viimeiset 6 tuntia",
+      "24h": "Viimeiset 24 tuntia",
+      "7d": "Viimeiset 7 päivää",
+      "30d": "Viimeiset 30 päivää",
+      "3M": "Viimeiset 3 kuukautta"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "Nimi",
+      "description": "Valitse tälle konfiguraatiolle nimi."
     },
-    "xlist": {
-        "placeholder": "Lisää verkkotunnus...",
-        "errors": {
+    "logs": {
+      "name": "Lokit",
+      "description": "Hienosäädä lokisi asetuksia.",
+      "enable": "Ota lokit käyttöön",
+      "privacy": {
+        "name": "Yksityisyyden säätö",
+        "ip": "Muista laitteiden IP-osoitteet",
+        "domains": "Lokitunnukset"
+      },
+      "retention": {
+        "name": "Säilytys",
+        "options": {
+          "1h": "1 tunti",
+          "6h": "6 tuntia",
+          "1d": "1 päivä",
+          "1w": "1 viikko",
+          "1m": "1 kuukausi",
+          "3m": "3 kuukautta",
+          "6m": "6 kuukautta",
+          "1y": "1 vuosi",
+          "2y": "2 vuotta"
+        }
+      },
+      "location": {
+        "name": "Varastointisijainti",
+        "locations": {
+          "us": {
+            "name": "Yhdysvallat",
+            "description": "Lokit tallennetaan Yhdysvaltoihin. Tämä on oletusarvo."
+          },
+          "eu": {
+            "name": "Euroopan unioni",
+            "description": "Lokit säilytetään Euroopan unionin jäsenvaltioissa."
+          },
+          "ch": {
+            "name": "Sveitsi",
+            "description": "Lokit säilytetään Zürichissä, Sveitsissä — lainkäyttöalueella, joka tunnetaan tiukoista tietosuojalaeistaan."
+          }
+        },
+        "confirm": {
+          "title": "Vaihda tallennuspaikka",
+          "text": "Lokien tallennuspaikan muuttaminen poistaa kaikki tämän konfiguraation aiemmat lokit ja analyysit."
+        }
+      },
+      "download": {
+        "button": "Lataa lokitiedot"
+      },
+      "clear": {
+        "button": "Tyhjennä lokit",
+        "confirm": {
+          "text": "Haluatko varmasti tyhjentää kaikki tämän konfiguraation lokit? Tätä toimintoa ei voi kumota.",
+          "submit": "Tyhjennä"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "Estosivu",
+      "description": "Näytä estosivu, kun verkkotunnus estetään. Tämä saattaa hieman pidentää sivun latausaikaa, ja HTTPS-varoitus saattaa näkyä joissakin tapauksissa. Kun estosivu on poistettu käytöstä, estettyihin kyselyihin vastataan määrittelemättömällä osoitteella (0.0.0.0 tai ::).",
+      "enable": "Ota estosivu käyttöön",
+      "ca": {
+        "name": "NextDNS juurivarmentaja",
+        "description": "Poista HTTPS-varoitus estosivua ladattaessa asentamalla juurivarmentajamme ja luottamalla siihen. Lataa juurivarmentaja osoitteessa <1>{{link}}</1>. Lue ohjeet tämän tekemiseen <3>täältä</3>."
+      }
+    },
+    "performance": {
+      "name": "Suorituskyky",
+      "description": "Nopeuta selaamistasi.",
+      "ecs": {
+        "name": "Nimetön EDNS-asiakasaliverkko",
+        "description": "Nopeuta tietojen toimittamista sisällönjakeluverkoista paljastamatta IP-osoitettasi.",
+        "enable": "Ota nimettömät EDNS-asiakasaliverkot käyttöön"
+      },
+      "cache": {
+        "name": "Välimuistin tehostus",
+        "description": "Minimoi DNS-kyselyt pakottamalla vähimmäis TTL (Time to live).",
+        "enable": "Ota välimuistin tehostus käyttöön"
+      },
+      "flatten": {
+        "name": "CNAME-litistys",
+        "description": "Estä CNAME-jahtaavia ratkaisijoita tekemästä tarpeettomia kyselyitä ja saastuttamasta lokit välialueilla.",
+        "enable": "Ota CNAME-litistys käyttöön"
+      }
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 viittaa hajautettuun ja sensuroimattomaan verkkoekosysteemiin, joka koostuu innovatiivisista teknologioista, kuten lohkoketjuisista verkkorekistereistä (esim. Ethereum Name Service) ja hajautetun sisällön tallennus- ja jakeluverkoista (esim. IPFS). Kun otat tämän käyttöön, NextDNS toimii suodattamatona porttina tähän uuteen verkkoon, jotta voit kokea sen itse asentamatta mitään.",
+      "tips": "Koska useimmat selaimet tukevat tällä hetkellä vain klassisia ylätason verkkotunnuksia, sinun on lisättävä kauttaviiva (\"<1>/</1>\") kun yrität käyttää Web3-verkkotunnuksia (\"<3>vitalik.eth/</3>\" eikä \"<5>vitalik.eth</5>\").",
+      "enable": "Ota Web3 käyttöön"
+    },
+    "rewrites": {
+      "name": "Uudelleenkirjoitukset",
+      "description": "Määritä tai ohita minkä tahansa verkkotunnuksen DNS-vastaus. Uudelleenkirjoittaminen koskee myös aliverkkotunnuksia, ja paikallisia IP-osoitteita tuetaan vastauksina.",
+      "new": "Uusi uudelleenkirjoitus",
+      "form": {
+        "domain": {
+          "label": "Verkkotunnus",
+          "placeholder": "printteri.lan, reitin.com, ...",
+          "errors": {
             "required": "Anna verkkotunnus.",
             "ip": "Anna verkkotunnus, ei IP-osoite.",
             "invalid": "Anna kelvollinen verkkotunnus.",
-            "tld": "Näyttää siltä, että yrität estää kokonaisen aluetunnuksen. Käytä Suojaus-osion Estä aluetunnuksia -ominaisuutta.",
-            "exists": "Tämä verkkotunnus on jo lisätty."
+            "taken": "Sinulla on jo uudelleenkirjoitus tälle verkkotunnukselle."
+          }
         },
-        "empty": "Ei verkkotunnuksia vielä.",
-        "denylist": {
-            "info": "Verkkotunnuksen kieltäminen estää kaikki sen aliverkkotunnukset."
-        },
-        "allowlist": {
-            "info": "Verkkotunnuksen salliminen sallii kaikki sen aliverkkotunnukset automaattisesti. Salliminen on etusijalla kaikkeen muuhun, mukaan lukien turvaominaisuudet."
+        "answer": {
+          "label": "Vastaus",
+          "placeholder": "1.2.3.4, ala.esimerkki.fi, ...",
+          "errors": {
+            "required": "Anna vastaus.",
+            "invalid": "Vastauksen tulee olla kelvollinen IP-osoite tai verkkotunnus."
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "all": "<0>{{count, number}}</0><1>kysely</1>",
-            "all_plural": "<0>{{count, number}}</0><1>kyselyä</1>",
-            "blocked": "<0>{{count, number}}</0><1>estetty kysely</1>",
-            "blocked_plural": "<0>{{count, number}}</0><1>estetyä kyselyä</1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>estetyistä kyselyistä</1></1>"
+    "access": {
+      "name": "Pääsy",
+      "description": "Myönnä muille tämän profiilin muokkaus- tai katseluoikeus.",
+      "roles": {
+        "editor": "Editori",
+        "viewer": "Katsoja"
+      },
+      "pending": "Kutsu lähetetty",
+      "form": {
+        "email": {
+          "label": "Sähköpostiosoite",
+          "errors": {
+            "required": "Anna sähköpostiosoite.",
+            "invalid": "Anna kelvollinen sähköpostiosoite.",
+            "duplicate": "Tämä sähköpostiosoite on jo kutsuttu."
+          }
         },
-        "queries": {
-            "name": "Kyselyt",
-            "description": "Kyselyjen kehitys ajan myötä.",
-            "queries": {
-                "all": "<0>{{count, number}}</0><1> kysely</1>",
-                "all_plural": "<0>{{count, number}}</0><1> kyselyjä</1>",
-                "blocked": "<0>{{count, number}}</0><1> estetty kysely</1>",
-                "blocked_plural": "<0>{{count, number}}</0><1> estettyjä kyselyitä</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "Selvitetyt verkkotunnukset",
-                "description": "Verkkotunnukset, jotka selvitettiin ilman estoa asetuksen tai valkolistan takia."
-            },
-            "blocked": {
-                "name": "Estetyt verkkotunnukset",
-                "description": "Verkkotunnukset, jotka on estetty tietoturva-, yksityisyys- ja / tai lapsilukkoasetuksella tai koska ne on manuaalisesti estetty."
-            },
-            "root": {
-                "name": "Juuriverkkotunnukset",
-                "description": "Yhteenveto kaikista juurialueille ja niiden aliverkkotunnuksille tehdyistä kyselyistä."
-            },
-            "empty": "Ei verkkotunnuksia vielä."
-        },
-        "reasons": {
-            "name": "Estojen syyt",
-            "description": "Suojaus-, yksityisyys- ja / tai lapsilukkoasetukset, jotka estivät eniten kyselyjä.",
-            "empty": "Yhtään verkkotunnusta ei ole vielä estetty."
-        },
-        "devices": {
-            "name": "Laitteet",
-            "description": "Laitteet, jotka tekevät kyselyitä.",
-            "empty": "Ei laitteita vielä.",
-            "unidentified": {
-                "name": "Tunnistamattomat laitteet"
-            }
-        },
-        "ips": {
-            "name": "IP-osoitteet",
-            "description": "IP-osoitteet, jotka tekevät kyselyitä.",
-            "empty": "Ei IP-osoitteita vielä."
-        },
-        "gafam": {
-            "name": "GAFAMin hallitsevuus",
-            "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple ja Microsoft) ovat viisi hallitsevaa Internet-yritystä, jotka omistavat monia suosittuja palveluita, jotka toimivat usein eri nimellä, esimerkiksi WhatsApp ja Instagram Facebookilta.",
-            "queries": "{{count, number}} kysely",
-            "queries_plural": "{{count, number}} kyselyä",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "Muut"
-                }
-            }
-        },
-        "encrypted": {
-            "name": "Salattu DNS",
-            "description": "Prosenttiosuus salatulla siirrolla (DNS-over-HTTPS, DNS-over-TLS tai viralliset NextDNS-sovellukset) tehdyistä kyselyistä.",
-            "empty": "Ei kyselyitä vielä."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "DNSSEC:llä vahvistettujen kyselyjen prosenttiosuus.",
-            "empty": "Ei kyselyitä vielä."
-        },
-        "destination": {
-            "name": "Verkkoliikenteen kohdemaat",
-            "description": "Maat, joihin verkkoliikenteesi kulkee.",
-            "empty": "Ei kyselyitä vielä.",
-            "queries": "{{count, number}} kysely",
-            "queries_plural": "{{count, number}} kyselyä",
-            "topDomains": "Suosituimmat verkkotunnukset"
+        "role": {
+          "label": "Rooli"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "Vain estetyt kyselyt",
-        "raw": "Raa'at DNS-lokit",
-        "empty": "Ei lokeja vielä.",
-        "log": {
-            "actionBlock": "Estä",
-            "actionAllow": "Salli",
-            "dnssec": "Vahvistettu DNSSEC:llä.",
-            "clients": {
-                "nextdns-ios": "NextDNS iOS:lle",
-                "nextdns-android": "NextDNS Androidille",
-                "nextdns-macos": "NextDNS macOS:lle",
-                "nextdns-windows": "NextDNS Windowsille",
-                "nextdns-cli": "NextDNS komentorivisovellus",
-                "nextdns-chromeos": "NextDNS Chrome OS:lle",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Apple määritysprofiili"
-            },
-            "blockedBy": "<1>{{lists}}</1> estämä.",
-            "allowedBy": "<1>{{lists}}</1> sallima.",
-            "manual": {
-                "deny": "Manuaalisesti kielletty.",
-                "allow": "Manuaalisesti sallittu."
-            },
-            "insights": {
-                "name": "Seurantakiteytykset",
-                "show": "Näytä seurantakiteytykset",
-                "hide": "Piilota seurantakiteytykset",
-                "categories": {
-                    "advertising": {
-                        "description": "Tarjoaa mainontaa tai mainontaan liittyviä palveluja, kuten tiedonkeruu, käyttäytymisanalyysi tai uudelleen kohdentaminen."
-                    },
-                    "comments": {
-                        "description": "Mahdollistaa artikkeleiden ja tuotearvostelujen kommenttiosuudet."
-                    },
-                    "customer_interaction": {
-                        "description": "Sisältää chatin, sähköpostiviestit, asiakastuen ja muut vuorovaikutustyökalut."
-                    },
-                    "essential": {
-                        "description": "Sisältää tagien hallintaohjelmat, tietosuojailmoitukset ja tekniikat, jotka ovat kriittisiä verkkosivuston toiminnalle."
-                    },
-                    "adult_advertsing": {
-                        "description": "Toimittaa mainoksia, jotka yleensä näkyvät vain aikuisille tarkoitetuilla sivustoilla."
-                    },
-                    "site_analytics": {
-                        "description": "Kerää ja analysoi sivuston käyttöön ja suorituskykyyn liittyviä tietoja."
-                    },
-                    "social_media": {
-                        "description": "Integroi sosiaalisen median sivustoihin liittyvät ominaisuudet."
-                    },
-                    "audio_video_player": {
-                        "description": "Antaa verkkosivustojen julkaista, jakaa ja optimoida video- ja äänisisältöä."
-                    },
-                    "cdn": {
-                        "description": "Sisältötoimitusverkko, joka toimittaa resursseja sivuston eri hyödykkeisiin ja yleensä monille eri asiakkaille."
-                    },
-                    "misc": {
-                        "description": "Tämä seuranta ei sovi muihin luokkiin tai sitä ei ole vielä merkitty."
-                    },
-                    "pornvertising": {
-                        "description": "Toimittaa mainoksia, jotka yleensä näkyvät vain aikuisille tarkoitetuilla sivustoilla."
-                    },
-                    "hosting": {
-                        "description": "Tätä palvelua käyttää sisällöntarjoaja tai sivuston omistaja."
-                    },
-                    "extensions": {
-                        "description": "Ohjelmisto käyttäjän laitteissa, joka voi siepata ja analysoida selainliikennettä (mies välissä -hyökkäys)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "Vaarallisen yleinen",
-                        "extremely": "Erittäin yleinen",
-                        "very": "Erittäin yleinen",
-                        "commonly": "Yleisesti yleinen",
-                        "relatively": "Suhteellisen yleinen"
-                    },
-                    "summary": "{{prevalence}} <3>(seuraa {{percent, percentage}} verkkoliikenteestä)</3>"
-                },
-                "ownedBy": "<0>Omistaja: </0><1>{{company}}</1>",
-                "source": "Seurantakiteytyksiä sivulta"
-            }
-        }
-    },
-    "deviceSelector": {
-        "all": "Kaikki laitteet",
-        "howto": "Opi tunnistamaan laitteesi asetussivulta."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "Viimeiset 30 minuuttia",
-            "6h": "Viimeiset 6 tuntia",
-            "24h": "Viimeiset 24 tuntia",
-            "7d": "Viimeiset 7 päivää",
-            "30d": "Viimeiset 30 päivää",
-            "3M": "Viimeiset 3 kuukautta"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "Monista <1>{{name}}</1>",
+      "description": "Kopioi kaikki tämän profiilin asetukset uuteen profiiliin.",
+      "form": {
         "name": {
-            "name": "Nimi",
-            "description": "Valitse tälle konfiguraatiolle nimi."
+          "label": "Nimi",
+          "placeholder": "Koti, Lapset, Toimisto, ...",
+          "errors": {
+            "required": "Anna nimi.",
+            "taken": "Sinulla on jo profiili tällä nimellä."
+          }
         },
-        "logs": {
-            "name": "Lokit",
-            "description": "Hienosäädä lokisi asetuksia.",
-            "enable": "Ota lokit käyttöön",
-            "privacy": {
-                "name": "Yksityisyyden säätö",
-                "ip": "Muista laitteiden IP-osoitteet",
-                "domains": "Lokitunnukset"
-            },
-            "retention": {
-                "name": "Säilytys",
-                "options": {
-                    "1h": "1 tunti",
-                    "6h": "6 tuntia",
-                    "1d": "1 päivä",
-                    "1w": "1 viikko",
-                    "1m": "1 kuukausi",
-                    "3m": "3 kuukautta",
-                    "6m": "6 kuukautta",
-                    "1y": "1 vuosi",
-                    "2y": "2 vuotta"
-                }
-            },
-            "location": {
-                "name": "Varastointisijainti",
-                "locations": {
-                    "us": {
-                        "name": "Yhdysvallat",
-                        "description": "Lokit tallennetaan Yhdysvaltoihin. Tämä on oletusarvo."
-                    },
-                    "eu": {
-                        "name": "Euroopan unioni",
-                        "description": "Lokit säilytetään Euroopan unionin jäsenvaltioissa."
-                    },
-                    "gb": {
-                        "name": "United Kingdom",
-                        "description": "Logs will be stored in London, United Kingdom."
-                    },
-                    "ch": {
-                        "name": "Sveitsi",
-                        "description": "Lokit säilytetään Zürichissä, Sveitsissä — lainkäyttöalueella, joka tunnetaan tiukoista tietosuojalaeistaan."
-                    }
-                },
-                "confirm": {
-                    "title": "Vaihda tallennuspaikka",
-                    "text": "Lokien tallennuspaikan muuttaminen poistaa kaikki tämän konfiguraation aiemmat lokit ja analyysit."
-                }
-            },
-            "download": {
-                "button": "Lataa lokitiedot"
-            },
-            "clear": {
-                "button": "Tyhjennä lokit",
-                "confirm": {
-                    "text": "Haluatko varmasti tyhjentää kaikki tämän konfiguraation lokit? Tätä toimintoa ei voi kumota.",
-                    "submit": "Tyhjennä"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "Estosivu",
-            "description": "Näytä estosivu, kun verkkotunnus estetään. Tämä saattaa hieman pidentää sivun latausaikaa, ja HTTPS-varoitus saattaa näkyä joissakin tapauksissa. Kun estosivu on poistettu käytöstä, estettyihin kyselyihin vastataan määrittelemättömällä osoitteella (0.0.0.0 tai ::).",
-            "enable": "Ota estosivu käyttöön",
-            "ca": {
-                "name": "NextDNS juurivarmentaja",
-                "description": "Poista HTTPS-varoitus estosivua ladattaessa asentamalla juurivarmentajamme ja luottamalla siihen. Lataa juurivarmentaja osoitteessa <1>{{link}}</1>. Lue ohjeet tämän tekemiseen <3>täältä</3>."
-            }
-        },
-        "performance": {
-            "name": "Suorituskyky",
-            "description": "Nopeuta selaamistasi.",
-            "ecs": {
-                "name": "Nimetön EDNS-asiakasaliverkko",
-                "description": "Nopeuta tietojen toimittamista sisällönjakeluverkoista paljastamatta IP-osoitettasi.",
-                "enable": "Ota nimettömät EDNS-asiakasaliverkot käyttöön"
-            },
-            "cache": {
-                "name": "Välimuistin tehostus",
-                "description": "Minimoi DNS-kyselyt pakottamalla vähimmäis TTL (Time to live).",
-                "enable": "Ota välimuistin tehostus käyttöön"
-            },
-            "flatten": {
-                "name": "CNAME-litistys",
-                "description": "Estä CNAME-jahtaavia ratkaisijoita tekemästä tarpeettomia kyselyitä ja saastuttamasta lokit välialueilla.",
-                "enable": "Ota CNAME-litistys käyttöön"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 viittaa hajautettuun ja sensuroimattomaan verkkoekosysteemiin, joka koostuu innovatiivisista teknologioista, kuten lohkoketjuisista verkkorekistereistä (esim. Ethereum Name Service) ja hajautetun sisällön tallennus- ja jakeluverkoista (esim. IPFS). Kun otat tämän käyttöön, NextDNS toimii suodattamatona porttina tähän uuteen verkkoon, jotta voit kokea sen itse asentamatta mitään.",
-            "tips": "Koska useimmat selaimet tukevat tällä hetkellä vain klassisia ylätason verkkotunnuksia, sinun on lisättävä kauttaviiva (\"<1>/</1>\") kun yrität käyttää Web3-verkkotunnuksia (\"<3>vitalik.eth/</3>\" eikä \"<5>vitalik.eth</5>\").",
-            "enable": "Ota Web3 käyttöön"
-        },
-        "rewrites": {
-            "name": "Uudelleenkirjoitukset",
-            "description": "Määritä tai ohita minkä tahansa verkkotunnuksen DNS-vastaus. Uudelleenkirjoittaminen koskee myös aliverkkotunnuksia, ja paikallisia IP-osoitteita tuetaan vastauksina.",
-            "new": "Uusi uudelleenkirjoitus",
-            "form": {
-                "domain": {
-                    "label": "Verkkotunnus",
-                    "placeholder": "printteri.lan, reitin.com, ...",
-                    "errors": {
-                        "required": "Anna verkkotunnus.",
-                        "ip": "Anna verkkotunnus, ei IP-osoite.",
-                        "invalid": "Anna kelvollinen verkkotunnus.",
-                        "taken": "Sinulla on jo uudelleenkirjoitus tälle verkkotunnukselle."
-                    }
-                },
-                "answer": {
-                    "label": "Vastaus",
-                    "placeholder": "1.2.3.4, ala.esimerkki.fi, ...",
-                    "errors": {
-                        "required": "Anna vastaus.",
-                        "invalid": "Vastauksen tulee olla kelvollinen IP-osoite tai verkkotunnus."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "Pääsy",
-            "description": "Myönnä muille tämän profiilin muokkaus- tai katseluoikeus.",
-            "roles": {
-                "editor": "Editori",
-                "viewer": "Katsoja"
-            },
-            "pending": "Kutsu lähetetty",
-            "form": {
-                "email": {
-                    "label": "Sähköpostiosoite",
-                    "errors": {
-                        "required": "Anna sähköpostiosoite.",
-                        "invalid": "Anna kelvollinen sähköpostiosoite.",
-                        "duplicate": "Tämä sähköpostiosoite on jo kutsuttu."
-                    }
-                },
-                "role": {
-                    "label": "Rooli"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "Monista <1>{{name}}</1>",
-            "description": "Kopioi kaikki tämän profiilin asetukset uuteen profiiliin.",
-            "form": {
-                "name": {
-                    "label": "Nimi",
-                    "placeholder": "Koti, Lapset, Toimisto, ...",
-                    "errors": {
-                        "required": "Anna nimi.",
-                        "taken": "Sinulla on jo profiili tällä nimellä."
-                    }
-                },
-                "button": "Monista"
-            }
-        },
-        "delete": {
-            "button": "Poista <1>{{name}}</1>",
-            "warning": "Tämä poistaa tämän konfiguraation ja kaikki siihen liittyvät lokit lopullisesti.",
-            "confirm": {
-                "text": "Haluatko varmasti poistaa <1>{{name}}</1>? Tätä toimintoa ei voi kumota."
-            }
-        },
-        "leave": {
-            "button": "Jätä <1>{{name}}</1>",
-            "warning": "Menetät pääsyn tähän profiiliin.",
-            "confirm": {
-                "text": "Haluatko varmasti jättää <1>{{name}}</1>? Tätä toimintoa ei voi kumota."
-            }
-        }
+        "button": "Monista"
+      }
+    },
+    "delete": {
+      "button": "Poista <1>{{name}}</1>",
+      "warning": "Tämä poistaa tämän konfiguraation ja kaikki siihen liittyvät lokit lopullisesti.",
+      "confirm": {
+        "text": "Haluatko varmasti poistaa <1>{{name}}</1>? Tätä toimintoa ei voi kumota."
+      }
+    },
+    "leave": {
+      "button": "Jätä <1>{{name}}</1>",
+      "warning": "Menetät pääsyn tähän profiiliin.",
+      "confirm": {
+        "text": "Haluatko varmasti jättää <1>{{name}}</1>? Tätä toimintoa ei voi kumota."
+      }
     }
+  }
 }

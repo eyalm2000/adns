@@ -151,8 +151,10 @@ fun SegmentedSettingRow(
             if (titleContent != null) {
                 titleContent.invoke()
             } else if (isBeta) {
-                val betaLabel = Locales.getString("beta")
+                val betaLabel = Locales.getString("global", "beta")
                     .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
+                    ?: Locales.getString("beta")
+                        .takeIf { !it.startsWith("[missing:") && it.isNotBlank() }
                     ?: "Beta"
                 val formattedBeta = betaLabel.replaceFirstChar {
                     if (it.isLowerCase()) it.titlecase(java.util.Locale.ROOT) else it.toString()
