@@ -15,6 +15,7 @@ data class NextDnsLogEntry(
     @SerializedName("encrypted") val encrypted: Boolean,
     @SerializedName("protocol") val protocol: String,
     @SerializedName("clientIp") val clientIp: String? = null,
+    @SerializedName("client") val client: String? = null,
     @SerializedName("status") val status: String,
     @SerializedName("reasons") val reasons: List<NextDnsLogReason> = emptyList(),
     @SerializedName("device") val device: NextDnsLogDevice? = null,

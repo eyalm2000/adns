@@ -147,6 +147,7 @@
     <string name="all_devices">כל המכשירים</string>
     <string name="unknown_devices">מכשירים לא ידועים</string>
     <string name="device">מכשיר</string>
+    <string name="client">לקוח</string>
     <string name="blocked_by">נחסם על ידי</string>
     <string name="allow">אפשר</string>
     <string name="copy">העתק</string>

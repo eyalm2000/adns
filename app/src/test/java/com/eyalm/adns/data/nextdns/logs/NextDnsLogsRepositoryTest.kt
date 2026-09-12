@@ -1,6 +1,7 @@
 package com.eyalm.adns.data.nextdns.logs
 
 import com.eyalm.adns.data.nextdns.api.NextDnsApi
+import com.eyalm.adns.domain.nextdns.ApiResult
 import kotlinx.coroutines.test.runTest
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
@@ -59,5 +60,32 @@ class NextDnsLogsRepositoryTest {
             activateRequest.requestUrl!!.pathSegments.last(),
         )
         assertTrue(activateRequest.body.readUtf8().contains("\"active\":true"))
+    }
+
+    @Test
+    fun `getLogs parses client field correctly`() = runTest {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody(
+                    """{
+                        "data": [
+                            {
+                                "timestamp": "2026-09-12T08:29:02.848Z",
+                                "domain": "dc.services.visualstudio.com",
+                                "encrypted": true,
+                                "protocol": "DNS-over-HTTPS",
+                                "client": "nextdns-windows",
+                                "status": "default"
+                            }
+                        ]
+                    }"""
+                )
+        )
+
+        val result = repository.getLogs("profile-id", LogsQuery())
+        assertTrue(result is ApiResult.Success)
+        val entry = (result as ApiResult.Success).value.data.first()
+        assertEquals("nextdns-windows", entry.client)
     }
 }

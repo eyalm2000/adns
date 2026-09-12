@@ -147,6 +147,7 @@
     <string name="all_devices">All devices</string>
     <string name="unknown_devices">Unknown devices</string>
     <string name="device">Device</string>
+    <string name="client">Client</string>
     <string name="blocked_by">Blocked by</string>
     <string name="allow">Allow</string>
     <string name="copy">Copy</string>

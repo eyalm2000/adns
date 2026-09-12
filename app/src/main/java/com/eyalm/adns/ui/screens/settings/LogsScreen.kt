@@ -33,6 +33,7 @@ import androidx.compose.material.icons.filled.RawOn
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Code
 import androidx.compose.material.icons.outlined.ContentCopy
+import androidx.compose.material.icons.outlined.Dns
 import androidx.compose.material.icons.outlined.Language
 import androidx.compose.material.icons.outlined.Lock
 import androidx.compose.material.icons.outlined.LockOpen
@@ -75,6 +76,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.api.NextDnsLogEntry
 import com.eyalm.adns.data.nextdns.api.TrackerInfo
 import com.eyalm.adns.data.nextdns.logs.DomainRuleList
@@ -583,6 +585,14 @@ fun LogDetailsBottomSheet(
                                 value = "$devName$devModel"
                             )
                         }
+                    }
+
+                    log.client?.takeIf(String::isNotBlank)?.let { clientId ->
+                        BottomSheetDetailRow(
+                            icon = Icons.Outlined.Dns,
+                            label = stringResource(R.string.client),
+                            value = Locales.getString("logs", "log", "clients", clientId),
+                        )
                     }
 
                     if (log.status == "blocked" && log.reasons.isNotEmpty()) {
