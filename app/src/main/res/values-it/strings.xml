@@ -405,4 +405,9 @@
     <string name="privacy_policy">Informativa privacy</string>
     <string name="prevalence_tracks_summary">%1$s (traccia il %2$s del traffico web)</string>
     <string name="prevalent_format">%1$s prevalente</string>
+    <string name="unreleased_warning_title">Funzionalità non rilasciate</string>
+    <string name="client">Client</string>
+    <string name="unreleased">Non rilasciato</string>
+    <string name="unreleased_warning_description">Questa impostazione è una funzionalità interna sperimentale non ancora rilasciata ufficialmente da NextDNS. La sua attivazione potrebbe causare malfunzionamenti imprevisti dei siti web, falsi positivi elevati o problemi di risoluzione DNS. NextDNS potrebbe modificarla o rimuoverla in qualsiasi momento.</string>
+    <string name="unreleased_warning_enable">Comprendo i rischi, abilita</string>
 </resources>
