@@ -405,4 +405,9 @@
     <string name="privacy_policy">Məxfilik Siyasəti</string>
     <string name="prevalence_tracks_summary">%1$s (veb-trafikin %2$s-ni izləyir)</string>
     <string name="prevalent_format">Geniş yayılmış %1$s</string>
+    <string name="client">Müştəri</string>
+    <string name="unreleased">Buraxılmamış</string>
+    <string name="unreleased_warning_title">Hələ buraxılmamış funksiya</string>
+    <string name="unreleased_warning_description">Bu parametr NextDNS tərəfindən hələ rəsmi olaraq istifadəyə verilməmiş eksperimental daxili funksiyadır. Onun aktivləşdirilməsi veb-saytların gözlənilmədən işləməməsinə, çoxsaylı yanlış həyəcan siqnallarına və ya DNS ünvanlarının həll edilməsi ilə bağlı nasazlıqlara səbəb ola bilər. NextDNS istənilən vaxt bu funksiyanı dəyişdirə və ya ləğv edə bilər.</string>
+    <string name="unreleased_warning_enable">Riskləri başa düşürəm, imkan verirəm</string>
 </resources>
