@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="a_dnsbased_ad_blocker_for_android">Um bloqueador de anúncios baseado em DNS para Android</string>
+    <string name="a_dnsbased_ad_blocker_for_android">DNS Privado Turbinado</string>
     <string name="activation">Ativação</string>
     <string name="adb_shell">ADB Shell</string>
     <string name="add_item">Adicionar item</string>
@@ -112,9 +112,9 @@
     <string name="total_queries">TOTAL DE CONSULTAS</string>
     <string name="unknown_error">Erro desconhecido</string>
     <string name="uptime">Tempo de atividade</string>
-    <string name="use_a_custom_hostname_for_the_dns_server">Use um nome de host personalizado para o servidor DNS</string>
-    <string name="version_ncreated_by_eyal_meirom">Versão %1$s Criado por Eyal Meiorom</string>
-    <string name="version_v_is_available_would_you_like_to_download_it">A versão v%1$s está disponível. Você gostaria de baixá-lo?</string>
+    <string name="use_a_custom_hostname_for_the_dns_server">Use um nome de host personalizado para o servidor DNS.</string>
+    <string name="version_ncreated_by_eyal_meirom">Versão %1$s\nCriado por Eyal Meiorom</string>
+    <string name="version_v_is_available_would_you_like_to_download_it">A versão v%1$s está disponível.\nVocê gostaria de baixá-lo?</string>
     <string name="waiting_for_permission">Aguardando permissão…</string>
     <string name="welcome_to_adns">Bem-vindo ao ADNS</string>
     <string name="you_can_create_one_at_the_nextdns_website">"Você pode criar um no site NextDNS: "</string>
@@ -131,7 +131,7 @@
     <string name="preferences">PREFERÊNCIAS</string>
     <string name="failed_to_load_logs_check_your_connection">Falha ao carregar registros. Verifique sua conexão.</string>
     <string name="added_to">Adicionado %1$s a %2$s</string>
-    <string name="view_your_dns_logs">Veja seus registros DNS.</string>
+    <string name="view_your_dns_logs">Veja seus registros DNS</string>
     <string name="blocked_only">Apenas bloqueado</string>
     <string name="show_only_blocked_items">Mostrar apenas itens bloqueados</string>
     <string name="enabled_only">Somente ativado</string>
@@ -212,7 +212,7 @@
     <string name="already_linked">Já vinculado</string>
     <string name="set_device_name_in_the_nextdns_settings_section">Defina \"Nome do dispositivo\" na seção de configurações do NextDNS.</string>
     <string name="adns_app">Aplicativo ADNS</string>
-    <string name="setup_nextdns_on_another_device">Configure NextDNS em outro dispositivo.</string>
+    <string name="setup_nextdns_on_another_device">Guias de configuração, IP vinculado, DDNS</string>
     <string name="setup_another_device">Configurar outro dispositivo</string>
     <string name="download_adns">Baixar ADNS</string>
     <string name="api_key_required">Insira uma chave de API.</string>
@@ -314,7 +314,7 @@
     <string name="wifi_rules">Regras de Wi-Fi</string>
     <string name="wifi_rules_description">Desative o DNS privado em um nome Wi-Fi exato selecionado pelo usuário.</string>
     <string name="wifi_rules_enable">Habilitar regras de Wi-Fi</string>
-    <string name="wifi_rules_enable_description">Desligue o DNS em determinadas redes.</string>
+    <string name="wifi_rules_enable_description">Desligue o DNS em determinadas redes</string>
     <string name="wifi_rules_add_manual">Digite o nome do Wi-Fi</string>
     <string name="wifi_rules_ssid_label">Nome do Wi-Fi (SSID)</string>
     <string name="wifi_rules_duplicate">Este nome de Wi-Fi já está na lista.</string>
@@ -383,4 +383,31 @@
     <string name="analytics_query_types_title">Tipos de consulta</string>
     <string name="analytics_query_types_description">Tipos de registros DNS solicitados.</string>
     <string name="analytics_query_types_empty">Nenhum tipos de consultas.</string>
+    <string name="client">Cliente</string>
+    <string name="analytics_ip_versions_title">Versões IP</string>
+    <string name="analytics_ip_versions_description">Versões de protocolo de Internet usadas para fazer consultas.</string>
+    <string name="analytics_ip_versions_empty">Ainda não há versões IP.</string>
+    <string name="show_on_graph">Mostrar no Gráfico</string>
+    <string name="in_graph">No Gráfico</string>
+    <string name="top_domains">Principais Domínios</string>
+    <string name="queries_label">Consultas</string>
+    <string name="percentage">Percentagem</string>
+    <string name="location">Localização</string>
+    <string name="isp">ISP</string>
+    <string name="country">País</string>
+    <string name="country_code">Código do país</string>
+    <string name="network">Rede</string>
+    <string name="cellular">Celular</string>
+    <string name="wifi_broadband">Wi-Fi / Banda larga</string>
+    <string name="tracker">Rastreador</string>
+    <string name="id_label">ID</string>
+    <string name="max_graph_items_reached">No máximo 6 itens podem ser exibidos no gráfico</string>
+    <string name="owned_by">Propriedade de %1$s</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="prevalence_tracks_summary">%1$s (rastreia %2$s de tráfego web)</string>
+    <string name="prevalent_format">%1$s prevalente</string>
+    <string name="unreleased">Não lançado</string>
+    <string name="unreleased_warning_title">Funcionalidade não lançada</string>
+    <string name="unreleased_warning_description">Essa configuração é um recurso interno experimental que ainda não foi lançado oficialmente pela NextDNS. Ativá-la pode causar falhas inesperadas em sites, um número elevado de falsos positivos ou falhas na resolução de DNS. A NextDNS pode alterá-la ou removê-la a qualquer momento.</string>
+    <string name="unreleased_warning_enable">Entendo o risco, ativar</string>
 </resources>
