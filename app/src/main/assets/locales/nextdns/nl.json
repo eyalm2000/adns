@@ -1,1398 +1,1398 @@
 {
-  "global": {
-    "beta": "bèta",
-    "preview": "Vroege toegang",
-    "cancel": "Annuleren",
-    "add": "Toevoegen",
-    "save": "Opslaan",
-    "continue": "Doorgaan",
-    "enable": "Inschakelen",
-    "change": "Wijzigen",
-    "create": "Aanmaken",
-    "subscribe": "Abonneren",
-    "invite": "Uitnodigen",
-    "remove": "Verwijderen",
-    "leave": "Verlaten",
-    "delete": "Verwijderen",
-    "close": "Sluiten",
-    "back": "Terug",
-    "disable": "Uitschakelen",
-    "unnamedDevice": "Apparaat #{{id}}",
-    "firstConfiguration": "Mijn eerste profiel",
-    "error": "Fout",
-    "networkError": "Netwerkfout",
-    "requestFailed": "Verzoek mislukt",
-    "noProfiles": "Nog geen profielen.",
-    "search": "Zoeken",
-    "clearSearch": "Zoekopdracht wissen",
-    "copy": "Kopiëren",
-    "actions": "Acties",
-    "expand": "Uitklappen",
-    "collapse": "Inklappen"
-  },
-  "theme": {
-    "label": "Thema",
-    "system": "Systeem",
-    "light": "Licht",
-    "dark": "Donker"
-  },
-  "pages": {
-    "signup": "Registreren",
-    "login": "Inloggen",
-    "passwordReset": "Stel je wachtwoord opnieuw in",
-    "account": "Account",
-    "setup": "Instellen",
-    "security": "Beveiliging",
-    "privacy": "Privacy",
-    "parentalcontrol": "Ouderlijk toezicht",
-    "denylist": "Blokkeerlijst",
-    "allowlist": "Uitzonderingen",
-    "analytics": "Statistieken",
-    "logs": "Logboeken",
-    "settings": "Instellingen",
-    "help": "Hulp"
-  },
-  "banners": {
-    "temporary": "Dit tijdelijke account verloopt <1><0></0></1> en is alleen toegankelijk via deze browser. Registreer je nu gratis om je instellingen op te slaan.",
-    "nearQuota": "Je hebt deze maand meer dan {{queriesNearQuota, number}} verzoeken gedaan en nadert de gratis maandelijkse limiet van {{queriesQuota, number}} verzoeken. <5>Abonneer je</5> om NextDNS te blijven gebruiken.",
-    "overQuota": "Je hebt deze maand meer dan {{queriesQuota, number}} verzoeken gedaan en alle functies zijn uitgeschakeld. <3>Abonneer je</3> om NextDNS te blijven gebruiken."
-  },
-  "account": {
-    "email": "E-mailadres",
-    "newEmail": "Nieuw e-mailadres",
-    "password": "Wachtwoord",
-    "newPassword": "Nieuw wachtwoord",
-    "currentPassword": "Huidig wachtwoord",
-    "forgotPassword": "Wachtwoord vergeten?",
-    "savePassword": "Wachtwoord opslaan",
-    "passwordResetInfo": "Geef het e-mailadres op dat aan je account is gekoppeld en we sturen je een link om je wachtwoord opnieuw in te stellen.",
-    "sendEmail": "E-mail verzenden",
-    "passwordResetLinkSentMessage": "Een link om je wachtwoord opnieuw in te stellen, is verzonden naar <1>{{email}}</1>.",
-    "code": "2FA-code",
-    "login": "Inloggen",
-    "noAccountYet": "Nog geen account? <1>Registreren</1>",
-    "signup": "Registreren",
-    "alreadyHaveAnAccount": "Heb je al een account? <1>Inloggen</1>",
-    "convertingNotice": "Je zet een tijdelijk account om naar een echt account. Al je instellingen worden opgeslagen.",
-    "convertingDeviceOnlyNotice": "Je zet een account dat alleen op dit apparaat beschikbaar is om naar een volledig account. Al je instellingen worden opgeslagen.",
-    "logout": "Uitloggen",
-    "errors": {
-      "email": {
-        "required": "Geef een e-mailadres op.",
-        "invalid": "Geef een geldig e-mailadres op.",
-        "taken": "Dit e-mailadres is al in gebruik."
-      },
-      "password": {
-        "required": "Geef een wachtwoord op.",
-        "invalidCombination": "Ongeldige combinatie van e-mailadres en wachtwoord."
-      },
-      "currentPassword": {
-        "required": "Geef je huidige wachtwoord op.",
-        "incorrect": "Het ingevoerde wachtwoord is onjuist."
-      },
-      "code": {
-        "required": "Geef een 2FA-code op.",
-        "invalid": "Geef een 6-cijferige code op.",
-        "incorrect": "Onjuiste 2FA-code."
-      },
-      "resetPasswordToken": {
-        "invalid": "Ongeldig of verlopen token."
-      }
+    "global": {
+        "beta": "bèta",
+        "preview": "Vroege toegang",
+        "cancel": "Annuleren",
+        "add": "Toevoegen",
+        "save": "Opslaan",
+        "continue": "Doorgaan",
+        "enable": "Inschakelen",
+        "change": "Wijzigen",
+        "create": "Aanmaken",
+        "subscribe": "Abonneren",
+        "invite": "Uitnodigen",
+        "remove": "Verwijderen",
+        "leave": "Verlaten",
+        "delete": "Verwijderen",
+        "close": "Sluiten",
+        "back": "Terug",
+        "disable": "Uitschakelen",
+        "unnamedDevice": "Apparaat #{{id}}",
+        "firstConfiguration": "Mijn eerste profiel",
+        "error": "Fout",
+        "networkError": "Netwerkfout",
+        "requestFailed": "Verzoek mislukt",
+        "noProfiles": "Nog geen profielen.",
+        "search": "Zoeken",
+        "clearSearch": "Zoekopdracht wissen",
+        "copy": "Kopiëren",
+        "actions": "Acties",
+        "expand": "Uitklappen",
+        "collapse": "Inklappen"
     },
-    "affiliation": {
-      "name": "Partnerprogramma",
-      "description": "Help ons NextDNS bekend te maken door <1>{{link}}</1> te delen en ontvang <3>{{share, percentage}}</3> van de abonnementsbetalingen van mensen die je aanbrengt gedurende de eerste <5>{{months, number}} maanden</5> na de start van hun eerste betaalde abonnement.",
-      "balance": {
-        "name": "Saldo"
-      },
-      "availableBalance": {
-        "name": "Beschikbaar saldo",
-        "description": "Het saldo is na een maand beschikbaar voor uitbetaling, zodat eventuele terugbetalingen kunnen worden gedekt."
-      },
-      "payout": {
-        "button": "Uitbetalen",
-        "minimum": "Voor uitbetalingen is een beschikbaar saldo van minimaal {{amount, price}} nodig.",
-        "form": {
-          "paypalEmail": "PayPal-e-mailadres",
-          "errors": {
-            "paypalEmail": {
-              "required": "Geef een PayPal-e-mailadres op.",
-              "invalid": "Geef een geldig PayPal-e-mailadres op."
-            }
-          }
-        }
-      }
+    "theme": {
+        "label": "Thema",
+        "system": "Systeem",
+        "light": "Licht",
+        "dark": "Donker"
     },
-    "usage": {
-      "name": "Gratis gebruik",
-      "description": "NextDNS is gratis te gebruiken tot {{queries, number}} verzoeken per maand, daarna worden alle functies tijdelijk uitgeschakeld tot de volgende maand.",
-      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} verzoeken</1>",
-      "overQuota": {
-        "message": "Je hebt deze maand meer dan {{queries, number}} verzoeken gedaan.",
-        "info": "NextDNS zal DNS-verzoeken blijven verwerken, maar alle functies zijn tijdelijk uitgeschakeld tot volgende maand."
-      },
-      "subscribe": {
-        "ios": "Ga in je browser naar my.nextdns.io om je op de dienst te abonneren.",
-        "upsell": "Krijg een onbeperkt aantal verzoeken, vanaf {{amount, price}} per maand."
-      }
+    "pages": {
+        "signup": "Registreren",
+        "login": "Inloggen",
+        "passwordReset": "Stel je wachtwoord opnieuw in",
+        "account": "Account",
+        "setup": "Instellen",
+        "security": "Beveiliging",
+        "privacy": "Privacy",
+        "parentalcontrol": "Ouderlijk toezicht",
+        "denylist": "Blokkeerlijst",
+        "allowlist": "Uitzonderingen",
+        "analytics": "Statistieken",
+        "logs": "Logboeken",
+        "settings": "Instellingen",
+        "help": "Hulp"
     },
-    "subscription": {
-      "name": "Abonnement",
-      "plans": {
-        "pro": "Pro",
-        "business": "Zakelijk",
-        "education": "Onderwijs"
-      },
-      "intervals": {
-        "month": "maandelijks abonnement",
-        "year": "jaarlijks abonnement"
-      },
-      "per": {
-        "month": "per maand",
-        "year": "per jaar"
-      },
-      "units": {
-        "business_one": "{{count, number}} werknemer",
-        "business_other": "{{count, number}} werknemers",
-        "education_one": "{{count, number}} student",
-        "education_other": "{{count, number}} studenten"
-      },
-      "planFull": "{{plan}} ({{interval}})",
-      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-      "expires": "Je abonnement loopt af op {{date, date}}.",
-      "managedByApple": "Je abonnement wordt beheerd via je Apple Account. Gebruik de abonnementsinstellingen van Apple om het te wijzigen of op te zeggen.",
-      "manageOnApple": "Abonnement bij Apple beheren",
-      "restart": {
-        "button": "Abonnement hervatten"
-      },
-      "changePlan": {
-        "button": "Abonnement wijzigen"
-      },
-      "renewal": "Je volgende automatische betaling van {{amount, price}} is op {{date, date}}.",
-      "changePaymentMethod": {
-        "button": "Betaalmethode wijzigen"
-      },
-      "cancel": {
-        "button": "Abonnement opzeggen",
-        "confirm": {
-          "text": "Je huidige abonnement blijft geldig tot {{date, date}}.",
-          "submit": "Abonnement opzeggen"
-        }
-      },
-      "subscribe": {
-        "choosePlan": "Kies een abonnement",
-        "addPaymentMethod": "Betaalmethode toevoegen",
-        "included": "Alle abonnementen bevatten <1>toegang tot alle functies</1>, <3>onbeperkt aantal apparaten</3> en <5>onbeperkt aantal verzoeken</5>.",
-        "savings": "Bespaar {{percent, percentage}} ten opzichte van het maandabonnement",
-        "familyOnly": "* Pro-abonnementen zijn alleen bedoeld voor persoonlijk gebruik (en dat van naaste familie).",
-        "unitsQuestion": {
-          "business": "Hoeveel <1>werknemers</1> heeft je bedrijf in dienst?",
-          "education": "Hoeveel <1>studenten</1> heeft je school (of schoolbestuur)?"
-        },
-        "unitsLabel": {
-          "business": "Aantal werknemers",
-          "education": "Aantal studenten"
-        },
-        "asYouGrow": {
-          "business": "* Denk eraan om je abonnement bij te werken naarmate het aantal werknemers toeneemt.",
-          "education": "* Vergeet niet je abonnement bij te werken naarmate het aantal studenten toeneemt."
-        },
-        "starting": {
-          "business": "<0>Vanaf </0><1>{{price, price}}</1><2> per maand voor {{units, number}} werknemers</2>",
-          "education": "<0>Vanaf </0><1>{{price, price}}</1><2> per maand voor {{units, number}} studenten</2>"
-        },
-        "card": {
-          "number": "Kaartnummer",
-          "expiration": "Vervaldatum",
-          "code": "Beveiligingscode",
-          "stripe": "We gebruiken Stripe — een toonaangevende betalingsdienst — om kaartbetalingen veilig te verwerken zonder ooit rechtstreeks toegang tot je kaartgegevens te hebben."
-        },
-        "paypal": {
-          "text": "Klik op de knop Ga verder naar PayPal om je met PayPal te abonneren."
-        },
-        "bitpay": {
-          "text": "Klik op de knop Ga verder naar BitPay om met cryptovaluta te betalen.",
-          "toYearly": "We accepteren geen betalingen met cryptovaluta voor maandabonnementen. <1>Als je doorgaat, stap je automatisch over op het jaarabonnement.</1>",
-          "remainder": "Je huidige abonnement is al betaald tot {{date, date}}. Het bedrag wordt nu in rekening gebracht en het restant wordt automatisch toegevoegd aan de nieuwe vervaldatum."
-        },
-        "continueTo": "Ga verder naar <1></1>"
-      }
+    "banners": {
+        "temporary": "Dit tijdelijke account verloopt <1><0></0></1> en is alleen toegankelijk via deze browser. Registreer je nu gratis om je instellingen op te slaan.",
+        "nearQuota": "Je hebt deze maand meer dan {{queriesNearQuota, number}} verzoeken gedaan en nadert de gratis maandelijkse limiet van {{queriesQuota, number}} verzoeken. <5>Abonneer je</5> om NextDNS te blijven gebruiken.",
+        "overQuota": "Je hebt deze maand meer dan {{queriesQuota, number}} verzoeken gedaan en alle functies zijn uitgeschakeld. <3>Abonneer je</3> om NextDNS te blijven gebruiken."
     },
-    "business": {
-      "name": "Zakelijk",
-      "description": "Voor belastingdoeleinden hebben we je bedrijfsnaam, adres en btw-nummer (of equivalent) nodig. Dit is wettelijk verplicht en zal op alle facturen verschijnen.",
-      "button": {
-        "add": "Bedrijfsgegevens toevoegen",
-        "update": "Bijwerken"
-      },
-      "form": {
-        "name": {
-          "label": "Naam",
-          "placeholder": "Voorbeeld B.V.",
-          "errors": {
-            "required": "Geef de naam van je bedrijf op."
-          }
-        },
-        "address": {
-          "label": "Adres",
-          "placeholder": "Het Torentje, Binnenhof 17\n2513 AA Den Haag\nNederland",
-          "errors": {
-            "required": "Geef het adres van je bedrijf op."
-          }
-        },
-        "vatNumber": {
-          "label": "Btw-nummer (of equivalent)"
-        }
-      }
-    },
-    "invoices": {
-      "name": "Facturen",
-      "description": "Factuurgeschiedenis en alle facturen voor je account.",
-      "pending": "{{amount, price}} (In behandeling)",
-      "show-more": "Meer weergeven",
-      "show-less": "Minder weergeven",
-      "invoice": {
-        "title": "Factuur #{{code}}",
-        "to": "Aan: <1>{{email}}</1>",
-        "vatNumber": "Btw-nummer (of equivalent): {{number}}",
-        "columns": {
-          "plan": "Abonnement",
-          "period": "Periode",
-          "amount": "Bedrag"
-        },
-        "vat": "Btw ({{rate, percentage}})",
-        "total": "Totaal",
-        "footer": {
-          "reverseCharged": "Btw (of equivalent) verlegd.",
-          "currency": "Alle getoonde bedragen zijn in {{code}}."
-        }
-      }
-    },
-    "changeEmail": {
-      "name": "E-mailadres",
-      "description": "Wijzig het e-mailadres dat je gebruikt om in te loggen op je account en belangrijke meldingen te ontvangen.",
-      "button": "E-mailadres wijzigen"
-    },
-    "changePassword": {
-      "name": "Wachtwoord",
-      "description": "Wijzig het wachtwoord dat je gebruikt om in te loggen op je account en om gevoelige acties te bevestigen.",
-      "button": "Wachtwoord wijzigen"
-    },
-    "2fa": {
-      "name": "Tweefactorauthenticatie (2FA)",
-      "description": "Tweefactorauthenticatie (2FA) is een extra beveiligingslaag die bij het inloggen op je account een aanvullende, tijdgebaseerde 6-cijferige code vereist.",
-      "enabled": "2FA is ingeschakeld voor je account.",
-      "enable": {
-        "button": "2FA inschakelen",
-        "secret": "Geheime sleutel voor tweefactorauthenticatie",
-        "modal": {
-          "howto": "Gebruik een authenticator-app zoals <1>Google Authenticator</1> of een wachtwoordbeheerder die 2FA ondersteunt. Je kunt ofwel de QR-code scannen, erop klikken om de <3>{{otpauth}}</3>-link te openen of je geheime sleutel handmatig kopiëren en plakken."
-        }
-      },
-      "recovery": {
-        "button": "Herstelcodes",
-        "modal": {
-          "howto": "Gebruik deze herstelcodes om toegang te krijgen tot je account voor het geval je de toegang tot je apparaat verliest en geen tweefactorauthenticatiecodes kunt ontvangen. Elke code kan slechts één keer worden gebruikt.",
-          "download": "Downloaden",
-          "regen": "Opnieuw genereren"
-        }
-      },
-      "disable": {
-        "button": "2FA uitschakelen"
-      }
-    },
-    "api": {
-      "description": "Maak en beheer je profielen programmatisch. Lees de documentatie op <1>{{link}}</1>.",
-      "copy": "API-sleutel kopiëren",
-      "remove": "API-sleutel verwijderen",
-      "create": {
-        "button": "API-sleutel genereren"
-      }
-    },
-    "delete": {
-      "button": "Account verwijderen",
-      "warning": "Hiermee verwijder je je account en al je profielen voorgoed.",
-      "confirm": {
-        "text": "Weet je zeker dat je je account wilt verwijderen? Dit kan niet ongedaan worden gemaakt."
-      }
-    },
-    "temporary": {
-      "expired": {
-        "modal": {
-          "title": "Verlopen",
-          "text": "Je tijdelijke account is verlopen. Registreer je nu om je instellingen op te slaan en NextDNS te blijven gebruiken. Het is gratis."
-        }
-      }
-    }
-  },
-  "configurationSelector": {
-    "new": "Nieuw",
-    "form": {
-      "title": "Nieuw profiel",
-      "name": {
-        "label": "Naam",
-        "placeholder": "Thuis, Kinderen, Kantoor, ...",
+    "account": {
+        "email": "E-mailadres",
+        "newEmail": "Nieuw e-mailadres",
+        "password": "Wachtwoord",
+        "newPassword": "Nieuw wachtwoord",
+        "currentPassword": "Huidig wachtwoord",
+        "forgotPassword": "Wachtwoord vergeten?",
+        "savePassword": "Wachtwoord opslaan",
+        "passwordResetInfo": "Geef het e-mailadres op dat aan je account is gekoppeld en we sturen je een link om je wachtwoord opnieuw in te stellen.",
+        "sendEmail": "E-mail verzenden",
+        "passwordResetLinkSentMessage": "Een link om je wachtwoord opnieuw in te stellen, is verzonden naar <1>{{email}}</1>.",
+        "code": "2FA-code",
+        "login": "Inloggen",
+        "noAccountYet": "Nog geen account? <1>Registreren</1>",
+        "signup": "Registreren",
+        "alreadyHaveAnAccount": "Heb je al een account? <1>Inloggen</1>",
+        "convertingNotice": "Je zet een tijdelijk account om naar een echt account. Al je instellingen worden opgeslagen.",
+        "convertingDeviceOnlyNotice": "Je zet een account dat alleen op dit apparaat beschikbaar is om naar een volledig account. Al je instellingen worden opgeslagen.",
+        "logout": "Uitloggen",
         "errors": {
-          "required": "Geef een naam op.",
-          "taken": "Je hebt al een profiel met die naam."
-        }
-      }
-    }
-  },
-  "setup": {
-    "status": {
-      "ok": {
-        "primary": "Alles in orde!",
-        "secondary": "Dit apparaat gebruikt NextDNS met dit profiel."
-      },
-      "mismatch": {
-        "withoutConfiguration": {
-          "primary": "Dit apparaat gebruikt NextDNS zonder profiel.",
-          "secondary": {
-            "clients": "Zorg ervoor dat je de onderstaande profiel-ID instelt in de app-instellingen.",
-            "firefox": "Zorg ervoor dat je het onderstaande DNS-over-HTTPS-endpoint instelt in Firefox.",
-            "doh": "Zorg ervoor dat je het onderstaande DNS-over-HTTPS-endpoint gebruikt.",
-            "dot": "Zorg ervoor dat je het onderstaande DNS-over-TLS-endpoint gebruikt.",
-            "ipv6": "Zorg ervoor dat je de onderstaande IPv6-adressen gebruikt.",
-            "servers": "Gebruik de DNS-servers in het gedeelte Gekoppeld IP hieronder (de DNS-servers verschillen per profiel).",
-            "link": "Zorg ervoor dat je je IP-adres koppelt in het gedeelte Gekoppeld IP hieronder."
-          }
+            "email": {
+                "required": "Geef een e-mailadres op.",
+                "invalid": "Geef een geldig e-mailadres op.",
+                "taken": "Dit e-mailadres is al in gebruik."
+            },
+            "password": {
+                "required": "Geef een wachtwoord op.",
+                "invalidCombination": "Ongeldige combinatie van e-mailadres en wachtwoord."
+            },
+            "currentPassword": {
+                "required": "Geef je huidige wachtwoord op.",
+                "incorrect": "Het ingevoerde wachtwoord is onjuist."
+            },
+            "code": {
+                "required": "Geef een 2FA-code op.",
+                "invalid": "Geef een 6-cijferige code op.",
+                "incorrect": "Onjuiste 2FA-code."
+            },
+            "resetPasswordToken": {
+                "invalid": "Ongeldig of verlopen token."
+            }
         },
-        "withConfiguration": {
-          "primary": "Dit apparaat gebruikt NextDNS met een ander profiel.",
-          "secondary": {
-            "sameAccount": "Dit apparaat gebruikt momenteel ‘{{name}}’.",
-            "otherAccount": "Zorg ervoor dat je een van de endpoints gebruikt die op deze pagina worden vermeld."
-          }
-        }
-      },
-      "unconfigured": {
-        "primary": "Dit apparaat maakt geen gebruik van NextDNS.",
-        "secondary": "Dit apparaat gebruikt momenteel ‘{{resolver}}’ als DNS-resolver."
-      },
-      "error": {
-        "primary": "Fout bij het controleren van de huidige status.",
-        "secondary": "Neem contact met ons op als dit probleem aanhoudt na het vernieuwen van de pagina."
-      },
-      "apr": {
-        "ok": {
-          "primary": "Dit apparaat gebruikt NextDNS met Privédoorgifte in iCloud.",
-          "secondary": "Functies zoals SafeSearch, de Beperkte modus van YouTube en Herschrijvingen zijn niet compatibel met Privédoorgifte in iCloud."
+        "affiliation": {
+            "name": "Partnerprogramma",
+            "description": "Help ons NextDNS bekend te maken door <1>{{link}}</1> te delen en ontvang <3>{{share, percentage}}</3> van de abonnementsbetalingen van mensen die je aanbrengt gedurende de eerste <5>{{months, number}} maanden</5> na de start van hun eerste betaalde abonnement.",
+            "balance": {
+                "name": "Saldo"
+            },
+            "availableBalance": {
+                "name": "Beschikbaar saldo",
+                "description": "Het saldo is na een maand beschikbaar voor uitbetaling, zodat eventuele terugbetalingen kunnen worden gedekt."
+            },
+            "payout": {
+                "button": "Uitbetalen",
+                "minimum": "Voor uitbetalingen is een beschikbaar saldo van minimaal {{amount, price}} nodig.",
+                "form": {
+                    "paypalEmail": "PayPal-e-mailadres",
+                    "errors": {
+                        "paypalEmail": {
+                            "required": "Geef een PayPal-e-mailadres op.",
+                            "invalid": "Geef een geldig PayPal-e-mailadres op."
+                        }
+                    }
+                }
+            }
         },
-        "blockpage": {
-          "primary": "Dit apparaat gebruikt NextDNS met Privédoorgifte in iCloud.",
-          "secondary": "Als je de instelling Blokkeerpagina inschakelt terwijl je Privédoorgifte in iCloud gebruikt, wordt de blokkering verstoord."
+        "usage": {
+            "name": "Gratis gebruik",
+            "description": "NextDNS is gratis te gebruiken tot {{queries, number}} verzoeken per maand, daarna worden alle functies tijdelijk uitgeschakeld tot de volgende maand.",
+            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} verzoeken</1>",
+            "overQuota": {
+                "message": "Je hebt deze maand meer dan {{queries, number}} verzoeken gedaan.",
+                "info": "NextDNS zal DNS-verzoeken blijven verwerken, maar alle functies zijn tijdelijk uitgeschakeld tot volgende maand."
+            },
+            "subscribe": {
+                "ios": "Ga in je browser naar my.nextdns.io om je op de dienst te abonneren.",
+                "upsell": "Krijg een onbeperkt aantal verzoeken, vanaf {{amount, price}} per maand."
+            }
+        },
+        "subscription": {
+            "name": "Abonnement",
+            "plans": {
+                "pro": "Pro",
+                "business": "Zakelijk",
+                "education": "Onderwijs"
+            },
+            "intervals": {
+                "month": "maandelijks abonnement",
+                "year": "jaarlijks abonnement"
+            },
+            "per": {
+                "month": "per maand",
+                "year": "per jaar"
+            },
+            "units": {
+                "business_one": "{{count, number}} werknemer",
+                "business_other": "{{count, number}} werknemers",
+                "education_one": "{{count, number}} student",
+                "education_other": "{{count, number}} studenten"
+            },
+            "planFull": "{{plan}} ({{interval}})",
+            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+            "expires": "Je abonnement loopt af op {{date, date}}.",
+            "managedByApple": "Je abonnement wordt beheerd via je Apple Account. Gebruik de abonnementsinstellingen van Apple om het te wijzigen of op te zeggen.",
+            "manageOnApple": "Abonnement bij Apple beheren",
+            "restart": {
+                "button": "Abonnement hervatten"
+            },
+            "changePlan": {
+                "button": "Abonnement wijzigen"
+            },
+            "renewal": "Je volgende automatische betaling van {{amount, price}} is op {{date, date}}.",
+            "changePaymentMethod": {
+                "button": "Betaalmethode wijzigen"
+            },
+            "cancel": {
+                "button": "Abonnement opzeggen",
+                "confirm": {
+                    "text": "Je huidige abonnement blijft geldig tot {{date, date}}.",
+                    "submit": "Abonnement opzeggen"
+                }
+            },
+            "subscribe": {
+                "choosePlan": "Kies een abonnement",
+                "addPaymentMethod": "Betaalmethode toevoegen",
+                "included": "Alle abonnementen bevatten <1>toegang tot alle functies</1>, <3>onbeperkt aantal apparaten</3> en <5>onbeperkt aantal verzoeken</5>.",
+                "savings": "Bespaar {{percent, percentage}} ten opzichte van het maandabonnement",
+                "familyOnly": "* Pro-abonnementen zijn alleen bedoeld voor persoonlijk gebruik (en dat van naaste familie).",
+                "unitsQuestion": {
+                    "business": "Hoeveel <1>werknemers</1> heeft je bedrijf in dienst?",
+                    "education": "Hoeveel <1>studenten</1> heeft je school (of schoolbestuur)?"
+                },
+                "unitsLabel": {
+                    "business": "Aantal werknemers",
+                    "education": "Aantal studenten"
+                },
+                "asYouGrow": {
+                    "business": "* Denk eraan om je abonnement bij te werken naarmate het aantal werknemers toeneemt.",
+                    "education": "* Vergeet niet je abonnement bij te werken naarmate het aantal studenten toeneemt."
+                },
+                "starting": {
+                    "business": "<0>Vanaf </0><1>{{price, price}}</1><2> per maand voor {{units, number}} werknemers</2>",
+                    "education": "<0>Vanaf </0><1>{{price, price}}</1><2> per maand voor {{units, number}} studenten</2>"
+                },
+                "card": {
+                    "number": "Kaartnummer",
+                    "expiration": "Vervaldatum",
+                    "code": "Beveiligingscode",
+                    "stripe": "We gebruiken Stripe — een toonaangevende betalingsdienst — om kaartbetalingen veilig te verwerken zonder ooit rechtstreeks toegang tot je kaartgegevens te hebben."
+                },
+                "paypal": {
+                    "text": "Klik op de knop Ga verder naar PayPal om je met PayPal te abonneren."
+                },
+                "bitpay": {
+                    "text": "Klik op de knop Ga verder naar BitPay om met cryptovaluta te betalen.",
+                    "toYearly": "We accepteren geen betalingen met cryptovaluta voor maandabonnementen. <1>Als je doorgaat, stap je automatisch over op het jaarabonnement.</1>",
+                    "remainder": "Je huidige abonnement is al betaald tot {{date, date}}. Het bedrag wordt nu in rekening gebracht en het restant wordt automatisch toegevoegd aan de nieuwe vervaldatum."
+                },
+                "continueTo": "Ga verder naar <1></1>"
+            }
+        },
+        "business": {
+            "name": "Zakelijk",
+            "description": "Voor belastingdoeleinden hebben we je bedrijfsnaam, adres en btw-nummer (of equivalent) nodig. Dit is wettelijk verplicht en zal op alle facturen verschijnen.",
+            "button": {
+                "add": "Bedrijfsgegevens toevoegen",
+                "update": "Bijwerken"
+            },
+            "form": {
+                "name": {
+                    "label": "Naam",
+                    "placeholder": "Voorbeeld B.V.",
+                    "errors": {
+                        "required": "Geef de naam van je bedrijf op."
+                    }
+                },
+                "address": {
+                    "label": "Adres",
+                    "placeholder": "Het Torentje, Binnenhof 17\n2513 AA Den Haag\nNederland",
+                    "errors": {
+                        "required": "Geef het adres van je bedrijf op."
+                    }
+                },
+                "vatNumber": {
+                    "label": "Btw-nummer (of equivalent)"
+                }
+            }
+        },
+        "invoices": {
+            "name": "Facturen",
+            "description": "Factuurgeschiedenis en alle facturen voor je account.",
+            "pending": "{{amount, price}} (In behandeling)",
+            "show-more": "Meer weergeven",
+            "show-less": "Minder weergeven",
+            "invoice": {
+                "title": "Factuur #{{code}}",
+                "to": "Aan: <1>{{email}}</1>",
+                "vatNumber": "Btw-nummer (of equivalent): {{number}}",
+                "columns": {
+                    "plan": "Abonnement",
+                    "period": "Periode",
+                    "amount": "Bedrag"
+                },
+                "vat": "Btw ({{rate, percentage}})",
+                "total": "Totaal",
+                "footer": {
+                    "reverseCharged": "Btw (of equivalent) verlegd.",
+                    "currency": "Alle getoonde bedragen zijn in {{code}}."
+                }
+            }
+        },
+        "changeEmail": {
+            "name": "E-mailadres",
+            "description": "Wijzig het e-mailadres dat je gebruikt om in te loggen op je account en belangrijke meldingen te ontvangen.",
+            "button": "E-mailadres wijzigen"
+        },
+        "changePassword": {
+            "name": "Wachtwoord",
+            "description": "Wijzig het wachtwoord dat je gebruikt om in te loggen op je account en om gevoelige acties te bevestigen.",
+            "button": "Wachtwoord wijzigen"
+        },
+        "2fa": {
+            "name": "Tweefactorauthenticatie (2FA)",
+            "description": "Tweefactorauthenticatie (2FA) is een extra beveiligingslaag die bij het inloggen op je account een aanvullende, tijdgebaseerde 6-cijferige code vereist.",
+            "enabled": "2FA is ingeschakeld voor je account.",
+            "enable": {
+                "button": "2FA inschakelen",
+                "secret": "Geheime sleutel voor tweefactorauthenticatie",
+                "modal": {
+                    "howto": "Gebruik een authenticator-app zoals <1>Google Authenticator</1> of een wachtwoordbeheerder die 2FA ondersteunt. Je kunt ofwel de QR-code scannen, erop klikken om de <3>{{otpauth}}</3>-link te openen of je geheime sleutel handmatig kopiëren en plakken."
+                }
+            },
+            "recovery": {
+                "button": "Herstelcodes",
+                "modal": {
+                    "howto": "Gebruik deze herstelcodes om toegang te krijgen tot je account voor het geval je de toegang tot je apparaat verliest en geen tweefactorauthenticatiecodes kunt ontvangen. Elke code kan slechts één keer worden gebruikt.",
+                    "download": "Downloaden",
+                    "regen": "Opnieuw genereren"
+                }
+            },
+            "disable": {
+                "button": "2FA uitschakelen"
+            }
+        },
+        "api": {
+            "description": "Maak en beheer je profielen programmatisch. Lees de documentatie op <1>{{link}}</1>.",
+            "copy": "API-sleutel kopiëren",
+            "remove": "API-sleutel verwijderen",
+            "create": {
+                "button": "API-sleutel genereren"
+            }
+        },
+        "delete": {
+            "button": "Account verwijderen",
+            "warning": "Hiermee verwijder je je account en al je profielen voorgoed.",
+            "confirm": {
+                "text": "Weet je zeker dat je je account wilt verwijderen? Dit kan niet ongedaan worden gemaakt."
+            }
+        },
+        "temporary": {
+            "expired": {
+                "modal": {
+                    "title": "Verlopen",
+                    "text": "Je tijdelijke account is verlopen. Registreer je nu om je instellingen op te slaan en NextDNS te blijven gebruiken. Het is gratis."
+                }
+            }
         }
-      }
     },
-    "endpoints": {
-      "name": "Endpoints",
-      "description": "Stel NextDNS met dit profiel in via een van de onderstaande endpoints.",
-      "help": "Weet je niet zeker hoe je deze moet gebruiken? Volg de <1>Installatiehandleiding</1>."
-    },
-    "linkedIp": {
-      "name": "Gekoppeld IP",
-      "description": "Als je NextDNS niet kunt instellen met onze apps, DNS-over-TLS, DNS-over-HTTPS of IPv6, gebruik dan de DNS-servers hieronder en koppel je IP-adres. Dit is voornamelijk voor thuisnetwerken en wordt niet aanbevolen voor mobiele apparaten.",
-      "servers": {
-        "name": "DNS-servers"
-      },
-      "ip": {
-        "name": "Gekoppeld IP",
-        "link": "IP koppelen"
-      },
-      "showAdvanced": "Geavanceerde opties weergeven",
-      "ddns": {
-        "explanation": "Je kunt Dynamic DNS (DDNS) gebruiken om je gekoppelde IP automatisch te laten bijwerken.",
-        "set": "DDNS configureren",
-        "status": "Je gebruikt momenteel <1>{{hostname}}</1> als DDNS-hostnaam. Je IP-adres wordt elke minuut automatisch bijgewerkt.",
-        "unset": "Verwijderen",
+    "configurationSelector": {
+        "new": "Nieuw",
         "form": {
-          "hostname": {
-            "label": "DDNS-hostnaam",
-            "placeholder": "example.no-ip.org",
-            "errors": {
-              "required": "Geef een hostnaam op.",
-              "invalid": "Geef een geldige hostnaam op.",
-              "ip": "Geef een hostnaam op, geen IP-adres.",
-              "error": "Er is een fout opgetreden bij het ophalen van het IP-adres achter deze hostnaam.",
-              "empty": "Deze hostnaam stuurt geen IP-adres terug.",
-              "different": "Om veiligheidsredenen moet het IP-adres dat wordt geretourneerd door de DDNS-hostnaam hetzelfde zijn als je huidige IP-adres wanneer je een Dynamic DNS toevoegt."
+            "title": "Nieuw profiel",
+            "name": {
+                "label": "Naam",
+                "placeholder": "Thuis, Kinderen, Kantoor, ...",
+                "errors": {
+                    "required": "Geef een naam op.",
+                    "taken": "Je hebt al een profiel met die naam."
+                }
             }
-          }
         }
-      },
-      "programmatically": "Je kunt je gekoppelde IP ook programmatisch bijwerken door het volgende aan te roepen:"
     },
-    "guide": {
-      "name": "Installatiehandleiding",
-      "description": "Volg de onderstaande instructies om NextDNS in te stellen op je apparaat, browser of router.",
-      "or": "Of",
-      "ipv4": {
-        "title": "IPv4 (met gekoppeld IP)"
-      },
-      "ipv6": {
-        "supported": "Je netwerk ondersteunt IPv6",
-        "notSupported": "Je netwerk ondersteunt geen IPv6"
-      },
-      "tags": {
-        "recommended": "Aanbevolen",
-        "advanced": "Geavanceerd"
-      },
-      "use": "Gebruik het volgende in <1>{{file}}</1>:",
-      "platforms": {
-        "android": {
-          "name": "Android",
-          "guides": {
-            "private": {
-              "title": "Privé-DNS",
-              "requirements": "Android 9 of hoger",
-              "steps": {
-                "1": "1. Ga naar Instellingen → Netwerk en internet → Privé-DNS (in sommige versies onder Geavanceerd).",
-                "2": "2. Selecteer de optie Hostnaam van privé-DNS-provider.",
-                "3": "3. Vul <1>{{endpoint}}</1> in en druk op Opslaan."
-              }
-            }
-          }
-        },
-        "ios": {
-          "name": "iOS",
-          "guides": {
-            "profile": {
-              "title": "Configuratieprofiel",
-              "requirements": "iOS 14 of hoger",
-              "step": "Gebruik onze generator voor Apple-configuratieprofielen op <1>{{link}}</1>."
+    "setup": {
+        "status": {
+            "ok": {
+                "primary": "Alles in orde!",
+                "secondary": "Dit apparaat gebruikt NextDNS met dit profiel."
             },
-            "app": {
-              "title": "NextDNS voor iOS",
-              "qrAlt": "Appclipcode om NextDNS op een iPhone of iPad te installeren en in te stellen",
-              "qrText": "Scan deze code om NextDNS op je iPhone of iPad te installeren en in te stellen",
-              "qrTextIos": "Scan deze code met een andere telefoon of <1>tik hier om NextDNS op dit apparaat in te stellen</1>."
-            }
-          }
-        },
-        "windows": {
-          "name": "Windows",
-          "guides": {
-            "dns-over-https": {
-              "title": "DNS via HTTPS",
-              "requirements": "Windows 11",
-              "steps": [
-                "Open de app <1>Instellingen</1>.",
-                "Ga naar <1>Netwerk en internet</1>.",
-                "Klik op <1>Wi-Fi</1> (of <3>Ethernet</3>).",
-                "Klik op <1>Hardware-eigenschappen</1>, of sla deze stap over als je op <3>Ethernet</3> hebt geklikt.",
-                "Klik op <1>Bewerken</1> naast <3>DNS-servertoewijzing</3>.",
-                "Selecteer <1>Handmatig</1>.",
-                "Schakel <1>IPv{{version}}</1> in.",
-                "Voer <1>{{ip}}</1> in als <3>Voorkeurs-DNS</3>, selecteer vervolgens <5>Aan (handmatige sjabloon)</5> en voer <7>{{endpoint}}</7> in.",
-                "Voer <1>{{ip}}</1> in als <3>Alternatieve DNS</3>, selecteer vervolgens <5>Aan (handmatige sjabloon)</5> en voer <7>{{endpoint}}</7> in.",
-                "Klik op <1>Opslaan</1>."
-              ]
+            "mismatch": {
+                "withoutConfiguration": {
+                    "primary": "Dit apparaat gebruikt NextDNS zonder profiel.",
+                    "secondary": {
+                        "clients": "Zorg ervoor dat je de onderstaande profiel-ID instelt in de app-instellingen.",
+                        "firefox": "Zorg ervoor dat je het onderstaande DNS-over-HTTPS-endpoint instelt in Firefox.",
+                        "doh": "Zorg ervoor dat je het onderstaande DNS-over-HTTPS-endpoint gebruikt.",
+                        "dot": "Zorg ervoor dat je het onderstaande DNS-over-TLS-endpoint gebruikt.",
+                        "ipv6": "Zorg ervoor dat je de onderstaande IPv6-adressen gebruikt.",
+                        "servers": "Gebruik de DNS-servers in het gedeelte Gekoppeld IP hieronder (de DNS-servers verschillen per profiel).",
+                        "link": "Zorg ervoor dat je je IP-adres koppelt in het gedeelte Gekoppeld IP hieronder."
+                    }
+                },
+                "withConfiguration": {
+                    "primary": "Dit apparaat gebruikt NextDNS met een ander profiel.",
+                    "secondary": {
+                        "sameAccount": "Dit apparaat gebruikt momenteel ‘{{name}}’.",
+                        "otherAccount": "Zorg ervoor dat je een van de endpoints gebruikt die op deze pagina worden vermeld."
+                    }
+                }
             },
-            "app": {
-              "title": "NextDNS voor Windows",
-              "steps": {
-                "1": "1. Download het installatieprogramma <1>hier</1>.",
-                "2": "2. Klik na de installatie met de rechtermuisknop op het NextDNS-pictogram in het systeemvak en open ‘Settings...’. Stel <1>{{id}}</1> in als ‘Configuration ID’.",
-                "3": "3. Klik met de rechtermuisknop op het NextDNS-pictogram in het systeemvak en klik op ‘Enable’."
-              }
+            "unconfigured": {
+                "primary": "Dit apparaat maakt geen gebruik van NextDNS.",
+                "secondary": "Dit apparaat gebruikt momenteel ‘{{resolver}}’ als DNS-resolver."
+            },
+            "error": {
+                "primary": "Fout bij het controleren van de huidige status.",
+                "secondary": "Neem contact met ons op als dit probleem aanhoudt na het vernieuwen van de pagina."
+            },
+            "apr": {
+                "ok": {
+                    "primary": "Dit apparaat gebruikt NextDNS met Privédoorgifte in iCloud.",
+                    "secondary": "Functies zoals SafeSearch, de Beperkte modus van YouTube en Herschrijvingen zijn niet compatibel met Privédoorgifte in iCloud."
+                },
+                "blockpage": {
+                    "primary": "Dit apparaat gebruikt NextDNS met Privédoorgifte in iCloud.",
+                    "secondary": "Als je de instelling Blokkeerpagina inschakelt terwijl je Privédoorgifte in iCloud gebruikt, wordt de blokkering verstoord."
+                }
+            }
+        },
+        "endpoints": {
+            "name": "Endpoints",
+            "description": "Stel NextDNS met dit profiel in via een van de onderstaande endpoints.",
+            "help": "Weet je niet zeker hoe je deze moet gebruiken? Volg de <1>Installatiehandleiding</1>."
+        },
+        "linkedIp": {
+            "name": "Gekoppeld IP",
+            "description": "Als je NextDNS niet kunt instellen met onze apps, DNS-over-TLS, DNS-over-HTTPS of IPv6, gebruik dan de DNS-servers hieronder en koppel je IP-adres. Dit is voornamelijk voor thuisnetwerken en wordt niet aanbevolen voor mobiele apparaten.",
+            "servers": {
+                "name": "DNS-servers"
             },
             "ip": {
-              "steps": {
-                "1": "1. Open Start, zoek naar Configuratiescherm en open het.",
-                "2": "2. Klik op Netwerk en internet en vervolgens op Netwerkcentrum.",
-                "3": "3. Klik op Adapterinstellingen wijzigen.",
-                "4": "4. Klik met de rechtermuisknop op het Wi-Fi-netwerk waarmee je bent verbonden en klik op Eigenschappen.",
-                "5": "5. Selecteer Internet Protocol versie {{version}}.",
-                "6": "6. Klik op Eigenschappen.",
-                "7": "7. Selecteer De volgende DNS-serveradressen gebruiken.",
-                "8": "8. Vervang de huidige adressen (indien aanwezig) door <1>{{dns1}}</1> en <3>{{dns2}}</3>.",
-                "9": "9. Klik op OK en vervolgens op Sluiten. Mogelijk moet je je browser opnieuw opstarten."
-              }
+                "name": "Gekoppeld IP",
+                "link": "IP koppelen"
             },
-            "yoga": {
-              "steps": {
-                "1": "1. Installeer YogaDNS vanaf <1>{{link}}</1>.",
-                "2": "2. Volg de instructies voor NextDNS op <1>{{link}}</1> en gebruik <3>{{id}}</3> als ‘Configuration ID’."
-              }
-            }
-          }
+            "showAdvanced": "Geavanceerde opties weergeven",
+            "ddns": {
+                "explanation": "Je kunt Dynamic DNS (DDNS) gebruiken om je gekoppelde IP automatisch te laten bijwerken.",
+                "set": "DDNS configureren",
+                "status": "Je gebruikt momenteel <1>{{hostname}}</1> als DDNS-hostnaam. Je IP-adres wordt elke minuut automatisch bijgewerkt.",
+                "unset": "Verwijderen",
+                "form": {
+                    "hostname": {
+                        "label": "DDNS-hostnaam",
+                        "placeholder": "example.no-ip.org",
+                        "errors": {
+                            "required": "Geef een hostnaam op.",
+                            "invalid": "Geef een geldige hostnaam op.",
+                            "ip": "Geef een hostnaam op, geen IP-adres.",
+                            "error": "Er is een fout opgetreden bij het ophalen van het IP-adres achter deze hostnaam.",
+                            "empty": "Deze hostnaam stuurt geen IP-adres terug.",
+                            "different": "Om veiligheidsredenen moet het IP-adres dat wordt geretourneerd door de DDNS-hostnaam hetzelfde zijn als je huidige IP-adres wanneer je een Dynamic DNS toevoegt."
+                        }
+                    }
+                }
+            },
+            "programmatically": "Je kunt je gekoppelde IP ook programmatisch bijwerken door het volgende aan te roepen:"
         },
-        "macos": {
-          "name": "macOS",
-          "guides": {
-            "app": {
-              "title": "NextDNS voor macOS",
-              "steps": {
-                "1": "1. <1>Download</1> en installeer onze officiële app.",
-                "2": "2. Volg de instructies.",
-                "3": "3. Wanneer om de profiel-ID wordt gevraagd, vul je <1>{{id}}</1> in."
-              }
+        "guide": {
+            "name": "Installatiehandleiding",
+            "description": "Volg de onderstaande instructies om NextDNS in te stellen op je apparaat, browser of router.",
+            "or": "Of",
+            "ipv4": {
+                "title": "IPv4 (met gekoppeld IP)"
             },
-            "profile": {
-              "requirements": "macOS Big Sur of hoger"
+            "ipv6": {
+                "supported": "Je netwerk ondersteunt IPv6",
+                "notSupported": "Je netwerk ondersteunt geen IPv6"
             },
-            "ip": {
-              "steps": {
-                "1": "1. Open Systeeminstellingen (Systeemvoorkeuren in oudere versies van macOS) en klik op Netwerk.",
-                "2": "2. Selecteer je actieve netwerkverbinding en klik op Details (Geavanceerd in oudere versies van macOS).",
-                "3": "3. Ga naar het gedeelte DNS.",
-                "4": "4. Verwijder in de lijst met DNS-servers alle adressen (indien aanwezig) en voeg <1>{{dns1}}</1> en <3>{{dns2}}</3> toe.",
-                "5": "5. Klik op OK en vervolgens op Pas toe als die knop wordt weergegeven."
-              }
+            "tags": {
+                "recommended": "Aanbevolen",
+                "advanced": "Geavanceerd"
             },
-            "cli": {
-              "title": "NextDNS-opdrachtregelclient",
-              "steps": {
-                "1": "1. Voer de volgende opdracht uit: <1>{{command}}</1>",
-                "2": "2. Volg de instructies."
-              },
-              "manual": "Ga naar onze opensource-repository op <1>{{link}}</1> voor handmatige installatie-instructies."
+            "use": "Gebruik het volgende in <1>{{file}}</1>:",
+            "platforms": {
+                "android": {
+                    "name": "Android",
+                    "guides": {
+                        "private": {
+                            "title": "Privé-DNS",
+                            "requirements": "Android 9 of hoger",
+                            "steps": {
+                                "1": "1. Ga naar Instellingen → Netwerk en internet → Privé-DNS (in sommige versies onder Geavanceerd).",
+                                "2": "2. Selecteer de optie Hostnaam van privé-DNS-provider.",
+                                "3": "3. Vul <1>{{endpoint}}</1> in en druk op Opslaan."
+                            }
+                        }
+                    }
+                },
+                "ios": {
+                    "name": "iOS",
+                    "guides": {
+                        "profile": {
+                            "title": "Configuratieprofiel",
+                            "requirements": "iOS 14 of hoger",
+                            "step": "Gebruik onze generator voor Apple-configuratieprofielen op <1>{{link}}</1>."
+                        },
+                        "app": {
+                            "title": "NextDNS voor iOS",
+                            "qrAlt": "Appclipcode om NextDNS op een iPhone of iPad te installeren en in te stellen",
+                            "qrText": "Scan deze code om NextDNS op je iPhone of iPad te installeren en in te stellen",
+                            "qrTextIos": "Scan deze code met een andere telefoon of <1>tik hier om NextDNS op dit apparaat in te stellen</1>."
+                        }
+                    }
+                },
+                "windows": {
+                    "name": "Windows",
+                    "guides": {
+                        "dns-over-https": {
+                            "title": "DNS via HTTPS",
+                            "requirements": "Windows 11",
+                            "steps": [
+                                "Open de app <1>Instellingen</1>.",
+                                "Ga naar <1>Netwerk en internet</1>.",
+                                "Klik op <1>Wi-Fi</1> (of <3>Ethernet</3>).",
+                                "Klik op <1>Hardware-eigenschappen</1>, of sla deze stap over als je op <3>Ethernet</3> hebt geklikt.",
+                                "Klik op <1>Bewerken</1> naast <3>DNS-servertoewijzing</3>.",
+                                "Selecteer <1>Handmatig</1>.",
+                                "Schakel <1>IPv{{version}}</1> in.",
+                                "Voer <1>{{ip}}</1> in als <3>Voorkeurs-DNS</3>, selecteer vervolgens <5>Aan (handmatige sjabloon)</5> en voer <7>{{endpoint}}</7> in.",
+                                "Voer <1>{{ip}}</1> in als <3>Alternatieve DNS</3>, selecteer vervolgens <5>Aan (handmatige sjabloon)</5> en voer <7>{{endpoint}}</7> in.",
+                                "Klik op <1>Opslaan</1>."
+                            ]
+                        },
+                        "app": {
+                            "title": "NextDNS voor Windows",
+                            "steps": {
+                                "1": "1. Download het installatieprogramma <1>hier</1>.",
+                                "2": "2. Klik na de installatie met de rechtermuisknop op het NextDNS-pictogram in het systeemvak en open ‘Settings...’. Stel <1>{{id}}</1> in als ‘Configuration ID’.",
+                                "3": "3. Klik met de rechtermuisknop op het NextDNS-pictogram in het systeemvak en klik op ‘Enable’."
+                            }
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Open Start, zoek naar Configuratiescherm en open het.",
+                                "2": "2. Klik op Netwerk en internet en vervolgens op Netwerkcentrum.",
+                                "3": "3. Klik op Adapterinstellingen wijzigen.",
+                                "4": "4. Klik met de rechtermuisknop op het Wi-Fi-netwerk waarmee je bent verbonden en klik op Eigenschappen.",
+                                "5": "5. Selecteer Internet Protocol versie {{version}}.",
+                                "6": "6. Klik op Eigenschappen.",
+                                "7": "7. Selecteer De volgende DNS-serveradressen gebruiken.",
+                                "8": "8. Vervang de huidige adressen (indien aanwezig) door <1>{{dns1}}</1> en <3>{{dns2}}</3>.",
+                                "9": "9. Klik op OK en vervolgens op Sluiten. Mogelijk moet je je browser opnieuw opstarten."
+                            }
+                        },
+                        "yoga": {
+                            "steps": {
+                                "1": "1. Installeer YogaDNS vanaf <1>{{link}}</1>.",
+                                "2": "2. Volg de instructies voor NextDNS op <1>{{link}}</1> en gebruik <3>{{id}}</3> als ‘Configuration ID’."
+                            }
+                        }
+                    }
+                },
+                "macos": {
+                    "name": "macOS",
+                    "guides": {
+                        "app": {
+                            "title": "NextDNS voor macOS",
+                            "steps": {
+                                "1": "1. <1>Download</1> en installeer onze officiële app.",
+                                "2": "2. Volg de instructies.",
+                                "3": "3. Wanneer om de profiel-ID wordt gevraagd, vul je <1>{{id}}</1> in."
+                            }
+                        },
+                        "profile": {
+                            "requirements": "macOS Big Sur of hoger"
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Open Systeeminstellingen (Systeemvoorkeuren in oudere versies van macOS) en klik op Netwerk.",
+                                "2": "2. Selecteer je actieve netwerkverbinding en klik op Details (Geavanceerd in oudere versies van macOS).",
+                                "3": "3. Ga naar het gedeelte DNS.",
+                                "4": "4. Verwijder in de lijst met DNS-servers alle adressen (indien aanwezig) en voeg <1>{{dns1}}</1> en <3>{{dns2}}</3> toe.",
+                                "5": "5. Klik op OK en vervolgens op Pas toe als die knop wordt weergegeven."
+                            }
+                        },
+                        "cli": {
+                            "title": "NextDNS-opdrachtregelclient",
+                            "steps": {
+                                "1": "1. Voer de volgende opdracht uit: <1>{{command}}</1>",
+                                "2": "2. Volg de instructies."
+                            },
+                            "manual": "Ga naar onze opensource-repository op <1>{{link}}</1> voor handmatige installatie-instructies."
+                        }
+                    }
+                },
+                "linux": {
+                    "name": "Linux",
+                    "guides": {
+                        "cli": {
+                            "title": "NextDNS-opdrachtregelclient",
+                            "steps": {
+                                "1": "1. Voer de volgende opdracht uit: <1>{{command}}</1>",
+                                "2": "2. Volg de instructies."
+                            },
+                            "manual": "Ga naar onze opensource-repository op <1>{{link}}</1> voor handmatige installatie-instructies."
+                        },
+                        "ip": {
+                            "step": "Wijzig je DNS-servers in <1>{{dns1}}</1> en <3>{{dns2}}</3>."
+                        },
+                        "stubby": {
+                            "warning": "Zorg ervoor dat Stubby is gekoppeld met <1>OpenSSL 1.1.1 of hoger</1> omdat eerdere versies niet werken met NextDNS."
+                        },
+                        "unbound": {
+                            "warning": "Als recursieve resolver volgt Unbound CNAME's. Dit kan leiden tot <1>onverwacht gedrag</1> wanneer dit gebruikt wordt in combinatie met een blokkerende DNS-resolver zoals NextDNS. Zie <3>{{link}}</3>."
+                        }
+                    }
+                },
+                "chromeos": {
+                    "name": "ChromeOS",
+                    "guides": {
+                        "secure-dns": {
+                            "title": "Beveiligde DNS",
+                            "steps": [
+                                "Open de app <1>Instellingen</1>.",
+                                "Ga naar <1>Privacy en beveiliging</1>.",
+                                "Schakel <1>Beveiligde verbindingen gebruiken om sites op te zoeken</1> in.",
+                                "Selecteer <1>Aangepaste DNS-serviceprovider toevoegen</1> en vul vervolgens <3>{{endpoint}}</3> in."
+                            ]
+                        },
+                        "ip": {
+                            "step": "Wijzig je DNS-servers in <1>{{dns1}}</1> en <3>{{dns2}}</3>."
+                        }
+                    }
+                },
+                "browsers": {
+                    "name": "Browsers",
+                    "guides": {
+                        "chrome": {
+                            "title": "Google Chrome",
+                            "steps": {
+                                "1": "1. Ga naar Instellingen.",
+                                "2": "2. Klik in het gedeelte Privacy en beveiliging op Beveiliging.",
+                                "3": "3. Schakel in het gedeelte Geavanceerd de optie Beveiligde DNS gebruiken in.",
+                                "4": "4. Selecteer Aangepaste DNS-serviceprovider toevoegen en vul vervolgens <1>{{endpoint}}</1> in."
+                            }
+                        },
+                        "firefox": {
+                            "title": "Firefox",
+                            "requirements": "Alleen Windows, macOS en Linux",
+                            "steps": {
+                                "1": "1. Open Instellingen (Voorkeuren in sommige versies).",
+                                "2": "2. Klik op Privacy en Beveiliging (Privacy & Beveiliging in sommige versies).",
+                                "3": "3. Scrol omlaag naar DNS over HTTPS en open Geavanceerde instellingen als die optie wordt weergegeven.",
+                                "4": "4. Selecteer Aangepast (Verhoogde bescherming of Max. bescherming in sommige versies).",
+                                "5": "5. Selecteer Aangepast in het menu met providers.",
+                                "6": "6. Voer <1>{{endpoint}}</1> in."
+                            }
+                        },
+                        "edge": {
+                            "title": "Microsoft Edge",
+                            "steps": {
+                                "1": "1. Open Instellingen.",
+                                "2": "2. Ga naar het gedeelte Privacy, zoeken en services.",
+                                "3": "3. Schakel onder Beveiliging de optie Beveiligde DNS gebruiken in.",
+                                "4": "4. Selecteer Een serviceprovider kiezen en voer <1>{{endpoint}}</1> in."
+                            }
+                        },
+                        "brave": {
+                            "title": "Brave",
+                            "steps": {
+                                "1": "1. Open Instellingen.",
+                                "2": "2. Ga in het gedeelte Privacy en beveiliging naar Beveiliging.",
+                                "3": "3. Schakel in het gedeelte Geavanceerd de optie Beveiligde DNS gebruiken in.",
+                                "4": "4. Selecteer Aangepaste DNS-serviceprovider toevoegen en vul vervolgens <1>{{endpoint}}</1> in."
+                            }
+                        }
+                    }
+                },
+                "routers": {
+                    "name": "Routers",
+                    "guides": {
+                        "cli": {
+                            "title": "NextDNS voor routers",
+                            "requirements": "Werkt alleen op routers die uitvoerbare bestanden kunnen uitvoeren",
+                            "step": "Ga naar onze opensource-repository op <1>{{link}}</1> voor installatie-instructies."
+                        },
+                        "ip": {
+                            "ipv6": {
+                                "warning": "Sommige routers ondersteunen mogelijk de IPv6-notatie hierboven niet. Gebruik in dat geval <1>{{dns1}}</1> en <3>{{dns2}}</3>."
+                            },
+                            "steps": {
+                                "1": "1. Open de voorkeuren van je router. Meestal kun je deze bereiken vanuit de browser via een URL (zoals http://192.168.0.1/ of http://192.168.1.1/).",
+                                "2": "2. Zoek de DNS-instellingen in de interface.",
+                                "3": "3. Verwijder alle adressen (indien aanwezig) en voeg vervolgens <1>{{dns1}}</1> en <3>{{dns2}}</3> toe.",
+                                "4": "4. Klik op Opslaan (of vergelijkbaar)."
+                            }
+                        },
+                        "pfsense": {
+                            "steps": {
+                                "1": "1. Ga naar Services → DNS Resolver. Scrol op het tabblad Algemene Instellingen omlaag en klik zo nodig op Toon Aangepaste Opties om het vak Aangepaste opties weer te geven.",
+                                "2": "2. Vul de volgende regels in:"
+                            }
+                        },
+                        "mikrotik": {
+                            "run": "Voer het volgende uit:"
+                        }
+                    }
+                },
+                "vpn": {
+                    "guides": {
+                        "tailscale": {
+                            "manual": "Ga naar de Tailscale-documentatie op <2>{{link}}</2> voor installatie-instructies."
+                        }
+                    }
+                }
             }
-          }
         },
-        "linux": {
-          "name": "Linux",
-          "guides": {
-            "cli": {
-              "title": "NextDNS-opdrachtregelclient",
-              "steps": {
-                "1": "1. Voer de volgende opdracht uit: <1>{{command}}</1>",
-                "2": "2. Volg de instructies."
-              },
-              "manual": "Ga naar onze opensource-repository op <1>{{link}}</1> voor handmatige installatie-instructies."
+        "identify": {
+            "name": "Identificeer je apparaten",
+            "description": "Volg de onderstaande instructies om je apparaten te identificeren in Statistieken en Logboeken.",
+            "apps": {
+                "name": "Apps",
+                "instructions": "Schakel ‘Send Device Name’ (of ‘Report Device Name’ op Windows) in de app-instellingen in."
             },
-            "ip": {
-              "step": "Wijzig je DNS-servers in <1>{{dns1}}</1> en <3>{{dns2}}</3>."
+            "dot": {
+                "instructions": "Zet de naam voor het opgegeven domein (de naam mag alleen <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> en <7>-</7> bevatten). Gebruik <9>--</9> voor spaties.",
+                "example": "Voor ‘<1>John Router</1>’ gebruik je <3>John--Router-{{profile}}.dns.nextdns.io</3> als DNS-over-TLS-endpoint."
             },
-            "stubby": {
-              "warning": "Zorg ervoor dat Stubby is gekoppeld met <1>OpenSSL 1.1.1 of hoger</1> omdat eerdere versies niet werken met NextDNS."
-            },
-            "unbound": {
-              "warning": "Als recursieve resolver volgt Unbound CNAME's. Dit kan leiden tot <1>onverwacht gedrag</1> wanneer dit gebruikt wordt in combinatie met een blokkerende DNS-resolver zoals NextDNS. Zie <3>{{link}}</3>."
+            "doh": {
+                "instructions": "Voeg de naam toe aan de opgegeven URL (de naam moet URL-gecodeerd zijn).",
+                "example": "Voor ‘<1>John's Firefox</1>’ gebruik je <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> als DNS-over-HTTPS-endpoint."
             }
-          }
-        },
-        "chromeos": {
-          "name": "ChromeOS",
-          "guides": {
-            "secure-dns": {
-              "title": "Beveiligde DNS",
-              "steps": [
-                "Open de app <1>Instellingen</1>.",
-                "Ga naar <1>Privacy en beveiliging</1>.",
-                "Schakel <1>Beveiligde verbindingen gebruiken om sites op te zoeken</1> in.",
-                "Selecteer <1>Aangepaste DNS-serviceprovider toevoegen</1> en vul vervolgens <3>{{endpoint}}</3> in."
-              ]
-            },
-            "ip": {
-              "step": "Wijzig je DNS-servers in <1>{{dns1}}</1> en <3>{{dns2}}</3>."
-            }
-          }
-        },
-        "browsers": {
-          "name": "Browsers",
-          "guides": {
-            "chrome": {
-              "title": "Google Chrome",
-              "steps": {
-                "1": "1. Ga naar Instellingen.",
-                "2": "2. Klik in het gedeelte Privacy en beveiliging op Beveiliging.",
-                "3": "3. Schakel in het gedeelte Geavanceerd de optie Beveiligde DNS gebruiken in.",
-                "4": "4. Selecteer Aangepaste DNS-serviceprovider toevoegen en vul vervolgens <1>{{endpoint}}</1> in."
-              }
-            },
-            "firefox": {
-              "title": "Firefox",
-              "requirements": "Alleen Windows, macOS en Linux",
-              "steps": {
-                "1": "1. Open Instellingen (Voorkeuren in sommige versies).",
-                "2": "2. Klik op Privacy en Beveiliging (Privacy & Beveiliging in sommige versies).",
-                "3": "3. Scrol omlaag naar DNS over HTTPS en open Geavanceerde instellingen als die optie wordt weergegeven.",
-                "4": "4. Selecteer Aangepast (Verhoogde bescherming of Max. bescherming in sommige versies).",
-                "5": "5. Selecteer Aangepast in het menu met providers.",
-                "6": "6. Voer <1>{{endpoint}}</1> in."
-              }
-            },
-            "edge": {
-              "title": "Microsoft Edge",
-              "steps": {
-                "1": "1. Open Instellingen.",
-                "2": "2. Ga naar het gedeelte Privacy, zoeken en services.",
-                "3": "3. Schakel onder Beveiliging de optie Beveiligde DNS gebruiken in.",
-                "4": "4. Selecteer Een serviceprovider kiezen en voer <1>{{endpoint}}</1> in."
-              }
-            },
-            "brave": {
-              "title": "Brave",
-              "steps": {
-                "1": "1. Open Instellingen.",
-                "2": "2. Ga in het gedeelte Privacy en beveiliging naar Beveiliging.",
-                "3": "3. Schakel in het gedeelte Geavanceerd de optie Beveiligde DNS gebruiken in.",
-                "4": "4. Selecteer Aangepaste DNS-serviceprovider toevoegen en vul vervolgens <1>{{endpoint}}</1> in."
-              }
-            }
-          }
-        },
-        "routers": {
-          "name": "Routers",
-          "guides": {
-            "cli": {
-              "title": "NextDNS voor routers",
-              "requirements": "Werkt alleen op routers die uitvoerbare bestanden kunnen uitvoeren",
-              "step": "Ga naar onze opensource-repository op <1>{{link}}</1> voor installatie-instructies."
-            },
-            "ip": {
-              "ipv6": {
-                "warning": "Sommige routers ondersteunen mogelijk de IPv6-notatie hierboven niet. Gebruik in dat geval <1>{{dns1}}</1> en <3>{{dns2}}</3>."
-              },
-              "steps": {
-                "1": "1. Open de voorkeuren van je router. Meestal kun je deze bereiken vanuit de browser via een URL (zoals http://192.168.0.1/ of http://192.168.1.1/).",
-                "2": "2. Zoek de DNS-instellingen in de interface.",
-                "3": "3. Verwijder alle adressen (indien aanwezig) en voeg vervolgens <1>{{dns1}}</1> en <3>{{dns2}}</3> toe.",
-                "4": "4. Klik op Opslaan (of vergelijkbaar)."
-              }
-            },
-            "pfsense": {
-              "steps": {
-                "1": "1. Ga naar Services → DNS Resolver. Scrol op het tabblad Algemene Instellingen omlaag en klik zo nodig op Toon Aangepaste Opties om het vak Aangepaste opties weer te geven.",
-                "2": "2. Vul de volgende regels in:"
-              }
-            },
-            "mikrotik": {
-              "run": "Voer het volgende uit:"
-            }
-          }
-        },
-        "vpn": {
-          "guides": {
-            "tailscale": {
-              "manual": "Ga naar de Tailscale-documentatie op <2>{{link}}</2> voor installatie-instructies."
-            }
-          }
         }
-      }
     },
-    "identify": {
-      "name": "Identificeer je apparaten",
-      "description": "Volg de onderstaande instructies om je apparaten te identificeren in Statistieken en Logboeken.",
-      "apps": {
-        "name": "Apps",
-        "instructions": "Schakel ‘Send Device Name’ (of ‘Report Device Name’ op Windows) in de app-instellingen in."
-      },
-      "dot": {
-        "instructions": "Zet de naam voor het opgegeven domein (de naam mag alleen <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> en <7>-</7> bevatten). Gebruik <9>--</9> voor spaties.",
-        "example": "Voor ‘<1>John Router</1>’ gebruik je <3>John--Router-{{profile}}.dns.nextdns.io</3> als DNS-over-TLS-endpoint."
-      },
-      "doh": {
-        "instructions": "Voeg de naam toe aan de opgegeven URL (de naam moet URL-gecodeerd zijn).",
-        "example": "Voor ‘<1>John's Firefox</1>’ gebruik je <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> als DNS-over-HTTPS-endpoint."
-      }
-    }
-  },
-  "security": {
-    "feeds": {
-      "name": "Threat-intelligencefeeds",
-      "description": "Blokkeer domeinen waarvan bekend is dat ze malware verspreiden, phishingaanvallen uitvoeren en command-and-controlservers hosten met behulp van een combinatie van de meest gerenommeerde threat-intelligencefeeds — allemaal bijgewerkt in realtime.",
-      "enable": "Gebruik threat-intelligencefeeds"
-    },
-    "ai": {
-      "name": "AI-gestuurde bedreigingsdetectie",
-      "description": "Blokkeer miljoenen bedreigingen die worden gedetecteerd door onze AI-technologie — een eigen AI-engine die van de grond af aan is ontworpen voor DNS, met honderden signalen, terabytes aan trainingsgegevens en besluitvorming in realtime. Omvat IDN-homografen, typosquatting, combosquatting, DGA-domeinen, merkimitatie, het buitmaken van inloggegevens, de verspreiding van malware en dekmantelwebsites die worden gebruikt om kwaadaardige infrastructuur te verbergen.",
-      "enable": "Schakel AI-gestuurde bedreigingsdetectie in"
-    },
-    "googleSafeBrowsing": {
-      "name": "Google Safe Browsing",
-      "description": "Blokkeer malware- en phishingdomeinen met Google Safe Browsing — een technologie die miljarden URL's per dag onderzoekt op zoek naar onveilige websites. In tegenstelling tot de versie die in sommige browsers is geïntegreerd, koppelt dit je openbare IP-adres niet aan de bedreigingen en staat dit het omzeilen van de blokkering niet toe.",
-      "enable": "Schakel Google Safe Browsing in"
-    },
-    "cryptojacking": {
-      "name": "Cryptojacking",
-      "description": "Voorkom het ongeautoriseerde gebruik van je apparaten om cryptovaluta te minen.",
-      "enable": "Blokkeer cryptojacking"
-    },
-    "dnsRebinding": {
-      "name": "DNS-rebinding",
-      "description": "Voorkom dat aanvallers de controle over je lokale apparaten overnemen via internet door automatisch DNS-antwoorden met privé-IP-adressen te blokkeren.",
-      "enable": "Blokkeer DNS-rebinding"
-    },
-    "homograph": {
-      "name": "IDN-homografen",
-      "description": "Blokkeer geïnternationaliseerde domeinnamen (IDN's) die zich met behulp van op elkaar lijkende tekens voordoen als andere domeinen — bijvoorbeeld door de Latijnse letter ‘e’ te vervangen door de Cyrillische letter ‘е’.",
-      "enable": "Blokkeer IDN-homografen"
-    },
-    "typosquatting": {
-      "name": "Typosquatting",
-      "description": "Blokkeer domeinen die kwaadwillenden registreren om gebruikers te misleiden die een websiteadres verkeerd in hun browser typen — bijvoorbeeld gooogle.com in plaats van google.com.",
-      "enable": "Blokkeer typosquatting"
-    },
-    "dga": {
-      "name": "Domeingeneratiealgoritmen",
-      "description": "Blokkeer domeinen die door domeingeneratiealgoritmen (DGA's) worden gegenereerd en door verschillende malwarefamilies worden gebruikt als contactpunten met hun command-and-controlservers.",
-      "enable": "Blokkeer DGA-domeinen"
-    },
-    "nrd": {
-      "name": "Nieuw geregistreerde domeinen",
-      "description": "Blokkeer domeinen die minder dan 30 dagen geleden zijn geregistreerd. Kwaadwillenden gebruiken deze domeinen bij voorkeur om kwaadaardige campagnes te starten.",
-      "enable": "Blokkeer nieuw geregistreerde domeinen"
-    },
-    "ddns": {
-      "name": "Dynamische DNS-hostnamen",
-      "description": "Met dynamische DNS-diensten (DDNS) kunnen kwaadwillenden snel en gratis hostnamen aanmaken zonder enige validatie of identiteitscontrole. Legitieme DDNS-hostnamen worden in het dagelijks gebruik zelden bezocht, maar hun kwaadaardige tegenhangers worden veel gebruikt in phishingcampagnes.",
-      "disclaimer": "Als je DDNS gebruikt, houd er dan rekening mee dat deze instelling de eigen website en de update-API van de DDNS-diensten niet blokkeert.",
-      "enable": "Blokkeer dynamische DNS-hostnamen"
-    },
-    "parked": {
-      "name": "Geparkeerde domeinen",
-      "description": "Geparkeerde domeinen zijn websites van één pagina, vaak vol advertenties en zonder enige waarde. De monetisatie van geparkeerde domeinen kan bezoekers via advertentienetwerken en omleidingen blootstellen aan oplichting, phishingpagina's en schadelijke downloads.",
-      "enable": "Blokkeer geparkeerde domeinen"
-    },
-    "tld": {
-      "name": "Topleveldomeinen (TLD's)",
-      "description": "Blokkeer alle domeinen en subdomeinen die tot specifieke TLD's behoren.",
-      "add": "TLD toevoegen",
-      "sections": {
-        "spamhaus": "Spamhaus' meest misbruikte TLD's",
-        "all": "Alle TLD's"
-      }
-    },
-    "csam": {
-      "name": "Materiaal van seksueel kindermisbruik (CSAM)",
-      "description": "Blokkeer domeinen die materiaal van seksueel kindermisbruik hosten met de hulp van Project Arachnid, beheerd door het Canadian Centre for Child Protection. Er wordt geen informatie teruggestuurd naar Project Arachnid wanneer een domein wordt geblokkeerd.",
-      "enable": "Blokkeer materiaal van seksueel kindermisbruik"
-    },
-    "newlyActiveDomains": {
-      "name": "Nieuw actieve domeinen",
-      "description": "Blokkeer domeinen die voor het eerst worden bezocht of in het verleden weinig activiteit hebben vertoond. Dit voorkomt zero-dayaanvallen en ‘slapende’ bedreigingen door een aantoonbare geschiedenis van legitiem gebruik te vereisen voordat een domein wordt vertrouwd. Zo worden pogingen om kwaadaardige domeinen vooraf ‘op te warmen’ effectief tegengegaan.",
-      "enable": "Blokkeer nieuw actieve domeinen"
-    },
-    "freeHostingDomains": {
-      "name": "Gratis hostingdomeinen",
-      "description": "Blokkeer de standaardsubdomeinen van gratis webhostingdiensten (bijvoorbeeld *.pages.dev, *.vercel.app, *.netlify.app). Deze ‘gratis hostingdomeinen’ (FHD's) worden veelvuldig misbruikt door aanvallers om phishingsites te hosten en reputatiefilters te omzeilen. Deze instelling heeft geen invloed op legitieme websites die deze aanbieders met een eigen domeinnaam gebruiken.",
-      "enable": "Blokkeer gratis hostingdomeinen"
-    },
-    "tunnelingEndpoints": {
-      "name": "Tunneling-endpoints",
-      "description": "Blokkeer diensten die lokaal verkeer via tunnels naar het openbare internet leiden (bijvoorbeeld ngrok, Cloudflare Tunnel). Aanvallers gebruiken deze tools vaak om firewalls te omzeilen en phishingpagina's op willekeurige subdomeinen te hosten, terwijl ze hun onderliggende infrastructuur verbergen.",
-      "enable": "Blokkeer tunneling-endpoints"
-    },
-    "dataDropServices": {
-      "name": "Datadropdiensten",
-      "description": "Blokkeer de toegang tot diensten die specifiek bedoeld zijn om tekst, bestanden en JSON- of configuratiegegevens te delen of inkomende gegevens te verzamelen, waaronder webhookverzoeken, DNS-verzoeken en e-mail. Dit omvat ook legitiem gebruik van deze diensten.",
-      "enable": "Blokkeer datadropdiensten"
-    },
-    "residentialHosting": {
-      "name": "Residentiële hosting",
-      "description": "Blokkeer domeinen die verwijzen naar IP-adressen uit reeksen voor particuliere aansluitingen van internetproviders in plaats van commerciële datacenters. Legitieme webdiensten worden zelden op consumentenaansluitingen gehost, terwijl C2-servers van botnets en phishingproxy's vaak op gecompromitteerde thuisrouters draaien.",
-      "enable": "Blokkeer residentiële hosting"
-    },
-    "untrustedCertificates": {
-      "name": "Niet-vertrouwde certificaten",
-      "description": "Blokkeer domeinen die SSL/TLS-certificaten aanbieden die zijn ondertekend door niet-vertrouwde of onbekende certificaatautoriteiten (bijvoorbeeld zelfondertekende certificaten). Terwijl legitieme websites vrijwel uitsluitend vertrouwde certificaten gebruiken, vertrouwt bijna 60% van de command-and-controlservers (C2) van gangbare malware op zelfondertekende certificaten of certificaten die door niet-vertrouwde autoriteiten zijn uitgegeven om hun verkeer te versleutelen zonder een administratief spoor achter te laten.",
-      "enable": "Blokkeer niet-vertrouwde certificaten"
-    },
-    "fastFluxNetworks": {
-      "name": "Fast-fluxnetwerken",
-      "description": "Blokkeer domeinen die snel van IP-adres wisselen binnen een verspreid netwerk van gecompromitteerde apparaten (botnets) om detectie te ontlopen. Deze heuristiek herkent specifieke afwijkingen in de DNS-geldigheidsduur (Time-To-Live, TTL) en de diversiteit aan IP-adressen die kenmerkend zijn voor kwaadaardige infrastructuur en deze onderscheiden van legitieme contentdeliverynetwerken (CDN's).",
-      "enable": "Blokkeer fast-fluxnetwerken"
-    },
-    "dnsDataExfiltration": {
-      "name": "DNS-data-exfiltratie",
-      "description": "Blokkeer domeinen die het DNS-protocol gebruiken om gegevens uit je netwerk te smokkelen of verborgen opdrachten (C2) te ontvangen. Deze heuristiek analyseert DNS-verzoekpatronen in realtime — zoals abnormaal lange subdomeinen, hoge entropie en ongebruikelijke verzoektypen (bijvoorbeeld TXT) — om langzame, onopvallende gegevensdiefstal en malwarebeacons (zoals Cobalt Strike) die traditionele firewalls omzeilen, te detecteren en te stoppen.",
-      "enable": "Blokkeer DNS-data-exfiltratie"
-    },
-    "dnsPayloadDelivery": {
-      "name": "DNS-payloadlevering",
-      "description": "Voorkom dat DNS-antwoorden worden gebruikt om verborgen opdrachten of payloads naar je apparaten te sturen. Verzoeken voor recordtypen die willekeurige gegevens kunnen bevatten maar niet nodig zijn voor dagelijks surfen — zoals TXT of NULL — worden volledig geblokkeerd. CNAME-ketens worden teruggebracht tot hun uiteindelijke adres, waarbij tussenliggende records die verborgen gegevens kunnen coderen worden verwijderd. Voor standaardrecordtypen zoals A en AAAA worden te grote antwoordsecties willekeurig ingekort om gegevens die over meerdere records zijn gecodeerd onbruikbaar te maken, terwijl de normale DNS-functionaliteit behouden blijft.",
-      "enable": "Blokkeer DNS-payloadlevering"
-    },
-    "decentralizedWebGateways": {
-      "name": "Gateways naar het gedecentraliseerde web",
-      "description": "Blokkeer openbare gateways die het gedecentraliseerde web (bijvoorbeeld IPFS) verbinden met standaardbrowsers. Aanvallers misbruiken deze diensten veelvuldig om ‘onveranderlijke’ phishingpagina's en malware te hosten. Zo kunnen bedreigingen blijven bestaan door traditionele verwijderingsmaatregelen en reputatiefilters te omzeilen.",
-      "enable": "Blokkeer gateways naar het gedecentraliseerde web"
-    },
-    "highRiskTlds": {
-      "name": "Hoogrisico-TLD's",
-      "description": "Blokkeer automatisch topleveldomeinen (TLD's) waarop volgens de statistieken vooral kwaadaardige activiteiten plaatsvinden — bijvoorbeeld .zip, .mov, .top. De lijst wordt in realtime bijgewerkt op basis van wereldwijde reputatiegegevens over misbruik. Zo ben je zonder handmatige configuratie beschermd tegen grote netwerken van goedkope wegwerpdomeinen die voor phishing en spam worden gebruikt.",
-      "enable": "Blokkeer hoogrisico-TLD's"
-    }
-  },
-  "privacy": {
-    "blocklists": {
-      "name": "Filterlijsten",
-      "description": "Blokkeer advertenties en trackers met behulp van de populairste beschikbare filterlijsten — allemaal in realtime bijgewerkt.",
-      "add": "Filterlijst toevoegen",
-      "entries_one": "{{count, number}} vermelding",
-      "entries_other": "{{count, number}} vermeldingen",
-      "updated": "Bijgewerkt <1></1>",
-      "blocklists": {
-        "nextdns-recommended": {
-          "name": "NextDNS-filterlijst voor advertenties en trackers",
-          "description": "Een uitgebreide filterlijst om advertenties en trackers in alle landen te blokkeren. Dit is de aanbevolen filterlijst om mee te beginnen."
+    "security": {
+        "feeds": {
+            "name": "Threat-intelligencefeeds",
+            "description": "Blokkeer domeinen waarvan bekend is dat ze malware verspreiden, phishingaanvallen uitvoeren en command-and-controlservers hosten met behulp van een combinatie van de meest gerenommeerde threat-intelligencefeeds — allemaal bijgewerkt in realtime.",
+            "enable": "Gebruik threat-intelligencefeeds"
+        },
+        "ai": {
+            "name": "AI-gestuurde bedreigingsdetectie",
+            "description": "Blokkeer miljoenen bedreigingen die worden gedetecteerd door onze AI-technologie — een eigen AI-engine die van de grond af aan is ontworpen voor DNS, met honderden signalen, terabytes aan trainingsgegevens en besluitvorming in realtime. Omvat IDN-homografen, typosquatting, combosquatting, DGA-domeinen, merkimitatie, het buitmaken van inloggegevens, de verspreiding van malware en dekmantelwebsites die worden gebruikt om kwaadaardige infrastructuur te verbergen.",
+            "enable": "Schakel AI-gestuurde bedreigingsdetectie in"
+        },
+        "googleSafeBrowsing": {
+            "name": "Google Safe Browsing",
+            "description": "Blokkeer malware- en phishingdomeinen met Google Safe Browsing — een technologie die miljarden URL's per dag onderzoekt op zoek naar onveilige websites. In tegenstelling tot de versie die in sommige browsers is geïntegreerd, koppelt dit je openbare IP-adres niet aan de bedreigingen en staat dit het omzeilen van de blokkering niet toe.",
+            "enable": "Schakel Google Safe Browsing in"
+        },
+        "cryptojacking": {
+            "name": "Cryptojacking",
+            "description": "Voorkom het ongeautoriseerde gebruik van je apparaten om cryptovaluta te minen.",
+            "enable": "Blokkeer cryptojacking"
+        },
+        "dnsRebinding": {
+            "name": "DNS-rebinding",
+            "description": "Voorkom dat aanvallers de controle over je lokale apparaten overnemen via internet door automatisch DNS-antwoorden met privé-IP-adressen te blokkeren.",
+            "enable": "Blokkeer DNS-rebinding"
+        },
+        "homograph": {
+            "name": "IDN-homografen",
+            "description": "Blokkeer geïnternationaliseerde domeinnamen (IDN's) die zich met behulp van op elkaar lijkende tekens voordoen als andere domeinen — bijvoorbeeld door de Latijnse letter ‘e’ te vervangen door de Cyrillische letter ‘е’.",
+            "enable": "Blokkeer IDN-homografen"
+        },
+        "typosquatting": {
+            "name": "Typosquatting",
+            "description": "Blokkeer domeinen die kwaadwillenden registreren om gebruikers te misleiden die een websiteadres verkeerd in hun browser typen — bijvoorbeeld gooogle.com in plaats van google.com.",
+            "enable": "Blokkeer typosquatting"
+        },
+        "dga": {
+            "name": "Domeingeneratiealgoritmen",
+            "description": "Blokkeer domeinen die door domeingeneratiealgoritmen (DGA's) worden gegenereerd en door verschillende malwarefamilies worden gebruikt als contactpunten met hun command-and-controlservers.",
+            "enable": "Blokkeer DGA-domeinen"
+        },
+        "nrd": {
+            "name": "Nieuw geregistreerde domeinen",
+            "description": "Blokkeer domeinen die minder dan 30 dagen geleden zijn geregistreerd. Kwaadwillenden gebruiken deze domeinen bij voorkeur om kwaadaardige campagnes te starten.",
+            "enable": "Blokkeer nieuw geregistreerde domeinen"
+        },
+        "ddns": {
+            "name": "Dynamische DNS-hostnamen",
+            "description": "Met dynamische DNS-diensten (DDNS) kunnen kwaadwillenden snel en gratis hostnamen aanmaken zonder enige validatie of identiteitscontrole. Legitieme DDNS-hostnamen worden in het dagelijks gebruik zelden bezocht, maar hun kwaadaardige tegenhangers worden veel gebruikt in phishingcampagnes.",
+            "disclaimer": "Als je DDNS gebruikt, houd er dan rekening mee dat deze instelling de eigen website en de update-API van de DDNS-diensten niet blokkeert.",
+            "enable": "Blokkeer dynamische DNS-hostnamen"
+        },
+        "parked": {
+            "name": "Geparkeerde domeinen",
+            "description": "Geparkeerde domeinen zijn websites van één pagina, vaak vol advertenties en zonder enige waarde. De monetisatie van geparkeerde domeinen kan bezoekers via advertentienetwerken en omleidingen blootstellen aan oplichting, phishingpagina's en schadelijke downloads.",
+            "enable": "Blokkeer geparkeerde domeinen"
+        },
+        "tld": {
+            "name": "Topleveldomeinen (TLD's)",
+            "description": "Blokkeer alle domeinen en subdomeinen die tot specifieke TLD's behoren.",
+            "add": "TLD toevoegen",
+            "sections": {
+                "spamhaus": "Spamhaus' meest misbruikte TLD's",
+                "all": "Alle TLD's"
+            }
+        },
+        "csam": {
+            "name": "Materiaal van seksueel kindermisbruik (CSAM)",
+            "description": "Blokkeer domeinen die materiaal van seksueel kindermisbruik hosten met de hulp van Project Arachnid, beheerd door het Canadian Centre for Child Protection. Er wordt geen informatie teruggestuurd naar Project Arachnid wanneer een domein wordt geblokkeerd.",
+            "enable": "Blokkeer materiaal van seksueel kindermisbruik"
+        },
+        "newlyActiveDomains": {
+            "name": "Nieuw actieve domeinen",
+            "description": "Blokkeer domeinen die voor het eerst worden bezocht of in het verleden weinig activiteit hebben vertoond. Dit voorkomt zero-dayaanvallen en ‘slapende’ bedreigingen door een aantoonbare geschiedenis van legitiem gebruik te vereisen voordat een domein wordt vertrouwd. Zo worden pogingen om kwaadaardige domeinen vooraf ‘op te warmen’ effectief tegengegaan.",
+            "enable": "Blokkeer nieuw actieve domeinen"
+        },
+        "freeHostingDomains": {
+            "name": "Gratis hostingdomeinen",
+            "description": "Blokkeer de standaardsubdomeinen van gratis webhostingdiensten (bijvoorbeeld *.pages.dev, *.vercel.app, *.netlify.app). Deze ‘gratis hostingdomeinen’ (FHD's) worden veelvuldig misbruikt door aanvallers om phishingsites te hosten en reputatiefilters te omzeilen. Deze instelling heeft geen invloed op legitieme websites die deze aanbieders met een eigen domeinnaam gebruiken.",
+            "enable": "Blokkeer gratis hostingdomeinen"
+        },
+        "tunnelingEndpoints": {
+            "name": "Tunneling-endpoints",
+            "description": "Blokkeer diensten die lokaal verkeer via tunnels naar het openbare internet leiden (bijvoorbeeld ngrok, Cloudflare Tunnel). Aanvallers gebruiken deze tools vaak om firewalls te omzeilen en phishingpagina's op willekeurige subdomeinen te hosten, terwijl ze hun onderliggende infrastructuur verbergen.",
+            "enable": "Blokkeer tunneling-endpoints"
+        },
+        "dataDropServices": {
+            "name": "Datadropdiensten",
+            "description": "Blokkeer de toegang tot diensten die specifiek bedoeld zijn om tekst, bestanden en JSON- of configuratiegegevens te delen of inkomende gegevens te verzamelen, waaronder webhookverzoeken, DNS-verzoeken en e-mail. Dit omvat ook legitiem gebruik van deze diensten.",
+            "enable": "Blokkeer datadropdiensten"
+        },
+        "residentialHosting": {
+            "name": "Residentiële hosting",
+            "description": "Blokkeer domeinen die verwijzen naar IP-adressen uit reeksen voor particuliere aansluitingen van internetproviders in plaats van commerciële datacenters. Legitieme webdiensten worden zelden op consumentenaansluitingen gehost, terwijl C2-servers van botnets en phishingproxy's vaak op gecompromitteerde thuisrouters draaien.",
+            "enable": "Blokkeer residentiële hosting"
+        },
+        "untrustedCertificates": {
+            "name": "Niet-vertrouwde certificaten",
+            "description": "Blokkeer domeinen die SSL/TLS-certificaten aanbieden die zijn ondertekend door niet-vertrouwde of onbekende certificaatautoriteiten (bijvoorbeeld zelfondertekende certificaten). Terwijl legitieme websites vrijwel uitsluitend vertrouwde certificaten gebruiken, vertrouwt bijna 60% van de command-and-controlservers (C2) van gangbare malware op zelfondertekende certificaten of certificaten die door niet-vertrouwde autoriteiten zijn uitgegeven om hun verkeer te versleutelen zonder een administratief spoor achter te laten.",
+            "enable": "Blokkeer niet-vertrouwde certificaten"
+        },
+        "fastFluxNetworks": {
+            "name": "Fast-fluxnetwerken",
+            "description": "Blokkeer domeinen die snel van IP-adres wisselen binnen een verspreid netwerk van gecompromitteerde apparaten (botnets) om detectie te ontlopen. Deze heuristiek herkent specifieke afwijkingen in de DNS-geldigheidsduur (Time-To-Live, TTL) en de diversiteit aan IP-adressen die kenmerkend zijn voor kwaadaardige infrastructuur en deze onderscheiden van legitieme contentdeliverynetwerken (CDN's).",
+            "enable": "Blokkeer fast-fluxnetwerken"
+        },
+        "dnsDataExfiltration": {
+            "name": "DNS-data-exfiltratie",
+            "description": "Blokkeer domeinen die het DNS-protocol gebruiken om gegevens uit je netwerk te smokkelen of verborgen opdrachten (C2) te ontvangen. Deze heuristiek analyseert DNS-verzoekpatronen in realtime — zoals abnormaal lange subdomeinen, hoge entropie en ongebruikelijke verzoektypen (bijvoorbeeld TXT) — om langzame, onopvallende gegevensdiefstal en malwarebeacons (zoals Cobalt Strike) die traditionele firewalls omzeilen, te detecteren en te stoppen.",
+            "enable": "Blokkeer DNS-data-exfiltratie"
+        },
+        "dnsPayloadDelivery": {
+            "name": "DNS-payloadlevering",
+            "description": "Voorkom dat DNS-antwoorden worden gebruikt om verborgen opdrachten of payloads naar je apparaten te sturen. Verzoeken voor recordtypen die willekeurige gegevens kunnen bevatten maar niet nodig zijn voor dagelijks surfen — zoals TXT of NULL — worden volledig geblokkeerd. CNAME-ketens worden teruggebracht tot hun uiteindelijke adres, waarbij tussenliggende records die verborgen gegevens kunnen coderen worden verwijderd. Voor standaardrecordtypen zoals A en AAAA worden te grote antwoordsecties willekeurig ingekort om gegevens die over meerdere records zijn gecodeerd onbruikbaar te maken, terwijl de normale DNS-functionaliteit behouden blijft.",
+            "enable": "Blokkeer DNS-payloadlevering"
+        },
+        "decentralizedWebGateways": {
+            "name": "Gateways naar het gedecentraliseerde web",
+            "description": "Blokkeer openbare gateways die het gedecentraliseerde web (bijvoorbeeld IPFS) verbinden met standaardbrowsers. Aanvallers misbruiken deze diensten veelvuldig om ‘onveranderlijke’ phishingpagina's en malware te hosten. Zo kunnen bedreigingen blijven bestaan door traditionele verwijderingsmaatregelen en reputatiefilters te omzeilen.",
+            "enable": "Blokkeer gateways naar het gedecentraliseerde web"
+        },
+        "highRiskTlds": {
+            "name": "Hoogrisico-TLD's",
+            "description": "Blokkeer automatisch topleveldomeinen (TLD's) waarop volgens de statistieken vooral kwaadaardige activiteiten plaatsvinden — bijvoorbeeld .zip, .mov, .top. De lijst wordt in realtime bijgewerkt op basis van wereldwijde reputatiegegevens over misbruik. Zo ben je zonder handmatige configuratie beschermd tegen grote netwerken van goedkope wegwerpdomeinen die voor phishing en spam worden gebruikt.",
+            "enable": "Blokkeer hoogrisico-TLD's"
         }
-      },
-      "sortBy": {
-        "popularity": "Populariteit",
-        "name": "Naam",
-        "entries": "Vermeldingen",
-        "updated": "Recent"
-      }
     },
-    "native": {
-      "name": "Bescherming tegen ingebouwde tracking",
-      "description": "Blokkeer trackers — vaak actief op het niveau van het besturingssysteem — die een breed scala aan activiteiten op je apparaat volgen. Dit kan alle websites omvatten die je bezoekt, alles wat je typt of je locatie op elk moment.",
-      "add": "Toevoegen",
-      "systems": {
-        "xiaomi": {
-          "name": "Xiaomi",
-          "devices": "Telefoons en tablets, smart-tv's, routers"
+    "privacy": {
+        "blocklists": {
+            "name": "Filterlijsten",
+            "description": "Blokkeer advertenties en trackers met behulp van de populairste beschikbare filterlijsten — allemaal in realtime bijgewerkt.",
+            "add": "Filterlijst toevoegen",
+            "entries_one": "{{count, number}} vermelding",
+            "entries_other": "{{count, number}} vermeldingen",
+            "updated": "Bijgewerkt <1></1>",
+            "blocklists": {
+                "nextdns-recommended": {
+                    "name": "NextDNS-filterlijst voor advertenties en trackers",
+                    "description": "Een uitgebreide filterlijst om advertenties en trackers in alle landen te blokkeren. Dit is de aanbevolen filterlijst om mee te beginnen."
+                }
+            },
+            "sortBy": {
+                "popularity": "Populariteit",
+                "name": "Naam",
+                "entries": "Vermeldingen",
+                "updated": "Recent"
+            }
         },
-        "huawei": {
-          "name": "Huawei",
-          "devices": "Telefoons en tablets"
+        "native": {
+            "name": "Bescherming tegen ingebouwde tracking",
+            "description": "Blokkeer trackers — vaak actief op het niveau van het besturingssysteem — die een breed scala aan activiteiten op je apparaat volgen. Dit kan alle websites omvatten die je bezoekt, alles wat je typt of je locatie op elk moment.",
+            "add": "Toevoegen",
+            "systems": {
+                "xiaomi": {
+                    "name": "Xiaomi",
+                    "devices": "Telefoons en tablets, smart-tv's, routers"
+                },
+                "huawei": {
+                    "name": "Huawei",
+                    "devices": "Telefoons en tablets"
+                },
+                "samsung": {
+                    "name": "Samsung",
+                    "devices": "Telefoons, tablets, smart-tv's"
+                },
+                "alexa": {
+                    "name": "Alexa",
+                    "devices": "Alexa-compatibele apparaten"
+                },
+                "windows": {
+                    "name": "Windows",
+                    "devices": "Alle versies"
+                },
+                "apple": {
+                    "name": "Apple",
+                    "devices": "iOS, macOS, tvOS"
+                },
+                "roku": {
+                    "name": "Roku",
+                    "devices": "Alle Roku-apparaten"
+                },
+                "sonos": {
+                    "name": "Sonos",
+                    "devices": "Luidsprekers"
+                }
+            }
         },
-        "samsung": {
-          "name": "Samsung",
-          "devices": "Telefoons, tablets, smart-tv's"
+        "disguised": {
+            "name": "Blokkeer vermomde trackers van derden",
+            "description": "Detecteer en blokkeer automatisch trackers van derden die zichzelf vermommen als eerste partij om privacybeschermingen in browsers te omzeilen, zoals ITP.",
+            "enable": "Blokkeer vermomde trackers van derden"
         },
-        "alexa": {
-          "name": "Alexa",
-          "devices": "Alexa-compatibele apparaten"
-        },
-        "windows": {
-          "name": "Windows",
-          "devices": "Alle versies"
-        },
-        "apple": {
-          "name": "Apple",
-          "devices": "iOS, macOS, tvOS"
-        },
-        "roku": {
-          "name": "Roku",
-          "devices": "Alle Roku-apparaten"
-        },
-        "sonos": {
-          "name": "Sonos",
-          "devices": "Luidsprekers"
+        "affiliate": {
+            "name": "Sta affiliate- en trackinglinks toe",
+            "description": "Sta affiliate- en trackingdomeinen toe die veel voorkomen op koopjessites, in e-mails of in zoekresultaten. Die worden meestal pas opgevraagd nadat handmatig op een link is geklikt.",
+            "relay": "Je IP-adres wordt automatisch verborgen voor deze websites om je privacy te beschermen.",
+            "enable": "Sta affiliate- en trackinglinks toe"
         }
-      }
     },
-    "disguised": {
-      "name": "Blokkeer vermomde trackers van derden",
-      "description": "Detecteer en blokkeer automatisch trackers van derden die zichzelf vermommen als eerste partij om privacybeschermingen in browsers te omzeilen, zoals ITP.",
-      "enable": "Blokkeer vermomde trackers van derden"
-    },
-    "affiliate": {
-      "name": "Sta affiliate- en trackinglinks toe",
-      "description": "Sta affiliate- en trackingdomeinen toe die veel voorkomen op koopjessites, in e-mails of in zoekresultaten. Die worden meestal pas opgevraagd nadat handmatig op een link is geklikt.",
-      "relay": "Je IP-adres wordt automatisch verborgen voor deze websites om je privacy te beschermen.",
-      "enable": "Sta affiliate- en trackinglinks toe"
-    }
-  },
-  "parentalControl": {
-    "services": {
-      "name": "Websites, apps en games",
-      "description": "Beperk de toegang tot specifieke websites, apps en games.",
-      "add": "Website, app of game toevoegen",
-      "services": {
-        "9gag": "9GAG",
-        "amazon": "Amazon",
-        "bereal": "BeReal",
-        "blizzard": "Blizzard",
-        "chatgpt": "ChatGPT",
-        "dailymotion": "Dailymotion",
-        "discord": "Discord",
-        "disneyplus": "Disney+",
-        "ebay": "eBay",
-        "facebook": "Facebook",
-        "fortnite": "Fortnite",
-        "google-chat": "Google Chat",
-        "hbomax": "HBO Max",
-        "hulu": "Hulu",
-        "imgur": "Imgur",
-        "instagram": "Instagram",
-        "leagueoflegends": "League of Legends",
-        "mastodon": "Mastodon",
-        "messenger": "Messenger",
-        "minecraft": "Minecraft",
-        "netflix": "Netflix",
-        "pinterest": "Pinterest",
-        "playstation-network": "PlayStation Network",
-        "primevideo": "Prime Video",
-        "reddit": "Reddit",
-        "roblox": "Roblox",
-        "signal": "Signal",
-        "skype": "Skype",
-        "snapchat": "Snapchat",
-        "spotify": "Spotify",
-        "steam": "Steam",
-        "telegram": "Telegram",
-        "tiktok": "TikTok",
-        "tinder": "Tinder",
-        "tumblr": "Tumblr",
-        "twitch": "Twitch",
-        "twitter": "X",
-        "vimeo": "Vimeo",
-        "vk": "VK",
-        "whatsapp": "WhatsApp",
-        "xboxlive": "Xbox",
-        "youtube": "YouTube",
-        "zoom": "Zoom"
-      }
-    },
-    "categories": {
-      "name": "Categorieën",
-      "description": "Beperk de toegang tot specifieke categorieën websites en apps.",
-      "add": "Categorie toevoegen",
-      "categories": {
-        "dating": {
-          "name": "Dating",
-          "description": "Blokkeert alle datingwebsites en -apps."
+    "parentalControl": {
+        "services": {
+            "name": "Websites, apps en games",
+            "description": "Beperk de toegang tot specifieke websites, apps en games.",
+            "add": "Website, app of game toevoegen",
+            "services": {
+                "9gag": "9GAG",
+                "amazon": "Amazon",
+                "bereal": "BeReal",
+                "blizzard": "Blizzard",
+                "chatgpt": "ChatGPT",
+                "dailymotion": "Dailymotion",
+                "discord": "Discord",
+                "disneyplus": "Disney+",
+                "ebay": "eBay",
+                "facebook": "Facebook",
+                "fortnite": "Fortnite",
+                "google-chat": "Google Chat",
+                "hbomax": "HBO Max",
+                "hulu": "Hulu",
+                "imgur": "Imgur",
+                "instagram": "Instagram",
+                "leagueoflegends": "League of Legends",
+                "mastodon": "Mastodon",
+                "messenger": "Messenger",
+                "minecraft": "Minecraft",
+                "netflix": "Netflix",
+                "pinterest": "Pinterest",
+                "playstation-network": "PlayStation Network",
+                "primevideo": "Prime Video",
+                "reddit": "Reddit",
+                "roblox": "Roblox",
+                "signal": "Signal",
+                "skype": "Skype",
+                "snapchat": "Snapchat",
+                "spotify": "Spotify",
+                "steam": "Steam",
+                "telegram": "Telegram",
+                "tiktok": "TikTok",
+                "tinder": "Tinder",
+                "tumblr": "Tumblr",
+                "twitch": "Twitch",
+                "twitter": "X",
+                "vimeo": "Vimeo",
+                "vk": "VK",
+                "whatsapp": "WhatsApp",
+                "xboxlive": "Xbox",
+                "youtube": "YouTube",
+                "zoom": "Zoom"
+            }
         },
-        "gambling": {
-          "name": "Kansspelen",
-          "description": "Blokkeert kansspelen."
-        },
-        "gaming": {
-          "name": "Online gamen",
-          "description": "Blokkeert websites, apps en netwerken voor online gamen (Xbox, PlayStation Network, enz.)."
-        },
-        "piracy": {
-          "name": "Piraterij",
-          "description": "Blokkeert P2P-websites, protocollen, streamingwebsites die inbreuk maken op auteursrechten en generieke videohostingwebsites die voornamelijk worden gebruikt voor het illegaal verspreiden van auteursrechtelijk beschermde inhoud."
-        },
-        "porn": {
-          "name": "Porno",
-          "description": "Blokkeert inhoud bestemd voor volwassenen en pornografische inhoud. Dit omvat escortsites, pornhub.com en vergelijkbare domeinen."
-        },
-        "social-networks": {
-          "name": "Sociale netwerken",
-          "description": "Blokkeert alle socialenetwerksites en -apps (Facebook, Instagram, TikTok, Reddit, enz.). Blokkeert geen berichtenapps."
-        },
-        "video-streaming": {
-          "name": "Videostreaming",
-          "description": "Blokkeert videostreamingdiensten (YouTube, Netflix, Disney+, illegale streamingwebsites, pornovideosites, enz.) en op video gebaseerde sociale netwerken (TikTok, enz.). Dit kan ook helpen om het bandbreedtegebruik op elk netwerk te verminderen."
-        }
-      }
-    },
-    "recreation": {
-      "name": "Recreatietijd",
-      "start": "Begintijd",
-      "end": "Eindtijd",
-      "description": "Stel voor elke dag van de week een periode in waarin sommige van de bovenstaande websites, apps, games of categorieën niet worden geblokkeerd — bijvoorbeeld: laat Facebook toe op maandag en dinsdag tussen 18:00 en 20:00 uur.",
-      "set": "Recreatietijd instellen",
-      "howto": "Gebruik de knop <1></1> in de bovenstaande secties om Recreatietijd in te schakelen."
-    },
-    "safesearch": {
-      "name": "SafeSearch",
-      "description": "Filter expliciete resultaten op alle grote zoekmachines, inclusief afbeeldingen en video's. Dit blokkeert ook de toegang tot zoekmachines die deze functie niet ondersteunen.",
-      "enable": "Dwing SafeSearch af"
-    },
-    "youtubeRestricted": {
-      "name": "Beperkte modus van YouTube",
-      "description": "Filter video's voor volwassenen op YouTube en blokkeer ingesloten video's voor volwassenen zodat ze niet op andere websites kunnen worden bekeken. Hierdoor worden ook alle reacties verborgen.",
-      "enable": "Dwing de Beperkte modus van YouTube af"
-    },
-    "bypass": {
-      "name": "Blokkeer bypass-methoden",
-      "description": "Voorkom of belemmer het gebruik van methoden om de NextDNS-filtering op het netwerk te omzeilen. Dit omvat VPN's, proxy's, Tor-gerelateerde software en aanbieders van versleutelde DNS.",
-      "enable": "Blokkeer bypass-methoden"
-    }
-  },
-  "xlist": {
-    "placeholder": "Voeg een domein toe...",
-    "errors": {
-      "required": "Geef een domein op.",
-      "ip": "Geef een domein op, geen IP-adres.",
-      "invalid": "Geef een geldig domein op.",
-      "tld": "Het lijkt erop dat je een volledige TLD probeert te blokkeren. Gebruik de functie Topleveldomeinen (TLD's) in het gedeelte Beveiliging.",
-      "exists": "Dit domein is al toegevoegd."
-    },
-    "empty": "Nog geen domeinen.",
-    "denylist": {
-      "info": "Als je een domein blokkeert, worden automatisch alle subdomeinen geblokkeerd."
-    },
-    "allowlist": {
-      "info": "Als je een uitzondering maakt voor een domein, worden automatisch alle subdomeinen toegestaan. Een uitzondering heeft voorrang op alles, inclusief beveiligingsfuncties."
-    }
-  },
-  "analytics": {
-    "counters": {
-      "all_one": "<0>{{count, number}}</0><1>verzoek</1>",
-      "all_other": "<0>{{count, number}}</0><1>verzoeken</1>",
-      "blocked_one": "<0>{{count, number}}</0><1>geblokkeerd verzoek</1>",
-      "blocked_other": "<0>{{count, number}}</0><1>geblokkeerde verzoeken</1>",
-      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>van de verzoeken geblokkeerd</1></1>"
-    },
-    "queries": {
-      "name": "Verzoeken",
-      "description": "Ontwikkeling van het aantal verzoeken in de loop van de tijd.",
-      "queries": {
-        "all_one": "<0>{{count, number}}</0><1> verzoek</1>",
-        "all_other": "<0>{{count, number}}</0><1> verzoeken</1>",
-        "blocked_one": "<0>{{count, number}}</0><1> geblokkeerd verzoek</1>",
-        "blocked_other": "<0>{{count, number}}</0><1> geblokkeerde verzoeken</1>"
-      }
-    },
-    "domains": {
-      "resolved": {
-        "name": "Opgeloste domeinen",
-        "description": "Domeinen die zijn opgelost zonder door een instelling te worden geblokkeerd of omdat ze handmatig waren toegestaan."
-      },
-      "blocked": {
-        "name": "Geblokkeerde domeinen",
-        "description": "Domeinen die zijn geblokkeerd door een instelling voor beveiliging, privacy en/of ouderlijk toezicht of omdat ze handmatig zijn geblokkeerd."
-      },
-      "root": {
-        "name": "Rootdomeinen",
-        "description": "Totaal van alle verzoeken voor rootdomeinen en al hun subdomeinen."
-      },
-      "empty": "Nog geen domeinen."
-    },
-    "reasons": {
-      "name": "Redenen voor blokkering",
-      "description": "Instellingen voor beveiliging, privacy en/of ouderlijk toezicht die de meeste verzoeken blokkeerden.",
-      "empty": "Er zijn nog geen domeinen geblokkeerd."
-    },
-    "devices": {
-      "name": "Apparaten",
-      "description": "Apparaten die de verzoeken uitvoeren.",
-      "empty": "Nog geen apparaten.",
-      "unidentified": {
-        "name": "Onbekende apparaten"
-      }
-    },
-    "ips": {
-      "name": "IP's",
-      "description": "IP-adressen die de verzoeken uitvoeren.",
-      "empty": "Nog geen IP's."
-    },
-    "gafam": {
-      "name": "GAFAM-dominantie",
-      "description": "De ‘GAFAM’ (Google, Amazon, Facebook (nu Meta), Apple en Microsoft) zijn de 5 dominante internetbedrijven die veel populaire diensten bezitten, vaak onder een andere naam, bijvoorbeeld WhatsApp en Instagram voor Meta.",
-      "queries_one": "{{count, number}} verzoek",
-      "queries_other": "{{count, number}} verzoeken",
-      "companies": {
-        "google": {
-          "name": "Google"
-        },
-        "amazon": {
-          "name": "Amazon"
-        },
-        "facebook": {
-          "name": "Meta"
-        },
-        "apple": {
-          "name": "Apple"
-        },
-        "microsoft": {
-          "name": "Microsoft"
-        },
-        "others": {
-          "name": "Overige"
-        }
-      }
-    },
-    "encrypted": {
-      "name": "Versleutelde DNS",
-      "description": "Percentage verzoeken dat via een versleutelde verbinding wordt gedaan (DNS-over-HTTPS, DNS-over-TLS of de officiële NextDNS-apps).",
-      "empty": "Nog geen verzoeken."
-    },
-    "dnssec": {
-      "name": "DNSSEC",
-      "description": "Percentage verzoeken dat met DNSSEC is gevalideerd.",
-      "empty": "Nog geen verzoeken."
-    },
-    "destination": {
-      "name": "Verkeersbestemming",
-      "description": "Geschatte bestemmingslanden op basis van je DNS-verzoeken.",
-      "queries_one": "{{count, number}} verzoek",
-      "queries_other": "{{count, number}} verzoeken",
-      "topDomains": "Meest opgevraagde domeinen"
-    }
-  },
-  "logs": {
-    "blockedOnly": "Alleen geblokkeerde verzoeken",
-    "raw": "Onbewerkte DNS-logboeken",
-    "empty": "Nog geen logboekvermeldingen.",
-    "log": {
-      "actionBlock": "Blokkeren",
-      "actionAllow": "Toestaan",
-      "dnssec": "Gevalideerd met DNSSEC.",
-      "clients": {
-        "nextdns-ios": "NextDNS voor iOS",
-        "nextdns-android": "NextDNS voor Android",
-        "nextdns-macos": "NextDNS voor macOS",
-        "nextdns-windows": "NextDNS voor Windows",
-        "nextdns-cli": "NextDNS CLI-client",
-        "nextdns-chromeos": "NextDNS voor ChromeOS",
-        "firefox": "Firefox",
-        "google-chrome": "Google Chrome",
-        "dnscrypt": "DNSCrypt",
-        "intra": "Intra",
-        "surge": "Surge",
-        "https-dns-proxy": "https_dns_proxy",
-        "mikrotik": "MikroTik",
-        "apple-profile": "Apple-configuratieprofiel",
-        "yogadns": "YogaDNS",
-        "tailscale": "Tailscale"
-      },
-      "blockedBy": "Geblokkeerd door <1>{{lists, list}}</1>.",
-      "allowedBy": "Toegestaan door <1>{{lists, list}}</1>.",
-      "manual": {
-        "deny": "Handmatig geblokkeerd.",
-        "allow": "Handmatig toegestaan."
-      },
-      "insights": {
-        "show": "Trackerinzichten weergeven",
-        "hide": "Trackerinzichten verbergen",
         "categories": {
-          "advertising": {
-            "description": "Biedt reclame- of reclamegerelateerde diensten zoals gegevensverzameling, gedragsanalyse of retargeting."
-          },
-          "comments": {
-            "description": "Maakt reactiesecties mogelijk voor artikelen en productrecensies."
-          },
-          "customer_interaction": {
-            "description": "Omvat chat, e-mailberichten, klantenservice en andere interactietools."
-          },
-          "essential": {
-            "description": "Omvat tagmanagers, privacyverklaringen en technologieën die essentieel zijn voor de functionaliteit van een website."
-          },
-          "adult_advertsing": {
-            "description": "Levert advertenties die doorgaans op websites met inhoud voor volwassenen verschijnen."
-          },
-          "site_analytics": {
-            "description": "Verzamelt en analyseert gegevens met betrekking tot sitegebruik en prestaties."
-          },
-          "social_media": {
-            "description": "Integreert functies met betrekking tot socialemediasites."
-          },
-          "audio_video_player": {
-            "description": "Stelt websites in staat om video- en audio-inhoud te publiceren, te verspreiden en te optimaliseren."
-          },
-          "cdn": {
-            "description": "Contentdeliverynetwerk dat bronnen levert voor verschillende sitefuncties, meestal voor veel verschillende klanten."
-          },
-          "misc": {
-            "description": "Deze tracker past niet in andere categorieën of is nog niet gelabeld."
-          },
-          "pornvertising": {
-            "description": "Levert advertenties die doorgaans op websites met inhoud voor volwassenen verschijnen."
-          },
-          "hosting": {
-            "description": "Dit is een dienst die wordt gebruikt door de contentaanbieder of de site-eigenaar."
-          },
-          "extensions": {
-            "description": "Software op gebruikersapparaten die browserverkeer kan onderscheppen en analyseren (man-in-the-middle)."
-          }
+            "name": "Categorieën",
+            "description": "Beperk de toegang tot specifieke categorieën websites en apps.",
+            "add": "Categorie toevoegen",
+            "categories": {
+                "dating": {
+                    "name": "Dating",
+                    "description": "Blokkeert alle datingwebsites en -apps."
+                },
+                "gambling": {
+                    "name": "Kansspelen",
+                    "description": "Blokkeert kansspelen."
+                },
+                "gaming": {
+                    "name": "Online gamen",
+                    "description": "Blokkeert websites, apps en netwerken voor online gamen (Xbox, PlayStation Network, enz.)."
+                },
+                "piracy": {
+                    "name": "Piraterij",
+                    "description": "Blokkeert P2P-websites, protocollen, streamingwebsites die inbreuk maken op auteursrechten en generieke videohostingwebsites die voornamelijk worden gebruikt voor het illegaal verspreiden van auteursrechtelijk beschermde inhoud."
+                },
+                "porn": {
+                    "name": "Porno",
+                    "description": "Blokkeert inhoud bestemd voor volwassenen en pornografische inhoud. Dit omvat escortsites, pornhub.com en vergelijkbare domeinen."
+                },
+                "social-networks": {
+                    "name": "Sociale netwerken",
+                    "description": "Blokkeert alle socialenetwerksites en -apps (Facebook, Instagram, TikTok, Reddit, enz.). Blokkeert geen berichtenapps."
+                },
+                "video-streaming": {
+                    "name": "Videostreaming",
+                    "description": "Blokkeert videostreamingdiensten (YouTube, Netflix, Disney+, illegale streamingwebsites, pornovideosites, enz.) en op video gebaseerde sociale netwerken (TikTok, enz.). Dit kan ook helpen om het bandbreedtegebruik op elk netwerk te verminderen."
+                }
+            }
         },
-        "prevalence": {
-          "intensity": {
-            "dangerously": "Gevaarlijk veelvoorkomend",
-            "extremely": "Extreem veelvoorkomend",
-            "very": "Zeer veelvoorkomend",
-            "commonly": "Veelvoorkomend",
-            "relatively": "Relatief veelvoorkomend"
-          },
-          "summary": "{{prevalence}} <2>(trackt {{percent, percentage}} van het webverkeer)</2>"
+        "recreation": {
+            "name": "Recreatietijd",
+            "start": "Begintijd",
+            "end": "Eindtijd",
+            "description": "Stel voor elke dag van de week een periode in waarin sommige van de bovenstaande websites, apps, games of categorieën niet worden geblokkeerd — bijvoorbeeld: laat Facebook toe op maandag en dinsdag tussen 18:00 en 20:00 uur.",
+            "set": "Recreatietijd instellen",
+            "howto": "Gebruik de knop <1></1> in de bovenstaande secties om Recreatietijd in te schakelen."
         },
-        "ownedBy": "<0>Eigendom van </0><1>{{company}}</1>",
-        "source": "Trackerinzichten van"
-      }
-    },
-    "settings": "Logboekopties",
-    "streaming": "Live updates van het logboek",
-    "toggleTimeFormat": "Tijdstempelnotatie wisselen"
-  },
-  "deviceSelector": {
-    "all": "Alle apparaten",
-    "howto": "Op de pagina Instellen lees je hoe je je apparaten kunt identificeren."
-  },
-  "timeRangeSelector": {
-    "ranges": {
-      "30m": "Afgelopen 30 minuten",
-      "6h": "Afgelopen 6 uur",
-      "24h": "Afgelopen 24 uur",
-      "7d": "Afgelopen 7 dagen",
-      "30d": "Afgelopen 30 dagen",
-      "3M": "Afgelopen 3 maanden"
-    }
-  },
-  "settings": {
-    "name": {
-      "name": "Naam",
-      "description": "Kies een naam voor dit profiel."
-    },
-    "logs": {
-      "name": "Logboeken",
-      "description": "Verfijn je logboekinstellingen.",
-      "enable": "Schakel logboeken in",
-      "privacy": {
-        "name": "Privacy-instellingen",
-        "ip": "Log IP's van clients",
-        "domains": "Log domeinen"
-      },
-      "retention": {
-        "name": "Bewaartermijn",
-        "options": {
-          "1h": "1 uur",
-          "6h": "6 uur",
-          "1d": "1 dag",
-          "1w": "1 week",
-          "1m": "1 maand",
-          "3m": "3 maanden",
-          "6m": "6 maanden",
-          "1y": "1 jaar",
-          "2y": "2 jaar"
-        }
-      },
-      "location": {
-        "name": "Opslaglocatie",
-        "locations": {
-          "us": {
-            "name": "Verenigde Staten",
-            "description": "Logboeken worden opgeslagen in de Verenigde Staten. Dit is de standaardinstelling."
-          },
-          "eu": {
-            "name": "Europese Unie",
-            "description": "Logboeken worden opgeslagen in lidstaten van de Europese Unie."
-          },
-          "ch": {
-            "name": "Zwitserland",
-            "description": "Logboeken worden opgeslagen in Zürich, Zwitserland — een rechtsgebied dat bekendstaat om zijn strenge privacywetten."
-          }
+        "safesearch": {
+            "name": "SafeSearch",
+            "description": "Filter expliciete resultaten op alle grote zoekmachines, inclusief afbeeldingen en video's. Dit blokkeert ook de toegang tot zoekmachines die deze functie niet ondersteunen.",
+            "enable": "Dwing SafeSearch af"
         },
-        "confirm": {
-          "title": "Opslaglocatie wijzigen",
-          "text": "Als je de opslaglocatie van de logboeken wijzigt, worden alle eerdere logboeken en statistieken voor dit profiel verwijderd."
+        "youtubeRestricted": {
+            "name": "Beperkte modus van YouTube",
+            "description": "Filter video's voor volwassenen op YouTube en blokkeer ingesloten video's voor volwassenen zodat ze niet op andere websites kunnen worden bekeken. Hierdoor worden ook alle reacties verborgen.",
+            "enable": "Dwing de Beperkte modus van YouTube af"
+        },
+        "bypass": {
+            "name": "Blokkeer bypass-methoden",
+            "description": "Voorkom of belemmer het gebruik van methoden om de NextDNS-filtering op het netwerk te omzeilen. Dit omvat VPN's, proxy's, Tor-gerelateerde software en aanbieders van versleutelde DNS.",
+            "enable": "Blokkeer bypass-methoden"
         }
-      },
-      "download": {
-        "button": "Logboeken downloaden"
-      },
-      "clear": {
-        "button": "Logboeken wissen",
-        "confirm": {
-          "text": "Weet je zeker dat je alle logboeken voor dit profiel wilt wissen? Deze actie kan niet ongedaan worden gemaakt.",
-          "submit": "Wissen"
-        }
-      }
     },
-    "blockpage": {
-      "name": "Blokkeerpagina",
-      "description": "Toon een blokkeerpagina wanneer een domein wordt geblokkeerd. Dit kan de laadtijd iets verhogen en in sommige gevallen kan een HTTPS-waarschuwing verschijnen. Als deze functie is uitgeschakeld, worden geblokkeerde verzoeken beantwoord met het niet-gespecificeerde adres (0.0.0.0 of ::).",
-      "enable": "Schakel blokkeerpagina in",
-      "ca": {
-        "name": "NextDNS Root CA",
-        "description": "Verwijder de HTTPS-waarschuwing bij het laden van de blokkeerpagina door onze root-CA op <1>{{link}}</1> te installeren en te vertrouwen. Lees <3>hier</3> de instructies om dit te doen."
-      }
-    },
-    "performance": {
-      "name": "Prestaties",
-      "description": "Versnel het browsen.",
-      "ecs": {
-        "name": "Geanonimiseerd EDNS-clientsubnet",
-        "description": "Versnel de levering van gegevens via contentdeliverynetwerken zonder je IP-adres vrij te geven.",
-        "enable": "Schakel geanonimiseerd EDNS-clientsubnet in"
-      },
-      "cache": {
-        "name": "Cache-boost",
-        "description": "Minimaliseer DNS-verzoeken door een minimale TTL (Time to live) af te dwingen.",
-        "enable": "Schakel cache-boost in"
-      },
-      "flatten": {
-        "name": "CNAME-flattening",
-        "description": "Voorkom dat resolvers die CNAME's volgen onnodige verzoeken doen en de logboeken vervuilen met tussenliggende domeinen.",
-        "enable": "Schakel CNAME-flattening in"
-      }
-    },
-    "ageVerification": {
-      "name": "Leeftijdsverificatie omzeilen",
-      "description": "Omzeil automatisch de leeftijdscontroles die bepaalde websites, zoals websites met inhoud voor volwassenen, gebruiken om de leeftijd van bezoekers te controleren voordat ze toegang krijgen.",
-      "acknowledgment": "Door deze functie in te schakelen, erken je dat je de wettelijk vereiste leeftijd hebt om toegang te krijgen tot de inhoud."
-    },
-    "web3": {
-      "name": "Web3",
-      "description": "Web3 verwijst naar een gedecentraliseerd en censuurbestendig online ecosysteem met innovatieve technologieën zoals op blockchain gebaseerde domeinregisters (bijvoorbeeld Ethereum Name Service) en gedistribueerde netwerken voor opslag en levering van inhoud (bijvoorbeeld IPFS). Als je deze functie inschakelt, fungeert NextDNS als een ongefilterde toegangspoort tot dit nieuwe web, zodat je het zelf kunt ervaren zonder iets te installeren.",
-      "tips": "Omdat de meeste browsers momenteel alleen klassieke topleveldomeinen ondersteunen, moet je een slash (‘<1>/</1>’) achter de naam zetten als je een Web3-domein rechtstreeks wilt openen (bijvoorbeeld ‘<3>vitalik.eth/</3>’ in plaats van ‘<5>vitalik.eth</5>’).",
-      "enable": "Schakel Web3 in"
-    },
-    "rewrites": {
-      "name": "Herschrijvingen",
-      "description": "Stel het DNS-antwoord voor een domein in of overschrijf het. Herschrijvingen gelden ook voor subdomeinen en lokale IP-adressen worden als antwoord ondersteund.",
-      "new": "Nieuwe herschrijving",
-      "form": {
-        "domain": {
-          "label": "Domein",
-          "placeholder": "myprinter.lan, myinternetbox.com, ...",
-          "errors": {
+    "xlist": {
+        "placeholder": "Voeg een domein toe...",
+        "errors": {
             "required": "Geef een domein op.",
             "ip": "Geef een domein op, geen IP-adres.",
             "invalid": "Geef een geldig domein op.",
-            "taken": "Je hebt al een herschrijving voor dat domein."
-          }
+            "tld": "Het lijkt erop dat je een volledige TLD probeert te blokkeren. Gebruik de functie Topleveldomeinen (TLD's) in het gedeelte Beveiliging.",
+            "exists": "Dit domein is al toegevoegd."
         },
-        "answer": {
-          "label": "Antwoord",
-          "placeholder": "1.2.3.4, sub.example.org, ...",
-          "errors": {
-            "required": "Geef een antwoord op.",
-            "invalid": "Het antwoord moet een geldig IP-adres of domein zijn."
-          }
-        }
-      }
-    },
-    "access": {
-      "name": "Toegang",
-      "description": "Geef anderen toegang om dit profiel te bewerken of alleen te bekijken.",
-      "roles": {
-        "editor": "Bewerker",
-        "viewer": "Lezer"
-      },
-      "pending": "Uitnodiging verzonden",
-      "form": {
-        "email": {
-          "label": "E-mailadres",
-          "errors": {
-            "required": "Geef een e-mailadres op.",
-            "invalid": "Geef een geldig e-mailadres op.",
-            "duplicate": "Dit e-mailadres is al eerder uitgenodigd."
-          }
+        "empty": "Nog geen domeinen.",
+        "denylist": {
+            "info": "Als je een domein blokkeert, worden automatisch alle subdomeinen geblokkeerd."
         },
-        "role": {
-          "label": "Rol"
+        "allowlist": {
+            "info": "Als je een uitzondering maakt voor een domein, worden automatisch alle subdomeinen toegestaan. Een uitzondering heeft voorrang op alles, inclusief beveiligingsfuncties."
         }
-      }
     },
-    "duplicate": {
-      "button": "<1>{{name}}</1> dupliceren",
-      "description": "Kopieer alle instellingen van dit profiel naar een nieuw profiel.",
-      "form": {
+    "analytics": {
+        "counters": {
+            "all_one": "<0>{{count, number}}</0><1>verzoek</1>",
+            "all_other": "<0>{{count, number}}</0><1>verzoeken</1>",
+            "blocked_one": "<0>{{count, number}}</0><1>geblokkeerd verzoek</1>",
+            "blocked_other": "<0>{{count, number}}</0><1>geblokkeerde verzoeken</1>",
+            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>van de verzoeken geblokkeerd</1></1>"
+        },
+        "queries": {
+            "name": "Verzoeken",
+            "description": "Ontwikkeling van het aantal verzoeken in de loop van de tijd.",
+            "queries": {
+                "all_one": "<0>{{count, number}}</0><1> verzoek</1>",
+                "all_other": "<0>{{count, number}}</0><1> verzoeken</1>",
+                "blocked_one": "<0>{{count, number}}</0><1> geblokkeerd verzoek</1>",
+                "blocked_other": "<0>{{count, number}}</0><1> geblokkeerde verzoeken</1>"
+            }
+        },
+        "domains": {
+            "resolved": {
+                "name": "Opgeloste domeinen",
+                "description": "Domeinen die zijn opgelost zonder door een instelling te worden geblokkeerd of omdat ze handmatig waren toegestaan."
+            },
+            "blocked": {
+                "name": "Geblokkeerde domeinen",
+                "description": "Domeinen die zijn geblokkeerd door een instelling voor beveiliging, privacy en/of ouderlijk toezicht of omdat ze handmatig zijn geblokkeerd."
+            },
+            "root": {
+                "name": "Rootdomeinen",
+                "description": "Totaal van alle verzoeken voor rootdomeinen en al hun subdomeinen."
+            },
+            "empty": "Nog geen domeinen."
+        },
+        "reasons": {
+            "name": "Redenen voor blokkering",
+            "description": "Instellingen voor beveiliging, privacy en/of ouderlijk toezicht die de meeste verzoeken blokkeerden.",
+            "empty": "Er zijn nog geen domeinen geblokkeerd."
+        },
+        "devices": {
+            "name": "Apparaten",
+            "description": "Apparaten die de verzoeken uitvoeren.",
+            "empty": "Nog geen apparaten.",
+            "unidentified": {
+                "name": "Onbekende apparaten"
+            }
+        },
+        "ips": {
+            "name": "IP's",
+            "description": "IP-adressen die de verzoeken uitvoeren.",
+            "empty": "Nog geen IP's."
+        },
+        "gafam": {
+            "name": "GAFAM-dominantie",
+            "description": "De ‘GAFAM’ (Google, Amazon, Facebook (nu Meta), Apple en Microsoft) zijn de 5 dominante internetbedrijven die veel populaire diensten bezitten, vaak onder een andere naam, bijvoorbeeld WhatsApp en Instagram voor Meta.",
+            "queries_one": "{{count, number}} verzoek",
+            "queries_other": "{{count, number}} verzoeken",
+            "companies": {
+                "google": {
+                    "name": "Google"
+                },
+                "amazon": {
+                    "name": "Amazon"
+                },
+                "facebook": {
+                    "name": "Meta"
+                },
+                "apple": {
+                    "name": "Apple"
+                },
+                "microsoft": {
+                    "name": "Microsoft"
+                },
+                "others": {
+                    "name": "Overige"
+                }
+            }
+        },
+        "encrypted": {
+            "name": "Versleutelde DNS",
+            "description": "Percentage verzoeken dat via een versleutelde verbinding wordt gedaan (DNS-over-HTTPS, DNS-over-TLS of de officiële NextDNS-apps).",
+            "empty": "Nog geen verzoeken."
+        },
+        "dnssec": {
+            "name": "DNSSEC",
+            "description": "Percentage verzoeken dat met DNSSEC is gevalideerd.",
+            "empty": "Nog geen verzoeken."
+        },
+        "destination": {
+            "name": "Verkeersbestemming",
+            "description": "Geschatte bestemmingslanden op basis van je DNS-verzoeken.",
+            "queries_one": "{{count, number}} verzoek",
+            "queries_other": "{{count, number}} verzoeken",
+            "topDomains": "Meest opgevraagde domeinen"
+        }
+    },
+    "logs": {
+        "blockedOnly": "Alleen geblokkeerde verzoeken",
+        "raw": "Onbewerkte DNS-logboeken",
+        "empty": "Nog geen logboekvermeldingen.",
+        "log": {
+            "actionBlock": "Blokkeren",
+            "actionAllow": "Toestaan",
+            "dnssec": "Gevalideerd met DNSSEC.",
+            "clients": {
+                "nextdns-ios": "NextDNS voor iOS",
+                "nextdns-android": "NextDNS voor Android",
+                "nextdns-macos": "NextDNS voor macOS",
+                "nextdns-windows": "NextDNS voor Windows",
+                "nextdns-cli": "NextDNS CLI-client",
+                "nextdns-chromeos": "NextDNS voor ChromeOS",
+                "firefox": "Firefox",
+                "google-chrome": "Google Chrome",
+                "dnscrypt": "DNSCrypt",
+                "intra": "Intra",
+                "surge": "Surge",
+                "https-dns-proxy": "https_dns_proxy",
+                "mikrotik": "MikroTik",
+                "apple-profile": "Apple-configuratieprofiel",
+                "yogadns": "YogaDNS",
+                "tailscale": "Tailscale"
+            },
+            "blockedBy": "Geblokkeerd door <1>{{lists, list}}</1>.",
+            "allowedBy": "Toegestaan door <1>{{lists, list}}</1>.",
+            "manual": {
+                "deny": "Handmatig geblokkeerd.",
+                "allow": "Handmatig toegestaan."
+            },
+            "insights": {
+                "show": "Trackerinzichten weergeven",
+                "hide": "Trackerinzichten verbergen",
+                "categories": {
+                    "advertising": {
+                        "description": "Biedt reclame- of reclamegerelateerde diensten zoals gegevensverzameling, gedragsanalyse of retargeting."
+                    },
+                    "comments": {
+                        "description": "Maakt reactiesecties mogelijk voor artikelen en productrecensies."
+                    },
+                    "customer_interaction": {
+                        "description": "Omvat chat, e-mailberichten, klantenservice en andere interactietools."
+                    },
+                    "essential": {
+                        "description": "Omvat tagmanagers, privacyverklaringen en technologieën die essentieel zijn voor de functionaliteit van een website."
+                    },
+                    "adult_advertsing": {
+                        "description": "Levert advertenties die doorgaans op websites met inhoud voor volwassenen verschijnen."
+                    },
+                    "site_analytics": {
+                        "description": "Verzamelt en analyseert gegevens met betrekking tot sitegebruik en prestaties."
+                    },
+                    "social_media": {
+                        "description": "Integreert functies met betrekking tot socialemediasites."
+                    },
+                    "audio_video_player": {
+                        "description": "Stelt websites in staat om video- en audio-inhoud te publiceren, te verspreiden en te optimaliseren."
+                    },
+                    "cdn": {
+                        "description": "Contentdeliverynetwerk dat bronnen levert voor verschillende sitefuncties, meestal voor veel verschillende klanten."
+                    },
+                    "misc": {
+                        "description": "Deze tracker past niet in andere categorieën of is nog niet gelabeld."
+                    },
+                    "pornvertising": {
+                        "description": "Levert advertenties die doorgaans op websites met inhoud voor volwassenen verschijnen."
+                    },
+                    "hosting": {
+                        "description": "Dit is een dienst die wordt gebruikt door de contentaanbieder of de site-eigenaar."
+                    },
+                    "extensions": {
+                        "description": "Software op gebruikersapparaten die browserverkeer kan onderscheppen en analyseren (man-in-the-middle)."
+                    }
+                },
+                "prevalence": {
+                    "intensity": {
+                        "dangerously": "Gevaarlijk veelvoorkomend",
+                        "extremely": "Extreem veelvoorkomend",
+                        "very": "Zeer veelvoorkomend",
+                        "commonly": "Veelvoorkomend",
+                        "relatively": "Relatief veelvoorkomend"
+                    },
+                    "summary": "{{prevalence}} <2>(trackt {{percent, percentage}} van het webverkeer)</2>"
+                },
+                "ownedBy": "<0>Eigendom van </0><1>{{company}}</1>",
+                "source": "Trackerinzichten van"
+            }
+        },
+        "settings": "Logboekopties",
+        "streaming": "Live updates van het logboek",
+        "toggleTimeFormat": "Tijdstempelnotatie wisselen"
+    },
+    "deviceSelector": {
+        "all": "Alle apparaten",
+        "howto": "Op de pagina Instellen lees je hoe je je apparaten kunt identificeren."
+    },
+    "timeRangeSelector": {
+        "ranges": {
+            "30m": "Afgelopen 30 minuten",
+            "6h": "Afgelopen 6 uur",
+            "24h": "Afgelopen 24 uur",
+            "7d": "Afgelopen 7 dagen",
+            "30d": "Afgelopen 30 dagen",
+            "3M": "Afgelopen 3 maanden"
+        }
+    },
+    "settings": {
         "name": {
-          "label": "Naam",
-          "placeholder": "Thuis, Kinderen, Kantoor, ...",
-          "errors": {
-            "required": "Geef een naam op.",
-            "taken": "Je hebt al een profiel met die naam."
-          }
+            "name": "Naam",
+            "description": "Kies een naam voor dit profiel."
         },
-        "button": "Dupliceren"
-      }
-    },
-    "delete": {
-      "button": "<1>{{name}}</1> verwijderen",
-      "warning": "Hiermee worden dit profiel en alle bijbehorende logboeken voorgoed verwijderd.",
-      "confirm": {
-        "text": "Weet je zeker dat je <1>{{name}}</1> wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
-      }
-    },
-    "leave": {
-      "button": "<1>{{name}}</1> verlaten",
-      "warning": "Je verliest de toegang tot dit profiel.",
-      "confirm": {
-        "text": "Weet je zeker dat je <1>{{name}}</1> wilt verlaten? Deze actie kan niet ongedaan worden gemaakt."
-      }
+        "logs": {
+            "name": "Logboeken",
+            "description": "Verfijn je logboekinstellingen.",
+            "enable": "Schakel logboeken in",
+            "privacy": {
+                "name": "Privacy-instellingen",
+                "ip": "Log IP's van clients",
+                "domains": "Log domeinen"
+            },
+            "retention": {
+                "name": "Bewaartermijn",
+                "options": {
+                    "1h": "1 uur",
+                    "6h": "6 uur",
+                    "1d": "1 dag",
+                    "1w": "1 week",
+                    "1m": "1 maand",
+                    "3m": "3 maanden",
+                    "6m": "6 maanden",
+                    "1y": "1 jaar",
+                    "2y": "2 jaar"
+                }
+            },
+            "location": {
+                "name": "Opslaglocatie",
+                "locations": {
+                    "us": {
+                        "name": "Verenigde Staten",
+                        "description": "Logboeken worden opgeslagen in de Verenigde Staten. Dit is de standaardinstelling."
+                    },
+                    "eu": {
+                        "name": "Europese Unie",
+                        "description": "Logboeken worden opgeslagen in lidstaten van de Europese Unie."
+                    },
+                    "ch": {
+                        "name": "Zwitserland",
+                        "description": "Logboeken worden opgeslagen in Zürich, Zwitserland — een rechtsgebied dat bekendstaat om zijn strenge privacywetten."
+                    }
+                },
+                "confirm": {
+                    "title": "Opslaglocatie wijzigen",
+                    "text": "Als je de opslaglocatie van de logboeken wijzigt, worden alle eerdere logboeken en statistieken voor dit profiel verwijderd."
+                }
+            },
+            "download": {
+                "button": "Logboeken downloaden"
+            },
+            "clear": {
+                "button": "Logboeken wissen",
+                "confirm": {
+                    "text": "Weet je zeker dat je alle logboeken voor dit profiel wilt wissen? Deze actie kan niet ongedaan worden gemaakt.",
+                    "submit": "Wissen"
+                }
+            }
+        },
+        "blockpage": {
+            "name": "Blokkeerpagina",
+            "description": "Toon een blokkeerpagina wanneer een domein wordt geblokkeerd. Dit kan de laadtijd iets verhogen en in sommige gevallen kan een HTTPS-waarschuwing verschijnen. Als deze functie is uitgeschakeld, worden geblokkeerde verzoeken beantwoord met het niet-gespecificeerde adres (0.0.0.0 of ::).",
+            "enable": "Schakel blokkeerpagina in",
+            "ca": {
+                "name": "NextDNS Root CA",
+                "description": "Verwijder de HTTPS-waarschuwing bij het laden van de blokkeerpagina door onze root-CA op <1>{{link}}</1> te installeren en te vertrouwen. Lees <3>hier</3> de instructies om dit te doen."
+            }
+        },
+        "performance": {
+            "name": "Prestaties",
+            "description": "Versnel het browsen.",
+            "ecs": {
+                "name": "Geanonimiseerd EDNS-clientsubnet",
+                "description": "Versnel de levering van gegevens via contentdeliverynetwerken zonder je IP-adres vrij te geven.",
+                "enable": "Schakel geanonimiseerd EDNS-clientsubnet in"
+            },
+            "cache": {
+                "name": "Cache-boost",
+                "description": "Minimaliseer DNS-verzoeken door een minimale TTL (Time to live) af te dwingen.",
+                "enable": "Schakel cache-boost in"
+            },
+            "flatten": {
+                "name": "CNAME-flattening",
+                "description": "Voorkom dat resolvers die CNAME's volgen onnodige verzoeken doen en de logboeken vervuilen met tussenliggende domeinen.",
+                "enable": "Schakel CNAME-flattening in"
+            }
+        },
+        "ageVerification": {
+            "name": "Leeftijdsverificatie omzeilen",
+            "description": "Omzeil automatisch de leeftijdscontroles die bepaalde websites, zoals websites met inhoud voor volwassenen, gebruiken om de leeftijd van bezoekers te controleren voordat ze toegang krijgen.",
+            "acknowledgment": "Door deze functie in te schakelen, erken je dat je de wettelijk vereiste leeftijd hebt om toegang te krijgen tot de inhoud."
+        },
+        "web3": {
+            "name": "Web3",
+            "description": "Web3 verwijst naar een gedecentraliseerd en censuurbestendig online ecosysteem met innovatieve technologieën zoals op blockchain gebaseerde domeinregisters (bijvoorbeeld Ethereum Name Service) en gedistribueerde netwerken voor opslag en levering van inhoud (bijvoorbeeld IPFS). Als je deze functie inschakelt, fungeert NextDNS als een ongefilterde toegangspoort tot dit nieuwe web, zodat je het zelf kunt ervaren zonder iets te installeren.",
+            "tips": "Omdat de meeste browsers momenteel alleen klassieke topleveldomeinen ondersteunen, moet je een slash (‘<1>/</1>’) achter de naam zetten als je een Web3-domein rechtstreeks wilt openen (bijvoorbeeld ‘<3>vitalik.eth/</3>’ in plaats van ‘<5>vitalik.eth</5>’).",
+            "enable": "Schakel Web3 in"
+        },
+        "rewrites": {
+            "name": "Herschrijvingen",
+            "description": "Stel het DNS-antwoord voor een domein in of overschrijf het. Herschrijvingen gelden ook voor subdomeinen en lokale IP-adressen worden als antwoord ondersteund.",
+            "new": "Nieuwe herschrijving",
+            "form": {
+                "domain": {
+                    "label": "Domein",
+                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
+                    "errors": {
+                        "required": "Geef een domein op.",
+                        "ip": "Geef een domein op, geen IP-adres.",
+                        "invalid": "Geef een geldig domein op.",
+                        "taken": "Je hebt al een herschrijving voor dat domein."
+                    }
+                },
+                "answer": {
+                    "label": "Antwoord",
+                    "placeholder": "1.2.3.4, sub.example.org, ...",
+                    "errors": {
+                        "required": "Geef een antwoord op.",
+                        "invalid": "Het antwoord moet een geldig IP-adres of domein zijn."
+                    }
+                }
+            }
+        },
+        "access": {
+            "name": "Toegang",
+            "description": "Geef anderen toegang om dit profiel te bewerken of alleen te bekijken.",
+            "roles": {
+                "editor": "Bewerker",
+                "viewer": "Lezer"
+            },
+            "pending": "Uitnodiging verzonden",
+            "form": {
+                "email": {
+                    "label": "E-mailadres",
+                    "errors": {
+                        "required": "Geef een e-mailadres op.",
+                        "invalid": "Geef een geldig e-mailadres op.",
+                        "duplicate": "Dit e-mailadres is al eerder uitgenodigd."
+                    }
+                },
+                "role": {
+                    "label": "Rol"
+                }
+            }
+        },
+        "duplicate": {
+            "button": "<1>{{name}}</1> dupliceren",
+            "description": "Kopieer alle instellingen van dit profiel naar een nieuw profiel.",
+            "form": {
+                "name": {
+                    "label": "Naam",
+                    "placeholder": "Thuis, Kinderen, Kantoor, ...",
+                    "errors": {
+                        "required": "Geef een naam op.",
+                        "taken": "Je hebt al een profiel met die naam."
+                    }
+                },
+                "button": "Dupliceren"
+            }
+        },
+        "delete": {
+            "button": "<1>{{name}}</1> verwijderen",
+            "warning": "Hiermee worden dit profiel en alle bijbehorende logboeken voorgoed verwijderd.",
+            "confirm": {
+                "text": "Weet je zeker dat je <1>{{name}}</1> wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+            }
+        },
+        "leave": {
+            "button": "<1>{{name}}</1> verlaten",
+            "warning": "Je verliest de toegang tot dit profiel.",
+            "confirm": {
+                "text": "Weet je zeker dat je <1>{{name}}</1> wilt verlaten? Deze actie kan niet ongedaan worden gemaakt."
+            }
+        }
     }
-  }
 }

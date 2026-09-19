@@ -1,1389 +1,1398 @@
 {
-  "global": {
-    "beta": "beta",
-    "preview": "Truy cập sớm",
-    "cancel": "Hủy",
-    "add": "Thêm",
-    "save": "Lưu",
-    "continue": "Tiếp tục",
-    "enable": "Bật",
-    "change": "Thay đổi",
-    "create": "Tạo",
-    "subscribe": "Đăng ký trả phí",
-    "invite": "Mời",
-    "remove": "Gỡ bỏ",
-    "leave": "Rời khỏi",
-    "delete": "Xóa",
-    "close": "Đóng",
-    "back": "Quay lại",
-    "disable": "Tắt",
-    "unnamedDevice": "Thiết bị #{{id}}",
-    "firstConfiguration": "Hồ sơ đầu tiên của tôi",
-    "error": "Lỗi",
-    "networkError": "Lỗi mạng",
-    "requestFailed": "Yêu cầu không thành công",
-    "noProfiles": "Chưa có hồ sơ nào.",
-    "search": "Tìm kiếm",
-    "clearSearch": "Xóa tìm kiếm",
-    "copy": "Sao chép",
-    "actions": "Thao tác",
-    "expand": "Mở rộng",
-    "collapse": "Thu gọn"
-  },
-  "theme": {
-    "label": "Giao diện",
-    "system": "Hệ thống",
-    "light": "Sáng",
-    "dark": "Tối"
-  },
-  "pages": {
-    "signup": "Đăng ký",
-    "login": "Đăng nhập",
-    "passwordReset": "Đặt lại mật khẩu của bạn",
-    "account": "Tài khoản",
-    "setup": "Thiết lập",
-    "security": "Bảo mật",
-    "privacy": "Quyền riêng tư",
-    "parentalcontrol": "Kiểm soát của phụ huynh",
-    "denylist": "Danh sách từ chối",
-    "allowlist": "Danh sách cho phép",
-    "analytics": "Phân tích",
-    "logs": "Nhật ký",
-    "settings": "Cài đặt",
-    "help": "Trợ giúp"
-  },
-  "banners": {
-    "temporary": "Tài khoản tạm thời này sẽ hết hạn <1><0></0></1> và chỉ có thể truy cập từ trình duyệt này. Đăng ký miễn phí ngay để lưu cài đặt của bạn.",
-    "nearQuota": "Bạn đã thực hiện hơn {{queriesNearQuota, number}} truy vấn trong tháng này, gần đạt giới hạn miễn phí hàng tháng là {{queriesQuota, number}} truy vấn. <5>Đăng ký trả phí</5> để tiếp tục sử dụng NextDNS.",
-    "overQuota": "Bạn đã thực hiện hơn {{queriesQuota, number}} truy vấn trong tháng này và tất cả tính năng đã bị tắt. <3>Đăng ký trả phí</3> để tiếp tục sử dụng NextDNS."
-  },
-  "account": {
-    "email": "Email",
-    "newEmail": "Email mới",
-    "password": "Mật khẩu",
-    "newPassword": "Mật khẩu mới",
-    "currentPassword": "Mật khẩu hiện tại",
-    "forgotPassword": "Quên mật khẩu?",
-    "savePassword": "Lưu mật khẩu",
-    "passwordResetInfo": "Nhập địa chỉ email liên kết với tài khoản của bạn. Chúng tôi sẽ gửi một liên kết để đặt lại mật khẩu.",
-    "sendEmail": "Gửi email",
-    "passwordResetLinkSentMessage": "Liên kết đặt lại mật khẩu đã được gửi tới <1>{{email}}</1>.",
-    "code": "Mã 2FA",
-    "login": "Đăng nhập",
-    "noAccountYet": "Chưa có tài khoản? <1>Đăng ký</1>",
-    "signup": "Đăng ký",
-    "alreadyHaveAnAccount": "Đã có tài khoản? <1>Đăng nhập</1>",
-    "convertingNotice": "Bạn đang chuyển tài khoản tạm thời thành tài khoản chính thức. Tất cả cài đặt của bạn sẽ được lưu lại.",
-    "convertingDeviceOnlyNotice": "Bạn đang chuyển tài khoản chỉ dành cho thiết bị thành tài khoản đầy đủ. Tất cả cài đặt của bạn sẽ được lưu lại.",
-    "logout": "Đăng xuất",
-    "errors": {
-      "email": {
-        "required": "Vui lòng nhập email.",
-        "invalid": "Vui lòng nhập email hợp lệ.",
-        "taken": "Email này đã được sử dụng."
-      },
-      "password": {
-        "required": "Vui lòng nhập mật khẩu.",
-        "invalidCombination": "Email hoặc mật khẩu không đúng."
-      },
-      "currentPassword": {
-        "required": "Vui lòng nhập mật khẩu hiện tại của bạn.",
-        "incorrect": "Mật khẩu bạn đã nhập không chính xác."
-      },
-      "code": {
-        "required": "Vui lòng nhập mã 2FA.",
-        "invalid": "Vui lòng nhập mã gồm 6 chữ số.",
-        "incorrect": "Mã 2FA không chính xác."
-      },
-      "resetPasswordToken": {
-        "invalid": "Mã xác thực không hợp lệ hoặc đã hết hạn."
-      }
+    "global": {
+        "beta": "beta",
+        "preview": "Truy cập sớm",
+        "cancel": "Hủy",
+        "add": "Thêm",
+        "save": "Lưu",
+        "continue": "Tiếp tục",
+        "enable": "Bật",
+        "change": "Thay đổi",
+        "create": "Tạo",
+        "subscribe": "Đăng ký trả phí",
+        "invite": "Mời",
+        "remove": "Gỡ bỏ",
+        "leave": "Rời khỏi",
+        "delete": "Xóa",
+        "close": "Đóng",
+        "back": "Quay lại",
+        "disable": "Tắt",
+        "unnamedDevice": "Thiết bị #{{id}}",
+        "firstConfiguration": "Hồ sơ đầu tiên của tôi",
+        "error": "Lỗi",
+        "networkError": "Lỗi mạng",
+        "requestFailed": "Yêu cầu không thành công",
+        "noProfiles": "Chưa có hồ sơ nào.",
+        "search": "Tìm kiếm",
+        "clearSearch": "Xóa tìm kiếm",
+        "copy": "Sao chép",
+        "actions": "Thao tác",
+        "expand": "Mở rộng",
+        "collapse": "Thu gọn"
     },
-    "affiliation": {
-      "name": "Tiếp thị liên kết",
-      "description": "Giúp chúng tôi quảng bá bằng cách chia sẻ <1>{{link}}</1> và nhận <3>{{share, percentage}}</3> số tiền thanh toán gói đăng ký từ những người bạn giới thiệu trong <5>{{months, number}} tháng</5> đầu tiên kể từ khi gói đăng ký trả phí đầu tiên của họ bắt đầu.",
-      "balance": {
-        "name": "Số dư"
-      },
-      "availableBalance": {
-        "name": "Số dư khả dụng",
-        "description": "Số dư có thể được rút sau một tháng để dự phòng các khoản hoàn tiền có thể phát sinh."
-      },
-      "payout": {
-        "button": "Rút tiền",
-        "minimum": "Cần có số dư khả dụng ít nhất {{amount, price}} để rút tiền.",
-        "form": {
-          "paypalEmail": "Email PayPal",
-          "errors": {
-            "paypalEmail": {
-              "required": "Vui lòng nhập email PayPal.",
-              "invalid": "Vui lòng nhập email PayPal hợp lệ."
-            }
-          }
-        }
-      }
+    "theme": {
+        "label": "Giao diện",
+        "system": "Hệ thống",
+        "light": "Sáng",
+        "dark": "Tối"
     },
-    "usage": {
-      "name": "Sử dụng miễn phí",
-      "description": "Bạn có thể sử dụng NextDNS miễn phí với tối đa {{queries, number}} truy vấn mỗi tháng. Khi vượt giới hạn, tất cả tính năng sẽ tạm thời bị tắt cho đến tháng sau.",
-      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} truy vấn</1>",
-      "overQuota": {
-        "message": "Bạn đã thực hiện hơn {{queries, number}} truy vấn trong tháng này.",
-        "info": "NextDNS vẫn trả lời các truy vấn DNS, nhưng tất cả tính năng sẽ tạm thời bị tắt cho đến tháng sau."
-      },
-      "subscribe": {
-        "ios": "Để đăng ký trả phí, hãy truy cập my.nextdns.io trong trình duyệt.",
-        "upsell": "Truy vấn không giới hạn, chỉ từ {{amount, price}}/tháng."
-      }
+    "pages": {
+        "signup": "Đăng ký",
+        "login": "Đăng nhập",
+        "passwordReset": "Đặt lại mật khẩu của bạn",
+        "account": "Tài khoản",
+        "setup": "Thiết lập",
+        "security": "Bảo mật",
+        "privacy": "Quyền riêng tư",
+        "parentalcontrol": "Kiểm soát của phụ huynh",
+        "denylist": "Danh sách từ chối",
+        "allowlist": "Danh sách cho phép",
+        "analytics": "Phân tích",
+        "logs": "Nhật ký",
+        "settings": "Cài đặt",
+        "help": "Trợ giúp"
     },
-    "subscription": {
-      "name": "Gói đăng ký",
-      "plans": {
-        "pro": "Pro",
-        "business": "Doanh nghiệp",
-        "education": "Giáo dục"
-      },
-      "intervals": {
-        "month": "gói tháng",
-        "year": "gói năm"
-      },
-      "per": {
-        "month": "mỗi tháng",
-        "year": "mỗi năm"
-      },
-      "units": {
-        "business_other": "{{count, number}} nhân viên",
-        "education_other": "{{count, number}} học sinh, sinh viên"
-      },
-      "planFull": "{{plan}} ({{interval}})",
-      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-      "expires": "Gói đăng ký của bạn sẽ hết hạn vào {{date, date}}.",
-      "managedByApple": "Gói đăng ký của bạn được quản lý thông qua Tài khoản Apple. Để thay đổi hoặc hủy, hãy sử dụng phần cài đặt gói đăng ký của Apple.",
-      "manageOnApple": "Quản lý gói đăng ký trên Apple",
-      "restart": {
-        "button": "Đăng ký lại"
-      },
-      "changePlan": {
-        "button": "Đổi gói"
-      },
-      "renewal": "Khoản thanh toán tự động tiếp theo của bạn là {{amount, price}} vào {{date, date}}.",
-      "changePaymentMethod": {
-        "button": "Thay đổi phương thức thanh toán"
-      },
-      "cancel": {
-        "button": "Hủy gói đăng ký",
-        "confirm": {
-          "text": "Gói đăng ký hiện tại của bạn vẫn có hiệu lực đến {{date, date}}.",
-          "submit": "Hủy gói đăng ký"
-        }
-      },
-      "subscribe": {
-        "choosePlan": "Chọn một gói",
-        "addPaymentMethod": "Thêm phương thức thanh toán",
-        "included": "Tất cả các gói đều bao gồm <1>quyền sử dụng mọi tính năng</1>, <3>thiết bị không giới hạn</3> và <5>truy vấn không giới hạn</5>.",
-        "savings": "Tiết kiệm {{percent, percentage}} so với gói tháng",
-        "familyOnly": "* Gói Pro chỉ dành cho mục đích sử dụng cá nhân (và người thân trong gia đình).",
-        "unitsQuestion": {
-          "business": "Doanh nghiệp của bạn có bao nhiêu <1>nhân viên</1>?",
-          "education": "Trường (hoặc học khu) của bạn có bao nhiêu <1>học sinh, sinh viên</1>?"
-        },
-        "unitsLabel": {
-          "business": "Số nhân viên",
-          "education": "Số học sinh, sinh viên"
-        },
-        "asYouGrow": {
-          "business": "* Hãy nhớ cập nhật gói của bạn khi số lượng nhân viên tăng lên.",
-          "education": "* Hãy nhớ cập nhật gói khi số lượng học sinh, sinh viên tăng lên."
-        },
-        "starting": {
-          "business": "<0>Chỉ từ </0><1>{{price, price}}</1><2> mỗi tháng cho {{units, number}} nhân viên</2>",
-          "education": "<0>Chỉ từ </0><1>{{price, price}}</1><2> mỗi tháng cho {{units, number}} học sinh, sinh viên</2>"
-        },
-        "card": {
-          "number": "Số thẻ",
-          "expiration": "Ngày hết hạn",
-          "code": "Mã bảo mật",
-          "stripe": "Chúng tôi sử dụng Stripe — một cổng thanh toán hàng đầu — để xử lý thanh toán bằng thẻ một cách an toàn mà không bao giờ truy cập trực tiếp vào thông tin thẻ của bạn."
-        },
-        "paypal": {
-          "text": "Nhấp vào nút Tiếp tục đến PayPal để đăng ký trả phí bằng PayPal."
-        },
-        "bitpay": {
-          "text": "Nhấp vào nút Tiếp tục đến BitPay để thanh toán bằng tiền mã hóa.",
-          "toYearly": "Chúng tôi không chấp nhận thanh toán bằng tiền mã hóa cho gói tháng. <1>Nếu tiếp tục, bạn sẽ được tự động chuyển sang gói năm.</1>",
-          "remainder": "Gói đăng ký hiện tại của bạn đã được thanh toán đến {{date, date}}. Bạn sẽ thanh toán ngay bây giờ và thời gian sử dụng còn lại sẽ tự động được cộng vào ngày hết hạn mới."
-        },
-        "continueTo": "Tiếp tục đến <1></1>"
-      }
+    "banners": {
+        "temporary": "Tài khoản tạm thời này sẽ hết hạn <1><0></0></1> và chỉ có thể truy cập từ trình duyệt này. Đăng ký miễn phí ngay để lưu cài đặt của bạn.",
+        "nearQuota": "Bạn đã thực hiện hơn {{queriesNearQuota, number}} truy vấn trong tháng này, gần đạt giới hạn miễn phí hàng tháng là {{queriesQuota, number}} truy vấn. <5>Đăng ký trả phí</5> để tiếp tục sử dụng NextDNS.",
+        "overQuota": "Bạn đã thực hiện hơn {{queriesQuota, number}} truy vấn trong tháng này và tất cả tính năng đã bị tắt. <3>Đăng ký trả phí</3> để tiếp tục sử dụng NextDNS."
     },
-    "business": {
-      "name": "Doanh nghiệp",
-      "description": "Vì mục đích thuế, chúng tôi cần tên doanh nghiệp, địa chỉ và số VAT (hoặc thông tin tương đương). Điều này là bắt buộc theo luật và sẽ xuất hiện trên tất cả các hóa đơn.",
-      "button": {
-        "add": "Thêm thông tin doanh nghiệp",
-        "update": "Cập nhật"
-      },
-      "form": {
-        "name": {
-          "label": "Tên",
-          "placeholder": "ACME Inc.",
-          "errors": {
-            "required": "Vui lòng nhập tên doanh nghiệp của bạn."
-          }
-        },
-        "address": {
-          "label": "Địa chỉ",
-          "placeholder": "10 Downing St, Westminster\nLondon SW1A 2AA\nVương quốc Anh",
-          "errors": {
-            "required": "Vui lòng nhập địa chỉ doanh nghiệp của bạn."
-          }
-        },
-        "vatNumber": {
-          "label": "Mã số VAT (hoặc tương đương)"
-        }
-      }
-    },
-    "invoices": {
-      "name": "Hóa đơn",
-      "description": "Lịch sử thanh toán và tất cả các hóa đơn cho tài khoản của bạn.",
-      "pending": "{{amount, price}} (Đang chờ xử lý)",
-      "show-more": "Hiển thị thêm",
-      "show-less": "Thu gọn",
-      "invoice": {
-        "title": "Hóa đơn #{{code}}",
-        "to": "Tới: <1>{{email}}</1>",
-        "vatNumber": "Mã số VAT (hoặc tương đương): {{number}}",
-        "columns": {
-          "plan": "Gói",
-          "period": "Kỳ thanh toán",
-          "amount": "Số tiền"
-        },
-        "vat": "VAT ({{rate, percentage}})",
-        "total": "Tổng cộng",
-        "footer": {
-          "reverseCharged": "Thuế VAT (hoặc tương đương) do bên mua kê khai và nộp theo cơ chế thuế ngược.",
-          "currency": "Tất cả các số tiền được hiển thị bằng {{code}}."
-        }
-      }
-    },
-    "changeEmail": {
-      "name": "Email",
-      "description": "Thay đổi địa chỉ email dùng để đăng nhập vào tài khoản của bạn và nhận các thông báo quan trọng.",
-      "button": "Đổi email"
-    },
-    "changePassword": {
-      "name": "Mật khẩu",
-      "description": "Thay đổi mật khẩu dùng để đăng nhập tài khoản và xác nhận các thao tác nhạy cảm.",
-      "button": "Đổi mật khẩu"
-    },
-    "2fa": {
-      "name": "Xác thực hai yếu tố (2FA)",
-      "description": "Xác thực hai yếu tố (2FA) là một lớp bảo mật bổ sung yêu cầu thêm một mã 6 chữ số dựa trên thời gian khi đăng nhập vào tài khoản của bạn.",
-      "enabled": "Tài khoản của bạn đã bật 2FA.",
-      "enable": {
-        "button": "Bật 2FA",
-        "secret": "Khóa bí mật xác thực hai yếu tố",
-        "modal": {
-          "howto": "Sử dụng ứng dụng xác thực như <1>Google Authenticator</1> hoặc trình quản lý mật khẩu hỗ trợ 2FA. Bạn có thể quét mã QR, nhấn vào mã để mở liên kết <3>{{otpauth}}</3> hoặc tự sao chép và dán khóa bí mật."
-        }
-      },
-      "recovery": {
-        "button": "Mã khôi phục",
-        "modal": {
-          "howto": "Sử dụng các mã khôi phục này để truy cập vào tài khoản của bạn trong trường hợp bạn mất quyền truy cập vào thiết bị của mình và không thể nhận mã xác thực hai yếu tố. Mỗi mã chỉ được sử dụng một lần.",
-          "download": "Tải xuống",
-          "regen": "Tạo lại"
-        }
-      },
-      "disable": {
-        "button": "Tắt 2FA"
-      }
-    },
-    "api": {
-      "description": "Tạo và quản lý hồ sơ bằng mã lập trình. Đọc tài liệu tại <1>{{link}}</1>.",
-      "copy": "Sao chép khóa API",
-      "remove": "Gỡ bỏ khóa API",
-      "create": {
-        "button": "Tạo khóa API"
-      }
-    },
-    "delete": {
-      "button": "Xóa tài khoản",
-      "warning": "Thao tác này sẽ xóa vĩnh viễn tài khoản và tất cả hồ sơ của bạn.",
-      "confirm": {
-        "text": "Bạn có chắc muốn xóa tài khoản? Thao tác này không thể hoàn tác."
-      }
-    },
-    "temporary": {
-      "expired": {
-        "modal": {
-          "title": "Đã hết hạn",
-          "text": "Tài khoản tạm thời của bạn đã hết hạn. Đăng ký ngay để lưu cài đặt và tiếp tục sử dụng NextDNS. Hoàn toàn miễn phí."
-        }
-      }
-    }
-  },
-  "configurationSelector": {
-    "new": "Mới",
-    "form": {
-      "title": "Hồ sơ mới",
-      "name": {
-        "label": "Tên",
-        "placeholder": "Nhà, Trẻ em, Văn phòng, ...",
+    "account": {
+        "email": "Email",
+        "newEmail": "Email mới",
+        "password": "Mật khẩu",
+        "newPassword": "Mật khẩu mới",
+        "currentPassword": "Mật khẩu hiện tại",
+        "forgotPassword": "Quên mật khẩu?",
+        "savePassword": "Lưu mật khẩu",
+        "passwordResetInfo": "Nhập địa chỉ email liên kết với tài khoản của bạn. Chúng tôi sẽ gửi một liên kết để đặt lại mật khẩu.",
+        "sendEmail": "Gửi email",
+        "passwordResetLinkSentMessage": "Liên kết đặt lại mật khẩu đã được gửi tới <1>{{email}}</1>.",
+        "code": "Mã 2FA",
+        "login": "Đăng nhập",
+        "noAccountYet": "Chưa có tài khoản? <1>Đăng ký</1>",
+        "signup": "Đăng ký",
+        "alreadyHaveAnAccount": "Đã có tài khoản? <1>Đăng nhập</1>",
+        "convertingNotice": "Bạn đang chuyển tài khoản tạm thời thành tài khoản chính thức. Tất cả cài đặt của bạn sẽ được lưu lại.",
+        "convertingDeviceOnlyNotice": "Bạn đang chuyển tài khoản chỉ dành cho thiết bị thành tài khoản đầy đủ. Tất cả cài đặt của bạn sẽ được lưu lại.",
+        "logout": "Đăng xuất",
         "errors": {
-          "required": "Vui lòng nhập tên.",
-          "taken": "Bạn đã có một hồ sơ mang tên này."
-        }
-      }
-    }
-  },
-  "setup": {
-    "status": {
-      "ok": {
-        "primary": "Mọi thứ đều ổn!",
-        "secondary": "Thiết bị này đang sử dụng NextDNS với hồ sơ này."
-      },
-      "mismatch": {
-        "withoutConfiguration": {
-          "primary": "Thiết bị này đang sử dụng NextDNS mà không có hồ sơ.",
-          "secondary": {
-            "clients": "Đảm bảo bạn đã nhập ID hồ sơ bên dưới vào phần cài đặt ứng dụng.",
-            "firefox": "Đảm bảo bạn đã đặt điểm cuối DNS-over-HTTPS bên dưới trong Firefox.",
-            "doh": "Đảm bảo bạn đang sử dụng điểm cuối DNS-over-HTTPS bên dưới.",
-            "dot": "Đảm bảo bạn đang sử dụng điểm cuối DNS-over-TLS bên dưới.",
-            "ipv6": "Đảm bảo bạn đang sử dụng các địa chỉ IPv6 bên dưới.",
-            "servers": "Đảm bảo bạn đang sử dụng các máy chủ DNS trong phần IP được liên kết bên dưới (mỗi hồ sơ có các máy chủ DNS khác nhau).",
-            "link": "Đảm bảo liên kết địa chỉ IP của bạn trong phần IP được liên kết bên dưới."
-          }
+            "email": {
+                "required": "Vui lòng nhập email.",
+                "invalid": "Vui lòng nhập email hợp lệ.",
+                "taken": "Email này đã được sử dụng."
+            },
+            "password": {
+                "required": "Vui lòng nhập mật khẩu.",
+                "invalidCombination": "Email hoặc mật khẩu không đúng."
+            },
+            "currentPassword": {
+                "required": "Vui lòng nhập mật khẩu hiện tại của bạn.",
+                "incorrect": "Mật khẩu bạn đã nhập không chính xác."
+            },
+            "code": {
+                "required": "Vui lòng nhập mã 2FA.",
+                "invalid": "Vui lòng nhập mã gồm 6 chữ số.",
+                "incorrect": "Mã 2FA không chính xác."
+            },
+            "resetPasswordToken": {
+                "invalid": "Mã xác thực không hợp lệ hoặc đã hết hạn."
+            }
         },
-        "withConfiguration": {
-          "primary": "Thiết bị này đang sử dụng NextDNS với một hồ sơ khác.",
-          "secondary": {
-            "sameAccount": "Thiết bị này hiện đang sử dụng “{{name}}”.",
-            "otherAccount": "Đảm bảo rằng bạn đang sử dụng một trong các điểm cuối được liệt kê trên trang này."
-          }
-        }
-      },
-      "unconfigured": {
-        "primary": "Thiết bị này không sử dụng NextDNS.",
-        "secondary": "Thiết bị này hiện đang sử dụng “{{resolver}}” làm trình phân giải DNS."
-      },
-      "error": {
-        "primary": "Lỗi khi kiểm tra trạng thái hiện tại.",
-        "secondary": "Vui lòng liên hệ với chúng tôi nếu sự cố này vẫn tiếp diễn sau khi làm mới trang."
-      },
-      "apr": {
-        "ok": {
-          "primary": "Thiết bị này đang sử dụng NextDNS với Chuyển tiếp bảo mật iCloud.",
-          "secondary": "Các tính năng như Tìm kiếm an toàn, Chế độ hạn chế trên YouTube và Ghi đè DNS không tương thích với Chuyển tiếp bảo mật iCloud."
+        "affiliation": {
+            "name": "Tiếp thị liên kết",
+            "description": "Giúp chúng tôi quảng bá bằng cách chia sẻ <1>{{link}}</1> và nhận <3>{{share, percentage}}</3> số tiền thanh toán gói đăng ký từ những người bạn giới thiệu trong <5>{{months, number}} tháng</5> đầu tiên kể từ khi gói đăng ký trả phí đầu tiên của họ bắt đầu.",
+            "balance": {
+                "name": "Số dư"
+            },
+            "availableBalance": {
+                "name": "Số dư khả dụng",
+                "description": "Số dư có thể được rút sau một tháng để dự phòng các khoản hoàn tiền có thể phát sinh."
+            },
+            "payout": {
+                "button": "Rút tiền",
+                "minimum": "Cần có số dư khả dụng ít nhất {{amount, price}} để rút tiền.",
+                "form": {
+                    "paypalEmail": "Email PayPal",
+                    "errors": {
+                        "paypalEmail": {
+                            "required": "Vui lòng nhập email PayPal.",
+                            "invalid": "Vui lòng nhập email PayPal hợp lệ."
+                        }
+                    }
+                }
+            }
         },
-        "blockpage": {
-          "primary": "Thiết bị này đang sử dụng NextDNS với Chuyển tiếp bảo mật iCloud.",
-          "secondary": "Bật cài đặt trang chặn khi sử dụng Chuyển tiếp bảo mật iCloud sẽ ảnh hưởng đến hoạt động chặn."
+        "usage": {
+            "name": "Sử dụng miễn phí",
+            "description": "Bạn có thể sử dụng NextDNS miễn phí với tối đa {{queries, number}} truy vấn mỗi tháng. Khi vượt giới hạn, tất cả tính năng sẽ tạm thời bị tắt cho đến tháng sau.",
+            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} truy vấn</1>",
+            "overQuota": {
+                "message": "Bạn đã thực hiện hơn {{queries, number}} truy vấn trong tháng này.",
+                "info": "NextDNS vẫn trả lời các truy vấn DNS, nhưng tất cả tính năng sẽ tạm thời bị tắt cho đến tháng sau."
+            },
+            "subscribe": {
+                "ios": "Để đăng ký trả phí, hãy truy cập my.nextdns.io trong trình duyệt.",
+                "upsell": "Truy vấn không giới hạn, chỉ từ {{amount, price}}/tháng."
+            }
+        },
+        "subscription": {
+            "name": "Gói đăng ký",
+            "plans": {
+                "pro": "Pro",
+                "business": "Doanh nghiệp",
+                "education": "Giáo dục"
+            },
+            "intervals": {
+                "month": "gói tháng",
+                "year": "gói năm"
+            },
+            "per": {
+                "month": "mỗi tháng",
+                "year": "mỗi năm"
+            },
+            "units": {
+                "business_other": "{{count, number}} nhân viên",
+                "education_other": "{{count, number}} học sinh, sinh viên",
+                "education_one": "",
+                "business_one": ""
+            },
+            "planFull": "{{plan}} ({{interval}})",
+            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+            "expires": "Gói đăng ký của bạn sẽ hết hạn vào {{date, date}}.",
+            "managedByApple": "Gói đăng ký của bạn được quản lý thông qua Tài khoản Apple. Để thay đổi hoặc hủy, hãy sử dụng phần cài đặt gói đăng ký của Apple.",
+            "manageOnApple": "Quản lý gói đăng ký trên Apple",
+            "restart": {
+                "button": "Đăng ký lại"
+            },
+            "changePlan": {
+                "button": "Đổi gói"
+            },
+            "renewal": "Khoản thanh toán tự động tiếp theo của bạn là {{amount, price}} vào {{date, date}}.",
+            "changePaymentMethod": {
+                "button": "Thay đổi phương thức thanh toán"
+            },
+            "cancel": {
+                "button": "Hủy gói đăng ký",
+                "confirm": {
+                    "text": "Gói đăng ký hiện tại của bạn vẫn có hiệu lực đến {{date, date}}.",
+                    "submit": "Hủy gói đăng ký"
+                }
+            },
+            "subscribe": {
+                "choosePlan": "Chọn một gói",
+                "addPaymentMethod": "Thêm phương thức thanh toán",
+                "included": "Tất cả các gói đều bao gồm <1>quyền sử dụng mọi tính năng</1>, <3>thiết bị không giới hạn</3> và <5>truy vấn không giới hạn</5>.",
+                "savings": "Tiết kiệm {{percent, percentage}} so với gói tháng",
+                "familyOnly": "* Gói Pro chỉ dành cho mục đích sử dụng cá nhân (và người thân trong gia đình).",
+                "unitsQuestion": {
+                    "business": "Doanh nghiệp của bạn có bao nhiêu <1>nhân viên</1>?",
+                    "education": "Trường (hoặc học khu) của bạn có bao nhiêu <1>học sinh, sinh viên</1>?"
+                },
+                "unitsLabel": {
+                    "business": "Số nhân viên",
+                    "education": "Số học sinh, sinh viên"
+                },
+                "asYouGrow": {
+                    "business": "* Hãy nhớ cập nhật gói của bạn khi số lượng nhân viên tăng lên.",
+                    "education": "* Hãy nhớ cập nhật gói khi số lượng học sinh, sinh viên tăng lên."
+                },
+                "starting": {
+                    "business": "<0>Chỉ từ </0><1>{{price, price}}</1><2> mỗi tháng cho {{units, number}} nhân viên</2>",
+                    "education": "<0>Chỉ từ </0><1>{{price, price}}</1><2> mỗi tháng cho {{units, number}} học sinh, sinh viên</2>"
+                },
+                "card": {
+                    "number": "Số thẻ",
+                    "expiration": "Ngày hết hạn",
+                    "code": "Mã bảo mật",
+                    "stripe": "Chúng tôi sử dụng Stripe — một cổng thanh toán hàng đầu — để xử lý thanh toán bằng thẻ một cách an toàn mà không bao giờ truy cập trực tiếp vào thông tin thẻ của bạn."
+                },
+                "paypal": {
+                    "text": "Nhấp vào nút Tiếp tục đến PayPal để đăng ký trả phí bằng PayPal."
+                },
+                "bitpay": {
+                    "text": "Nhấp vào nút Tiếp tục đến BitPay để thanh toán bằng tiền mã hóa.",
+                    "toYearly": "Chúng tôi không chấp nhận thanh toán bằng tiền mã hóa cho gói tháng. <1>Nếu tiếp tục, bạn sẽ được tự động chuyển sang gói năm.</1>",
+                    "remainder": "Gói đăng ký hiện tại của bạn đã được thanh toán đến {{date, date}}. Bạn sẽ thanh toán ngay bây giờ và thời gian sử dụng còn lại sẽ tự động được cộng vào ngày hết hạn mới."
+                },
+                "continueTo": "Tiếp tục đến <1></1>"
+            }
+        },
+        "business": {
+            "name": "Doanh nghiệp",
+            "description": "Vì mục đích thuế, chúng tôi cần tên doanh nghiệp, địa chỉ và số VAT (hoặc thông tin tương đương). Điều này là bắt buộc theo luật và sẽ xuất hiện trên tất cả các hóa đơn.",
+            "button": {
+                "add": "Thêm thông tin doanh nghiệp",
+                "update": "Cập nhật"
+            },
+            "form": {
+                "name": {
+                    "label": "Tên",
+                    "placeholder": "ACME Inc.",
+                    "errors": {
+                        "required": "Vui lòng nhập tên doanh nghiệp của bạn."
+                    }
+                },
+                "address": {
+                    "label": "Địa chỉ",
+                    "placeholder": "10 Downing St, Westminster\nLondon SW1A 2AA\nVương quốc Anh",
+                    "errors": {
+                        "required": "Vui lòng nhập địa chỉ doanh nghiệp của bạn."
+                    }
+                },
+                "vatNumber": {
+                    "label": "Mã số VAT (hoặc tương đương)"
+                }
+            }
+        },
+        "invoices": {
+            "name": "Hóa đơn",
+            "description": "Lịch sử thanh toán và tất cả các hóa đơn cho tài khoản của bạn.",
+            "pending": "{{amount, price}} (Đang chờ xử lý)",
+            "show-more": "Hiển thị thêm",
+            "show-less": "Thu gọn",
+            "invoice": {
+                "title": "Hóa đơn #{{code}}",
+                "to": "Tới: <1>{{email}}</1>",
+                "vatNumber": "Mã số VAT (hoặc tương đương): {{number}}",
+                "columns": {
+                    "plan": "Gói",
+                    "period": "Kỳ thanh toán",
+                    "amount": "Số tiền"
+                },
+                "vat": "VAT ({{rate, percentage}})",
+                "total": "Tổng cộng",
+                "footer": {
+                    "reverseCharged": "Thuế VAT (hoặc tương đương) do bên mua kê khai và nộp theo cơ chế thuế ngược.",
+                    "currency": "Tất cả các số tiền được hiển thị bằng {{code}}."
+                }
+            }
+        },
+        "changeEmail": {
+            "name": "Email",
+            "description": "Thay đổi địa chỉ email dùng để đăng nhập vào tài khoản của bạn và nhận các thông báo quan trọng.",
+            "button": "Đổi email"
+        },
+        "changePassword": {
+            "name": "Mật khẩu",
+            "description": "Thay đổi mật khẩu dùng để đăng nhập tài khoản và xác nhận các thao tác nhạy cảm.",
+            "button": "Đổi mật khẩu"
+        },
+        "2fa": {
+            "name": "Xác thực hai yếu tố (2FA)",
+            "description": "Xác thực hai yếu tố (2FA) là một lớp bảo mật bổ sung yêu cầu thêm một mã 6 chữ số dựa trên thời gian khi đăng nhập vào tài khoản của bạn.",
+            "enabled": "Tài khoản của bạn đã bật 2FA.",
+            "enable": {
+                "button": "Bật 2FA",
+                "secret": "Khóa bí mật xác thực hai yếu tố",
+                "modal": {
+                    "howto": "Sử dụng ứng dụng xác thực như <1>Google Authenticator</1> hoặc trình quản lý mật khẩu hỗ trợ 2FA. Bạn có thể quét mã QR, nhấn vào mã để mở liên kết <3>{{otpauth}}</3> hoặc tự sao chép và dán khóa bí mật."
+                }
+            },
+            "recovery": {
+                "button": "Mã khôi phục",
+                "modal": {
+                    "howto": "Sử dụng các mã khôi phục này để truy cập vào tài khoản của bạn trong trường hợp bạn mất quyền truy cập vào thiết bị của mình và không thể nhận mã xác thực hai yếu tố. Mỗi mã chỉ được sử dụng một lần.",
+                    "download": "Tải xuống",
+                    "regen": "Tạo lại"
+                }
+            },
+            "disable": {
+                "button": "Tắt 2FA"
+            }
+        },
+        "api": {
+            "description": "Tạo và quản lý hồ sơ bằng mã lập trình. Đọc tài liệu tại <1>{{link}}</1>.",
+            "copy": "Sao chép khóa API",
+            "remove": "Gỡ bỏ khóa API",
+            "create": {
+                "button": "Tạo khóa API"
+            }
+        },
+        "delete": {
+            "button": "Xóa tài khoản",
+            "warning": "Thao tác này sẽ xóa vĩnh viễn tài khoản và tất cả hồ sơ của bạn.",
+            "confirm": {
+                "text": "Bạn có chắc muốn xóa tài khoản? Thao tác này không thể hoàn tác."
+            }
+        },
+        "temporary": {
+            "expired": {
+                "modal": {
+                    "title": "Đã hết hạn",
+                    "text": "Tài khoản tạm thời của bạn đã hết hạn. Đăng ký ngay để lưu cài đặt và tiếp tục sử dụng NextDNS. Hoàn toàn miễn phí."
+                }
+            }
         }
-      }
     },
-    "endpoints": {
-      "name": "Điểm cuối",
-      "description": "Thiết lập NextDNS với hồ sơ này bằng một trong các điểm cuối bên dưới.",
-      "help": "Chưa biết cách sử dụng? Hãy làm theo <1>Hướng dẫn thiết lập</1>."
-    },
-    "linkedIp": {
-      "name": "IP được liên kết",
-      "description": "Nếu bạn không thể thiết lập NextDNS bằng các ứng dụng của chúng tôi, DNS-over-TLS, DNS-over-HTTPS hoặc IPv6, thì hãy sử dụng các máy chủ DNS bên dưới và liên kết IP của bạn. Điều này chủ yếu để sử dụng trên mạng gia đình và không được khuyến nghị trên thiết bị di động.",
-      "servers": {
-        "name": "Máy chủ DNS"
-      },
-      "ip": {
-        "name": "IP được liên kết",
-        "link": "Liên kết IP"
-      },
-      "showAdvanced": "Hiển thị các tùy chọn nâng cao",
-      "ddns": {
-        "explanation": "Bạn có thể sử dụng DNS động (DDNS) để tự động cập nhật IP được liên kết của mình.",
-        "set": "Cấu hình DDNS",
-        "status": "Bạn hiện đang sử dụng <1>{{hostname}}</1> làm tên máy chủ DDNS. Địa chỉ IP của bạn sẽ tự động được cập nhật mỗi phút.",
-        "unset": "Gỡ bỏ",
+    "configurationSelector": {
+        "new": "Mới",
         "form": {
-          "hostname": {
-            "label": "Tên máy chủ DDNS",
-            "placeholder": "example.no-ip.org",
-            "errors": {
-              "required": "Vui lòng nhập tên máy chủ.",
-              "invalid": "Vui lòng nhập tên máy chủ hợp lệ.",
-              "ip": "Vui lòng nhập tên máy chủ, không phải địa chỉ IP.",
-              "error": "Đã xảy ra lỗi khi lấy địa chỉ IP của tên máy chủ này.",
-              "empty": "Tên máy chủ này không trả về bất kỳ địa chỉ IP nào.",
-              "different": "Vì lý do bảo mật, khi thêm DNS động, địa chỉ IP được trả về bởi tên máy chủ DDNS phải giống với địa chỉ IP hiện tại của bạn."
+            "title": "Hồ sơ mới",
+            "name": {
+                "label": "Tên",
+                "placeholder": "Nhà, Trẻ em, Văn phòng, ...",
+                "errors": {
+                    "required": "Vui lòng nhập tên.",
+                    "taken": "Bạn đã có một hồ sơ mang tên này."
+                }
             }
-          }
         }
-      },
-      "programmatically": "Bạn cũng có thể cập nhật IP được liên kết bằng mã lập trình thông qua lệnh gọi:"
     },
-    "guide": {
-      "name": "Hướng dẫn thiết lập",
-      "description": "Làm theo hướng dẫn bên dưới để thiết lập NextDNS trên thiết bị, trình duyệt hoặc bộ định tuyến của bạn.",
-      "or": "Hoặc",
-      "ipv4": {
-        "title": "IPv4 (với IP được liên kết)"
-      },
-      "ipv6": {
-        "supported": "Mạng của bạn hỗ trợ IPv6",
-        "notSupported": "Mạng của bạn không hỗ trợ IPv6"
-      },
-      "tags": {
-        "recommended": "Được đề xuất",
-        "advanced": "Nâng cao"
-      },
-      "use": "Sử dụng nội dung sau trong <1>{{file}}</1>:",
-      "platforms": {
-        "android": {
-          "name": "Android",
-          "guides": {
-            "private": {
-              "title": "DNS riêng",
-              "requirements": "Android 9 trở lên",
-              "steps": {
-                "1": "1. Đi tới Cài đặt → Mạng và Internet → DNS riêng (nằm trong Nâng cao ở một số phiên bản).",
-                "2": "2. Chọn tùy chọn Tên máy chủ của nhà cung cấp DNS riêng.",
-                "3": "3. Nhập <1>{{endpoint}}</1> và nhấn Lưu."
-              }
-            }
-          }
-        },
-        "ios": {
-          "name": "iOS",
-          "guides": {
-            "profile": {
-              "title": "Hồ sơ cấu hình",
-              "requirements": "iOS 14 trở lên",
-              "step": "Sử dụng Trình tạo hồ sơ cấu hình Apple của chúng tôi có sẵn tại <1>{{link}}</1>."
+    "setup": {
+        "status": {
+            "ok": {
+                "primary": "Mọi thứ đều ổn!",
+                "secondary": "Thiết bị này đang sử dụng NextDNS với hồ sơ này."
             },
-            "app": {
-              "title": "NextDNS dành cho iOS",
-              "qrAlt": "Mã ứng dụng thu nhỏ để cài đặt và cấu hình NextDNS trên iPhone hoặc iPad",
-              "qrText": "Quét mã này để cài đặt và cấu hình NextDNS trên iPhone hoặc iPad của bạn",
-              "qrTextIos": "Quét mã này bằng một điện thoại khác hoặc <1>nhấn vào đây để thiết lập NextDNS trên thiết bị này</1>."
-            }
-          }
-        },
-        "windows": {
-          "name": "Windows",
-          "guides": {
-            "dns-over-https": {
-              "title": "DNS over HTTPS",
-              "requirements": "Windows 11",
-              "steps": [
-                "Mở ứng dụng <1>Cài đặt</1>.",
-                "Chuyển đến <1>Mạng & internet</1>.",
-                "Nhấp vào <1>Wi-Fi</1> (hoặc <3>Ethernet</3>).",
-                "Nhấp vào <1>Thuộc tính phần cứng</1> hoặc bỏ qua bước này nếu bạn đã nhấp vào <3>Ethernet</3>.",
-                "Nhấp vào nút <1>Chỉnh sửa</1> bên cạnh <3>Gán máy chủ DNS</3>.",
-                "Chọn <1>Thủ công</1>.",
-                "Bật <1>IPv{{version}}</1>.",
-                "Nhập <1>{{ip}}</1> vào <3>DNS ưa thích</3>, sau đó chọn <5>Bật (mẫu thủ công)</5> và nhập <7>{{endpoint}}</7>.",
-                "Nhập <1>{{ip}}</1> vào <3>DNS thay thế</3>, sau đó chọn <5>Bật (mẫu thủ công)</5> và nhập <7>{{endpoint}}</7>.",
-                "Nhấp vào <1>Lưu</1>."
-              ]
+            "mismatch": {
+                "withoutConfiguration": {
+                    "primary": "Thiết bị này đang sử dụng NextDNS mà không có hồ sơ.",
+                    "secondary": {
+                        "clients": "Đảm bảo bạn đã nhập ID hồ sơ bên dưới vào phần cài đặt ứng dụng.",
+                        "firefox": "Đảm bảo bạn đã đặt điểm cuối DNS-over-HTTPS bên dưới trong Firefox.",
+                        "doh": "Đảm bảo bạn đang sử dụng điểm cuối DNS-over-HTTPS bên dưới.",
+                        "dot": "Đảm bảo bạn đang sử dụng điểm cuối DNS-over-TLS bên dưới.",
+                        "ipv6": "Đảm bảo bạn đang sử dụng các địa chỉ IPv6 bên dưới.",
+                        "servers": "Đảm bảo bạn đang sử dụng các máy chủ DNS trong phần IP được liên kết bên dưới (mỗi hồ sơ có các máy chủ DNS khác nhau).",
+                        "link": "Đảm bảo liên kết địa chỉ IP của bạn trong phần IP được liên kết bên dưới."
+                    }
+                },
+                "withConfiguration": {
+                    "primary": "Thiết bị này đang sử dụng NextDNS với một hồ sơ khác.",
+                    "secondary": {
+                        "sameAccount": "Thiết bị này hiện đang sử dụng “{{name}}”.",
+                        "otherAccount": "Đảm bảo rằng bạn đang sử dụng một trong các điểm cuối được liệt kê trên trang này."
+                    }
+                }
             },
-            "app": {
-              "title": "NextDNS dành cho Windows",
-              "steps": {
-                "1": "1. Tải xuống trình cài đặt <1>tại đây</1>.",
-                "2": "2. Sau khi cài đặt, nhấp chuột phải vào biểu tượng NextDNS trong khay hệ thống rồi mở “Settings...”. Đặt <1>{{id}}</1> làm Configuration ID.",
-                "3": "3. Nhấp chuột phải vào biểu tượng NextDNS trong khay hệ thống rồi nhấp vào Enable."
-              }
+            "unconfigured": {
+                "primary": "Thiết bị này không sử dụng NextDNS.",
+                "secondary": "Thiết bị này hiện đang sử dụng “{{resolver}}” làm trình phân giải DNS."
+            },
+            "error": {
+                "primary": "Lỗi khi kiểm tra trạng thái hiện tại.",
+                "secondary": "Vui lòng liên hệ với chúng tôi nếu sự cố này vẫn tiếp diễn sau khi làm mới trang."
+            },
+            "apr": {
+                "ok": {
+                    "primary": "Thiết bị này đang sử dụng NextDNS với Chuyển tiếp bảo mật iCloud.",
+                    "secondary": "Các tính năng như Tìm kiếm an toàn, Chế độ hạn chế trên YouTube và Ghi đè DNS không tương thích với Chuyển tiếp bảo mật iCloud."
+                },
+                "blockpage": {
+                    "primary": "Thiết bị này đang sử dụng NextDNS với Chuyển tiếp bảo mật iCloud.",
+                    "secondary": "Bật cài đặt trang chặn khi sử dụng Chuyển tiếp bảo mật iCloud sẽ ảnh hưởng đến hoạt động chặn."
+                }
+            }
+        },
+        "endpoints": {
+            "name": "Điểm cuối",
+            "description": "Thiết lập NextDNS với hồ sơ này bằng một trong các điểm cuối bên dưới.",
+            "help": "Chưa biết cách sử dụng? Hãy làm theo <1>Hướng dẫn thiết lập</1>."
+        },
+        "linkedIp": {
+            "name": "IP được liên kết",
+            "description": "Nếu bạn không thể thiết lập NextDNS bằng các ứng dụng của chúng tôi, DNS-over-TLS, DNS-over-HTTPS hoặc IPv6, thì hãy sử dụng các máy chủ DNS bên dưới và liên kết IP của bạn. Điều này chủ yếu để sử dụng trên mạng gia đình và không được khuyến nghị trên thiết bị di động.",
+            "servers": {
+                "name": "Máy chủ DNS"
             },
             "ip": {
-              "steps": {
-                "1": "1. Mở Bắt đầu, tìm Bảng điều khiển rồi mở ứng dụng đó.",
-                "2": "2. Nhấp vào Mạng và Internet, sau đó chọn Trung tâm Mạng và Chia sẻ.",
-                "3": "3. Nhấp vào Thay đổi cài đặt bộ điều hợp.",
-                "4": "4. Nhấp chuột phải vào mạng Wi-Fi bạn đang kết nối, sau đó nhấp vào Thuộc tính.",
-                "5": "5. Chọn Giao thức Internet Phiên bản {{version}}.",
-                "6": "6. Nhấp vào Thuộc tính.",
-                "7": "7. Chọn Sử dụng địa chỉ máy chủ DNS sau.",
-                "8": "8. Thay thế các địa chỉ hiện tại (nếu có) bằng <1>{{dns1}}</1> và <3>{{dns2}}</3>.",
-                "9": "9. Nhấp vào OK, sau đó nhấp vào Đóng. Bạn có thể phải khởi động lại trình duyệt của mình."
-              }
+                "name": "IP được liên kết",
+                "link": "Liên kết IP"
             },
-            "yoga": {
-              "steps": {
-                "1": "1. Cài đặt YogaDNS từ <1>{{link}}</1>.",
-                "2": "2. Làm theo hướng dẫn cho NextDNS tại <1>{{link}}</1> và sử dụng <3>{{id}}</3> làm Configuration ID."
-              }
-            }
-          }
+            "showAdvanced": "Hiển thị các tùy chọn nâng cao",
+            "ddns": {
+                "explanation": "Bạn có thể sử dụng DNS động (DDNS) để tự động cập nhật IP được liên kết của mình.",
+                "set": "Cấu hình DDNS",
+                "status": "Bạn hiện đang sử dụng <1>{{hostname}}</1> làm tên máy chủ DDNS. Địa chỉ IP của bạn sẽ tự động được cập nhật mỗi phút.",
+                "unset": "Gỡ bỏ",
+                "form": {
+                    "hostname": {
+                        "label": "Tên máy chủ DDNS",
+                        "placeholder": "example.no-ip.org",
+                        "errors": {
+                            "required": "Vui lòng nhập tên máy chủ.",
+                            "invalid": "Vui lòng nhập tên máy chủ hợp lệ.",
+                            "ip": "Vui lòng nhập tên máy chủ, không phải địa chỉ IP.",
+                            "error": "Đã xảy ra lỗi khi lấy địa chỉ IP của tên máy chủ này.",
+                            "empty": "Tên máy chủ này không trả về bất kỳ địa chỉ IP nào.",
+                            "different": "Vì lý do bảo mật, khi thêm DNS động, địa chỉ IP được trả về bởi tên máy chủ DDNS phải giống với địa chỉ IP hiện tại của bạn."
+                        }
+                    }
+                }
+            },
+            "programmatically": "Bạn cũng có thể cập nhật IP được liên kết bằng mã lập trình thông qua lệnh gọi:"
         },
-        "macos": {
-          "name": "macOS",
-          "guides": {
-            "app": {
-              "title": "NextDNS dành cho macOS",
-              "steps": {
-                "1": "1. <1>Tải xuống</1> và cài đặt ứng dụng chính thức của chúng tôi.",
-                "2": "2. Làm theo hướng dẫn.",
-                "3": "3. Khi được yêu cầu nhập ID hồ sơ, hãy nhập <1>{{id}}</1>."
-              }
+        "guide": {
+            "name": "Hướng dẫn thiết lập",
+            "description": "Làm theo hướng dẫn bên dưới để thiết lập NextDNS trên thiết bị, trình duyệt hoặc bộ định tuyến của bạn.",
+            "or": "Hoặc",
+            "ipv4": {
+                "title": "IPv4 (với IP được liên kết)"
             },
-            "profile": {
-              "requirements": "macOS Big Sur trở lên"
+            "ipv6": {
+                "supported": "Mạng của bạn hỗ trợ IPv6",
+                "notSupported": "Mạng của bạn không hỗ trợ IPv6"
             },
-            "ip": {
-              "steps": {
-                "1": "1. Mở Cài đặt hệ thống (Tùy chọn hệ thống trên các phiên bản macOS cũ), sau đó nhấp vào Mạng.",
-                "2": "2. Chọn kết nối mạng đang hoạt động, sau đó nhấp vào Chi tiết (Nâng cao trên các phiên bản macOS cũ).",
-                "3": "3. Chuyển đến phần DNS.",
-                "4": "4. Trong danh sách Máy chủ DNS, xóa tất cả các địa chỉ (nếu có) rồi thêm <1>{{dns1}}</1> và <3>{{dns2}}</3>.",
-                "5": "5. Nhấp vào OK, sau đó nhấp vào Áp dụng nếu có."
-              }
+            "tags": {
+                "recommended": "Được đề xuất",
+                "advanced": "Nâng cao"
             },
-            "cli": {
-              "title": "Ứng dụng dòng lệnh NextDNS",
-              "steps": {
-                "1": "1. Chạy lệnh sau: <1>{{command}}</1>",
-                "2": "2. Làm theo hướng dẫn."
-              },
-              "manual": "Truy cập kho lưu trữ mã nguồn mở của chúng tôi tại <1>{{link}}</1> để xem hướng dẫn cài đặt thủ công."
+            "use": "Sử dụng nội dung sau trong <1>{{file}}</1>:",
+            "platforms": {
+                "android": {
+                    "name": "Android",
+                    "guides": {
+                        "private": {
+                            "title": "DNS riêng",
+                            "requirements": "Android 9 trở lên",
+                            "steps": {
+                                "1": "1. Đi tới Cài đặt → Mạng và Internet → DNS riêng (nằm trong Nâng cao ở một số phiên bản).",
+                                "2": "2. Chọn tùy chọn Tên máy chủ của nhà cung cấp DNS riêng.",
+                                "3": "3. Nhập <1>{{endpoint}}</1> và nhấn Lưu."
+                            }
+                        }
+                    }
+                },
+                "ios": {
+                    "name": "iOS",
+                    "guides": {
+                        "profile": {
+                            "title": "Hồ sơ cấu hình",
+                            "requirements": "iOS 14 trở lên",
+                            "step": "Sử dụng Trình tạo hồ sơ cấu hình Apple của chúng tôi có sẵn tại <1>{{link}}</1>."
+                        },
+                        "app": {
+                            "title": "NextDNS dành cho iOS",
+                            "qrAlt": "Mã ứng dụng thu nhỏ để cài đặt và cấu hình NextDNS trên iPhone hoặc iPad",
+                            "qrText": "Quét mã này để cài đặt và cấu hình NextDNS trên iPhone hoặc iPad của bạn",
+                            "qrTextIos": "Quét mã này bằng một điện thoại khác hoặc <1>nhấn vào đây để thiết lập NextDNS trên thiết bị này</1>."
+                        }
+                    }
+                },
+                "windows": {
+                    "name": "Windows",
+                    "guides": {
+                        "dns-over-https": {
+                            "title": "DNS over HTTPS",
+                            "requirements": "Windows 11",
+                            "steps": [
+                                "Mở ứng dụng <1>Cài đặt</1>.",
+                                "Chuyển đến <1>Mạng & internet</1>.",
+                                "Nhấp vào <1>Wi-Fi</1> (hoặc <3>Ethernet</3>).",
+                                "Nhấp vào <1>Thuộc tính phần cứng</1> hoặc bỏ qua bước này nếu bạn đã nhấp vào <3>Ethernet</3>.",
+                                "Nhấp vào nút <1>Chỉnh sửa</1> bên cạnh <3>Gán máy chủ DNS</3>.",
+                                "Chọn <1>Thủ công</1>.",
+                                "Bật <1>IPv{{version}}</1>.",
+                                "Nhập <1>{{ip}}</1> vào <3>DNS ưa thích</3>, sau đó chọn <5>Bật (mẫu thủ công)</5> và nhập <7>{{endpoint}}</7>.",
+                                "Nhập <1>{{ip}}</1> vào <3>DNS thay thế</3>, sau đó chọn <5>Bật (mẫu thủ công)</5> và nhập <7>{{endpoint}}</7>.",
+                                "Nhấp vào <1>Lưu</1>."
+                            ]
+                        },
+                        "app": {
+                            "title": "NextDNS dành cho Windows",
+                            "steps": {
+                                "1": "1. Tải xuống trình cài đặt <1>tại đây</1>.",
+                                "2": "2. Sau khi cài đặt, nhấp chuột phải vào biểu tượng NextDNS trong khay hệ thống rồi mở “Settings...”. Đặt <1>{{id}}</1> làm Configuration ID.",
+                                "3": "3. Nhấp chuột phải vào biểu tượng NextDNS trong khay hệ thống rồi nhấp vào Enable."
+                            }
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Mở Bắt đầu, tìm Bảng điều khiển rồi mở ứng dụng đó.",
+                                "2": "2. Nhấp vào Mạng và Internet, sau đó chọn Trung tâm Mạng và Chia sẻ.",
+                                "3": "3. Nhấp vào Thay đổi cài đặt bộ điều hợp.",
+                                "4": "4. Nhấp chuột phải vào mạng Wi-Fi bạn đang kết nối, sau đó nhấp vào Thuộc tính.",
+                                "5": "5. Chọn Giao thức Internet Phiên bản {{version}}.",
+                                "6": "6. Nhấp vào Thuộc tính.",
+                                "7": "7. Chọn Sử dụng địa chỉ máy chủ DNS sau.",
+                                "8": "8. Thay thế các địa chỉ hiện tại (nếu có) bằng <1>{{dns1}}</1> và <3>{{dns2}}</3>.",
+                                "9": "9. Nhấp vào OK, sau đó nhấp vào Đóng. Bạn có thể phải khởi động lại trình duyệt của mình."
+                            }
+                        },
+                        "yoga": {
+                            "steps": {
+                                "1": "1. Cài đặt YogaDNS từ <1>{{link}}</1>.",
+                                "2": "2. Làm theo hướng dẫn cho NextDNS tại <1>{{link}}</1> và sử dụng <3>{{id}}</3> làm Configuration ID."
+                            }
+                        }
+                    }
+                },
+                "macos": {
+                    "name": "macOS",
+                    "guides": {
+                        "app": {
+                            "title": "NextDNS dành cho macOS",
+                            "steps": {
+                                "1": "1. <1>Tải xuống</1> và cài đặt ứng dụng chính thức của chúng tôi.",
+                                "2": "2. Làm theo hướng dẫn.",
+                                "3": "3. Khi được yêu cầu nhập ID hồ sơ, hãy nhập <1>{{id}}</1>."
+                            }
+                        },
+                        "profile": {
+                            "requirements": "macOS Big Sur trở lên"
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Mở Cài đặt hệ thống (Tùy chọn hệ thống trên các phiên bản macOS cũ), sau đó nhấp vào Mạng.",
+                                "2": "2. Chọn kết nối mạng đang hoạt động, sau đó nhấp vào Chi tiết (Nâng cao trên các phiên bản macOS cũ).",
+                                "3": "3. Chuyển đến phần DNS.",
+                                "4": "4. Trong danh sách Máy chủ DNS, xóa tất cả các địa chỉ (nếu có) rồi thêm <1>{{dns1}}</1> và <3>{{dns2}}</3>.",
+                                "5": "5. Nhấp vào OK, sau đó nhấp vào Áp dụng nếu có."
+                            }
+                        },
+                        "cli": {
+                            "title": "Ứng dụng dòng lệnh NextDNS",
+                            "steps": {
+                                "1": "1. Chạy lệnh sau: <1>{{command}}</1>",
+                                "2": "2. Làm theo hướng dẫn."
+                            },
+                            "manual": "Truy cập kho lưu trữ mã nguồn mở của chúng tôi tại <1>{{link}}</1> để xem hướng dẫn cài đặt thủ công."
+                        }
+                    }
+                },
+                "linux": {
+                    "name": "Linux",
+                    "guides": {
+                        "cli": {
+                            "title": "Ứng dụng dòng lệnh NextDNS",
+                            "steps": {
+                                "1": "1. Chạy lệnh sau: <1>{{command}}</1>",
+                                "2": "2. Làm theo hướng dẫn."
+                            },
+                            "manual": "Truy cập kho lưu trữ mã nguồn mở của chúng tôi tại <1>{{link}}</1> để xem hướng dẫn cài đặt thủ công."
+                        },
+                        "ip": {
+                            "step": "Thay đổi máy chủ DNS của bạn thành <1>{{dns1}}</1> và <3>{{dns2}}</3>."
+                        },
+                        "stubby": {
+                            "warning": "Đảm bảo rằng Stubby được liên kết với <1>OpenSSL 1.1.1 trở lên</1> vì các phiên bản trước sẽ không hoạt động với NextDNS."
+                        },
+                        "unbound": {
+                            "warning": "Là một trình phân giải đệ quy, Unbound lần theo chuỗi CNAME. Điều này có thể dẫn đến <1>hành vi không mong muốn</1> khi được sử dụng cùng với trình phân giải DNS có chặn như NextDNS. Xem <3>{{link}}</3>."
+                        }
+                    }
+                },
+                "chromeos": {
+                    "name": "ChromeOS",
+                    "guides": {
+                        "secure-dns": {
+                            "title": "DNS bảo mật",
+                            "steps": [
+                                "Mở ứng dụng <1>Cài đặt</1>.",
+                                "Chuyển đến <1>Quyền riêng tư và bảo mật</1>.",
+                                "Bật <1>Sử dụng kết nối bảo mật để tra cứu các trang web</1>.",
+                                "Chọn <1>Thêm nhà cung cấp dịch vụ DNS tuỳ chỉnh</1>, sau đó nhập <3>{{endpoint}}</3>."
+                            ]
+                        },
+                        "ip": {
+                            "step": "Thay đổi máy chủ DNS của bạn thành <1>{{dns1}}</1> và <3>{{dns2}}</3>."
+                        }
+                    }
+                },
+                "browsers": {
+                    "name": "Trình duyệt",
+                    "guides": {
+                        "chrome": {
+                            "title": "Google Chrome",
+                            "steps": {
+                                "1": "1. Đi tới Cài đặt.",
+                                "2": "2. Trong phần Quyền riêng tư và bảo mật, hãy nhấp vào Bảo mật.",
+                                "3": "3. Trong phần Nâng cao, bật Sử dụng DNS bảo mật.",
+                                "4": "4. Chọn Thêm nhà cung cấp dịch vụ DNS tuỳ chỉnh, sau đó nhập <1>{{endpoint}}</1>."
+                            }
+                        },
+                        "firefox": {
+                            "title": "Firefox",
+                            "requirements": "Chỉ dành cho Windows, macOS và Linux",
+                            "steps": {
+                                "1": "1. Mở Cài đặt (Tùy chỉnh trong một số phiên bản).",
+                                "2": "2. Nhấp vào Riêng tư & bảo mật.",
+                                "3": "3. Cuộn xuống DNS qua HTTPS và mở Cài đặt nâng cao nếu có.",
+                                "4": "4. Chọn Tuỳ chỉnh (Bảo vệ gia tăng hoặc Bảo vệ tối đa trong một số phiên bản).",
+                                "5": "5. Chọn Tùy chỉnh trong menu nhà cung cấp.",
+                                "6": "6. Nhập <1>{{endpoint}}</1>."
+                            }
+                        },
+                        "edge": {
+                            "title": "Microsoft Edge",
+                            "steps": {
+                                "1": "1. Mở Cài đặt.",
+                                "2": "2. Chuyển đến phần Quyền riêng tư, tìm kiếm và dịch vụ.",
+                                "3": "3. Trong phần Bảo mật, bật Sử dụng DNS bảo mật.",
+                                "4": "4. Chọn tùy chọn Chọn nhà cung cấp dịch vụ, sau đó nhập <1>{{endpoint}}</1>."
+                            }
+                        },
+                        "brave": {
+                            "title": "Brave",
+                            "steps": {
+                                "1": "1. Mở Cài đặt.",
+                                "2": "2. Trong phần Quyền riêng tư và bảo mật, chuyển đến Bảo mật.",
+                                "3": "3. Trong phần Nâng cao, bật Sử dụng DNS bảo mật.",
+                                "4": "4. Chọn Thêm nhà cung cấp dịch vụ DNS tuỳ chỉnh, sau đó nhập <1>{{endpoint}}</1>."
+                            }
+                        }
+                    }
+                },
+                "routers": {
+                    "name": "Bộ định tuyến",
+                    "guides": {
+                        "cli": {
+                            "title": "NextDNS dành cho bộ định tuyến",
+                            "requirements": "Chỉ hoạt động trên bộ định tuyến có thể chạy tệp thực thi",
+                            "step": "Truy cập kho lưu trữ mã nguồn mở của chúng tôi tại <1>{{link}}</1> để xem hướng dẫn cài đặt."
+                        },
+                        "ip": {
+                            "ipv6": {
+                                "warning": "Một số bộ định tuyến có thể không hỗ trợ ký hiệu IPv6 ở trên. Trong trường hợp đó, hãy sử dụng <1>{{dns1}}</1> và <3>{{dns2}}</3>."
+                            },
+                            "steps": {
+                                "1": "1. Mở tùy chọn cho bộ định tuyến của bạn. Thông thường, bạn có thể truy cập nó từ trình duyệt của mình thông qua một URL (như http://192.168.0.1/ hoặc http://192.168.1.1/).",
+                                "2": "2. Tìm cài đặt DNS bên trong giao diện.",
+                                "3": "3. Xóa tất cả các địa chỉ (nếu có) rồi thêm <1>{{dns1}}</1> và <3>{{dns2}}</3>.",
+                                "4": "4. Nhấp vào Lưu (hoặc tương tự)."
+                            }
+                        },
+                        "pfsense": {
+                            "steps": {
+                                "1": "1. Chuyển đến Services → DNS Resolver. Trong thẻ General Settings, cuộn xuống và nhấp vào Display Custom Options nếu cần để hiển thị ô Custom options.",
+                                "2": "2. Nhập các dòng sau:"
+                            }
+                        },
+                        "mikrotik": {
+                            "run": "Chạy lệnh sau:"
+                        }
+                    }
+                },
+                "vpn": {
+                    "guides": {
+                        "tailscale": {
+                            "manual": "Truy cập tài liệu Tailscale tại <2>{{link}}</2> để xem hướng dẫn thiết lập."
+                        }
+                    }
+                }
             }
-          }
         },
-        "linux": {
-          "name": "Linux",
-          "guides": {
-            "cli": {
-              "title": "Ứng dụng dòng lệnh NextDNS",
-              "steps": {
-                "1": "1. Chạy lệnh sau: <1>{{command}}</1>",
-                "2": "2. Làm theo hướng dẫn."
-              },
-              "manual": "Truy cập kho lưu trữ mã nguồn mở của chúng tôi tại <1>{{link}}</1> để xem hướng dẫn cài đặt thủ công."
+        "identify": {
+            "name": "Xác định thiết bị của bạn",
+            "description": "Làm theo hướng dẫn bên dưới để xác định thiết bị của bạn trong phần Phân tích và Nhật ký.",
+            "apps": {
+                "name": "Ứng dụng",
+                "instructions": "Bật “Send Device Name” (hoặc “Report Device Name” trên Windows) trong phần cài đặt ứng dụng."
             },
-            "ip": {
-              "step": "Thay đổi máy chủ DNS của bạn thành <1>{{dns1}}</1> và <3>{{dns2}}</3>."
+            "dot": {
+                "instructions": "Thêm tên vào trước tên miền được cung cấp (tên chỉ được chứa <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> và <7>-</7>). Dùng <9>--</9> thay cho khoảng trắng.",
+                "example": "Với “<1>John Router</1>”, hãy sử dụng <3>John--Router-{{profile}}.dns.nextdns.io</3> làm điểm cuối DNS-over-TLS."
             },
-            "stubby": {
-              "warning": "Đảm bảo rằng Stubby được liên kết với <1>OpenSSL 1.1.1 trở lên</1> vì các phiên bản trước sẽ không hoạt động với NextDNS."
-            },
-            "unbound": {
-              "warning": "Là một trình phân giải đệ quy, Unbound lần theo chuỗi CNAME. Điều này có thể dẫn đến <1>hành vi không mong muốn</1> khi được sử dụng cùng với trình phân giải DNS có chặn như NextDNS. Xem <3>{{link}}</3>."
+            "doh": {
+                "instructions": "Thêm tên vào sau URL được cung cấp (tên phải được mã hóa URL).",
+                "example": "Với “<1>John's Firefox</1>”, hãy sử dụng <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> làm điểm cuối DNS-over-HTTPS."
             }
-          }
-        },
-        "chromeos": {
-          "name": "ChromeOS",
-          "guides": {
-            "secure-dns": {
-              "title": "DNS bảo mật",
-              "steps": [
-                "Mở ứng dụng <1>Cài đặt</1>.",
-                "Chuyển đến <1>Quyền riêng tư và bảo mật</1>.",
-                "Bật <1>Sử dụng kết nối bảo mật để tra cứu các trang web</1>.",
-                "Chọn <1>Thêm nhà cung cấp dịch vụ DNS tuỳ chỉnh</1>, sau đó nhập <3>{{endpoint}}</3>."
-              ]
-            },
-            "ip": {
-              "step": "Thay đổi máy chủ DNS của bạn thành <1>{{dns1}}</1> và <3>{{dns2}}</3>."
-            }
-          }
-        },
-        "browsers": {
-          "name": "Trình duyệt",
-          "guides": {
-            "chrome": {
-              "title": "Google Chrome",
-              "steps": {
-                "1": "1. Đi tới Cài đặt.",
-                "2": "2. Trong phần Quyền riêng tư và bảo mật, hãy nhấp vào Bảo mật.",
-                "3": "3. Trong phần Nâng cao, bật Sử dụng DNS bảo mật.",
-                "4": "4. Chọn Thêm nhà cung cấp dịch vụ DNS tuỳ chỉnh, sau đó nhập <1>{{endpoint}}</1>."
-              }
-            },
-            "firefox": {
-              "title": "Firefox",
-              "requirements": "Chỉ dành cho Windows, macOS và Linux",
-              "steps": {
-                "1": "1. Mở Cài đặt (Tùy chỉnh trong một số phiên bản).",
-                "2": "2. Nhấp vào Riêng tư & bảo mật.",
-                "3": "3. Cuộn xuống DNS qua HTTPS và mở Cài đặt nâng cao nếu có.",
-                "4": "4. Chọn Tuỳ chỉnh (Bảo vệ gia tăng hoặc Bảo vệ tối đa trong một số phiên bản).",
-                "5": "5. Chọn Tùy chỉnh trong menu nhà cung cấp.",
-                "6": "6. Nhập <1>{{endpoint}}</1>."
-              }
-            },
-            "edge": {
-              "title": "Microsoft Edge",
-              "steps": {
-                "1": "1. Mở Cài đặt.",
-                "2": "2. Chuyển đến phần Quyền riêng tư, tìm kiếm và dịch vụ.",
-                "3": "3. Trong phần Bảo mật, bật Sử dụng DNS bảo mật.",
-                "4": "4. Chọn tùy chọn Chọn nhà cung cấp dịch vụ, sau đó nhập <1>{{endpoint}}</1>."
-              }
-            },
-            "brave": {
-              "title": "Brave",
-              "steps": {
-                "1": "1. Mở Cài đặt.",
-                "2": "2. Trong phần Quyền riêng tư và bảo mật, chuyển đến Bảo mật.",
-                "3": "3. Trong phần Nâng cao, bật Sử dụng DNS bảo mật.",
-                "4": "4. Chọn Thêm nhà cung cấp dịch vụ DNS tuỳ chỉnh, sau đó nhập <1>{{endpoint}}</1>."
-              }
-            }
-          }
-        },
-        "routers": {
-          "name": "Bộ định tuyến",
-          "guides": {
-            "cli": {
-              "title": "NextDNS dành cho bộ định tuyến",
-              "requirements": "Chỉ hoạt động trên bộ định tuyến có thể chạy tệp thực thi",
-              "step": "Truy cập kho lưu trữ mã nguồn mở của chúng tôi tại <1>{{link}}</1> để xem hướng dẫn cài đặt."
-            },
-            "ip": {
-              "ipv6": {
-                "warning": "Một số bộ định tuyến có thể không hỗ trợ ký hiệu IPv6 ở trên. Trong trường hợp đó, hãy sử dụng <1>{{dns1}}</1> và <3>{{dns2}}</3>."
-              },
-              "steps": {
-                "1": "1. Mở tùy chọn cho bộ định tuyến của bạn. Thông thường, bạn có thể truy cập nó từ trình duyệt của mình thông qua một URL (như http://192.168.0.1/ hoặc http://192.168.1.1/).",
-                "2": "2. Tìm cài đặt DNS bên trong giao diện.",
-                "3": "3. Xóa tất cả các địa chỉ (nếu có) rồi thêm <1>{{dns1}}</1> và <3>{{dns2}}</3>.",
-                "4": "4. Nhấp vào Lưu (hoặc tương tự)."
-              }
-            },
-            "pfsense": {
-              "steps": {
-                "1": "1. Chuyển đến Services → DNS Resolver. Trong thẻ General Settings, cuộn xuống và nhấp vào Display Custom Options nếu cần để hiển thị ô Custom options.",
-                "2": "2. Nhập các dòng sau:"
-              }
-            },
-            "mikrotik": {
-              "run": "Chạy lệnh sau:"
-            }
-          }
-        },
-        "vpn": {
-          "guides": {
-            "tailscale": {
-              "manual": "Truy cập tài liệu Tailscale tại <2>{{link}}</2> để xem hướng dẫn thiết lập."
-            }
-          }
         }
-      }
     },
-    "identify": {
-      "name": "Xác định thiết bị của bạn",
-      "description": "Làm theo hướng dẫn bên dưới để xác định thiết bị của bạn trong phần Phân tích và Nhật ký.",
-      "apps": {
-        "name": "Ứng dụng",
-        "instructions": "Bật “Send Device Name” (hoặc “Report Device Name” trên Windows) trong phần cài đặt ứng dụng."
-      },
-      "dot": {
-        "instructions": "Thêm tên vào trước tên miền được cung cấp (tên chỉ được chứa <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> và <7>-</7>). Dùng <9>--</9> thay cho khoảng trắng.",
-        "example": "Với “<1>John Router</1>”, hãy sử dụng <3>John--Router-{{profile}}.dns.nextdns.io</3> làm điểm cuối DNS-over-TLS."
-      },
-      "doh": {
-        "instructions": "Thêm tên vào sau URL được cung cấp (tên phải được mã hóa URL).",
-        "example": "Với “<1>John's Firefox</1>”, hãy sử dụng <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> làm điểm cuối DNS-over-HTTPS."
-      }
-    }
-  },
-  "security": {
-    "feeds": {
-      "name": "Nguồn tin về mối đe dọa",
-      "description": "Chặn các tên miền được biết là phát tán phần mềm độc hại, thực hiện tấn công lừa đảo và lưu trữ máy chủ chỉ huy và điều khiển bằng cách kết hợp các nguồn tin về mối đe dọa uy tín nhất — tất cả đều được cập nhật theo thời gian thực.",
-      "enable": "Sử dụng nguồn tin về mối đe dọa"
-    },
-    "ai": {
-      "name": "Phát hiện mối đe dọa bằng AI",
-      "description": "Chặn hàng triệu mối đe dọa được phát hiện bằng công nghệ AI của chúng tôi — một bộ máy AI độc quyền được xây dựng từ đầu dành riêng cho DNS, với hàng trăm tín hiệu, hàng terabyte dữ liệu huấn luyện và khả năng ra quyết định theo thời gian thực. Bao gồm giả mạo IDN bằng ký tự giống nhau, lợi dụng lỗi gõ tên miền (typosquatting), ghép thêm từ vào tên thương hiệu (combosquatting), tên miền DGA, giả mạo thương hiệu, đánh cắp thông tin đăng nhập, phát tán phần mềm độc hại và các trang web mồi nhử dùng để che giấu hạ tầng độc hại.",
-      "enable": "Bật phát hiện mối đe dọa bằng AI"
-    },
-    "googleSafeBrowsing": {
-      "name": "Duyệt web an toàn của Google",
-      "description": "Chặn các tên miền phát tán phần mềm độc hại và lừa đảo bằng Duyệt web an toàn của Google — công nghệ kiểm tra hàng tỷ URL mỗi ngày để tìm các trang web không an toàn. Khác với phiên bản tích hợp trong một số trình duyệt, tính năng này không liên kết địa chỉ IP công cộng của bạn với các mối đe dọa và không cho phép bỏ qua lệnh chặn.",
-      "enable": "Bật Duyệt web an toàn của Google"
-    },
-    "cryptojacking": {
-      "name": "Đào tiền mã hóa trái phép",
-      "description": "Ngăn việc sử dụng trái phép thiết bị của bạn để đào tiền mã hóa.",
-      "enable": "Chặn đào tiền mã hóa trái phép"
-    },
-    "dnsRebinding": {
-      "name": "DNS rebinding",
-      "description": "Ngăn những kẻ tấn công chiếm quyền kiểm soát các thiết bị cục bộ của bạn thông qua Internet bằng cách tự động chặn các phản hồi DNS có chứa địa chỉ IP riêng.",
-      "enable": "Chặn DNS rebinding"
-    },
-    "homograph": {
-      "name": "Giả mạo IDN bằng ký tự giống nhau",
-      "description": "Chặn tên miền quốc tế hóa (IDN) giả mạo tên miền khác bằng các ký tự trông giống nhau — ví dụ: thay chữ “e” trong bảng chữ cái Latinh bằng chữ “е” trong bảng chữ cái Kirin.",
-      "enable": "Chặn giả mạo IDN bằng ký tự giống nhau"
-    },
-    "typosquatting": {
-      "name": "Lợi dụng lỗi gõ tên miền",
-      "description": "Chặn các tên miền do kẻ xấu đăng ký để nhắm vào người dùng gõ sai địa chỉ trang web trong trình duyệt — ví dụ: gooogle.com thay vì google.com.",
-      "enable": "Chặn lợi dụng lỗi gõ tên miền"
-    },
-    "dga": {
-      "name": "Thuật toán tạo tên miền",
-      "description": "Chặn các tên miền được tạo bằng thuật toán tạo tên miền (DGA) và được nhiều dòng phần mềm độc hại dùng làm điểm liên lạc với máy chủ chỉ huy và điều khiển.",
-      "enable": "Chặn tên miền DGA"
-    },
-    "nrd": {
-      "name": "Tên miền mới đăng ký",
-      "description": "Chặn các tên miền được đăng ký chưa đầy 30 ngày. Kẻ xấu thường sử dụng những tên miền này để triển khai các chiến dịch độc hại.",
-      "enable": "Chặn tên miền mới đăng ký"
-    },
-    "ddns": {
-      "name": "Tên máy chủ DNS động",
-      "description": "Các dịch vụ DNS động (DDNS) cho phép kẻ xấu nhanh chóng thiết lập tên máy chủ miễn phí mà không cần kiểm tra hay xác minh danh tính. Trong khi tên máy chủ DDNS hợp pháp hiếm khi được truy cập trong hoạt động hàng ngày, các tên máy chủ DDNS độc hại lại được sử dụng rộng rãi trong các chiến dịch lừa đảo.",
-      "disclaimer": "Nếu bạn đang sử dụng DDNS, lưu ý rằng cài đặt này không chặn trang web hoặc API cập nhật của chính dịch vụ DDNS.",
-      "enable": "Chặn tên máy chủ DNS động"
-    },
-    "parked": {
-      "name": "Tên miền đỗ",
-      "description": "Tên miền đỗ là các trang web chỉ có một trang, thường chứa đầy quảng cáo và không mang lại giá trị. Việc kiếm tiền từ tên miền đỗ có thể khiến người truy cập gặp các trò lừa đảo, trang giả mạo và tệp tải xuống độc hại thông qua mạng quảng cáo và chuyển hướng.",
-      "enable": "Chặn tên miền đỗ"
-    },
-    "tld": {
-      "name": "Tên miền cấp cao nhất (TLD)",
-      "description": "Chặn tất cả tên miền và tên miền phụ thuộc các TLD cụ thể.",
-      "add": "Thêm TLD",
-      "sections": {
-        "spamhaus": "TLD bị lạm dụng nhiều nhất theo Spamhaus",
-        "all": "Tất cả TLD"
-      }
-    },
-    "csam": {
-      "name": "Nội dung xâm hại tình dục trẻ em (CSAM)",
-      "description": "Chặn các tên miền lưu trữ nội dung xâm hại tình dục trẻ em với sự hỗ trợ của Project Arachnid, do Trung tâm Bảo vệ Trẻ em Canada vận hành. Không có thông tin nào được gửi lại cho Project Arachnid khi một tên miền bị chặn.",
-      "enable": "Chặn nội dung xâm hại tình dục trẻ em"
-    },
-    "newlyActiveDomains": {
-      "name": "Tên miền mới hoạt động",
-      "description": "Chặn các tên miền được truy cập lần đầu hoặc trước đây có rất ít hoạt động. Tính năng này ngăn các cuộc tấn công zero-day và mối đe dọa “ngủ đông” bằng cách yêu cầu bằng chứng về quá trình sử dụng hợp pháp trước khi tin cậy một tên miền, qua đó vô hiệu hóa các nỗ lực tạo lịch sử hoạt động trước cho tên miền độc hại.",
-      "enable": "Chặn tên miền mới hoạt động"
-    },
-    "freeHostingDomains": {
-      "name": "Tên miền lưu trữ web miễn phí",
-      "description": "Chặn các tên miền phụ mặc định do dịch vụ lưu trữ web miễn phí cung cấp (ví dụ: *.pages.dev, *.vercel.app, *.netlify.app). Kẻ tấn công thường xuyên lạm dụng các tên miền lưu trữ web miễn phí (FHD) này để lưu trữ trang lừa đảo và vượt qua bộ lọc dựa trên uy tín. Cài đặt này không ảnh hưởng đến các trang web hợp pháp sử dụng những nhà cung cấp này với tên miền riêng.",
-      "enable": "Chặn tên miền lưu trữ web miễn phí"
-    },
-    "tunnelingEndpoints": {
-      "name": "Điểm cuối đường hầm",
-      "description": "Chặn các dịch vụ tạo đường hầm đưa lưu lượng cục bộ ra Internet công cộng (ví dụ: ngrok, Cloudflare Tunnel). Kẻ tấn công thường dùng những công cụ này để vượt tường lửa và lưu trữ trang lừa đảo trên các tên miền phụ ngẫu nhiên, đồng thời che giấu hạ tầng bên dưới.",
-      "enable": "Chặn điểm cuối đường hầm"
-    },
-    "dataDropServices": {
-      "name": "Dịch vụ chia sẻ và thu thập dữ liệu",
-      "description": "Chặn truy cập vào các dịch vụ chuyên dùng để chia sẻ văn bản, tệp và dữ liệu JSON/cấu hình hoặc thu thập dữ liệu gửi đến, bao gồm yêu cầu webhook, truy vấn DNS và email. Việc chặn này bao gồm cả các mục đích sử dụng hợp pháp của những dịch vụ đó.",
-      "enable": "Chặn dịch vụ chia sẻ và thu thập dữ liệu"
-    },
-    "residentialHosting": {
-      "name": "Lưu trữ web trên mạng dân dụng",
-      "description": "Chặn các tên miền phân giải ra dải IP dân dụng của nhà cung cấp Internet (ISP), thay vì trung tâm dữ liệu thương mại. Các dịch vụ web hợp pháp hiếm khi được lưu trữ trên kết nối Internet dân dụng, trong khi máy chủ C2 của botnet và proxy lừa đảo thường chạy trên bộ định tuyến gia đình đã bị xâm nhập.",
-      "enable": "Chặn lưu trữ web trên mạng dân dụng"
-    },
-    "untrustedCertificates": {
-      "name": "Chứng chỉ không đáng tin cậy",
-      "description": "Chặn các tên miền sử dụng chứng chỉ SSL/TLS được ký bởi tổ chức chứng thực (CA) không đáng tin cậy hoặc không rõ danh tính (ví dụ: chứng chỉ tự ký). Trong khi các trang web hợp pháp gần như chỉ sử dụng chứng chỉ đáng tin cậy, gần 60% máy chủ chỉ huy và điều khiển (C2) của các loại phần mềm độc hại phổ biến sử dụng chứng chỉ tự ký hoặc do tổ chức không đáng tin cậy cấp để mã hóa lưu lượng mà không để lại dấu vết.",
-      "enable": "Chặn chứng chỉ không đáng tin cậy"
-    },
-    "fastFluxNetworks": {
-      "name": "Mạng fast flux",
-      "description": "Chặn các tên miền liên tục thay đổi địa chỉ IP trên một mạng lưới phân tán gồm các thiết bị bị xâm nhập (botnet) để tránh bị phát hiện. Phương pháp phát hiện này nhận diện những bất thường cụ thể về thời gian tồn tại (TTL) của DNS và mức độ đa dạng địa chỉ IP, vốn là đặc trưng của hạ tầng độc hại và khác với các mạng phân phối nội dung (CDN) hợp pháp.",
-      "enable": "Chặn mạng fast flux"
-    },
-    "dnsDataExfiltration": {
-      "name": "Đánh cắp dữ liệu qua DNS",
-      "description": "Chặn các tên miền sử dụng giao thức DNS để lén chuyển dữ liệu ra khỏi mạng hoặc nhận lệnh ẩn (C2). Phương pháp phát hiện này phân tích các mẫu truy vấn DNS theo thời gian thực — như tên miền phụ dài bất thường, entropy cao và loại yêu cầu ít gặp (ví dụ: TXT) — để phát hiện và ngăn việc đánh cắp dữ liệu âm thầm, chậm rãi cùng các tín hiệu liên lạc của phần mềm độc hại (như Cobalt Strike) vượt qua tường lửa truyền thống.",
-      "enable": "Chặn đánh cắp dữ liệu qua DNS"
-    },
-    "dnsPayloadDelivery": {
-      "name": "Truyền tải payload qua DNS",
-      "description": "Ngăn phản hồi DNS bị lợi dụng để truyền các lệnh ẩn hoặc payload đến thiết bị của bạn. Truy vấn cho các loại bản ghi có thể chứa dữ liệu tùy ý nhưng không cần thiết khi duyệt web hàng ngày — như TXT hoặc NULL — sẽ bị chặn hoàn toàn. Chuỗi CNAME được rút gọn thành địa chỉ cuối cùng, loại bỏ các bản ghi trung gian có thể mã hóa dữ liệu ẩn. Với các loại bản ghi tiêu chuẩn như A và AAAA, phần trả lời quá lớn sẽ bị cắt bớt ngẫu nhiên để làm hỏng dữ liệu được mã hóa trên nhiều bản ghi, trong khi vẫn duy trì hoạt động DNS bình thường.",
-      "enable": "Chặn truyền tải payload qua DNS"
-    },
-    "decentralizedWebGateways": {
-      "name": "Cổng truy cập web phi tập trung",
-      "description": "Chặn các cổng công cộng kết nối web phi tập trung (ví dụ: IPFS) với trình duyệt thông thường. Kẻ tấn công thường xuyên lạm dụng các dịch vụ này để lưu trữ trang lừa đảo và phần mềm độc hại “bất biến”, giúp các mối đe dọa tồn tại lâu dài bằng cách tránh các biện pháp gỡ bỏ truyền thống và bộ lọc dựa trên uy tín.",
-      "enable": "Chặn cổng truy cập web phi tập trung"
-    },
-    "highRiskTlds": {
-      "name": "TLD có rủi ro cao",
-      "description": "Tự động chặn các tên miền cấp cao nhất (TLD) mà theo thống kê, phần lớn hoạt động là độc hại — ví dụ: .zip, .mov, .top. Danh sách được cập nhật theo thời gian thực dựa trên dữ liệu uy tín và lạm dụng toàn cầu, bảo vệ bạn khỏi các mạng lưới khổng lồ gồm tên miền giá rẻ, dùng một lần để lừa đảo và gửi thư rác mà không cần cấu hình thủ công.",
-      "enable": "Chặn TLD có rủi ro cao"
-    }
-  },
-  "privacy": {
-    "blocklists": {
-      "name": "Danh sách chặn",
-      "description": "Chặn quảng cáo và trình theo dõi bằng các danh sách chặn phổ biến nhất — tất cả đều được cập nhật theo thời gian thực.",
-      "add": "Thêm danh sách chặn",
-      "entries_other": "{{count, number}} mục",
-      "updated": "Đã cập nhật <1></1>",
-      "blocklists": {
-        "nextdns-recommended": {
-          "name": "Danh sách chặn quảng cáo và trình theo dõi NextDNS",
-          "description": "Danh sách chặn toàn diện dành cho quảng cáo và trình theo dõi ở mọi quốc gia. Đây là danh sách chặn được đề xuất khi bắt đầu sử dụng."
+    "security": {
+        "feeds": {
+            "name": "Nguồn tin về mối đe dọa",
+            "description": "Chặn các tên miền được biết là phát tán phần mềm độc hại, thực hiện tấn công lừa đảo và lưu trữ máy chủ chỉ huy và điều khiển bằng cách kết hợp các nguồn tin về mối đe dọa uy tín nhất — tất cả đều được cập nhật theo thời gian thực.",
+            "enable": "Sử dụng nguồn tin về mối đe dọa"
+        },
+        "ai": {
+            "name": "Phát hiện mối đe dọa bằng AI",
+            "description": "Chặn hàng triệu mối đe dọa được phát hiện bằng công nghệ AI của chúng tôi — một bộ máy AI độc quyền được xây dựng từ đầu dành riêng cho DNS, với hàng trăm tín hiệu, hàng terabyte dữ liệu huấn luyện và khả năng ra quyết định theo thời gian thực. Bao gồm giả mạo IDN bằng ký tự giống nhau, lợi dụng lỗi gõ tên miền (typosquatting), ghép thêm từ vào tên thương hiệu (combosquatting), tên miền DGA, giả mạo thương hiệu, đánh cắp thông tin đăng nhập, phát tán phần mềm độc hại và các trang web mồi nhử dùng để che giấu hạ tầng độc hại.",
+            "enable": "Bật phát hiện mối đe dọa bằng AI"
+        },
+        "googleSafeBrowsing": {
+            "name": "Duyệt web an toàn của Google",
+            "description": "Chặn các tên miền phát tán phần mềm độc hại và lừa đảo bằng Duyệt web an toàn của Google — công nghệ kiểm tra hàng tỷ URL mỗi ngày để tìm các trang web không an toàn. Khác với phiên bản tích hợp trong một số trình duyệt, tính năng này không liên kết địa chỉ IP công cộng của bạn với các mối đe dọa và không cho phép bỏ qua lệnh chặn.",
+            "enable": "Bật Duyệt web an toàn của Google"
+        },
+        "cryptojacking": {
+            "name": "Đào tiền mã hóa trái phép",
+            "description": "Ngăn việc sử dụng trái phép thiết bị của bạn để đào tiền mã hóa.",
+            "enable": "Chặn đào tiền mã hóa trái phép"
+        },
+        "dnsRebinding": {
+            "name": "DNS rebinding",
+            "description": "Ngăn những kẻ tấn công chiếm quyền kiểm soát các thiết bị cục bộ của bạn thông qua Internet bằng cách tự động chặn các phản hồi DNS có chứa địa chỉ IP riêng.",
+            "enable": "Chặn DNS rebinding"
+        },
+        "homograph": {
+            "name": "Giả mạo IDN bằng ký tự giống nhau",
+            "description": "Chặn tên miền quốc tế hóa (IDN) giả mạo tên miền khác bằng các ký tự trông giống nhau — ví dụ: thay chữ “e” trong bảng chữ cái Latinh bằng chữ “е” trong bảng chữ cái Kirin.",
+            "enable": "Chặn giả mạo IDN bằng ký tự giống nhau"
+        },
+        "typosquatting": {
+            "name": "Lợi dụng lỗi gõ tên miền",
+            "description": "Chặn các tên miền do kẻ xấu đăng ký để nhắm vào người dùng gõ sai địa chỉ trang web trong trình duyệt — ví dụ: gooogle.com thay vì google.com.",
+            "enable": "Chặn lợi dụng lỗi gõ tên miền"
+        },
+        "dga": {
+            "name": "Thuật toán tạo tên miền",
+            "description": "Chặn các tên miền được tạo bằng thuật toán tạo tên miền (DGA) và được nhiều dòng phần mềm độc hại dùng làm điểm liên lạc với máy chủ chỉ huy và điều khiển.",
+            "enable": "Chặn tên miền DGA"
+        },
+        "nrd": {
+            "name": "Tên miền mới đăng ký",
+            "description": "Chặn các tên miền được đăng ký chưa đầy 30 ngày. Kẻ xấu thường sử dụng những tên miền này để triển khai các chiến dịch độc hại.",
+            "enable": "Chặn tên miền mới đăng ký"
+        },
+        "ddns": {
+            "name": "Tên máy chủ DNS động",
+            "description": "Các dịch vụ DNS động (DDNS) cho phép kẻ xấu nhanh chóng thiết lập tên máy chủ miễn phí mà không cần kiểm tra hay xác minh danh tính. Trong khi tên máy chủ DDNS hợp pháp hiếm khi được truy cập trong hoạt động hàng ngày, các tên máy chủ DDNS độc hại lại được sử dụng rộng rãi trong các chiến dịch lừa đảo.",
+            "disclaimer": "Nếu bạn đang sử dụng DDNS, lưu ý rằng cài đặt này không chặn trang web hoặc API cập nhật của chính dịch vụ DDNS.",
+            "enable": "Chặn tên máy chủ DNS động"
+        },
+        "parked": {
+            "name": "Tên miền đỗ",
+            "description": "Tên miền đỗ là các trang web chỉ có một trang, thường chứa đầy quảng cáo và không mang lại giá trị. Việc kiếm tiền từ tên miền đỗ có thể khiến người truy cập gặp các trò lừa đảo, trang giả mạo và tệp tải xuống độc hại thông qua mạng quảng cáo và chuyển hướng.",
+            "enable": "Chặn tên miền đỗ"
+        },
+        "tld": {
+            "name": "Tên miền cấp cao nhất (TLD)",
+            "description": "Chặn tất cả tên miền và tên miền phụ thuộc các TLD cụ thể.",
+            "add": "Thêm TLD",
+            "sections": {
+                "spamhaus": "TLD bị lạm dụng nhiều nhất theo Spamhaus",
+                "all": "Tất cả TLD"
+            }
+        },
+        "csam": {
+            "name": "Nội dung xâm hại tình dục trẻ em (CSAM)",
+            "description": "Chặn các tên miền lưu trữ nội dung xâm hại tình dục trẻ em với sự hỗ trợ của Project Arachnid, do Trung tâm Bảo vệ Trẻ em Canada vận hành. Không có thông tin nào được gửi lại cho Project Arachnid khi một tên miền bị chặn.",
+            "enable": "Chặn nội dung xâm hại tình dục trẻ em"
+        },
+        "newlyActiveDomains": {
+            "name": "Tên miền mới hoạt động",
+            "description": "Chặn các tên miền được truy cập lần đầu hoặc trước đây có rất ít hoạt động. Tính năng này ngăn các cuộc tấn công zero-day và mối đe dọa “ngủ đông” bằng cách yêu cầu bằng chứng về quá trình sử dụng hợp pháp trước khi tin cậy một tên miền, qua đó vô hiệu hóa các nỗ lực tạo lịch sử hoạt động trước cho tên miền độc hại.",
+            "enable": "Chặn tên miền mới hoạt động"
+        },
+        "freeHostingDomains": {
+            "name": "Tên miền lưu trữ web miễn phí",
+            "description": "Chặn các tên miền phụ mặc định do dịch vụ lưu trữ web miễn phí cung cấp (ví dụ: *.pages.dev, *.vercel.app, *.netlify.app). Kẻ tấn công thường xuyên lạm dụng các tên miền lưu trữ web miễn phí (FHD) này để lưu trữ trang lừa đảo và vượt qua bộ lọc dựa trên uy tín. Cài đặt này không ảnh hưởng đến các trang web hợp pháp sử dụng những nhà cung cấp này với tên miền riêng.",
+            "enable": "Chặn tên miền lưu trữ web miễn phí"
+        },
+        "tunnelingEndpoints": {
+            "name": "Điểm cuối đường hầm",
+            "description": "Chặn các dịch vụ tạo đường hầm đưa lưu lượng cục bộ ra Internet công cộng (ví dụ: ngrok, Cloudflare Tunnel). Kẻ tấn công thường dùng những công cụ này để vượt tường lửa và lưu trữ trang lừa đảo trên các tên miền phụ ngẫu nhiên, đồng thời che giấu hạ tầng bên dưới.",
+            "enable": "Chặn điểm cuối đường hầm"
+        },
+        "dataDropServices": {
+            "name": "Dịch vụ chia sẻ và thu thập dữ liệu",
+            "description": "Chặn truy cập vào các dịch vụ chuyên dùng để chia sẻ văn bản, tệp và dữ liệu JSON/cấu hình hoặc thu thập dữ liệu gửi đến, bao gồm yêu cầu webhook, truy vấn DNS và email. Việc chặn này bao gồm cả các mục đích sử dụng hợp pháp của những dịch vụ đó.",
+            "enable": "Chặn dịch vụ chia sẻ và thu thập dữ liệu"
+        },
+        "residentialHosting": {
+            "name": "Lưu trữ web trên mạng dân dụng",
+            "description": "Chặn các tên miền phân giải ra dải IP dân dụng của nhà cung cấp Internet (ISP), thay vì trung tâm dữ liệu thương mại. Các dịch vụ web hợp pháp hiếm khi được lưu trữ trên kết nối Internet dân dụng, trong khi máy chủ C2 của botnet và proxy lừa đảo thường chạy trên bộ định tuyến gia đình đã bị xâm nhập.",
+            "enable": "Chặn lưu trữ web trên mạng dân dụng"
+        },
+        "untrustedCertificates": {
+            "name": "Chứng chỉ không đáng tin cậy",
+            "description": "Chặn các tên miền sử dụng chứng chỉ SSL/TLS được ký bởi tổ chức chứng thực (CA) không đáng tin cậy hoặc không rõ danh tính (ví dụ: chứng chỉ tự ký). Trong khi các trang web hợp pháp gần như chỉ sử dụng chứng chỉ đáng tin cậy, gần 60% máy chủ chỉ huy và điều khiển (C2) của các loại phần mềm độc hại phổ biến sử dụng chứng chỉ tự ký hoặc do tổ chức không đáng tin cậy cấp để mã hóa lưu lượng mà không để lại dấu vết.",
+            "enable": "Chặn chứng chỉ không đáng tin cậy"
+        },
+        "fastFluxNetworks": {
+            "name": "Mạng fast flux",
+            "description": "Chặn các tên miền liên tục thay đổi địa chỉ IP trên một mạng lưới phân tán gồm các thiết bị bị xâm nhập (botnet) để tránh bị phát hiện. Phương pháp phát hiện này nhận diện những bất thường cụ thể về thời gian tồn tại (TTL) của DNS và mức độ đa dạng địa chỉ IP, vốn là đặc trưng của hạ tầng độc hại và khác với các mạng phân phối nội dung (CDN) hợp pháp.",
+            "enable": "Chặn mạng fast flux"
+        },
+        "dnsDataExfiltration": {
+            "name": "Đánh cắp dữ liệu qua DNS",
+            "description": "Chặn các tên miền sử dụng giao thức DNS để lén chuyển dữ liệu ra khỏi mạng hoặc nhận lệnh ẩn (C2). Phương pháp phát hiện này phân tích các mẫu truy vấn DNS theo thời gian thực — như tên miền phụ dài bất thường, entropy cao và loại yêu cầu ít gặp (ví dụ: TXT) — để phát hiện và ngăn việc đánh cắp dữ liệu âm thầm, chậm rãi cùng các tín hiệu liên lạc của phần mềm độc hại (như Cobalt Strike) vượt qua tường lửa truyền thống.",
+            "enable": "Chặn đánh cắp dữ liệu qua DNS"
+        },
+        "dnsPayloadDelivery": {
+            "name": "Truyền tải payload qua DNS",
+            "description": "Ngăn phản hồi DNS bị lợi dụng để truyền các lệnh ẩn hoặc payload đến thiết bị của bạn. Truy vấn cho các loại bản ghi có thể chứa dữ liệu tùy ý nhưng không cần thiết khi duyệt web hàng ngày — như TXT hoặc NULL — sẽ bị chặn hoàn toàn. Chuỗi CNAME được rút gọn thành địa chỉ cuối cùng, loại bỏ các bản ghi trung gian có thể mã hóa dữ liệu ẩn. Với các loại bản ghi tiêu chuẩn như A và AAAA, phần trả lời quá lớn sẽ bị cắt bớt ngẫu nhiên để làm hỏng dữ liệu được mã hóa trên nhiều bản ghi, trong khi vẫn duy trì hoạt động DNS bình thường.",
+            "enable": "Chặn truyền tải payload qua DNS"
+        },
+        "decentralizedWebGateways": {
+            "name": "Cổng truy cập web phi tập trung",
+            "description": "Chặn các cổng công cộng kết nối web phi tập trung (ví dụ: IPFS) với trình duyệt thông thường. Kẻ tấn công thường xuyên lạm dụng các dịch vụ này để lưu trữ trang lừa đảo và phần mềm độc hại “bất biến”, giúp các mối đe dọa tồn tại lâu dài bằng cách tránh các biện pháp gỡ bỏ truyền thống và bộ lọc dựa trên uy tín.",
+            "enable": "Chặn cổng truy cập web phi tập trung"
+        },
+        "highRiskTlds": {
+            "name": "TLD có rủi ro cao",
+            "description": "Tự động chặn các tên miền cấp cao nhất (TLD) mà theo thống kê, phần lớn hoạt động là độc hại — ví dụ: .zip, .mov, .top. Danh sách được cập nhật theo thời gian thực dựa trên dữ liệu uy tín và lạm dụng toàn cầu, bảo vệ bạn khỏi các mạng lưới khổng lồ gồm tên miền giá rẻ, dùng một lần để lừa đảo và gửi thư rác mà không cần cấu hình thủ công.",
+            "enable": "Chặn TLD có rủi ro cao"
         }
-      },
-      "sortBy": {
-        "popularity": "Mức độ phổ biến",
-        "name": "Tên",
-        "entries": "Số mục",
-        "updated": "Gần đây"
-      }
     },
-    "native": {
-      "name": "Bảo vệ khỏi theo dõi tích hợp",
-      "description": "Chặn các trình theo dõi — thường hoạt động ở cấp hệ điều hành — giám sát nhiều hoạt động của bạn trên thiết bị. Những hoạt động này có thể bao gồm tất cả trang web bạn truy cập, mọi nội dung bạn nhập hoặc vị trí của bạn mọi lúc.",
-      "add": "Thêm",
-      "systems": {
-        "xiaomi": {
-          "name": "Xiaomi",
-          "devices": "Điện thoại và máy tính bảng, TV thông minh, bộ định tuyến"
+    "privacy": {
+        "blocklists": {
+            "name": "Danh sách chặn",
+            "description": "Chặn quảng cáo và trình theo dõi bằng các danh sách chặn phổ biến nhất — tất cả đều được cập nhật theo thời gian thực.",
+            "add": "Thêm danh sách chặn",
+            "entries_other": "{{count, number}} mục",
+            "updated": "Đã cập nhật <1></1>",
+            "blocklists": {
+                "nextdns-recommended": {
+                    "name": "Danh sách chặn quảng cáo và trình theo dõi NextDNS",
+                    "description": "Danh sách chặn toàn diện dành cho quảng cáo và trình theo dõi ở mọi quốc gia. Đây là danh sách chặn được đề xuất khi bắt đầu sử dụng."
+                }
+            },
+            "sortBy": {
+                "popularity": "Mức độ phổ biến",
+                "name": "Tên",
+                "entries": "Số mục",
+                "updated": "Gần đây"
+            },
+            "entries_one": ""
         },
-        "huawei": {
-          "name": "Huawei",
-          "devices": "Điện thoại và máy tính bảng"
+        "native": {
+            "name": "Bảo vệ khỏi theo dõi tích hợp",
+            "description": "Chặn các trình theo dõi — thường hoạt động ở cấp hệ điều hành — giám sát nhiều hoạt động của bạn trên thiết bị. Những hoạt động này có thể bao gồm tất cả trang web bạn truy cập, mọi nội dung bạn nhập hoặc vị trí của bạn mọi lúc.",
+            "add": "Thêm",
+            "systems": {
+                "xiaomi": {
+                    "name": "Xiaomi",
+                    "devices": "Điện thoại và máy tính bảng, TV thông minh, bộ định tuyến"
+                },
+                "huawei": {
+                    "name": "Huawei",
+                    "devices": "Điện thoại và máy tính bảng"
+                },
+                "samsung": {
+                    "name": "Samsung",
+                    "devices": "Điện thoại, máy tính bảng, TV thông minh"
+                },
+                "alexa": {
+                    "name": "Alexa",
+                    "devices": "Thiết bị hỗ trợ Alexa"
+                },
+                "windows": {
+                    "name": "Windows",
+                    "devices": "Tất cả các phiên bản"
+                },
+                "apple": {
+                    "name": "Apple",
+                    "devices": "iOS, macOS, tvOS"
+                },
+                "roku": {
+                    "name": "Roku",
+                    "devices": "Tất cả các thiết bị Roku"
+                },
+                "sonos": {
+                    "name": "Sonos",
+                    "devices": "Loa"
+                }
+            }
         },
-        "samsung": {
-          "name": "Samsung",
-          "devices": "Điện thoại, máy tính bảng, TV thông minh"
+        "disguised": {
+            "name": "Chặn trình theo dõi bên thứ ba ngụy trang",
+            "description": "Tự động phát hiện và chặn các trình theo dõi bên thứ ba giả dạng bên thứ nhất để vượt qua các biện pháp bảo vệ quyền riêng tư của trình duyệt như ITP.",
+            "enable": "Chặn trình theo dõi bên thứ ba ngụy trang"
         },
-        "alexa": {
-          "name": "Alexa",
-          "devices": "Thiết bị hỗ trợ Alexa"
-        },
-        "windows": {
-          "name": "Windows",
-          "devices": "Tất cả các phiên bản"
-        },
-        "apple": {
-          "name": "Apple",
-          "devices": "iOS, macOS, tvOS"
-        },
-        "roku": {
-          "name": "Roku",
-          "devices": "Tất cả các thiết bị Roku"
-        },
-        "sonos": {
-          "name": "Sonos",
-          "devices": "Loa"
+        "affiliate": {
+            "name": "Cho phép liên kết tiếp thị liên kết và theo dõi",
+            "description": "Cho phép các tên miền tiếp thị liên kết và theo dõi thường xuất hiện trên trang web ưu đãi, trong email hoặc kết quả tìm kiếm. Các tên miền này thường chỉ được truy cập sau khi bạn chủ động nhấp vào một liên kết.",
+            "relay": "Địa chỉ IP của bạn sẽ tự động được ẩn khỏi các trang web đó để bảo vệ quyền riêng tư.",
+            "enable": "Cho phép liên kết tiếp thị liên kết và theo dõi"
         }
-      }
     },
-    "disguised": {
-      "name": "Chặn trình theo dõi bên thứ ba ngụy trang",
-      "description": "Tự động phát hiện và chặn các trình theo dõi bên thứ ba giả dạng bên thứ nhất để vượt qua các biện pháp bảo vệ quyền riêng tư của trình duyệt như ITP.",
-      "enable": "Chặn trình theo dõi bên thứ ba ngụy trang"
-    },
-    "affiliate": {
-      "name": "Cho phép liên kết tiếp thị liên kết và theo dõi",
-      "description": "Cho phép các tên miền tiếp thị liên kết và theo dõi thường xuất hiện trên trang web ưu đãi, trong email hoặc kết quả tìm kiếm. Các tên miền này thường chỉ được truy cập sau khi bạn chủ động nhấp vào một liên kết.",
-      "relay": "Địa chỉ IP của bạn sẽ tự động được ẩn khỏi các trang web đó để bảo vệ quyền riêng tư.",
-      "enable": "Cho phép liên kết tiếp thị liên kết và theo dõi"
-    }
-  },
-  "parentalControl": {
-    "services": {
-      "name": "Trang web, ứng dụng và trò chơi",
-      "description": "Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi cụ thể.",
-      "add": "Thêm trang web, ứng dụng hoặc trò chơi",
-      "services": {
-        "9gag": "9GAG",
-        "amazon": "Amazon",
-        "bereal": "BeReal",
-        "blizzard": "Blizzard",
-        "chatgpt": "ChatGPT",
-        "dailymotion": "Dailymotion",
-        "discord": "Discord",
-        "disneyplus": "Disney+",
-        "ebay": "eBay",
-        "facebook": "Facebook",
-        "fortnite": "Fortnite",
-        "google-chat": "Google Chat",
-        "hbomax": "HBO Max",
-        "hulu": "Hulu",
-        "imgur": "Imgur",
-        "instagram": "Instagram",
-        "leagueoflegends": "Liên Minh Huyền Thoại",
-        "mastodon": "Mastodon",
-        "messenger": "Messenger",
-        "minecraft": "Minecraft",
-        "netflix": "Netflix",
-        "pinterest": "Pinterest",
-        "playstation-network": "PlayStation Network",
-        "primevideo": "Prime Video",
-        "reddit": "Reddit",
-        "roblox": "Roblox",
-        "signal": "Signal",
-        "skype": "Skype",
-        "snapchat": "Snapchat",
-        "spotify": "Spotify",
-        "steam": "Steam",
-        "telegram": "Telegram",
-        "tiktok": "TikTok",
-        "tinder": "Tinder",
-        "tumblr": "Tumblr",
-        "twitch": "Twitch",
-        "twitter": "X",
-        "vimeo": "Vimeo",
-        "vk": "VK",
-        "whatsapp": "WhatsApp",
-        "xboxlive": "Xbox",
-        "youtube": "YouTube",
-        "zoom": "Zoom"
-      }
-    },
-    "categories": {
-      "name": "Danh mục",
-      "description": "Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.",
-      "add": "Thêm danh mục",
-      "categories": {
-        "dating": {
-          "name": "Hẹn hò",
-          "description": "Chặn tất cả các trang web và ứng dụng hẹn hò."
+    "parentalControl": {
+        "services": {
+            "name": "Trang web, ứng dụng và trò chơi",
+            "description": "Hạn chế quyền truy cập vào các trang web, ứng dụng và trò chơi cụ thể.",
+            "add": "Thêm trang web, ứng dụng hoặc trò chơi",
+            "services": {
+                "9gag": "9GAG",
+                "amazon": "Amazon",
+                "bereal": "BeReal",
+                "blizzard": "Blizzard",
+                "chatgpt": "ChatGPT",
+                "dailymotion": "Dailymotion",
+                "discord": "Discord",
+                "disneyplus": "Disney+",
+                "ebay": "eBay",
+                "facebook": "Facebook",
+                "fortnite": "Fortnite",
+                "google-chat": "Google Chat",
+                "hbomax": "HBO Max",
+                "hulu": "Hulu",
+                "imgur": "Imgur",
+                "instagram": "Instagram",
+                "leagueoflegends": "Liên Minh Huyền Thoại",
+                "mastodon": "Mastodon",
+                "messenger": "Messenger",
+                "minecraft": "Minecraft",
+                "netflix": "Netflix",
+                "pinterest": "Pinterest",
+                "playstation-network": "PlayStation Network",
+                "primevideo": "Prime Video",
+                "reddit": "Reddit",
+                "roblox": "Roblox",
+                "signal": "Signal",
+                "skype": "Skype",
+                "snapchat": "Snapchat",
+                "spotify": "Spotify",
+                "steam": "Steam",
+                "telegram": "Telegram",
+                "tiktok": "TikTok",
+                "tinder": "Tinder",
+                "tumblr": "Tumblr",
+                "twitch": "Twitch",
+                "twitter": "X",
+                "vimeo": "Vimeo",
+                "vk": "VK",
+                "whatsapp": "WhatsApp",
+                "xboxlive": "Xbox",
+                "youtube": "YouTube",
+                "zoom": "Zoom"
+            }
         },
-        "gambling": {
-          "name": "Cờ bạc",
-          "description": "Chặn nội dung cờ bạc."
-        },
-        "gaming": {
-          "name": "Trò chơi trực tuyến",
-          "description": "Chặn các trang web, ứng dụng và mạng chơi trò chơi trực tuyến (Xbox, PlayStation Network, v.v.)."
-        },
-        "piracy": {
-          "name": "Vi phạm bản quyền",
-          "description": "Chặn các trang web P2P, giao thức, trang web phát trực tuyến vi phạm bản quyền và các trang web lưu trữ video chung được sử dụng chủ yếu để phân phối bất hợp pháp nội dung có bản quyền."
-        },
-        "porn": {
-          "name": "Khiêu dâm",
-          "description": "Chặn nội dung người lớn và khiêu dâm, bao gồm các trang dịch vụ tình dục có trả phí, pornhub.com và các tên miền tương tự."
-        },
-        "social-networks": {
-          "name": "Mạng xã hội",
-          "description": "Chặn tất cả trang web và ứng dụng mạng xã hội (Facebook, Instagram, TikTok, Reddit, v.v.). Không chặn ứng dụng nhắn tin."
-        },
-        "video-streaming": {
-          "name": "Phát video trực tuyến",
-          "description": "Chặn các dịch vụ phát video trực tuyến (YouTube, Netflix, Disney+, các trang phát video trái phép, trang video khiêu dâm, v.v.) và mạng xã hội dựa trên video (TikTok, v.v.). Tính năng này cũng có thể giúp giảm lượng băng thông sử dụng trên mọi mạng."
-        }
-      }
-    },
-    "recreation": {
-      "name": "Thời gian giải trí",
-      "start": "Giờ bắt đầu",
-      "end": "Giờ kết thúc",
-      "description": "Đặt một khoảng thời gian cho từng ngày trong tuần để một số trang web, ứng dụng, trò chơi hoặc danh mục ở trên không bị chặn — ví dụ: cho phép Facebook vào thứ Hai và thứ Ba từ 18:00 đến 20:00.",
-      "set": "Đặt thời gian giải trí",
-      "howto": "Sử dụng nút <1></1> trong các phần trên để bật Thời gian giải trí."
-    },
-    "safesearch": {
-      "name": "Tìm kiếm an toàn",
-      "description": "Lọc bỏ các kết quả có nội dung phản cảm trên tất cả các công cụ tìm kiếm chính, bao gồm cả hình ảnh và video. Các công cụ tìm kiếm không hỗ trợ tính năng này cũng sẽ bị chặn.",
-      "enable": "Bắt buộc sử dụng Tìm kiếm an toàn"
-    },
-    "youtubeRestricted": {
-      "name": "Chế độ hạn chế trên YouTube",
-      "description": "Lọc bỏ video dành cho người lớn trên YouTube và chặn việc xem các video dành cho người lớn được nhúng trên trang web khác. Tính năng này cũng ẩn tất cả bình luận.",
-      "enable": "Bắt buộc sử dụng Chế độ hạn chế trên YouTube"
-    },
-    "bypass": {
-      "name": "Chặn phương pháp vượt bộ lọc",
-      "description": "Ngăn chặn hoặc cản trở việc sử dụng các phương pháp giúp vượt qua bộ lọc NextDNS trên mạng, bao gồm VPN, proxy, phần mềm liên quan đến Tor và các nhà cung cấp DNS mã hóa.",
-      "enable": "Chặn phương pháp vượt bộ lọc"
-    }
-  },
-  "xlist": {
-    "placeholder": "Thêm tên miền...",
-    "errors": {
-      "required": "Vui lòng nhập tên miền.",
-      "ip": "Vui lòng nhập tên miền, không phải địa chỉ IP.",
-      "invalid": "Vui lòng nhập tên miền hợp lệ.",
-      "tld": "Có vẻ như bạn đang muốn chặn toàn bộ một TLD. Hãy sử dụng tính năng Tên miền cấp cao nhất (TLD) trong phần Bảo mật.",
-      "exists": "Tên miền này đã được thêm vào."
-    },
-    "empty": "Chưa có tên miền nào.",
-    "denylist": {
-      "info": "Từ chối một tên miền sẽ tự động từ chối tất cả tên miền phụ của nó."
-    },
-    "allowlist": {
-      "info": "Cho phép một tên miền sẽ tự động cho phép tất cả tên miền phụ của nó. Quy tắc cho phép được ưu tiên hơn mọi cài đặt khác, kể cả các tính năng bảo mật."
-    }
-  },
-  "analytics": {
-    "counters": {
-      "all_other": "<0>{{count, number}}</0><1>truy vấn</1>",
-      "blocked_other": "<0>{{count, number}}</0><1>truy vấn bị chặn</1>",
-      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>truy vấn bị chặn</1></1>"
-    },
-    "queries": {
-      "name": "Truy vấn",
-      "description": "Số lượng truy vấn thay đổi theo thời gian.",
-      "queries": {
-        "all_other": "<0>{{count, number}}</0><1> truy vấn</1>",
-        "blocked_other": "<0>{{count, number}}</0><1> truy vấn bị chặn</1>"
-      }
-    },
-    "domains": {
-      "resolved": {
-        "name": "Tên miền đã phân giải",
-        "description": "Các tên miền được phân giải mà không bị chặn bởi bất kỳ cài đặt nào hoặc được cho phép một cách thủ công."
-      },
-      "blocked": {
-        "name": "Tên miền bị chặn",
-        "description": "Các tên miền bị chặn bởi cài đặt Bảo mật, Quyền riêng tư và/hoặc Kiểm soát của phụ huynh hoặc do bị từ chối một cách thủ công."
-      },
-      "root": {
-        "name": "Tên miền gốc",
-        "description": "Tổng hợp tất cả các truy vấn được thực hiện cho các tên miền gốc và tất cả các tên miền phụ."
-      },
-      "empty": "Chưa có tên miền nào."
-    },
-    "reasons": {
-      "name": "Lý do chặn",
-      "description": "Các cài đặt Bảo mật, Quyền riêng tư và/hoặc Kiểm soát của phụ huynh đã chặn nhiều truy vấn nhất.",
-      "empty": "Chưa có tên miền nào bị chặn."
-    },
-    "devices": {
-      "name": "Thiết bị",
-      "description": "Thiết bị thực hiện các truy vấn.",
-      "empty": "Chưa có thiết bị nào.",
-      "unidentified": {
-        "name": "Thiết bị chưa xác định"
-      }
-    },
-    "ips": {
-      "name": "IP",
-      "description": "Địa chỉ IP thực hiện các truy vấn.",
-      "empty": "Chưa có IP nào."
-    },
-    "gafam": {
-      "name": "Sự thống trị của GAFAM",
-      "description": "“GAFAM” (Google, Amazon, Facebook (nay là Meta), Apple và Microsoft) là 5 công ty Internet chiếm ưu thế, sở hữu nhiều dịch vụ phổ biến thường hoạt động dưới tên khác, ví dụ: WhatsApp và Instagram thuộc Meta.",
-      "queries_other": "{{count, number}} truy vấn",
-      "companies": {
-        "google": {
-          "name": "Google"
-        },
-        "amazon": {
-          "name": "Amazon"
-        },
-        "facebook": {
-          "name": "Meta"
-        },
-        "apple": {
-          "name": "Apple"
-        },
-        "microsoft": {
-          "name": "Microsoft"
-        },
-        "others": {
-          "name": "Khác"
-        }
-      }
-    },
-    "encrypted": {
-      "name": "DNS được mã hóa",
-      "description": "Tỷ lệ truy vấn sử dụng phương thức truyền tải được mã hóa (DNS-over-HTTPS, DNS-over-TLS hoặc ứng dụng NextDNS chính thức).",
-      "empty": "Chưa có truy vấn nào."
-    },
-    "dnssec": {
-      "name": "DNSSEC",
-      "description": "Tỷ lệ truy vấn được xác thực bằng DNSSEC.",
-      "empty": "Chưa có truy vấn nào."
-    },
-    "destination": {
-      "name": "Điểm đến lưu lượng truy cập",
-      "description": "Các quốc gia đích ước tính dựa trên truy vấn DNS của bạn.",
-      "queries_other": "{{count, number}} truy vấn",
-      "topDomains": "Tên miền hàng đầu"
-    }
-  },
-  "logs": {
-    "blockedOnly": "Chỉ các truy vấn bị chặn",
-    "raw": "Nhật ký DNS thô",
-    "empty": "Chưa có nhật ký nào.",
-    "log": {
-      "actionBlock": "Chặn",
-      "actionAllow": "Cho phép",
-      "dnssec": "Được xác thực bằng DNSSEC.",
-      "clients": {
-        "nextdns-ios": "NextDNS dành cho iOS",
-        "nextdns-android": "NextDNS dành cho Android",
-        "nextdns-macos": "NextDNS dành cho macOS",
-        "nextdns-windows": "NextDNS dành cho Windows",
-        "nextdns-cli": "Ứng dụng dòng lệnh NextDNS",
-        "nextdns-chromeos": "NextDNS dành cho ChromeOS",
-        "firefox": "Firefox",
-        "google-chrome": "Google Chrome",
-        "dnscrypt": "DNSCrypt",
-        "intra": "Intra",
-        "surge": "Surge",
-        "https-dns-proxy": "https_dns_proxy",
-        "mikrotik": "MikroTik",
-        "apple-profile": "Hồ sơ cấu hình Apple",
-        "yogadns": "YogaDNS",
-        "tailscale": "Tailscale"
-      },
-      "blockedBy": "Bị chặn bởi <1>{{lists, list}}</1>.",
-      "allowedBy": "Được cho phép bởi <1>{{lists, list}}</1>.",
-      "manual": {
-        "deny": "Đã từ chối thủ công.",
-        "allow": "Đã cho phép thủ công."
-      },
-      "insights": {
-        "show": "Hiển thị thông tin chi tiết về trình theo dõi",
-        "hide": "Ẩn thông tin chi tiết về trình theo dõi",
         "categories": {
-          "advertising": {
-            "description": "Cung cấp quảng cáo hoặc các dịch vụ liên quan đến quảng cáo như thu thập dữ liệu, phân tích hành vi hoặc nhắm mục tiêu lại."
-          },
-          "comments": {
-            "description": "Bật phần bình luận cho các bài viết và đánh giá sản phẩm."
-          },
-          "customer_interaction": {
-            "description": "Bao gồm công cụ trò chuyện, gửi email, hỗ trợ khách hàng và các công cụ tương tác khác."
-          },
-          "essential": {
-            "description": "Bao gồm trình quản lý thẻ, thông báo về quyền riêng tư và các công nghệ thiết yếu đối với hoạt động của trang web."
-          },
-          "adult_advertsing": {
-            "description": "Cung cấp các quảng cáo thường xuất hiện trên các trang web có nội dung người lớn."
-          },
-          "site_analytics": {
-            "description": "Thu thập và phân tích dữ liệu liên quan đến việc sử dụng và hiệu suất trang web."
-          },
-          "social_media": {
-            "description": "Tích hợp các tính năng liên quan đến các trang mạng xã hội."
-          },
-          "audio_video_player": {
-            "description": "Cho phép các trang web xuất bản, phân phối và tối ưu hóa nội dung video và âm thanh."
-          },
-          "cdn": {
-            "description": "Mạng phân phối nội dung cung cấp tài nguyên cho nhiều tiện ích trang web và thường phục vụ nhiều khách hàng khác nhau."
-          },
-          "misc": {
-            "description": "Trình theo dõi này không phù hợp với các danh mục khác hoặc chưa được gắn nhãn."
-          },
-          "pornvertising": {
-            "description": "Cung cấp các quảng cáo thường xuất hiện trên các trang web có nội dung người lớn."
-          },
-          "hosting": {
-            "description": "Đây là một dịch vụ được sử dụng bởi nhà cung cấp nội dung hoặc chủ sở hữu trang web."
-          },
-          "extensions": {
-            "description": "Phần mềm trên thiết bị người dùng có thể chặn bắt và phân tích lưu lượng trình duyệt bằng cách xen vào giữa đường truyền (man in the middle)."
-          }
+            "name": "Danh mục",
+            "description": "Hạn chế quyền truy cập vào các danh mục trang web và ứng dụng cụ thể.",
+            "add": "Thêm danh mục",
+            "categories": {
+                "dating": {
+                    "name": "Hẹn hò",
+                    "description": "Chặn tất cả các trang web và ứng dụng hẹn hò."
+                },
+                "gambling": {
+                    "name": "Cờ bạc",
+                    "description": "Chặn nội dung cờ bạc."
+                },
+                "gaming": {
+                    "name": "Trò chơi trực tuyến",
+                    "description": "Chặn các trang web, ứng dụng và mạng chơi trò chơi trực tuyến (Xbox, PlayStation Network, v.v.)."
+                },
+                "piracy": {
+                    "name": "Vi phạm bản quyền",
+                    "description": "Chặn các trang web P2P, giao thức, trang web phát trực tuyến vi phạm bản quyền và các trang web lưu trữ video chung được sử dụng chủ yếu để phân phối bất hợp pháp nội dung có bản quyền."
+                },
+                "porn": {
+                    "name": "Khiêu dâm",
+                    "description": "Chặn nội dung người lớn và khiêu dâm, bao gồm các trang dịch vụ tình dục có trả phí, pornhub.com và các tên miền tương tự."
+                },
+                "social-networks": {
+                    "name": "Mạng xã hội",
+                    "description": "Chặn tất cả trang web và ứng dụng mạng xã hội (Facebook, Instagram, TikTok, Reddit, v.v.). Không chặn ứng dụng nhắn tin."
+                },
+                "video-streaming": {
+                    "name": "Phát video trực tuyến",
+                    "description": "Chặn các dịch vụ phát video trực tuyến (YouTube, Netflix, Disney+, các trang phát video trái phép, trang video khiêu dâm, v.v.) và mạng xã hội dựa trên video (TikTok, v.v.). Tính năng này cũng có thể giúp giảm lượng băng thông sử dụng trên mọi mạng."
+                }
+            }
         },
-        "prevalence": {
-          "intensity": {
-            "dangerously": "Phổ biến đến mức nguy hiểm",
-            "extremely": "Cực kỳ phổ biến",
-            "very": "Rất phổ biến",
-            "commonly": "Phổ biến",
-            "relatively": "Tương đối phổ biến"
-          },
-          "summary": "{{prevalence}} <2>(theo dõi {{percent, percentage}} lưu lượng web)</2>"
+        "recreation": {
+            "name": "Thời gian giải trí",
+            "start": "Giờ bắt đầu",
+            "end": "Giờ kết thúc",
+            "description": "Đặt một khoảng thời gian cho từng ngày trong tuần để một số trang web, ứng dụng, trò chơi hoặc danh mục ở trên không bị chặn — ví dụ: cho phép Facebook vào thứ Hai và thứ Ba từ 18:00 đến 20:00.",
+            "set": "Đặt thời gian giải trí",
+            "howto": "Sử dụng nút <1></1> trong các phần trên để bật Thời gian giải trí."
         },
-        "ownedBy": "<0>Thuộc sở hữu của </0><1>{{company}}</1>",
-        "source": "Thông tin chi tiết về trình theo dõi từ"
-      }
-    },
-    "settings": "Tùy chọn nhật ký",
-    "streaming": "Cập nhật nhật ký trực tiếp",
-    "toggleTimeFormat": "Chuyển đổi định dạng dấu thời gian"
-  },
-  "deviceSelector": {
-    "all": "Tất cả thiết bị",
-    "howto": "Tìm hiểu cách xác định thiết bị của bạn trên trang Thiết lập."
-  },
-  "timeRangeSelector": {
-    "ranges": {
-      "30m": "30 phút qua",
-      "6h": "6 giờ qua",
-      "24h": "24 giờ qua",
-      "7d": "7 ngày qua",
-      "30d": "30 ngày qua",
-      "3M": "3 tháng qua"
-    }
-  },
-  "settings": {
-    "name": {
-      "name": "Tên",
-      "description": "Chọn tên cho hồ sơ này."
-    },
-    "logs": {
-      "name": "Nhật ký",
-      "description": "Tinh chỉnh cài đặt nhật ký.",
-      "enable": "Bật nhật ký",
-      "privacy": {
-        "name": "Điều chỉnh quyền riêng tư",
-        "ip": "Ghi lại địa chỉ IP của máy khách",
-        "domains": "Ghi lại tên miền"
-      },
-      "retention": {
-        "name": "Thời gian lưu giữ",
-        "options": {
-          "1h": "1 giờ",
-          "6h": "6 giờ",
-          "1d": "1 ngày",
-          "1w": "1 tuần",
-          "1m": "1 tháng",
-          "3m": "3 tháng",
-          "6m": "6 tháng",
-          "1y": "1 năm",
-          "2y": "2 năm"
-        }
-      },
-      "location": {
-        "name": "Vị trí lưu trữ",
-        "locations": {
-          "us": {
-            "name": "Hoa Kỳ",
-            "description": "Nhật ký sẽ được lưu trữ tại Hoa Kỳ. Đây là tùy chọn mặc định."
-          },
-          "eu": {
-            "name": "Liên minh châu Âu",
-            "description": "Nhật ký sẽ được lưu trữ tại các quốc gia thành viên Liên minh châu Âu."
-          },
-          "ch": {
-            "name": "Thụy Sĩ",
-            "description": "Nhật ký sẽ được lưu trữ tại Zürich, Thụy Sĩ — nơi nổi tiếng với luật bảo vệ quyền riêng tư nghiêm ngặt."
-          }
+        "safesearch": {
+            "name": "Tìm kiếm an toàn",
+            "description": "Lọc bỏ các kết quả có nội dung phản cảm trên tất cả các công cụ tìm kiếm chính, bao gồm cả hình ảnh và video. Các công cụ tìm kiếm không hỗ trợ tính năng này cũng sẽ bị chặn.",
+            "enable": "Bắt buộc sử dụng Tìm kiếm an toàn"
         },
-        "confirm": {
-          "title": "Thay đổi vị trí lưu trữ",
-          "text": "Thay đổi vị trí lưu trữ sẽ xóa tất cả nhật ký và dữ liệu phân tích trước đây của hồ sơ này."
+        "youtubeRestricted": {
+            "name": "Chế độ hạn chế trên YouTube",
+            "description": "Lọc bỏ video dành cho người lớn trên YouTube và chặn việc xem các video dành cho người lớn được nhúng trên trang web khác. Tính năng này cũng ẩn tất cả bình luận.",
+            "enable": "Bắt buộc sử dụng Chế độ hạn chế trên YouTube"
+        },
+        "bypass": {
+            "name": "Chặn phương pháp vượt bộ lọc",
+            "description": "Ngăn chặn hoặc cản trở việc sử dụng các phương pháp giúp vượt qua bộ lọc NextDNS trên mạng, bao gồm VPN, proxy, phần mềm liên quan đến Tor và các nhà cung cấp DNS mã hóa.",
+            "enable": "Chặn phương pháp vượt bộ lọc"
         }
-      },
-      "download": {
-        "button": "Tải nhật ký xuống"
-      },
-      "clear": {
-        "button": "Xóa nhật ký",
-        "confirm": {
-          "text": "Bạn có chắc muốn xóa tất cả nhật ký của hồ sơ này? Thao tác này không thể hoàn tác.",
-          "submit": "Xóa"
-        }
-      }
     },
-    "blockpage": {
-      "name": "Trang chặn",
-      "description": "Hiển thị trang chặn khi một tên miền bị chặn. Tính năng này có thể làm tăng nhẹ thời gian tải trang và đôi khi hiển thị cảnh báo HTTPS. Khi tắt, các truy vấn bị chặn sẽ được trả lời bằng địa chỉ không xác định (0.0.0.0 hoặc ::).",
-      "enable": "Bật trang chặn",
-      "ca": {
-        "name": "NextDNS Root CA",
-        "description": "Loại bỏ cảnh báo HTTPS khi tải trang chặn bằng cách cài đặt và tin cậy chứng chỉ CA gốc của chúng tôi tại <1>{{link}}</1>. Xem hướng dẫn <3>tại đây</3>."
-      }
-    },
-    "performance": {
-      "name": "Hiệu năng",
-      "description": "Tăng tốc độ duyệt web của bạn.",
-      "ecs": {
-        "name": "Mạng con máy khách EDNS ẩn danh",
-        "description": "Tăng tốc độ phân phối dữ liệu từ các mạng phân phối nội dung mà không làm lộ địa chỉ IP của bạn.",
-        "enable": "Bật mạng con máy khách EDNS ẩn danh"
-      },
-      "cache": {
-        "name": "Tăng cường bộ nhớ đệm",
-        "description": "Giảm số truy vấn DNS bằng cách áp dụng thời gian tồn tại (TTL) tối thiểu.",
-        "enable": "Bật tăng cường bộ nhớ đệm"
-      },
-      "flatten": {
-        "name": "Rút gọn chuỗi CNAME",
-        "description": "Ngăn các trình phân giải lần theo chuỗi CNAME thực hiện truy vấn không cần thiết và làm nhiễu nhật ký bằng các tên miền trung gian.",
-        "enable": "Bật rút gọn chuỗi CNAME"
-      }
-    },
-    "ageVerification": {
-      "name": "Bỏ qua xác minh độ tuổi",
-      "description": "Tự động bỏ qua các bước xác minh độ tuổi mà một số trang web, như trang có nội dung người lớn, sử dụng để kiểm tra tuổi của người truy cập trước khi cho phép truy cập.",
-      "acknowledgment": "Khi bật tính năng này, bạn xác nhận mình đã đủ tuổi theo pháp luật để truy cập nội dung."
-    },
-    "web3": {
-      "name": "Web3",
-      "description": "Web3 là một hệ sinh thái trực tuyến phi tập trung và chống kiểm duyệt, gồm các công nghệ mới như hệ thống đăng ký tên miền dựa trên blockchain (ví dụ: Ethereum Name Service) và mạng lưu trữ, phân phối nội dung phân tán (ví dụ: IPFS). Khi bật, NextDNS sẽ hoạt động như một cổng truy cập không lọc đến thế giới web mới này, cho phép bạn trực tiếp trải nghiệm mà không cần cài đặt thêm bất kỳ thứ gì.",
-      "tips": "Vì hiện nay phần lớn trình duyệt chỉ hỗ trợ tên miền cấp cao nhất thông thường, hãy thêm dấu gạch chéo ở cuối (“<1>/</1>”) khi truy cập trực tiếp một tên miền Web3 (ví dụ: “<3>vitalik.eth/</3>” thay vì “<5>vitalik.eth</5>”).",
-      "enable": "Bật Web3"
-    },
-    "rewrites": {
-      "name": "Ghi đè DNS",
-      "description": "Đặt hoặc ghi đè phản hồi DNS cho bất kỳ tên miền nào. Quy tắc ghi đè cũng áp dụng cho tên miền phụ và hỗ trợ địa chỉ IP cục bộ làm phản hồi.",
-      "new": "Quy tắc ghi đè mới",
-      "form": {
-        "domain": {
-          "label": "Tên miền",
-          "placeholder": "myprinter.lan, myinternetbox.com, ...",
-          "errors": {
+    "xlist": {
+        "placeholder": "Thêm tên miền...",
+        "errors": {
             "required": "Vui lòng nhập tên miền.",
             "ip": "Vui lòng nhập tên miền, không phải địa chỉ IP.",
             "invalid": "Vui lòng nhập tên miền hợp lệ.",
-            "taken": "Bạn đã có một quy tắc ghi đè cho tên miền này."
-          }
+            "tld": "Có vẻ như bạn đang muốn chặn toàn bộ một TLD. Hãy sử dụng tính năng Tên miền cấp cao nhất (TLD) trong phần Bảo mật.",
+            "exists": "Tên miền này đã được thêm vào."
         },
-        "answer": {
-          "label": "Phản hồi",
-          "placeholder": "1.2.3.4, sub.example.org, ...",
-          "errors": {
-            "required": "Vui lòng nhập phản hồi.",
-            "invalid": "Phản hồi phải là địa chỉ IP hoặc tên miền hợp lệ."
-          }
-        }
-      }
-    },
-    "access": {
-      "name": "Quyền truy cập",
-      "description": "Cấp cho người khác quyền chỉnh sửa hoặc chỉ xem hồ sơ này.",
-      "roles": {
-        "editor": "Người chỉnh sửa",
-        "viewer": "Người xem"
-      },
-      "pending": "Đã gửi lời mời",
-      "form": {
-        "email": {
-          "label": "Email",
-          "errors": {
-            "required": "Vui lòng nhập địa chỉ email.",
-            "invalid": "Vui lòng nhập địa chỉ email hợp lệ.",
-            "duplicate": "Email này đã được mời."
-          }
+        "empty": "Chưa có tên miền nào.",
+        "denylist": {
+            "info": "Từ chối một tên miền sẽ tự động từ chối tất cả tên miền phụ của nó."
         },
-        "role": {
-          "label": "Vai trò"
+        "allowlist": {
+            "info": "Cho phép một tên miền sẽ tự động cho phép tất cả tên miền phụ của nó. Quy tắc cho phép được ưu tiên hơn mọi cài đặt khác, kể cả các tính năng bảo mật."
         }
-      }
     },
-    "duplicate": {
-      "button": "Nhân bản <1>{{name}}</1>",
-      "description": "Sao chép tất cả cài đặt của hồ sơ này sang một hồ sơ mới.",
-      "form": {
+    "analytics": {
+        "counters": {
+            "all_other": "<0>{{count, number}}</0><1>truy vấn</1>",
+            "blocked_other": "<0>{{count, number}}</0><1>truy vấn bị chặn</1>",
+            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>truy vấn bị chặn</1></1>",
+            "blocked_one": "",
+            "all_one": ""
+        },
+        "queries": {
+            "name": "Truy vấn",
+            "description": "Số lượng truy vấn thay đổi theo thời gian.",
+            "queries": {
+                "all_other": "<0>{{count, number}}</0><1> truy vấn</1>",
+                "blocked_other": "<0>{{count, number}}</0><1> truy vấn bị chặn</1>",
+                "blocked_one": "",
+                "all_one": ""
+            }
+        },
+        "domains": {
+            "resolved": {
+                "name": "Tên miền đã phân giải",
+                "description": "Các tên miền được phân giải mà không bị chặn bởi bất kỳ cài đặt nào hoặc được cho phép một cách thủ công."
+            },
+            "blocked": {
+                "name": "Tên miền bị chặn",
+                "description": "Các tên miền bị chặn bởi cài đặt Bảo mật, Quyền riêng tư và/hoặc Kiểm soát của phụ huynh hoặc do bị từ chối một cách thủ công."
+            },
+            "root": {
+                "name": "Tên miền gốc",
+                "description": "Tổng hợp tất cả các truy vấn được thực hiện cho các tên miền gốc và tất cả các tên miền phụ."
+            },
+            "empty": "Chưa có tên miền nào."
+        },
+        "reasons": {
+            "name": "Lý do chặn",
+            "description": "Các cài đặt Bảo mật, Quyền riêng tư và/hoặc Kiểm soát của phụ huynh đã chặn nhiều truy vấn nhất.",
+            "empty": "Chưa có tên miền nào bị chặn."
+        },
+        "devices": {
+            "name": "Thiết bị",
+            "description": "Thiết bị thực hiện các truy vấn.",
+            "empty": "Chưa có thiết bị nào.",
+            "unidentified": {
+                "name": "Thiết bị chưa xác định"
+            }
+        },
+        "ips": {
+            "name": "IP",
+            "description": "Địa chỉ IP thực hiện các truy vấn.",
+            "empty": "Chưa có IP nào."
+        },
+        "gafam": {
+            "name": "Sự thống trị của GAFAM",
+            "description": "“GAFAM” (Google, Amazon, Facebook (nay là Meta), Apple và Microsoft) là 5 công ty Internet chiếm ưu thế, sở hữu nhiều dịch vụ phổ biến thường hoạt động dưới tên khác, ví dụ: WhatsApp và Instagram thuộc Meta.",
+            "queries_other": "{{count, number}} truy vấn",
+            "companies": {
+                "google": {
+                    "name": "Google"
+                },
+                "amazon": {
+                    "name": "Amazon"
+                },
+                "facebook": {
+                    "name": "Meta"
+                },
+                "apple": {
+                    "name": "Apple"
+                },
+                "microsoft": {
+                    "name": "Microsoft"
+                },
+                "others": {
+                    "name": "Khác"
+                }
+            },
+            "queries_one": ""
+        },
+        "encrypted": {
+            "name": "DNS được mã hóa",
+            "description": "Tỷ lệ truy vấn sử dụng phương thức truyền tải được mã hóa (DNS-over-HTTPS, DNS-over-TLS hoặc ứng dụng NextDNS chính thức).",
+            "empty": "Chưa có truy vấn nào."
+        },
+        "dnssec": {
+            "name": "DNSSEC",
+            "description": "Tỷ lệ truy vấn được xác thực bằng DNSSEC.",
+            "empty": "Chưa có truy vấn nào."
+        },
+        "destination": {
+            "name": "Điểm đến lưu lượng truy cập",
+            "description": "Các quốc gia đích ước tính dựa trên truy vấn DNS của bạn.",
+            "queries_other": "{{count, number}} truy vấn",
+            "topDomains": "Tên miền hàng đầu",
+            "queries_one": ""
+        }
+    },
+    "logs": {
+        "blockedOnly": "Chỉ các truy vấn bị chặn",
+        "raw": "Nhật ký DNS thô",
+        "empty": "Chưa có nhật ký nào.",
+        "log": {
+            "actionBlock": "Chặn",
+            "actionAllow": "Cho phép",
+            "dnssec": "Được xác thực bằng DNSSEC.",
+            "clients": {
+                "nextdns-ios": "NextDNS dành cho iOS",
+                "nextdns-android": "NextDNS dành cho Android",
+                "nextdns-macos": "NextDNS dành cho macOS",
+                "nextdns-windows": "NextDNS dành cho Windows",
+                "nextdns-cli": "Ứng dụng dòng lệnh NextDNS",
+                "nextdns-chromeos": "NextDNS dành cho ChromeOS",
+                "firefox": "Firefox",
+                "google-chrome": "Google Chrome",
+                "dnscrypt": "DNSCrypt",
+                "intra": "Intra",
+                "surge": "Surge",
+                "https-dns-proxy": "https_dns_proxy",
+                "mikrotik": "MikroTik",
+                "apple-profile": "Hồ sơ cấu hình Apple",
+                "yogadns": "YogaDNS",
+                "tailscale": "Tailscale"
+            },
+            "blockedBy": "Bị chặn bởi <1>{{lists, list}}</1>.",
+            "allowedBy": "Được cho phép bởi <1>{{lists, list}}</1>.",
+            "manual": {
+                "deny": "Đã từ chối thủ công.",
+                "allow": "Đã cho phép thủ công."
+            },
+            "insights": {
+                "show": "Hiển thị thông tin chi tiết về trình theo dõi",
+                "hide": "Ẩn thông tin chi tiết về trình theo dõi",
+                "categories": {
+                    "advertising": {
+                        "description": "Cung cấp quảng cáo hoặc các dịch vụ liên quan đến quảng cáo như thu thập dữ liệu, phân tích hành vi hoặc nhắm mục tiêu lại."
+                    },
+                    "comments": {
+                        "description": "Bật phần bình luận cho các bài viết và đánh giá sản phẩm."
+                    },
+                    "customer_interaction": {
+                        "description": "Bao gồm công cụ trò chuyện, gửi email, hỗ trợ khách hàng và các công cụ tương tác khác."
+                    },
+                    "essential": {
+                        "description": "Bao gồm trình quản lý thẻ, thông báo về quyền riêng tư và các công nghệ thiết yếu đối với hoạt động của trang web."
+                    },
+                    "adult_advertsing": {
+                        "description": "Cung cấp các quảng cáo thường xuất hiện trên các trang web có nội dung người lớn."
+                    },
+                    "site_analytics": {
+                        "description": "Thu thập và phân tích dữ liệu liên quan đến việc sử dụng và hiệu suất trang web."
+                    },
+                    "social_media": {
+                        "description": "Tích hợp các tính năng liên quan đến các trang mạng xã hội."
+                    },
+                    "audio_video_player": {
+                        "description": "Cho phép các trang web xuất bản, phân phối và tối ưu hóa nội dung video và âm thanh."
+                    },
+                    "cdn": {
+                        "description": "Mạng phân phối nội dung cung cấp tài nguyên cho nhiều tiện ích trang web và thường phục vụ nhiều khách hàng khác nhau."
+                    },
+                    "misc": {
+                        "description": "Trình theo dõi này không phù hợp với các danh mục khác hoặc chưa được gắn nhãn."
+                    },
+                    "pornvertising": {
+                        "description": "Cung cấp các quảng cáo thường xuất hiện trên các trang web có nội dung người lớn."
+                    },
+                    "hosting": {
+                        "description": "Đây là một dịch vụ được sử dụng bởi nhà cung cấp nội dung hoặc chủ sở hữu trang web."
+                    },
+                    "extensions": {
+                        "description": "Phần mềm trên thiết bị người dùng có thể chặn bắt và phân tích lưu lượng trình duyệt bằng cách xen vào giữa đường truyền (man in the middle)."
+                    }
+                },
+                "prevalence": {
+                    "intensity": {
+                        "dangerously": "Phổ biến đến mức nguy hiểm",
+                        "extremely": "Cực kỳ phổ biến",
+                        "very": "Rất phổ biến",
+                        "commonly": "Phổ biến",
+                        "relatively": "Tương đối phổ biến"
+                    },
+                    "summary": "{{prevalence}} <2>(theo dõi {{percent, percentage}} lưu lượng web)</2>"
+                },
+                "ownedBy": "<0>Thuộc sở hữu của </0><1>{{company}}</1>",
+                "source": "Thông tin chi tiết về trình theo dõi từ"
+            }
+        },
+        "settings": "Tùy chọn nhật ký",
+        "streaming": "Cập nhật nhật ký trực tiếp",
+        "toggleTimeFormat": "Chuyển đổi định dạng dấu thời gian"
+    },
+    "deviceSelector": {
+        "all": "Tất cả thiết bị",
+        "howto": "Tìm hiểu cách xác định thiết bị của bạn trên trang Thiết lập."
+    },
+    "timeRangeSelector": {
+        "ranges": {
+            "30m": "30 phút qua",
+            "6h": "6 giờ qua",
+            "24h": "24 giờ qua",
+            "7d": "7 ngày qua",
+            "30d": "30 ngày qua",
+            "3M": "3 tháng qua"
+        }
+    },
+    "settings": {
         "name": {
-          "label": "Tên",
-          "placeholder": "Nhà, Trẻ em, Văn phòng, ...",
-          "errors": {
-            "required": "Vui lòng nhập tên.",
-            "taken": "Bạn đã có một hồ sơ mang tên này."
-          }
+            "name": "Tên",
+            "description": "Chọn tên cho hồ sơ này."
         },
-        "button": "Nhân bản"
-      }
-    },
-    "delete": {
-      "button": "Xóa <1>{{name}}</1>",
-      "warning": "Thao tác này sẽ xóa vĩnh viễn hồ sơ này và tất cả nhật ký liên quan.",
-      "confirm": {
-        "text": "Bạn có chắc muốn xóa <1>{{name}}</1>? Thao tác này không thể hoàn tác."
-      }
-    },
-    "leave": {
-      "button": "Rời khỏi <1>{{name}}</1>",
-      "warning": "Bạn sẽ mất quyền truy cập vào hồ sơ này.",
-      "confirm": {
-        "text": "Bạn có chắc muốn rời khỏi <1>{{name}}</1>? Thao tác này không thể hoàn tác."
-      }
+        "logs": {
+            "name": "Nhật ký",
+            "description": "Tinh chỉnh cài đặt nhật ký.",
+            "enable": "Bật nhật ký",
+            "privacy": {
+                "name": "Điều chỉnh quyền riêng tư",
+                "ip": "Ghi lại địa chỉ IP của máy khách",
+                "domains": "Ghi lại tên miền"
+            },
+            "retention": {
+                "name": "Thời gian lưu giữ",
+                "options": {
+                    "1h": "1 giờ",
+                    "6h": "6 giờ",
+                    "1d": "1 ngày",
+                    "1w": "1 tuần",
+                    "1m": "1 tháng",
+                    "3m": "3 tháng",
+                    "6m": "6 tháng",
+                    "1y": "1 năm",
+                    "2y": "2 năm"
+                }
+            },
+            "location": {
+                "name": "Vị trí lưu trữ",
+                "locations": {
+                    "us": {
+                        "name": "Hoa Kỳ",
+                        "description": "Nhật ký sẽ được lưu trữ tại Hoa Kỳ. Đây là tùy chọn mặc định."
+                    },
+                    "eu": {
+                        "name": "Liên minh châu Âu",
+                        "description": "Nhật ký sẽ được lưu trữ tại các quốc gia thành viên Liên minh châu Âu."
+                    },
+                    "ch": {
+                        "name": "Thụy Sĩ",
+                        "description": "Nhật ký sẽ được lưu trữ tại Zürich, Thụy Sĩ — nơi nổi tiếng với luật bảo vệ quyền riêng tư nghiêm ngặt."
+                    }
+                },
+                "confirm": {
+                    "title": "Thay đổi vị trí lưu trữ",
+                    "text": "Thay đổi vị trí lưu trữ sẽ xóa tất cả nhật ký và dữ liệu phân tích trước đây của hồ sơ này."
+                }
+            },
+            "download": {
+                "button": "Tải nhật ký xuống"
+            },
+            "clear": {
+                "button": "Xóa nhật ký",
+                "confirm": {
+                    "text": "Bạn có chắc muốn xóa tất cả nhật ký của hồ sơ này? Thao tác này không thể hoàn tác.",
+                    "submit": "Xóa"
+                }
+            }
+        },
+        "blockpage": {
+            "name": "Trang chặn",
+            "description": "Hiển thị trang chặn khi một tên miền bị chặn. Tính năng này có thể làm tăng nhẹ thời gian tải trang và đôi khi hiển thị cảnh báo HTTPS. Khi tắt, các truy vấn bị chặn sẽ được trả lời bằng địa chỉ không xác định (0.0.0.0 hoặc ::).",
+            "enable": "Bật trang chặn",
+            "ca": {
+                "name": "NextDNS Root CA",
+                "description": "Loại bỏ cảnh báo HTTPS khi tải trang chặn bằng cách cài đặt và tin cậy chứng chỉ CA gốc của chúng tôi tại <1>{{link}}</1>. Xem hướng dẫn <3>tại đây</3>."
+            }
+        },
+        "performance": {
+            "name": "Hiệu năng",
+            "description": "Tăng tốc độ duyệt web của bạn.",
+            "ecs": {
+                "name": "Mạng con máy khách EDNS ẩn danh",
+                "description": "Tăng tốc độ phân phối dữ liệu từ các mạng phân phối nội dung mà không làm lộ địa chỉ IP của bạn.",
+                "enable": "Bật mạng con máy khách EDNS ẩn danh"
+            },
+            "cache": {
+                "name": "Tăng cường bộ nhớ đệm",
+                "description": "Giảm số truy vấn DNS bằng cách áp dụng thời gian tồn tại (TTL) tối thiểu.",
+                "enable": "Bật tăng cường bộ nhớ đệm"
+            },
+            "flatten": {
+                "name": "Rút gọn chuỗi CNAME",
+                "description": "Ngăn các trình phân giải lần theo chuỗi CNAME thực hiện truy vấn không cần thiết và làm nhiễu nhật ký bằng các tên miền trung gian.",
+                "enable": "Bật rút gọn chuỗi CNAME"
+            }
+        },
+        "ageVerification": {
+            "name": "Bỏ qua xác minh độ tuổi",
+            "description": "Tự động bỏ qua các bước xác minh độ tuổi mà một số trang web, như trang có nội dung người lớn, sử dụng để kiểm tra tuổi của người truy cập trước khi cho phép truy cập.",
+            "acknowledgment": "Khi bật tính năng này, bạn xác nhận mình đã đủ tuổi theo pháp luật để truy cập nội dung."
+        },
+        "web3": {
+            "name": "Web3",
+            "description": "Web3 là một hệ sinh thái trực tuyến phi tập trung và chống kiểm duyệt, gồm các công nghệ mới như hệ thống đăng ký tên miền dựa trên blockchain (ví dụ: Ethereum Name Service) và mạng lưu trữ, phân phối nội dung phân tán (ví dụ: IPFS). Khi bật, NextDNS sẽ hoạt động như một cổng truy cập không lọc đến thế giới web mới này, cho phép bạn trực tiếp trải nghiệm mà không cần cài đặt thêm bất kỳ thứ gì.",
+            "tips": "Vì hiện nay phần lớn trình duyệt chỉ hỗ trợ tên miền cấp cao nhất thông thường, hãy thêm dấu gạch chéo ở cuối (“<1>/</1>”) khi truy cập trực tiếp một tên miền Web3 (ví dụ: “<3>vitalik.eth/</3>” thay vì “<5>vitalik.eth</5>”).",
+            "enable": "Bật Web3"
+        },
+        "rewrites": {
+            "name": "Ghi đè DNS",
+            "description": "Đặt hoặc ghi đè phản hồi DNS cho bất kỳ tên miền nào. Quy tắc ghi đè cũng áp dụng cho tên miền phụ và hỗ trợ địa chỉ IP cục bộ làm phản hồi.",
+            "new": "Quy tắc ghi đè mới",
+            "form": {
+                "domain": {
+                    "label": "Tên miền",
+                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
+                    "errors": {
+                        "required": "Vui lòng nhập tên miền.",
+                        "ip": "Vui lòng nhập tên miền, không phải địa chỉ IP.",
+                        "invalid": "Vui lòng nhập tên miền hợp lệ.",
+                        "taken": "Bạn đã có một quy tắc ghi đè cho tên miền này."
+                    }
+                },
+                "answer": {
+                    "label": "Phản hồi",
+                    "placeholder": "1.2.3.4, sub.example.org, ...",
+                    "errors": {
+                        "required": "Vui lòng nhập phản hồi.",
+                        "invalid": "Phản hồi phải là địa chỉ IP hoặc tên miền hợp lệ."
+                    }
+                }
+            }
+        },
+        "access": {
+            "name": "Quyền truy cập",
+            "description": "Cấp cho người khác quyền chỉnh sửa hoặc chỉ xem hồ sơ này.",
+            "roles": {
+                "editor": "Người chỉnh sửa",
+                "viewer": "Người xem"
+            },
+            "pending": "Đã gửi lời mời",
+            "form": {
+                "email": {
+                    "label": "Email",
+                    "errors": {
+                        "required": "Vui lòng nhập địa chỉ email.",
+                        "invalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+                        "duplicate": "Email này đã được mời."
+                    }
+                },
+                "role": {
+                    "label": "Vai trò"
+                }
+            }
+        },
+        "duplicate": {
+            "button": "Nhân bản <1>{{name}}</1>",
+            "description": "Sao chép tất cả cài đặt của hồ sơ này sang một hồ sơ mới.",
+            "form": {
+                "name": {
+                    "label": "Tên",
+                    "placeholder": "Nhà, Trẻ em, Văn phòng, ...",
+                    "errors": {
+                        "required": "Vui lòng nhập tên.",
+                        "taken": "Bạn đã có một hồ sơ mang tên này."
+                    }
+                },
+                "button": "Nhân bản"
+            }
+        },
+        "delete": {
+            "button": "Xóa <1>{{name}}</1>",
+            "warning": "Thao tác này sẽ xóa vĩnh viễn hồ sơ này và tất cả nhật ký liên quan.",
+            "confirm": {
+                "text": "Bạn có chắc muốn xóa <1>{{name}}</1>? Thao tác này không thể hoàn tác."
+            }
+        },
+        "leave": {
+            "button": "Rời khỏi <1>{{name}}</1>",
+            "warning": "Bạn sẽ mất quyền truy cập vào hồ sơ này.",
+            "confirm": {
+                "text": "Bạn có chắc muốn rời khỏi <1>{{name}}</1>? Thao tác này không thể hoàn tác."
+            }
+        }
     }
-  }
 }

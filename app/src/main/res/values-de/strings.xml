@@ -110,4 +110,21 @@
     <string name="the_public_google_dns_server">Der öffentliche Google DNS Server.</string>
     <string name="the_public_quad9_dns_server">Der öffentliche Quad9 DNS Server.</string>
     <string name="the_public_opendns_dns_server">Der öffentliche OpenDND DNS Server von Cisco Umbrella.</string>
+    <string name="tile_added">Kachel hinzugefügt!</string>
+    <string name="tile_already_added">Kachel wurde bereits hinzugefügt!</string>
+    <string name="unknown_error">Unbekannter Fehler</string>
+    <string name="use_a_custom_hostname_for_the_dns_server">Verwende einen benutzerdefinierten Hostnamen für den DNS-Server.</string>
+    <string name="version_v_is_available_would_you_like_to_download_it">Version v%1$s ist verfügbar.\nMöchtest du diese herunterladen?</string>
+    <string name="waiting_for_permission">Warte auf Berechtigung…</string>
+    <string name="welcome_to_adns">Willkommen bei ADNS</string>
+    <string name="you_can_create_one_at_the_nextdns_website">"Du kannst einen auf der NextDNS-Website erstellen: "</string>
+    <string name="your_dns_settings_have_been_updated">Deine DNS Einstellungen wurden aktualisiert.</string>
+    <string name="youre_almost_there">Du hast es fast geschafft!</string>
+    <string name="language">Sprache</string>
+    <string name="help_translate_adns">Helfe beim Über setzen von ADNS</string>
+    <string name="help_translate_adns_description">Trage Übersetzungen bei oder verbessere eine bestehende Sprache auf Weblate.</string>
+    <string name="open_weblate">Weblate öffnen</string>
+    <string name="stats">Statistiken</string>
+    <string name="added_to">%1$s zu %2$s hinzugefügt</string>
+    <string name="view_your_dns_logs">DNS-Protokolle anzeigen und durchsuchen</string>
 </resources>

@@ -17,7 +17,7 @@
     <string name="app_settings">IMPOSTAZIONI APP</string>
     <string name="application_activated_successfully">Applicazione attivata con successo.</string>
     <string name="automatically_bypass_age_verification_checks_used_by_certain_websites_such_as_adult_content_sites">Evita automaticamente i controlli di verifica dell\'età utilizzati da determinati siti web, come i siti per adulti, per verificare l\'età di un visitatore prima di consentire l\'accesso.</string>
-    <string name="blocked">%1$s (%2$s%%) bloccato</string>
+    <string name="blocked">%1$s (%2$s%%) bloccato</string>
     <string name="blockerndisabled">Blocco\ndisabilitato</string>
     <string name="blocklists_trackers_affiliate_links">Liste di blocco, tracker, link di affiliazione</string>
     <string name="bypass_age_verification">Bypassa verifica dell\'età</string>

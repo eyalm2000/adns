@@ -91,7 +91,7 @@
     <string name="profile_name">שם פרופיל</string>
     <string name="provider_settings">הגדרות ספק</string>
     <string name="providers">ספקים</string>
-    <string name="recommended">"(מומלץ)"</string>
+    <string name="recommended">(מומלץ)</string>
     <string name="requires_adb_shell_access_for_advanced_users">דורש גישת מסוף ADB. למשתמשים מתקדמים.</string>
     <string name="requires_shizuku_or_sui_installed_and_set_up">דורש התקנה והגדרה של Shizuku או Sui.</string>
     <string name="running">פועל</string>
@@ -166,7 +166,7 @@
     <string name="setup_adns_shizuku">ADNS + Shizuku</string>
     <string name="setup_adns_shizuku_requirements">Android 9 ומעלה, עם Shizuku מופעל או גישת ADB</string>
     <string name="setup_adns_shizuku_step_1">1. התקן את ADNS והפעל אותה.</string>
-    <string name="setup_adns_shizuku_step_2">2. שנה את הספק ל-"NextDNS (משופר)" והתחבר.</string>
+    <string name="setup_adns_shizuku_step_2">2. שנה את הספק ל-NextDNS (משופר) והתחבר.</string>
     <string name="setup_adns_shizuku_step_3">3. בחר פרופיל זה כאשר תתבקש.</string>
     <string name="setup_open_configuration_profile">פתח מחולל פרופילי תצורה</string>
     <string name="setup_open_ios_app_store">פתח את NextDNS ל-iOS</string>
@@ -218,7 +218,7 @@
     <string name="profile_renamed">שם הפרופיל שונה.</string>
     <string name="rename">שנה שם</string>
     <string name="already_linked">כבר מקושר</string>
-    <string name="set_device_name_in_the_nextdns_settings_section">הגדר "שם מכשיר" בהגדרות NextDNS.</string>
+    <string name="set_device_name_in_the_nextdns_settings_section">הגדר שם מכשיר בהגדרות NextDNS.</string>
     <string name="adns_app">אפליקציית ADNS</string>
     <string name="setup_nextdns_on_another_device">מדריכי הגדרה, IP מקושר, DDNS</string>
     <string name="setup_another_device">הגדר מכשיר נוסף</string>

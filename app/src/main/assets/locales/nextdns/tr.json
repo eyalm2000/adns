@@ -1,1398 +1,1398 @@
 {
-  "global": {
-    "beta": "beta",
-    "preview": "Erken erişim",
-    "cancel": "İptal",
-    "add": "Ekle",
-    "save": "Kaydet",
-    "continue": "Devam",
-    "enable": "Etkinleştir",
-    "change": "Değiştir",
-    "create": "Oluştur",
-    "subscribe": "Abone ol",
-    "invite": "Davet et",
-    "remove": "Kaldır",
-    "leave": "Ayrıl",
-    "delete": "Sil",
-    "close": "Kapat",
-    "back": "Geri",
-    "disable": "Devre dışı bırak",
-    "unnamedDevice": "Cihaz #{{id}}",
-    "firstConfiguration": "İlk profilim",
-    "error": "Hata",
-    "networkError": "Ağ hatası",
-    "requestFailed": "İstek başarısız oldu",
-    "noProfiles": "Henüz profil yok.",
-    "search": "Ara",
-    "clearSearch": "Aramayı temizle",
-    "copy": "Kopyala",
-    "actions": "İşlemler",
-    "expand": "Genişlet",
-    "collapse": "Daralt"
-  },
-  "theme": {
-    "label": "Tema",
-    "system": "Sistem",
-    "light": "Açık",
-    "dark": "Koyu"
-  },
-  "pages": {
-    "signup": "Kaydol",
-    "login": "Oturum aç",
-    "passwordReset": "Şifrenizi sıfırlayın",
-    "account": "Hesap",
-    "setup": "Kurulum",
-    "security": "Güvenlik",
-    "privacy": "Gizlilik",
-    "parentalcontrol": "Ebeveyn kontrolü",
-    "denylist": "Kara liste",
-    "allowlist": "Beyaz liste",
-    "analytics": "Analizler",
-    "logs": "Günlükler",
-    "settings": "Ayarlar",
-    "help": "Yardım"
-  },
-  "banners": {
-    "temporary": "Bu geçici hesabın süresi <1><0></0></1> sona erecektir ve bu hesaba yalnızca bu tarayıcıdan erişilebilir. Ayarlarınızı kaydetmek için şimdi ücretsiz kaydolun.",
-    "nearQuota": "Bu ay {{queriesNearQuota, number}} adetten fazla sorgu yaptınız ve aylık ücretsiz {{queriesQuota, number}} sorgu kotasına yaklaştınız. NextDNS'i kullanmaya devam etmek için <5>abone olun</5>.",
-    "overQuota": "Bu ay {{queriesQuota, number}} adetten fazla sorgu yaptınız ve tüm özellikler devre dışı bırakıldı. NextDNS'i kullanmaya devam etmek için <3>abone olun</3>."
-  },
-  "account": {
-    "email": "E-posta",
-    "newEmail": "Yeni e-posta",
-    "password": "Şifre",
-    "newPassword": "Yeni şifre",
-    "currentPassword": "Mevcut şifre",
-    "forgotPassword": "Şifrenizi mi unuttunuz?",
-    "savePassword": "Şifreyi kaydet",
-    "passwordResetInfo": "Hesabınızla ilişkili e-posta adresini girin, size şifrenizi sıfırlamanız için bir bağlantı göndereceğiz.",
-    "sendEmail": "E-posta gönder",
-    "passwordResetLinkSentMessage": "Şifre sıfırlama bağlantısı <1>{{email}}</1> adresine gönderildi.",
-    "code": "2FA kodu",
-    "login": "Oturum aç",
-    "noAccountYet": "Henüz hesabınız yok mu? <1>Kaydolun</1>",
-    "signup": "Kaydol",
-    "alreadyHaveAnAccount": "Zaten hesabınız var mı? <1>Oturum açın</1>",
-    "convertingNotice": "Geçici bir hesabı gerçek bir hesaba dönüştürüyorsunuz. Tüm ayarlarınız kaydedilecek.",
-    "convertingDeviceOnlyNotice": "Yalnızca cihaza bağlı bir hesabı tam bir hesaba dönüştürüyorsunuz. Tüm ayarlarınız kaydedilecek.",
-    "logout": "Oturumu kapat",
-    "errors": {
-      "email": {
-        "required": "Bir e-posta girin.",
-        "invalid": "Geçerli bir e-posta girin.",
-        "taken": "Bu e-posta zaten kullanılıyor."
-      },
-      "password": {
-        "required": "Bir şifre girin.",
-        "invalidCombination": "Geçersiz e-posta/şifre kombinasyonu."
-      },
-      "currentPassword": {
-        "required": "Mevcut şifrenizi girin.",
-        "incorrect": "Girdiğiniz şifre yanlış."
-      },
-      "code": {
-        "required": "Bir 2FA kodu girin.",
-        "invalid": "6 basamaklı bir kod girin.",
-        "incorrect": "Yanlış 2FA kodu."
-      },
-      "resetPasswordToken": {
-        "invalid": "Geçersiz veya süresi dolmuş sıfırlama bağlantısı."
-      }
+    "global": {
+        "beta": "beta",
+        "preview": "Erken erişim",
+        "cancel": "İptal",
+        "add": "Ekle",
+        "save": "Kaydet",
+        "continue": "Devam",
+        "enable": "Etkinleştir",
+        "change": "Değiştir",
+        "create": "Oluştur",
+        "subscribe": "Abone ol",
+        "invite": "Davet et",
+        "remove": "Kaldır",
+        "leave": "Ayrıl",
+        "delete": "Sil",
+        "close": "Kapat",
+        "back": "Geri",
+        "disable": "Devre dışı bırak",
+        "unnamedDevice": "Cihaz #{{id}}",
+        "firstConfiguration": "İlk profilim",
+        "error": "Hata",
+        "networkError": "Ağ hatası",
+        "requestFailed": "İstek başarısız oldu",
+        "noProfiles": "Henüz profil yok.",
+        "search": "Ara",
+        "clearSearch": "Aramayı temizle",
+        "copy": "Kopyala",
+        "actions": "İşlemler",
+        "expand": "Genişlet",
+        "collapse": "Daralt"
     },
-    "affiliation": {
-      "name": "Ortaklık",
-      "description": "<1>{{link}}</1> adresini paylaşarak NextDNS'i tanıtmamıza yardımcı olun ve yönlendirdiğiniz kişilerin ilk ücretli aboneliklerinin başlangıcından itibaren ilk <5>{{months, number}} ay</5> boyunca yaptıkları abonelik ödemelerinin <3>{{share, percentage}}</3> oranındaki kısmını kazanın.",
-      "balance": {
-        "name": "Bakiye"
-      },
-      "availableBalance": {
-        "name": "Kullanılabilir bakiye",
-        "description": "Bakiyeniz, olası iadeleri karşılamak için bir ay sonra ödenmeye hazır hâle gelir."
-      },
-      "payout": {
-        "button": "Ödeme al",
-        "minimum": "Ödemeler için en az {{amount, price}} tutarında kullanılabilir bakiye gereklidir.",
-        "form": {
-          "paypalEmail": "PayPal e-postası",
-          "errors": {
-            "paypalEmail": {
-              "required": "Bir PayPal e-postası girin.",
-              "invalid": "Geçerli bir PayPal e-postası girin."
-            }
-          }
-        }
-      }
+    "theme": {
+        "label": "Tema",
+        "system": "Sistem",
+        "light": "Açık",
+        "dark": "Koyu"
     },
-    "usage": {
-      "name": "Ücretsiz kullanım",
-      "description": "NextDNS, aylık {{queries, number}} sorguya kadar ücretsizdir. Ardından tüm özellikler bir sonraki aya kadar geçici olarak devre dışı kalır.",
-      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} sorgu</1>",
-      "overQuota": {
-        "message": "Bu ay {{queries, number}} adetten fazla sorgu yaptınız.",
-        "info": "NextDNS, DNS sorgularını yanıtlamaya devam edecek ancak tüm özellikler önümüzdeki aya kadar geçici olarak devre dışı bırakılacak."
-      },
-      "subscribe": {
-        "ios": "Hizmete abone olmak için tarayıcınızda my.nextdns.io adresine gidin.",
-        "upsell": "Ayda {{amount, price}} başlangıç fiyatıyla sınırsız sorguya kavuşun."
-      }
+    "pages": {
+        "signup": "Kaydol",
+        "login": "Oturum aç",
+        "passwordReset": "Şifrenizi sıfırlayın",
+        "account": "Hesap",
+        "setup": "Kurulum",
+        "security": "Güvenlik",
+        "privacy": "Gizlilik",
+        "parentalcontrol": "Ebeveyn kontrolü",
+        "denylist": "Kara liste",
+        "allowlist": "Beyaz liste",
+        "analytics": "Analizler",
+        "logs": "Günlükler",
+        "settings": "Ayarlar",
+        "help": "Yardım"
     },
-    "subscription": {
-      "name": "Abonelik",
-      "plans": {
-        "pro": "Pro",
-        "business": "İşletme",
-        "education": "Eğitim"
-      },
-      "intervals": {
-        "month": "aylık plan",
-        "year": "yıllık plan"
-      },
-      "per": {
-        "month": "aylık",
-        "year": "yıllık"
-      },
-      "units": {
-        "business_one": "{{count, number}} çalışan",
-        "business_other": "{{count, number}} çalışan",
-        "education_one": "{{count, number}} öğrenci",
-        "education_other": "{{count, number}} öğrenci"
-      },
-      "planFull": "{{plan}} ({{interval}})",
-      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-      "expires": "Aboneliğiniz {{date, date}} tarihinde sona erecektir.",
-      "managedByApple": "Aboneliğiniz Apple Hesabınız üzerinden yönetilir. Değiştirmek veya iptal etmek için Apple'ın abonelik ayarlarını kullanın.",
-      "manageOnApple": "Aboneliği Apple'da yönet",
-      "restart": {
-        "button": "Aboneliği yeniden başlat"
-      },
-      "changePlan": {
-        "button": "Plan değiştir"
-      },
-      "renewal": "Bir sonraki otomatik ödemeniz {{date, date}} tarihinde {{amount, price}} olacaktır.",
-      "changePaymentMethod": {
-        "button": "Ödeme yöntemini değiştir"
-      },
-      "cancel": {
-        "button": "Aboneliği iptal et",
-        "confirm": {
-          "text": "Mevcut aboneliğiniz {{date, date}} tarihine kadar geçerli kalacaktır.",
-          "submit": "Aboneliği iptal et"
-        }
-      },
-      "subscribe": {
-        "choosePlan": "Bir plan seçin",
-        "addPaymentMethod": "Bir ödeme yöntemi ekleyin",
-        "included": "Tüm planlar <1>tüm özelliklere erişim</1>, <3>sınırsız cihaz</3> ve <5>sınırsız sorgu</5> içerir.",
-        "savings": "Aylık plana oranla {{percent, percentage}} tasarruf edin",
-        "familyOnly": "* Pro planları yalnızca kişisel (ve yakın aile) kullanımı içindir.",
-        "unitsQuestion": {
-          "business": "İşletmenizde kaç <1>çalışan</1> var?",
-          "education": "Okulunuzda (veya bölgenizde) kaç <1>öğrenci</1> var?"
-        },
-        "unitsLabel": {
-          "business": "Çalışan sayısı",
-          "education": "Öğrenci sayısı"
-        },
-        "asYouGrow": {
-          "business": "* Çalışan sayınız arttıkça planınızı güncellemeyi unutmayın.",
-          "education": "* Öğrenci sayınız arttıkça planınızı güncellemeyi unutmayın."
-        },
-        "starting": {
-          "business": "<0>Başlangıç fiyatı: </0><1>{{price, price}}</1><2>/ay ({{units, number}} çalışan için)</2>",
-          "education": "<0>Başlangıç fiyatı: </0><1>{{price, price}}</1><2>/ay ({{units, number}} öğrenci için)</2>"
-        },
-        "card": {
-          "number": "Kart numarası",
-          "expiration": "Son kullanma tarihi",
-          "code": "Güvenlik kodu",
-          "stripe": "Kart bilgilerinize doğrudan erişmeden kart ödemelerini güvenli bir şekilde işlemek için önde gelen bir ödeme aracı olan Stripe'ı kullanıyoruz."
-        },
-        "paypal": {
-          "text": "PayPal ile abone olmak için “PayPal ile devam et” düğmesine tıklayın."
-        },
-        "bitpay": {
-          "text": "Kripto parayla ödeme yapmak için “BitPay ile devam et” düğmesine tıklayın.",
-          "toYearly": "Aylık planlar için kripto parayla ödeme kabul edemiyoruz. <1>Devam ettiğinizde otomatik olarak yıllık plana geçeceksiniz.</1>",
-          "remainder": "Mevcut aboneliğinizin {{date, date}} tarihine kadarki ücreti zaten ödenmiştir. Şimdi ücret alınacak ve kalan abonelik süreniz yeni bitiş tarihine otomatik olarak eklenecektir."
-        },
-        "continueTo": "<1></1> ile devam et"
-      }
+    "banners": {
+        "temporary": "Bu geçici hesabın süresi <1><0></0></1> sona erecektir ve bu hesaba yalnızca bu tarayıcıdan erişilebilir. Ayarlarınızı kaydetmek için şimdi ücretsiz kaydolun.",
+        "nearQuota": "Bu ay {{queriesNearQuota, number}} adetten fazla sorgu yaptınız ve aylık ücretsiz {{queriesQuota, number}} sorgu kotasına yaklaştınız. NextDNS'i kullanmaya devam etmek için <5>abone olun</5>.",
+        "overQuota": "Bu ay {{queriesQuota, number}} adetten fazla sorgu yaptınız ve tüm özellikler devre dışı bırakıldı. NextDNS'i kullanmaya devam etmek için <3>abone olun</3>."
     },
-    "business": {
-      "name": "İşletme",
-      "description": "Vergisel nedenlerle işletmenizin adına, adresine ve KDV numarasına (veya eşdeğerine) ihtiyacımız var. Bu bilgiler yasal olarak zorunludur ve tüm faturalarda yer alacaktır.",
-      "button": {
-        "add": "İşletme bilgilerini ekle",
-        "update": "Güncelle"
-      },
-      "form": {
-        "name": {
-          "label": "İsim",
-          "placeholder": "ACME A.Ş.",
-          "errors": {
-            "required": "İşletmenizin adını girin."
-          }
-        },
-        "address": {
-          "label": "Adres",
-          "placeholder": "Örnek Mah. Çadırcılar Cad. No:4, Fatih\nİstanbul\nTürkiye",
-          "errors": {
-            "required": "İşletmenizin adresini girin."
-          }
-        },
-        "vatNumber": {
-          "label": "KDV numarası (veya eşdeğeri)"
-        }
-      }
-    },
-    "invoices": {
-      "name": "Faturalar",
-      "description": "Fatura geçmişi ve hesabınıza ait tüm faturalar.",
-      "pending": "{{amount, price}} (Beklemede)",
-      "show-more": "Daha fazla göster",
-      "show-less": "Daha az göster",
-      "invoice": {
-        "title": "Fatura #{{code}}",
-        "to": "Kime: <1>{{email}}</1>",
-        "vatNumber": "KDV numarası (veya eşdeğeri): {{number}}",
-        "columns": {
-          "plan": "Plan",
-          "period": "Dönem",
-          "amount": "Tutar"
-        },
-        "vat": "KDV ({{rate, percentage}})",
-        "total": "Toplam",
-        "footer": {
-          "reverseCharged": "KDV (veya eşdeğeri) için tersine vergilendirme uygulanmıştır.",
-          "currency": "Gösterilen tüm tutarlar {{code}} cinsindendir."
-        }
-      }
-    },
-    "changeEmail": {
-      "name": "E-posta",
-      "description": "Hesabınızda oturum açmak ve önemli bildirimleri almak için kullandığınız e-posta adresini değiştirin.",
-      "button": "E-postayı değiştir"
-    },
-    "changePassword": {
-      "name": "Şifre",
-      "description": "Hesabınızda oturum açmak ve hassas işlemleri onaylamak için kullanılan şifreyi değiştirin.",
-      "button": "Şifreyi değiştir"
-    },
-    "2fa": {
-      "name": "İki faktörlü kimlik doğrulama (2FA)",
-      "description": "İki faktörlü kimlik doğrulama (2FA), hesabınızda oturum açarken zamana dayalı ek bir 6 basamaklı kod gerektiren ekstra bir güvenlik katmanıdır.",
-      "enabled": "Hesabınız için 2FA etkinleştirildi.",
-      "enable": {
-        "button": "2FA'yı etkinleştir",
-        "secret": "İki faktörlü kimlik doğrulama gizli anahtarı",
-        "modal": {
-          "howto": "<1>Google Authenticator</1> gibi bir kimlik doğrulama uygulaması veya 2FA'yı destekleyen bir şifre yöneticisi kullanın. QR kodunu tarayabilir, <3>{{otpauth}}</3> bağlantısını açmak için üzerine dokunabilir veya gizli anahtarınızı elle kopyalayıp yapıştırabilirsiniz."
-        }
-      },
-      "recovery": {
-        "button": "Kurtarma kodları",
-        "modal": {
-          "howto": "Cihazınıza erişimi kaybetmeniz ve iki faktörlü kimlik doğrulama kodlarını alamamanız durumunda hesabınıza erişmek için bu kurtarma kodlarını kullanın. Her kod yalnızca bir kez kullanılabilir.",
-          "download": "İndir",
-          "regen": "Yeniden oluştur"
-        }
-      },
-      "disable": {
-        "button": "2FA'yı devre dışı bırak"
-      }
-    },
-    "api": {
-      "description": "Profillerinizi programlı bir şekilde oluşturup yönetin. <1>{{link}}</1> adresindeki belgeleri okuyun.",
-      "copy": "API anahtarını kopyala",
-      "remove": "API anahtarını kaldır",
-      "create": {
-        "button": "API anahtarı oluştur"
-      }
-    },
-    "delete": {
-      "button": "Hesabı sil",
-      "warning": "Bu işlem, hesabınızı ve tüm profillerinizi kalıcı olarak silecektir.",
-      "confirm": {
-        "text": "Hesabınızı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
-      }
-    },
-    "temporary": {
-      "expired": {
-        "modal": {
-          "title": "Süresi doldu",
-          "text": "Geçici hesabınızın süresi doldu. Ayarlarınızı kaydetmek ve NextDNS'i kullanmaya devam etmek için şimdi ücretsiz kaydolun."
-        }
-      }
-    }
-  },
-  "configurationSelector": {
-    "new": "Yeni",
-    "form": {
-      "title": "Yeni profil",
-      "name": {
-        "label": "İsim",
-        "placeholder": "Ev, Çocuk, Ofis, ...",
+    "account": {
+        "email": "E-posta",
+        "newEmail": "Yeni e-posta",
+        "password": "Şifre",
+        "newPassword": "Yeni şifre",
+        "currentPassword": "Mevcut şifre",
+        "forgotPassword": "Şifrenizi mi unuttunuz?",
+        "savePassword": "Şifreyi kaydet",
+        "passwordResetInfo": "Hesabınızla ilişkili e-posta adresini girin, size şifrenizi sıfırlamanız için bir bağlantı göndereceğiz.",
+        "sendEmail": "E-posta gönder",
+        "passwordResetLinkSentMessage": "Şifre sıfırlama bağlantısı <1>{{email}}</1> adresine gönderildi.",
+        "code": "2FA kodu",
+        "login": "Oturum aç",
+        "noAccountYet": "Henüz hesabınız yok mu? <1>Kaydolun</1>",
+        "signup": "Kaydol",
+        "alreadyHaveAnAccount": "Zaten hesabınız var mı? <1>Oturum açın</1>",
+        "convertingNotice": "Geçici bir hesabı gerçek bir hesaba dönüştürüyorsunuz. Tüm ayarlarınız kaydedilecek.",
+        "convertingDeviceOnlyNotice": "Yalnızca cihaza bağlı bir hesabı tam bir hesaba dönüştürüyorsunuz. Tüm ayarlarınız kaydedilecek.",
+        "logout": "Oturumu kapat",
         "errors": {
-          "required": "Bir isim girin.",
-          "taken": "Zaten bu isimde bir profiliniz var."
-        }
-      }
-    }
-  },
-  "setup": {
-    "status": {
-      "ok": {
-        "primary": "Her şey yolunda!",
-        "secondary": "Bu cihaz, NextDNS'i bu profille kullanıyor."
-      },
-      "mismatch": {
-        "withoutConfiguration": {
-          "primary": "Bu cihaz, NextDNS'i profil olmadan kullanıyor.",
-          "secondary": {
-            "clients": "Uygulama ayarlarında aşağıdaki profil kimliğini ayarladığınızdan emin olun.",
-            "firefox": "Firefox'ta aşağıda gösterilen DNS-over-HTTPS uç noktasını ayarladığınızdan emin olun.",
-            "doh": "Aşağıda gösterilen DNS-over-HTTPS uç noktasını kullandığınızdan emin olun.",
-            "dot": "Aşağıda gösterilen DNS-over-TLS uç noktasını kullandığınızdan emin olun.",
-            "ipv6": "Aşağıda gösterilen IPv6 adreslerini kullandığınızdan emin olun.",
-            "servers": "Aşağıdaki Bağlı IP bölümünde gösterilen DNS sunucularını kullandığınızdan emin olun (DNS sunucuları profile göre değişir).",
-            "link": "IP adresinizi aşağıdaki Bağlı IP bölümünde bağladığınızdan emin olun."
-          }
+            "email": {
+                "required": "Bir e-posta girin.",
+                "invalid": "Geçerli bir e-posta girin.",
+                "taken": "Bu e-posta zaten kullanılıyor."
+            },
+            "password": {
+                "required": "Bir şifre girin.",
+                "invalidCombination": "Geçersiz e-posta/şifre kombinasyonu."
+            },
+            "currentPassword": {
+                "required": "Mevcut şifrenizi girin.",
+                "incorrect": "Girdiğiniz şifre yanlış."
+            },
+            "code": {
+                "required": "Bir 2FA kodu girin.",
+                "invalid": "6 basamaklı bir kod girin.",
+                "incorrect": "Yanlış 2FA kodu."
+            },
+            "resetPasswordToken": {
+                "invalid": "Geçersiz veya süresi dolmuş sıfırlama bağlantısı."
+            }
         },
-        "withConfiguration": {
-          "primary": "Bu cihaz, NextDNS'i başka bir profille kullanıyor.",
-          "secondary": {
-            "sameAccount": "Bu cihaz şu anda “{{name}}” profilini kullanıyor.",
-            "otherAccount": "Bu sayfada listelenen uç noktalardan birini kullandığınızdan emin olun."
-          }
-        }
-      },
-      "unconfigured": {
-        "primary": "Bu cihaz NextDNS kullanmıyor.",
-        "secondary": "Bu cihaz şu anda DNS çözümleyicisi olarak “{{resolver}}” kullanıyor."
-      },
-      "error": {
-        "primary": "Mevcut durum kontrol edilirken bir hata oluştu.",
-        "secondary": "Sayfayı yeniledikten sonra bu sorun devam ederse lütfen bizimle iletişime geçin."
-      },
-      "apr": {
-        "ok": {
-          "primary": "Bu cihaz, NextDNS'i iCloud Özel Geçişi ile kullanıyor.",
-          "secondary": "Güvenli Arama, YouTube Kısıtlı Mod ve Yeniden yazmalar gibi özellikler iCloud Özel Geçişi ile uyumlu değildir."
+        "affiliation": {
+            "name": "Ortaklık",
+            "description": "<1>{{link}}</1> adresini paylaşarak NextDNS'i tanıtmamıza yardımcı olun ve yönlendirdiğiniz kişilerin ilk ücretli aboneliklerinin başlangıcından itibaren ilk <5>{{months, number}} ay</5> boyunca yaptıkları abonelik ödemelerinin <3>{{share, percentage}}</3> oranındaki kısmını kazanın.",
+            "balance": {
+                "name": "Bakiye"
+            },
+            "availableBalance": {
+                "name": "Kullanılabilir bakiye",
+                "description": "Bakiyeniz, olası iadeleri karşılamak için bir ay sonra ödenmeye hazır hâle gelir."
+            },
+            "payout": {
+                "button": "Ödeme al",
+                "minimum": "Ödemeler için en az {{amount, price}} tutarında kullanılabilir bakiye gereklidir.",
+                "form": {
+                    "paypalEmail": "PayPal e-postası",
+                    "errors": {
+                        "paypalEmail": {
+                            "required": "Bir PayPal e-postası girin.",
+                            "invalid": "Geçerli bir PayPal e-postası girin."
+                        }
+                    }
+                }
+            }
         },
-        "blockpage": {
-          "primary": "Bu cihaz, NextDNS'i iCloud Özel Geçişi ile kullanıyor.",
-          "secondary": "iCloud Özel Geçişi'ni kullanırken Engelleme sayfası ayarını etkinleştirmek engellemeyi aksatır."
+        "usage": {
+            "name": "Ücretsiz kullanım",
+            "description": "NextDNS, aylık {{queries, number}} sorguya kadar ücretsizdir. Ardından tüm özellikler bir sonraki aya kadar geçici olarak devre dışı kalır.",
+            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} sorgu</1>",
+            "overQuota": {
+                "message": "Bu ay {{queries, number}} adetten fazla sorgu yaptınız.",
+                "info": "NextDNS, DNS sorgularını yanıtlamaya devam edecek ancak tüm özellikler önümüzdeki aya kadar geçici olarak devre dışı bırakılacak."
+            },
+            "subscribe": {
+                "ios": "Hizmete abone olmak için tarayıcınızda my.nextdns.io adresine gidin.",
+                "upsell": "Ayda {{amount, price}} başlangıç fiyatıyla sınırsız sorguya kavuşun."
+            }
+        },
+        "subscription": {
+            "name": "Abonelik",
+            "plans": {
+                "pro": "Pro",
+                "business": "İşletme",
+                "education": "Eğitim"
+            },
+            "intervals": {
+                "month": "aylık plan",
+                "year": "yıllık plan"
+            },
+            "per": {
+                "month": "aylık",
+                "year": "yıllık"
+            },
+            "units": {
+                "business_one": "{{count, number}} çalışan",
+                "business_other": "{{count, number}} çalışan",
+                "education_one": "{{count, number}} öğrenci",
+                "education_other": "{{count, number}} öğrenci"
+            },
+            "planFull": "{{plan}} ({{interval}})",
+            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+            "expires": "Aboneliğiniz {{date, date}} tarihinde sona erecektir.",
+            "managedByApple": "Aboneliğiniz Apple Hesabınız üzerinden yönetilir. Değiştirmek veya iptal etmek için Apple'ın abonelik ayarlarını kullanın.",
+            "manageOnApple": "Aboneliği Apple'da yönet",
+            "restart": {
+                "button": "Aboneliği yeniden başlat"
+            },
+            "changePlan": {
+                "button": "Plan değiştir"
+            },
+            "renewal": "Bir sonraki otomatik ödemeniz {{date, date}} tarihinde {{amount, price}} olacaktır.",
+            "changePaymentMethod": {
+                "button": "Ödeme yöntemini değiştir"
+            },
+            "cancel": {
+                "button": "Aboneliği iptal et",
+                "confirm": {
+                    "text": "Mevcut aboneliğiniz {{date, date}} tarihine kadar geçerli kalacaktır.",
+                    "submit": "Aboneliği iptal et"
+                }
+            },
+            "subscribe": {
+                "choosePlan": "Bir plan seçin",
+                "addPaymentMethod": "Bir ödeme yöntemi ekleyin",
+                "included": "Tüm planlar <1>tüm özelliklere erişim</1>, <3>sınırsız cihaz</3> ve <5>sınırsız sorgu</5> içerir.",
+                "savings": "Aylık plana oranla {{percent, percentage}} tasarruf edin",
+                "familyOnly": "* Pro planları yalnızca kişisel (ve yakın aile) kullanımı içindir.",
+                "unitsQuestion": {
+                    "business": "İşletmenizde kaç <1>çalışan</1> var?",
+                    "education": "Okulunuzda (veya bölgenizde) kaç <1>öğrenci</1> var?"
+                },
+                "unitsLabel": {
+                    "business": "Çalışan sayısı",
+                    "education": "Öğrenci sayısı"
+                },
+                "asYouGrow": {
+                    "business": "* Çalışan sayınız arttıkça planınızı güncellemeyi unutmayın.",
+                    "education": "* Öğrenci sayınız arttıkça planınızı güncellemeyi unutmayın."
+                },
+                "starting": {
+                    "business": "<0>Başlangıç fiyatı: </0><1>{{price, price}}</1><2>/ay ({{units, number}} çalışan için)</2>",
+                    "education": "<0>Başlangıç fiyatı: </0><1>{{price, price}}</1><2>/ay ({{units, number}} öğrenci için)</2>"
+                },
+                "card": {
+                    "number": "Kart numarası",
+                    "expiration": "Son kullanma tarihi",
+                    "code": "Güvenlik kodu",
+                    "stripe": "Kart bilgilerinize doğrudan erişmeden kart ödemelerini güvenli bir şekilde işlemek için önde gelen bir ödeme aracı olan Stripe'ı kullanıyoruz."
+                },
+                "paypal": {
+                    "text": "PayPal ile abone olmak için “PayPal ile devam et” düğmesine tıklayın."
+                },
+                "bitpay": {
+                    "text": "Kripto parayla ödeme yapmak için “BitPay ile devam et” düğmesine tıklayın.",
+                    "toYearly": "Aylık planlar için kripto parayla ödeme kabul edemiyoruz. <1>Devam ettiğinizde otomatik olarak yıllık plana geçeceksiniz.</1>",
+                    "remainder": "Mevcut aboneliğinizin {{date, date}} tarihine kadarki ücreti zaten ödenmiştir. Şimdi ücret alınacak ve kalan abonelik süreniz yeni bitiş tarihine otomatik olarak eklenecektir."
+                },
+                "continueTo": "<1></1> ile devam et"
+            }
+        },
+        "business": {
+            "name": "İşletme",
+            "description": "Vergisel nedenlerle işletmenizin adına, adresine ve KDV numarasına (veya eşdeğerine) ihtiyacımız var. Bu bilgiler yasal olarak zorunludur ve tüm faturalarda yer alacaktır.",
+            "button": {
+                "add": "İşletme bilgilerini ekle",
+                "update": "Güncelle"
+            },
+            "form": {
+                "name": {
+                    "label": "İsim",
+                    "placeholder": "ACME A.Ş.",
+                    "errors": {
+                        "required": "İşletmenizin adını girin."
+                    }
+                },
+                "address": {
+                    "label": "Adres",
+                    "placeholder": "Örnek Mah. Çadırcılar Cad. No:4, Fatih\nİstanbul\nTürkiye",
+                    "errors": {
+                        "required": "İşletmenizin adresini girin."
+                    }
+                },
+                "vatNumber": {
+                    "label": "KDV numarası (veya eşdeğeri)"
+                }
+            }
+        },
+        "invoices": {
+            "name": "Faturalar",
+            "description": "Fatura geçmişi ve hesabınıza ait tüm faturalar.",
+            "pending": "{{amount, price}} (Beklemede)",
+            "show-more": "Daha fazla göster",
+            "show-less": "Daha az göster",
+            "invoice": {
+                "title": "Fatura #{{code}}",
+                "to": "Kime: <1>{{email}}</1>",
+                "vatNumber": "KDV numarası (veya eşdeğeri): {{number}}",
+                "columns": {
+                    "plan": "Plan",
+                    "period": "Dönem",
+                    "amount": "Tutar"
+                },
+                "vat": "KDV ({{rate, percentage}})",
+                "total": "Toplam",
+                "footer": {
+                    "reverseCharged": "KDV (veya eşdeğeri) için tersine vergilendirme uygulanmıştır.",
+                    "currency": "Gösterilen tüm tutarlar {{code}} cinsindendir."
+                }
+            }
+        },
+        "changeEmail": {
+            "name": "E-posta",
+            "description": "Hesabınızda oturum açmak ve önemli bildirimleri almak için kullandığınız e-posta adresini değiştirin.",
+            "button": "E-postayı değiştir"
+        },
+        "changePassword": {
+            "name": "Şifre",
+            "description": "Hesabınızda oturum açmak ve hassas işlemleri onaylamak için kullanılan şifreyi değiştirin.",
+            "button": "Şifreyi değiştir"
+        },
+        "2fa": {
+            "name": "İki faktörlü kimlik doğrulama (2FA)",
+            "description": "İki faktörlü kimlik doğrulama (2FA), hesabınızda oturum açarken zamana dayalı ek bir 6 basamaklı kod gerektiren ekstra bir güvenlik katmanıdır.",
+            "enabled": "Hesabınız için 2FA etkinleştirildi.",
+            "enable": {
+                "button": "2FA'yı etkinleştir",
+                "secret": "İki faktörlü kimlik doğrulama gizli anahtarı",
+                "modal": {
+                    "howto": "<1>Google Authenticator</1> gibi bir kimlik doğrulama uygulaması veya 2FA'yı destekleyen bir şifre yöneticisi kullanın. QR kodunu tarayabilir, <3>{{otpauth}}</3> bağlantısını açmak için üzerine dokunabilir veya gizli anahtarınızı elle kopyalayıp yapıştırabilirsiniz."
+                }
+            },
+            "recovery": {
+                "button": "Kurtarma kodları",
+                "modal": {
+                    "howto": "Cihazınıza erişimi kaybetmeniz ve iki faktörlü kimlik doğrulama kodlarını alamamanız durumunda hesabınıza erişmek için bu kurtarma kodlarını kullanın. Her kod yalnızca bir kez kullanılabilir.",
+                    "download": "İndir",
+                    "regen": "Yeniden oluştur"
+                }
+            },
+            "disable": {
+                "button": "2FA'yı devre dışı bırak"
+            }
+        },
+        "api": {
+            "description": "Profillerinizi programlı bir şekilde oluşturup yönetin. <1>{{link}}</1> adresindeki belgeleri okuyun.",
+            "copy": "API anahtarını kopyala",
+            "remove": "API anahtarını kaldır",
+            "create": {
+                "button": "API anahtarı oluştur"
+            }
+        },
+        "delete": {
+            "button": "Hesabı sil",
+            "warning": "Bu işlem, hesabınızı ve tüm profillerinizi kalıcı olarak silecektir.",
+            "confirm": {
+                "text": "Hesabınızı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+            }
+        },
+        "temporary": {
+            "expired": {
+                "modal": {
+                    "title": "Süresi doldu",
+                    "text": "Geçici hesabınızın süresi doldu. Ayarlarınızı kaydetmek ve NextDNS'i kullanmaya devam etmek için şimdi ücretsiz kaydolun."
+                }
+            }
         }
-      }
     },
-    "endpoints": {
-      "name": "Uç noktalar",
-      "description": "NextDNS'i bu profille kullanmak için aşağıdaki uç noktalardan birini ayarlayın.",
-      "help": "Bunları nasıl kullanacağınızdan emin değil misiniz? <1>Kurulum rehberini</1> izleyin."
-    },
-    "linkedIp": {
-      "name": "Bağlı IP",
-      "description": "Uygulamalarımızı, DNS-over-TLS, DNS-over-HTTPS veya IPv6 kullanarak NextDNS'i ayarlayamıyorsanız aşağıdaki DNS sunucularını kullanın ve IP'nizi bağlayın. Bu yöntem çoğunlukla ev ağlarında kullanım içindir ve mobil cihazlarda önerilmez.",
-      "servers": {
-        "name": "DNS sunucuları"
-      },
-      "ip": {
-        "name": "Bağlı IP",
-        "link": "IP bağla"
-      },
-      "showAdvanced": "Gelişmiş ayarları göster",
-      "ddns": {
-        "explanation": "Bağlı IP'nizin otomatik olarak güncellenmesi için Dinamik DNS (DDNS) kullanabilirsiniz.",
-        "set": "DDNS'i yapılandır",
-        "status": "Şu anda DDNS ana bilgisayar adı olarak <1>{{hostname}}</1> kullanıyorsunuz. IP adresiniz dakikada bir otomatik olarak güncellenecektir.",
-        "unset": "Kaldır",
+    "configurationSelector": {
+        "new": "Yeni",
         "form": {
-          "hostname": {
-            "label": "DDNS ana bilgisayar adı",
-            "placeholder": "example.no-ip.org",
-            "errors": {
-              "required": "Bir ana bilgisayar adı girin.",
-              "invalid": "Geçerli bir ana bilgisayar adı girin.",
-              "ip": "IP adresi yerine bir ana bilgisayar adı girin.",
-              "error": "Bu ana bilgisayar adına karşılık gelen IP adresi alınırken bir hata oluştu.",
-              "empty": "Bu ana bilgisayar adı herhangi bir IP adresi döndürmüyor.",
-              "different": "Güvenlik nedeniyle, Dinamik DNS eklerken DDNS ana bilgisayar adının döndürdüğü IP adresi mevcut IP adresinizle aynı olmalıdır."
+            "title": "Yeni profil",
+            "name": {
+                "label": "İsim",
+                "placeholder": "Ev, Çocuk, Ofis, ...",
+                "errors": {
+                    "required": "Bir isim girin.",
+                    "taken": "Zaten bu isimde bir profiliniz var."
+                }
             }
-          }
         }
-      },
-      "programmatically": "Aşağıdaki adresi çağırarak bağlı IP adresinizi programlı olarak da güncelleyebilirsiniz:"
     },
-    "guide": {
-      "name": "Kurulum rehberi",
-      "description": "Cihazınızda, tarayıcınızda veya yönlendiricinizde NextDNS'i kurmak için aşağıdaki talimatları izleyin.",
-      "or": "Veya",
-      "ipv4": {
-        "title": "IPv4 (Bağlı IP ile)"
-      },
-      "ipv6": {
-        "supported": "Ağınız IPv6'yı destekliyor",
-        "notSupported": "Ağınız IPv6'yı desteklemiyor"
-      },
-      "tags": {
-        "recommended": "Önerilen",
-        "advanced": "Gelişmiş"
-      },
-      "use": "<1>{{file}}</1> dosyasında aşağıdakileri kullanın:",
-      "platforms": {
-        "android": {
-          "name": "Android",
-          "guides": {
-            "private": {
-              "title": "Gizli DNS",
-              "requirements": "Android 9 veya üstü",
-              "steps": {
-                "1": "1. Ayarlar → Ağ ve internet → Gizli DNS seçeneğine gidin (bazı sürümlerde Gelişmiş bölümünde).",
-                "2": "2. Gizli DNS sağlayıcının ana makine adı seçeneğini belirleyin.",
-                "3": "3. <1>{{endpoint}}</1> girin ve Kaydet'e basın."
-              }
-            }
-          }
-        },
-        "ios": {
-          "name": "iOS",
-          "guides": {
-            "profile": {
-              "title": "Konfigürasyon profili",
-              "requirements": "iOS 14 veya üstü",
-              "step": "<1>{{link}}</1> adresinde bulunan Apple Konfigürasyon Profili Oluşturucumuzu kullanın."
+    "setup": {
+        "status": {
+            "ok": {
+                "primary": "Her şey yolunda!",
+                "secondary": "Bu cihaz, NextDNS'i bu profille kullanıyor."
             },
-            "app": {
-              "title": "iOS için NextDNS",
-              "qrAlt": "iPhone veya iPad'e NextDNS'i yükleyip yapılandırmak için uygulama parçacığı kodu",
-              "qrText": "NextDNS'i iPhone veya iPad'inize yükleyip yapılandırmak için bu kodu tarayın",
-              "qrTextIos": "Bu kodu başka bir telefonla tarayın veya <1>NextDNS'i bu cihazda yapılandırmak için buraya dokunun</1>."
-            }
-          }
-        },
-        "windows": {
-          "name": "Windows",
-          "guides": {
-            "dns-over-https": {
-              "title": "HTTPS üzerinden DNS (DoH)",
-              "requirements": "Windows 11",
-              "steps": [
-                "<1>Ayarlar</1> uygulamasını açın.",
-                "<1>Ağ ve internet</1> bölümüne gidin.",
-                "<1>Wi-Fi</1> (veya <3>Ethernet</3>) başlığına tıklayın.",
-                "<1>Donanım özellikleri</1> öğesine tıklayın veya <3>Ethernet</3>'e tıkladıysanız bu adımı atlayın.",
-                "<3>DNS sunucusu ataması</3> öğesinin yanındaki <1>Düzenle</1> düğmesine tıklayın.",
-                "<1>El ile</1> seçeneğini belirleyin.",
-                "<1>IPv{{version}}</1> seçeneğini açık hâle getirin.",
-                "<3>Tercih edilen DNS</3> alanına <1>{{ip}}</1> adresini girin, ardından HTTPS üzerinden DNS ayarını <5>Açık (el ile şablon)</5> olarak değiştirip <7>{{endpoint}}</7> adresini girin.",
-                "<3>Alternatif DNS</3> alanına <1>{{ip}}</1> adresini girin, ardından HTTPS üzerinden DNS ayarını <5>Açık (el ile şablon)</5> olarak değiştirip <7>{{endpoint}}</7> adresini girin.",
-                "<1>Kaydet</1>'e tıklayın."
-              ]
+            "mismatch": {
+                "withoutConfiguration": {
+                    "primary": "Bu cihaz, NextDNS'i profil olmadan kullanıyor.",
+                    "secondary": {
+                        "clients": "Uygulama ayarlarında aşağıdaki profil kimliğini ayarladığınızdan emin olun.",
+                        "firefox": "Firefox'ta aşağıda gösterilen DNS-over-HTTPS uç noktasını ayarladığınızdan emin olun.",
+                        "doh": "Aşağıda gösterilen DNS-over-HTTPS uç noktasını kullandığınızdan emin olun.",
+                        "dot": "Aşağıda gösterilen DNS-over-TLS uç noktasını kullandığınızdan emin olun.",
+                        "ipv6": "Aşağıda gösterilen IPv6 adreslerini kullandığınızdan emin olun.",
+                        "servers": "Aşağıdaki Bağlı IP bölümünde gösterilen DNS sunucularını kullandığınızdan emin olun (DNS sunucuları profile göre değişir).",
+                        "link": "IP adresinizi aşağıdaki Bağlı IP bölümünde bağladığınızdan emin olun."
+                    }
+                },
+                "withConfiguration": {
+                    "primary": "Bu cihaz, NextDNS'i başka bir profille kullanıyor.",
+                    "secondary": {
+                        "sameAccount": "Bu cihaz şu anda “{{name}}” profilini kullanıyor.",
+                        "otherAccount": "Bu sayfada listelenen uç noktalardan birini kullandığınızdan emin olun."
+                    }
+                }
             },
-            "app": {
-              "title": "Windows için NextDNS",
-              "steps": {
-                "1": "1. Yükleyiciyi <1>buradan</1> indirin.",
-                "2": "2. Kurduktan sonra, sistem tepsisindeki NextDNS simgesine sağ tıklayın ve ardından “Settings...” seçeneğini açın. “Configuration ID” olarak <1>{{id}}</1> girin.",
-                "3": "3. Sistem tepsisindeki NextDNS simgesine sağ tıklayın, ardından “Enable” seçeneğine tıklayın."
-              }
+            "unconfigured": {
+                "primary": "Bu cihaz NextDNS kullanmıyor.",
+                "secondary": "Bu cihaz şu anda DNS çözümleyicisi olarak “{{resolver}}” kullanıyor."
+            },
+            "error": {
+                "primary": "Mevcut durum kontrol edilirken bir hata oluştu.",
+                "secondary": "Sayfayı yeniledikten sonra bu sorun devam ederse lütfen bizimle iletişime geçin."
+            },
+            "apr": {
+                "ok": {
+                    "primary": "Bu cihaz, NextDNS'i iCloud Özel Geçişi ile kullanıyor.",
+                    "secondary": "Güvenli Arama, YouTube Kısıtlı Mod ve Yeniden yazmalar gibi özellikler iCloud Özel Geçişi ile uyumlu değildir."
+                },
+                "blockpage": {
+                    "primary": "Bu cihaz, NextDNS'i iCloud Özel Geçişi ile kullanıyor.",
+                    "secondary": "iCloud Özel Geçişi'ni kullanırken Engelleme sayfası ayarını etkinleştirmek engellemeyi aksatır."
+                }
+            }
+        },
+        "endpoints": {
+            "name": "Uç noktalar",
+            "description": "NextDNS'i bu profille kullanmak için aşağıdaki uç noktalardan birini ayarlayın.",
+            "help": "Bunları nasıl kullanacağınızdan emin değil misiniz? <1>Kurulum rehberini</1> izleyin."
+        },
+        "linkedIp": {
+            "name": "Bağlı IP",
+            "description": "Uygulamalarımızı, DNS-over-TLS, DNS-over-HTTPS veya IPv6 kullanarak NextDNS'i ayarlayamıyorsanız aşağıdaki DNS sunucularını kullanın ve IP'nizi bağlayın. Bu yöntem çoğunlukla ev ağlarında kullanım içindir ve mobil cihazlarda önerilmez.",
+            "servers": {
+                "name": "DNS sunucuları"
             },
             "ip": {
-              "steps": {
-                "1": "1. Başlat'ı açın, Denetim Masası'nı arayın ve açın.",
-                "2": "2. Ağ ve İnternet'e, ardından Ağ ve Paylaşım Merkezi'ne tıklayın.",
-                "3": "3. Bağdaştırıcı Ayarlarını Değiştir'e tıklayın.",
-                "4": "4. Bağlandığınız Wi-Fi ağına sağ tıklayın, ardından Özellikler'e tıklayın.",
-                "5": "5. İnternet Protokolü Sürüm {{version}} öğesini seçin.",
-                "6": "6. Özellikler'e tıklayın.",
-                "7": "7. “Aşağıdaki DNS sunucu adreslerini kullan” seçeneğini belirleyin.",
-                "8": "8. Mevcut adresleri (varsa) <1>{{dns1}}</1> ve <3>{{dns2}}</3> olarak değiştirin.",
-                "9": "9. Tamam'a ve ardından Kapat'a tıklayın. Tarayıcınızı yeniden başlatmanız gerekebilir."
-              }
+                "name": "Bağlı IP",
+                "link": "IP bağla"
             },
-            "yoga": {
-              "steps": {
-                "1": "1. YogaDNS'i <1>{{link}}</1> adresinden yükleyin.",
-                "2": "2. NextDNS için <1>{{link}}</1> adresindeki talimatları uygulayın ve “Configuration ID” olarak <3>{{id}}</3> kullanın."
-              }
-            }
-          }
+            "showAdvanced": "Gelişmiş ayarları göster",
+            "ddns": {
+                "explanation": "Bağlı IP'nizin otomatik olarak güncellenmesi için Dinamik DNS (DDNS) kullanabilirsiniz.",
+                "set": "DDNS'i yapılandır",
+                "status": "Şu anda DDNS ana bilgisayar adı olarak <1>{{hostname}}</1> kullanıyorsunuz. IP adresiniz dakikada bir otomatik olarak güncellenecektir.",
+                "unset": "Kaldır",
+                "form": {
+                    "hostname": {
+                        "label": "DDNS ana bilgisayar adı",
+                        "placeholder": "example.no-ip.org",
+                        "errors": {
+                            "required": "Bir ana bilgisayar adı girin.",
+                            "invalid": "Geçerli bir ana bilgisayar adı girin.",
+                            "ip": "IP adresi yerine bir ana bilgisayar adı girin.",
+                            "error": "Bu ana bilgisayar adına karşılık gelen IP adresi alınırken bir hata oluştu.",
+                            "empty": "Bu ana bilgisayar adı herhangi bir IP adresi döndürmüyor.",
+                            "different": "Güvenlik nedeniyle, Dinamik DNS eklerken DDNS ana bilgisayar adının döndürdüğü IP adresi mevcut IP adresinizle aynı olmalıdır."
+                        }
+                    }
+                }
+            },
+            "programmatically": "Aşağıdaki adresi çağırarak bağlı IP adresinizi programlı olarak da güncelleyebilirsiniz:"
         },
-        "macos": {
-          "name": "macOS",
-          "guides": {
-            "app": {
-              "title": "macOS için NextDNS",
-              "steps": {
-                "1": "1. Resmi uygulamamızı <1>indirin</1> ve yükleyin.",
-                "2": "2. Talimatları izleyin.",
-                "3": "3. Profil kimliği istendiğinde <1>{{id}}</1> girin."
-              }
+        "guide": {
+            "name": "Kurulum rehberi",
+            "description": "Cihazınızda, tarayıcınızda veya yönlendiricinizde NextDNS'i kurmak için aşağıdaki talimatları izleyin.",
+            "or": "Veya",
+            "ipv4": {
+                "title": "IPv4 (Bağlı IP ile)"
             },
-            "profile": {
-              "requirements": "macOS Big Sur veya üstü"
+            "ipv6": {
+                "supported": "Ağınız IPv6'yı destekliyor",
+                "notSupported": "Ağınız IPv6'yı desteklemiyor"
             },
-            "ip": {
-              "steps": {
-                "1": "1. Sistem Ayarları'nı (eski macOS sürümlerinde Sistem Tercihleri) açın, ardından Ağ'a tıklayın.",
-                "2": "2. Etkin ağ bağlantınızı seçin, ardından Ayrıntılar'a (eski macOS sürümlerinde İleri Düzey) tıklayın.",
-                "3": "3. DNS bölümüne gidin.",
-                "4": "4. DNS Sunucuları listesinde, (varsa) tüm adresleri kaldırın ve ardından <1>{{dns1}}</1> ve <3>{{dns2}}</3> ekleyin.",
-                "5": "5. Tamam'a tıklayın, ardından görünüyorsa Uygula'ya tıklayın."
-              }
+            "tags": {
+                "recommended": "Önerilen",
+                "advanced": "Gelişmiş"
             },
-            "cli": {
-              "title": "NextDNS komut satırı istemcisi",
-              "steps": {
-                "1": "1. Şu komutu çalıştırın: <1>{{command}}</1>",
-                "2": "2. Talimatları izleyin."
-              },
-              "manual": "Manuel kurulum talimatları için <1>{{link}}</1> adresindeki açık kaynak depomuza gidin."
+            "use": "<1>{{file}}</1> dosyasında aşağıdakileri kullanın:",
+            "platforms": {
+                "android": {
+                    "name": "Android",
+                    "guides": {
+                        "private": {
+                            "title": "Gizli DNS",
+                            "requirements": "Android 9 veya üstü",
+                            "steps": {
+                                "1": "1. Ayarlar → Ağ ve internet → Gizli DNS seçeneğine gidin (bazı sürümlerde Gelişmiş bölümünde).",
+                                "2": "2. Gizli DNS sağlayıcının ana makine adı seçeneğini belirleyin.",
+                                "3": "3. <1>{{endpoint}}</1> girin ve Kaydet'e basın."
+                            }
+                        }
+                    }
+                },
+                "ios": {
+                    "name": "iOS",
+                    "guides": {
+                        "profile": {
+                            "title": "Konfigürasyon profili",
+                            "requirements": "iOS 14 veya üstü",
+                            "step": "<1>{{link}}</1> adresinde bulunan Apple Konfigürasyon Profili Oluşturucumuzu kullanın."
+                        },
+                        "app": {
+                            "title": "iOS için NextDNS",
+                            "qrAlt": "iPhone veya iPad'e NextDNS'i yükleyip yapılandırmak için uygulama parçacığı kodu",
+                            "qrText": "NextDNS'i iPhone veya iPad'inize yükleyip yapılandırmak için bu kodu tarayın",
+                            "qrTextIos": "Bu kodu başka bir telefonla tarayın veya <1>NextDNS'i bu cihazda yapılandırmak için buraya dokunun</1>."
+                        }
+                    }
+                },
+                "windows": {
+                    "name": "Windows",
+                    "guides": {
+                        "dns-over-https": {
+                            "title": "HTTPS üzerinden DNS (DoH)",
+                            "requirements": "Windows 11",
+                            "steps": [
+                                "<1>Ayarlar</1> uygulamasını açın.",
+                                "<1>Ağ ve internet</1> bölümüne gidin.",
+                                "<1>Wi-Fi</1> (veya <3>Ethernet</3>) başlığına tıklayın.",
+                                "<1>Donanım özellikleri</1> öğesine tıklayın veya <3>Ethernet</3>'e tıkladıysanız bu adımı atlayın.",
+                                "<3>DNS sunucusu ataması</3> öğesinin yanındaki <1>Düzenle</1> düğmesine tıklayın.",
+                                "<1>El ile</1> seçeneğini belirleyin.",
+                                "<1>IPv{{version}}</1> seçeneğini açık hâle getirin.",
+                                "<3>Tercih edilen DNS</3> alanına <1>{{ip}}</1> adresini girin, ardından HTTPS üzerinden DNS ayarını <5>Açık (el ile şablon)</5> olarak değiştirip <7>{{endpoint}}</7> adresini girin.",
+                                "<3>Alternatif DNS</3> alanına <1>{{ip}}</1> adresini girin, ardından HTTPS üzerinden DNS ayarını <5>Açık (el ile şablon)</5> olarak değiştirip <7>{{endpoint}}</7> adresini girin.",
+                                "<1>Kaydet</1>'e tıklayın."
+                            ]
+                        },
+                        "app": {
+                            "title": "Windows için NextDNS",
+                            "steps": {
+                                "1": "1. Yükleyiciyi <1>buradan</1> indirin.",
+                                "2": "2. Kurduktan sonra, sistem tepsisindeki NextDNS simgesine sağ tıklayın ve ardından “Settings...” seçeneğini açın. “Configuration ID” olarak <1>{{id}}</1> girin.",
+                                "3": "3. Sistem tepsisindeki NextDNS simgesine sağ tıklayın, ardından “Enable” seçeneğine tıklayın."
+                            }
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Başlat'ı açın, Denetim Masası'nı arayın ve açın.",
+                                "2": "2. Ağ ve İnternet'e, ardından Ağ ve Paylaşım Merkezi'ne tıklayın.",
+                                "3": "3. Bağdaştırıcı Ayarlarını Değiştir'e tıklayın.",
+                                "4": "4. Bağlandığınız Wi-Fi ağına sağ tıklayın, ardından Özellikler'e tıklayın.",
+                                "5": "5. İnternet Protokolü Sürüm {{version}} öğesini seçin.",
+                                "6": "6. Özellikler'e tıklayın.",
+                                "7": "7. “Aşağıdaki DNS sunucu adreslerini kullan” seçeneğini belirleyin.",
+                                "8": "8. Mevcut adresleri (varsa) <1>{{dns1}}</1> ve <3>{{dns2}}</3> olarak değiştirin.",
+                                "9": "9. Tamam'a ve ardından Kapat'a tıklayın. Tarayıcınızı yeniden başlatmanız gerekebilir."
+                            }
+                        },
+                        "yoga": {
+                            "steps": {
+                                "1": "1. YogaDNS'i <1>{{link}}</1> adresinden yükleyin.",
+                                "2": "2. NextDNS için <1>{{link}}</1> adresindeki talimatları uygulayın ve “Configuration ID” olarak <3>{{id}}</3> kullanın."
+                            }
+                        }
+                    }
+                },
+                "macos": {
+                    "name": "macOS",
+                    "guides": {
+                        "app": {
+                            "title": "macOS için NextDNS",
+                            "steps": {
+                                "1": "1. Resmi uygulamamızı <1>indirin</1> ve yükleyin.",
+                                "2": "2. Talimatları izleyin.",
+                                "3": "3. Profil kimliği istendiğinde <1>{{id}}</1> girin."
+                            }
+                        },
+                        "profile": {
+                            "requirements": "macOS Big Sur veya üstü"
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Sistem Ayarları'nı (eski macOS sürümlerinde Sistem Tercihleri) açın, ardından Ağ'a tıklayın.",
+                                "2": "2. Etkin ağ bağlantınızı seçin, ardından Ayrıntılar'a (eski macOS sürümlerinde İleri Düzey) tıklayın.",
+                                "3": "3. DNS bölümüne gidin.",
+                                "4": "4. DNS Sunucuları listesinde, (varsa) tüm adresleri kaldırın ve ardından <1>{{dns1}}</1> ve <3>{{dns2}}</3> ekleyin.",
+                                "5": "5. Tamam'a tıklayın, ardından görünüyorsa Uygula'ya tıklayın."
+                            }
+                        },
+                        "cli": {
+                            "title": "NextDNS komut satırı istemcisi",
+                            "steps": {
+                                "1": "1. Şu komutu çalıştırın: <1>{{command}}</1>",
+                                "2": "2. Talimatları izleyin."
+                            },
+                            "manual": "Manuel kurulum talimatları için <1>{{link}}</1> adresindeki açık kaynak depomuza gidin."
+                        }
+                    }
+                },
+                "linux": {
+                    "name": "Linux",
+                    "guides": {
+                        "cli": {
+                            "title": "NextDNS komut satırı istemcisi",
+                            "steps": {
+                                "1": "1. Şu komutu çalıştırın: <1>{{command}}</1>",
+                                "2": "2. Talimatları izleyin."
+                            },
+                            "manual": "Manuel kurulum talimatları için <1>{{link}}</1> adresindeki açık kaynak depomuza gidin."
+                        },
+                        "ip": {
+                            "step": "DNS sunucularınızı <1>{{dns1}}</1> ve <3>{{dns2}}</3> olarak değiştirin."
+                        },
+                        "stubby": {
+                            "warning": "Stubby'nin <1>OpenSSL 1.1.1 veya üstü</1> ile bağlanmış olduğundan emin olun; önceki sürümler NextDNS ile çalışmayacaktır."
+                        },
+                        "unbound": {
+                            "warning": "Özyinelemeli bir çözümleyici olan Unbound, CNAME kayıtlarını takip eder. Bu, NextDNS gibi engelleme yapan bir DNS çözümleyiciyle birlikte kullanıldığında <1>beklenmeyen davranışlara</1> neden olabilir. Bkz. <3>{{link}}</3>."
+                        }
+                    }
+                },
+                "chromeos": {
+                    "name": "ChromeOS",
+                    "guides": {
+                        "secure-dns": {
+                            "title": "Güvenli DNS",
+                            "steps": [
+                                "<1>Ayarlar</1> uygulamasını açın.",
+                                "<1>Gizlilik ve güvenlik</1> bölümüne gidin.",
+                                "<1>Siteleri aramak için güvenli bağlantılar kullan</1> seçeneğini etkinleştirin.",
+                                "<1>Özel DNS servis sağlayıcı ekleyin</1> seçeneğini belirleyin, ardından <3>{{endpoint}}</3> girin."
+                            ]
+                        },
+                        "ip": {
+                            "step": "DNS sunucularınızı <1>{{dns1}}</1> ve <3>{{dns2}}</3> olarak değiştirin."
+                        }
+                    }
+                },
+                "browsers": {
+                    "name": "Tarayıcılar",
+                    "guides": {
+                        "chrome": {
+                            "title": "Google Chrome",
+                            "steps": {
+                                "1": "1. Ayarlar'a gidin.",
+                                "2": "2. Gizlilik ve güvenlik bölümünde Güvenlik'e tıklayın.",
+                                "3": "3. Gelişmiş bölümünde “Güvenli DNS kullan” seçeneğini etkinleştirin.",
+                                "4": "4. “Özel DNS servis sağlayıcı ekleyin” seçeneğini belirleyin, ardından <1>{{endpoint}}</1> girin."
+                            }
+                        },
+                        "firefox": {
+                            "title": "Firefox",
+                            "requirements": "Yalnızca Windows, macOS ve Linux",
+                            "steps": {
+                                "1": "1. Ayarlar'ı (bazı sürümlerde Tercihler) açın.",
+                                "2": "2. “Gizlilik ve güvenlik” seçeneğine tıklayın.",
+                                "3": "3. Aşağı kaydırarak HTTPS üzerinden DNS bölümüne gelin ve görünüyorsa Gelişmiş ayarlar'ı açın.",
+                                "4": "4. “Özel” seçeneğini belirleyin (bazı sürümlerde “Artırılmış koruma” veya “Maksimum koruma”).",
+                                "5": "5. Sağlayıcı menüsünden “Özel” seçeneğini belirleyin.",
+                                "6": "6. <1>{{endpoint}}</1> girin."
+                            }
+                        },
+                        "edge": {
+                            "title": "Microsoft Edge",
+                            "steps": {
+                                "1": "1. Ayarları açın.",
+                                "2": "2. Gizlilik, arama ve hizmetler bölümüne gidin.",
+                                "3": "3. Güvenlik başlığı altında “Güvenli DNS kullan” ayarını etkinleştirin.",
+                                "4": "4. “Hizmet sağlayıcısı seçin” seçeneğini belirleyin, ardından <1>{{endpoint}}</1> adresini girin."
+                            }
+                        },
+                        "brave": {
+                            "title": "Brave",
+                            "steps": {
+                                "1": "1. Ayarları açın.",
+                                "2": "2. Gizlilik ve güvenlik bölümünde Güvenlik'e gidin.",
+                                "3": "3. Gelişmiş bölümünde “Güvenli DNS kullan” seçeneğini etkinleştirin.",
+                                "4": "4. “Özel DNS servis sağlayıcı ekleyin” seçeneğini belirleyin, ardından <1>{{endpoint}}</1> girin."
+                            }
+                        }
+                    }
+                },
+                "routers": {
+                    "name": "Yönlendiriciler",
+                    "guides": {
+                        "cli": {
+                            "title": "Yönlendiriciler için NextDNS",
+                            "requirements": "Yalnızca yürütülebilir dosyaları çalıştırabilen yönlendiricilerde çalışır",
+                            "step": "Kurulum talimatları için <1>{{link}}</1> adresindeki açık kaynak depomuza gidin."
+                        },
+                        "ip": {
+                            "ipv6": {
+                                "warning": "Bazı yönlendiriciler yukarıdaki IPv6 notasyonunu desteklemeyebilir. Bu durumda <1>{{dns1}}</1> ve <3>{{dns2}}</3> adreslerini kullanın."
+                            },
+                            "steps": {
+                                "1": "1. Yönlendiricinizin ayarlarını açın. Bu ayarlara genellikle tarayıcınızdan bir URL aracılığıyla (http://192.168.0.1/ veya http://192.168.1.1/ gibi) erişebilirsiniz.",
+                                "2": "2. Arayüz içinde DNS ayarlarını bulun.",
+                                "3": "3. Tüm adresleri (varsa) kaldırın, ardından <1>{{dns1}}</1> ve <3>{{dns2}}</3> ekleyin.",
+                                "4": "4. Kaydet'e (veya benzerine) tıklayın."
+                            }
+                        },
+                        "pfsense": {
+                            "steps": {
+                                "1": "1. Services → DNS Resolver yoluna gidin. General Settings sekmesinde aşağı kaydırın ve Custom options kutusunu göstermek için gerekirse “Display Custom Options” seçeneğine tıklayın.",
+                                "2": "2. Aşağıdaki satırları girin:"
+                            }
+                        },
+                        "mikrotik": {
+                            "run": "Aşağıdakileri çalıştırın:"
+                        }
+                    }
+                },
+                "vpn": {
+                    "guides": {
+                        "tailscale": {
+                            "manual": "Kurulum talimatları için <2>{{link}}</2> adresindeki Tailscale belgelerine gidin."
+                        }
+                    }
+                }
             }
-          }
         },
-        "linux": {
-          "name": "Linux",
-          "guides": {
-            "cli": {
-              "title": "NextDNS komut satırı istemcisi",
-              "steps": {
-                "1": "1. Şu komutu çalıştırın: <1>{{command}}</1>",
-                "2": "2. Talimatları izleyin."
-              },
-              "manual": "Manuel kurulum talimatları için <1>{{link}}</1> adresindeki açık kaynak depomuza gidin."
+        "identify": {
+            "name": "Cihazlarınızı tanımlayın",
+            "description": "Cihazlarınızı Analizler ve Günlüklerde tanımlamak için aşağıdaki talimatları izleyin.",
+            "apps": {
+                "name": "Uygulamalar",
+                "instructions": "Uygulama ayarlarında “Send Device Name” (Windows'ta “Report Device Name”) seçeneğini etkinleştirin."
             },
-            "ip": {
-              "step": "DNS sunucularınızı <1>{{dns1}}</1> ve <3>{{dns2}}</3> olarak değiştirin."
+            "dot": {
+                "instructions": "Adı, sağlanan alan adının başına ekleyin (ad yalnızca <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> ve <7>-</7> içermelidir). Boşluklar için <9>--</9> kullanın.",
+                "example": "“<1>John Router</1>” için DNS-over-TLS uç noktası olarak <3>John--Router-{{profile}}.dns.nextdns.io</3> kullanın."
             },
-            "stubby": {
-              "warning": "Stubby'nin <1>OpenSSL 1.1.1 veya üstü</1> ile bağlanmış olduğundan emin olun; önceki sürümler NextDNS ile çalışmayacaktır."
-            },
-            "unbound": {
-              "warning": "Özyinelemeli bir çözümleyici olan Unbound, CNAME kayıtlarını takip eder. Bu, NextDNS gibi engelleme yapan bir DNS çözümleyiciyle birlikte kullanıldığında <1>beklenmeyen davranışlara</1> neden olabilir. Bkz. <3>{{link}}</3>."
+            "doh": {
+                "instructions": "Adı sağlanan URL'ye ekleyin (ad, URL kodlamalı olmalıdır).",
+                "example": "“<1>John's Firefox</1>” için DNS-over-HTTPS uç noktası olarak <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> kullanın."
             }
-          }
-        },
-        "chromeos": {
-          "name": "ChromeOS",
-          "guides": {
-            "secure-dns": {
-              "title": "Güvenli DNS",
-              "steps": [
-                "<1>Ayarlar</1> uygulamasını açın.",
-                "<1>Gizlilik ve güvenlik</1> bölümüne gidin.",
-                "<1>Siteleri aramak için güvenli bağlantılar kullan</1> seçeneğini etkinleştirin.",
-                "<1>Özel DNS servis sağlayıcı ekleyin</1> seçeneğini belirleyin, ardından <3>{{endpoint}}</3> girin."
-              ]
-            },
-            "ip": {
-              "step": "DNS sunucularınızı <1>{{dns1}}</1> ve <3>{{dns2}}</3> olarak değiştirin."
-            }
-          }
-        },
-        "browsers": {
-          "name": "Tarayıcılar",
-          "guides": {
-            "chrome": {
-              "title": "Google Chrome",
-              "steps": {
-                "1": "1. Ayarlar'a gidin.",
-                "2": "2. Gizlilik ve güvenlik bölümünde Güvenlik'e tıklayın.",
-                "3": "3. Gelişmiş bölümünde “Güvenli DNS kullan” seçeneğini etkinleştirin.",
-                "4": "4. “Özel DNS servis sağlayıcı ekleyin” seçeneğini belirleyin, ardından <1>{{endpoint}}</1> girin."
-              }
-            },
-            "firefox": {
-              "title": "Firefox",
-              "requirements": "Yalnızca Windows, macOS ve Linux",
-              "steps": {
-                "1": "1. Ayarlar'ı (bazı sürümlerde Tercihler) açın.",
-                "2": "2. “Gizlilik ve güvenlik” seçeneğine tıklayın.",
-                "3": "3. Aşağı kaydırarak HTTPS üzerinden DNS bölümüne gelin ve görünüyorsa Gelişmiş ayarlar'ı açın.",
-                "4": "4. “Özel” seçeneğini belirleyin (bazı sürümlerde “Artırılmış koruma” veya “Maksimum koruma”).",
-                "5": "5. Sağlayıcı menüsünden “Özel” seçeneğini belirleyin.",
-                "6": "6. <1>{{endpoint}}</1> girin."
-              }
-            },
-            "edge": {
-              "title": "Microsoft Edge",
-              "steps": {
-                "1": "1. Ayarları açın.",
-                "2": "2. Gizlilik, arama ve hizmetler bölümüne gidin.",
-                "3": "3. Güvenlik başlığı altında “Güvenli DNS kullan” ayarını etkinleştirin.",
-                "4": "4. “Hizmet sağlayıcısı seçin” seçeneğini belirleyin, ardından <1>{{endpoint}}</1> adresini girin."
-              }
-            },
-            "brave": {
-              "title": "Brave",
-              "steps": {
-                "1": "1. Ayarları açın.",
-                "2": "2. Gizlilik ve güvenlik bölümünde Güvenlik'e gidin.",
-                "3": "3. Gelişmiş bölümünde “Güvenli DNS kullan” seçeneğini etkinleştirin.",
-                "4": "4. “Özel DNS servis sağlayıcı ekleyin” seçeneğini belirleyin, ardından <1>{{endpoint}}</1> girin."
-              }
-            }
-          }
-        },
-        "routers": {
-          "name": "Yönlendiriciler",
-          "guides": {
-            "cli": {
-              "title": "Yönlendiriciler için NextDNS",
-              "requirements": "Yalnızca yürütülebilir dosyaları çalıştırabilen yönlendiricilerde çalışır",
-              "step": "Kurulum talimatları için <1>{{link}}</1> adresindeki açık kaynak depomuza gidin."
-            },
-            "ip": {
-              "ipv6": {
-                "warning": "Bazı yönlendiriciler yukarıdaki IPv6 notasyonunu desteklemeyebilir. Bu durumda <1>{{dns1}}</1> ve <3>{{dns2}}</3> adreslerini kullanın."
-              },
-              "steps": {
-                "1": "1. Yönlendiricinizin ayarlarını açın. Bu ayarlara genellikle tarayıcınızdan bir URL aracılığıyla (http://192.168.0.1/ veya http://192.168.1.1/ gibi) erişebilirsiniz.",
-                "2": "2. Arayüz içinde DNS ayarlarını bulun.",
-                "3": "3. Tüm adresleri (varsa) kaldırın, ardından <1>{{dns1}}</1> ve <3>{{dns2}}</3> ekleyin.",
-                "4": "4. Kaydet'e (veya benzerine) tıklayın."
-              }
-            },
-            "pfsense": {
-              "steps": {
-                "1": "1. Services → DNS Resolver yoluna gidin. General Settings sekmesinde aşağı kaydırın ve Custom options kutusunu göstermek için gerekirse “Display Custom Options” seçeneğine tıklayın.",
-                "2": "2. Aşağıdaki satırları girin:"
-              }
-            },
-            "mikrotik": {
-              "run": "Aşağıdakileri çalıştırın:"
-            }
-          }
-        },
-        "vpn": {
-          "guides": {
-            "tailscale": {
-              "manual": "Kurulum talimatları için <2>{{link}}</2> adresindeki Tailscale belgelerine gidin."
-            }
-          }
         }
-      }
     },
-    "identify": {
-      "name": "Cihazlarınızı tanımlayın",
-      "description": "Cihazlarınızı Analizler ve Günlüklerde tanımlamak için aşağıdaki talimatları izleyin.",
-      "apps": {
-        "name": "Uygulamalar",
-        "instructions": "Uygulama ayarlarında “Send Device Name” (Windows'ta “Report Device Name”) seçeneğini etkinleştirin."
-      },
-      "dot": {
-        "instructions": "Adı, sağlanan alan adının başına ekleyin (ad yalnızca <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> ve <7>-</7> içermelidir). Boşluklar için <9>--</9> kullanın.",
-        "example": "“<1>John Router</1>” için DNS-over-TLS uç noktası olarak <3>John--Router-{{profile}}.dns.nextdns.io</3> kullanın."
-      },
-      "doh": {
-        "instructions": "Adı sağlanan URL'ye ekleyin (ad, URL kodlamalı olmalıdır).",
-        "example": "“<1>John's Firefox</1>” için DNS-over-HTTPS uç noktası olarak <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> kullanın."
-      }
-    }
-  },
-  "security": {
-    "feeds": {
-      "name": "Tehdit istihbaratı akışları",
-      "description": "Gerçek zamanlı olarak güncellenen en güvenilir tehdit istihbaratı akışlarını bir arada kullanarak kötü amaçlı yazılım dağıttığı, kimlik avı saldırıları başlattığı ve komuta ve kontrol sunucuları barındırdığı bilinen alan adlarını engelleyin.",
-      "enable": "Tehdit istihbaratı akışlarını kullan"
-    },
-    "ai": {
-      "name": "Yapay zekâ destekli tehdit algılama",
-      "description": "Yapay zekâ teknolojimizle tespit edilen milyonlarca tehdidi engelleyin. Tescilli yapay zekâ motorumuz yüzlerce sinyal, terabaytlarca eğitim verisi ve gerçek zamanlı karar verme kabiliyetleriyle baştan sona DNS için tasarlandı. IDN homografları, typosquatting, combosquatting, DGA alan adları, marka taklidi, kimlik bilgisi toplama, kötü amaçlı yazılım dağıtımı ve kötü amaçlı altyapıyı gizlemek için kullanılan paravan web siteleri buna dahildir.",
-      "enable": "Yapay zekâ destekli tehdit algılamayı etkinleştir"
-    },
-    "googleSafeBrowsing": {
-      "name": "Google Güvenli Tarama",
-      "description": "Her gün milyarlarca URL'yi inceleyerek güvenli olmayan web sitelerini arayan Google Güvenli Tarama teknolojisiyle kötü amaçlı yazılım ve kimlik avı alan adlarını engelleyin. Bazı tarayıcılarda yerleşik olan sürümden farklı olarak bu özellik, genel IP adresinizi tehditlerle ilişkilendirmez ve engellemeyi aşmaya izin vermez.",
-      "enable": "Google Güvenli Tarama'yı etkinleştir"
-    },
-    "cryptojacking": {
-      "name": "Kripto korsanlığı",
-      "description": "Cihazlarınızın kripto para madenciliği yapmak için yetkisiz kullanımını önleyin.",
-      "enable": "Kripto korsanlığını engelle"
-    },
-    "dnsRebinding": {
-      "name": "DNS rebinding",
-      "description": "Özel IP adresleri içeren DNS yanıtlarını otomatik olarak engelleyerek saldırganların internet üzerinden yerel cihazlarınızın kontrolünü ele geçirmesini önleyin.",
-      "enable": "DNS rebinding'i engelle"
-    },
-    "homograph": {
-      "name": "IDN homografları",
-      "description": "Benzer görünümlü karakterlerle diğer alan adlarını taklit eden uluslararasılaştırılmış alan adlarını (IDN) engelleyin — örneğin Latin alfabesindeki “e” harfinin yerine Kiril alfabesindeki “е” harfinin kullanılması.",
-      "enable": "IDN homograflarını engelle"
-    },
-    "typosquatting": {
-      "name": "Typosquatting",
-      "description": "Tarayıcıya bir web sitesinin adresini yanlış yazan kullanıcıları hedeflemek için kötü niyetli kişiler tarafından kaydedilen alan adlarını engelleyin — örneğin google.com yerine gooogle.com.",
-      "enable": "Typosquatting'i engelle"
-    },
-    "dga": {
-      "name": "Alan adı oluşturma algoritmaları",
-      "description": "Alan adı oluşturma algoritmaları (DGA) tarafından oluşturulan ve çeşitli kötü amaçlı yazılım aileleri tarafından komuta ve kontrol sunucularıyla iletişim kurmak için buluşma noktası olarak kullanılan alan adlarını engelleyin.",
-      "enable": "DGA alan adlarını engelle"
-    },
-    "nrd": {
-      "name": "Yeni kaydedilmiş alan adları",
-      "description": "30 günden daha kısa süre önce kaydedilen alan adlarını engelleyin. Bu alan adlarının tehdit aktörleri tarafından kötü amaçlı kampanyalar başlatmak için tercih edildiği bilinmektedir.",
-      "enable": "Yeni kaydedilmiş alan adlarını engelle"
-    },
-    "ddns": {
-      "name": "Dinamik DNS ana bilgisayar adları",
-      "description": "Dinamik DNS (kısaca DDNS) hizmetleri, kötü niyetli kişilerin herhangi bir doğrulama ve kimlik kontrolü olmaksızın hızlı ve ücretsiz bir şekilde ana bilgisayar adları oluşturmalarına olanak tanır. Meşru amaçlarla kullanılan DDNS ana bilgisayar adları günlük kullanımda pek karşınıza çıkmaz, ancak kötü niyetli olanları kimlik avı kampanyalarında yoğun olarak kullanılır.",
-      "disclaimer": "DDNS kullanıyorsanız bu ayarın DDNS hizmetlerinin kendi web sitelerini veya güncelleme API'lerini engellemeyeceğini unutmayın.",
-      "enable": "Dinamik DNS ana bilgisayar adlarını engelle"
-    },
-    "parked": {
-      "name": "Park edilmiş alan adları",
-      "description": "Park edilmiş alan adları, genellikle reklamlarla dolu ve hiçbir değeri olmayan tek sayfalık web siteleridir. Park edilmiş alan adlarından gelir elde etme yöntemleri, reklam ağları ve yönlendirmeler aracılığıyla ziyaretçileri dolandırıcılıklara, kimlik avı sayfalarına ve kötü amaçlı dosya indirmelerine maruz bırakabilir.",
-      "enable": "Park edilmiş alan adlarını engelle"
-    },
-    "tld": {
-      "name": "Üst seviye alan adları (TLD)",
-      "description": "Belirli TLD'lere ait tüm alan adlarını ve alt alan adlarını engelleyin.",
-      "add": "TLD ekle",
-      "sections": {
-        "spamhaus": "Spamhaus'a göre en çok kötüye kullanılan TLD'ler",
-        "all": "Tüm TLD'ler"
-      }
-    },
-    "csam": {
-      "name": "Çocukların cinsel istismarına ilişkin materyaller (CSAM)",
-      "description": "Canadian Centre for Child Protection tarafından işletilen Project Arachnid'in yardımıyla çocukların cinsel istismarına ilişkin materyaller barındıran alan adlarını engelleyin. Bir alan adı engellendiğinde Project Arachnid'e hiçbir bilgi iletilmez.",
-      "enable": "Çocukların cinsel istismarına ilişkin materyalleri engelle"
-    },
-    "newlyActiveDomains": {
-      "name": "Yeni etkin alan adları",
-      "description": "İlk kez erişilen veya geçmişte düşük etkinlik gösteren alan adlarını engelleyin. Bu koruma, bir alan adına güvenilmeden önce meşru kullanıma ilişkin kanıtlanmış bir geçmiş gerektirerek sıfır gün saldırılarını ve “uyuyan” tehditleri önler; böylece kötü amaçlı alan adlarını önceden “ısındırma” girişimlerini etkisiz hâle getirir.",
-      "enable": "Yeni etkin alan adlarını engelle"
-    },
-    "freeHostingDomains": {
-      "name": "Ücretsiz barındırma alan adları",
-      "description": "Ücretsiz web barındırma hizmetlerinin sağladığı varsayılan alt alan adlarını engelleyin (ör. *.pages.dev, *.vercel.app, *.netlify.app). Bu “ücretsiz barındırma alan adları” (FHD), saldırganlar tarafından kimlik avı siteleri barındırmak ve itibar filtrelerini aşmak için yaygın olarak kötüye kullanılır. Bu ayar, söz konusu sağlayıcıları özel bir alan adıyla kullanan meşru web sitelerini etkilemez.",
-      "enable": "Ücretsiz barındırma alan adlarını engelle"
-    },
-    "tunnelingEndpoints": {
-      "name": "Tünelleme uç noktaları",
-      "description": "Yerel trafiği tüneller aracılığıyla genel internete yönlendiren hizmetleri engelleyin (ör. ngrok, Cloudflare Tunnel). Saldırganlar bu araçları sıklıkla güvenlik duvarlarını aşmak ve altyapılarını gizleyerek rastgele alt alan adlarında kimlik avı sayfaları barındırmak için kullanır.",
-      "enable": "Tünelleme uç noktalarını engelle"
-    },
-    "dataDropServices": {
-      "name": "Veri aktarım hizmetleri",
-      "description": "Metin, dosya ve JSON/yapılandırma verilerini paylaşmaya veya webhook istekleri, DNS sorguları ve e-posta dahil gelen verileri toplamaya yönelik özel hizmetlere erişimi engelleyin. Bu hizmetlerin meşru kullanımları da buna dahildir.",
-      "enable": "Veri aktarım hizmetlerini engelle"
-    },
-    "residentialHosting": {
-      "name": "Konut IP'lerinde barındırma",
-      "description": "Ticari veri merkezleri yerine internet servis sağlayıcılarının (ISP) bireysel abonelere tahsis ettiği IP aralıklarına çözümlenen alan adlarını engelleyin. Meşru web hizmetleri nadiren bireysel internet bağlantılarında barındırılırken botnet C2 sunucuları ve kimlik avı proxy'leri sıklıkla ele geçirilmiş ev yönlendiricilerinde çalışır.",
-      "enable": "Konut IP'lerinde barındırmayı engelle"
-    },
-    "untrustedCertificates": {
-      "name": "Güvenilmeyen sertifikalar",
-      "description": "Güvenilmeyen veya bilinmeyen sertifika yetkilileri tarafından imzalanmış SSL/TLS sertifikaları sunan alan adlarını engelleyin (ör. kendinden imzalı sertifikalar). Meşru web siteleri neredeyse yalnızca güvenilir sertifikalar kullanırken yaygın kötü amaçlı yazılımların komuta ve kontrol (C2) sunucularının %60'a yakını, belge niteliğinde iz bırakmadan trafiğini şifrelemek için kendinden imzalı sertifikalara veya güvenilmeyen yetkililer tarafından verilen sertifikalara dayanır.",
-      "enable": "Güvenilmeyen sertifikaları engelle"
-    },
-    "fastFluxNetworks": {
-      "name": "Fast Flux ağları",
-      "description": "Tespit edilmekten kaçınmak için ele geçirilmiş cihazlardan oluşan dağıtık bir ağ (botnet) üzerinde IP adreslerini hızla değiştiren alan adlarını engelleyin. Bu sezgisel yöntem, DNS yaşam süresinde (Time-To-Live, TTL) ve IP adresi çeşitliliğinde, kötü amaçlı altyapılara özgü olan ve meşru içerik dağıtım ağlarından (CDN) farklılaşan belirli anormallikleri tespit eder.",
-      "enable": "Fast Flux ağlarını engelle"
-    },
-    "dnsDataExfiltration": {
-      "name": "DNS veri sızdırma",
-      "description": "Ağınızdan gizlice veri çıkarmak veya gizli komutlar (C2) almak için DNS protokolünü kullanan alan adlarını engelleyin. Bu sezgisel yöntem, geleneksel güvenlik duvarlarını aşan, yavaş ve küçük miktarlarda gerçekleştirilen veri hırsızlığını ve kötü amaçlı yazılım beacon'larını (Cobalt Strike gibi) tespit edip durdurmak için anormal derecede uzun alt alan adları, yüksek entropi ve alışılmadık sorgu türleri (ör. TXT) gibi DNS sorgu örüntülerini gerçek zamanlı olarak analiz eder.",
-      "enable": "DNS veri sızdırmayı engelle"
-    },
-    "dnsPayloadDelivery": {
-      "name": "DNS yük iletimi",
-      "description": "DNS yanıtlarının cihazlarınıza gizli komutlar veya yükler iletmek için kullanılmasını önleyin. TXT veya NULL gibi, her türlü veriyi taşıyabilen ancak günlük web gezintisi için gerekli olmayan kayıt türlerine yönelik sorgular tamamen engellenir. CNAME zincirleri son adreslerine indirgenerek gizli verileri kodlayabilecek ara kayıtlar kaldırılır. A ve AAAA gibi standart kayıt türlerinde ise normal DNS işlevselliği korunurken birden fazla kayda kodlanmış verileri bozmak için aşırı büyük yanıt bölümleri rastgele kırpılır.",
-      "enable": "DNS yük iletimini engelle"
-    },
-    "decentralizedWebGateways": {
-      "name": "Merkeziyetsiz web ağ geçitleri",
-      "description": "Merkeziyetsiz web'i (ör. IPFS) standart tarayıcılara bağlayan herkese açık ağ geçitlerini engelleyin. Saldırganlar bu hizmetleri “değiştirilemez” kimlik avı sayfaları ve kötü amaçlı yazılımlar barındırmak için yaygın olarak kötüye kullanır. Böylece tehditler, geleneksel yayından kaldırma yöntemlerini ve itibar filtrelerini aşarak varlığını sürdürebilir.",
-      "enable": "Merkeziyetsiz web ağ geçitlerini engelle"
-    },
-    "highRiskTlds": {
-      "name": "Yüksek riskli TLD'ler",
-      "description": "İstatistiksel olarak kötü amaçlı etkinliğin baskın olduğu üst seviye alan adlarını (TLD) otomatik olarak engelleyin — ör. .zip, .mov, .top. Liste, kötüye kullanıma ilişkin küresel itibar verilerine göre gerçek zamanlı olarak güncellenir; manuel yapılandırma gerektirmeden sizi kimlik avı ve spam için kullanılan ucuz, tek kullanımlık alan adlarından oluşan geniş ağlara karşı korur.",
-      "enable": "Yüksek riskli TLD'leri engelle"
-    }
-  },
-  "privacy": {
-    "blocklists": {
-      "name": "Engelleme listeleri",
-      "description": "Tümü gerçek zamanlı olarak güncellenen mevcut en popüler engelleme listelerini kullanarak reklamları ve izleyicileri engelleyin.",
-      "add": "Engelleme listesi ekle",
-      "entries_one": "{{count, number}} girdi",
-      "entries_other": "{{count, number}} girdi",
-      "updated": "<1></1> güncellendi",
-      "blocklists": {
-        "nextdns-recommended": {
-          "name": "NextDNS Reklam ve İzleyici Engelleme Listesi",
-          "description": "Tüm ülkelerde reklamları ve izleyicileri engellemek için kapsamlı bir engelleme listesi. Bu, başlangıç için önerilen engelleme listesidir."
+    "security": {
+        "feeds": {
+            "name": "Tehdit istihbaratı akışları",
+            "description": "Gerçek zamanlı olarak güncellenen en güvenilir tehdit istihbaratı akışlarını bir arada kullanarak kötü amaçlı yazılım dağıttığı, kimlik avı saldırıları başlattığı ve komuta ve kontrol sunucuları barındırdığı bilinen alan adlarını engelleyin.",
+            "enable": "Tehdit istihbaratı akışlarını kullan"
+        },
+        "ai": {
+            "name": "Yapay zekâ destekli tehdit algılama",
+            "description": "Yapay zekâ teknolojimizle tespit edilen milyonlarca tehdidi engelleyin. Tescilli yapay zekâ motorumuz yüzlerce sinyal, terabaytlarca eğitim verisi ve gerçek zamanlı karar verme kabiliyetleriyle baştan sona DNS için tasarlandı. IDN homografları, typosquatting, combosquatting, DGA alan adları, marka taklidi, kimlik bilgisi toplama, kötü amaçlı yazılım dağıtımı ve kötü amaçlı altyapıyı gizlemek için kullanılan paravan web siteleri buna dahildir.",
+            "enable": "Yapay zekâ destekli tehdit algılamayı etkinleştir"
+        },
+        "googleSafeBrowsing": {
+            "name": "Google Güvenli Tarama",
+            "description": "Her gün milyarlarca URL'yi inceleyerek güvenli olmayan web sitelerini arayan Google Güvenli Tarama teknolojisiyle kötü amaçlı yazılım ve kimlik avı alan adlarını engelleyin. Bazı tarayıcılarda yerleşik olan sürümden farklı olarak bu özellik, genel IP adresinizi tehditlerle ilişkilendirmez ve engellemeyi aşmaya izin vermez.",
+            "enable": "Google Güvenli Tarama'yı etkinleştir"
+        },
+        "cryptojacking": {
+            "name": "Kripto korsanlığı",
+            "description": "Cihazlarınızın kripto para madenciliği yapmak için yetkisiz kullanımını önleyin.",
+            "enable": "Kripto korsanlığını engelle"
+        },
+        "dnsRebinding": {
+            "name": "DNS rebinding",
+            "description": "Özel IP adresleri içeren DNS yanıtlarını otomatik olarak engelleyerek saldırganların internet üzerinden yerel cihazlarınızın kontrolünü ele geçirmesini önleyin.",
+            "enable": "DNS rebinding'i engelle"
+        },
+        "homograph": {
+            "name": "IDN homografları",
+            "description": "Benzer görünümlü karakterlerle diğer alan adlarını taklit eden uluslararasılaştırılmış alan adlarını (IDN) engelleyin — örneğin Latin alfabesindeki “e” harfinin yerine Kiril alfabesindeki “е” harfinin kullanılması.",
+            "enable": "IDN homograflarını engelle"
+        },
+        "typosquatting": {
+            "name": "Typosquatting",
+            "description": "Tarayıcıya bir web sitesinin adresini yanlış yazan kullanıcıları hedeflemek için kötü niyetli kişiler tarafından kaydedilen alan adlarını engelleyin — örneğin google.com yerine gooogle.com.",
+            "enable": "Typosquatting'i engelle"
+        },
+        "dga": {
+            "name": "Alan adı oluşturma algoritmaları",
+            "description": "Alan adı oluşturma algoritmaları (DGA) tarafından oluşturulan ve çeşitli kötü amaçlı yazılım aileleri tarafından komuta ve kontrol sunucularıyla iletişim kurmak için buluşma noktası olarak kullanılan alan adlarını engelleyin.",
+            "enable": "DGA alan adlarını engelle"
+        },
+        "nrd": {
+            "name": "Yeni kaydedilmiş alan adları",
+            "description": "30 günden daha kısa süre önce kaydedilen alan adlarını engelleyin. Bu alan adlarının tehdit aktörleri tarafından kötü amaçlı kampanyalar başlatmak için tercih edildiği bilinmektedir.",
+            "enable": "Yeni kaydedilmiş alan adlarını engelle"
+        },
+        "ddns": {
+            "name": "Dinamik DNS ana bilgisayar adları",
+            "description": "Dinamik DNS (kısaca DDNS) hizmetleri, kötü niyetli kişilerin herhangi bir doğrulama ve kimlik kontrolü olmaksızın hızlı ve ücretsiz bir şekilde ana bilgisayar adları oluşturmalarına olanak tanır. Meşru amaçlarla kullanılan DDNS ana bilgisayar adları günlük kullanımda pek karşınıza çıkmaz, ancak kötü niyetli olanları kimlik avı kampanyalarında yoğun olarak kullanılır.",
+            "disclaimer": "DDNS kullanıyorsanız bu ayarın DDNS hizmetlerinin kendi web sitelerini veya güncelleme API'lerini engellemeyeceğini unutmayın.",
+            "enable": "Dinamik DNS ana bilgisayar adlarını engelle"
+        },
+        "parked": {
+            "name": "Park edilmiş alan adları",
+            "description": "Park edilmiş alan adları, genellikle reklamlarla dolu ve hiçbir değeri olmayan tek sayfalık web siteleridir. Park edilmiş alan adlarından gelir elde etme yöntemleri, reklam ağları ve yönlendirmeler aracılığıyla ziyaretçileri dolandırıcılıklara, kimlik avı sayfalarına ve kötü amaçlı dosya indirmelerine maruz bırakabilir.",
+            "enable": "Park edilmiş alan adlarını engelle"
+        },
+        "tld": {
+            "name": "Üst seviye alan adları (TLD)",
+            "description": "Belirli TLD'lere ait tüm alan adlarını ve alt alan adlarını engelleyin.",
+            "add": "TLD ekle",
+            "sections": {
+                "spamhaus": "Spamhaus'a göre en çok kötüye kullanılan TLD'ler",
+                "all": "Tüm TLD'ler"
+            }
+        },
+        "csam": {
+            "name": "Çocukların cinsel istismarına ilişkin materyaller (CSAM)",
+            "description": "Canadian Centre for Child Protection tarafından işletilen Project Arachnid'in yardımıyla çocukların cinsel istismarına ilişkin materyaller barındıran alan adlarını engelleyin. Bir alan adı engellendiğinde Project Arachnid'e hiçbir bilgi iletilmez.",
+            "enable": "Çocukların cinsel istismarına ilişkin materyalleri engelle"
+        },
+        "newlyActiveDomains": {
+            "name": "Yeni etkin alan adları",
+            "description": "İlk kez erişilen veya geçmişte düşük etkinlik gösteren alan adlarını engelleyin. Bu koruma, bir alan adına güvenilmeden önce meşru kullanıma ilişkin kanıtlanmış bir geçmiş gerektirerek sıfır gün saldırılarını ve “uyuyan” tehditleri önler; böylece kötü amaçlı alan adlarını önceden “ısındırma” girişimlerini etkisiz hâle getirir.",
+            "enable": "Yeni etkin alan adlarını engelle"
+        },
+        "freeHostingDomains": {
+            "name": "Ücretsiz barındırma alan adları",
+            "description": "Ücretsiz web barındırma hizmetlerinin sağladığı varsayılan alt alan adlarını engelleyin (ör. *.pages.dev, *.vercel.app, *.netlify.app). Bu “ücretsiz barındırma alan adları” (FHD), saldırganlar tarafından kimlik avı siteleri barındırmak ve itibar filtrelerini aşmak için yaygın olarak kötüye kullanılır. Bu ayar, söz konusu sağlayıcıları özel bir alan adıyla kullanan meşru web sitelerini etkilemez.",
+            "enable": "Ücretsiz barındırma alan adlarını engelle"
+        },
+        "tunnelingEndpoints": {
+            "name": "Tünelleme uç noktaları",
+            "description": "Yerel trafiği tüneller aracılığıyla genel internete yönlendiren hizmetleri engelleyin (ör. ngrok, Cloudflare Tunnel). Saldırganlar bu araçları sıklıkla güvenlik duvarlarını aşmak ve altyapılarını gizleyerek rastgele alt alan adlarında kimlik avı sayfaları barındırmak için kullanır.",
+            "enable": "Tünelleme uç noktalarını engelle"
+        },
+        "dataDropServices": {
+            "name": "Veri aktarım hizmetleri",
+            "description": "Metin, dosya ve JSON/yapılandırma verilerini paylaşmaya veya webhook istekleri, DNS sorguları ve e-posta dahil gelen verileri toplamaya yönelik özel hizmetlere erişimi engelleyin. Bu hizmetlerin meşru kullanımları da buna dahildir.",
+            "enable": "Veri aktarım hizmetlerini engelle"
+        },
+        "residentialHosting": {
+            "name": "Konut IP'lerinde barındırma",
+            "description": "Ticari veri merkezleri yerine internet servis sağlayıcılarının (ISP) bireysel abonelere tahsis ettiği IP aralıklarına çözümlenen alan adlarını engelleyin. Meşru web hizmetleri nadiren bireysel internet bağlantılarında barındırılırken botnet C2 sunucuları ve kimlik avı proxy'leri sıklıkla ele geçirilmiş ev yönlendiricilerinde çalışır.",
+            "enable": "Konut IP'lerinde barındırmayı engelle"
+        },
+        "untrustedCertificates": {
+            "name": "Güvenilmeyen sertifikalar",
+            "description": "Güvenilmeyen veya bilinmeyen sertifika yetkilileri tarafından imzalanmış SSL/TLS sertifikaları sunan alan adlarını engelleyin (ör. kendinden imzalı sertifikalar). Meşru web siteleri neredeyse yalnızca güvenilir sertifikalar kullanırken yaygın kötü amaçlı yazılımların komuta ve kontrol (C2) sunucularının %60'a yakını, belge niteliğinde iz bırakmadan trafiğini şifrelemek için kendinden imzalı sertifikalara veya güvenilmeyen yetkililer tarafından verilen sertifikalara dayanır.",
+            "enable": "Güvenilmeyen sertifikaları engelle"
+        },
+        "fastFluxNetworks": {
+            "name": "Fast Flux ağları",
+            "description": "Tespit edilmekten kaçınmak için ele geçirilmiş cihazlardan oluşan dağıtık bir ağ (botnet) üzerinde IP adreslerini hızla değiştiren alan adlarını engelleyin. Bu sezgisel yöntem, DNS yaşam süresinde (Time-To-Live, TTL) ve IP adresi çeşitliliğinde, kötü amaçlı altyapılara özgü olan ve meşru içerik dağıtım ağlarından (CDN) farklılaşan belirli anormallikleri tespit eder.",
+            "enable": "Fast Flux ağlarını engelle"
+        },
+        "dnsDataExfiltration": {
+            "name": "DNS veri sızdırma",
+            "description": "Ağınızdan gizlice veri çıkarmak veya gizli komutlar (C2) almak için DNS protokolünü kullanan alan adlarını engelleyin. Bu sezgisel yöntem, geleneksel güvenlik duvarlarını aşan, yavaş ve küçük miktarlarda gerçekleştirilen veri hırsızlığını ve kötü amaçlı yazılım beacon'larını (Cobalt Strike gibi) tespit edip durdurmak için anormal derecede uzun alt alan adları, yüksek entropi ve alışılmadık sorgu türleri (ör. TXT) gibi DNS sorgu örüntülerini gerçek zamanlı olarak analiz eder.",
+            "enable": "DNS veri sızdırmayı engelle"
+        },
+        "dnsPayloadDelivery": {
+            "name": "DNS yük iletimi",
+            "description": "DNS yanıtlarının cihazlarınıza gizli komutlar veya yükler iletmek için kullanılmasını önleyin. TXT veya NULL gibi, her türlü veriyi taşıyabilen ancak günlük web gezintisi için gerekli olmayan kayıt türlerine yönelik sorgular tamamen engellenir. CNAME zincirleri son adreslerine indirgenerek gizli verileri kodlayabilecek ara kayıtlar kaldırılır. A ve AAAA gibi standart kayıt türlerinde ise normal DNS işlevselliği korunurken birden fazla kayda kodlanmış verileri bozmak için aşırı büyük yanıt bölümleri rastgele kırpılır.",
+            "enable": "DNS yük iletimini engelle"
+        },
+        "decentralizedWebGateways": {
+            "name": "Merkeziyetsiz web ağ geçitleri",
+            "description": "Merkeziyetsiz web'i (ör. IPFS) standart tarayıcılara bağlayan herkese açık ağ geçitlerini engelleyin. Saldırganlar bu hizmetleri “değiştirilemez” kimlik avı sayfaları ve kötü amaçlı yazılımlar barındırmak için yaygın olarak kötüye kullanır. Böylece tehditler, geleneksel yayından kaldırma yöntemlerini ve itibar filtrelerini aşarak varlığını sürdürebilir.",
+            "enable": "Merkeziyetsiz web ağ geçitlerini engelle"
+        },
+        "highRiskTlds": {
+            "name": "Yüksek riskli TLD'ler",
+            "description": "İstatistiksel olarak kötü amaçlı etkinliğin baskın olduğu üst seviye alan adlarını (TLD) otomatik olarak engelleyin — ör. .zip, .mov, .top. Liste, kötüye kullanıma ilişkin küresel itibar verilerine göre gerçek zamanlı olarak güncellenir; manuel yapılandırma gerektirmeden sizi kimlik avı ve spam için kullanılan ucuz, tek kullanımlık alan adlarından oluşan geniş ağlara karşı korur.",
+            "enable": "Yüksek riskli TLD'leri engelle"
         }
-      },
-      "sortBy": {
-        "popularity": "Popülerlik",
-        "name": "İsim",
-        "entries": "Girdi sayısı",
-        "updated": "Son güncelleme"
-      }
     },
-    "native": {
-      "name": "Yerel izleme koruması",
-      "description": "Cihazdaki etkinliklerinizin geniş bir bölümünü izleyen ve genellikle işletim sistemi düzeyinde çalışan izleyicileri engelleyin. İzlenen bilgiler, ziyaret ettiğiniz tüm web sitelerini, yazdığınız her şeyi veya her an bulunduğunuz konumu içerebilir.",
-      "add": "Ekle",
-      "systems": {
-        "xiaomi": {
-          "name": "Xiaomi",
-          "devices": "Telefonlar ve tabletler, akıllı TV'ler, yönlendiriciler"
+    "privacy": {
+        "blocklists": {
+            "name": "Engelleme listeleri",
+            "description": "Tümü gerçek zamanlı olarak güncellenen mevcut en popüler engelleme listelerini kullanarak reklamları ve izleyicileri engelleyin.",
+            "add": "Engelleme listesi ekle",
+            "entries_one": "{{count, number}} girdi",
+            "entries_other": "{{count, number}} girdi",
+            "updated": "<1></1> güncellendi",
+            "blocklists": {
+                "nextdns-recommended": {
+                    "name": "NextDNS Reklam ve İzleyici Engelleme Listesi",
+                    "description": "Tüm ülkelerde reklamları ve izleyicileri engellemek için kapsamlı bir engelleme listesi. Bu, başlangıç için önerilen engelleme listesidir."
+                }
+            },
+            "sortBy": {
+                "popularity": "Popülerlik",
+                "name": "İsim",
+                "entries": "Girdi sayısı",
+                "updated": "Son güncelleme"
+            }
         },
-        "huawei": {
-          "name": "Huawei",
-          "devices": "Telefonlar ve tabletler"
+        "native": {
+            "name": "Yerel izleme koruması",
+            "description": "Cihazdaki etkinliklerinizin geniş bir bölümünü izleyen ve genellikle işletim sistemi düzeyinde çalışan izleyicileri engelleyin. İzlenen bilgiler, ziyaret ettiğiniz tüm web sitelerini, yazdığınız her şeyi veya her an bulunduğunuz konumu içerebilir.",
+            "add": "Ekle",
+            "systems": {
+                "xiaomi": {
+                    "name": "Xiaomi",
+                    "devices": "Telefonlar ve tabletler, akıllı TV'ler, yönlendiriciler"
+                },
+                "huawei": {
+                    "name": "Huawei",
+                    "devices": "Telefonlar ve tabletler"
+                },
+                "samsung": {
+                    "name": "Samsung",
+                    "devices": "Telefonlar, tabletler, akıllı TV'ler"
+                },
+                "alexa": {
+                    "name": "Alexa",
+                    "devices": "Alexa özellikli cihazlar"
+                },
+                "windows": {
+                    "name": "Windows",
+                    "devices": "Tüm sürümler"
+                },
+                "apple": {
+                    "name": "Apple",
+                    "devices": "iOS, macOS, tvOS"
+                },
+                "roku": {
+                    "name": "Roku",
+                    "devices": "Tüm Roku cihazları"
+                },
+                "sonos": {
+                    "name": "Sonos",
+                    "devices": "Hoparlörler"
+                }
+            }
         },
-        "samsung": {
-          "name": "Samsung",
-          "devices": "Telefonlar, tabletler, akıllı TV'ler"
+        "disguised": {
+            "name": "Gizlenmiş üçüncü taraf izleyicileri engelle",
+            "description": "Tarayıcıların ITP gibi gizlilik korumalarını atlatmak için kendilerini birinci taraf olarak gizleyen üçüncü taraf izleyicileri otomatik olarak algılayın ve engelleyin.",
+            "enable": "Gizlenmiş üçüncü taraf izleyicileri engelle"
         },
-        "alexa": {
-          "name": "Alexa",
-          "devices": "Alexa özellikli cihazlar"
-        },
-        "windows": {
-          "name": "Windows",
-          "devices": "Tüm sürümler"
-        },
-        "apple": {
-          "name": "Apple",
-          "devices": "iOS, macOS, tvOS"
-        },
-        "roku": {
-          "name": "Roku",
-          "devices": "Tüm Roku cihazları"
-        },
-        "sonos": {
-          "name": "Sonos",
-          "devices": "Hoparlörler"
+        "affiliate": {
+            "name": "Ortaklık ve izleme bağlantılarına izin ver",
+            "description": "Fırsat web sitelerinde, e-postalarda veya arama sonuçlarında yaygın olan ortaklık ve izleme alan adlarına izin verin. Bunlar genellikle yalnızca bir bağlantıya elle tıklandıktan sonra çağrılır.",
+            "relay": "IP adresiniz, gizliliğinizi korumak için bu web sitelerinden otomatik olarak gizlenecektir.",
+            "enable": "Ortaklık ve izleme bağlantılarına izin ver"
         }
-      }
     },
-    "disguised": {
-      "name": "Gizlenmiş üçüncü taraf izleyicileri engelle",
-      "description": "Tarayıcıların ITP gibi gizlilik korumalarını atlatmak için kendilerini birinci taraf olarak gizleyen üçüncü taraf izleyicileri otomatik olarak algılayın ve engelleyin.",
-      "enable": "Gizlenmiş üçüncü taraf izleyicileri engelle"
-    },
-    "affiliate": {
-      "name": "Ortaklık ve izleme bağlantılarına izin ver",
-      "description": "Fırsat web sitelerinde, e-postalarda veya arama sonuçlarında yaygın olan ortaklık ve izleme alan adlarına izin verin. Bunlar genellikle yalnızca bir bağlantıya elle tıklandıktan sonra çağrılır.",
-      "relay": "IP adresiniz, gizliliğinizi korumak için bu web sitelerinden otomatik olarak gizlenecektir.",
-      "enable": "Ortaklık ve izleme bağlantılarına izin ver"
-    }
-  },
-  "parentalControl": {
-    "services": {
-      "name": "Web siteleri, uygulamalar ve oyunlar",
-      "description": "Belirli web sitelerine, uygulamalara ve oyunlara erişimi kısıtlayın.",
-      "add": "Web sitesi, uygulama veya oyun ekle",
-      "services": {
-        "9gag": "9GAG",
-        "amazon": "Amazon",
-        "bereal": "BeReal",
-        "blizzard": "Blizzard",
-        "chatgpt": "ChatGPT",
-        "dailymotion": "Dailymotion",
-        "discord": "Discord",
-        "disneyplus": "Disney+",
-        "ebay": "eBay",
-        "facebook": "Facebook",
-        "fortnite": "Fortnite",
-        "google-chat": "Google Chat",
-        "hbomax": "HBO Max",
-        "hulu": "Hulu",
-        "imgur": "Imgur",
-        "instagram": "Instagram",
-        "leagueoflegends": "League of Legends",
-        "mastodon": "Mastodon",
-        "messenger": "Messenger",
-        "minecraft": "Minecraft",
-        "netflix": "Netflix",
-        "pinterest": "Pinterest",
-        "playstation-network": "PlayStation Network",
-        "primevideo": "Prime Video",
-        "reddit": "Reddit",
-        "roblox": "Roblox",
-        "signal": "Signal",
-        "skype": "Skype",
-        "snapchat": "Snapchat",
-        "spotify": "Spotify",
-        "steam": "Steam",
-        "telegram": "Telegram",
-        "tiktok": "TikTok",
-        "tinder": "Tinder",
-        "tumblr": "Tumblr",
-        "twitch": "Twitch",
-        "twitter": "X",
-        "vimeo": "Vimeo",
-        "vk": "VK",
-        "whatsapp": "WhatsApp",
-        "xboxlive": "Xbox",
-        "youtube": "YouTube",
-        "zoom": "Zoom"
-      }
-    },
-    "categories": {
-      "name": "Kategoriler",
-      "description": "Belirli web sitesi ve uygulama kategorilerine erişimi kısıtlayın.",
-      "add": "Kategori ekle",
-      "categories": {
-        "dating": {
-          "name": "Flört",
-          "description": "Tüm flört web sitelerini ve uygulamalarını engeller."
+    "parentalControl": {
+        "services": {
+            "name": "Web siteleri, uygulamalar ve oyunlar",
+            "description": "Belirli web sitelerine, uygulamalara ve oyunlara erişimi kısıtlayın.",
+            "add": "Web sitesi, uygulama veya oyun ekle",
+            "services": {
+                "9gag": "9GAG",
+                "amazon": "Amazon",
+                "bereal": "BeReal",
+                "blizzard": "Blizzard",
+                "chatgpt": "ChatGPT",
+                "dailymotion": "Dailymotion",
+                "discord": "Discord",
+                "disneyplus": "Disney+",
+                "ebay": "eBay",
+                "facebook": "Facebook",
+                "fortnite": "Fortnite",
+                "google-chat": "Google Chat",
+                "hbomax": "HBO Max",
+                "hulu": "Hulu",
+                "imgur": "Imgur",
+                "instagram": "Instagram",
+                "leagueoflegends": "League of Legends",
+                "mastodon": "Mastodon",
+                "messenger": "Messenger",
+                "minecraft": "Minecraft",
+                "netflix": "Netflix",
+                "pinterest": "Pinterest",
+                "playstation-network": "PlayStation Network",
+                "primevideo": "Prime Video",
+                "reddit": "Reddit",
+                "roblox": "Roblox",
+                "signal": "Signal",
+                "skype": "Skype",
+                "snapchat": "Snapchat",
+                "spotify": "Spotify",
+                "steam": "Steam",
+                "telegram": "Telegram",
+                "tiktok": "TikTok",
+                "tinder": "Tinder",
+                "tumblr": "Tumblr",
+                "twitch": "Twitch",
+                "twitter": "X",
+                "vimeo": "Vimeo",
+                "vk": "VK",
+                "whatsapp": "WhatsApp",
+                "xboxlive": "Xbox",
+                "youtube": "YouTube",
+                "zoom": "Zoom"
+            }
         },
-        "gambling": {
-          "name": "Kumar",
-          "description": "Kumar içeriklerini engeller."
-        },
-        "gaming": {
-          "name": "Çevrim içi oyunlar",
-          "description": "Çevrim içi oyun web sitelerini, çevrim içi oyun uygulamalarını ve çevrim içi oyun ağlarını (Xbox, PlayStation Network vb.) engeller."
-        },
-        "piracy": {
-          "name": "Korsanlık",
-          "description": "P2P web sitelerini, protokolleri, telif hakkı ihlal eden akış web sitelerini ve esas olarak telif hakkıyla korunan içeriği yasa dışı bir şekilde dağıtmak için kullanılan genel video barındırma web sitelerini engeller."
-        },
-        "porn": {
-          "name": "Porno",
-          "description": "Yetişkinlere yönelik ve pornografik içeriği engeller. Eskort siteleri, pornhub.com ve benzeri alan adlarını içerir."
-        },
-        "social-networks": {
-          "name": "Sosyal ağlar",
-          "description": "Tüm sosyal ağ sitelerini ve uygulamalarını (Facebook, Instagram, TikTok, Reddit vb.) engeller. Mesajlaşma uygulamalarını engellemez."
-        },
-        "video-streaming": {
-          "name": "Video akışı",
-          "description": "Video akış hizmetlerini (YouTube, Netflix, Disney+, yasa dışı video akış siteleri, porno siteleri vb.) ve video tabanlı sosyal ağları (TikTok vb.) engeller. Bu engelleme, ağınızda bant genişliği kullanımının azaltılmasına da yardımcı olabilir."
-        }
-      }
-    },
-    "recreation": {
-      "name": "Serbest zaman",
-      "start": "Başlangıç saati",
-      "end": "Bitiş saati",
-      "description": "Haftanın her günü için, yukarıdaki web sitelerinin, uygulamaların, oyunların veya kategorilerin bazılarının engellenmeyeceği bir zaman aralığı belirleyin — örneğin, Facebook'a pazartesi ve salı günleri 18:00 ile 20:00 arasında izin verin.",
-      "set": "Serbest zamanı ayarla",
-      "howto": "Serbest zamanı etkinleştirmek için yukarıdaki bölümlerdeki <1></1> düğmesini kullanın."
-    },
-    "safesearch": {
-      "name": "Güvenli Arama",
-      "description": "Resimler ve videolar dahil olmak üzere tüm büyük arama motorlarında yetişkinlere yönelik içeriği filtreleyin. Bu ayrıca, bu özelliği desteklemeyen arama motorlarına erişimi de engelleyecektir.",
-      "enable": "Güvenli Arama'yı zorunlu kıl"
-    },
-    "youtubeRestricted": {
-      "name": "YouTube Kısıtlı Mod",
-      "description": "YouTube'daki yetişkin içerikli videoları filtreleyin ve gömülü yetişkin içerikli videoların diğer web sitelerinde izlenmesini engelleyin. Bu aynı zamanda tüm yorumları da gizleyecektir.",
-      "enable": "YouTube Kısıtlı Mod'u zorunlu kıl"
-    },
-    "bypass": {
-      "name": "Atlatma yöntemlerini engelle",
-      "description": "Ağda NextDNS filtrelemesini atlatmaya yardımcı olabilecek yöntemlerin kullanımını önleyin veya zorlaştırın. Buna VPN'ler, proxy'ler, Tor ile ilgili yazılımlar ve şifreli DNS sağlayıcıları dahildir.",
-      "enable": "Atlatma yöntemlerini engelle"
-    }
-  },
-  "xlist": {
-    "placeholder": "Alan adı ekle...",
-    "errors": {
-      "required": "Bir alan adı girin.",
-      "ip": "Bir IP adresi değil, bir alan adı girin.",
-      "invalid": "Geçerli bir alan adı girin.",
-      "tld": "Görünüşe göre bir TLD'nin tamamını engellemeye çalışıyorsunuz. Lütfen Güvenlik bölümündeki Üst seviye alan adları (TLD) özelliğini kullanın.",
-      "exists": "Bu alan adı zaten ekli."
-    },
-    "empty": "Henüz alan adı yok.",
-    "denylist": {
-      "info": "Bir alan adını engellediğinizde tüm alt alan adları da otomatik olarak engellenir."
-    },
-    "allowlist": {
-      "info": "Bir alan adına izin verdiğinizde tüm alt alan adlarına da otomatik olarak izin verilir. İzin verme, güvenlik özellikleri dahil diğer tüm ayarlardan önceliklidir."
-    }
-  },
-  "analytics": {
-    "counters": {
-      "all_one": "<0>{{count, number}}</0><1>sorgu</1>",
-      "all_other": "<0>{{count, number}}</0><1>sorgu</1>",
-      "blocked_one": "<0>{{count, number}}</0><1>engellenen sorgu</1>",
-      "blocked_other": "<0>{{count, number}}</0><1>engellenen sorgu</1>",
-      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>engellenen sorgu oranı</1></1>"
-    },
-    "queries": {
-      "name": "Sorgular",
-      "description": "Sorgu sayısının zaman içindeki değişimi.",
-      "queries": {
-        "all_one": "<0>{{count, number}}</0><1> sorgu</1>",
-        "all_other": "<0>{{count, number}}</0><1> sorgu</1>",
-        "blocked_one": "<0>{{count, number}}</0><1> engellenen sorgu</1>",
-        "blocked_other": "<0>{{count, number}}</0><1> engellenen sorgu</1>"
-      }
-    },
-    "domains": {
-      "resolved": {
-        "name": "Çözümlenen alan adları",
-        "description": "Herhangi bir ayar tarafından engellenmeden veya manuel olarak izin verildiği için çözümlenen alan adları."
-      },
-      "blocked": {
-        "name": "Engellenen alan adları",
-        "description": "Bir Güvenlik, Gizlilik ve/veya Ebeveyn kontrolü ayarı tarafından ya da manuel olarak engellenen alan adları."
-      },
-      "root": {
-        "name": "Kök alan adları",
-        "description": "Kök alan adları ve tüm alt alan adları için yapılan tüm sorguların toplamı."
-      },
-      "empty": "Henüz alan adı yok."
-    },
-    "reasons": {
-      "name": "Engellenme nedenleri",
-      "description": "En çok sorguyu engelleyen Güvenlik, Gizlilik ve/veya Ebeveyn kontrolü ayarları.",
-      "empty": "Henüz hiçbir alan adı engellenmedi."
-    },
-    "devices": {
-      "name": "Cihazlar",
-      "description": "Sorguları yapan cihazlar.",
-      "empty": "Henüz cihaz yok.",
-      "unidentified": {
-        "name": "Tanımlanmamış cihazlar"
-      }
-    },
-    "ips": {
-      "name": "IP'ler",
-      "description": "Sorguları yapan IP adresleri.",
-      "empty": "Henüz IP yok."
-    },
-    "gafam": {
-      "name": "GAFAM hâkimiyeti",
-      "description": "GAFAM (Google, Amazon, Facebook (artık Meta), Apple ve Microsoft), genellikle farklı adlar altında sunulan birçok popüler hizmetin sahibi olan beş baskın internet şirketidir. Örneğin WhatsApp ve Instagram, Meta'ya aittir.",
-      "queries_one": "{{count, number}} sorgu",
-      "queries_other": "{{count, number}} sorgu",
-      "companies": {
-        "google": {
-          "name": "Google"
-        },
-        "amazon": {
-          "name": "Amazon"
-        },
-        "facebook": {
-          "name": "Meta"
-        },
-        "apple": {
-          "name": "Apple"
-        },
-        "microsoft": {
-          "name": "Microsoft"
-        },
-        "others": {
-          "name": "Diğerleri"
-        }
-      }
-    },
-    "encrypted": {
-      "name": "Şifreli DNS",
-      "description": "Şifreli bir aktarım kullanılarak yapılan sorguların yüzdesi (DNS-over-HTTPS, DNS-over-TLS veya resmi NextDNS uygulamaları).",
-      "empty": "Henüz sorgu yok."
-    },
-    "dnssec": {
-      "name": "DNSSEC",
-      "description": "DNSSEC ile doğrulanan sorguların yüzdesi.",
-      "empty": "Henüz sorgu yok."
-    },
-    "destination": {
-      "name": "Trafik hedefi",
-      "description": "DNS sorgularınıza göre tahmin edilen hedef ülkeler.",
-      "queries_one": "{{count, number}} sorgu",
-      "queries_other": "{{count, number}} sorgu",
-      "topDomains": "Başlıca alan adları"
-    }
-  },
-  "logs": {
-    "blockedOnly": "Yalnızca engellenen sorgular",
-    "raw": "Ham DNS günlükleri",
-    "empty": "Henüz günlük yok.",
-    "log": {
-      "actionBlock": "Engelle",
-      "actionAllow": "İzin ver",
-      "dnssec": "DNSSEC ile doğrulandı.",
-      "clients": {
-        "nextdns-ios": "iOS için NextDNS",
-        "nextdns-android": "Android için NextDNS",
-        "nextdns-macos": "macOS için NextDNS",
-        "nextdns-windows": "Windows için NextDNS",
-        "nextdns-cli": "NextDNS CLI istemcisi",
-        "nextdns-chromeos": "ChromeOS için NextDNS",
-        "firefox": "Firefox",
-        "google-chrome": "Google Chrome",
-        "dnscrypt": "DNSCrypt",
-        "intra": "Intra",
-        "surge": "Surge",
-        "https-dns-proxy": "https_dns_proxy",
-        "mikrotik": "MikroTik",
-        "apple-profile": "Apple Konfigürasyon Profili",
-        "yogadns": "YogaDNS",
-        "tailscale": "Tailscale"
-      },
-      "blockedBy": "<1>{{lists, list}}</1> tarafından engellendi.",
-      "allowedBy": "<1>{{lists, list}}</1> tarafından izin verildi.",
-      "manual": {
-        "deny": "Manuel olarak engellendi.",
-        "allow": "Manuel olarak izin verildi."
-      },
-      "insights": {
-        "show": "İzleyici analizlerini göster",
-        "hide": "İzleyici analizlerini gizle",
         "categories": {
-          "advertising": {
-            "description": "Veri toplama, davranış analizi veya yeniden hedefleme gibi reklam veya reklamla ilgili hizmetler sağlar."
-          },
-          "comments": {
-            "description": "Makaleler ve ürün incelemeleri için yorum bölümlerini etkinleştirir."
-          },
-          "customer_interaction": {
-            "description": "Sohbet, e-posta mesajlaşma, müşteri desteği ve diğer etkileşim araçlarını içerir."
-          },
-          "essential": {
-            "description": "Bir web sitesinin işlevselliği için kritik olan etiket yöneticilerini, gizlilik bildirimlerini ve teknolojileri içerir."
-          },
-          "adult_advertsing": {
-            "description": "Genellikle yetişkin içerikli sitelerde görünen reklamları sunar."
-          },
-          "site_analytics": {
-            "description": "Site kullanımı ve performansıyla ilgili verileri toplar ve analiz eder."
-          },
-          "social_media": {
-            "description": "Sosyal medya siteleriyle ilgili özellikleri bütünleştirir."
-          },
-          "audio_video_player": {
-            "description": "Web sitelerinin video ve ses içeriğini yayınlamasını, dağıtmasını ve optimize etmesini sağlar."
-          },
-          "cdn": {
-            "description": "Farklı site araçları ve genellikle birçok farklı müşteri için kaynaklar sağlayan içerik dağıtım ağı."
-          },
-          "misc": {
-            "description": "Bu izleyici diğer kategorilere uymuyor veya henüz etiketlenmemiş."
-          },
-          "pornvertising": {
-            "description": "Genellikle yetişkin içerikli sitelerde görünen reklamları sunar."
-          },
-          "hosting": {
-            "description": "Bu, içerik sağlayıcı veya site sahibi tarafından kullanılan bir hizmettir."
-          },
-          "extensions": {
-            "description": "Kullanıcı cihazlarında bulunan ve tarayıcı trafiğinin arasına girerek trafiği yakalayıp analiz edebilen yazılım (ortadaki adam)."
-          }
+            "name": "Kategoriler",
+            "description": "Belirli web sitesi ve uygulama kategorilerine erişimi kısıtlayın.",
+            "add": "Kategori ekle",
+            "categories": {
+                "dating": {
+                    "name": "Flört",
+                    "description": "Tüm flört web sitelerini ve uygulamalarını engeller."
+                },
+                "gambling": {
+                    "name": "Kumar",
+                    "description": "Kumar içeriklerini engeller."
+                },
+                "gaming": {
+                    "name": "Çevrim içi oyunlar",
+                    "description": "Çevrim içi oyun web sitelerini, çevrim içi oyun uygulamalarını ve çevrim içi oyun ağlarını (Xbox, PlayStation Network vb.) engeller."
+                },
+                "piracy": {
+                    "name": "Korsanlık",
+                    "description": "P2P web sitelerini, protokolleri, telif hakkı ihlal eden akış web sitelerini ve esas olarak telif hakkıyla korunan içeriği yasa dışı bir şekilde dağıtmak için kullanılan genel video barındırma web sitelerini engeller."
+                },
+                "porn": {
+                    "name": "Porno",
+                    "description": "Yetişkinlere yönelik ve pornografik içeriği engeller. Eskort siteleri, pornhub.com ve benzeri alan adlarını içerir."
+                },
+                "social-networks": {
+                    "name": "Sosyal ağlar",
+                    "description": "Tüm sosyal ağ sitelerini ve uygulamalarını (Facebook, Instagram, TikTok, Reddit vb.) engeller. Mesajlaşma uygulamalarını engellemez."
+                },
+                "video-streaming": {
+                    "name": "Video akışı",
+                    "description": "Video akış hizmetlerini (YouTube, Netflix, Disney+, yasa dışı video akış siteleri, porno siteleri vb.) ve video tabanlı sosyal ağları (TikTok vb.) engeller. Bu engelleme, ağınızda bant genişliği kullanımının azaltılmasına da yardımcı olabilir."
+                }
+            }
         },
-        "prevalence": {
-          "intensity": {
-            "dangerously": "Tehlikeli şekilde yaygın",
-            "extremely": "Son derece yaygın",
-            "very": "Çok yaygın",
-            "commonly": "Yaygın",
-            "relatively": "Nispeten yaygın"
-          },
-          "summary": "{{prevalence}} <2>(web trafiğinin {{percent, percentage}} oranındaki kısmını izler)</2>"
+        "recreation": {
+            "name": "Serbest zaman",
+            "start": "Başlangıç saati",
+            "end": "Bitiş saati",
+            "description": "Haftanın her günü için, yukarıdaki web sitelerinin, uygulamaların, oyunların veya kategorilerin bazılarının engellenmeyeceği bir zaman aralığı belirleyin — örneğin, Facebook'a pazartesi ve salı günleri 18:00 ile 20:00 arasında izin verin.",
+            "set": "Serbest zamanı ayarla",
+            "howto": "Serbest zamanı etkinleştirmek için yukarıdaki bölümlerdeki <1></1> düğmesini kullanın."
         },
-        "ownedBy": "<0>Sahibi: </0><1>{{company}}</1>",
-        "source": "İzleyici analizlerinin kaynağı:"
-      }
-    },
-    "settings": "Günlük seçenekleri",
-    "streaming": "Canlı günlük güncellemeleri",
-    "toggleTimeFormat": "Zaman damgası biçimini değiştir"
-  },
-  "deviceSelector": {
-    "all": "Tüm cihazlar",
-    "howto": "Kurulum sayfasında cihazlarınızı nasıl tanımlayacağınızı öğrenin."
-  },
-  "timeRangeSelector": {
-    "ranges": {
-      "30m": "Son 30 dakika",
-      "6h": "Son 6 saat",
-      "24h": "Son 24 saat",
-      "7d": "Son 7 gün",
-      "30d": "Son 30 gün",
-      "3M": "Son 3 ay"
-    }
-  },
-  "settings": {
-    "name": {
-      "name": "İsim",
-      "description": "Bu profil için bir isim seçin."
-    },
-    "logs": {
-      "name": "Günlükler",
-      "description": "Günlük ayarlarınızda ince ayar yapın.",
-      "enable": "Günlükleri etkinleştir",
-      "privacy": {
-        "name": "Gizlilik düzenlemeleri",
-        "ip": "İstemci IP adreslerini kaydet",
-        "domains": "Alan adlarını kaydet"
-      },
-      "retention": {
-        "name": "Saklama süresi",
-        "options": {
-          "1h": "1 saat",
-          "6h": "6 saat",
-          "1d": "1 gün",
-          "1w": "1 hafta",
-          "1m": "1 ay",
-          "3m": "3 ay",
-          "6m": "6 ay",
-          "1y": "1 yıl",
-          "2y": "2 yıl"
-        }
-      },
-      "location": {
-        "name": "Depolama konumu",
-        "locations": {
-          "us": {
-            "name": "Amerika Birleşik Devletleri",
-            "description": "Günlükler Amerika Birleşik Devletleri'nde saklanacaktır. Varsayılan seçenek budur."
-          },
-          "eu": {
-            "name": "Avrupa Birliği",
-            "description": "Günlükler, Avrupa Birliği üye devletlerinde saklanacaktır."
-          },
-          "ch": {
-            "name": "İsviçre",
-            "description": "Günlükler, güçlü gizlilik yasalarıyla bilinen bir yetki alanı olan İsviçre'nin Zürih şehrinde saklanacaktır."
-          }
+        "safesearch": {
+            "name": "Güvenli Arama",
+            "description": "Resimler ve videolar dahil olmak üzere tüm büyük arama motorlarında yetişkinlere yönelik içeriği filtreleyin. Bu ayrıca, bu özelliği desteklemeyen arama motorlarına erişimi de engelleyecektir.",
+            "enable": "Güvenli Arama'yı zorunlu kıl"
         },
-        "confirm": {
-          "title": "Depolama konumunu değiştir",
-          "text": "Günlüklerin depolama konumunu değiştirirseniz bu profile ait tüm geçmiş günlükler ve analizler silinir."
+        "youtubeRestricted": {
+            "name": "YouTube Kısıtlı Mod",
+            "description": "YouTube'daki yetişkin içerikli videoları filtreleyin ve gömülü yetişkin içerikli videoların diğer web sitelerinde izlenmesini engelleyin. Bu aynı zamanda tüm yorumları da gizleyecektir.",
+            "enable": "YouTube Kısıtlı Mod'u zorunlu kıl"
+        },
+        "bypass": {
+            "name": "Atlatma yöntemlerini engelle",
+            "description": "Ağda NextDNS filtrelemesini atlatmaya yardımcı olabilecek yöntemlerin kullanımını önleyin veya zorlaştırın. Buna VPN'ler, proxy'ler, Tor ile ilgili yazılımlar ve şifreli DNS sağlayıcıları dahildir.",
+            "enable": "Atlatma yöntemlerini engelle"
         }
-      },
-      "download": {
-        "button": "Günlükleri indir"
-      },
-      "clear": {
-        "button": "Günlükleri temizle",
-        "confirm": {
-          "text": "Bu profile ait tüm günlükleri temizlemek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
-          "submit": "Temizle"
-        }
-      }
     },
-    "blockpage": {
-      "name": "Engelleme sayfası",
-      "description": "Bir alan adı engellendiğinde engelleme sayfası gösterin. Bu, sayfa yükleme süresini biraz artırabilir ve bazı durumlarda HTTPS uyarısı görünebilir. Devre dışı bırakıldığında engellenen sorgular belirtilmemiş adresle (0.0.0.0 veya ::) yanıtlanır.",
-      "enable": "Engelleme sayfasını etkinleştir",
-      "ca": {
-        "name": "NextDNS kök sertifika yetkilisi",
-        "description": "<1>{{link}}</1> adresindeki kök sertifika yetkilimizi yükleyip güvenilir olarak işaretleyerek engelleme sayfası yüklenirken görünen HTTPS uyarısını kaldırın. Bunun nasıl yapılacağına ilişkin talimatları <3>buradan</3> okuyun."
-      }
-    },
-    "performance": {
-      "name": "Performans",
-      "description": "Web'de gezinmenizi hızlandırın.",
-      "ecs": {
-        "name": "Anonimleştirilmiş EDNS istemci alt ağı",
-        "description": "IP adresinizi ifşa etmeden içerik dağıtım ağlarından veri dağıtımını hızlandırın.",
-        "enable": "Anonimleştirilmiş EDNS istemci alt ağını etkinleştir"
-      },
-      "cache": {
-        "name": "Önbellek artırma",
-        "description": "Minimum TTL (yaşam süresi) uygulayarak DNS sorgularını en aza indirin.",
-        "enable": "Önbellek artırmayı etkinleştir"
-      },
-      "flatten": {
-        "name": "CNAME düzleştirme",
-        "description": "CNAME kayıtlarını takip eden çözümleyicilerin gereksiz sorgular yapmasını ve günlükleri ara alan adlarıyla doldurmasını önleyin.",
-        "enable": "CNAME düzleştirmeyi etkinleştir"
-      }
-    },
-    "ageVerification": {
-      "name": "Yaş doğrulamasını atla",
-      "description": "Yetişkin içerik siteleri gibi bazı web sitelerinin erişime izin vermeden önce ziyaretçilerin yaşını doğrulamak için kullandığı yaş doğrulama kontrollerini otomatik olarak atlayın.",
-      "acknowledgment": "Bu özelliği etkinleştirerek içeriğe erişmek için gereken yasal yaşta olduğunuzu kabul edersiniz."
-    },
-    "web3": {
-      "name": "Web3",
-      "description": "Web3, blok zinciri tabanlı alan adı kayıt sistemleri (ör. Ethereum Name Service) ve dağıtık içerik depolama ve dağıtım ağları (ör. IPFS) gibi yenilikçi teknolojilerden oluşan, merkezi olmayan ve sansüre dirençli bir çevrim içi ekosistemi ifade eder. Etkinleştirildiğinde NextDNS, bu yeni web için filtresiz bir ağ geçidi görevi görür ve hiçbir şey yüklemeden onu doğrudan deneyimlemenizi sağlar.",
-      "tips": "Çoğu tarayıcı şu anda yalnızca klasik üst seviye alan adlarını desteklediğinden, bir Web3 alan adına doğrudan erişmek için sonuna eğik çizgi (“<1>/</1>”) ekleyin (örneğin “<5>vitalik.eth</5>” yerine “<3>vitalik.eth/</3>”).",
-      "enable": "Web3'ü etkinleştir"
-    },
-    "rewrites": {
-      "name": "Yeniden yazmalar",
-      "description": "Herhangi bir alan adı için DNS yanıtını ayarlayın veya geçersiz kılın. Bu yeniden yazmalar alt alan adları için de geçerlidir ve yerel IP adresleri yanıt olarak desteklenir.",
-      "new": "Yeni yeniden yazma",
-      "form": {
-        "domain": {
-          "label": "Alan adı",
-          "placeholder": "myprinter.lan, myinternetbox.com, ...",
-          "errors": {
+    "xlist": {
+        "placeholder": "Alan adı ekle...",
+        "errors": {
             "required": "Bir alan adı girin.",
             "ip": "Bir IP adresi değil, bir alan adı girin.",
             "invalid": "Geçerli bir alan adı girin.",
-            "taken": "Bu alan adı için zaten bir yeniden yazma kuralınız var."
-          }
+            "tld": "Görünüşe göre bir TLD'nin tamamını engellemeye çalışıyorsunuz. Lütfen Güvenlik bölümündeki Üst seviye alan adları (TLD) özelliğini kullanın.",
+            "exists": "Bu alan adı zaten ekli."
         },
-        "answer": {
-          "label": "Yanıt",
-          "placeholder": "1.2.3.4, sub.example.org, ...",
-          "errors": {
-            "required": "Bir yanıt girin.",
-            "invalid": "Yanıt geçerli bir IP adresi veya alan adı olmalıdır."
-          }
-        }
-      }
-    },
-    "access": {
-      "name": "Erişim",
-      "description": "Başkalarına bu profili düzenleme veya yalnızca görüntüleme yetkisi verin.",
-      "roles": {
-        "editor": "Editör",
-        "viewer": "Görüntüleyici"
-      },
-      "pending": "Davet gönderildi",
-      "form": {
-        "email": {
-          "label": "E-posta",
-          "errors": {
-            "required": "Bir e-posta adresi girin.",
-            "invalid": "Geçerli bir e-posta adresi girin.",
-            "duplicate": "Bu e-posta adresi zaten davet edildi."
-          }
+        "empty": "Henüz alan adı yok.",
+        "denylist": {
+            "info": "Bir alan adını engellediğinizde tüm alt alan adları da otomatik olarak engellenir."
         },
-        "role": {
-          "label": "Rol"
+        "allowlist": {
+            "info": "Bir alan adına izin verdiğinizde tüm alt alan adlarına da otomatik olarak izin verilir. İzin verme, güvenlik özellikleri dahil diğer tüm ayarlardan önceliklidir."
         }
-      }
     },
-    "duplicate": {
-      "button": "<1>{{name}}</1> profilini kopyala",
-      "description": "Bu profilin tüm ayarlarını yeni bir profile kopyalayın.",
-      "form": {
+    "analytics": {
+        "counters": {
+            "all_one": "<0>{{count, number}}</0><1>sorgu</1>",
+            "all_other": "<0>{{count, number}}</0><1>sorgu</1>",
+            "blocked_one": "<0>{{count, number}}</0><1>engellenen sorgu</1>",
+            "blocked_other": "<0>{{count, number}}</0><1>engellenen sorgu</1>",
+            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>engellenen sorgu oranı</1></1>"
+        },
+        "queries": {
+            "name": "Sorgular",
+            "description": "Sorgu sayısının zaman içindeki değişimi.",
+            "queries": {
+                "all_one": "<0>{{count, number}}</0><1> sorgu</1>",
+                "all_other": "<0>{{count, number}}</0><1> sorgu</1>",
+                "blocked_one": "<0>{{count, number}}</0><1> engellenen sorgu</1>",
+                "blocked_other": "<0>{{count, number}}</0><1> engellenen sorgu</1>"
+            }
+        },
+        "domains": {
+            "resolved": {
+                "name": "Çözümlenen alan adları",
+                "description": "Herhangi bir ayar tarafından engellenmeden veya manuel olarak izin verildiği için çözümlenen alan adları."
+            },
+            "blocked": {
+                "name": "Engellenen alan adları",
+                "description": "Bir Güvenlik, Gizlilik ve/veya Ebeveyn kontrolü ayarı tarafından ya da manuel olarak engellenen alan adları."
+            },
+            "root": {
+                "name": "Kök alan adları",
+                "description": "Kök alan adları ve tüm alt alan adları için yapılan tüm sorguların toplamı."
+            },
+            "empty": "Henüz alan adı yok."
+        },
+        "reasons": {
+            "name": "Engellenme nedenleri",
+            "description": "En çok sorguyu engelleyen Güvenlik, Gizlilik ve/veya Ebeveyn kontrolü ayarları.",
+            "empty": "Henüz hiçbir alan adı engellenmedi."
+        },
+        "devices": {
+            "name": "Cihazlar",
+            "description": "Sorguları yapan cihazlar.",
+            "empty": "Henüz cihaz yok.",
+            "unidentified": {
+                "name": "Tanımlanmamış cihazlar"
+            }
+        },
+        "ips": {
+            "name": "IP'ler",
+            "description": "Sorguları yapan IP adresleri.",
+            "empty": "Henüz IP yok."
+        },
+        "gafam": {
+            "name": "GAFAM hâkimiyeti",
+            "description": "GAFAM (Google, Amazon, Facebook (artık Meta), Apple ve Microsoft), genellikle farklı adlar altında sunulan birçok popüler hizmetin sahibi olan beş baskın internet şirketidir. Örneğin WhatsApp ve Instagram, Meta'ya aittir.",
+            "queries_one": "{{count, number}} sorgu",
+            "queries_other": "{{count, number}} sorgu",
+            "companies": {
+                "google": {
+                    "name": "Google"
+                },
+                "amazon": {
+                    "name": "Amazon"
+                },
+                "facebook": {
+                    "name": "Meta"
+                },
+                "apple": {
+                    "name": "Apple"
+                },
+                "microsoft": {
+                    "name": "Microsoft"
+                },
+                "others": {
+                    "name": "Diğerleri"
+                }
+            }
+        },
+        "encrypted": {
+            "name": "Şifreli DNS",
+            "description": "Şifreli bir aktarım kullanılarak yapılan sorguların yüzdesi (DNS-over-HTTPS, DNS-over-TLS veya resmi NextDNS uygulamaları).",
+            "empty": "Henüz sorgu yok."
+        },
+        "dnssec": {
+            "name": "DNSSEC",
+            "description": "DNSSEC ile doğrulanan sorguların yüzdesi.",
+            "empty": "Henüz sorgu yok."
+        },
+        "destination": {
+            "name": "Trafik hedefi",
+            "description": "DNS sorgularınıza göre tahmin edilen hedef ülkeler.",
+            "queries_one": "{{count, number}} sorgu",
+            "queries_other": "{{count, number}} sorgu",
+            "topDomains": "Başlıca alan adları"
+        }
+    },
+    "logs": {
+        "blockedOnly": "Yalnızca engellenen sorgular",
+        "raw": "Ham DNS günlükleri",
+        "empty": "Henüz günlük yok.",
+        "log": {
+            "actionBlock": "Engelle",
+            "actionAllow": "İzin ver",
+            "dnssec": "DNSSEC ile doğrulandı.",
+            "clients": {
+                "nextdns-ios": "iOS için NextDNS",
+                "nextdns-android": "Android için NextDNS",
+                "nextdns-macos": "macOS için NextDNS",
+                "nextdns-windows": "Windows için NextDNS",
+                "nextdns-cli": "NextDNS CLI istemcisi",
+                "nextdns-chromeos": "ChromeOS için NextDNS",
+                "firefox": "Firefox",
+                "google-chrome": "Google Chrome",
+                "dnscrypt": "DNSCrypt",
+                "intra": "Intra",
+                "surge": "Surge",
+                "https-dns-proxy": "https_dns_proxy",
+                "mikrotik": "MikroTik",
+                "apple-profile": "Apple Konfigürasyon Profili",
+                "yogadns": "YogaDNS",
+                "tailscale": "Tailscale"
+            },
+            "blockedBy": "<1>{{lists, list}}</1> tarafından engellendi.",
+            "allowedBy": "<1>{{lists, list}}</1> tarafından izin verildi.",
+            "manual": {
+                "deny": "Manuel olarak engellendi.",
+                "allow": "Manuel olarak izin verildi."
+            },
+            "insights": {
+                "show": "İzleyici analizlerini göster",
+                "hide": "İzleyici analizlerini gizle",
+                "categories": {
+                    "advertising": {
+                        "description": "Veri toplama, davranış analizi veya yeniden hedefleme gibi reklam veya reklamla ilgili hizmetler sağlar."
+                    },
+                    "comments": {
+                        "description": "Makaleler ve ürün incelemeleri için yorum bölümlerini etkinleştirir."
+                    },
+                    "customer_interaction": {
+                        "description": "Sohbet, e-posta mesajlaşma, müşteri desteği ve diğer etkileşim araçlarını içerir."
+                    },
+                    "essential": {
+                        "description": "Bir web sitesinin işlevselliği için kritik olan etiket yöneticilerini, gizlilik bildirimlerini ve teknolojileri içerir."
+                    },
+                    "adult_advertsing": {
+                        "description": "Genellikle yetişkin içerikli sitelerde görünen reklamları sunar."
+                    },
+                    "site_analytics": {
+                        "description": "Site kullanımı ve performansıyla ilgili verileri toplar ve analiz eder."
+                    },
+                    "social_media": {
+                        "description": "Sosyal medya siteleriyle ilgili özellikleri bütünleştirir."
+                    },
+                    "audio_video_player": {
+                        "description": "Web sitelerinin video ve ses içeriğini yayınlamasını, dağıtmasını ve optimize etmesini sağlar."
+                    },
+                    "cdn": {
+                        "description": "Farklı site araçları ve genellikle birçok farklı müşteri için kaynaklar sağlayan içerik dağıtım ağı."
+                    },
+                    "misc": {
+                        "description": "Bu izleyici diğer kategorilere uymuyor veya henüz etiketlenmemiş."
+                    },
+                    "pornvertising": {
+                        "description": "Genellikle yetişkin içerikli sitelerde görünen reklamları sunar."
+                    },
+                    "hosting": {
+                        "description": "Bu, içerik sağlayıcı veya site sahibi tarafından kullanılan bir hizmettir."
+                    },
+                    "extensions": {
+                        "description": "Kullanıcı cihazlarında bulunan ve tarayıcı trafiğinin arasına girerek trafiği yakalayıp analiz edebilen yazılım (ortadaki adam)."
+                    }
+                },
+                "prevalence": {
+                    "intensity": {
+                        "dangerously": "Tehlikeli şekilde yaygın",
+                        "extremely": "Son derece yaygın",
+                        "very": "Çok yaygın",
+                        "commonly": "Yaygın",
+                        "relatively": "Nispeten yaygın"
+                    },
+                    "summary": "{{prevalence}} <2>(web trafiğinin {{percent, percentage}} oranındaki kısmını izler)</2>"
+                },
+                "ownedBy": "<0>Sahibi: </0><1>{{company}}</1>",
+                "source": "İzleyici analizlerinin kaynağı:"
+            }
+        },
+        "settings": "Günlük seçenekleri",
+        "streaming": "Canlı günlük güncellemeleri",
+        "toggleTimeFormat": "Zaman damgası biçimini değiştir"
+    },
+    "deviceSelector": {
+        "all": "Tüm cihazlar",
+        "howto": "Kurulum sayfasında cihazlarınızı nasıl tanımlayacağınızı öğrenin."
+    },
+    "timeRangeSelector": {
+        "ranges": {
+            "30m": "Son 30 dakika",
+            "6h": "Son 6 saat",
+            "24h": "Son 24 saat",
+            "7d": "Son 7 gün",
+            "30d": "Son 30 gün",
+            "3M": "Son 3 ay"
+        }
+    },
+    "settings": {
         "name": {
-          "label": "İsim",
-          "placeholder": "Ev, Çocuk, Ofis, ...",
-          "errors": {
-            "required": "Bir isim girin.",
-            "taken": "Zaten bu isimde bir profiliniz var."
-          }
+            "name": "İsim",
+            "description": "Bu profil için bir isim seçin."
         },
-        "button": "Kopyala"
-      }
-    },
-    "delete": {
-      "button": "<1>{{name}}</1> profilini sil",
-      "warning": "Bu işlem, bu profili ve onunla ilişkili tüm günlükleri kalıcı olarak silecektir.",
-      "confirm": {
-        "text": "<1>{{name}}</1> profilini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
-      }
-    },
-    "leave": {
-      "button": "<1>{{name}}</1> profilinden ayrıl",
-      "warning": "Bu profile erişimi kaybedeceksiniz.",
-      "confirm": {
-        "text": "<1>{{name}}</1> profilinden ayrılmak istediğinizden emin misiniz? Bu işlem geri alınamaz."
-      }
+        "logs": {
+            "name": "Günlükler",
+            "description": "Günlük ayarlarınızda ince ayar yapın.",
+            "enable": "Günlükleri etkinleştir",
+            "privacy": {
+                "name": "Gizlilik düzenlemeleri",
+                "ip": "İstemci IP adreslerini kaydet",
+                "domains": "Alan adlarını kaydet"
+            },
+            "retention": {
+                "name": "Saklama süresi",
+                "options": {
+                    "1h": "1 saat",
+                    "6h": "6 saat",
+                    "1d": "1 gün",
+                    "1w": "1 hafta",
+                    "1m": "1 ay",
+                    "3m": "3 ay",
+                    "6m": "6 ay",
+                    "1y": "1 yıl",
+                    "2y": "2 yıl"
+                }
+            },
+            "location": {
+                "name": "Depolama konumu",
+                "locations": {
+                    "us": {
+                        "name": "Amerika Birleşik Devletleri",
+                        "description": "Günlükler Amerika Birleşik Devletleri'nde saklanacaktır. Varsayılan seçenek budur."
+                    },
+                    "eu": {
+                        "name": "Avrupa Birliği",
+                        "description": "Günlükler, Avrupa Birliği üye devletlerinde saklanacaktır."
+                    },
+                    "ch": {
+                        "name": "İsviçre",
+                        "description": "Günlükler, güçlü gizlilik yasalarıyla bilinen bir yetki alanı olan İsviçre'nin Zürih şehrinde saklanacaktır."
+                    }
+                },
+                "confirm": {
+                    "title": "Depolama konumunu değiştir",
+                    "text": "Günlüklerin depolama konumunu değiştirirseniz bu profile ait tüm geçmiş günlükler ve analizler silinir."
+                }
+            },
+            "download": {
+                "button": "Günlükleri indir"
+            },
+            "clear": {
+                "button": "Günlükleri temizle",
+                "confirm": {
+                    "text": "Bu profile ait tüm günlükleri temizlemek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+                    "submit": "Temizle"
+                }
+            }
+        },
+        "blockpage": {
+            "name": "Engelleme sayfası",
+            "description": "Bir alan adı engellendiğinde engelleme sayfası gösterin. Bu, sayfa yükleme süresini biraz artırabilir ve bazı durumlarda HTTPS uyarısı görünebilir. Devre dışı bırakıldığında engellenen sorgular belirtilmemiş adresle (0.0.0.0 veya ::) yanıtlanır.",
+            "enable": "Engelleme sayfasını etkinleştir",
+            "ca": {
+                "name": "NextDNS kök sertifika yetkilisi",
+                "description": "<1>{{link}}</1> adresindeki kök sertifika yetkilimizi yükleyip güvenilir olarak işaretleyerek engelleme sayfası yüklenirken görünen HTTPS uyarısını kaldırın. Bunun nasıl yapılacağına ilişkin talimatları <3>buradan</3> okuyun."
+            }
+        },
+        "performance": {
+            "name": "Performans",
+            "description": "Web'de gezinmenizi hızlandırın.",
+            "ecs": {
+                "name": "Anonimleştirilmiş EDNS istemci alt ağı",
+                "description": "IP adresinizi ifşa etmeden içerik dağıtım ağlarından veri dağıtımını hızlandırın.",
+                "enable": "Anonimleştirilmiş EDNS istemci alt ağını etkinleştir"
+            },
+            "cache": {
+                "name": "Önbellek artırma",
+                "description": "Minimum TTL (yaşam süresi) uygulayarak DNS sorgularını en aza indirin.",
+                "enable": "Önbellek artırmayı etkinleştir"
+            },
+            "flatten": {
+                "name": "CNAME düzleştirme",
+                "description": "CNAME kayıtlarını takip eden çözümleyicilerin gereksiz sorgular yapmasını ve günlükleri ara alan adlarıyla doldurmasını önleyin.",
+                "enable": "CNAME düzleştirmeyi etkinleştir"
+            }
+        },
+        "ageVerification": {
+            "name": "Yaş doğrulamasını atla",
+            "description": "Yetişkin içerik siteleri gibi bazı web sitelerinin erişime izin vermeden önce ziyaretçilerin yaşını doğrulamak için kullandığı yaş doğrulama kontrollerini otomatik olarak atlayın.",
+            "acknowledgment": "Bu özelliği etkinleştirerek içeriğe erişmek için gereken yasal yaşta olduğunuzu kabul edersiniz."
+        },
+        "web3": {
+            "name": "Web3",
+            "description": "Web3, blok zinciri tabanlı alan adı kayıt sistemleri (ör. Ethereum Name Service) ve dağıtık içerik depolama ve dağıtım ağları (ör. IPFS) gibi yenilikçi teknolojilerden oluşan, merkezi olmayan ve sansüre dirençli bir çevrim içi ekosistemi ifade eder. Etkinleştirildiğinde NextDNS, bu yeni web için filtresiz bir ağ geçidi görevi görür ve hiçbir şey yüklemeden onu doğrudan deneyimlemenizi sağlar.",
+            "tips": "Çoğu tarayıcı şu anda yalnızca klasik üst seviye alan adlarını desteklediğinden, bir Web3 alan adına doğrudan erişmek için sonuna eğik çizgi (“<1>/</1>”) ekleyin (örneğin “<5>vitalik.eth</5>” yerine “<3>vitalik.eth/</3>”).",
+            "enable": "Web3'ü etkinleştir"
+        },
+        "rewrites": {
+            "name": "Yeniden yazmalar",
+            "description": "Herhangi bir alan adı için DNS yanıtını ayarlayın veya geçersiz kılın. Bu yeniden yazmalar alt alan adları için de geçerlidir ve yerel IP adresleri yanıt olarak desteklenir.",
+            "new": "Yeni yeniden yazma",
+            "form": {
+                "domain": {
+                    "label": "Alan adı",
+                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
+                    "errors": {
+                        "required": "Bir alan adı girin.",
+                        "ip": "Bir IP adresi değil, bir alan adı girin.",
+                        "invalid": "Geçerli bir alan adı girin.",
+                        "taken": "Bu alan adı için zaten bir yeniden yazma kuralınız var."
+                    }
+                },
+                "answer": {
+                    "label": "Yanıt",
+                    "placeholder": "1.2.3.4, sub.example.org, ...",
+                    "errors": {
+                        "required": "Bir yanıt girin.",
+                        "invalid": "Yanıt geçerli bir IP adresi veya alan adı olmalıdır."
+                    }
+                }
+            }
+        },
+        "access": {
+            "name": "Erişim",
+            "description": "Başkalarına bu profili düzenleme veya yalnızca görüntüleme yetkisi verin.",
+            "roles": {
+                "editor": "Editör",
+                "viewer": "Görüntüleyici"
+            },
+            "pending": "Davet gönderildi",
+            "form": {
+                "email": {
+                    "label": "E-posta",
+                    "errors": {
+                        "required": "Bir e-posta adresi girin.",
+                        "invalid": "Geçerli bir e-posta adresi girin.",
+                        "duplicate": "Bu e-posta adresi zaten davet edildi."
+                    }
+                },
+                "role": {
+                    "label": "Rol"
+                }
+            }
+        },
+        "duplicate": {
+            "button": "<1>{{name}}</1> profilini kopyala",
+            "description": "Bu profilin tüm ayarlarını yeni bir profile kopyalayın.",
+            "form": {
+                "name": {
+                    "label": "İsim",
+                    "placeholder": "Ev, Çocuk, Ofis, ...",
+                    "errors": {
+                        "required": "Bir isim girin.",
+                        "taken": "Zaten bu isimde bir profiliniz var."
+                    }
+                },
+                "button": "Kopyala"
+            }
+        },
+        "delete": {
+            "button": "<1>{{name}}</1> profilini sil",
+            "warning": "Bu işlem, bu profili ve onunla ilişkili tüm günlükleri kalıcı olarak silecektir.",
+            "confirm": {
+                "text": "<1>{{name}}</1> profilini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+            }
+        },
+        "leave": {
+            "button": "<1>{{name}}</1> profilinden ayrıl",
+            "warning": "Bu profile erişimi kaybedeceksiniz.",
+            "confirm": {
+                "text": "<1>{{name}}</1> profilinden ayrılmak istediğinizden emin misiniz? Bu işlem geri alınamaz."
+            }
+        }
     }
-  }
 }

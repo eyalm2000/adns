@@ -99,7 +99,7 @@
     <string name="select_your_preferred_dns_provider">Wybierz preferowanego dostawcę DNS</string>
     <string name="server">Serwer</string>
     <string name="settings">Ustawienia</string>
-    <string name="settings_1">%1$s Ustawienia</string>
+    <string name="settings_1">%1$s Ustawienia</string>
     <string name="shizuku">Shizuku</string>
     <string name="show_password">Pokaż hasło</string>
     <string name="the_public_adguard_dns_server_blocks_ads_and_trackers">Publiczny serwer DNS AdGuard.</string>

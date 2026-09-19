@@ -238,7 +238,7 @@
     <string name="already_linked">已关联</string>
     <string name="set_device_name_in_the_nextdns_settings_section">请在 NextDNS 设置中设置“设备名称”。</string>
     <string name="adns_app">ADNS App</string>
-    <string name="setup_nextdns_on_another_device">在其他设备上设置 NextDNS。</string>
+    <string name="setup_nextdns_on_another_device">设置指南、链接 IP、DDNS</string>
     <string name="setup_another_device">设置其他设备</string>
     <string name="download_adns">下载 ADNS</string>
     <string name="api_key_required">请输入 API 密钥</string>
@@ -275,7 +275,7 @@
     <string name="choose_activation_mode">选择 ADNS 的使用方式</string>
     <string name="privileged_dns_control">设备 DNS 控制</string>
     <string name="privileged_dns_control_description">授予 ADNS 切换并监测 Android 私有 DNS 的权限。</string>
-    <string name="shizuku_unavailable">Shizuku 未运行，请启动 Shizuku 后重试</string>
+    <string name="shizuku_unavailable">Shizuku 未运行，请启动 Shizuku 并重试</string>
     <string name="shizuku_permission_denied">Shizuku 权限被拒绝</string>
     <string name="quad9">Quad9</string>
     <string name="the_public_quad9_dns_server">Quad9 公共 DNS 服务器。</string>
@@ -303,7 +303,7 @@
     <string name="private_dns_automation_description">ADNS 会为您应用并验证所选的加密 DNS 主机名。</string>
     <string name="runtime_notification_channel_name">私有 DNS 状态</string>
     <string name="runtime_notification_channel_description">显示 ADNS 私有 DNS 状态，并保持已启用的 Wi-Fi 规则持续运行。</string>
-    <string name="runtime_notification_title">ADNS 私有 DNS</string>
+    <string name="runtime_notification_title">私人 DNS</string>
     <string name="runtime_notification_dns_enabled">私有 DNS 已开启。</string>
     <string name="runtime_notification_dns_disabled">私有 DNS 已关闭。</string>
     <string name="runtime_notification_wifi_monitoring">Wi-Fi 规则正在监控当前连接的网络。</string>

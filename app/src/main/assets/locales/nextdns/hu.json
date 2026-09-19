@@ -1,1310 +1,1398 @@
 {
-  "global": {
-    "beta": "béta",
-    "cancel": "Mégse",
-    "add": "Hozzáadás",
-    "save": "Mentés",
-    "continue": "Tovább",
-    "enable": "Engedélyezze",
-    "change": "Módosítás",
-    "create": "Létrehozás",
-    "subscribe": "Előfizetés",
-    "invite": "Meghívás",
-    "remove": "Eltávolítás",
-    "leave": "Elhagyás",
-    "delete": "Törlés",
-    "close": "Bezár",
-    "back": "Vissza",
-    "disable": "Letiltás",
-    "unnamedDevice": "Eszköz #{{id}}",
-    "firstConfiguration": "Az Első Konfigurációm"
-  },
-  "theme": {
-    "label": "Téma",
-    "system": "Rendszer",
-    "light": "Világos",
-    "dark": "Sötét"
-  },
-  "pages": {
-    "signup": "Regisztrálj",
-    "login": "Belépés",
-    "passwordReset": "Jelszó visszaállítása",
-    "account": "Fiók",
-    "setup": "Telepítés",
-    "security": "Biztonság",
-    "privacy": "Adatvédelem",
-    "parentalcontrol": "Szülői felügyelet",
-    "denylist": "Tiltólista",
-    "allowlist": "Engedélyezőlista",
-    "analytics": "Analitika",
-    "logs": "Naplók",
-    "settings": "Beállítások",
-    "help": "Súgó"
-  },
-  "banners": {
-    "temporary": "Ez az ideiglenes fiók <1> <0>{{in}}</0></1> múlva lejár és kizárólag ebből a böngészőből érhető el. Regisztrálj most ingyen a beállítások mentéséhez.",
-    "nearQuota": "Ebben a hónapban már több, mint {{queriesNearQuota, number}} lekérdezést hajtottál végre, közeledve ezzel az ingyenes havi keret ({{queriesQuota, number}} lekérdezés) végéhez. <5>Fizess elő</5> a NextDNS használatának folytatásához.",
-    "overQuota": "Ebben a hónapban több, mint {{queriesQuota, number}} lekérdezést hajtottál végre és minden funkció deaktiválásra került. <3>Fizess elő</3> a NextDNS használatának folytatásához."
-  },
-  "account": {
-    "email": "E-mail",
-    "newEmail": "Új e-mail cím",
-    "password": "Jelszó",
-    "newPassword": "Új jelszó",
-    "currentPassword": "Jelenlegi jelszó",
-    "forgotPassword": "Elfelejtetted a jelszavad?",
-    "savePassword": "Jelszó mentése",
-    "passwordResetInfo": "Írd be a fiókodhoz társított e-mail címet, amelyre egy linket küldünk a jelszó visszaállításához.",
-    "sendEmail": "E-mail küldése",
-    "passwordResetLinkSentMessage": "A jelszó visszaállításához szükséges linket elküldtük a következő címre: <1>{{email}}</1>.",
-    "code": "2FA kód",
-    "login": "Belépés",
-    "noAccountYet": "Még nincs fiókod? <1>Regisztrálj</1>",
-    "signup": "Regisztrálás",
-    "alreadyHaveAnAccount": "Van már fiókod? <1>Jelentkezz be</1>",
-    "convertingNotice": "Ideiglenes fiókodat egy igazira készülsz átváltani. Az összes eddigi beállításod mentésre kerül.",
-    "convertingDeviceOnlyNotice": "Egy csak eszközhöz kötött fiókot alakít át teljes értékű fiókká, minden beállítása mentésre kerül.",
-    "logout": "Kijelentkezés",
-    "errors": {
-      "email": {
-        "required": "Adjon meg egy e-mailt.",
-        "invalid": "Kérjük, érvényes e-mail címet adj meg.",
-        "taken": "Ez az e-mail cím már használatban van."
-      },
-      "password": {
-        "required": "Adjon meg egy jelszót.",
-        "invalidCombination": "Érvénytelen e-mail / jelszó kombináció."
-      },
-      "currentPassword": {
-        "required": "Kérjük, add meg jelenlegi jelszavad.",
-        "incorrect": "A megadott jelszó helytelen."
-      },
-      "code": {
-        "required": "Kérjük, adj meg egy 2FA kódot.",
-        "invalid": "Kérjük, adjon meg egy 6 jegyű kódot.",
-        "incorrect": "Helytelen 2FA kód."
-      },
-      "resetPasswordToken": {
-        "invalid": "Érvénytelen vagy lejárt token."
-      }
+    "global": {
+        "beta": "béta",
+        "cancel": "Mégse",
+        "add": "Hozzáadás",
+        "save": "Mentés",
+        "continue": "Tovább",
+        "enable": "Engedélyezze",
+        "change": "Módosítás",
+        "create": "Létrehozás",
+        "subscribe": "Előfizetés",
+        "invite": "Meghívás",
+        "remove": "Eltávolítás",
+        "leave": "Elhagyás",
+        "delete": "Törlés",
+        "close": "Bezár",
+        "back": "Vissza",
+        "disable": "Letiltás",
+        "unnamedDevice": "Eszköz #{{id}}",
+        "firstConfiguration": "Az Első Konfigurációm",
+        "copy": "",
+        "collapse": "",
+        "requestFailed": "",
+        "error": "",
+        "preview": "",
+        "expand": "",
+        "noProfiles": "",
+        "search": "",
+        "clearSearch": "",
+        "networkError": "",
+        "actions": ""
     },
-    "affiliation": {
-      "name": "Partnerprogram",
-      "description": "Segíts nekünk a NextDNS terjesztésében a <1>{{link}}</1> megosztásával és szerezz <3>{{share, percentage}}</3>-os részesülést az összes feliratkozás első <5>{{months, number}} hónapja</5> után.",
-      "balance": {
-        "name": "Egyenleg"
-      },
-      "availableBalance": {
-        "name": "Rendelkezésre álló egyenleg",
-        "description": "Az egyenleg egy hónap múlva válik elérhetővé a lehetséges visszatérítések fedezése érdekében."
-      },
-      "payout": {
-        "button": "Kifizetés",
-        "minimum": "A kifizetéshez legalább {{amount, price}} értékű egyenlegre van szükség.",
-        "form": {
-          "paypalEmail": "PayPal e-mail cím",
-          "errors": {
-            "paypalEmail": {
-              "required": "Kérjük, adj meg egy PayPal e-mail címet.",
-              "invalid": "Kérjük, adj meg egy érvényes PayPal e-mail címet."
-            }
-          }
-        }
-      }
+    "theme": {
+        "label": "Téma",
+        "system": "Rendszer",
+        "light": "Világos",
+        "dark": "Sötét"
     },
-    "usage": {
-      "name": "Ingyenes használat",
-      "description": "A NextDNS minden hónapban {{queries, number}} lekérdezésig ingyenes. A keret túllépése esetében a következő hónapig ideiglenesen minden funkció deaktiválásra kerül.",
-      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} lekérdezések</1>",
-      "overQuota": {
-        "message": "Ebben a hónapban több, mint {{queries, number}} lekérdezést hajtottál végre.",
-        "info": "A NextDNS továbbra is válaszol a DNS-lekérdezésekre, de az összes funkció átmenetileg deaktiválásra került a következő hónapig."
-      },
-      "subscribe": {
-        "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-        "upsell": "Korlátlan számú lekérdezések havi {{amount, price}}-tól."
-      }
+    "pages": {
+        "signup": "Regisztrálj",
+        "login": "Belépés",
+        "passwordReset": "Jelszó visszaállítása",
+        "account": "Fiók",
+        "setup": "Telepítés",
+        "security": "Biztonság",
+        "privacy": "Adatvédelem",
+        "parentalcontrol": "Szülői felügyelet",
+        "denylist": "Tiltólista",
+        "allowlist": "Engedélyezőlista",
+        "analytics": "Analitika",
+        "logs": "Naplók",
+        "settings": "Beállítások",
+        "help": "Súgó"
     },
-    "subscription": {
-      "name": "Előfizetés",
-      "plans": {
-        "pro": "Pro",
-        "business": "Üzleti",
-        "education": "Oktatás"
-      },
-      "intervals": {
-        "month": "havi előfizetés",
-        "year": "éves előfizetés"
-      },
-      "per": {
-        "month": "havonta",
-        "year": "évente"
-      },
-      "units": {
-        "business_one": "{{count, number}} alkalmazott",
-        "business_other": "{{count, number}} alkalmazott",
-        "education_one": "{{count, number}} hallgató",
-        "education_other": "{{count, number}} hallgató"
-      },
-      "planFull": "{{plan}} ({{interval}})",
-      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-      "expires": "Az előfizetésed lejáratának dátuma {{date, LL}}.",
-      "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-      "manageOnApple": "Manage subscription on Apple",
-      "restart": {
-        "button": "Előfizetés újraindítása"
-      },
-      "changePlan": {
-        "button": "Előfizetés módosítása"
-      },
-      "renewal": "A következő {{amount, price}} értékű összeg automatikus beterhelésére {{date, LL}} napján kerül sor.",
-      "changePaymentMethod": {
-        "button": "Fizetési mód módosítása"
-      },
-      "cancel": {
-        "button": "Előfizetés megszüntetése",
-        "confirm": {
-          "text": "Jelenlegi előfizetésed {{date, LL}} napjáig marad érvényben.",
-          "submit": "Előfizetés megszüntetése"
-        }
-      },
-      "subscribe": {
-        "choosePlan": "Válassz csomagot",
-        "addPaymentMethod": "Fizetési mód hozzáadása",
-        "included": "Minden csomag tartalmazza <1>az összes funkcióhoz való hozzáférést</1>, <3>korlátlan eszközöket</3> és <5> korlátlan lekérdezéseket</5>.",
-        "savings": "Takaríts meg {{percent, percentage}}-ot a havi csomaghoz képest",
-        "familyOnly": "* A Pro csomag kizárólag személyes (és közeli családtagok) használatára szól.",
-        "unitsQuestion": {
-          "business": "Hány <1>alkalmazottat</1> foglakoztat a vállalkozásod?",
-          "education": "Hány <1>aktív diák</1> látogatója van az oktatási intézményednek (vagy körzetének)?"
-        },
-        "asYouGrow": {
-          "business": "* Ne felejtsd el frissíteni a csomagot, amennyiben az alkalmazottak száma növekszik.",
-          "education": "* Ne felejtsd el frissíteni a csomagot, amennyiben a hallgatók száma növekszik."
-        },
-        "starting": {
-          "business": "<0>Már</0> havi <1>{{price, price}}</1>-tól <2>{{units, number}} alkalmazott</2> után",
-          "education": "<0>Már</0> havi <1>{{price, price}}</1>-tól <2>{{units, number}} diák</2> után"
-        },
-        "card": {
-          "number": "Kártyaszám",
-          "expiration": "Lejárati dátum",
-          "code": "Biztonsági kód",
-          "stripe": "A bankkártyás fizetések biztonságos feldolgozásához Stripe-ot — vezető internetes fizetési szolgáltató — használunk anélkül, hogy adataidhoz valaha is közvetlenül hozzáférhetnénk."
-        },
-        "paypal": {
-          "text": "Kattints a Tovább a PayPal-re gombra a PayPal-lel való fizetéshez."
-        },
-        "bitpay": {
-          "text": "Kattints a Tovább a BitPay-re gombra a kriptovalutával való fizetéshez.",
-          "toYearly": "Havi csomagok fizetéseihez nem fogadunk el kriptovalutát. <1>Amennyiben továbblépsz, előfizetésedet automatikusan éves csomagra váltjuk át.</1>",
-          "remainder": "A jelenlegi előfizetésed már {{date, LL}} napjáig fedezve van. A beterhelést végrehajtjuk és a fennmaradó részt automatikusan az új lejárati dátumhoz adjuk."
-        },
-        "continueTo": "Tovább <1></1>"
-      }
+    "banners": {
+        "temporary": "Ez az ideiglenes fiók <1> <0>{{in}}</0></1> múlva lejár és kizárólag ebből a böngészőből érhető el. Regisztrálj most ingyen a beállítások mentéséhez.",
+        "nearQuota": "Ebben a hónapban már több, mint {{queriesNearQuota, number}} lekérdezést hajtottál végre, közeledve ezzel az ingyenes havi keret ({{queriesQuota, number}} lekérdezés) végéhez. <5>Fizess elő</5> a NextDNS használatának folytatásához.",
+        "overQuota": "Ebben a hónapban több, mint {{queriesQuota, number}} lekérdezést hajtottál végre és minden funkció deaktiválásra került. <3>Fizess elő</3> a NextDNS használatának folytatásához."
     },
-    "business": {
-      "name": "Üzleti",
-      "description": "Adózási okokból szükségünk van a vállalkozás nevére, címére és adószámára. Ezt a törvény előírja, és minden számlán meg fog jelenni.",
-      "button": {
-        "add": "Üzleti adatok hozzáadása",
-        "update": "Módosítás"
-      },
-      "form": {
-        "name": {
-          "label": "Név",
-          "placeholder": "Példa Kft.",
-          "errors": {
-            "required": "Kérjük, add meg vállalkozásod nevét."
-          }
-        },
-        "address": {
-          "label": "Cím",
-          "placeholder": "Példa utca 10&#10;1234 Példatelepülés&#10;Ország",
-          "errors": {
-            "required": "Kérjük, add meg vállalkozásod címét."
-          }
-        },
-        "vatNumber": {
-          "label": "Adószám (vagy azzal egyenértékű)"
-        }
-      }
-    },
-    "invoices": {
-      "name": "Számlák",
-      "description": "Számlázási előzmények és fiókod összes eddigi számlája.",
-      "pending": "{{amount, price}} (függőben)",
-      "show-more": "Több megjelenítése",
-      "show-less": "Kevesebb megjelenítése",
-      "invoice": {
-        "title": "Számla #{{code}}",
-        "to": "Címzett: <1>{{email}}</1>",
-        "vatNumber": "Adószám (vagy azzal egyenértékű): {{number}}",
-        "columns": {
-          "plan": "Csomag",
-          "period": "Időtartam",
-          "amount": "Összeg"
-        },
-        "vat": "ÁFA ({{rate, percentage}})",
-        "total": "Végösszeg",
-        "footer": {
-          "reverseCharged": "ÁFA (vagy azzal egyenértékű) fordított terhelés.",
-          "currency": "A feltüntetett összegek {{code}}-ban értendőek."
-        }
-      }
-    },
-    "changeEmail": {
-      "name": "E-mail cím",
-      "description": "Módosíthatod a bejelentkezéshez és kritikus értesítésekhez használt e-mail címet.",
-      "button": "E-mail cím módosítása"
-    },
-    "changePassword": {
-      "name": "Jelszó",
-      "description": "Módosíthatod a fiókod bejelentkezéséhez és bizalmas műveletek végrehajtásához szükséges jelszót.",
-      "button": "Jelszó módosítása"
-    },
-    "2fa": {
-      "name": "Kétlépcsős hitelesítés (2FA)",
-      "description": "A kétlépcsős hitelesítés (2FA) egy plusz biztonsági szinttel látja el fiókod, amely bejelentkezéskor a jelszó mellett egy további, hatjegyű ellenörzőkód megadását igényli.",
-      "enabled": "Fiókodban a 2FA jelenleg aktív.",
-      "enable": {
-        "button": "2FA bekapcsolása",
-        "modal": {
-          "howto": "Használj egy hitelesítő alkalmazást, például a <1>Google Hitelesítőt</1> vagy 2FA-t támogató jelszókezelőt. A QR-kódot beolvasva egy koppintással megnyithatod a <3>{{otpauth}}</3> címet vagy manuálisan kimásolhatod és beillesztheted a kulcsot."
-        }
-      },
-      "recovery": {
-        "button": "Helyreállító kódok",
-        "modal": {
-          "howto": "Ezekkel a helyreállító kódokkal férhetsz hozzá a fiókodhoz abban az esetben, ha elveszítenéd az eszközöd és nem tudnál kétlépcsős hitelesítési kódokat kapni. Minden kód csak egyszer használható fel.",
-          "download": "Letöltés",
-          "regen": "Újragenerálás"
-        }
-      },
-      "disable": {
-        "button": "2FA kikapcsolása"
-      }
-    },
-    "api": {
-      "description": "Profilok létrehozása és kezelése programszerűen. Olvassa el a dokumentációt: <1>{{link}}</1>.",
-      "create": {
-        "button": "API kulcs generálása"
-      }
-    },
-    "delete": {
-      "button": "Fiók törlése",
-      "warning": "Ez örökre törli a fiókod és az összes hozzátartozó konfigurációt.",
-      "confirm": {
-        "text": "Biztosan törölni szeretnéd a fiókot? Ez a művelet nem visszavonható."
-      }
-    },
-    "temporary": {
-      "expired": {
-        "modal": {
-          "title": "Lejárt",
-          "text": "Ideiglenes fiókod lejárt. Regisztrálj most a beállításaid elmentéséhez és a NextDNS további, ingyenes használatához."
-        }
-      }
-    }
-  },
-  "configurationSelector": {
-    "new": "Új",
-    "form": {
-      "title": "Új konfiguráció",
-      "name": {
-        "label": "Név",
-        "placeholder": "Otthon, Gyerekek, Iroda, ...",
+    "account": {
+        "email": "E-mail",
+        "newEmail": "Új e-mail cím",
+        "password": "Jelszó",
+        "newPassword": "Új jelszó",
+        "currentPassword": "Jelenlegi jelszó",
+        "forgotPassword": "Elfelejtetted a jelszavad?",
+        "savePassword": "Jelszó mentése",
+        "passwordResetInfo": "Írd be a fiókodhoz társított e-mail címet, amelyre egy linket küldünk a jelszó visszaállításához.",
+        "sendEmail": "E-mail küldése",
+        "passwordResetLinkSentMessage": "A jelszó visszaállításához szükséges linket elküldtük a következő címre: <1>{{email}}</1>.",
+        "code": "2FA kód",
+        "login": "Belépés",
+        "noAccountYet": "Még nincs fiókod? <1>Regisztrálj</1>",
+        "signup": "Regisztrálás",
+        "alreadyHaveAnAccount": "Van már fiókod? <1>Jelentkezz be</1>",
+        "convertingNotice": "Ideiglenes fiókodat egy igazira készülsz átváltani. Az összes eddigi beállításod mentésre kerül.",
+        "convertingDeviceOnlyNotice": "Egy csak eszközhöz kötött fiókot alakít át teljes értékű fiókká, minden beállítása mentésre kerül.",
+        "logout": "Kijelentkezés",
         "errors": {
-          "required": "Kérjük, adj meg egy nevet.",
-          "taken": "Már rendelkezel egy ilyen nevű konfigurációval."
-        }
-      }
-    }
-  },
-  "setup": {
-    "status": {
-      "ok": {
-        "primary": "Minden rendben!",
-        "secondary": "Ez az eszköz a NextDNS-t használja ezzel a konfigurációval."
-      },
-      "mismatch": {
-        "withoutConfiguration": {
-          "primary": "Ez az eszköz a NextDNS-t használja konfiguráció nélkül.",
-          "secondary": {
-            "clients": "Győződj meg arról, hogy az alkalmazás beállításaiban megadtad az alább látható konfigurációs azonosítót.",
-            "firefox": "Győződj meg róla, hogy a Firefox-ban beállítottad az alább látható DNS-over-HTTPS végpontot.",
-            "doh": "Győződjön meg arról, hogy az alább látható DNS-over-HTTPS végpontot használja.",
-            "dot": "Győződjön meg arról, hogy az alább látható DNS-over-TLS végpontot használja.",
-            "ipv6": "Győződjön meg arról, hogy az alább látható IPv6-címeket használja.",
-            "servers": "Győződjön meg arról, hogy az alábbi összekapcsolt IP szakaszban látható DNS-kiszolgálókat használja (a DNS-kiszolgálók váltanak a konfigurációk között).",
-            "link": "Ne felejtse el összekapcsolni IP-címét az alábbi Csatolt IP részben."
-          }
+            "email": {
+                "required": "Adjon meg egy e-mailt.",
+                "invalid": "Kérjük, érvényes e-mail címet adj meg.",
+                "taken": "Ez az e-mail cím már használatban van."
+            },
+            "password": {
+                "required": "Adjon meg egy jelszót.",
+                "invalidCombination": "Érvénytelen e-mail / jelszó kombináció."
+            },
+            "currentPassword": {
+                "required": "Kérjük, add meg jelenlegi jelszavad.",
+                "incorrect": "A megadott jelszó helytelen."
+            },
+            "code": {
+                "required": "Kérjük, adj meg egy 2FA kódot.",
+                "invalid": "Kérjük, adjon meg egy 6 jegyű kódot.",
+                "incorrect": "Helytelen 2FA kód."
+            },
+            "resetPasswordToken": {
+                "invalid": "Érvénytelen vagy lejárt token."
+            }
         },
-        "withConfiguration": {
-          "primary": "Ez az eszköz a NextDNS-t más konfigurációval használja.",
-          "secondary": {
-            "sameAccount": "Ez az eszköz jelenleg „{{name}}” -t használ.",
-            "otherAccount": "Győződjön meg arról, hogy az oldalon felsorolt végpontok egyikét használja."
-          }
-        }
-      },
-      "unconfigured": {
-        "primary": "Ez az eszköz nem használja a NextDNS szolgáltatást.",
-        "secondary": "Ez az eszköz jelenleg „{{resolver}}” -t használ DNS-feloldóként."
-      },
-      "error": {
-        "primary": "Hiba történt az aktuális állapot ellenőrzése közben.",
-        "secondary": "Kérjük, fordulj hozzánk, ha a probléma az oldal frissítése után is fennáll."
-      },
-      "apr": {
-        "ok": {
-          "primary": "This device is using NextDNS with iCloud Private Relay",
-          "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
+        "affiliation": {
+            "name": "Partnerprogram",
+            "description": "Segíts nekünk a NextDNS terjesztésében a <1>{{link}}</1> megosztásával és szerezz <3>{{share, percentage}}</3>-os részesülést az összes feliratkozás első <5>{{months, number}} hónapja</5> után.",
+            "balance": {
+                "name": "Egyenleg"
+            },
+            "availableBalance": {
+                "name": "Rendelkezésre álló egyenleg",
+                "description": "Az egyenleg egy hónap múlva válik elérhetővé a lehetséges visszatérítések fedezése érdekében."
+            },
+            "payout": {
+                "button": "Kifizetés",
+                "minimum": "A kifizetéshez legalább {{amount, price}} értékű egyenlegre van szükség.",
+                "form": {
+                    "paypalEmail": "PayPal e-mail cím",
+                    "errors": {
+                        "paypalEmail": {
+                            "required": "Kérjük, adj meg egy PayPal e-mail címet.",
+                            "invalid": "Kérjük, adj meg egy érvényes PayPal e-mail címet."
+                        }
+                    }
+                }
+            }
         },
-        "blockpage": {
-          "primary": "This device is using NextDNS with iCloud Private Relay.",
-          "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+        "usage": {
+            "name": "Ingyenes használat",
+            "description": "A NextDNS minden hónapban {{queries, number}} lekérdezésig ingyenes. A keret túllépése esetében a következő hónapig ideiglenesen minden funkció deaktiválásra kerül.",
+            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} lekérdezések</1>",
+            "overQuota": {
+                "message": "Ebben a hónapban több, mint {{queries, number}} lekérdezést hajtottál végre.",
+                "info": "A NextDNS továbbra is válaszol a DNS-lekérdezésekre, de az összes funkció átmenetileg deaktiválásra került a következő hónapig."
+            },
+            "subscribe": {
+                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+                "upsell": "Korlátlan számú lekérdezések havi {{amount, price}}-tól."
+            }
+        },
+        "subscription": {
+            "name": "Előfizetés",
+            "plans": {
+                "pro": "Pro",
+                "business": "Üzleti",
+                "education": "Oktatás"
+            },
+            "intervals": {
+                "month": "havi előfizetés",
+                "year": "éves előfizetés"
+            },
+            "per": {
+                "month": "havonta",
+                "year": "évente"
+            },
+            "units": {
+                "business_one": "{{count, number}} alkalmazott",
+                "business_other": "{{count, number}} alkalmazott",
+                "education_one": "{{count, number}} hallgató",
+                "education_other": "{{count, number}} hallgató"
+            },
+            "planFull": "{{plan}} ({{interval}})",
+            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+            "expires": "Az előfizetésed lejáratának dátuma {{date, LL}}.",
+            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
+            "manageOnApple": "Manage subscription on Apple",
+            "restart": {
+                "button": "Előfizetés újraindítása"
+            },
+            "changePlan": {
+                "button": "Előfizetés módosítása"
+            },
+            "renewal": "A következő {{amount, price}} értékű összeg automatikus beterhelésére {{date, LL}} napján kerül sor.",
+            "changePaymentMethod": {
+                "button": "Fizetési mód módosítása"
+            },
+            "cancel": {
+                "button": "Előfizetés megszüntetése",
+                "confirm": {
+                    "text": "Jelenlegi előfizetésed {{date, LL}} napjáig marad érvényben.",
+                    "submit": "Előfizetés megszüntetése"
+                }
+            },
+            "subscribe": {
+                "choosePlan": "Válassz csomagot",
+                "addPaymentMethod": "Fizetési mód hozzáadása",
+                "included": "Minden csomag tartalmazza <1>az összes funkcióhoz való hozzáférést</1>, <3>korlátlan eszközöket</3> és <5> korlátlan lekérdezéseket</5>.",
+                "savings": "Takaríts meg {{percent, percentage}}-ot a havi csomaghoz képest",
+                "familyOnly": "* A Pro csomag kizárólag személyes (és közeli családtagok) használatára szól.",
+                "unitsQuestion": {
+                    "business": "Hány <1>alkalmazottat</1> foglakoztat a vállalkozásod?",
+                    "education": "Hány <1>aktív diák</1> látogatója van az oktatási intézményednek (vagy körzetének)?"
+                },
+                "asYouGrow": {
+                    "business": "* Ne felejtsd el frissíteni a csomagot, amennyiben az alkalmazottak száma növekszik.",
+                    "education": "* Ne felejtsd el frissíteni a csomagot, amennyiben a hallgatók száma növekszik."
+                },
+                "starting": {
+                    "business": "<0>Már</0> havi <1>{{price, price}}</1>-tól <2>{{units, number}} alkalmazott</2> után",
+                    "education": "<0>Már</0> havi <1>{{price, price}}</1>-tól <2>{{units, number}} diák</2> után"
+                },
+                "card": {
+                    "number": "Kártyaszám",
+                    "expiration": "Lejárati dátum",
+                    "code": "Biztonsági kód",
+                    "stripe": "A bankkártyás fizetések biztonságos feldolgozásához Stripe-ot — vezető internetes fizetési szolgáltató — használunk anélkül, hogy adataidhoz valaha is közvetlenül hozzáférhetnénk."
+                },
+                "paypal": {
+                    "text": "Kattints a Tovább a PayPal-re gombra a PayPal-lel való fizetéshez."
+                },
+                "bitpay": {
+                    "text": "Kattints a Tovább a BitPay-re gombra a kriptovalutával való fizetéshez.",
+                    "toYearly": "Havi csomagok fizetéseihez nem fogadunk el kriptovalutát. <1>Amennyiben továbblépsz, előfizetésedet automatikusan éves csomagra váltjuk át.</1>",
+                    "remainder": "A jelenlegi előfizetésed már {{date, LL}} napjáig fedezve van. A beterhelést végrehajtjuk és a fennmaradó részt automatikusan az új lejárati dátumhoz adjuk."
+                },
+                "continueTo": "Tovább <1></1>",
+                "unitsLabel": {
+                    "education": "",
+                    "business": ""
+                }
+            }
+        },
+        "business": {
+            "name": "Üzleti",
+            "description": "Adózási okokból szükségünk van a vállalkozás nevére, címére és adószámára. Ezt a törvény előírja, és minden számlán meg fog jelenni.",
+            "button": {
+                "add": "Üzleti adatok hozzáadása",
+                "update": "Módosítás"
+            },
+            "form": {
+                "name": {
+                    "label": "Név",
+                    "placeholder": "Példa Kft.",
+                    "errors": {
+                        "required": "Kérjük, add meg vállalkozásod nevét."
+                    }
+                },
+                "address": {
+                    "label": "Cím",
+                    "placeholder": "Példa utca 10&#10;1234 Példatelepülés&#10;Ország",
+                    "errors": {
+                        "required": "Kérjük, add meg vállalkozásod címét."
+                    }
+                },
+                "vatNumber": {
+                    "label": "Adószám (vagy azzal egyenértékű)"
+                }
+            }
+        },
+        "invoices": {
+            "name": "Számlák",
+            "description": "Számlázási előzmények és fiókod összes eddigi számlája.",
+            "pending": "{{amount, price}} (függőben)",
+            "show-more": "Több megjelenítése",
+            "show-less": "Kevesebb megjelenítése",
+            "invoice": {
+                "title": "Számla #{{code}}",
+                "to": "Címzett: <1>{{email}}</1>",
+                "vatNumber": "Adószám (vagy azzal egyenértékű): {{number}}",
+                "columns": {
+                    "plan": "Csomag",
+                    "period": "Időtartam",
+                    "amount": "Összeg"
+                },
+                "vat": "ÁFA ({{rate, percentage}})",
+                "total": "Végösszeg",
+                "footer": {
+                    "reverseCharged": "ÁFA (vagy azzal egyenértékű) fordított terhelés.",
+                    "currency": "A feltüntetett összegek {{code}}-ban értendőek."
+                }
+            }
+        },
+        "changeEmail": {
+            "name": "E-mail cím",
+            "description": "Módosíthatod a bejelentkezéshez és kritikus értesítésekhez használt e-mail címet.",
+            "button": "E-mail cím módosítása"
+        },
+        "changePassword": {
+            "name": "Jelszó",
+            "description": "Módosíthatod a fiókod bejelentkezéséhez és bizalmas műveletek végrehajtásához szükséges jelszót.",
+            "button": "Jelszó módosítása"
+        },
+        "2fa": {
+            "name": "Kétlépcsős hitelesítés (2FA)",
+            "description": "A kétlépcsős hitelesítés (2FA) egy plusz biztonsági szinttel látja el fiókod, amely bejelentkezéskor a jelszó mellett egy további, hatjegyű ellenörzőkód megadását igényli.",
+            "enabled": "Fiókodban a 2FA jelenleg aktív.",
+            "enable": {
+                "button": "2FA bekapcsolása",
+                "modal": {
+                    "howto": "Használj egy hitelesítő alkalmazást, például a <1>Google Hitelesítőt</1> vagy 2FA-t támogató jelszókezelőt. A QR-kódot beolvasva egy koppintással megnyithatod a <3>{{otpauth}}</3> címet vagy manuálisan kimásolhatod és beillesztheted a kulcsot."
+                },
+                "secret": ""
+            },
+            "recovery": {
+                "button": "Helyreállító kódok",
+                "modal": {
+                    "howto": "Ezekkel a helyreállító kódokkal férhetsz hozzá a fiókodhoz abban az esetben, ha elveszítenéd az eszközöd és nem tudnál kétlépcsős hitelesítési kódokat kapni. Minden kód csak egyszer használható fel.",
+                    "download": "Letöltés",
+                    "regen": "Újragenerálás"
+                }
+            },
+            "disable": {
+                "button": "2FA kikapcsolása"
+            }
+        },
+        "api": {
+            "description": "Profilok létrehozása és kezelése programszerűen. Olvassa el a dokumentációt: <1>{{link}}</1>.",
+            "create": {
+                "button": "API kulcs generálása"
+            },
+            "copy": "",
+            "remove": ""
+        },
+        "delete": {
+            "button": "Fiók törlése",
+            "warning": "Ez örökre törli a fiókod és az összes hozzátartozó konfigurációt.",
+            "confirm": {
+                "text": "Biztosan törölni szeretnéd a fiókot? Ez a művelet nem visszavonható."
+            }
+        },
+        "temporary": {
+            "expired": {
+                "modal": {
+                    "title": "Lejárt",
+                    "text": "Ideiglenes fiókod lejárt. Regisztrálj most a beállításaid elmentéséhez és a NextDNS további, ingyenes használatához."
+                }
+            }
         }
-      }
     },
-    "endpoints": {
-      "name": "Végpontok",
-      "description": "Ezzel a konfigurációval állítsa be a NextDNS-t az alábbi végpontok egyikével.",
-      "help": "Nem tudja, hogyan használja ezeket? Kövesse a <1> telepítési útmutatót </1> ."
-    },
-    "linkedIp": {
-      "name": "Összekapcsolt IP",
-      "description": "Ha nem tudja beállítani a NextDNS-t alkalmazásunk, DNS-over-TLS, DNS-over-HTTPS vagy IPv6 segítségével, akkor használja az alábbi DNS-kiszolgálókat, és kapcsolja össze IP-jét. Ez leginkább otthoni hálózatokban való használatra szolgál, és nem ajánlott mobilon.",
-      "servers": {
-        "name": "DNS szerverek"
-      },
-      "ip": {
-        "name": "Összekapcsolt IP",
-        "link": "Link IP"
-      },
-      "showAdvanced": "Speciális beállítások megjelenítése",
-      "ddns": {
-        "explanation": "A dinamikus DNS (DDNS) segítségével automatikusan frissítheti a csatolt IP-címet.",
-        "set": "Konfigurálja a DDNS-t",
-        "status": "Jelenleg a <1>{{hostname}}</1> DDNS hosztnévként az Ön IP-je percenként automatikusan frissül.",
-        "unset": "Eltávolítás",
+    "configurationSelector": {
+        "new": "Új",
         "form": {
-          "hostname": {
-            "label": "DDNS gazdagépnév",
-            "placeholder": "example.no-ip.org",
-            "errors": {
-              "required": "Kérjük, adja meg a gazdagép nevét.",
-              "invalid": "Kérjük, adj meg egy érvényes gazdagépnevet.",
-              "ip": "Adj meg egy gazdagépnevet, ne egy IP-címet.",
-              "error": "Hiba történt az IP-cím e gazdagépnév mögé való lekérésekor.",
-              "empty": "Ez a gazdagépnév nem ad vissza semmilyen IP-címet.",
-              "different": "Biztonsági okokból, amikor dinamikus DNS-t adsz hozzá, a DDNS hosztnév által visszaadott IP-címnek meg kell egyeznie az aktuális IP-címmel."
+            "title": "Új konfiguráció",
+            "name": {
+                "label": "Név",
+                "placeholder": "Otthon, Gyerekek, Iroda, ...",
+                "errors": {
+                    "required": "Kérjük, adj meg egy nevet.",
+                    "taken": "Már rendelkezel egy ilyen nevű konfigurációval."
+                }
             }
-          }
         }
-      },
-      "programmatically": "A csatolt IP-t programozással is frissítheted a következő telefonszámon:"
     },
-    "guide": {
-      "name": "Telepítési útmutató",
-      "description": "Kövesse az alábbi utasításokat a NextDNS beállításához az eszközön, a böngészőben vagy az útválasztón.",
-      "or": "Vagy",
-      "ipv4": {
-        "title": "IPv4 (összekapcsolt IP-vel)"
-      },
-      "ipv6": {
-        "supported": "A hálózatod támogatja az IPv6-ot",
-        "notSupported": "A hálózatod nem támogatja az IPv6-ot"
-      },
-      "tags": {
-        "recommended": "Ajánlott",
-        "advanced": "Haladó"
-      },
-      "use": "Használja a következőket a <1>{{file}}</1> :",
-      "platforms": {
-        "android": {
-          "name": "Android",
-          "guides": {
-            "private": {
-              "title": "Privát DNS",
-              "requirements": "Android 9 vagy újabb",
-              "steps": {
-                "1": "1. Válassza a Beállítások → Hálózat és internet → Speciális → Privát DNS menüpontot.",
-                "2": "2. Válassza a Privát DNS-szolgáltató gazdagépneve lehetőséget.",
-                "3": "3. Írd be a <1>{{endpoint}}</1> és nyomd meg a Mentés gombot."
-              }
-            }
-          }
-        },
-        "ios": {
-          "name": "iOS",
-          "guides": {
-            "profile": {
-              "title": "Konfigurációs profil",
-              "requirements": "iOS 14 vagy újabb",
-              "step": "Használd az Apple Konfigurációs Profil Generátort: <1>{{link}}</1>"
+    "setup": {
+        "status": {
+            "ok": {
+                "primary": "Minden rendben!",
+                "secondary": "Ez az eszköz a NextDNS-t használja ezzel a konfigurációval."
             },
-            "app": {
-              "title": "NextDNS iOS rendszerhez"
-            }
-          }
-        },
-        "windows": {
-          "name": "Windows",
-          "guides": {
-            "dns-over-https": {
-              "title": "DNS HTTPS-en keresztül",
-              "requirements": "Windows 11",
-              "steps": [
-                "Nyissa meg a <1>Gépház</1> alkalmazást.",
-                "Válaszd a <1>Hálózat és internet</1> menüpontot.",
-                "Kattints a <1>Wi-Fi</1> (vagy <3>Ethernet</3>) gombra.",
-                "Kattintson a <1>Hardver tulajdonságai</1> lehetőségre, vagy hagyja figyelmen kívül ezt a lépést, ha a <3>Ethernet</3> lehetőségre kattintott.",
-                "Kattintson a <3>DNS-kiszolgáló hozzárendelése</3> melletti <1>Szerkesztés</1> gombra.",
-                "Válassza a <1>Kézi</1> lehetőséget.",
-                "Engedélyezze az <1>IPv{{version}}</1> -t.",
-                "Adja meg a <1>{{ip}}</1> IP címet az <3>Előnyben részesített DNS</3>-nél, majd válassza ki a HTTPS-en keresztüli DNS-nél a <5>Bekapcsolva (manuális sablon)</5> lehetőséget, és írja be a <7>{{endpoint}}</7> címet.",
-                "Adja meg a <1>{{ip}}</1> IP címet a <3>Másodlagos DNS</3>-nél, majd válassza ki a HTTPS-en keresztüli DNS-nél a <5>Bekapcsolva (manuális sablon)</5> lehetőséget, és írja be a <7>{{endpoint}}</7> címet.",
-                "Kattintson a <1>Mentés</1> gombra."
-              ]
+            "mismatch": {
+                "withoutConfiguration": {
+                    "primary": "Ez az eszköz a NextDNS-t használja konfiguráció nélkül.",
+                    "secondary": {
+                        "clients": "Győződj meg arról, hogy az alkalmazás beállításaiban megadtad az alább látható konfigurációs azonosítót.",
+                        "firefox": "Győződj meg róla, hogy a Firefox-ban beállítottad az alább látható DNS-over-HTTPS végpontot.",
+                        "doh": "Győződjön meg arról, hogy az alább látható DNS-over-HTTPS végpontot használja.",
+                        "dot": "Győződjön meg arról, hogy az alább látható DNS-over-TLS végpontot használja.",
+                        "ipv6": "Győződjön meg arról, hogy az alább látható IPv6-címeket használja.",
+                        "servers": "Győződjön meg arról, hogy az alábbi összekapcsolt IP szakaszban látható DNS-kiszolgálókat használja (a DNS-kiszolgálók váltanak a konfigurációk között).",
+                        "link": "Ne felejtse el összekapcsolni IP-címét az alábbi Csatolt IP részben."
+                    }
+                },
+                "withConfiguration": {
+                    "primary": "Ez az eszköz a NextDNS-t más konfigurációval használja.",
+                    "secondary": {
+                        "sameAccount": "Ez az eszköz jelenleg „{{name}}” -t használ.",
+                        "otherAccount": "Győződjön meg arról, hogy az oldalon felsorolt végpontok egyikét használja."
+                    }
+                }
             },
-            "app": {
-              "title": "NextDNS Windowsra",
-              "steps": {
-                "1": "1. Töltsd le a telepítőt <1> innen </1>.",
-                "2": "2. A telepítés után kattintson a jobb gombbal a NextDNS ikonra a Systray-ben, majd nyissa meg a Beállításokat. Állítsa be a <1>{{id}}</1> konfigurációs azonosítóként.",
-                "3": "3. Kattints a jobb gombbal a NextDNS ikonra a Systray-ben, majd kattints az Engedélyezés gombra."
-              }
+            "unconfigured": {
+                "primary": "Ez az eszköz nem használja a NextDNS szolgáltatást.",
+                "secondary": "Ez az eszköz jelenleg „{{resolver}}” -t használ DNS-feloldóként."
+            },
+            "error": {
+                "primary": "Hiba történt az aktuális állapot ellenőrzése közben.",
+                "secondary": "Kérjük, fordulj hozzánk, ha a probléma az oldal frissítése után is fennáll."
+            },
+            "apr": {
+                "ok": {
+                    "primary": "This device is using NextDNS with iCloud Private Relay",
+                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
+                },
+                "blockpage": {
+                    "primary": "This device is using NextDNS with iCloud Private Relay.",
+                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+                }
+            }
+        },
+        "endpoints": {
+            "name": "Végpontok",
+            "description": "Ezzel a konfigurációval állítsa be a NextDNS-t az alábbi végpontok egyikével.",
+            "help": "Nem tudja, hogyan használja ezeket? Kövesse a <1> telepítési útmutatót </1> ."
+        },
+        "linkedIp": {
+            "name": "Összekapcsolt IP",
+            "description": "Ha nem tudja beállítani a NextDNS-t alkalmazásunk, DNS-over-TLS, DNS-over-HTTPS vagy IPv6 segítségével, akkor használja az alábbi DNS-kiszolgálókat, és kapcsolja össze IP-jét. Ez leginkább otthoni hálózatokban való használatra szolgál, és nem ajánlott mobilon.",
+            "servers": {
+                "name": "DNS szerverek"
             },
             "ip": {
-              "steps": {
-                "1": "1. Kattintson a Start menüre, majd a Vezérlőpultra.",
-                "2": "2. Kattintson a Hálózat és Internet, majd a Hálózati és megosztási központ elemre.",
-                "3": "3. Kattintson az Adapter beállításainak módosítása elemre.",
-                "4": "4. Kattintson a jobb gombbal a Wi-Fi hálózathoz, amelyhez csatlakozik, majd kattintson a Tulajdonságok gombra.",
-                "5": "5. Válassza az Internet Protocol {{version}}verzióját.",
-                "6": "6. Kattintson a Tulajdonságok elemre.",
-                "7": "7. Kattintson a következő DNS-kiszolgáló címek használata elemre.",
-                "8": "8. Cserélje ki az aktuális címeket (ha vannak) <1>{{dns1}}</1> és <3>{{dns2}}</3> .",
-                "9": "9. Kattintson az OK, majd a Bezárás gombra. Lehet, hogy újra kell indítania a böngészőt."
-              }
+                "name": "Összekapcsolt IP",
+                "link": "Link IP"
             },
-            "yoga": {
-              "steps": {
-                "1": "1. Telepítse a YogaDNS-t <1>{{link}}</1> .",
-                "2": "2. Kövesse a NextDNS utasításait a <1>{{link}}</1> és használja a <3>{{id}}</3> konfigurációs azonosítóként."
-              }
-            }
-          }
+            "showAdvanced": "Speciális beállítások megjelenítése",
+            "ddns": {
+                "explanation": "A dinamikus DNS (DDNS) segítségével automatikusan frissítheti a csatolt IP-címet.",
+                "set": "Konfigurálja a DDNS-t",
+                "status": "Jelenleg a <1>{{hostname}}</1> DDNS hosztnévként az Ön IP-je percenként automatikusan frissül.",
+                "unset": "Eltávolítás",
+                "form": {
+                    "hostname": {
+                        "label": "DDNS gazdagépnév",
+                        "placeholder": "example.no-ip.org",
+                        "errors": {
+                            "required": "Kérjük, adja meg a gazdagép nevét.",
+                            "invalid": "Kérjük, adj meg egy érvényes gazdagépnevet.",
+                            "ip": "Adj meg egy gazdagépnevet, ne egy IP-címet.",
+                            "error": "Hiba történt az IP-cím e gazdagépnév mögé való lekérésekor.",
+                            "empty": "Ez a gazdagépnév nem ad vissza semmilyen IP-címet.",
+                            "different": "Biztonsági okokból, amikor dinamikus DNS-t adsz hozzá, a DDNS hosztnév által visszaadott IP-címnek meg kell egyeznie az aktuális IP-címmel."
+                        }
+                    }
+                }
+            },
+            "programmatically": "A csatolt IP-t programozással is frissítheted a következő telefonszámon:"
         },
-        "macos": {
-          "name": "Mac operációs rendszer",
-          "guides": {
-            "app": {
-              "title": "NextDNS a macOS számára",
-              "steps": {
-                "1": "1. Telepítse hivatalos alkalmazásunkat a Mac App Store-ból.",
-                "2": "2. Az alkalmazás állapotsorának menüjében kattintson a Beállítások elemre, és lépjen a Konfiguráció fülre.",
-                "3": "3. Jelölje be az \"Egyéni konfiguráció használata\" lehetőséget, és írja be a <1>{{id}}</1> konfigurációs azonosítóként."
-              }
+        "guide": {
+            "name": "Telepítési útmutató",
+            "description": "Kövesse az alábbi utasításokat a NextDNS beállításához az eszközön, a böngészőben vagy az útválasztón.",
+            "or": "Vagy",
+            "ipv4": {
+                "title": "IPv4 (összekapcsolt IP-vel)"
             },
-            "profile": {
-              "requirements": "macOS Big Sur vagy újabb"
+            "ipv6": {
+                "supported": "A hálózatod támogatja az IPv6-ot",
+                "notSupported": "A hálózatod nem támogatja az IPv6-ot"
             },
-            "ip": {
-              "steps": {
-                "1": "1. Nyissa meg a Rendszerbeállításokat, majd kattintson a Hálózat elemre.",
-                "2": "2. Válassza ki azt a hálózatot, amelyhez csatlakozik, majd kattintson a Speciális gombra.",
-                "3": "3. Lépjen a DNS szakaszba.",
-                "4": "4. A DNS-kiszolgálók listában távolítsa el az összes címet (ha van ilyen), majd adja hozzá a <1>{{dns1}}</1> és <3>{{dns2}}</3> .",
-                "5": "5. Kattintson az OK gombra, majd az Alkalmaz gombra."
-              }
+            "tags": {
+                "recommended": "Ajánlott",
+                "advanced": "Haladó"
             },
-            "cli": {
-              "title": "NextDNS parancssori kliens",
-              "steps": {
-                "1": "1. Futtassa a következő parancsot: <1>{{command}}</1>",
-                "2": "2. Kövesse az utasításokat."
-              },
-              "manual": "Menjen át nyílt forráskódú tárunkba a <1>{{link}}címen </1> kézi telepítési utasításokért."
+            "use": "Használja a következőket a <1>{{file}}</1> :",
+            "platforms": {
+                "android": {
+                    "name": "Android",
+                    "guides": {
+                        "private": {
+                            "title": "Privát DNS",
+                            "requirements": "Android 9 vagy újabb",
+                            "steps": {
+                                "1": "1. Válassza a Beállítások → Hálózat és internet → Speciális → Privát DNS menüpontot.",
+                                "2": "2. Válassza a Privát DNS-szolgáltató gazdagépneve lehetőséget.",
+                                "3": "3. Írd be a <1>{{endpoint}}</1> és nyomd meg a Mentés gombot."
+                            }
+                        }
+                    }
+                },
+                "ios": {
+                    "name": "iOS",
+                    "guides": {
+                        "profile": {
+                            "title": "Konfigurációs profil",
+                            "requirements": "iOS 14 vagy újabb",
+                            "step": "Használd az Apple Konfigurációs Profil Generátort: <1>{{link}}</1>"
+                        },
+                        "app": {
+                            "title": "NextDNS iOS rendszerhez",
+                            "qrTextIos": "",
+                            "qrAlt": "",
+                            "qrText": ""
+                        }
+                    }
+                },
+                "windows": {
+                    "name": "Windows",
+                    "guides": {
+                        "dns-over-https": {
+                            "title": "DNS HTTPS-en keresztül",
+                            "requirements": "Windows 11",
+                            "steps": [
+                                "Nyissa meg a <1>Gépház</1> alkalmazást.",
+                                "Válaszd a <1>Hálózat és internet</1> menüpontot.",
+                                "Kattints a <1>Wi-Fi</1> (vagy <3>Ethernet</3>) gombra.",
+                                "Kattintson a <1>Hardver tulajdonságai</1> lehetőségre, vagy hagyja figyelmen kívül ezt a lépést, ha a <3>Ethernet</3> lehetőségre kattintott.",
+                                "Kattintson a <3>DNS-kiszolgáló hozzárendelése</3> melletti <1>Szerkesztés</1> gombra.",
+                                "Válassza a <1>Kézi</1> lehetőséget.",
+                                "Engedélyezze az <1>IPv{{version}}</1> -t.",
+                                "Adja meg a <1>{{ip}}</1> IP címet az <3>Előnyben részesített DNS</3>-nél, majd válassza ki a HTTPS-en keresztüli DNS-nél a <5>Bekapcsolva (manuális sablon)</5> lehetőséget, és írja be a <7>{{endpoint}}</7> címet.",
+                                "Adja meg a <1>{{ip}}</1> IP címet a <3>Másodlagos DNS</3>-nél, majd válassza ki a HTTPS-en keresztüli DNS-nél a <5>Bekapcsolva (manuális sablon)</5> lehetőséget, és írja be a <7>{{endpoint}}</7> címet.",
+                                "Kattintson a <1>Mentés</1> gombra."
+                            ]
+                        },
+                        "app": {
+                            "title": "NextDNS Windowsra",
+                            "steps": {
+                                "1": "1. Töltsd le a telepítőt <1> innen </1>.",
+                                "2": "2. A telepítés után kattintson a jobb gombbal a NextDNS ikonra a Systray-ben, majd nyissa meg a Beállításokat. Állítsa be a <1>{{id}}</1> konfigurációs azonosítóként.",
+                                "3": "3. Kattints a jobb gombbal a NextDNS ikonra a Systray-ben, majd kattints az Engedélyezés gombra."
+                            }
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Kattintson a Start menüre, majd a Vezérlőpultra.",
+                                "2": "2. Kattintson a Hálózat és Internet, majd a Hálózati és megosztási központ elemre.",
+                                "3": "3. Kattintson az Adapter beállításainak módosítása elemre.",
+                                "4": "4. Kattintson a jobb gombbal a Wi-Fi hálózathoz, amelyhez csatlakozik, majd kattintson a Tulajdonságok gombra.",
+                                "5": "5. Válassza az Internet Protocol {{version}}verzióját.",
+                                "6": "6. Kattintson a Tulajdonságok elemre.",
+                                "7": "7. Kattintson a következő DNS-kiszolgáló címek használata elemre.",
+                                "8": "8. Cserélje ki az aktuális címeket (ha vannak) <1>{{dns1}}</1> és <3>{{dns2}}</3> .",
+                                "9": "9. Kattintson az OK, majd a Bezárás gombra. Lehet, hogy újra kell indítania a böngészőt."
+                            }
+                        },
+                        "yoga": {
+                            "steps": {
+                                "1": "1. Telepítse a YogaDNS-t <1>{{link}}</1> .",
+                                "2": "2. Kövesse a NextDNS utasításait a <1>{{link}}</1> és használja a <3>{{id}}</3> konfigurációs azonosítóként."
+                            }
+                        }
+                    }
+                },
+                "macos": {
+                    "name": "Mac operációs rendszer",
+                    "guides": {
+                        "app": {
+                            "title": "NextDNS a macOS számára",
+                            "steps": {
+                                "1": "1. Telepítse hivatalos alkalmazásunkat a Mac App Store-ból.",
+                                "2": "2. Az alkalmazás állapotsorának menüjében kattintson a Beállítások elemre, és lépjen a Konfiguráció fülre.",
+                                "3": "3. Jelölje be az \"Egyéni konfiguráció használata\" lehetőséget, és írja be a <1>{{id}}</1> konfigurációs azonosítóként."
+                            }
+                        },
+                        "profile": {
+                            "requirements": "macOS Big Sur vagy újabb"
+                        },
+                        "ip": {
+                            "steps": {
+                                "1": "1. Nyissa meg a Rendszerbeállításokat, majd kattintson a Hálózat elemre.",
+                                "2": "2. Válassza ki azt a hálózatot, amelyhez csatlakozik, majd kattintson a Speciális gombra.",
+                                "3": "3. Lépjen a DNS szakaszba.",
+                                "4": "4. A DNS-kiszolgálók listában távolítsa el az összes címet (ha van ilyen), majd adja hozzá a <1>{{dns1}}</1> és <3>{{dns2}}</3> .",
+                                "5": "5. Kattintson az OK gombra, majd az Alkalmaz gombra."
+                            }
+                        },
+                        "cli": {
+                            "title": "NextDNS parancssori kliens",
+                            "steps": {
+                                "1": "1. Futtassa a következő parancsot: <1>{{command}}</1>",
+                                "2": "2. Kövesse az utasításokat."
+                            },
+                            "manual": "Menjen át nyílt forráskódú tárunkba a <1>{{link}}címen </1> kézi telepítési utasításokért."
+                        }
+                    }
+                },
+                "linux": {
+                    "name": "Linux",
+                    "guides": {
+                        "cli": {
+                            "title": "NextDNS parancssori kliens",
+                            "steps": {
+                                "1": "1. Futtassa a következő parancsot: <1>{{command}}</1>",
+                                "2": "2. Kövesse az utasításokat."
+                            },
+                            "manual": "Menjen át nyílt forráskódú tárunkba a <1>{{link}}címen </1> kézi telepítési utasításokért."
+                        },
+                        "ip": {
+                            "step": "Állítsa a DNS-kiszolgálókat <1>{{dns1}}</1> és <3>{{dns2}}</3> ."
+                        },
+                        "stubby": {
+                            "warning": "Győződjön meg arról, hogy a Stubby az <1> OpenSSL 1.1.1 vagy újabb verzióval van összekapcsolva </1> mivel a korábbi verziók nem fognak működni a NextDNS-sel."
+                        },
+                        "unbound": {
+                            "warning": "Rekurzív megoldóként a Nincs korlátozás üldözi a CNAME-eket. Ez <1> váratlan viselkedést eredményezhet </1> ha egy blokkoló DNS-megoldóval együtt használják, mint például a NextDNS. Lásd: <3>{{link}}</3> ."
+                        }
+                    }
+                },
+                "chromeos": {
+                    "name": "Chrome OS",
+                    "guides": {
+                        "secure-dns": {
+                            "title": "Biztonságos DNS",
+                            "steps": [
+                                "Nyissa meg a <1>Beállítások</1> alkalmazást.",
+                                "Válassza ki az <1>Adatvédelem és biztonság</1> menüpontot.",
+                                "Engedélyezze a <1>Biztonságos DNS használata</1> opciót.",
+                                "Válassza ki az <1>Egyéni</1> opciót, majd írja be a <3>{{endpoint}}</3> címet."
+                            ]
+                        },
+                        "ip": {
+                            "step": "Állítsa a DNS-kiszolgálókat <1>{{dns1}}</1> és <3>{{dns2}}</3> ."
+                        }
+                    }
+                },
+                "browsers": {
+                    "name": "Böngészők",
+                    "guides": {
+                        "chrome": {
+                            "title": "Google Chrome",
+                            "steps": {
+                                "1": "1. Lépjen a Beállítások menübe.",
+                                "2": "2. Az Adatvédelem és biztonság részben kattintson a Biztonság elemre.",
+                                "3": "3. A Speciális szakaszban engedélyezze a Biztonságos DNS használata lehetőséget.",
+                                "4": "4. Válassza a With: Custom lehetőséget, majd írja be a <1>{{endpoint}}</1> ."
+                            }
+                        },
+                        "firefox": {
+                            "title": "Firefox",
+                            "requirements": "Csak Windows, macOS és Linux",
+                            "steps": {
+                                "1": "1. Nyissa meg a Beállításokat.",
+                                "2": "2. Kattintson az Adatvédelem és biztonságra.",
+                                "3": "3. Görgessen le hogy engedélyezze a HTTPS feletti DNS-t.",
+                                "4": "4. Válassza a Fokozott védelmet vagy a Maximális védelmet.",
+                                "5": "5. Válassza ki az Egyéni szolgáltatót a legördülő menüből.",
+                                "6": "6. Írja be a következőt a mezőbe: <1>{{endpoint}}</1>."
+                            }
+                        },
+                        "edge": {
+                            "title": "Microsoft Edge",
+                            "steps": {
+                                "1": "1. Beállítások megnyitása.",
+                                "2": "Menjen az adatvédelem, keresés, szolgáltatások részhez.",
+                                "3": "A biztonság fülön engedélyezze a \"Használja a biztonságos DNS-t\" beállítást, a titkosított DNS lekérdezésekhez.",
+                                "4": "Jelölje ki a \"Válasszon szolgáltatót\", majd írja be <1>{{endpoint}}</1>."
+                            }
+                        },
+                        "brave": {
+                            "title": "Brave",
+                            "steps": {
+                                "1": "1. Beállítások megnyitása.",
+                                "2": "2. Adatvédelem és biztonság részben (a További beállítások alatt) lépjen a Biztonság elemre.",
+                                "3": "3. A Speciális részben engedélyezze a Biztonságos DNS használata beállítást.",
+                                "4": "4. Válassza a Custom lehetőséget, majd írja be az <1>{{endpoint}}</1>."
+                            }
+                        }
+                    }
+                },
+                "routers": {
+                    "name": "Routerek",
+                    "guides": {
+                        "cli": {
+                            "title": "NextDNS routerekhez",
+                            "requirements": "Csak olyan útválasztókon működik, amelyek futtatható fájlokat futtathatnak",
+                            "step": "Menjen át nyílt forráskódú tárunkba a <1>{{link}}címen </1> a telepítési utasításokért."
+                        },
+                        "ip": {
+                            "ipv6": {
+                                "warning": "Egyes útválasztók nem támogatják a fenti IPv6 jelölést. Ebben az esetben használja a <1>{{dns1}}</1> és <3>{{dns2}}</3> ."
+                            },
+                            "steps": {
+                                "1": "1. Nyissa meg az útválasztó beállításait. Általában a böngészőből érheti el egy URL-címen (például http://192.168.0.1/ vagy http://192.168.1.1/).",
+                                "2": "2. Keresse meg a felületen a DNS-beállításokat.",
+                                "3": "3. Távolítsa el az összes címet (ha van), majd adja hozzá a <1>{{dns1}}</1> és <3>{{dns2}}</3> .",
+                                "4": "4. Kattintson a Mentés (vagy hasonló) gombra."
+                            }
+                        },
+                        "pfsense": {
+                            "steps": {
+                                "1": "1. Lépjen a Szolgáltatások → DNS Resolver menüpontra, és az Általános beállítások lapon görgessen le az Egyéni beállítások mezőig.",
+                                "2": "2. Írja be a következő sorokat:"
+                            }
+                        },
+                        "mikrotik": {
+                            "run": "Futtassa a következőt:"
+                        }
+                    }
+                },
+                "vpn": {
+                    "guides": {
+                        "tailscale": {
+                            "manual": "Nyisd meg a Tailscale dokumentációt a <2>{{link}}</2> résznél a beállítási utasításokért."
+                        }
+                    }
+                }
             }
-          }
         },
-        "linux": {
-          "name": "Linux",
-          "guides": {
-            "cli": {
-              "title": "NextDNS parancssori kliens",
-              "steps": {
-                "1": "1. Futtassa a következő parancsot: <1>{{command}}</1>",
-                "2": "2. Kövesse az utasításokat."
-              },
-              "manual": "Menjen át nyílt forráskódú tárunkba a <1>{{link}}címen </1> kézi telepítési utasításokért."
+        "identify": {
+            "name": "Azonosítsa készülékeit",
+            "description": "Kövesse az alábbi utasításokat eszközei azonosításához az Analytics és a Naplók szolgáltatásban.",
+            "apps": {
+                "name": "Alkalmazások",
+                "instructions": "Engedélyezze az „Eszköznév küldése” lehetőséget az alkalmazás beállításaiban."
             },
-            "ip": {
-              "step": "Állítsa a DNS-kiszolgálókat <1>{{dns1}}</1> és <3>{{dns2}}</3> ."
+            "dot": {
+                "instructions": "Adja hozzá a nevet a megadott tartományhoz (a név csak <1> az-ot tartalmazhat </1> , <3> AZ </3> , <5> 0-9 </5> és <7> - </7> ). Használja a <9> - </9> szóközökhöz.",
+                "example": "A \"<1> John Router számára </1> \", akkor a <3> John - Router-{{configuration}}.dns.nextdns.io fájlt használja </3> mint a DNS-over-TLS végpont."
             },
-            "stubby": {
-              "warning": "Győződjön meg arról, hogy a Stubby az <1> OpenSSL 1.1.1 vagy újabb verzióval van összekapcsolva </1> mivel a korábbi verziók nem fognak működni a NextDNS-sel."
-            },
-            "unbound": {
-              "warning": "Rekurzív megoldóként a Nincs korlátozás üldözi a CNAME-eket. Ez <1> váratlan viselkedést eredményezhet </1> ha egy blokkoló DNS-megoldóval együtt használják, mint például a NextDNS. Lásd: <3>{{link}}</3> ."
+            "doh": {
+                "instructions": "Csatolja a nevet a megadott URL-hez (a névnek URL kódolással kell rendelkeznie).",
+                "example": "A \"<1> John Firefoxhoz </1> \", a <3> https://dns.nextdns.io/{{configuration}}/ John's%20Firefox címet használná </3> mint a DNS-over-HTTPS végpont."
             }
-          }
-        },
-        "chromeos": {
-          "name": "Chrome OS",
-          "guides": {
-            "secure-dns": {
-              "title": "Biztonságos DNS",
-              "steps": [
-                "Nyissa meg a <1>Beállítások</1> alkalmazást.",
-                "Válassza ki az <1>Adatvédelem és biztonság</1> menüpontot.",
-                "Engedélyezze a <1>Biztonságos DNS használata</1> opciót.",
-                "Válassza ki az <1>Egyéni</1> opciót, majd írja be a <3>{{endpoint}}</3> címet."
-              ]
-            },
-            "ip": {
-              "step": "Állítsa a DNS-kiszolgálókat <1>{{dns1}}</1> és <3>{{dns2}}</3> ."
-            }
-          }
-        },
-        "browsers": {
-          "name": "Böngészők",
-          "guides": {
-            "chrome": {
-              "title": "Google Chrome",
-              "steps": {
-                "1": "1. Lépjen a Beállítások menübe.",
-                "2": "2. Az Adatvédelem és biztonság részben kattintson a Biztonság elemre.",
-                "3": "3. A Speciális szakaszban engedélyezze a Biztonságos DNS használata lehetőséget.",
-                "4": "4. Válassza a With: Custom lehetőséget, majd írja be a <1>{{endpoint}}</1> ."
-              }
-            },
-            "firefox": {
-              "title": "Firefox",
-              "requirements": "Csak Windows, macOS és Linux",
-              "steps": {
-                "1": "1. Nyissa meg a Beállításokat.",
-                "2": "2. Kattintson az Adatvédelem és biztonságra.",
-                "3": "3. Görgessen le hogy engedélyezze a HTTPS feletti DNS-t.",
-                "4": "4. Válassza a Fokozott védelmet vagy a Maximális védelmet.",
-                "5": "5. Válassza ki az Egyéni szolgáltatót a legördülő menüből.",
-                "6": "6. Írja be a következőt a mezőbe: <1>{{endpoint}}</1>."
-              }
-            },
-            "edge": {
-              "title": "Microsoft Edge",
-              "steps": {
-                "1": "1. Beállítások megnyitása.",
-                "2": "Menjen az adatvédelem, keresés, szolgáltatások részhez.",
-                "3": "A biztonság fülön engedélyezze a \"Használja a biztonságos DNS-t\" beállítást, a titkosított DNS lekérdezésekhez.",
-                "4": "Jelölje ki a \"Válasszon szolgáltatót\", majd írja be <1>{{endpoint}}</1>."
-              }
-            },
-            "brave": {
-              "title": "Brave",
-              "steps": {
-                "1": "1. Beállítások megnyitása.",
-                "2": "2. Adatvédelem és biztonság részben (a További beállítások alatt) lépjen a Biztonság elemre.",
-                "3": "3. A Speciális részben engedélyezze a Biztonságos DNS használata beállítást.",
-                "4": "4. Válassza a Custom lehetőséget, majd írja be az <1>{{endpoint}}</1>."
-              }
-            }
-          }
-        },
-        "routers": {
-          "name": "Routerek",
-          "guides": {
-            "cli": {
-              "title": "NextDNS routerekhez",
-              "requirements": "Csak olyan útválasztókon működik, amelyek futtatható fájlokat futtathatnak",
-              "step": "Menjen át nyílt forráskódú tárunkba a <1>{{link}}címen </1> a telepítési utasításokért."
-            },
-            "ip": {
-              "ipv6": {
-                "warning": "Egyes útválasztók nem támogatják a fenti IPv6 jelölést. Ebben az esetben használja a <1>{{dns1}}</1> és <3>{{dns2}}</3> ."
-              },
-              "steps": {
-                "1": "1. Nyissa meg az útválasztó beállításait. Általában a böngészőből érheti el egy URL-címen (például http://192.168.0.1/ vagy http://192.168.1.1/).",
-                "2": "2. Keresse meg a felületen a DNS-beállításokat.",
-                "3": "3. Távolítsa el az összes címet (ha van), majd adja hozzá a <1>{{dns1}}</1> és <3>{{dns2}}</3> .",
-                "4": "4. Kattintson a Mentés (vagy hasonló) gombra."
-              }
-            },
-            "pfsense": {
-              "steps": {
-                "1": "1. Lépjen a Szolgáltatások → DNS Resolver menüpontra, és az Általános beállítások lapon görgessen le az Egyéni beállítások mezőig.",
-                "2": "2. Írja be a következő sorokat:"
-              }
-            },
-            "mikrotik": {
-              "run": "Futtassa a következőt:"
-            }
-          }
-        },
-        "vpn": {
-          "guides": {
-            "tailscale": {
-              "manual": "Nyisd meg a Tailscale dokumentációt a <2>{{link}}</2> résznél a beállítási utasításokért."
-            }
-          }
         }
-      }
     },
-    "identify": {
-      "name": "Azonosítsa készülékeit",
-      "description": "Kövesse az alábbi utasításokat eszközei azonosításához az Analytics és a Naplók szolgáltatásban.",
-      "apps": {
-        "name": "Alkalmazások",
-        "instructions": "Engedélyezze az „Eszköznév küldése” lehetőséget az alkalmazás beállításaiban."
-      },
-      "dot": {
-        "instructions": "Adja hozzá a nevet a megadott tartományhoz (a név csak <1> az-ot tartalmazhat </1> , <3> AZ </3> , <5> 0-9 </5> és <7> - </7> ). Használja a <9> - </9> szóközökhöz.",
-        "example": "A \"<1> John Router számára </1> \", akkor a <3> John - Router-{{configuration}}.dns.nextdns.io fájlt használja </3> mint a DNS-over-TLS végpont."
-      },
-      "doh": {
-        "instructions": "Csatolja a nevet a megadott URL-hez (a névnek URL kódolással kell rendelkeznie).",
-        "example": "A \"<1> John Firefoxhoz </1> \", a <3> https://dns.nextdns.io/{{configuration}}/ John's%20Firefox címet használná </3> mint a DNS-over-HTTPS végpont."
-      }
-    }
-  },
-  "security": {
-    "feeds": {
-      "name": "Fenyegetés-hírcsatornák",
-      "description": "Blokkolja azokat a domaineket, amelyekről ismert, hogy rosszindulatú programokat terjesztenek, adathalász támadásokat indítanak, valamint parancs- és vezérlőszervereket üzemeltetnek a legnevesebb fenyegetési hírcsatornák keverékének felhasználásával - mindezt valós időben frissítik.",
-      "enable": "Használja a Fenyegetés-hírcsatornákat"
-    },
-    "ai": {
-      "name": "AI által vezérelt fenyegetésészlelés",
-      "description": "Blokkolja a mesterséges intelligencia technológiánk által észlelt fenyegetések millióit – egy szabadalmaztatott mesterséges intelligencia, amelyet az alapoktól kezdve a DNS-hez terveztek, több száz jellel és terabájtnyi tanítási adattal és valós idejű döntéshozatallal.",
-      "enable": "Az AI-vezérelt fenyegetésészlelés engedélyezése"
-    },
-    "googleSafeBrowsing": {
-      "name": "Google Biztonságos Böngészés",
-      "description": "Blokkolja a rosszindulatú programokat és az adathalász domaineket a Google Biztonságos Böngészés segítségével - ez a technológia naponta több milliárd URL-t vizsgál meg, nem biztonságos webhelyeket keresve. Néhány böngészőben beágyazott verzióval ellentétben ez nem társítja a nyilvános IP-címet fenyegetésekhez, és nem teszi lehetővé a blokk megkerülését.",
-      "enable": "Engedélyezze a Google Biztonságos Böngészést"
-    },
-    "cryptojacking": {
-      "name": "Cryptojacking Protection",
-      "description": "Akadályozza meg eszközei illetéktelen használatát a kriptopénz bányászatához.",
-      "enable": "Engedélyezze a Cryptojacking Protection funkciót"
-    },
-    "dnsRebinding": {
-      "name": "DNS Rebinding Protection",
-      "description": "A privát IP-címeket tartalmazó DNS-válaszok automatikus blokkolásával megakadályozhatja a támadókat, hogy az interneten keresztül átvegyék a helyi eszközök irányítását.",
-      "enable": "Engedélyezze a DNS Rebinding Protection funkciót"
-    },
-    "homograph": {
-      "name": "IDN Homograph Attack Protection",
-      "description": "Blokkolja azokat a domaineket, amelyek más domaineket adnak ki azáltal, hogy visszaélnek az internacionalizált domainnevek (IDN) érkezésével elérhetővé tett nagy karakterkészlettel - pl. A latin „e” betűt cirill „e” betűvel helyettesítik.",
-      "enable": "Engedélyezze a homográf támadások elleni védelmet"
-    },
-    "typosquatting": {
-      "name": "Helyesírás elleni védelem",
-      "description": "Blokkolja a rosszindulatú szereplők által regisztrált domaineket, amelyek olyan felhasználókat céloznak meg, akik helytelenül írnak be egy webcímet a böngészőjükbe - pl. A google.hu helyett a google.com.",
-      "enable": "Engedélyezze a gépírásvédelmet"
-    },
-    "dga": {
-      "name": "Domain Generation Algorithms (DGA) védelem",
-      "description": "A tartományok generálásának algoritmusai (DGA) által generált domainek blokkolása a rosszindulatú programok különböző családjaiban, amelyek találkozási pontként használhatók a parancs- és vezérlőszervereikkel.",
-      "enable": "Engedélyezze a DGA védelmet"
-    },
-    "nrd": {
-      "name": "Újonnan regisztrált domainek (NRD) letiltása",
-      "description": "30 nappal ezelőtt regisztrált domainek blokkolása. Ezeket a domaineket köztudottan a fenyegetés szereplői kedvelik rosszindulatú kampányok indítására.",
-      "enable": "Újonnan regisztrált domainek (NRD) letiltása"
-    },
-    "ddns": {
-      "name": "Dinamikus DNS-állomásnevek blokkolása",
-      "description": "A dinamikus DNS (vagy DDNS) szolgáltatások lehetővé teszik a rosszindulatú szereplők számára, hogy gyorsan, ingyenesen és mindenféle érvényesítés vagy személyazonosság-ellenőrzés nélkül állítsanak be gazdagépneveket. Míg a legális DDNS gazdagépnevekhez ritkán fér hozzá a mindennapi használat során, rosszindulatú megfelelőit gyakran használják adathalász kampányokban – pl. paypal-login.duckdns.org.",
-      "disclaimer": "Ha DDNS-t használ, vegye figyelembe, hogy ez a beállítás nem blokkolja a DDNS-szolgáltatások saját webhelyét vagy frissítési API-ját.",
-      "enable": "Dinamikus DNS-állomásnevek blokkolása"
-    },
-    "parked": {
-      "name": "Letiltja a parkolt domaineket",
-      "description": "A parkolt domainek egyoldalas webhelyek, amelyek gyakran hirdetésekkel vannak terhelve, és semmilyen értéket nem tartalmaznak. A parkolt domainekkel történő bevételszerzés néha összekeveredhet gyanús gyakorlatokkal és rosszindulatú tartalommal.",
-      "enable": "Letiltja a parkolt domaineket"
-    },
-    "tld": {
-      "name": "Felső szintű domainek (TLD) blokkolása",
-      "description": "Blokkoljon minden, meghatározott TLD-hez tartozó tartományt és aldomént.",
-      "add": "TLD hozzáadása",
-      "sections": {
-        "spamhaus": "Spamhaus Leggyakrabban használt TLD-k",
-        "all": "Minden TLD"
-      }
-    },
-    "csam": {
-      "name": "Letiltja a gyermekek szexuális bántalmazását",
-      "description": "A kanadai gyermekvédelmi központ által működtetett Arachnid projekt segítségével blokkolja a gyermekek szexuális zaklatásával foglalkozó anyagokat tároló domaineket. A domain blokkolásakor semmilyen információt nem továbbítanak a Project Arachnid programba.",
-      "enable": "Letiltja a gyermekek szexuális bántalmazását"
-    }
-  },
-  "privacy": {
-    "blocklists": {
-      "name": "Blokklisták",
-      "description": "Letilthatja a hirdetéseket és a követőket a rendelkezésre álló legnépszerűbb blokklisták segítségével - valós időben frissítve.",
-      "add": "Adjon hozzá egy tiltólistát",
-      "updated": "Frissítve <1>{{ago}}</1>",
-      "blocklists": {
-        "nextdns-recommended": {
-          "name": "NextDNS hirdetések és nyomkövetők tiltólista",
-          "description": "Átfogó tiltólista a hirdetések és nyomkövetők blokkolásához minden országban. Ez az ajánlott indító blokkolási lista."
+    "security": {
+        "feeds": {
+            "name": "Fenyegetés-hírcsatornák",
+            "description": "Blokkolja azokat a domaineket, amelyekről ismert, hogy rosszindulatú programokat terjesztenek, adathalász támadásokat indítanak, valamint parancs- és vezérlőszervereket üzemeltetnek a legnevesebb fenyegetési hírcsatornák keverékének felhasználásával - mindezt valós időben frissítik.",
+            "enable": "Használja a Fenyegetés-hírcsatornákat"
+        },
+        "ai": {
+            "name": "AI által vezérelt fenyegetésészlelés",
+            "description": "Blokkolja a mesterséges intelligencia technológiánk által észlelt fenyegetések millióit – egy szabadalmaztatott mesterséges intelligencia, amelyet az alapoktól kezdve a DNS-hez terveztek, több száz jellel és terabájtnyi tanítási adattal és valós idejű döntéshozatallal.",
+            "enable": "Az AI-vezérelt fenyegetésészlelés engedélyezése"
+        },
+        "googleSafeBrowsing": {
+            "name": "Google Biztonságos Böngészés",
+            "description": "Blokkolja a rosszindulatú programokat és az adathalász domaineket a Google Biztonságos Böngészés segítségével - ez a technológia naponta több milliárd URL-t vizsgál meg, nem biztonságos webhelyeket keresve. Néhány böngészőben beágyazott verzióval ellentétben ez nem társítja a nyilvános IP-címet fenyegetésekhez, és nem teszi lehetővé a blokk megkerülését.",
+            "enable": "Engedélyezze a Google Biztonságos Böngészést"
+        },
+        "cryptojacking": {
+            "name": "Cryptojacking Protection",
+            "description": "Akadályozza meg eszközei illetéktelen használatát a kriptopénz bányászatához.",
+            "enable": "Engedélyezze a Cryptojacking Protection funkciót"
+        },
+        "dnsRebinding": {
+            "name": "DNS Rebinding Protection",
+            "description": "A privát IP-címeket tartalmazó DNS-válaszok automatikus blokkolásával megakadályozhatja a támadókat, hogy az interneten keresztül átvegyék a helyi eszközök irányítását.",
+            "enable": "Engedélyezze a DNS Rebinding Protection funkciót"
+        },
+        "homograph": {
+            "name": "IDN Homograph Attack Protection",
+            "description": "Blokkolja azokat a domaineket, amelyek más domaineket adnak ki azáltal, hogy visszaélnek az internacionalizált domainnevek (IDN) érkezésével elérhetővé tett nagy karakterkészlettel - pl. A latin „e” betűt cirill „e” betűvel helyettesítik.",
+            "enable": "Engedélyezze a homográf támadások elleni védelmet"
+        },
+        "typosquatting": {
+            "name": "Helyesírás elleni védelem",
+            "description": "Blokkolja a rosszindulatú szereplők által regisztrált domaineket, amelyek olyan felhasználókat céloznak meg, akik helytelenül írnak be egy webcímet a böngészőjükbe - pl. A google.hu helyett a google.com.",
+            "enable": "Engedélyezze a gépírásvédelmet"
+        },
+        "dga": {
+            "name": "Domain Generation Algorithms (DGA) védelem",
+            "description": "A tartományok generálásának algoritmusai (DGA) által generált domainek blokkolása a rosszindulatú programok különböző családjaiban, amelyek találkozási pontként használhatók a parancs- és vezérlőszervereikkel.",
+            "enable": "Engedélyezze a DGA védelmet"
+        },
+        "nrd": {
+            "name": "Újonnan regisztrált domainek (NRD) letiltása",
+            "description": "30 nappal ezelőtt regisztrált domainek blokkolása. Ezeket a domaineket köztudottan a fenyegetés szereplői kedvelik rosszindulatú kampányok indítására.",
+            "enable": "Újonnan regisztrált domainek (NRD) letiltása"
+        },
+        "ddns": {
+            "name": "Dinamikus DNS-állomásnevek blokkolása",
+            "description": "A dinamikus DNS (vagy DDNS) szolgáltatások lehetővé teszik a rosszindulatú szereplők számára, hogy gyorsan, ingyenesen és mindenféle érvényesítés vagy személyazonosság-ellenőrzés nélkül állítsanak be gazdagépneveket. Míg a legális DDNS gazdagépnevekhez ritkán fér hozzá a mindennapi használat során, rosszindulatú megfelelőit gyakran használják adathalász kampányokban – pl. paypal-login.duckdns.org.",
+            "disclaimer": "Ha DDNS-t használ, vegye figyelembe, hogy ez a beállítás nem blokkolja a DDNS-szolgáltatások saját webhelyét vagy frissítési API-ját.",
+            "enable": "Dinamikus DNS-állomásnevek blokkolása"
+        },
+        "parked": {
+            "name": "Letiltja a parkolt domaineket",
+            "description": "A parkolt domainek egyoldalas webhelyek, amelyek gyakran hirdetésekkel vannak terhelve, és semmilyen értéket nem tartalmaznak. A parkolt domainekkel történő bevételszerzés néha összekeveredhet gyanús gyakorlatokkal és rosszindulatú tartalommal.",
+            "enable": "Letiltja a parkolt domaineket"
+        },
+        "tld": {
+            "name": "Felső szintű domainek (TLD) blokkolása",
+            "description": "Blokkoljon minden, meghatározott TLD-hez tartozó tartományt és aldomént.",
+            "add": "TLD hozzáadása",
+            "sections": {
+                "spamhaus": "Spamhaus Leggyakrabban használt TLD-k",
+                "all": "Minden TLD"
+            }
+        },
+        "csam": {
+            "name": "Letiltja a gyermekek szexuális bántalmazását",
+            "description": "A kanadai gyermekvédelmi központ által működtetett Arachnid projekt segítségével blokkolja a gyermekek szexuális zaklatásával foglalkozó anyagokat tároló domaineket. A domain blokkolásakor semmilyen információt nem továbbítanak a Project Arachnid programba.",
+            "enable": "Letiltja a gyermekek szexuális bántalmazását"
+        },
+        "freeHostingDomains": {
+            "name": "",
+            "description": "",
+            "enable": ""
+        },
+        "untrustedCertificates": {
+            "description": "",
+            "enable": "",
+            "name": ""
+        },
+        "tunnelingEndpoints": {
+            "description": "",
+            "name": "",
+            "enable": ""
+        },
+        "dnsPayloadDelivery": {
+            "name": "",
+            "description": "",
+            "enable": ""
+        },
+        "decentralizedWebGateways": {
+            "name": "",
+            "description": "",
+            "enable": ""
+        },
+        "dataDropServices": {
+            "enable": "",
+            "description": "",
+            "name": ""
+        },
+        "newlyActiveDomains": {
+            "description": "",
+            "enable": "",
+            "name": ""
+        },
+        "fastFluxNetworks": {
+            "enable": "",
+            "name": "",
+            "description": ""
+        },
+        "highRiskTlds": {
+            "name": "",
+            "enable": "",
+            "description": ""
+        },
+        "residentialHosting": {
+            "description": "",
+            "enable": "",
+            "name": ""
+        },
+        "dnsDataExfiltration": {
+            "description": "",
+            "name": "",
+            "enable": ""
         }
-      },
-      "sortBy": {
-        "popularity": "Népszerűség",
-        "name": "Név",
-        "entries": "Jegyzékek",
-        "updated": "Legújabb"
-      },
-      "entries_one": "{{count, number}} bejegyzés",
-      "entries_other": "{{count, number}} bejegyzés"
     },
-    "native": {
-      "name": "Natív követésvédelem",
-      "description": "Blokkolja a széles spektrumú nyomkövetőket - amelyek gyakran operációs rendszer szinten működnek -, amelyek nyomon követik az Ön eszközén végzett tevékenységét. Ez magában foglalhatja az összes felkeresett webhelyet, mindent, amit beír, vagy a tartózkodási helyét.",
-      "add": "Hozzáadás",
-      "systems": {
-        "xiaomi": {
-          "name": "Xiaomi",
-          "devices": "Telefonok és táblagépek, Smart TV-k, Routerek"
+    "privacy": {
+        "blocklists": {
+            "name": "Blokklisták",
+            "description": "Letilthatja a hirdetéseket és a követőket a rendelkezésre álló legnépszerűbb blokklisták segítségével - valós időben frissítve.",
+            "add": "Adjon hozzá egy tiltólistát",
+            "updated": "Frissítve <1>{{ago}}</1>",
+            "blocklists": {
+                "nextdns-recommended": {
+                    "name": "NextDNS hirdetések és nyomkövetők tiltólista",
+                    "description": "Átfogó tiltólista a hirdetések és nyomkövetők blokkolásához minden országban. Ez az ajánlott indító blokkolási lista."
+                }
+            },
+            "sortBy": {
+                "popularity": "Népszerűség",
+                "name": "Név",
+                "entries": "Jegyzékek",
+                "updated": "Legújabb"
+            },
+            "entries_one": "{{count, number}} bejegyzés",
+            "entries_other": "{{count, number}} bejegyzés"
         },
-        "huawei": {
-          "name": "Huawei",
-          "devices": "Telefonok és táblagépek"
+        "native": {
+            "name": "Natív követésvédelem",
+            "description": "Blokkolja a széles spektrumú nyomkövetőket - amelyek gyakran operációs rendszer szinten működnek -, amelyek nyomon követik az Ön eszközén végzett tevékenységét. Ez magában foglalhatja az összes felkeresett webhelyet, mindent, amit beír, vagy a tartózkodási helyét.",
+            "add": "Hozzáadás",
+            "systems": {
+                "xiaomi": {
+                    "name": "Xiaomi",
+                    "devices": "Telefonok és táblagépek, Smart TV-k, Routerek"
+                },
+                "huawei": {
+                    "name": "Huawei",
+                    "devices": "Telefonok és táblagépek"
+                },
+                "samsung": {
+                    "name": "Samsung",
+                    "devices": "Telefonok, táblagépek, okostévék"
+                },
+                "alexa": {
+                    "name": "Amazon Alexa",
+                    "devices": "Alexa-kompatibilis eszközök"
+                },
+                "windows": {
+                    "name": "ablakok",
+                    "devices": "Minden verzió"
+                },
+                "apple": {
+                    "name": "alma",
+                    "devices": "iOS, macOS, tvOS"
+                },
+                "roku": {
+                    "name": "Roku",
+                    "devices": "Minden Roku eszköz"
+                },
+                "sonos": {
+                    "name": "Sonos",
+                    "devices": "Hangszórók"
+                }
+            }
         },
-        "samsung": {
-          "name": "Samsung",
-          "devices": "Telefonok, táblagépek, okostévék"
+        "disguised": {
+            "name": "Blokkolja az álcázott harmadik fél követőket",
+            "description": "Automatikusan felismeri és letiltja a külső nyomkövetőket, akik első félnek álcázzák magukat, hogy megkerüljék a legutóbbi böngésző adatvédelmét, például az ITP-t.",
+            "enable": "Blokkolja az álcázott harmadik fél követőket"
         },
-        "alexa": {
-          "name": "Amazon Alexa",
-          "devices": "Alexa-kompatibilis eszközök"
-        },
-        "windows": {
-          "name": "ablakok",
-          "devices": "Minden verzió"
-        },
-        "apple": {
-          "name": "alma",
-          "devices": "iOS, macOS, tvOS"
-        },
-        "roku": {
-          "name": "Roku",
-          "devices": "Minden Roku eszköz"
-        },
-        "sonos": {
-          "name": "Sonos",
-          "devices": "Hangszórók"
+        "affiliate": {
+            "name": "Társult és követési linkek engedélyezése",
+            "description": "Engedélyezheti az üzletek webhelyein, e-mailekben vagy a keresési eredményekben elterjedt társult és követési domaineket. Azokat általában csak akkor hívják meg, ha kézzel kattintanak egy linkre.",
+            "relay": "Az Ön IP-címe automatikusan el lesz rejtve ezekről a webhelyekről az Ön adatainak védelme érdekében.",
+            "enable": "Társult és követési linkek engedélyezése"
         }
-      }
     },
-    "disguised": {
-      "name": "Blokkolja az álcázott harmadik fél követőket",
-      "description": "Automatikusan felismeri és letiltja a külső nyomkövetőket, akik első félnek álcázzák magukat, hogy megkerüljék a legutóbbi böngésző adatvédelmét, például az ITP-t.",
-      "enable": "Blokkolja az álcázott harmadik fél követőket"
-    },
-    "affiliate": {
-      "name": "Társult és követési linkek engedélyezése",
-      "description": "Engedélyezheti az üzletek webhelyein, e-mailekben vagy a keresési eredményekben elterjedt társult és követési domaineket. Azokat általában csak akkor hívják meg, ha kézzel kattintanak egy linkre.",
-      "relay": "Az Ön IP-címe automatikusan el lesz rejtve ezekről a webhelyekről az Ön adatainak védelme érdekében.",
-      "enable": "Társult és követési linkek engedélyezése"
-    }
-  },
-  "parentalControl": {
-    "services": {
-      "name": "Webhelyek, alkalmazások és játékok",
-      "description": "Korlátozza a hozzáférést bizonyos webhelyekhez, alkalmazásokhoz és játékokhoz.",
-      "add": "Adjon hozzá webhelyet, alkalmazást vagy játékot",
-      "services": {
-        "9gag": "9GAG",
-        "amazon": "amazon",
-        "bereal": "BeReal",
-        "blizzard": "Hóvihar",
-        "chatgpt": "ChatGPT",
-        "dailymotion": "Dailymotion",
-        "discord": "Viszály",
-        "disneyplus": "Disney +",
-        "ebay": "eBay",
-        "facebook": "Facebook",
-        "fortnite": "Fortnite",
-        "google-chat": "Google Chat",
-        "hbomax": "HBO Max",
-        "hulu": "Hulu",
-        "imgur": "Imgur",
-        "instagram": "Instagram",
-        "leagueoflegends": "legendák Ligája",
-        "mastodon": "Mastodon",
-        "messenger": "Hírnök",
-        "minecraft": "Minecraft",
-        "netflix": "Netflix",
-        "pinterest": "Pinterest",
-        "playstation-network": "PlayStation Network",
-        "primevideo": "Prime Video",
-        "reddit": "Reddit",
-        "roblox": "Roblox",
-        "signal": "Signal",
-        "skype": "Skype",
-        "snapchat": "Snapchat",
-        "spotify": "Spotify",
-        "steam": "Gőz",
-        "telegram": "Távirat",
-        "tiktok": "TikTok",
-        "tinder": "tapló",
-        "tumblr": "Tumblr",
-        "twitch": "Rángatás",
-        "twitter": "Twitter",
-        "vimeo": "Vimeo",
-        "vk": "VK",
-        "whatsapp": "WhatsApp",
-        "xboxlive": "Xbox Live",
-        "youtube": "Youtube",
-        "zoom": "Zoomolás"
-      }
-    },
-    "categories": {
-      "name": "Kategóriák",
-      "description": "Korlátozza a hozzáférést a webhelyek és alkalmazások meghatározott kategóriáihoz.",
-      "add": "Kategória hozzáadása",
-      "categories": {
-        "dating": {
-          "name": "Randevú",
-          "description": "Letiltja az összes társkereső webhelyet és alkalmazást."
+    "parentalControl": {
+        "services": {
+            "name": "Webhelyek, alkalmazások és játékok",
+            "description": "Korlátozza a hozzáférést bizonyos webhelyekhez, alkalmazásokhoz és játékokhoz.",
+            "add": "Adjon hozzá webhelyet, alkalmazást vagy játékot",
+            "services": {
+                "9gag": "9GAG",
+                "amazon": "amazon",
+                "bereal": "BeReal",
+                "blizzard": "Hóvihar",
+                "chatgpt": "ChatGPT",
+                "dailymotion": "Dailymotion",
+                "discord": "Viszály",
+                "disneyplus": "Disney +",
+                "ebay": "eBay",
+                "facebook": "Facebook",
+                "fortnite": "Fortnite",
+                "google-chat": "Google Chat",
+                "hbomax": "HBO Max",
+                "hulu": "Hulu",
+                "imgur": "Imgur",
+                "instagram": "Instagram",
+                "leagueoflegends": "legendák Ligája",
+                "mastodon": "Mastodon",
+                "messenger": "Hírnök",
+                "minecraft": "Minecraft",
+                "netflix": "Netflix",
+                "pinterest": "Pinterest",
+                "playstation-network": "PlayStation Network",
+                "primevideo": "Prime Video",
+                "reddit": "Reddit",
+                "roblox": "Roblox",
+                "signal": "Signal",
+                "skype": "Skype",
+                "snapchat": "Snapchat",
+                "spotify": "Spotify",
+                "steam": "Gőz",
+                "telegram": "Távirat",
+                "tiktok": "TikTok",
+                "tinder": "tapló",
+                "tumblr": "Tumblr",
+                "twitch": "Rángatás",
+                "twitter": "Twitter",
+                "vimeo": "Vimeo",
+                "vk": "VK",
+                "whatsapp": "WhatsApp",
+                "xboxlive": "Xbox Live",
+                "youtube": "Youtube",
+                "zoom": "Zoomolás"
+            }
         },
-        "gambling": {
-          "name": "Szerencsejáték",
-          "description": "Letiltja a szerencsejátékkal kapcsolatos tartalmakat."
-        },
-        "gaming": {
-          "name": "Online szerencsejáték",
-          "description": "Letiltja az online játékkal foglalkozó webhelyeket, az online játékalkalmazásokat és online játékhálózatokat (Xbox Live; PlayStation Network; stb.)."
-        },
-        "piracy": {
-          "name": "Kalózkodás",
-          "description": "Letiltja a P2P-webhelyeket, a protokollokat, a szerzői jogokat sértő streaming webhelyeket és az általános videotároló webhelyeket, amelyeket főleg a szerzői joggal védett tartalom illegális terjesztésére használnak."
-        },
-        "porn": {
-          "name": "Pornó",
-          "description": "Letiltja a felnőtteknek szóló és pornográf tartalmat. Escort webhelyeket, pornhub.com és hasonló domaineket tartalmaz."
-        },
-        "social-networks": {
-          "name": "Közösségi hálózatok",
-          "description": "Letiltja az összes közösségi hálózatot és alkalmazást (Facebook, Instagram, TikTok, reddit stb.). Nem blokkolja az üzenetküldő alkalmazásokat."
-        },
-        "video-streaming": {
-          "name": "Videó közvetítés",
-          "description": "Blokkolja a videó streaming szolgáltatásokat (YouTube; Netflix; Disney+; illegális streaming weboldalak; pornóoldalak, stb.) és a videó alapú közösségi hálózatokat (TikTok, stb.). Ez segíthet a sávszélesség-használat csökkentésében bármely hálózaton."
-        }
-      }
-    },
-    "recreation": {
-      "name": "Kikapcsolódási idő",
-      "description": "Állítson be egy időszakot a hét minden napjára, amikor a fenti webhelyek, alkalmazások, játékok vagy kategóriák egy része nem lesz blokkolva – például engedélyezze a Facebook használatát hétfőn és kedden 18 és 20 óra között.",
-      "set": "Kikapcsolódási idő beállítása",
-      "howto": "Használja az <1></1> gombot a fenti szakaszokban a Rekreációs idő engedélyezéséhez."
-    },
-    "safesearch": {
-      "name": "Biztonságos keresés",
-      "description": "Szűrje ki a felnőtteknek szánt tartalmat az összes főbb keresőmotorban, beleértve a képeket és a videókat is. Ez blokkolja a keresőmotorokhoz való hozzáférést, amelyek nem támogatják ezt a funkciót.",
-      "enable": "A biztonságos keresés kikényszerítése"
-    },
-    "youtubeRestricted": {
-      "name": "Korlátozott YouTube mód",
-      "description": "Szűrje ki a felnőtteknek szóló videókat a YouTube-on, és akadályozza a beágyazott, felnőtteknek szóló videók más webhelyeken történő megtekintését. Ez elrejti az összes megjegyzést is.",
-      "enable": "A YouTube korlátozott módjának kikényszerítése"
-    },
-    "bypass": {
-      "name": "Blokk bypass módszerek",
-      "description": "Akadályozza meg vagy akadályozza azoknak a módszereknek a használatát, amelyek segíthetnek a NextDNS szűrésének megkerülésében a hálózaton. Ide tartoznak a VPN-ek, a proxyk, a Tor-hoz kapcsolódó szoftverek és a titkosított DNS-szolgáltatók.",
-      "enable": "Blokk bypass módszerek"
-    }
-  },
-  "xlist": {
-    "placeholder": "Domain hozzáadása ...",
-    "errors": {
-      "required": "Kérjük, adjon meg egy domaint.",
-      "ip": "Kérjük, ne IP-címet, hanem egy domaint adjon meg.",
-      "invalid": "Kérjük, adjon meg egy érvényes domaint.",
-      "tld": "Úgy tűnik, hogy egy teljes TLD-t próbál blokkolni, használja a TLD blokkolása funkciót a Biztonság részben.",
-      "exists": "Ezt a domaint már hozzáadták."
-    },
-    "empty": "Még nincs domain.",
-    "denylist": {
-      "info": "Egy domain megtagadása automatikusan megtagadja az összes aldomainjét."
-    },
-    "allowlist": {
-      "info": "A domain engedélyezése automatikusan engedélyezi az összes aldomainjét. Az engedélyezés elsőbbséget élvez minden mással szemben, beleértve a biztonsági funkciókat is."
-    }
-  },
-  "analytics": {
-    "counters": {
-      "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> blokkolt lekérdezés </1></1>",
-      "all_one": "<0> {{count, number}} </0> <1> lekérdezés </1>",
-      "all_other": "<0> {{count, number}} </0> <1> lekérdezések </1>",
-      "blocked_one": "<0> {{count, number}} </0> <1> blokkolt lekérdezés </1>",
-      "blocked_other": "<0> {{count, number}} </0> <1> blokkolt lekérdezések </1>"
-    },
-    "queries": {
-      "name": "Lekérdezések",
-      "description": "A lekérdezések alakulása az idő múlásával.",
-      "queries": {
-        "all_one": "<0> {{count, number}} </0> <1> lekérdezés </1>",
-        "all_other": "<0> {{count, number}} </0> <1> lekérdezések </1>",
-        "blocked_one": "<0> {{count, number}} </0> <1> blokkolt lekérdezés </1>",
-        "blocked_other": "<0> {{count, number}} </0> <1> blokkolt lekérdezések </1>"
-      }
-    },
-    "domains": {
-      "resolved": {
-        "name": "Megoldott domainek",
-        "description": "Olyan domainek, amelyek megoldódtak anélkül, hogy bármilyen beállítás blokkolta volna őket, vagy mert manuálisan engedélyezték őket."
-      },
-      "blocked": {
-        "name": "Letiltott domainek",
-        "description": "A Biztonság, adatvédelem és / vagy a szülői felügyelet beállítás által blokkolt domainek, vagy azért, mert azokat manuálisan elutasították."
-      },
-      "root": {
-        "name": "Gyökér domainek",
-        "description": "A gyökérdomainekre és azok aldomainjeire készített összes lekérdezés összesítése."
-      },
-      "empty": "Még nincs domain."
-    },
-    "reasons": {
-      "name": "Letiltott okok",
-      "description": "A legtöbb lekérdezést blokkoló biztonsági, adatvédelmi és / vagy szülői felügyeleti beállítások.",
-      "empty": "Még nem tiltottak le domaineket."
-    },
-    "devices": {
-      "name": "Eszközök",
-      "description": "A lekérdezéseket végző eszközök.",
-      "empty": "Még nincs eszköz.",
-      "unidentified": {
-        "name": "Azonosítatlan eszközök"
-      }
-    },
-    "ips": {
-      "name": "IP-k",
-      "description": "IP-címek, amelyek lekérdezik.",
-      "empty": "Még nincs IP."
-    },
-    "gafam": {
-      "name": "GAFAM dominancia",
-      "description": "A \"GAFAM\" (Google, Amazon, Facebook, Apple és Microsoft) az 5 domináns internetes vállalat, amelyek számos népszerű szolgáltatást birtokolnak, amelyek gyakran más néven működnek, például WhatsApp és Instagram for Facebook.",
-      "companies": {
-        "google": {
-          "name": "Google"
-        },
-        "amazon": {
-          "name": "amazon"
-        },
-        "facebook": {
-          "name": "Facebook"
-        },
-        "apple": {
-          "name": "alma"
-        },
-        "microsoft": {
-          "name": "Microsoft"
-        },
-        "others": {
-          "name": "Mások"
-        }
-      },
-      "queries_one": "{{count, number}} lekérdezés",
-      "queries_other": "{{count, number}} lekérdezések"
-    },
-    "encrypted": {
-      "name": "Titkosított DNS",
-      "description": "Titkosított átvitel (DNS-HTTPS felett, DNS-TLS felett vagy a hivatalos NextDNS alkalmazások) segítségével végzett lekérdezések százaléka.",
-      "empty": "Még nincsenek lekérdezések."
-    },
-    "dnssec": {
-      "name": "DNSSEC",
-      "description": "A DNSSEC segítségével ellenőrzött lekérdezések százaléka.",
-      "empty": "Még nincsenek lekérdezések."
-    },
-    "destination": {
-      "name": "Forgalmi célországok",
-      "description": "Országok, ahová az internet forgalma megy.",
-      "topDomains": "Legfelső domainek",
-      "queries_one": "{{count, number}} lekérdezés",
-      "queries_other": "{{count, number}} lekérdezések"
-    }
-  },
-  "logs": {
-    "blockedOnly": "Csak letiltott lekérdezések",
-    "raw": "Nyers DNS-naplók",
-    "empty": "Még nincs napló.",
-    "log": {
-      "actionBlock": "Tiltás",
-      "actionAllow": "Engedélyezés",
-      "dnssec": "Érvényesítve a DNSSEC segítségével.",
-      "clients": {
-        "nextdns-ios": "NextDNS iOS rendszerhez",
-        "nextdns-android": "NextDNS for Android",
-        "nextdns-macos": "NextDNS a macOS számára",
-        "nextdns-windows": "NextDNS for Windows",
-        "nextdns-cli": "NextDNS CLI kliens",
-        "nextdns-chromeos": "NextDNS a Chrome OS számára",
-        "firefox": "Firefox",
-        "google-chrome": "Google Chrome",
-        "dnscrypt": "DNSCrypt",
-        "intra": "Intra",
-        "surge": "Túlfeszültség",
-        "https-dns-proxy": "https_dns_proxy",
-        "mikrotik": "Mikrotik",
-        "apple-profile": "Apple konfigurációs profil"
-      },
-      "blockedBy": "Letiltotta: <1>{{lists}}</1> .",
-      "allowedBy": "Engedélyezi: <1>{{lists}}</1> .",
-      "manual": {
-        "deny": "Kézzel tagadva.",
-        "allow": "Kézzel megengedett."
-      },
-      "insights": {
-        "show": "A Tracker Insights megjelenítése",
-        "hide": "A Tracker Insight elrejtése",
         "categories": {
-          "advertising": {
-            "description": "Reklámot vagy reklámmal kapcsolatos szolgáltatásokat nyújt, mint például adatgyűjtés, viselkedéselemzés vagy újrafogás."
-          },
-          "comments": {
-            "description": "Lehetővé teszi a cikkek és a termékismertetők megjegyzés-szakaszait."
-          },
-          "customer_interaction": {
-            "description": "Tartalmazza a csevegést, az e-mail üzenetküldést, az ügyfélszolgálatot és más interakciós eszközöket."
-          },
-          "essential": {
-            "description": "Tartalmazza a címkekezelőket, az adatvédelmi közleményeket és a webhely funkcionalitása szempontjából kritikus technológiákat."
-          },
-          "adult_advertsing": {
-            "description": "Olyan hirdetéseket jelenít meg, amelyek általában felnőtteknek szóló tartalmi oldalakon jelennek meg."
-          },
-          "site_analytics": {
-            "description": "Gyűjti és elemzi a webhely használatával és teljesítményével kapcsolatos adatokat."
-          },
-          "social_media": {
-            "description": "Integrálja a közösségi média webhelyekkel kapcsolatos szolgáltatásokat."
-          },
-          "audio_video_player": {
-            "description": "Lehetővé teszi a weboldalak számára video- és hangtartalom közzétételét, terjesztését és optimalizálását."
-          },
-          "cdn": {
-            "description": "Tartalom-szállítási hálózat, amely erőforrásokat biztosít a különböző webhely-felhasználásokhoz és általában sok különböző ügyfél számára."
-          },
-          "misc": {
-            "description": "Ez a nyomkövető nem illik más kategóriákba, vagy még nem lett felcímkézve."
-          },
-          "pornvertising": {
-            "description": "Olyan hirdetéseket jelenít meg, amelyek általában felnőtteknek szóló tartalmi oldalakon jelennek meg."
-          },
-          "hosting": {
-            "description": "Ezt a szolgáltatást a tartalomszolgáltató vagy a webhely tulajdonosa használja."
-          },
-          "extensions": {
-            "description": "Szoftver felhasználói eszközökön, amelyek képesek lehallgatni és elemezni a böngésző forgalmát (ember a közepén)."
-          }
+            "name": "Kategóriák",
+            "description": "Korlátozza a hozzáférést a webhelyek és alkalmazások meghatározott kategóriáihoz.",
+            "add": "Kategória hozzáadása",
+            "categories": {
+                "dating": {
+                    "name": "Randevú",
+                    "description": "Letiltja az összes társkereső webhelyet és alkalmazást."
+                },
+                "gambling": {
+                    "name": "Szerencsejáték",
+                    "description": "Letiltja a szerencsejátékkal kapcsolatos tartalmakat."
+                },
+                "gaming": {
+                    "name": "Online szerencsejáték",
+                    "description": "Letiltja az online játékkal foglalkozó webhelyeket, az online játékalkalmazásokat és online játékhálózatokat (Xbox Live; PlayStation Network; stb.)."
+                },
+                "piracy": {
+                    "name": "Kalózkodás",
+                    "description": "Letiltja a P2P-webhelyeket, a protokollokat, a szerzői jogokat sértő streaming webhelyeket és az általános videotároló webhelyeket, amelyeket főleg a szerzői joggal védett tartalom illegális terjesztésére használnak."
+                },
+                "porn": {
+                    "name": "Pornó",
+                    "description": "Letiltja a felnőtteknek szóló és pornográf tartalmat. Escort webhelyeket, pornhub.com és hasonló domaineket tartalmaz."
+                },
+                "social-networks": {
+                    "name": "Közösségi hálózatok",
+                    "description": "Letiltja az összes közösségi hálózatot és alkalmazást (Facebook, Instagram, TikTok, reddit stb.). Nem blokkolja az üzenetküldő alkalmazásokat."
+                },
+                "video-streaming": {
+                    "name": "Videó közvetítés",
+                    "description": "Blokkolja a videó streaming szolgáltatásokat (YouTube; Netflix; Disney+; illegális streaming weboldalak; pornóoldalak, stb.) és a videó alapú közösségi hálózatokat (TikTok, stb.). Ez segíthet a sávszélesség-használat csökkentésében bármely hálózaton."
+                }
+            }
         },
-        "prevalence": {
-          "intensity": {
-            "dangerously": "Veszélyesen elterjedt",
-            "extremely": "Rendkívül elterjedt",
-            "very": "Nagyon elterjedt",
-            "commonly": "Általánosan elterjedt",
-            "relatively": "Viszonylag elterjedt"
-          },
-          "summary": "{{prevalence}} <3> (a webes forgalom {{percent, percentage}} száma követi) </3>"
+        "recreation": {
+            "name": "Kikapcsolódási idő",
+            "description": "Állítson be egy időszakot a hét minden napjára, amikor a fenti webhelyek, alkalmazások, játékok vagy kategóriák egy része nem lesz blokkolva – például engedélyezze a Facebook használatát hétfőn és kedden 18 és 20 óra között.",
+            "set": "Kikapcsolódási idő beállítása",
+            "howto": "Használja az <1></1> gombot a fenti szakaszokban a Rekreációs idő engedélyezéséhez.",
+            "end": "",
+            "start": ""
         },
-        "ownedBy": "<0> Tulajdonosa </0> <1>{{company}}</1>",
-        "source": "Tracker betekintést"
-      }
-    }
-  },
-  "deviceSelector": {
-    "all": "Minden eszköz",
-    "howto": "A Telepítés oldalon megtudhatja, hogyan azonosíthatja eszközeit."
-  },
-  "timeRangeSelector": {
-    "ranges": {
-      "30m": "Utolsó 30 perc",
-      "6h": "Utolsó 6 óra",
-      "24h": "Az elmúlt 24 órában",
-      "7d": "Utolsó 7 nap",
-      "30d": "Az elmúlt 30 nap",
-      "3M": "Az elmúlt 3 hónap"
-    }
-  },
-  "settings": {
-    "name": {
-      "name": "Név",
-      "description": "Válasszon nevet ennek a konfigurációnak."
-    },
-    "logs": {
-      "name": "Naplók",
-      "description": "Finomítsa a Naplók beállításait.",
-      "enable": "Naplók engedélyezése",
-      "privacy": {
-        "name": "Adatvédelmi kiigazítások",
-        "ip": "Naplózza az ügyfelek IP-címeit",
-        "domains": "Naplózza a domaineket"
-      },
-      "retention": {
-        "name": "Visszatartás",
-        "options": {
-          "1h": "1 óra",
-          "6h": "6 óra",
-          "1d": "1 nap",
-          "1w": "1 hét",
-          "1m": "1 hónap",
-          "3m": "3 hónap",
-          "6m": "6 hónap",
-          "1y": "1 év",
-          "2y": "2 év"
-        }
-      },
-      "location": {
-        "name": "Tárolási hely",
-        "locations": {
-          "us": {
-            "name": "Egyesült Államok",
-            "description": "A naplókat az Egyesült Államokban tárolják. Ez az alapértelmezett."
-          },
-          "eu": {
-            "name": "Európai Unió",
-            "description": "A naplókat az Európai Unió tagállamaiban tárolják."
-          },
-          "ch": {
-            "name": "Svájc",
-            "description": "A naplókat a svájci Zürichben fogják tárolni - ez a joghatóság az erős adatvédelmi törvényekről ismert."
-          }
+        "safesearch": {
+            "name": "Biztonságos keresés",
+            "description": "Szűrje ki a felnőtteknek szánt tartalmat az összes főbb keresőmotorban, beleértve a képeket és a videókat is. Ez blokkolja a keresőmotorokhoz való hozzáférést, amelyek nem támogatják ezt a funkciót.",
+            "enable": "A biztonságos keresés kikényszerítése"
         },
-        "confirm": {
-          "title": "Tárolási hely módosítása",
-          "text": "A naplók tárolási helyének megváltoztatása törli a konfiguráció összes korábbi naplóját és elemzését."
+        "youtubeRestricted": {
+            "name": "Korlátozott YouTube mód",
+            "description": "Szűrje ki a felnőtteknek szóló videókat a YouTube-on, és akadályozza a beágyazott, felnőtteknek szóló videók más webhelyeken történő megtekintését. Ez elrejti az összes megjegyzést is.",
+            "enable": "A YouTube korlátozott módjának kikényszerítése"
+        },
+        "bypass": {
+            "name": "Blokk bypass módszerek",
+            "description": "Akadályozza meg vagy akadályozza azoknak a módszereknek a használatát, amelyek segíthetnek a NextDNS szűrésének megkerülésében a hálózaton. Ide tartoznak a VPN-ek, a proxyk, a Tor-hoz kapcsolódó szoftverek és a titkosított DNS-szolgáltatók.",
+            "enable": "Blokk bypass módszerek"
         }
-      },
-      "download": {
-        "button": "Napló letöltése"
-      },
-      "clear": {
-        "button": "Naplók törlése",
-        "confirm": {
-          "text": "Biztosan törli a konfiguráció összes naplóját? Ez a művelet nem visszavonható.",
-          "submit": "Egyértelmű"
-        }
-      }
     },
-    "blockpage": {
-      "name": "Oldal letiltása",
-      "description": "Blokkoldal megjelenítése, ha egy domain blokkolásra kerül. Ez kissé megnövelheti az oldal betöltési idejét, és egyes esetekben HTTPS figyelmeztetés jelenhet meg. Kikapcsoláskor a blokkolt lekérdezésekre a nem megadott címmel válaszolunk (0.0.0.0 vagy: :).",
-      "enable": "Az oldal letiltása",
-      "ca": {
-        "name": "NextDNS Root CA",
-        "description": "Távolítsa el a HTTPS figyelmeztetést a blokkoldal betöltésekor úgy, hogy telepíti és megbízik a gyökér-hitelesítésszolgáltatónkban a <1>{{link}}</1> . <3> itt olvashatja el az utasításokat </3> ."
-      }
-    },
-    "performance": {
-      "name": "Teljesítmény",
-      "description": "Gyorsítsa fel a böngészést.",
-      "ecs": {
-        "name": "Névtelen EDNS kliens alhálózat",
-        "description": "Gyorsítsa fel az adatok kézbesítését a tartalomszolgáltató hálózatokról anélkül, hogy kitenné az IP-címét.",
-        "enable": "Engedélyezze az anonimizált EDNS kliens alhálózatot"
-      },
-      "cache": {
-        "name": "Cache Boost",
-        "description": "Minimalizálja a DNS-lekérdezéseket egy minimális TTL (Time to live) kikényszerítésével.",
-        "enable": "Engedélyezze a gyorsítótár-növelést"
-      },
-      "flatten": {
-        "name": "CNAME lapítás",
-        "description": "Akadályozza meg, hogy a CNAME-t üldöző megoldók felesleges lekérdezéseket tegyenek, és szennyezzék a naplókat köztes tartományokkal.",
-        "enable": "A CNAME lapítás engedélyezése"
-      }
-    },
-    "web3": {
-      "name": "Web3",
-      "description": "A Web3 egy decentralizált és cenzúraálló online ökoszisztémára utal, amely olyan innovatív technológiákból áll, mint a blokklánc-alapú domain-nyilvántartások (pl. Ethereum névszolgáltatás) és elosztott tartalomtároló és -továbbítási hálózatok (pl. IPFS). Ha engedélyezve van, a NextDNS szűretlen átjáróként fog működni az új webhez, lehetővé téve, hogy első kézből tapasztalja meg, anélkül, hogy bármit is telepítenie kellene.",
-      "tips": "Mivel a legtöbb böngésző jelenleg csak a klasszikus legfelső szintű domaineket támogatja, érdemes egy perjelet használni (\"<1>/</1> \"), amikor egy Web3 tartományhoz próbál közvetlenül hozzáférni (pl. \"<3>vitalik.eth/</3> \" helyett \"<5>vitalik.eth</5> \").",
-      "enable": "Web3 engedélyezése"
-    },
-    "rewrites": {
-      "name": "Átírja",
-      "description": "Bármely tartomány DNS-válaszának beállítása vagy felülírása. Az átírások az aldomainekre is vonatkoznak, és a helyi IP-címek válaszként támogatottak.",
-      "new": "Új átírás",
-      "form": {
-        "domain": {
-          "label": "Tartomány",
-          "placeholder": "myprinter.lan, myinternetbox.com, ...",
-          "errors": {
+    "xlist": {
+        "placeholder": "Domain hozzáadása ...",
+        "errors": {
             "required": "Kérjük, adjon meg egy domaint.",
             "ip": "Kérjük, ne IP-címet, hanem egy domaint adjon meg.",
             "invalid": "Kérjük, adjon meg egy érvényes domaint.",
-            "taken": "Már átírta azt a domaint."
-          }
+            "tld": "Úgy tűnik, hogy egy teljes TLD-t próbál blokkolni, használja a TLD blokkolása funkciót a Biztonság részben.",
+            "exists": "Ezt a domaint már hozzáadták."
         },
-        "answer": {
-          "label": "Válasz",
-          "placeholder": "1.2.3.4, sub.example.org, ...",
-          "errors": {
-            "required": "Kérjük, adja meg a választ.",
-            "invalid": "A válasznak érvényes IP-címnek vagy tartománynak kell lennie."
-          }
-        }
-      }
-    },
-    "access": {
-      "name": "Hozzáférés",
-      "description": "Szerkesztési vagy csak megtekintési hozzáférést biztosít másoknak ehhez a profilhoz.",
-      "roles": {
-        "editor": "Szerkesztő",
-        "viewer": "Néző"
-      },
-      "pending": "Meghívó elküldve",
-      "form": {
-        "email": {
-          "label": "E-mail cím",
-          "errors": {
-            "required": "Írja be az e-mail cimét.",
-            "invalid": "Adj meg egy érvényes e-mail címet.",
-            "duplicate": "Ezt az e-mail-címet már meghívták."
-          }
+        "empty": "Még nincs domain.",
+        "denylist": {
+            "info": "Egy domain megtagadása automatikusan megtagadja az összes aldomainjét."
         },
-        "role": {
-          "label": "Jogosultság"
+        "allowlist": {
+            "info": "A domain engedélyezése automatikusan engedélyezi az összes aldomainjét. Az engedélyezés elsőbbséget élvez minden mással szemben, beleértve a biztonsági funkciókat is."
         }
-      }
     },
-    "duplicate": {
-      "button": "Ismétlődő <1>{{name}}</1>",
-      "description": "Másolja át ezen profil összes beállítását egy újba.",
-      "form": {
+    "analytics": {
+        "counters": {
+            "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> blokkolt lekérdezés </1></1>",
+            "all_one": "<0> {{count, number}} </0> <1> lekérdezés </1>",
+            "all_other": "<0> {{count, number}} </0> <1> lekérdezések </1>",
+            "blocked_one": "<0> {{count, number}} </0> <1> blokkolt lekérdezés </1>",
+            "blocked_other": "<0> {{count, number}} </0> <1> blokkolt lekérdezések </1>"
+        },
+        "queries": {
+            "name": "Lekérdezések",
+            "description": "A lekérdezések alakulása az idő múlásával.",
+            "queries": {
+                "all_one": "<0> {{count, number}} </0> <1> lekérdezés </1>",
+                "all_other": "<0> {{count, number}} </0> <1> lekérdezések </1>",
+                "blocked_one": "<0> {{count, number}} </0> <1> blokkolt lekérdezés </1>",
+                "blocked_other": "<0> {{count, number}} </0> <1> blokkolt lekérdezések </1>"
+            }
+        },
+        "domains": {
+            "resolved": {
+                "name": "Megoldott domainek",
+                "description": "Olyan domainek, amelyek megoldódtak anélkül, hogy bármilyen beállítás blokkolta volna őket, vagy mert manuálisan engedélyezték őket."
+            },
+            "blocked": {
+                "name": "Letiltott domainek",
+                "description": "A Biztonság, adatvédelem és / vagy a szülői felügyelet beállítás által blokkolt domainek, vagy azért, mert azokat manuálisan elutasították."
+            },
+            "root": {
+                "name": "Gyökér domainek",
+                "description": "A gyökérdomainekre és azok aldomainjeire készített összes lekérdezés összesítése."
+            },
+            "empty": "Még nincs domain."
+        },
+        "reasons": {
+            "name": "Letiltott okok",
+            "description": "A legtöbb lekérdezést blokkoló biztonsági, adatvédelmi és / vagy szülői felügyeleti beállítások.",
+            "empty": "Még nem tiltottak le domaineket."
+        },
+        "devices": {
+            "name": "Eszközök",
+            "description": "A lekérdezéseket végző eszközök.",
+            "empty": "Még nincs eszköz.",
+            "unidentified": {
+                "name": "Azonosítatlan eszközök"
+            }
+        },
+        "ips": {
+            "name": "IP-k",
+            "description": "IP-címek, amelyek lekérdezik.",
+            "empty": "Még nincs IP."
+        },
+        "gafam": {
+            "name": "GAFAM dominancia",
+            "description": "A \"GAFAM\" (Google, Amazon, Facebook, Apple és Microsoft) az 5 domináns internetes vállalat, amelyek számos népszerű szolgáltatást birtokolnak, amelyek gyakran más néven működnek, például WhatsApp és Instagram for Facebook.",
+            "companies": {
+                "google": {
+                    "name": "Google"
+                },
+                "amazon": {
+                    "name": "amazon"
+                },
+                "facebook": {
+                    "name": "Facebook"
+                },
+                "apple": {
+                    "name": "alma"
+                },
+                "microsoft": {
+                    "name": "Microsoft"
+                },
+                "others": {
+                    "name": "Mások"
+                }
+            },
+            "queries_one": "{{count, number}} lekérdezés",
+            "queries_other": "{{count, number}} lekérdezések"
+        },
+        "encrypted": {
+            "name": "Titkosított DNS",
+            "description": "Titkosított átvitel (DNS-HTTPS felett, DNS-TLS felett vagy a hivatalos NextDNS alkalmazások) segítségével végzett lekérdezések százaléka.",
+            "empty": "Még nincsenek lekérdezések."
+        },
+        "dnssec": {
+            "name": "DNSSEC",
+            "description": "A DNSSEC segítségével ellenőrzött lekérdezések százaléka.",
+            "empty": "Még nincsenek lekérdezések."
+        },
+        "destination": {
+            "name": "Forgalmi célországok",
+            "description": "Országok, ahová az internet forgalma megy.",
+            "topDomains": "Legfelső domainek",
+            "queries_one": "{{count, number}} lekérdezés",
+            "queries_other": "{{count, number}} lekérdezések"
+        }
+    },
+    "logs": {
+        "blockedOnly": "Csak letiltott lekérdezések",
+        "raw": "Nyers DNS-naplók",
+        "empty": "Még nincs napló.",
+        "log": {
+            "actionBlock": "Tiltás",
+            "actionAllow": "Engedélyezés",
+            "dnssec": "Érvényesítve a DNSSEC segítségével.",
+            "clients": {
+                "nextdns-ios": "NextDNS iOS rendszerhez",
+                "nextdns-android": "NextDNS for Android",
+                "nextdns-macos": "NextDNS a macOS számára",
+                "nextdns-windows": "NextDNS for Windows",
+                "nextdns-cli": "NextDNS CLI kliens",
+                "nextdns-chromeos": "NextDNS a Chrome OS számára",
+                "firefox": "Firefox",
+                "google-chrome": "Google Chrome",
+                "dnscrypt": "DNSCrypt",
+                "intra": "Intra",
+                "surge": "Túlfeszültség",
+                "https-dns-proxy": "https_dns_proxy",
+                "mikrotik": "Mikrotik",
+                "apple-profile": "Apple konfigurációs profil",
+                "tailscale": "",
+                "yogadns": ""
+            },
+            "blockedBy": "Letiltotta: <1>{{lists}}</1> .",
+            "allowedBy": "Engedélyezi: <1>{{lists}}</1> .",
+            "manual": {
+                "deny": "Kézzel tagadva.",
+                "allow": "Kézzel megengedett."
+            },
+            "insights": {
+                "show": "A Tracker Insights megjelenítése",
+                "hide": "A Tracker Insight elrejtése",
+                "categories": {
+                    "advertising": {
+                        "description": "Reklámot vagy reklámmal kapcsolatos szolgáltatásokat nyújt, mint például adatgyűjtés, viselkedéselemzés vagy újrafogás."
+                    },
+                    "comments": {
+                        "description": "Lehetővé teszi a cikkek és a termékismertetők megjegyzés-szakaszait."
+                    },
+                    "customer_interaction": {
+                        "description": "Tartalmazza a csevegést, az e-mail üzenetküldést, az ügyfélszolgálatot és más interakciós eszközöket."
+                    },
+                    "essential": {
+                        "description": "Tartalmazza a címkekezelőket, az adatvédelmi közleményeket és a webhely funkcionalitása szempontjából kritikus technológiákat."
+                    },
+                    "adult_advertsing": {
+                        "description": "Olyan hirdetéseket jelenít meg, amelyek általában felnőtteknek szóló tartalmi oldalakon jelennek meg."
+                    },
+                    "site_analytics": {
+                        "description": "Gyűjti és elemzi a webhely használatával és teljesítményével kapcsolatos adatokat."
+                    },
+                    "social_media": {
+                        "description": "Integrálja a közösségi média webhelyekkel kapcsolatos szolgáltatásokat."
+                    },
+                    "audio_video_player": {
+                        "description": "Lehetővé teszi a weboldalak számára video- és hangtartalom közzétételét, terjesztését és optimalizálását."
+                    },
+                    "cdn": {
+                        "description": "Tartalom-szállítási hálózat, amely erőforrásokat biztosít a különböző webhely-felhasználásokhoz és általában sok különböző ügyfél számára."
+                    },
+                    "misc": {
+                        "description": "Ez a nyomkövető nem illik más kategóriákba, vagy még nem lett felcímkézve."
+                    },
+                    "pornvertising": {
+                        "description": "Olyan hirdetéseket jelenít meg, amelyek általában felnőtteknek szóló tartalmi oldalakon jelennek meg."
+                    },
+                    "hosting": {
+                        "description": "Ezt a szolgáltatást a tartalomszolgáltató vagy a webhely tulajdonosa használja."
+                    },
+                    "extensions": {
+                        "description": "Szoftver felhasználói eszközökön, amelyek képesek lehallgatni és elemezni a böngésző forgalmát (ember a közepén)."
+                    }
+                },
+                "prevalence": {
+                    "intensity": {
+                        "dangerously": "Veszélyesen elterjedt",
+                        "extremely": "Rendkívül elterjedt",
+                        "very": "Nagyon elterjedt",
+                        "commonly": "Általánosan elterjedt",
+                        "relatively": "Viszonylag elterjedt"
+                    },
+                    "summary": "{{prevalence}} <3> (a webes forgalom {{percent, percentage}} száma követi) </3>"
+                },
+                "ownedBy": "<0> Tulajdonosa </0> <1>{{company}}</1>",
+                "source": "Tracker betekintést"
+            }
+        },
+        "streaming": "",
+        "settings": "",
+        "toggleTimeFormat": ""
+    },
+    "deviceSelector": {
+        "all": "Minden eszköz",
+        "howto": "A Telepítés oldalon megtudhatja, hogyan azonosíthatja eszközeit."
+    },
+    "timeRangeSelector": {
+        "ranges": {
+            "30m": "Utolsó 30 perc",
+            "6h": "Utolsó 6 óra",
+            "24h": "Az elmúlt 24 órában",
+            "7d": "Utolsó 7 nap",
+            "30d": "Az elmúlt 30 nap",
+            "3M": "Az elmúlt 3 hónap"
+        }
+    },
+    "settings": {
         "name": {
-          "label": "Név",
-          "placeholder": "Otthon, Gyerekek, Iroda, ...",
-          "errors": {
-            "required": "Adjon meg egy nevet.",
-            "taken": "Már van egy profilja ezzel a névvel."
-          }
+            "name": "Név",
+            "description": "Válasszon nevet ennek a konfigurációnak."
         },
-        "button": "Megkettőzés:"
-      }
-    },
-    "delete": {
-      "button": "Törlés <1>{{name}}</1>",
-      "warning": "Ez örökre törli ezt a konfigurációt és az összes hozzá tartozó naplót.",
-      "confirm": {
-        "text": "Biztosan törli a <1>{{name}}</1> ? Ez a művelet nem visszavonható."
-      }
-    },
-    "leave": {
-      "button": "Elhagy<1>{{name}}</1>",
-      "warning": "Elveszíti hozzáférését ehhez a profilhoz.",
-      "confirm": {
-        "text": "Biztosan elhagyja a <1>{{name}}</1>-t ? Ez a művelet nem visszavonható!"
-      }
+        "logs": {
+            "name": "Naplók",
+            "description": "Finomítsa a Naplók beállításait.",
+            "enable": "Naplók engedélyezése",
+            "privacy": {
+                "name": "Adatvédelmi kiigazítások",
+                "ip": "Naplózza az ügyfelek IP-címeit",
+                "domains": "Naplózza a domaineket"
+            },
+            "retention": {
+                "name": "Visszatartás",
+                "options": {
+                    "1h": "1 óra",
+                    "6h": "6 óra",
+                    "1d": "1 nap",
+                    "1w": "1 hét",
+                    "1m": "1 hónap",
+                    "3m": "3 hónap",
+                    "6m": "6 hónap",
+                    "1y": "1 év",
+                    "2y": "2 év"
+                }
+            },
+            "location": {
+                "name": "Tárolási hely",
+                "locations": {
+                    "us": {
+                        "name": "Egyesült Államok",
+                        "description": "A naplókat az Egyesült Államokban tárolják. Ez az alapértelmezett."
+                    },
+                    "eu": {
+                        "name": "Európai Unió",
+                        "description": "A naplókat az Európai Unió tagállamaiban tárolják."
+                    },
+                    "ch": {
+                        "name": "Svájc",
+                        "description": "A naplókat a svájci Zürichben fogják tárolni - ez a joghatóság az erős adatvédelmi törvényekről ismert."
+                    }
+                },
+                "confirm": {
+                    "title": "Tárolási hely módosítása",
+                    "text": "A naplók tárolási helyének megváltoztatása törli a konfiguráció összes korábbi naplóját és elemzését."
+                }
+            },
+            "download": {
+                "button": "Napló letöltése"
+            },
+            "clear": {
+                "button": "Naplók törlése",
+                "confirm": {
+                    "text": "Biztosan törli a konfiguráció összes naplóját? Ez a művelet nem visszavonható.",
+                    "submit": "Egyértelmű"
+                }
+            }
+        },
+        "blockpage": {
+            "name": "Oldal letiltása",
+            "description": "Blokkoldal megjelenítése, ha egy domain blokkolásra kerül. Ez kissé megnövelheti az oldal betöltési idejét, és egyes esetekben HTTPS figyelmeztetés jelenhet meg. Kikapcsoláskor a blokkolt lekérdezésekre a nem megadott címmel válaszolunk (0.0.0.0 vagy: :).",
+            "enable": "Az oldal letiltása",
+            "ca": {
+                "name": "NextDNS Root CA",
+                "description": "Távolítsa el a HTTPS figyelmeztetést a blokkoldal betöltésekor úgy, hogy telepíti és megbízik a gyökér-hitelesítésszolgáltatónkban a <1>{{link}}</1> . <3> itt olvashatja el az utasításokat </3> ."
+            }
+        },
+        "performance": {
+            "name": "Teljesítmény",
+            "description": "Gyorsítsa fel a böngészést.",
+            "ecs": {
+                "name": "Névtelen EDNS kliens alhálózat",
+                "description": "Gyorsítsa fel az adatok kézbesítését a tartalomszolgáltató hálózatokról anélkül, hogy kitenné az IP-címét.",
+                "enable": "Engedélyezze az anonimizált EDNS kliens alhálózatot"
+            },
+            "cache": {
+                "name": "Cache Boost",
+                "description": "Minimalizálja a DNS-lekérdezéseket egy minimális TTL (Time to live) kikényszerítésével.",
+                "enable": "Engedélyezze a gyorsítótár-növelést"
+            },
+            "flatten": {
+                "name": "CNAME lapítás",
+                "description": "Akadályozza meg, hogy a CNAME-t üldöző megoldók felesleges lekérdezéseket tegyenek, és szennyezzék a naplókat köztes tartományokkal.",
+                "enable": "A CNAME lapítás engedélyezése"
+            }
+        },
+        "web3": {
+            "name": "Web3",
+            "description": "A Web3 egy decentralizált és cenzúraálló online ökoszisztémára utal, amely olyan innovatív technológiákból áll, mint a blokklánc-alapú domain-nyilvántartások (pl. Ethereum névszolgáltatás) és elosztott tartalomtároló és -továbbítási hálózatok (pl. IPFS). Ha engedélyezve van, a NextDNS szűretlen átjáróként fog működni az új webhez, lehetővé téve, hogy első kézből tapasztalja meg, anélkül, hogy bármit is telepítenie kellene.",
+            "tips": "Mivel a legtöbb böngésző jelenleg csak a klasszikus legfelső szintű domaineket támogatja, érdemes egy perjelet használni (\"<1>/</1> \"), amikor egy Web3 tartományhoz próbál közvetlenül hozzáférni (pl. \"<3>vitalik.eth/</3> \" helyett \"<5>vitalik.eth</5> \").",
+            "enable": "Web3 engedélyezése"
+        },
+        "rewrites": {
+            "name": "Átírja",
+            "description": "Bármely tartomány DNS-válaszának beállítása vagy felülírása. Az átírások az aldomainekre is vonatkoznak, és a helyi IP-címek válaszként támogatottak.",
+            "new": "Új átírás",
+            "form": {
+                "domain": {
+                    "label": "Tartomány",
+                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
+                    "errors": {
+                        "required": "Kérjük, adjon meg egy domaint.",
+                        "ip": "Kérjük, ne IP-címet, hanem egy domaint adjon meg.",
+                        "invalid": "Kérjük, adjon meg egy érvényes domaint.",
+                        "taken": "Már átírta azt a domaint."
+                    }
+                },
+                "answer": {
+                    "label": "Válasz",
+                    "placeholder": "1.2.3.4, sub.example.org, ...",
+                    "errors": {
+                        "required": "Kérjük, adja meg a választ.",
+                        "invalid": "A válasznak érvényes IP-címnek vagy tartománynak kell lennie."
+                    }
+                }
+            }
+        },
+        "access": {
+            "name": "Hozzáférés",
+            "description": "Szerkesztési vagy csak megtekintési hozzáférést biztosít másoknak ehhez a profilhoz.",
+            "roles": {
+                "editor": "Szerkesztő",
+                "viewer": "Néző"
+            },
+            "pending": "Meghívó elküldve",
+            "form": {
+                "email": {
+                    "label": "E-mail cím",
+                    "errors": {
+                        "required": "Írja be az e-mail cimét.",
+                        "invalid": "Adj meg egy érvényes e-mail címet.",
+                        "duplicate": "Ezt az e-mail-címet már meghívták."
+                    }
+                },
+                "role": {
+                    "label": "Jogosultság"
+                }
+            }
+        },
+        "duplicate": {
+            "button": "Ismétlődő <1>{{name}}</1>",
+            "description": "Másolja át ezen profil összes beállítását egy újba.",
+            "form": {
+                "name": {
+                    "label": "Név",
+                    "placeholder": "Otthon, Gyerekek, Iroda, ...",
+                    "errors": {
+                        "required": "Adjon meg egy nevet.",
+                        "taken": "Már van egy profilja ezzel a névvel."
+                    }
+                },
+                "button": "Megkettőzés:"
+            }
+        },
+        "delete": {
+            "button": "Törlés <1>{{name}}</1>",
+            "warning": "Ez örökre törli ezt a konfigurációt és az összes hozzá tartozó naplót.",
+            "confirm": {
+                "text": "Biztosan törli a <1>{{name}}</1> ? Ez a művelet nem visszavonható."
+            }
+        },
+        "leave": {
+            "button": "Elhagy<1>{{name}}</1>",
+            "warning": "Elveszíti hozzáférését ehhez a profilhoz.",
+            "confirm": {
+                "text": "Biztosan elhagyja a <1>{{name}}</1>-t ? Ez a művelet nem visszavonható!"
+            }
+        },
+        "ageVerification": {
+            "description": "",
+            "acknowledgment": "",
+            "name": ""
+        }
     }
-  }
 }
