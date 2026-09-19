@@ -6,6 +6,9 @@ ADNS combines a feature-rich Private DNS client for Android with a native NextDN
 
 Download it from [GitHub Releases](https://github.com/eyalm2000/adns/releases) or [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/com.eyalm.adns).
 
+Visit the [website](https://adns.eyalm.dev) or check out the [user guide](https://adns.eyalm.dev/docs).
+
+
 ## Three Ways To Use ADNS
 
 ### 1. Private DNS Client
