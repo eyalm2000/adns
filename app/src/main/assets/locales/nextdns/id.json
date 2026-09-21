@@ -22,7 +22,7 @@
         "collapse": "",
         "requestFailed": "",
         "error": "",
-        "preview": "",
+        "preview": "Akses Awal",
         "expand": "",
         "noProfiles": "",
         "search": "",
@@ -53,7 +53,7 @@
         "help": "Bantuan"
     },
     "banners": {
-        "temporary": "Akun sementara ini akan kedaluwarsa dalam <1><0>{{in}}</0></1> dan hanya dapat diakses dari peramban ini. Daftar sekarang gratis untuk menyimpan pengaturan Anda.",
+        "temporary": "Akun sementara ini akan kedaluwarsa dalam <1><0></0></1> dan hanya dapat diakses dari peramban ini. Daftar sekarang gratis untuk menyimpan pengaturan Anda.",
         "nearQuota": "Anda telah membuat lebih dari {{queriesNearQuota, number}} kueri bulan ini, kuota gratis bulanan sebesar {{queriesQuota, number}} kueri akan segera habis. <5>Berlangganan</5> untuk terus menggunakan NextDNS.",
         "overQuota": "Anda telah membuat lebih dari {{queriesQuota, number}} kueri bulan ini dan semua fitur telah dinonaktifkan. <3>Berlangganan</3> untuk terus menggunakan NextDNS."
     },
@@ -132,7 +132,7 @@
                 "info": "NextDNS akan terus merespon kueri DNS tetapi semua fitur dinonaktifkan sementara hingga bulan depan."
             },
             "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+                "ios": "Untuk berlangganan layanan ini, kunjungi my.nextdns.io di peramban Anda.",
                 "upsell": "Dapatkan kueri tak terbatas, mulai dari {{amount, price}}/bulan."
             }
         },
@@ -160,8 +160,8 @@
             "planFull": "{{plan}} ({{interval}})",
             "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
             "expires": "Langganan Anda akan berakhir pada {{date, date}}.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
+            "managedByApple": "Langganan Anda dikelola melalui Akun Apple Anda. Untuk mengubah atau membatalkannya, silakan gunakan pengaturan langganan Apple.",
+            "manageOnApple": "Kelola langganan di Apple",
             "restart": {
                 "button": "Mulai ulang langganan"
             },
@@ -235,7 +235,7 @@
                 },
                 "address": {
                     "label": "Alamat",
-                    "placeholder": "Jl. Medan Merdeka Utara No.3, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat&#10;Daerah Khusus Ibukota Jakarta 10110&#10;Indonesia",
+                    "placeholder": "10 Downing St, Westminster\nLondon SW1A 2AA\nUnited Kingdom",
                     "errors": {
                         "required": "Masukkan alamat bisnis Anda."
                     }
@@ -376,12 +376,12 @@
             },
             "apr": {
                 "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
+                    "primary": "Perangkat ini menggunakan NextDNS bersama iCloud Private Relay.",
                     "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
                 },
                 "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+                    "primary": "Perangkat ini menggunakan NextDNS bersama iCloud Private Relay.",
+                    "secondary": "Mengaktifkan pengaturan Blokir Halaman saat menggunakan iCloud Private Relay akan mengganggu fungsi pemblokiran."
                 }
             }
         },
@@ -581,7 +581,7 @@
                             "steps": [
                                 "Buka aplikasi <1>Pengaturan</1>.",
                                 "Buka <1>Privasi dan keamanan</1>.",
-                                "Aktifkan <1>Gunakan DNS aman</1>.",
+                                "Aktifkan <1>Gunakan koneksi aman untuk mengakses situs</1>.",
                                 "Pilih opsi <1>Dengan: Sesuaikan</1>, lalu masukkan <3>{{endpoint}}</3>."
                             ]
                         },
@@ -727,14 +727,14 @@
             "enable": "Aktifkan Perlindungan Typosquatting"
         },
         "dga": {
-            "name": "Perlindungan Algoritma Pembuatan Domain (DGA)",
+            "name": "Algoritma Pembuatan Domain",
             "description": "Blokir domain yang dihasilkan oleh Domain Generation Algorithms (DGAs) yang terlihat di berbagai keluarga malware yang dapat digunakan sebagai titik pertemuan dengan server perintah dan kontrol mereka.",
             "enable": "Aktifkan Perlindungan DGA"
         },
         "nrd": {
-            "name": "Blokir Domain Baru Terdaftar (NRD)",
+            "name": "Domain Baru Terdaftar",
             "description": "Blokir domain yang terdaftar kurang dari 30 hari yang lalu. Domain tersebut diketahui disukai oleh pelaku ancaman untuk meluncurkan kampanye jahat.",
-            "enable": "Blokir Domain Baru Terdaftar (NRD)"
+            "enable": "Blokir Domain Baru Terdaftar"
         },
         "ddns": {
             "name": "Blokir Dynamic DNS Hostnames",
@@ -822,7 +822,7 @@
             "name": "Daftar Blokir",
             "description": "Blokir iklan & pelacak menggunakan daftar blokir paling populer yang tersedia — semuanya diperbarui secara langsung.",
             "add": "Tambah daftar blokir",
-            "updated": "Diperbarui <1>{{ago}}</1>",
+            "updated": "Diperbarui <1></1>",
             "blocklists": {
                 "nextdns-recommended": {
                     "name": "Daftar Blokir Iklan & Pelacak NextDNS",
@@ -1137,8 +1137,8 @@
                 "tailscale": "",
                 "yogadns": ""
             },
-            "blockedBy": "Diblokir oleh <1>{{lists}}</1>.",
-            "allowedBy": "Diizinkan oleh <1>{{lists}}</1>.",
+            "blockedBy": "Diblokir oleh <1>{{lists,list}}</1>.",
+            "allowedBy": "Diizinkan oleh <1>{{lists,list}}</1>.",
             "manual": {
                 "deny": "Diblokir secara manual.",
                 "allow": "Diizinkan secara manual."

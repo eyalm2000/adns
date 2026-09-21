@@ -57,7 +57,7 @@
     <string name="from">dari</string>
     <string name="just_now">baru saja</string>
     <string name="a_few_seconds_ago">beberapa detik yang lalu</string>
-    <string name="a_dnsbased_ad_blocker_for_android">Private DNS Supercharged</string>
+    <string name="a_dnsbased_ad_blocker_for_android">DNS Pribadi yang Diperkuat</string>
     <string name="activation">Aktivasi</string>
     <string name="adb_shell">ADB Shell</string>
     <string name="add_the_quick_settings_tile">Tambahkan ubin setelan cepat</string>
@@ -405,4 +405,9 @@
     <string name="privacy_policy">Kebijakan Privasi</string>
     <string name="prevalence_tracks_summary">%1$s (melacak %2$s lalu lintas web)</string>
     <string name="prevalent_format">%1$s paling dominan</string>
+    <string name="client">Client</string>
+    <string name="unreleased">Belum dirilis</string>
+    <string name="unreleased_warning_title">Fitur yang Belum Dirilis</string>
+    <string name="unreleased_warning_description">Pengaturan ini merupakan fitur internal eksperimental yang belum diluncurkan secara resmi oleh NextDNS. Mengaktifkannya dapat menyebabkan gangguan tak terduga pada situs web, tingginya tingkat false positive, atau kegagalan resolusi DNS. NextDNS dapat mengubah atau menghapusnya kapan saja.</string>
+    <string name="unreleased_warning_enable">Saya Memahami Risikonya, Aktifkan</string>
 </resources>

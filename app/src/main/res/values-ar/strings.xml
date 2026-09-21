@@ -94,4 +94,18 @@
     <string name="search">يبحث…</string>
     <string name="security">حماية</string>
     <string name="a_dnsbased_ad_blocker_for_android">نظام DNS خاص فائق الأداء</string>
+    <string name="google_dns">نطاق الأسماء الخاص بجوجل</string>
+    <string name="nextdns_name">NextDNS</string>
+    <string name="s_2fa_code">رمز التحقق بخطوتين</string>
+    <string name="select_your_preferred_dns_provider">إختر مزود النطاق المفضل لديك</string>
+    <string name="server">خادم</string>
+    <string name="settings">إعدادات</string>
+    <string name="settings_1">%1$s إعدادات</string>
+    <string name="shizuku">شيزوكي</string>
+    <string name="show_password">أظهر كلمة المرور</string>
+    <string name="state_notifications">إشعار الحالة</string>
+    <string name="the_public_adguard_dns_server_blocks_ads_and_trackers">خادم نطاق الأسماء الخاص بadGuard العام.</string>
+    <string name="the_public_cloudflare_dns_server">خادم نطاق الأسماء الخاص بCloudflare العام.</string>
+    <string name="the_public_google_dns_server">خادم نطاق الأسماء الخاص بجوجل العام.</string>
+    <string name="threat_protection_dns_rebinding_tlds">الحمايه من التهديدات، إعادة ربط نظام أسماء النطاقات (TLDs)</string>
 </resources>

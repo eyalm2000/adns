@@ -127,4 +127,23 @@
     <string name="stats">Statistiken</string>
     <string name="added_to">%1$s zu %2$s hinzugefügt</string>
     <string name="view_your_dns_logs">DNS-Protokolle anzeigen und durchsuchen</string>
+    <string name="threat_protection_dns_rebinding_tlds">Schutz vor Bedrohungen, DNS-Rebinding, TLDs</string>
+    <string name="total_queries">ABFRAGEN GESAMT</string>
+    <string name="uptime">Laufzeit</string>
+    <string name="language_description">Wähle die Anzeigesprache</string>
+    <string name="lists">LISTEN</string>
+    <string name="preferences">EINSTELLUNGEN</string>
+    <string name="blocked_only">Nur Blockierte</string>
+    <string name="show_only_blocked_items">Ausschließlich blockierte Elemente anzeigen</string>
+    <string name="show_only_enabled_items">Ausschließlich aktivierte Elemente anzeigen</string>
+    <string name="enabled_only">Nur Aktivierte</string>
+    <string name="sort_by">Sortieren nach</string>
+    <string name="change_blocklist_sort_order">Sortierung der Sperrlisten ändern</string>
+    <string name="raw_mode">Rohdaten Modus</string>
+    <string name="show_raw_dns_logs">DNS-Protokolle im Rohformat anzeigen</string>
+    <string name="filter_the_logs_to_a_certain_device">Die Protokolle nach einem bestimmten Gerät filtern</string>
+    <string name="all_devices">Alle Geräte</string>
+    <string name="unknown_devices">Unbekannte Geräte</string>
+    <string name="device">Gerät</string>
+    <string name="client">Client</string>
 </resources>
