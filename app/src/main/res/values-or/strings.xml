@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="a_dnsbased_ad_blocker_for_android">ବ୍ୟକ୍ତିଗତ DNS Supercharged ରଖନ୍ତୁ</string>
+    <string name="activation">ସକ୍ରିୟ କରନ୍ତୁ</string>
+    <string name="adb_shell">ଏଡିବି ଢାଞ୍ଚା</string>
+    <string name="add_item">ବସ୍ତୁ ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="add_specific_domains_to_the_allowlist">ଯୋଡ଼ନ୍ତୁ, ବିଲୋପ କରନ୍ତୁ, ଏବଂ ଅନୁମତି ଦିଆଯାଇଥିବା ଡୋମେନଗୁଡ଼ିକୁ ସମ୍ପାଦନ କରନ୍ତୁ</string>
+    <string name="add_specific_domains_to_the_denylist">ଯୋଡ଼ନ୍ତୁ, ବିଲୋପ କରନ୍ତୁ, ଏବଂ ଅବରଧିତ ଡୋମେନଗୁଡ଼ିକ ସମ୍ପାଦନ କରନ୍ତୁ</string>
+    <string name="add_the_quick_settings_tile">Quick setting ଶୀର୍ଷକ ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="add_the_quick_settings_tile_to_your_device">Quick setting ଶୀର୍ଷକ ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="adguard_dns">ଆଡ୍ଗାର୍ଡ</string>
+    <string name="adns_uses_your_credentials_only_to_automatically_create_your_nextdns_api_key_which_is_then_stored">ADNS କେବଳ ଆପଣଙ୍କର NextDNS API କୀ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ସୃଷ୍ଟି କରିବା ପାଇଁ ଆପଣଙ୍କର ପରିଚୟପତ୍ର ବ୍ୟବହାର କରେ, ଯାହା ତାପରେ ଏକ ଏନକ୍ରିପ୍ଟେଡ୍ ଫର୍ମାଟରେ ସଂରକ୍ଷିତ ହୁଏ। ଆପଣଙ୍କର ଇମେଲ୍ ଏବଂ ପାସୱାର୍ଡ କେବେବି ସଂରକ୍ଷିତ ହୁଏ ନାହିଁ।</string>
+    <string name="adns_uses_your_nextdns_api_key_to_fetch_and_configure_your_profiles_your_api_key_is_stored_securel">ଆପଣଙ୍କର ପ୍ରୋଫାଇଲଗୁଡ଼ିକୁ ଆଣିବା ଏବଂ ବିନ୍ୟାସ କରିବା ପାଇଁ ADNS ଆପଣଙ୍କର NextDNS API କୀ ବ୍ୟବହାର କରେ। ଆପଣଙ୍କର API କୀ ଆପଣଙ୍କ ଡିଭାଇସରେ ଏକ ଏନକ୍ରିପ୍ଟ ହୋଇଥିବା ଫର୍ମାଟରେ ସୁରକ୍ଷିତ ଭାବରେ ଷ୍ଟୋର୍ କରାଯାଇଛି।</string>
+    <string name="allowlist">ଅନୁମତି ସୂଚୀ</string>
+    <string name="api_key">ଏପିଆଇ ଚାବି</string>
+    <string name="api_key_account">ଏପିଆଇ କୁଞ୍ଜୀ</string>
+    <string name="app_settings">ଆପ୍ ସେଟିଂସ୍</string>
+    <string name="application_activated_successfully">ଆପ୍ଲିକେସନ୍ ସଫଳତାର ସହ ସକ୍ରିୟ ହୋଇଛି</string>
+    <string name="automatically_bypass_age_verification_checks_used_by_certain_websites_such_as_adult_content_sites">ପ୍ରବେଶ ଅନୁମତି ଦେବା ପୂର୍ବରୁ ପରିଦର୍ଶକଙ୍କ ବୟସ ଯାଞ୍ଚ କରିବା ପାଇଁ ବୟସ୍କ ବିଷୟବସ୍ତୁ ସାଇଟ୍ ପରି କିଛି ନିର୍ଦ୍ଦିଷ୍ଟ ୱେବସାଇଟ୍ ଦ୍ୱାରା ବ୍ୟବହୃତ ବୟସ ଯାଞ୍ଚ ଯାଞ୍ଚଗୁଡ଼ିକୁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ବାଇପାସ୍ କରନ୍ତୁ।</string>
+    <string name="blocked">%1$s (%2$s%) ଅବରୋଧ କରାଯାଇଛି</string>
+    <string name="blockerndisabled">ଅବରୋଧକ\nଅକ୍ଷମ କରାଯାଇଛି</string>
+    <string name="blocklists_trackers_affiliate_links">ବ୍ଲକଲିଷ୍ଟ, ଟ୍ରାକର, ଜଡ଼ିତ ଲିଙ୍କ୍</string>
+    <string name="bypass_age_verification">ବୟସ ଯାଞ୍ଚକରଣ ବାଇପାସ୍ କରନ୍ତୁ</string>
+    <string name="cannot_load_stats">ପରିସଂଖ୍ୟାନ ଲୋଡ୍ କରାଯାଇପାରିବ ନାହିଁ</string>
+    <string name="change_account_settings_for">ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ ପରିଚାଳନା କରନ୍ତୁ, ଲଗ୍ ଆଉଟ୍ କରନ୍ତୁ</string>
+    <string name="change_provider">ପ୍ରଦାତା ବଦଳାନ୍ତୁ</string>
+    <string name="change_the_provider_to_use">ବ୍ୟବହାର କରିବାକୁ ପ୍ରଦାନକାରୀ ବଦଳାନ୍ତୁ</string>
+    <string name="choose_your_profile">ଆପଣଙ୍କର ପ୍ରୋଫାଇଲ୍ ବାଛନ୍ତୁ।</string>
+    <string name="cloudflare_dns">କ୍ଲାଉଡଫ୍ଲେର୍ DNS</string>
+    <string name="confirm">ସୁନିଶ୍ଚିତ କରନ୍ତୁ</string>
+    <string name="congratulations">ଅଭିନନ୍ଦନ!</string>
+    <string name="connect_your_account_to_use_nextdns_as_a_dns_provider">NextDNS କୁ DNS ପ୍ରଦାନକାରୀ ଭାବରେ ବ୍ୟବହାର କରିବା ପାଇଁ ଆପଣଙ୍କର ଆକାଉଣ୍ଟକୁ ସଂଯୋଗ କରନ୍ତୁ।</string>
+    <string name="create">ତିଆରି କରନ୍ତୁ</string>
+    <string name="create_new_profile">ନୂଆ ପ୍ରୋଫାଇଲ୍ ତିଆରି କରନ୍ତୁ</string>
+    <string name="create_profile">ପ୍ରୋଫାଇଲ୍ ତିଆରି କରନ୍ତୁ</string>
+    <string name="custom_dns_hostname">କଷ୍ଟମ୍ DNS ହୋଷ୍ଟନାମ</string>
+    <string name="custom_hostname_advanced">କଷ୍ଟମ୍ ହୋଷ୍ଟନାମ (ଉନ୍ନତ)</string>
+    <string name="denylist">ପ୍ରତ୍ୟାଖ୍ୟାନ ତାଲିକାଭୁକ୍ତ</string>
+    <string name="device_name_for_logs">ଡିଭାଇସର ନାମ (ଲଗ୍ ପାଇଁ)</string>
 </resources>
