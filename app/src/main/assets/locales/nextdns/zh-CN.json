@@ -1,1398 +1,1389 @@
 {
-    "global": {
-        "beta": "测试版",
-        "preview": "抢先体验",
-        "cancel": "取消",
-        "add": "添加",
-        "save": "保存",
-        "continue": "继续",
-        "enable": "启用",
-        "change": "更改",
-        "create": "新建",
-        "subscribe": "订阅",
-        "invite": "邀请",
-        "remove": "移除",
-        "leave": "离开",
-        "delete": "删除",
-        "close": "关闭",
-        "back": "返回",
-        "disable": "停用",
-        "unnamedDevice": "设备 #{{id}}",
-        "firstConfiguration": "我的第一个配置文件",
-        "error": "错误",
-        "networkError": "网络错误",
-        "requestFailed": "请求失败",
-        "noProfiles": "还没有配置文件。",
-        "search": "搜索",
-        "clearSearch": "清除搜索",
-        "copy": "复制",
-        "actions": "操作",
-        "expand": "展开",
-        "collapse": "收起"
+  "global": {
+    "beta": "测试版",
+    "preview": "抢先体验",
+    "cancel": "取消",
+    "add": "添加",
+    "save": "保存",
+    "continue": "继续",
+    "enable": "启用",
+    "change": "更改",
+    "create": "新建",
+    "subscribe": "订阅",
+    "invite": "邀请",
+    "remove": "移除",
+    "leave": "离开",
+    "delete": "删除",
+    "close": "关闭",
+    "back": "返回",
+    "disable": "停用",
+    "unnamedDevice": "设备 #{{id}}",
+    "firstConfiguration": "我的第一个配置文件",
+    "error": "错误",
+    "networkError": "网络错误",
+    "requestFailed": "请求失败",
+    "noProfiles": "还没有配置文件。",
+    "search": "搜索",
+    "clearSearch": "清除搜索",
+    "copy": "复制",
+    "actions": "操作",
+    "expand": "展开",
+    "collapse": "收起"
+  },
+  "theme": {
+    "label": "主题",
+    "system": "系统",
+    "light": "浅色",
+    "dark": "深色"
+  },
+  "pages": {
+    "signup": "注册",
+    "login": "登录",
+    "passwordReset": "重置你的密码",
+    "account": "账户",
+    "setup": "设置指南",
+    "security": "安全",
+    "privacy": "隐私",
+    "parentalcontrol": "家长监护",
+    "denylist": "黑名单",
+    "allowlist": "白名单",
+    "analytics": "统计",
+    "logs": "日志",
+    "settings": "设置",
+    "help": "帮助"
+  },
+  "banners": {
+    "temporary": "此临时账户将在<1><0></0></1>到期，且只能通过此浏览器访问。立即免费注册以保存你的设置。",
+    "nearQuota": "你本月的查询次数已超过 {{queriesNearQuota, number}} 次，接近每月 {{queriesQuota, number}} 次的免费额度。<5>订阅</5>以继续使用 NextDNS。",
+    "overQuota": "你本月的查询次数已超过 {{queriesQuota, number}} 次，所有功能均已停用。<3>订阅</3>以继续使用 NextDNS。"
+  },
+  "account": {
+    "email": "电子邮件地址",
+    "newEmail": "新的电子邮件地址",
+    "password": "密码",
+    "newPassword": "新密码",
+    "currentPassword": "当前密码",
+    "forgotPassword": "忘记密码？",
+    "savePassword": "保存密码",
+    "passwordResetInfo": "输入与你的账户关联的电子邮件地址，我们将向你发送一个链接以重置密码。",
+    "sendEmail": "发送电子邮件",
+    "passwordResetLinkSentMessage": "重置密码的链接已发送至 <1>{{email}}</1>。",
+    "code": "两步验证（2FA）验证码",
+    "login": "登录",
+    "noAccountYet": "还没有账号？<1>注册</1>",
+    "signup": "注册",
+    "alreadyHaveAnAccount": "已经有账号了？<1>登录</1>",
+    "convertingNotice": "你正在将一个临时账户转换为永久账户，所有设置将被保存。",
+    "convertingDeviceOnlyNotice": "你正在将仅限设备使用的账户转换为完整账户，所有设置都将保留。",
+    "logout": "退出登录",
+    "errors": {
+      "email": {
+        "required": "请输入电子邮件地址。",
+        "invalid": "请输入有效的电子邮件地址。",
+        "taken": "此电子邮件地址已被使用。"
+      },
+      "password": {
+        "required": "请输入密码。",
+        "invalidCombination": "无效的电子邮件地址/密码组合。"
+      },
+      "currentPassword": {
+        "required": "请输入你当前的密码。",
+        "incorrect": "你输入的密码不正确。"
+      },
+      "code": {
+        "required": "请输入两步验证（2FA）验证码。",
+        "invalid": "请输入 6 位数验证码。",
+        "incorrect": "两步验证（2FA）验证码错误。"
+      },
+      "resetPasswordToken": {
+        "invalid": "令牌无效或已过期。"
+      }
     },
-    "theme": {
-        "label": "主题",
-        "system": "系统",
-        "light": "浅色",
-        "dark": "深色"
-    },
-    "pages": {
-        "signup": "注册",
-        "login": "登录",
-        "passwordReset": "重置你的密码",
-        "account": "账户",
-        "setup": "设置指南",
-        "security": "安全",
-        "privacy": "隐私",
-        "parentalcontrol": "家长监护",
-        "denylist": "黑名单",
-        "allowlist": "白名单",
-        "analytics": "统计",
-        "logs": "日志",
-        "settings": "设置",
-        "help": "帮助"
-    },
-    "banners": {
-        "temporary": "此临时账户将在<1><0></0></1>到期，且只能通过此浏览器访问。立即免费注册以保存你的设置。",
-        "nearQuota": "你本月的查询次数已超过 {{queriesNearQuota, number}} 次，接近每月 {{queriesQuota, number}} 次的免费额度。<5>订阅</5>以继续使用 NextDNS。",
-        "overQuota": "你本月的查询次数已超过 {{queriesQuota, number}} 次，所有功能均已停用。<3>订阅</3>以继续使用 NextDNS。"
-    },
-    "account": {
-        "email": "电子邮件地址",
-        "newEmail": "新的电子邮件地址",
-        "password": "密码",
-        "newPassword": "新密码",
-        "currentPassword": "当前密码",
-        "forgotPassword": "忘记密码？",
-        "savePassword": "保存密码",
-        "passwordResetInfo": "输入与你的账户关联的电子邮件地址，我们将向你发送一个链接以重置密码。",
-        "sendEmail": "发送电子邮件",
-        "passwordResetLinkSentMessage": "重置密码的链接已发送至 <1>{{email}}</1>。",
-        "code": "两步验证（2FA）验证码",
-        "login": "登录",
-        "noAccountYet": "还没有账号？<1>注册</1>",
-        "signup": "注册",
-        "alreadyHaveAnAccount": "已经有账号了？<1>登录</1>",
-        "convertingNotice": "你正在将一个临时账户转换为永久账户，所有设置将被保存。",
-        "convertingDeviceOnlyNotice": "你正在将仅限设备使用的账户转换为完整账户，所有设置都将保留。",
-        "logout": "退出登录",
-        "errors": {
-            "email": {
-                "required": "请输入电子邮件地址。",
-                "invalid": "请输入有效的电子邮件地址。",
-                "taken": "此电子邮件地址已被使用。"
-            },
-            "password": {
-                "required": "请输入密码。",
-                "invalidCombination": "无效的电子邮件地址/密码组合。"
-            },
-            "currentPassword": {
-                "required": "请输入你当前的密码。",
-                "incorrect": "你输入的密码不正确。"
-            },
-            "code": {
-                "required": "请输入两步验证（2FA）验证码。",
-                "invalid": "请输入 6 位数验证码。",
-                "incorrect": "两步验证（2FA）验证码错误。"
-            },
-            "resetPasswordToken": {
-                "invalid": "令牌无效或已过期。"
-            }
-        },
-        "affiliation": {
-            "name": "推广链接",
-            "description": "分享 <1>{{link}}</1> 帮我们推广，如果有人经此链接注册，那么在这些人首个付费订阅开始后，你可以在头 <5>{{months, number}} 个月</5> 中获得相当于这些人所付订阅费 <3>{{share, percentage}}</3> 的钱。",
-            "balance": {
-                "name": "余额"
-            },
-            "availableBalance": {
-                "name": "可用余额",
-                "description": "为应对可能发生的退款，余额需在一个月后才可提现。"
-            },
-            "payout": {
-                "button": "提现",
-                "minimum": "提现至少需要 {{amount, price}} 的可用余额。",
-                "form": {
-                    "paypalEmail": "PayPal 电子邮件地址",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "请输入 PayPal 电子邮件地址。",
-                            "invalid": "请输入有效的 PayPal 电子邮件地址。"
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "免费额度",
-            "description": "NextDNS 每月可免费查询 {{queries, number}} 次。超过额度后，下个月前所有功能将被暂时停用。",
-            "queries": "<0>{{current, number}}</0><1>/{{quota, number}} 次查询</1>",
-            "overQuota": {
-                "message": "你本月的查询次数已超过 {{queries, number}} 次。",
-                "info": "NextDNS 将继续响应 DNS 查询，但下个月前所有功能都将暂时停用。"
-            },
-            "subscribe": {
-                "ios": "若要订阅此服务，请在浏览器中访问 my.nextdns.io。",
-                "upsell": "每月 {{amount, price}} 起，即可获得不限量的查询。"
-            }
-        },
-        "subscription": {
-            "name": "订阅",
-            "plans": {
-                "pro": "畅享版",
-                "business": "企业版",
-                "education": "教育版"
-            },
-            "intervals": {
-                "month": "月度计划",
-                "year": "年度计划"
-            },
-            "per": {
-                "month": "每月",
-                "year": "每年"
-            },
-            "units": {
-                "business_other": "{{count, number}} 名员工",
-                "education_other": "{{count, number}} 名学生",
-                "education_one": "",
-                "business_one": ""
-            },
-            "planFull": "{{plan}}（{{interval}}）",
-            "planFullWithUnits": "{{plan}}（{{units}}，{{interval}}）",
-            "expires": "你的订阅将在 {{date, date}}到期。",
-            "managedByApple": "你的订阅通过 Apple 账户管理。若要更改或取消订阅，请使用 Apple 的订阅设置。",
-            "manageOnApple": "在 Apple 管理订阅",
-            "restart": {
-                "button": "恢复订阅"
-            },
-            "changePlan": {
-                "button": "更改计划"
-            },
-            "renewal": "下一次自动付款将在 {{date, date}}进行，金额为 {{amount, price}}。",
-            "changePaymentMethod": {
-                "button": "更改付款方式"
-            },
-            "cancel": {
-                "button": "取消订阅",
-                "confirm": {
-                    "text": "你当前的订阅将保持有效至 {{date, date}}。",
-                    "submit": "取消订阅"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "选择一个计划",
-                "addPaymentMethod": "添加付款方式",
-                "included": "所有计划均包含<1>全部功能</1>、<3>不限设备数量</3>和<5>无限量查询</5>。",
-                "savings": "比月度计划节省 {{percent, percentage}}",
-                "familyOnly": "* 畅享版计划仅供个人（及关系亲近的家人）使用。",
-                "unitsQuestion": {
-                    "business": "你的企业雇用了多少位<1>员工</1>？",
-                    "education": "你的学校（或学区）有多少名<1>学生</1>？"
-                },
-                "unitsLabel": {
-                    "business": "员工人数",
-                    "education": "学生人数"
-                },
-                "asYouGrow": {
-                    "business": "* 请记住，随着员工人数的增长，你需要更新你的计划。",
-                    "education": "* 请记住，随着学生数量的增长，你需要更新你的计划。"
-                },
-                "starting": {
-                    "business": "<2>{{units, number}} 名员工的月费 </2><1>{{price, price}}</1><0> 起</0>",
-                    "education": "<2>{{units, number}} 名学生的月费 </2><1>{{price, price}}</1><0> 起</0>"
-                },
-                "card": {
-                    "number": "卡号",
-                    "expiration": "有效期至",
-                    "code": "安全码",
-                    "stripe": "我们使用 Stripe（领先的支付网关）以安全的方式处理银行卡付款，我们不会直接接触你的银行卡信息。"
-                },
-                "paypal": {
-                    "text": "点击“继续到 PayPal”按钮，通过 PayPal 订阅。"
-                },
-                "bitpay": {
-                    "text": "点击“继续到 BitPay”按钮，使用加密货币付款。",
-                    "toYearly": "月度计划不支持加密货币付款。<1>继续操作后，你将自动切换到年度计划。</1>",
-                    "remainder": "你当前的订阅已支付至 {{date, date}}。我们将立即收款，并将当前订阅的剩余时长自动计入新的到期日期。"
-                },
-                "continueTo": "继续到 <1></1>"
-            }
-        },
-        "business": {
-            "name": "公司资料",
-            "description": "出于税务目的，我们需要你的公司名称、地址和增值税号（或同等编号）。这是法律要求的，将显示在所有发票上。",
-            "button": {
-                "add": "添加公司信息",
-                "update": "更新资料"
-            },
-            "form": {
-                "name": {
-                    "label": "名称",
-                    "placeholder": "某某公司",
-                    "errors": {
-                        "required": "请输入你的公司名称。"
-                    }
-                },
-                "address": {
-                    "label": "地址",
-                    "placeholder": "中国\n上海市浦东新区\n申迪西路 310 号",
-                    "errors": {
-                        "required": "请输入你的公司地址。"
-                    }
-                },
-                "vatNumber": {
-                    "label": "增值税号（或同等税务编号）"
-                }
-            }
-        },
-        "invoices": {
-            "name": "发票",
-            "description": "账单记录和你账户的所有发票。",
-            "pending": "{{amount, price}}（待处理）",
-            "show-more": "显示更多",
-            "show-less": "收起",
-            "invoice": {
-                "title": "发票编号 {{code}}",
-                "to": "至：<1>{{email}}</1>",
-                "vatNumber": "增值税号（或同等税务编号）：{{number}}",
-                "columns": {
-                    "plan": "计划",
-                    "period": "有效期",
-                    "amount": "金额"
-                },
-                "vat": "增值税（{{rate, percentage}}）",
-                "total": "总计",
-                "footer": {
-                    "reverseCharged": "增值税（或同等税种）适用反向征税。",
-                    "currency": "显示的所有金额均为 {{code}}。"
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "电子邮件地址",
-            "description": "更改用于登录账户并接收重要通知的电子邮件地址。",
-            "button": "更改电子邮件地址"
-        },
-        "changePassword": {
-            "name": "密码",
-            "description": "更改用于登录账户和确认敏感操作的密码。",
-            "button": "更改密码"
-        },
-        "2fa": {
-            "name": "两步验证（2FA）",
-            "description": "两步验证（2FA）是一层额外的安全保护，登录账户时需要额外输入一个基于时间生成的 6 位数验证码。",
-            "enabled": "你的账户已启用两步验证（2FA）。",
-            "enable": {
-                "button": "启用两步验证（2FA）",
-                "secret": "双因素认证（2FA）密钥",
-                "modal": {
-                    "howto": "使用 <1>Google 身份验证器</1> 等身份验证器应用，或支持两步验证（2FA）的密码管理器。你可以扫描二维码、点击二维码打开 <3>{{otpauth}}</3> 链接，或手动复制粘贴密钥。"
-                }
-            },
-            "recovery": {
-                "button": "恢复代码",
-                "modal": {
-                    "howto": "如果你无法使用设备且无法获取双因素认证码，请使用这些恢复代码访问你的账户。每个代码只能使用一次。",
-                    "download": "下载",
-                    "regen": "重新生成"
-                }
-            },
-            "disable": {
-                "button": "停用两步验证（2FA）"
-            }
-        },
-        "api": {
-            "description": "通过编程创建和管理你的配置文件。请阅读 <1>{{link}}</1> 上的文档。",
-            "copy": "复制 API 密钥",
-            "remove": "移除 API 密钥",
-            "create": {
-                "button": "生成 API 密钥"
-            }
-        },
-        "delete": {
-            "button": "删除账户",
-            "warning": "这将永久删除你的账户和所有配置文件。",
-            "confirm": {
-                "text": "你确定要删除你的账户吗？此操作无法撤销。"
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "已过期",
-                    "text": "你的临时账户已过期。立即免费注册以保存你的设置并继续使用 NextDNS。"
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "新建",
+    "affiliation": {
+      "name": "推广链接",
+      "description": "分享 <1>{{link}}</1> 帮助我们推广 NextDNS，即可获得你推荐的每位用户在首次付费订阅开始后的前 <5>{{months, number}} 个月</5>内所支付订阅费用的 <3>{{share, percentage}}</3>。",
+      "balance": {
+        "name": "余额"
+      },
+      "availableBalance": {
+        "name": "可用余额",
+        "description": "为应对可能发生的退款，余额需在一个月后才可提现。"
+      },
+      "payout": {
+        "button": "提现",
+        "minimum": "提现至少需要 {{amount, price}} 的可用余额。",
         "form": {
-            "title": "新建配置文件",
-            "name": {
-                "label": "名称",
-                "placeholder": "家庭、孩子、办公室……",
-                "errors": {
-                    "required": "请输入一个名称。",
-                    "taken": "你已有使用此名称的配置文件。"
-                }
+          "paypalEmail": "PayPal 电子邮件地址",
+          "errors": {
+            "paypalEmail": {
+              "required": "请输入 PayPal 电子邮件地址。",
+              "invalid": "请输入有效的 PayPal 电子邮件地址。"
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "一切准备就绪！",
-                "secondary": "此设备正在使用此配置文件连接 NextDNS。"
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "此设备正在使用 NextDNS，但未使用任何配置文件。",
-                    "secondary": {
-                        "clients": "请确认已在应用设置中填入下方显示的配置文件 ID。",
-                        "firefox": "请确保在 Firefox 中设置下面显示的 DNS-over-HTTPS 端点。",
-                        "doh": "请确保使用下面显示的 DNS-over-HTTPS 端点。",
-                        "dot": "请确保使用下面显示的 DNS-over-TLS 端点。",
-                        "ipv6": "请确保使用下面显示的 IPv6 地址。",
-                        "servers": "请使用下方“已绑定的 IP”部分显示的 DNS 服务器（不同配置文件的 DNS 服务器不同）。",
-                        "link": "请在下方“已绑定的 IP”部分绑定你的 IP 地址。"
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "此设备正在使用另一个配置文件连接 NextDNS。",
-                    "secondary": {
-                        "sameAccount": "该设备目前正在使用“{{name}}”。",
-                        "otherAccount": "请确保你使用的是此页面上列出的端点之一。"
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "该设备未使用 NextDNS。",
-                "secondary": "该设备目前正在使用“{{resolver}}”作为 DNS 解析器。"
-            },
-            "error": {
-                "primary": "检查当前状态时出错。",
-                "secondary": "如果刷新页面后问题仍然存在，请与我们联系。"
-            },
-            "apr": {
-                "ok": {
-                    "primary": "此设备正在通过 iCloud 专用代理使用 NextDNS。",
-                    "secondary": "安全搜索、YouTube 受限模式和重写等功能与 iCloud 专用代理不兼容。"
-                },
-                "blockpage": {
-                    "primary": "此设备正在通过 iCloud 专用代理使用 NextDNS。",
-                    "secondary": "使用 iCloud 专用代理时，启用“拦截页面”设置会干扰拦截。"
-                }
+    "usage": {
+      "name": "免费额度",
+      "description": "NextDNS 每月可免费查询 {{queries, number}} 次。超过额度后，下个月前所有功能将被暂时停用。",
+      "queries": "<0>{{current, number}}</0><1>/{{quota, number}} 次查询</1>",
+      "overQuota": {
+        "message": "你本月的查询次数已超过 {{queries, number}} 次。",
+        "info": "NextDNS 将继续响应 DNS 查询，但下个月前所有功能都将暂时停用。"
+      },
+      "subscribe": {
+        "ios": "若要订阅此服务，请在浏览器中访问 my.nextdns.io。",
+        "upsell": "每月 {{amount, price}} 起，即可获得不限量的查询。"
+      }
+    },
+    "subscription": {
+      "name": "订阅",
+      "plans": {
+        "pro": "畅享版",
+        "business": "企业版",
+        "education": "教育版"
+      },
+      "intervals": {
+        "month": "月度计划",
+        "year": "年度计划"
+      },
+      "per": {
+        "month": "每月",
+        "year": "每年"
+      },
+      "units": {
+        "business_other": "{{count, number}} 名员工",
+        "education_other": "{{count, number}} 名学生"
+      },
+      "planFull": "{{plan}}（{{interval}}）",
+      "planFullWithUnits": "{{plan}}（{{units}}，{{interval}}）",
+      "expires": "你的订阅将在 {{date, date}}到期。",
+      "managedByApple": "你的订阅通过 Apple 账户管理。若要更改或取消订阅，请使用 Apple 的订阅设置。",
+      "manageOnApple": "在 Apple 管理订阅",
+      "restart": {
+        "button": "恢复订阅"
+      },
+      "changePlan": {
+        "button": "更改计划"
+      },
+      "renewal": "下一次自动付款将在 {{date, date}}进行，金额为 {{amount, price}}。",
+      "changePaymentMethod": {
+        "button": "更改付款方式"
+      },
+      "cancel": {
+        "button": "取消订阅",
+        "confirm": {
+          "text": "你当前的订阅将保持有效至 {{date, date}}。",
+          "submit": "取消订阅"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "选择一个计划",
+        "addPaymentMethod": "添加付款方式",
+        "included": "所有计划均包含<1>全部功能</1>、<3>不限设备数量</3>和<5>无限量查询</5>。",
+        "savings": "比月度计划节省 {{percent, percentage}}",
+        "familyOnly": "* 畅享版计划仅供个人（及关系亲近的家人）使用。",
+        "unitsQuestion": {
+          "business": "你的企业雇用了多少位<1>员工</1>？",
+          "education": "你的学校（或学区）有多少名<1>学生</1>？"
+        },
+        "unitsLabel": {
+          "business": "员工人数",
+          "education": "学生人数"
+        },
+        "asYouGrow": {
+          "business": "* 请记住，随着员工人数的增长，你需要更新你的计划。",
+          "education": "* 请记住，随着学生数量的增长，你需要更新你的计划。"
+        },
+        "starting": {
+          "business": "<2>{{units, number}} 名员工的月费 </2><1>{{price, price}}</1><0> 起</0>",
+          "education": "<2>{{units, number}} 名学生的月费 </2><1>{{price, price}}</1><0> 起</0>"
+        },
+        "card": {
+          "number": "卡号",
+          "expiration": "有效期至",
+          "code": "安全码",
+          "stripe": "我们使用 Stripe（领先的支付网关）以安全的方式处理银行卡付款，我们不会直接接触你的银行卡信息。"
+        },
+        "paypal": {
+          "text": "点击“继续到 PayPal”按钮，通过 PayPal 订阅。"
+        },
+        "bitpay": {
+          "text": "点击“继续到 BitPay”按钮，使用加密货币付款。",
+          "toYearly": "月度计划不支持加密货币付款。<1>继续操作后，你将自动切换到年度计划。</1>",
+          "remainder": "你当前的订阅已支付至 {{date, date}}。我们将立即收款，并将当前订阅的剩余时长自动计入新的到期日期。"
+        },
+        "continueTo": "继续到 <1></1>"
+      }
+    },
+    "business": {
+      "name": "公司资料",
+      "description": "出于税务目的，我们需要你的公司名称、地址和增值税号（或同等编号）。这是法律要求的，将显示在所有发票上。",
+      "button": {
+        "add": "添加公司信息",
+        "update": "更新资料"
+      },
+      "form": {
+        "name": {
+          "label": "名称",
+          "placeholder": "某某公司",
+          "errors": {
+            "required": "请输入你的公司名称。"
+          }
+        },
+        "address": {
+          "label": "地址",
+          "placeholder": "中国\n上海市浦东新区\n申迪西路 310 号",
+          "errors": {
+            "required": "请输入你的公司地址。"
+          }
+        },
+        "vatNumber": {
+          "label": "增值税号（或同等税务编号）"
+        }
+      }
+    },
+    "invoices": {
+      "name": "发票",
+      "description": "账单记录和你账户的所有发票。",
+      "pending": "{{amount, price}}（待处理）",
+      "show-more": "显示更多",
+      "show-less": "收起",
+      "invoice": {
+        "title": "发票编号 {{code}}",
+        "to": "至：<1>{{email}}</1>",
+        "vatNumber": "增值税号（或同等税务编号）：{{number}}",
+        "columns": {
+          "plan": "计划",
+          "period": "有效期",
+          "amount": "金额"
+        },
+        "vat": "增值税（{{rate, percentage}}）",
+        "total": "总计",
+        "footer": {
+          "reverseCharged": "增值税（或同等税种）适用反向征税。",
+          "currency": "显示的所有金额均为 {{code}}。"
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "电子邮件地址",
+      "description": "更改用于登录账户并接收重要通知的电子邮件地址。",
+      "button": "更改电子邮件地址"
+    },
+    "changePassword": {
+      "name": "密码",
+      "description": "更改用于登录账户和确认敏感操作的密码。",
+      "button": "更改密码"
+    },
+    "2fa": {
+      "name": "两步验证（2FA）",
+      "description": "两步验证（2FA）是一层额外的安全保护，登录账户时需要额外输入一个基于时间生成的 6 位数验证码。",
+      "enabled": "你的账户已启用两步验证（2FA）。",
+      "enable": {
+        "button": "启用两步验证（2FA）",
+        "secret": "两步验证（2FA）密钥",
+        "modal": {
+          "howto": "使用 <1>Google 身份验证器</1> 等身份验证器应用，或支持两步验证（2FA）的密码管理器。你可以扫描二维码、点击二维码打开 <3>{{otpauth}}</3> 链接，或手动复制粘贴密钥。"
+        }
+      },
+      "recovery": {
+        "button": "恢复代码",
+        "modal": {
+          "howto": "如果你无法使用设备且无法获取两步验证（2FA）验证码，请使用这些恢复代码访问你的账户。每个代码只能使用一次。",
+          "download": "下载",
+          "regen": "重新生成"
+        }
+      },
+      "disable": {
+        "button": "停用两步验证（2FA）"
+      }
+    },
+    "api": {
+      "description": "通过编程创建和管理你的配置文件。请阅读 <1>{{link}}</1> 上的文档。",
+      "copy": "复制 API 密钥",
+      "remove": "移除 API 密钥",
+      "create": {
+        "button": "生成 API 密钥"
+      }
+    },
+    "delete": {
+      "button": "删除账户",
+      "warning": "这将永久删除你的账户和所有配置文件。",
+      "confirm": {
+        "text": "你确定要删除你的账户吗？此操作无法撤销。"
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "已过期",
+          "text": "你的临时账户已过期。立即免费注册以保存你的设置并继续使用 NextDNS。"
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "新建",
+    "form": {
+      "title": "新建配置文件",
+      "name": {
+        "label": "名称",
+        "placeholder": "家庭、孩子、办公室……",
+        "errors": {
+          "required": "请输入一个名称。",
+          "taken": "你已有使用此名称的配置文件。"
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "一切准备就绪！",
+        "secondary": "此设备正在使用此配置文件连接 NextDNS。"
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "此设备正在使用 NextDNS，但未使用任何配置文件。",
+          "secondary": {
+            "clients": "请确认已在应用设置中填入下方显示的配置文件 ID。",
+            "firefox": "请确保在 Firefox 中设置下面显示的 DNS-over-HTTPS 端点。",
+            "doh": "请确保使用下面显示的 DNS-over-HTTPS 端点。",
+            "dot": "请确保使用下面显示的 DNS-over-TLS 端点。",
+            "ipv6": "请确保使用下面显示的 IPv6 地址。",
+            "servers": "请使用下方“已绑定的 IP”部分显示的 DNS 服务器（不同配置文件的 DNS 服务器不同）。",
+            "link": "请在下方“已绑定的 IP”部分绑定你的 IP 地址。"
+          }
+        },
+        "withConfiguration": {
+          "primary": "此设备正在使用另一个配置文件连接 NextDNS。",
+          "secondary": {
+            "sameAccount": "该设备目前正在使用“{{name}}”。",
+            "otherAccount": "请确保你使用的是此页面上列出的端点之一。"
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "该设备未使用 NextDNS。",
+        "secondary": "该设备目前正在使用“{{resolver}}”作为 DNS 解析器。"
+      },
+      "error": {
+        "primary": "检查当前状态时出错。",
+        "secondary": "如果刷新页面后问题仍然存在，请与我们联系。"
+      },
+      "apr": {
+        "ok": {
+          "primary": "此设备正在通过 iCloud 专用代理使用 NextDNS。",
+          "secondary": "安全搜索、YouTube 受限模式和重写等功能与 iCloud 专用代理不兼容。"
+        },
+        "blockpage": {
+          "primary": "此设备正在通过 iCloud 专用代理使用 NextDNS。",
+          "secondary": "使用 iCloud 专用代理时，启用“拦截页面”设置会干扰拦截。"
+        }
+      }
+    },
+    "endpoints": {
+      "name": "端点",
+      "description": "使用下方任一端点，即可为此配置文件设置 NextDNS。",
+      "help": "不确定如何使用？请参阅<1>设置指南</1>。"
+    },
+    "linkedIp": {
+      "name": "已绑定的 IP",
+      "description": "如果你无法通过我们的应用、DNS-over-TLS、DNS-over-HTTPS 或 IPv6 设置 NextDNS，请使用下方的 DNS 服务器并绑定你的 IP。此方式主要适用于家庭网络，不建议在移动设备上使用。",
+      "servers": {
+        "name": "DNS 服务器"
+      },
+      "ip": {
+        "name": "已绑定的 IP",
+        "link": "绑定 IP"
+      },
+      "showAdvanced": "显示高级选项",
+      "ddns": {
+        "explanation": "你可以使用动态 DNS（DDNS）来自动更新绑定的 IP。",
+        "set": "配置 DDNS",
+        "status": "你当前正在使用 <1>{{hostname}}</1> 作为 DDNS 主机名，你的 IP 将每分钟自动更新。",
+        "unset": "移除",
+        "form": {
+          "hostname": {
+            "label": "DDNS 主机名",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "请输入主机名。",
+              "invalid": "请输入有效的主机名。",
+              "ip": "请输入主机名，而不是 IP 地址。",
+              "error": "获取此主机名对应的 IP 地址时出错。",
+              "empty": "该主机名未返回任何 IP 地址。",
+              "different": "出于安全原因，添加动态 DNS 时，DDNS 主机名返回的 IP 地址应与你当前的 IP 地址相同。"
             }
+          }
+        }
+      },
+      "programmatically": "你也可以通过程序访问以下地址，更新已绑定的 IP："
+    },
+    "guide": {
+      "name": "设置指南",
+      "description": "请按照以下说明，在设备、浏览器或路由器上设置 NextDNS。",
+      "or": "或",
+      "ipv4": {
+        "title": "IPv4（已绑定的 IP）"
+      },
+      "ipv6": {
+        "supported": "你的网络支持 IPv6",
+        "notSupported": "你的网络不支持 IPv6"
+      },
+      "tags": {
+        "recommended": "推荐",
+        "advanced": "高级"
+      },
+      "use": "在 <1>{{file}}</1> 中使用以下内容：",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "专用 DNS",
+              "requirements": "Android 9 及更高版本",
+              "steps": {
+                "1": "1. 打开设置 → 网络和互联网 → 专用 DNS（部分版本中位于“高级”下）。",
+                "2": "2. 选择“专用 DNS 提供商主机名”选项。",
+                "3": "3. 输入 <1>{{endpoint}}</1>，然后点击“保存”。"
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "端点",
-            "description": "使用下方任一端点，即可为此配置文件设置 NextDNS。",
-            "help": "不确定如何使用？请参阅<1>设置指南</1>。"
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "描述文件",
+              "requirements": "iOS 14 及更高版本",
+              "step": "使用我们的 Apple 描述文件生成器 <1>{{link}}</1>。"
+            },
+            "app": {
+              "title": "NextDNS iOS 应用程序",
+              "qrAlt": "用于在 iPhone 或 iPad 上安装并配置 NextDNS 的轻 App 码",
+              "qrText": "扫描此码，在你的 iPhone 或 iPad 上安装并配置 NextDNS",
+              "qrTextIos": "使用另一部手机扫描此码，或<1>轻点此处，在此设备上配置 NextDNS</1>。"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "已绑定的 IP",
-            "description": "如果你无法通过我们的应用、DNS-over-TLS、DNS-over-HTTPS 或 IPv6 设置 NextDNS，请使用下方的 DNS 服务器并绑定你的 IP。此方式主要适用于家庭网络，不建议在移动设备上使用。",
-            "servers": {
-                "name": "DNS 服务器"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS over HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "打开<1>设置</1>应用。",
+                "前往<1>网络和 Internet</1>。",
+                "点击<1>WLAN</1>（或<3>以太网</3>）。",
+                "点击<1>硬件属性</1>；如果选择的是<3>以太网</3>，则跳过此步。",
+                "点击<3>DNS 服务器分配</3>旁边的<1>编辑</1>按钮。",
+                "选择<1>手动</1>。",
+                "启用 <1>IPv{{version}}</1>。",
+                "在<3>首选 DNS</3>中输入 <1>{{ip}}</1>，选择<5>开（手动模板）</5>，然后输入 <7>{{endpoint}}</7>。",
+                "在<3>备用 DNS</3>中输入 <1>{{ip}}</1>，选择<5>开（手动模板）</5>，然后输入 <7>{{endpoint}}</7>。",
+                "点击<1>保存</1>。"
+              ]
+            },
+            "app": {
+              "title": "NextDNS Windows 应用程序",
+              "steps": {
+                "1": "1. 在<1>此处</1>下载安装程序。",
+                "2": "2. 安装后，右键点击系统托盘中的 NextDNS 图标，然后打开“Settings...”。将 <1>{{id}}</1> 设为“Configuration ID”。",
+                "3": "3. 右键点击系统托盘中的 NextDNS 图标，然后点击“Enable”。"
+              }
             },
             "ip": {
-                "name": "已绑定的 IP",
-                "link": "绑定 IP"
+              "steps": {
+                "1": "1. 打开“开始”，搜索“控制面板”，然后将其打开。",
+                "2": "2. 点击“网络和 Internet”，然后点击“网络和共享中心”。",
+                "3": "3. 点击“更改适配器设置”。",
+                "4": "4. 右键点击你连接到的 Wi-Fi 网络，然后点击“属性”。",
+                "5": "5. 选择“Internet 协议版本 {{version}}”。",
+                "6": "6. 点击“属性”。",
+                "7": "7. 选择“使用下面的 DNS 服务器地址”。",
+                "8": "8. 将当前地址（如果有的话）替换为 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
+                "9": "9. 点击“确定”，然后点击“关闭”。你可能需要重新启动浏览器。"
+              }
             },
-            "showAdvanced": "显示高级选项",
-            "ddns": {
-                "explanation": "你可以使用动态 DNS（DDNS）来自动更新绑定的 IP。",
-                "set": "配置 DDNS",
-                "status": "你当前正在使用 <1>{{hostname}}</1> 作为 DDNS 主机名，你的 IP 将每分钟自动更新。",
-                "unset": "移除",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS 主机名",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "请输入主机名。",
-                            "invalid": "请输入有效的主机名。",
-                            "ip": "请输入主机名，而不是 IP 地址。",
-                            "error": "获取此主机名对应的 IP 地址时出错。",
-                            "empty": "该主机名未返回任何 IP 地址。",
-                            "different": "出于安全原因，添加动态 DNS 时，DDNS 主机名返回的 IP 地址应与你当前的 IP 地址相同。"
-                        }
-                    }
-                }
-            },
-            "programmatically": "你也可以通过程序访问以下地址，更新已绑定的 IP："
-        },
-        "guide": {
-            "name": "设置指南",
-            "description": "请按照以下说明，在设备、浏览器或路由器上设置 NextDNS。",
-            "or": "或",
-            "ipv4": {
-                "title": "IPv4（已绑定的 IP）"
-            },
-            "ipv6": {
-                "supported": "你的网络支持 IPv6",
-                "notSupported": "你的网络不支持 IPv6"
-            },
-            "tags": {
-                "recommended": "推荐",
-                "advanced": "高级"
-            },
-            "use": "在 <1>{{file}}</1> 中使用以下内容：",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "专用 DNS",
-                            "requirements": "Android 9 及更高版本",
-                            "steps": {
-                                "1": "1. 打开设置 → 网络和互联网 → 专用 DNS（部分版本中位于“高级”下）。",
-                                "2": "2. 选择“专用 DNS 提供商主机名”选项。",
-                                "3": "3. 输入 <1>{{endpoint}}</1>，然后点击“保存”。"
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "描述文件",
-                            "requirements": "iOS 14 及更高版本",
-                            "step": "使用我们的 Apple 描述文件生成器 <1>{{link}}</1>。"
-                        },
-                        "app": {
-                            "title": "NextDNS iOS 应用程序",
-                            "qrAlt": "用于在 iPhone 或 iPad 上安装并配置 NextDNS 的轻 App 码",
-                            "qrText": "扫描此码，在你的 iPhone 或 iPad 上安装并配置 NextDNS",
-                            "qrTextIos": "使用另一部手机扫描此码，或<1>轻点此处，在此设备上配置 NextDNS</1>。"
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS over HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "打开<1>设置</1>应用。",
-                                "前往<1>网络和 Internet</1>。",
-                                "单击 <1>Wi-Fi</1>（或 <3>以太网</3>）。",
-                                "点击<1>硬件属性</1>；如果选择的是<3>以太网</3>，则跳过此步。",
-                                "点击<3>DNS 服务器分配</3>旁边的<1>编辑</1>按钮。",
-                                "选择<1>手动</1>。",
-                                "启用 <1>IPv{{version}}</1>。",
-                                "在<3>首选 DNS</3>中输入 <1>{{ip}}</1>，选择<5>开（手动模板）</5>，然后输入 <7>{{endpoint}}</7>。",
-                                "在<3>备用 DNS</3>中输入 <1>{{ip}}</1>，选择<5>开（手动模板）</5>，然后输入 <7>{{endpoint}}</7>。",
-                                "点击<1>保存</1>。"
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS Windows 应用程序",
-                            "steps": {
-                                "1": "1. 在<1>此处</1>下载安装程序。",
-                                "2": "2. 安装后，右键点击系统托盘中的 NextDNS 图标，然后打开“Settings...”。将 <1>{{id}}</1> 设为“Configuration ID”。",
-                                "3": "3. 右键点击系统托盘中的 NextDNS 图标，然后点击“Enable”。"
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. 打开“开始”，搜索“控制面板”，然后将其打开。",
-                                "2": "2. 点击“网络和 Internet”，然后点击“网络和共享中心”。",
-                                "3": "3. 点击“更改适配器设置”。",
-                                "4": "4. 右键点击你连接到的 Wi-Fi 网络，然后点击“属性”。",
-                                "5": "5. 选择“Internet 协议版本 {{version}}”。",
-                                "6": "6. 点击“属性”。",
-                                "7": "7. 选择“使用下面的 DNS 服务器地址”。",
-                                "8": "8. 将当前地址（如果有的话）替换为 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
-                                "9": "9. 点击“确定”，然后点击“关闭”。你可能需要重新启动浏览器。"
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. 从 <1>{{link}}</1> 安装 YogaDNS。",
-                                "2": "2. 按照 <1>{{link}}</1> 上针对 NextDNS 的说明操作，并使用 <3>{{id}}</3> 作为“Configuration ID”。"
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS macOS 应用程序",
-                            "steps": {
-                                "1": "1. <1>下载</1>并安装我们的官方应用。",
-                                "2": "2. 按照屏幕上的指示操作。",
-                                "3": "3. 当系统要求输入配置文件 ID 时，输入 <1>{{id}}</1>。"
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur 及更高版本"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. 打开“系统设置”（旧版 macOS 中为“系统偏好设置”），然后点击“网络”。",
-                                "2": "2. 选择当前使用的网络连接，然后点击“详细信息”（旧版 macOS 中为“高级”）。",
-                                "3": "3. 转到 DNS 部分。",
-                                "4": "4. 在 DNS 服务器列表中，移除所有地址（如果有），然后添加 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
-                                "5": "5. 点击“好”，然后点击“应用”（如果显示）。"
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS CLI 客户端",
-                            "steps": {
-                                "1": "1. 在终端运行以下命令：<1>{{command}}</1>",
-                                "2": "2. 按照说明进行操作。"
-                            },
-                            "manual": "前往我们的开源仓库 <1>{{link}}</1> 查看手动安装说明。"
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS CLI 客户端",
-                            "steps": {
-                                "1": "1. 运行以下命令：<1>{{command}}</1>",
-                                "2": "2. 按照说明进行操作。"
-                            },
-                            "manual": "前往我们的开源仓库 <1>{{link}}</1> 查看手动安装说明。"
-                        },
-                        "ip": {
-                            "step": "将你的 DNS 服务器更改为 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
-                        },
-                        "stubby": {
-                            "warning": "请确保 Stubby 链接的是 <1>OpenSSL 1.1.1 或更高版本</1>，因为更早的版本无法与 NextDNS 配合使用。"
-                        },
-                        "unbound": {
-                            "warning": "作为递归解析器，Unbound 会追踪 CNAME 记录。与 NextDNS 等具有拦截功能的 DNS 解析器搭配使用时，这可能导致<1>意外行为</1>。请参阅 <3>{{link}}</3>。"
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "ChromeOS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "安全 DNS",
-                            "steps": [
-                                "打开<1>设置</1>应用。",
-                                "前往<1>隐私与安全</1>。",
-                                "启用<1>使用安全连接查找网站</1>。",
-                                "选择<1>添加自定义 DNS 服务提供商</1>，然后输入 <3>{{endpoint}}</3>。"
-                            ]
-                        },
-                        "ip": {
-                            "step": "将你的 DNS 服务器更改为 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "浏览器",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. 转到设置。",
-                                "2": "2. 在“隐私与安全”部分中，点击“安全”。",
-                                "3": "3. 在“高级”部分中，启用“使用安全 DNS”。",
-                                "4": "4. 选择“添加自定义 DNS 服务提供商”，然后输入 <1>{{endpoint}}</1>。"
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "仅 Windows、macOS 和 Linux",
-                            "steps": {
-                                "1": "1. 打开“设置”（部分版本中为“首选项”）。",
-                                "2": "2. 点击“隐私与安全”。",
-                                "3": "3. 向下滚动到“基于 HTTPS 的 DNS”，如果显示“高级设置”，请将其打开。",
-                                "4": "4. 选择“自定义”（部分版本中为“增强保护”或“最大保护”）。",
-                                "5": "5. 在提供方菜单中选择“自定义”。",
-                                "6": "6. 输入 <1>{{endpoint}}</1>。"
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. 打开设置。",
-                                "2": "2. 转到“隐私、搜索和服务”部分。",
-                                "3": "3. 在安全性下，启用“使用安全的 DNS”。",
-                                "4": "4. 选择“请选择服务提供商”，然后输入 <1>{{endpoint}}</1>。"
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. 打开设置。",
-                                "2": "2. 在“隐私与安全”部分，转到“安全”。",
-                                "3": "3. 在“高级”部分中，启用“使用安全 DNS”。",
-                                "4": "4. 选择“添加自定义 DNS 服务提供商”，然后输入 <1>{{endpoint}}</1>。"
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "路由器",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS 路由器版",
-                            "requirements": "仅适用于可运行可执行文件的路由器",
-                            "step": "前往我们的开源仓库 <1>{{link}}</1> 查看安装说明。"
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "某些路由器可能不支持上述 IPv6 表示法。在这种情况下，请使用 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
-                            },
-                            "steps": {
-                                "1": "1. 打开路由器的设置页面。通常可以在浏览器中通过网址（例如 http://192.168.0.1/ 或 http://192.168.1.1/）访问。",
-                                "2": "2. 在界面内找到 DNS 设置。",
-                                "3": "3. 移除所有地址（如果有），然后添加 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
-                                "4": "4. 点击保存（或类似按钮）。"
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. 前往服务 → DNS解析。在常规设置选项卡中向下滚动，如有需要，点击“显示自定义选项”以显示“自定义选项”输入框。",
-                                "2": "2. 输入下列文字："
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "运行以下命令："
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "前往 Tailscale 文档 <2>{{link}}</2> 查看设置说明。"
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. 从 <1>{{link}}</1> 安装 YogaDNS。",
+                "2": "2. 按照 <1>{{link}}</1> 上针对 NextDNS 的说明操作，并使用 <3>{{id}}</3> 作为“Configuration ID”。"
+              }
             }
+          }
         },
-        "identify": {
-            "name": "识别你的设备",
-            "description": "请按照以下说明，在统计和日志中识别你的设备。",
-            "apps": {
-                "name": "应用",
-                "instructions": "在应用程序设置中启用“Send Device Name”（Windows 上为“Report Device Name”）。"
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS macOS 应用程序",
+              "steps": {
+                "1": "1. <1>下载</1>并安装我们的官方应用。",
+                "2": "2. 按照屏幕上的指示操作。",
+                "3": "3. 当系统要求输入配置文件 ID 时，输入 <1>{{id}}</1>。"
+              }
             },
-            "dot": {
-                "instructions": "在指定域名前加上名称（名称只能包含 <1>a-z</1>、<3>A-Z</3>、<5>0-9</5> 和 <7>-</7>），用 <9>--</9> 代替空格。",
-                "example": "对于“<1>John Router</1>”，请使用 <3>John--Router-{{profile}}.dns.nextdns.io</3> 作为 DNS-over-TLS 端点。"
+            "profile": {
+              "requirements": "macOS Big Sur 及更高版本"
             },
-            "doh": {
-                "instructions": "将名称附加到提供的 URL（名称应为 URL 编码）。",
-                "example": "对于“<1>John's Firefox</1>”，请使用 <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> 作为 DNS-over-HTTPS 端点。"
+            "ip": {
+              "steps": {
+                "1": "1. 打开“系统设置”（旧版 macOS 中为“系统偏好设置”），然后点击“网络”。",
+                "2": "2. 选择当前使用的网络连接，然后点击“详细信息”（旧版 macOS 中为“高级”）。",
+                "3": "3. 转到 DNS 部分。",
+                "4": "4. 在 DNS 服务器列表中，移除所有地址（如果有），然后添加 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
+                "5": "5. 点击“好”，然后点击“应用”（如果显示）。"
+              }
+            },
+            "cli": {
+              "title": "NextDNS CLI 客户端",
+              "steps": {
+                "1": "1. 在终端运行以下命令：<1>{{command}}</1>",
+                "2": "2. 按照说明进行操作。"
+              },
+              "manual": "前往我们的开源仓库 <1>{{link}}</1> 查看手动安装说明。"
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS CLI 客户端",
+              "steps": {
+                "1": "1. 运行以下命令：<1>{{command}}</1>",
+                "2": "2. 按照说明进行操作。"
+              },
+              "manual": "前往我们的开源仓库 <1>{{link}}</1> 查看手动安装说明。"
+            },
+            "ip": {
+              "step": "将你的 DNS 服务器更改为 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
+            },
+            "stubby": {
+              "warning": "请确保 Stubby 链接的是 <1>OpenSSL 1.1.1 或更高版本</1>，因为更早的版本无法与 NextDNS 配合使用。"
+            },
+            "unbound": {
+              "warning": "作为递归解析器，Unbound 会追踪 CNAME 记录。与 NextDNS 等具有拦截功能的 DNS 解析器搭配使用时，这可能导致<1>意外行为</1>。请参阅 <3>{{link}}</3>。"
+            }
+          }
+        },
+        "chromeos": {
+          "name": "ChromeOS",
+          "guides": {
+            "secure-dns": {
+              "title": "安全 DNS",
+              "steps": [
+                "打开<1>设置</1>应用。",
+                "前往<1>隐私与安全</1>。",
+                "启用<1>使用安全连接查找网站</1>。",
+                "选择<1>添加自定义 DNS 服务提供商</1>，然后输入 <3>{{endpoint}}</3>。"
+              ]
+            },
+            "ip": {
+              "step": "将你的 DNS 服务器更改为 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
+            }
+          }
+        },
+        "browsers": {
+          "name": "浏览器",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. 转到设置。",
+                "2": "2. 在“隐私与安全”部分中，点击“安全”。",
+                "3": "3. 在“高级”部分中，启用“使用安全 DNS”。",
+                "4": "4. 选择“添加自定义 DNS 服务提供商”，然后输入 <1>{{endpoint}}</1>。"
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "仅 Windows、macOS 和 Linux",
+              "steps": {
+                "1": "1. 打开“设置”（部分版本中为“首选项”）。",
+                "2": "2. 点击“隐私与安全”。",
+                "3": "3. 向下滚动到“基于 HTTPS 的 DNS”，如果显示“高级设置”，请将其打开。",
+                "4": "4. 选择“自定义”（部分版本中为“增强保护”或“最大保护”）。",
+                "5": "5. 在提供方菜单中选择“自定义”。",
+                "6": "6. 输入 <1>{{endpoint}}</1>。"
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. 打开设置。",
+                "2": "2. 转到“隐私、搜索和服务”部分。",
+                "3": "3. 在安全性下，启用“使用安全的 DNS”。",
+                "4": "4. 选择“请选择服务提供商”，然后输入 <1>{{endpoint}}</1>。"
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. 打开设置。",
+                "2": "2. 在“隐私与安全”部分，转到“安全”。",
+                "3": "3. 在“高级”部分中，启用“使用安全 DNS”。",
+                "4": "4. 选择“添加自定义 DNS 服务提供商”，然后输入 <1>{{endpoint}}</1>。"
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "路由器",
+          "guides": {
+            "cli": {
+              "title": "NextDNS 路由器版",
+              "requirements": "仅适用于可运行可执行文件的路由器",
+              "step": "前往我们的开源仓库 <1>{{link}}</1> 查看安装说明。"
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "某些路由器可能不支持上述 IPv6 表示法。在这种情况下，请使用 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。"
+              },
+              "steps": {
+                "1": "1. 打开路由器的设置页面。通常可以在浏览器中通过网址（例如 http://192.168.0.1/ 或 http://192.168.1.1/）访问。",
+                "2": "2. 在界面内找到 DNS 设置。",
+                "3": "3. 移除所有地址（如果有），然后添加 <1>{{dns1}}</1> 和 <3>{{dns2}}</3>。",
+                "4": "4. 点击保存（或类似按钮）。"
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. 前往服务 → DNS解析。在常规设置选项卡中向下滚动，如有需要，点击“显示自定义选项”以显示“自定义选项”输入框。",
+                "2": "2. 输入下列文字："
+              }
+            },
+            "mikrotik": {
+              "run": "运行以下命令："
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "前往 Tailscale 文档 <2>{{link}}</2> 查看设置说明。"
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "威胁情报源",
-            "description": "结合多个最受信赖的威胁情报源，拦截已知用于传播恶意软件、发起网络钓鱼攻击或托管命令与控制服务器的域名。所有情报源均实时更新。",
-            "enable": "使用威胁情报源"
-        },
-        "ai": {
-            "name": "AI 驱动的威胁检测",
-            "description": "拦截由我们的 AI 技术检测到的数百万威胁——这是专为 DNS 从零设计的专有 AI 引擎，结合数百个信号、TB 级训练数据和实时决策能力。涵盖 IDN 同形异义字、误植域名、组合域名抢注、DGA 域名、品牌仿冒、凭据窃取、恶意软件分发，以及用于掩盖恶意基础设施的伪装网站。",
-            "enable": "启用 AI 驱动的威胁检测"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google 安全浏览",
-            "description": "使用 Google 安全浏览拦截恶意软件和网络钓鱼域名。该技术每天检查数十亿个网址，以发现不安全的网站。与某些浏览器内置的版本不同，此功能不会将你的公网 IP 地址与威胁关联，也不允许绕过拦截。",
-            "enable": "启用 Google 安全浏览"
-        },
-        "cryptojacking": {
-            "name": "加密劫持",
-            "description": "防止你的设备在未经授权的情况下被用于挖掘加密货币。",
-            "enable": "拦截加密劫持"
-        },
-        "dnsRebinding": {
-            "name": "DNS 重新绑定",
-            "description": "自动拦截包含私有 IP 地址的 DNS 响应，防止攻击者通过互联网控制你的本地设备。",
-            "enable": "拦截 DNS 重新绑定"
-        },
-        "homograph": {
-            "name": "IDN 同形异义字",
-            "description": "拦截利用外观相似的字符冒充其他域名的国际化域名（IDN），例如用西里尔字母“е”替换拉丁字母“e”。",
-            "enable": "拦截 IDN 同形异义字"
-        },
-        "typosquatting": {
-            "name": "误植域名",
-            "description": "拦截恶意行为者注册的域名，这些域名以在浏览器中输错网址的用户为目标，例如将 google.com 误输为 gooogle.com。",
-            "enable": "拦截误植域名"
-        },
-        "dga": {
-            "name": "域名生成算法",
-            "description": "拦截由域名生成算法（DGA）生成的域名，这些域名被各类恶意软件用作与其命令与控制服务器的联络点。",
-            "enable": "拦截 DGA 域名"
-        },
-        "nrd": {
-            "name": "新注册域名",
-            "description": "拦截注册未满 30 天的域名。攻击者往往偏爱使用这类域名开展恶意活动。",
-            "enable": "拦截新注册域名"
-        },
-        "ddns": {
-            "name": "动态 DNS 主机名",
-            "description": "动态 DNS（DDNS）服务让攻击者无需任何验证或身份核验，就能快速免费地设置主机名。正常的 DDNS 主机名在日常使用中很少被访问，而恶意 DDNS 主机名则被大量用于钓鱼活动。",
-            "disclaimer": "如果你在使用 DDNS，请注意此设置不会拦截 DDNS 服务自身的网站或更新 API。",
-            "enable": "拦截动态 DNS 主机名"
-        },
-        "parked": {
-            "name": "停放域名",
-            "description": "停放域名通常是充满广告、没有实质价值的单页网站。停放域名的盈利机制可能通过广告网络和重定向，让访客接触到诈骗、钓鱼页面和恶意下载。",
-            "enable": "拦截停放域名"
-        },
-        "tld": {
-            "name": "顶级域名（TLD）",
-            "description": "拦截属于指定 TLD 的所有域名和子域名。",
-            "add": "添加顶级域名",
-            "sections": {
-                "spamhaus": "Spamhaus 统计的滥用最严重的 TLD",
-                "all": "所有顶级域名"
-            }
-        },
-        "csam": {
-            "name": "儿童性虐待材料（CSAM）",
-            "description": "借助加拿大儿童保护中心运营的 Project Arachnid，拦截托管儿童性虐待材料的域名。拦截域名时，不会向 Project Arachnid 发送任何信息。",
-            "enable": "拦截儿童性虐待材料"
-        },
-        "newlyActiveDomains": {
-            "name": "新活跃域名",
-            "description": "拦截首次被访问或历史活跃度较低的域名。只有具备可验证的正常使用记录的域名才会被信任，从而防范零日攻击和“潜伏”威胁，并有效遏制通过提前访问恶意域名来“预热”、伪装信誉的行为。",
-            "enable": "拦截新活跃域名"
-        },
-        "freeHostingDomains": {
-            "name": "免费托管域名",
-            "description": "拦截免费网站托管服务提供的默认子域名（例如 *.pages.dev、*.vercel.app、*.netlify.app）。攻击者大量滥用这些“免费托管域名”（FHD）来托管钓鱼网站并绕过信誉过滤器。此设置不会影响使用自定义域名接入这些托管服务的正常网站。",
-            "enable": "拦截免费托管域名"
-        },
-        "tunnelingEndpoints": {
-            "name": "隧道端点",
-            "description": "拦截通过隧道将本地流量转发到公网的服务（例如 ngrok、Cloudflare Tunnel）。攻击者经常利用这些工具绕过防火墙，在随机子域名上托管钓鱼页面，同时隐藏背后的基础设施。",
-            "enable": "拦截隧道端点"
-        },
-        "dataDropServices": {
-            "name": "数据投递服务",
-            "description": "拦截对专门用于分享文本、文件和 JSON 或配置数据，或收集传入数据（包括 Webhook 请求、DNS 查询和电子邮件）的服务的访问。这也包括对这些服务的正常使用。",
-            "enable": "拦截数据投递服务"
-        },
-        "residentialHosting": {
-            "name": "住宅网络托管",
-            "description": "拦截解析到互联网服务提供商（ISP）住宅 IP 地址段而非商业数据中心的域名。正常的网络服务很少托管在家用网络连接上，而僵尸网络 C2 服务器和钓鱼代理却经常运行在被入侵的家用路由器上。",
-            "enable": "拦截住宅网络托管"
-        },
-        "untrustedCertificates": {
-            "name": "不受信任的证书",
-            "description": "拦截提供由不受信任或未知证书颁发机构签署的 SSL/TLS 证书（例如自签名证书）的域名。正常网站几乎都使用受信任的证书，而广泛流通的恶意软件的命令与控制（C2）服务器中，有近 60% 依赖自签名证书或由不受信任机构颁发的证书来加密流量，同时不留下可追溯的记录。",
-            "enable": "拦截不受信任的证书"
-        },
-        "fastFluxNetworks": {
-            "name": "Fast Flux 网络",
-            "description": "拦截为逃避检测而在由被入侵设备组成的分布式网络（僵尸网络）中快速轮换 IP 地址的域名。此启发式检测会识别 DNS 生存时间（TTL）和 IP 地址多样性方面的特定异常，这些异常是恶意基础设施的典型特征，与正常的内容分发网络（CDN）有所区别。",
-            "enable": "拦截 Fast Flux 网络"
-        },
-        "dnsDataExfiltration": {
-            "name": "DNS 数据外传",
-            "description": "拦截利用 DNS 协议将数据偷偷传出你的网络或接收隐藏命令（C2）的域名。此启发式检测会实时分析 DNS 查询模式，例如异常长的子域名、高熵值以及不常见的查询类型（如 TXT），以检测并阻止能绕过传统防火墙的小流量、慢速数据窃取和恶意软件信标通信（如 Cobalt Strike）。",
-            "enable": "拦截 DNS 数据外传"
-        },
-        "dnsPayloadDelivery": {
-            "name": "DNS 载荷投递",
-            "description": "防止 DNS 响应被用于向你的设备传递隐藏命令或载荷。对于 TXT、NULL 等可携带任意数据但日常网页浏览不需要的记录类型，其查询会被全部拦截。CNAME 链会被展平为最终地址，移除可能编码隐藏数据的中间记录。对于 A、AAAA 等标准记录类型，过大的应答部分会被随机截短，以破坏分散编码在多条记录中的数据，同时保留正常的 DNS 功能。",
-            "enable": "拦截 DNS 载荷投递"
-        },
-        "decentralizedWebGateways": {
-            "name": "去中心化 Web 网关",
-            "description": "拦截将去中心化网络（例如 IPFS）与常规浏览器连接起来的公共网关。攻击者大量滥用这些服务来托管“不可变”的钓鱼页面和恶意软件，绕过传统的下架措施和信誉过滤器，使威胁得以持续存在。",
-            "enable": "拦截去中心化 Web 网关"
-        },
-        "highRiskTlds": {
-            "name": "高风险 TLD",
-            "description": "自动拦截统计上以恶意活动为主的顶级域名（TLD），例如 .zip、.mov、.top。此列表根据全球滥用信誉数据实时更新，无需手动配置，即可保护你免受由大量廉价、用后即弃的域名构成的钓鱼和垃圾邮件网络的侵害。",
-            "enable": "拦截高风险 TLD"
+    "identify": {
+      "name": "识别你的设备",
+      "description": "请按照以下说明，在统计和日志中识别你的设备。",
+      "apps": {
+        "name": "应用",
+        "instructions": "在应用程序设置中启用“Send Device Name”（Windows 上为“Report Device Name”）。"
+      },
+      "dot": {
+        "instructions": "在指定域名前加上名称（名称只能包含 <1>a-z</1>、<3>A-Z</3>、<5>0-9</5> 和 <7>-</7>），用 <9>--</9> 代替空格。",
+        "example": "对于“<1>John Router</1>”，请使用 <3>John--Router-{{profile}}.dns.nextdns.io</3> 作为 DNS-over-TLS 端点。"
+      },
+      "doh": {
+        "instructions": "将名称附加到提供的 URL（名称应为 URL 编码）。",
+        "example": "对于“<1>John's Firefox</1>”，请使用 <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> 作为 DNS-over-HTTPS 端点。"
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "威胁情报源",
+      "description": "结合多个最受信赖的威胁情报源，拦截已知用于传播恶意软件、发起网络钓鱼攻击或托管命令与控制服务器的域名。所有情报源均实时更新。",
+      "enable": "使用威胁情报源"
+    },
+    "ai": {
+      "name": "AI 驱动的威胁检测",
+      "description": "拦截由我们的 AI 技术检测到的数百万威胁——这是专为 DNS 从零设计的专有 AI 引擎，结合数百个信号、TB 级训练数据和实时决策能力。涵盖 IDN 同形异义字、误植域名、组合域名抢注、DGA 域名、品牌仿冒、凭据窃取、恶意软件分发，以及用于掩盖恶意基础设施的伪装网站。",
+      "enable": "启用 AI 驱动的威胁检测"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google 安全浏览",
+      "description": "使用 Google 安全浏览拦截恶意软件和网络钓鱼域名。该技术每天检查数十亿个网址，以发现不安全的网站。与某些浏览器内置的版本不同，此功能不会将你的公网 IP 地址与威胁关联，也不允许绕过拦截。",
+      "enable": "启用 Google 安全浏览"
+    },
+    "cryptojacking": {
+      "name": "加密货币挖矿",
+      "description": "拦截用于加密货币挖矿的域名，帮助防范加密劫持，即未经授权使用你的设备挖掘加密货币的行为。",
+      "enable": "拦截加密货币挖矿"
+    },
+    "dnsRebinding": {
+      "name": "本地网络地址",
+      "description": "拦截包含本地网络地址的 DNS 响应，帮助保护你的设备免受 DNS 重新绑定攻击。",
+      "enable": "拦截本地网络地址"
+    },
+    "homograph": {
+      "name": "IDN 同形异义字",
+      "description": "拦截利用外观相似的字符冒充其他域名的国际化域名（IDN），例如用西里尔字母“е”替换拉丁字母“e”。",
+      "enable": "拦截 IDN 同形异义字"
+    },
+    "typosquatting": {
+      "name": "误植域名",
+      "description": "拦截恶意行为者注册的域名，这些域名以在浏览器中输错网址的用户为目标，例如将 google.com 误输为 gooogle.com。",
+      "enable": "拦截误植域名"
+    },
+    "dga": {
+      "name": "域名生成算法",
+      "description": "拦截由域名生成算法（DGA）生成的域名，这些域名被各类恶意软件用作与其命令与控制服务器的联络点。",
+      "enable": "拦截 DGA 域名"
+    },
+    "nrd": {
+      "name": "新注册域名",
+      "description": "拦截注册未满 30 天的域名。攻击者往往偏爱使用这类域名开展恶意活动。",
+      "enable": "拦截新注册域名"
+    },
+    "ddns": {
+      "name": "动态 DNS 主机名",
+      "description": "动态 DNS（DDNS）服务让攻击者无需任何验证或身份核验，就能快速免费地设置主机名。正常的 DDNS 主机名在日常使用中很少被访问，而恶意 DDNS 主机名则被大量用于钓鱼活动。",
+      "disclaimer": "如果你在使用 DDNS，请注意此设置不会拦截 DDNS 服务自身的网站或更新 API。",
+      "enable": "拦截动态 DNS 主机名"
+    },
+    "parked": {
+      "name": "停放域名",
+      "description": "停放域名通常是充满广告、没有实质价值的单页网站。停放域名的盈利机制可能通过广告网络和重定向，让访客接触到诈骗、钓鱼页面和恶意下载。",
+      "enable": "拦截停放域名"
+    },
+    "tld": {
+      "name": "顶级域名（TLD）",
+      "description": "拦截属于指定 TLD 的所有域名和子域名。",
+      "add": "添加顶级域名",
+      "sections": {
+        "spamhaus": "Spamhaus 统计的滥用最严重的 TLD",
+        "all": "所有顶级域名"
+      }
+    },
+    "csam": {
+      "name": "儿童性虐待材料（CSAM）",
+      "description": "借助加拿大儿童保护中心运营的 Project Arachnid，拦截托管儿童性虐待材料的域名。拦截域名时，不会向 Project Arachnid 发送任何信息。",
+      "enable": "拦截儿童性虐待材料"
+    },
+    "newlyActiveDomains": {
+      "name": "新活跃域名",
+      "description": "拦截首次被访问或历史活跃度较低的域名。只有具备可验证的正常使用记录的域名才会被信任，从而防范零日攻击和“潜伏”威胁，并有效遏制通过提前访问恶意域名来“预热”、伪装信誉的行为。",
+      "enable": "拦截新活跃域名"
+    },
+    "freeHostingDomains": {
+      "name": "免费托管域名",
+      "description": "拦截免费网站托管服务提供的默认子域名（例如 *.pages.dev、*.vercel.app、*.netlify.app）。攻击者大量滥用这些“免费托管域名”（FHD）来托管钓鱼网站并绕过信誉过滤器。此设置不会影响使用自定义域名接入这些托管服务的正常网站。",
+      "enable": "拦截免费托管域名"
+    },
+    "tunnelingEndpoints": {
+      "name": "隧道端点",
+      "description": "拦截通过隧道将本地流量转发到公网的服务（例如 ngrok、Cloudflare Tunnel）。攻击者经常利用这些工具绕过防火墙，在随机子域名上托管钓鱼页面，同时隐藏背后的基础设施。",
+      "enable": "拦截隧道端点"
+    },
+    "dataDropServices": {
+      "name": "数据投递服务",
+      "description": "拦截对专门用于分享文本、文件和 JSON 或配置数据，或收集传入数据（包括 Webhook 请求、DNS 查询和电子邮件）的服务的访问。这也包括对这些服务的正常使用。",
+      "enable": "拦截数据投递服务"
+    },
+    "residentialHosting": {
+      "name": "住宅网络托管",
+      "description": "拦截解析到互联网服务提供商（ISP）住宅 IP 地址段而非商业数据中心的域名。正常的网络服务很少托管在家用网络连接上，而僵尸网络 C2 服务器和钓鱼代理却经常运行在被入侵的家用路由器上。",
+      "enable": "拦截住宅网络托管"
+    },
+    "untrustedCertificates": {
+      "name": "不受信任的证书",
+      "description": "拦截提供由不受信任或未知证书颁发机构签署的 SSL/TLS 证书（例如自签名证书）的域名。正常网站几乎都使用受信任的证书，而广泛流通的恶意软件的命令与控制（C2）服务器中，有近 60% 依赖自签名证书或由不受信任机构颁发的证书来加密流量，同时不留下可追溯的记录。",
+      "enable": "拦截不受信任的证书"
+    },
+    "fastFluxNetworks": {
+      "name": "Fast Flux 网络",
+      "description": "拦截为逃避检测而在由被入侵设备组成的分布式网络（僵尸网络）中快速轮换 IP 地址的域名。此启发式检测会识别 DNS 生存时间（TTL）和 IP 地址多样性方面的特定异常，这些异常是恶意基础设施的典型特征，与正常的内容分发网络（CDN）有所区别。",
+      "enable": "拦截 Fast Flux 网络"
+    },
+    "dnsDataExfiltration": {
+      "name": "DNS 数据外传",
+      "description": "拦截利用 DNS 协议将数据偷偷传出你的网络或接收隐藏命令（C2）的域名。此启发式检测会实时分析 DNS 查询模式，例如异常长的子域名、高熵值以及不常见的查询类型（如 TXT），以检测并阻止能绕过传统防火墙的小流量、慢速数据窃取和恶意软件信标通信（如 Cobalt Strike）。",
+      "enable": "拦截 DNS 数据外传"
+    },
+    "dnsPayloadDelivery": {
+      "name": "DNS 载荷投递",
+      "description": "限制 DNS 响应可携带的数据，干扰向你的设备投递隐藏命令或载荷的过程，同时保持日常网页浏览正常。",
+      "enable": "干扰 DNS 载荷投递"
+    },
+    "decentralizedWebGateways": {
+      "name": "去中心化 Web 网关",
+      "description": "拦截将去中心化网络（例如 IPFS）与常规浏览器连接起来的公共网关。攻击者大量滥用这些服务来托管“不可变”的钓鱼页面和恶意软件，绕过传统的下架措施和信誉过滤器，使威胁得以持续存在。",
+      "enable": "拦截去中心化 Web 网关"
+    },
+    "highRiskTlds": {
+      "name": "高风险 TLD",
+      "description": "自动拦截统计上以恶意活动为主的顶级域名（TLD），例如 .zip、.mov、.top。此列表根据全球滥用信誉数据实时更新，无需手动配置，即可保护你免受由大量廉价、用后即弃的域名构成的钓鱼和垃圾邮件网络的侵害。",
+      "enable": "拦截高风险 TLD"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "拦截列表",
+      "description": "使用最热门的拦截列表拦截广告和跟踪器，所有列表均实时更新。",
+      "add": "添加拦截列表",
+      "entries_other": "{{count, number}} 个条目",
+      "updated": "<1></1>已更新",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS 广告和跟踪器拦截列表",
+          "description": "一份全面的拦截列表，可拦截所有国家/地区的广告和跟踪器。这是推荐的入门拦截列表。"
         }
+      },
+      "sortBy": {
+        "popularity": "人气",
+        "name": "名称",
+        "entries": "条目",
+        "updated": "最近更新"
+      }
     },
-    "privacy": {
-        "blocklists": {
-            "name": "拦截列表",
-            "description": "使用最热门的拦截列表拦截广告和跟踪器，所有列表均实时更新。",
-            "add": "添加拦截列表",
-            "entries_other": "{{count, number}} 个条目",
-            "updated": "<1></1>已更新",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS 广告和跟踪器拦截列表",
-                    "description": "一份全面的拦截列表，可拦截所有国家/地区的广告和跟踪器。这是推荐的入门拦截列表。"
-                }
-            },
-            "sortBy": {
-                "popularity": "人气",
-                "name": "名称",
-                "entries": "条目",
-                "updated": "最近更新"
-            },
-            "entries_one": ""
+    "native": {
+      "name": "深度跟踪保护",
+      "description": "拦截广泛跟踪设备活动的跟踪器，这些跟踪器通常在操作系统级运行。它们可能跟踪你访问的所有网站、输入的所有内容，以及你随时所在的位置。",
+      "add": "添加",
+      "systems": {
+        "xiaomi": {
+          "name": "小米",
+          "devices": "手机、平板电脑、智能电视和路由器"
         },
-        "native": {
-            "name": "深度跟踪保护",
-            "description": "拦截广泛跟踪设备活动的跟踪器，这些跟踪器通常在操作系统级运行。它们可能跟踪你访问的所有网站、输入的所有内容，以及你随时所在的位置。",
-            "add": "添加",
-            "systems": {
-                "xiaomi": {
-                    "name": "小米",
-                    "devices": "手机、平板电脑、智能电视和路由器"
-                },
-                "huawei": {
-                    "name": "华为",
-                    "devices": "手机和平板电脑"
-                },
-                "samsung": {
-                    "name": "三星",
-                    "devices": "手机、平板电脑和智能电视"
-                },
-                "alexa": {
-                    "name": "Alexa",
-                    "devices": "支持 Alexa 的设备"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "所有版本"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS、macOS 和 tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "所有 Roku 设备"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "音箱"
-                }
-            }
+        "huawei": {
+          "name": "华为",
+          "devices": "手机和平板电脑"
         },
-        "disguised": {
-            "name": "拦截伪装过的第三方跟踪器",
-            "description": "自动检测并拦截为了绕过 ITP 等浏览器隐私保护功能而伪装成第一方的第三方跟踪器。",
-            "enable": "拦截伪装过的第三方跟踪器"
+        "samsung": {
+          "name": "三星",
+          "devices": "手机、平板电脑和智能电视"
         },
-        "affiliate": {
-            "name": "允许联盟营销和跟踪链接",
-            "description": "允许优惠网站、电子邮件或搜索结果中常见的联盟营销和跟踪域名。这些域名通常只有在手动点击链接后才会被访问。",
-            "relay": "你的 IP 地址将自动对这些网站隐藏，以保护你的隐私。",
-            "enable": "允许联盟营销和跟踪链接"
+        "alexa": {
+          "name": "Alexa",
+          "devices": "支持 Alexa 的设备"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "所有版本"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS、macOS 和 tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "所有 Roku 设备"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "音箱"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "网站、应用程序和游戏",
-            "description": "限制对特定网站、应用程序和游戏的访问。",
-            "add": "添加网站、应用程序或游戏",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "亚马逊",
-                "bereal": "BeReal",
-                "blizzard": "暴雪",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "堡垒之夜",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "英雄联盟",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "我的世界",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "罗布乐思",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "X",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "拦截伪装过的第三方跟踪器",
+      "description": "自动检测并拦截为了绕过 ITP 等浏览器隐私保护功能而伪装成第一方的第三方跟踪器。",
+      "enable": "拦截伪装过的第三方跟踪器"
+    },
+    "affiliate": {
+      "name": "允许联盟营销和跟踪链接",
+      "description": "允许优惠网站、电子邮件或搜索结果中常见的联盟营销和跟踪域名。这些域名通常只有在手动点击链接后才会被访问。",
+      "relay": "你的 IP 地址将自动对这些网站隐藏，以保护你的隐私。",
+      "enable": "允许联盟营销和跟踪链接"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "网站、应用程序和游戏",
+      "description": "限制对特定网站、应用程序和游戏的访问。",
+      "add": "添加网站、应用程序或游戏",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "亚马逊",
+        "bereal": "BeReal",
+        "blizzard": "暴雪",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "堡垒之夜",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "英雄联盟",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "我的世界",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "罗布乐思",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "X",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "类别",
+      "description": "限制访问特定类别的网站和应用程序。",
+      "add": "添加类别",
+      "categories": {
+        "dating": {
+          "name": "约会",
+          "description": "拦截所有约会网站和应用。"
         },
+        "gambling": {
+          "name": "赌博",
+          "description": "拦截赌博内容。"
+        },
+        "gaming": {
+          "name": "在线游戏",
+          "description": "拦截在线游戏网站、在线游戏应用和在线游戏网络（Xbox、PlayStation Network 等）。"
+        },
+        "piracy": {
+          "name": "盗版",
+          "description": "拦截 P2P 网站、协议、侵权流媒体网站，以及主要用于非法传播受版权保护内容的通用视频托管网站。"
+        },
+        "porn": {
+          "name": "色情",
+          "description": "拦截成人和色情内容，包括性交易网站、pornhub.com 和类似域名。"
+        },
+        "social-networks": {
+          "name": "社交网络",
+          "description": "拦截所有社交网站和应用（Facebook、Instagram、TikTok、Reddit 等）。不拦截即时通讯应用。"
+        },
+        "video-streaming": {
+          "name": "视频流媒体",
+          "description": "拦截视频流媒体服务（YouTube、Netflix、Disney+、非法流媒体网站、成人视频网站等）以及以视频为主的社交网络（TikTok 等）。这也有助于减少任何网络上的带宽使用。"
+        }
+      }
+    },
+    "recreation": {
+      "name": "娱乐时间",
+      "start": "开始时间",
+      "end": "结束时间",
+      "description": "为一周中的每一天设置一个时间段，在该时间段内，上述部分网站、应用程序、游戏或类别将不会被拦截，例如允许在星期一和星期二的晚上 6 点至 8 点之间使用 Facebook。",
+      "set": "设置娱乐时间",
+      "howto": "使用上面部分中的 <1></1> 按钮来启用娱乐时间。"
+    },
+    "safesearch": {
+      "name": "安全搜索",
+      "description": "过滤所有主流搜索引擎上的露骨内容搜索结果，包括图片和视频。不支持此功能的搜索引擎也将被拦截。",
+      "enable": "强制使用安全搜索"
+    },
+    "youtubeRestricted": {
+      "name": "YouTube 受限模式",
+      "description": "过滤 YouTube 上不适合儿童观看的视频，并阻止在其他网站上观看嵌入的此类视频。同时隐藏所有评论。",
+      "enable": "强制使用 YouTube 受限模式"
+    },
+    "bypass": {
+      "name": "拦截绕过方法",
+      "description": "阻止或阻碍使用可绕过 NextDNS 过滤的方法，包括 VPN、代理、Tor 相关软件和加密 DNS 服务商。",
+      "enable": "拦截绕过方法"
+    }
+  },
+  "xlist": {
+    "placeholder": "添加一个域名……",
+    "errors": {
+      "required": "请输入一个域名。",
+      "ip": "请输入域名，而不是 IP 地址。",
+      "invalid": "请输入有效的域名。",
+      "tld": "你似乎想拦截整个顶级域名（TLD）。请使用“安全”部分中的“顶级域名（TLD）”功能。",
+      "exists": "该域名已经添加过了。"
+    },
+    "empty": "尚无域名。",
+    "denylist": {
+      "info": "将域名加入黑名单后，其所有子域名也会自动加入黑名单。"
+    },
+    "allowlist": {
+      "info": "将域名加入白名单后，其所有子域名也会自动加入白名单。白名单的优先级高于其他所有设置，包括安全功能。"
+    }
+  },
+  "analytics": {
+    "counters": {
+      "all_other": "<0>{{count, number}}</0><1>次查询</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>被拦截的查询</1>",
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> 的</0><1>查询被拦截</1></1>"
+    },
+    "queries": {
+      "name": "查询",
+      "description": "查询数量随时间的变化。",
+      "queries": {
+        "all_other": "<0>{{count, number}}</0><1> 次查询</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> 次被拦截的查询</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "已解析的域名",
+        "description": "未被任何设置拦截或因手动允许而成功解析的域名。"
+      },
+      "blocked": {
+        "name": "被拦截的域名",
+        "description": "被安全、隐私或家长监护设置拦截，或因手动加入黑名单而被拦截的域名。"
+      },
+      "root": {
+        "name": "根域名",
+        "description": "汇总对根域名和其子域名的所有查询。"
+      },
+      "empty": "尚无域名。"
+    },
+    "reasons": {
+      "name": "拦截原因",
+      "description": "拦截查询最多的安全、隐私或家长监护设置。",
+      "empty": "还没有拦截任何域名。"
+    },
+    "devices": {
+      "name": "设备",
+      "description": "进行查询的设备。",
+      "empty": "暂无设备。",
+      "unidentified": {
+        "name": "无法识别的设备"
+      }
+    },
+    "ips": {
+      "name": "客户端 IP 地址",
+      "description": "进行查询的 IP 地址。",
+      "empty": "暂无 IP 地址。"
+    },
+    "gafam": {
+      "name": "大型科技公司的主导地位",
+      "description": "“GAFAM”（Google、亚马逊、Facebook（现为 Meta）、Apple 和 Microsoft）是 5 家占主导地位的互联网公司，它们拥有许多热门服务，这些服务通常以不同的名称运营，例如 Meta 旗下的 WhatsApp 和 Instagram。",
+      "queries_other": "{{count, number}} 次查询",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "亚马逊"
+        },
+        "facebook": {
+          "name": "Meta"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "其他"
+        }
+      }
+    },
+    "encrypted": {
+      "name": "加密 DNS",
+      "description": "使用加密传输（DNS-over-HTTPS、DNS-over-TLS 或官方的 NextDNS 应用程序）进行查询的占比。",
+      "empty": "暂无查询。"
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "通过 DNSSEC 验证的查询占比。",
+      "empty": "暂无查询。"
+    },
+    "destination": {
+      "name": "互联网流量目的地",
+      "description": "根据你的 DNS 查询估算的目的地国家/地区。",
+      "queries_other": "{{count, number}} 次查询",
+      "topDomains": "查询最多的域名"
+    }
+  },
+  "logs": {
+    "blockedOnly": "仅显示被拦截的查询",
+    "raw": "原始 DNS 日志",
+    "empty": "暂无日志。",
+    "log": {
+      "actionBlock": "拦截",
+      "actionAllow": "允许",
+      "dnssec": "已通过 DNSSEC 验证。",
+      "clients": {
+        "nextdns-ios": "NextDNS iOS 应用程序",
+        "nextdns-android": "NextDNS Android 应用程序",
+        "nextdns-macos": "NextDNS macOS 应用程序",
+        "nextdns-windows": "NextDNS Windows 应用程序",
+        "nextdns-cli": "NextDNS CLI 客户端",
+        "nextdns-chromeos": "NextDNS ChromeOS 应用程序",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "MikroTik",
+        "apple-profile": "Apple 描述文件",
+        "yogadns": "YogaDNS",
+        "tailscale": "Tailscale"
+      },
+      "blockedBy": "被 <1>{{lists, list}}</1> 拦截。",
+      "allowedBy": "被 <1>{{lists, list}}</1> 允许。",
+      "manual": {
+        "deny": "已手动拦截。",
+        "allow": "已手动允许。"
+      },
+      "insights": {
+        "show": "显示跟踪器分析",
+        "hide": "隐藏跟踪器分析",
         "categories": {
-            "name": "类别",
-            "description": "限制访问特定类别的网站和应用程序。",
-            "add": "添加类别",
-            "categories": {
-                "dating": {
-                    "name": "约会",
-                    "description": "拦截所有约会网站和应用。"
-                },
-                "gambling": {
-                    "name": "赌博",
-                    "description": "拦截赌博内容。"
-                },
-                "gaming": {
-                    "name": "在线游戏",
-                    "description": "拦截在线游戏网站、在线游戏应用和在线游戏网络（Xbox、PlayStation Network 等）。"
-                },
-                "piracy": {
-                    "name": "盗版",
-                    "description": "拦截 P2P 网站、协议、侵权流媒体网站，以及主要用于非法传播受版权保护内容的通用视频托管网站。"
-                },
-                "porn": {
-                    "name": "色情",
-                    "description": "拦截成人和色情内容，包括性交易网站、pornhub.com 和类似域名。"
-                },
-                "social-networks": {
-                    "name": "社交网络",
-                    "description": "拦截所有社交网站和应用（Facebook、Instagram、TikTok、Reddit 等）。不拦截即时通讯应用。"
-                },
-                "video-streaming": {
-                    "name": "视频流媒体",
-                    "description": "拦截视频流媒体服务（YouTube、Netflix、Disney+、非法流媒体网站、成人视频网站等）以及以视频为主的社交网络（TikTok 等）。这也有助于减少任何网络上的带宽使用。"
-                }
-            }
+          "advertising": {
+            "description": "提供广告或广告相关服务，例如数据收集、行为分析或再营销。"
+          },
+          "comments": {
+            "description": "为文章和产品评论启用评论部分。"
+          },
+          "customer_interaction": {
+            "description": "包括聊天、电子邮件消息、客户支持和其他交互工具。"
+          },
+          "essential": {
+            "description": "包括标签管理器、隐私声明以及对网站功能至关重要的技术。"
+          },
+          "adult_advertsing": {
+            "description": "提供通常出现在成人内容网站上的广告。"
+          },
+          "site_analytics": {
+            "description": "收集和分析与网站使用情况和性能有关的数据。"
+          },
+          "social_media": {
+            "description": "集成与社交媒体网站相关的功能。"
+          },
+          "audio_video_player": {
+            "description": "使网站能够发布、分发和优化视频和音频内容。"
+          },
+          "cdn": {
+            "description": "内容分发网络，为不同的网站功能提供资源，通常同时服务于许多不同的客户。"
+          },
+          "misc": {
+            "description": "该跟踪器不属于其他任何类别，或尚未被标记。"
+          },
+          "pornvertising": {
+            "description": "提供通常出现在成人内容网站上的广告。"
+          },
+          "hosting": {
+            "description": "这是内容提供商或网站所有者使用的服务。"
+          },
+          "extensions": {
+            "description": "用户设备上的软件，可以拦截和分析浏览器流量（中间人）。"
+          }
         },
-        "recreation": {
-            "name": "娱乐时间",
-            "start": "开始时间",
-            "end": "结束时间",
-            "description": "为一周中的每一天设置一个时间段，在该时间段内，上述部分网站、应用程序、游戏或类别将不会被拦截，例如允许在星期一和星期二的晚上 6 点至 8 点之间使用 Facebook。",
-            "set": "设置娱乐时间",
-            "howto": "使用上面部分中的 <1></1> 按钮来启用娱乐时间。"
+        "prevalence": {
+          "intensity": {
+            "dangerously": "普遍程度已构成风险",
+            "extremely": "极其普遍",
+            "very": "非常普遍",
+            "commonly": "普遍存在",
+            "relatively": "较为普遍"
+          },
+          "summary": "{{prevalence}}<2>（跟踪 {{percent, percentage}} 的网络流量）</2>"
         },
-        "safesearch": {
-            "name": "安全搜索",
-            "description": "过滤所有主流搜索引擎上的露骨内容搜索结果，包括图片和视频。不支持此功能的搜索引擎也将被拦截。",
-            "enable": "强制使用安全搜索"
-        },
-        "youtubeRestricted": {
-            "name": "YouTube 受限模式",
-            "description": "过滤 YouTube 上不适合儿童观看的视频，并阻止在其他网站上观看嵌入的此类视频。同时隐藏所有评论。",
-            "enable": "强制使用 YouTube 受限模式"
-        },
-        "bypass": {
-            "name": "拦截绕过方法",
-            "description": "阻止或阻碍使用可绕过 NextDNS 过滤的方法，包括 VPN、代理、Tor 相关软件和加密 DNS 服务商。",
-            "enable": "拦截绕过方法"
-        }
+        "ownedBy": "<0>拥有者：</0><1>{{company}}</1>",
+        "source": "跟踪器分析来自"
+      }
     },
-    "xlist": {
-        "placeholder": "添加一个域名……",
-        "errors": {
+    "settings": "日志选项",
+    "streaming": "实时日志更新",
+    "toggleTimeFormat": "切换时间戳格式"
+  },
+  "deviceSelector": {
+    "all": "全部设备",
+    "howto": "在设置指南页面了解如何识别设备。"
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "过去 30 分钟",
+      "6h": "过去 6 小时",
+      "24h": "过去 24 小时",
+      "7d": "过去 7 天",
+      "30d": "过去 30 天",
+      "3M": "过去 3 个月"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "名称",
+      "description": "为此配置文件选择一个名称。"
+    },
+    "logs": {
+      "name": "日志",
+      "description": "调整你的日志设置。",
+      "enable": "启用日志",
+      "privacy": {
+        "name": "隐私调整",
+        "ip": "记录客户端 IP 地址",
+        "domains": "记录域名"
+      },
+      "retention": {
+        "name": "保存时长",
+        "options": {
+          "1h": "1 小时",
+          "6h": "6 小时",
+          "1d": "1 天",
+          "1w": "1 周",
+          "1m": "1 个月",
+          "3m": "3 个月",
+          "6m": "6 个月",
+          "1y": "1 年",
+          "2y": "2 年"
+        }
+      },
+      "location": {
+        "name": "存储位置",
+        "locations": {
+          "us": {
+            "name": "美国",
+            "description": "日志将存储在美国境内。这是默认值。"
+          },
+          "eu": {
+            "name": "欧盟",
+            "description": "日志将存储在欧盟成员国内。"
+          },
+          "ch": {
+            "name": "瑞士",
+            "description": "日志将存储在瑞士苏黎世，该司法管辖区以严格的隐私法律而闻名。"
+          }
+        },
+        "confirm": {
+          "title": "更改存储位置",
+          "text": "更改日志的存储位置将删除此配置文件的所有历史日志和统计数据。"
+        }
+      },
+      "download": {
+        "button": "下载日志"
+      },
+      "clear": {
+        "button": "清空日志",
+        "confirm": {
+          "text": "确定要清空此配置文件的所有日志吗？此操作无法撤销。",
+          "submit": "清空"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "拦截页面",
+      "description": "域名被拦截时显示拦截页面。这可能会稍微增加页面加载时间，某些情况下还可能出现 HTTPS 警告。停用后，被拦截的查询将以未指定地址（0.0.0.0 或 ::）应答。",
+      "enable": "启用拦截页面",
+      "ca": {
+        "name": "NextDNS 根证书",
+        "description": "安装并信任 <1>{{link}}</1> 提供的根证书，即可消除加载拦截页面时出现的 HTTPS 警告。请参阅<3>此处</3>的操作说明。"
+      }
+    },
+    "performance": {
+      "name": "性能",
+      "description": "加快浏览速度。",
+      "ecs": {
+        "name": "匿名 EDNS 客户端子网",
+        "description": "在不暴露你的 IP 地址的情况下，加快从内容分发网络获取数据的速度。",
+        "enable": "启用匿名 EDNS 客户端子网"
+      },
+      "cache": {
+        "name": "缓存加速",
+        "description": "通过强制设置最小 TTL（生存时间）来减少 DNS 查询次数。",
+        "enable": "启用缓存加速"
+      },
+      "flatten": {
+        "name": "CNAME 扁平化",
+        "description": "防止追踪 CNAME 的解析器发出不必要的查询，并避免中间域名干扰日志。",
+        "enable": "启用 CNAME 扁平化"
+      }
+    },
+    "ageVerification": {
+      "name": "绕过年龄验证",
+      "description": "自动绕过某些网站（例如成人内容网站）在允许访问前用于核实访客年龄的年龄验证检查。",
+      "acknowledgment": "启用此功能即表示你确认自己已达到访问相关内容所需的法定年龄。"
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 指的是一个去中心化、抗审查的在线生态系统，由基于区块链的域名注册系统（例如以太坊域名服务）和分布式内容存储与分发网络（例如 IPFS）等创新技术组成。启用后，NextDNS 将充当通往这个新 Web 的无过滤网关，让你无需安装任何东西即可亲身体验。",
+      "tips": "由于目前大多数浏览器只支持传统的顶级域名，直接访问 Web3 域名时，你应在末尾添加一个斜杠（“<1>/</1>”），例如使用“<3>vitalik.eth/</3>”而不是“<5>vitalik.eth</5>”。",
+      "enable": "启用 Web3"
+    },
+    "rewrites": {
+      "name": "重写",
+      "description": "设置或覆盖任何域名的 DNS 查询结果。重写规则同样适用于子域名，并支持使用本地 IP 地址作为查询结果。",
+      "new": "新建重写规则",
+      "form": {
+        "domain": {
+          "label": "域名",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
             "required": "请输入一个域名。",
             "ip": "请输入域名，而不是 IP 地址。",
             "invalid": "请输入有效的域名。",
-            "tld": "你似乎想拦截整个顶级域名（TLD）。请使用“安全”部分中的“顶级域名（TLD）”功能。",
-            "exists": "该域名已经添加过了。"
+            "taken": "你已有针对该域名的重写规则。"
+          }
         },
-        "empty": "尚无域名。",
-        "denylist": {
-            "info": "将域名加入黑名单后，其所有子域名也会自动加入黑名单。"
-        },
-        "allowlist": {
-            "info": "将域名加入白名单后，其所有子域名也会自动加入白名单。白名单的优先级高于其他所有设置，包括安全功能。"
+        "answer": {
+          "label": "查询结果",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "请输入查询结果。",
+            "invalid": "查询结果应该是有效的 IP 地址或域名。"
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "all_other": "<0>{{count, number}}</0><1>次查询</1>",
-            "blocked_other": "<0>{{count, number}}</0><1>被拦截的查询</1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> 的</0><1>查询被拦截</1></1>",
-            "blocked_one": "",
-            "all_one": ""
+    "access": {
+      "name": "访问权限",
+      "description": "向其他人提供对此配置文件的编辑或仅查看权限。",
+      "roles": {
+        "editor": "可编辑",
+        "viewer": "可查看"
+      },
+      "pending": "邀请已发送",
+      "form": {
+        "email": {
+          "label": "电子邮件地址",
+          "errors": {
+            "required": "请输入电子邮件地址。",
+            "invalid": "请输入有效的电子邮件地址。",
+            "duplicate": "此电子邮件地址已被邀请。"
+          }
         },
-        "queries": {
-            "name": "查询",
-            "description": "查询数量随时间的变化。",
-            "queries": {
-                "all_other": "<0>{{count, number}}</0><1> 次查询</1>",
-                "blocked_other": "<0>{{count, number}}</0><1> 次被拦截的查询</1>",
-                "blocked_one": "",
-                "all_one": ""
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "已解析的域名",
-                "description": "未被任何设置拦截或因手动允许而成功解析的域名。"
-            },
-            "blocked": {
-                "name": "被拦截的域名",
-                "description": "被安全、隐私或家长监护设置拦截，或因手动加入黑名单而被拦截的域名。"
-            },
-            "root": {
-                "name": "根域名",
-                "description": "汇总对根域名和其子域名的所有查询。"
-            },
-            "empty": "尚无域名。"
-        },
-        "reasons": {
-            "name": "拦截原因",
-            "description": "拦截查询最多的安全、隐私或家长监护设置。",
-            "empty": "还没有拦截任何域名。"
-        },
-        "devices": {
-            "name": "设备",
-            "description": "进行查询的设备。",
-            "empty": "暂无设备。",
-            "unidentified": {
-                "name": "无法识别的设备"
-            }
-        },
-        "ips": {
-            "name": "客户端 IP 地址",
-            "description": "进行查询的 IP 地址。",
-            "empty": "暂无 IP 地址。"
-        },
-        "gafam": {
-            "name": "大型科技公司的主导地位",
-            "description": "“GAFAM”（Google、亚马逊、Facebook（现为 Meta）、Apple 和 Microsoft）是 5 家占主导地位的互联网公司，它们拥有许多热门服务，这些服务通常以不同的名称运营，例如 Meta 旗下的 WhatsApp 和 Instagram。",
-            "queries_other": "{{count, number}} 次查询",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "亚马逊"
-                },
-                "facebook": {
-                    "name": "Meta"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "其他"
-                }
-            },
-            "queries_one": ""
-        },
-        "encrypted": {
-            "name": "加密 DNS",
-            "description": "使用加密传输（DNS-over-HTTPS、DNS-over-TLS 或官方的 NextDNS 应用程序）进行查询的占比。",
-            "empty": "暂无查询。"
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "通过 DNSSEC 验证的查询占比。",
-            "empty": "暂无查询。"
-        },
-        "destination": {
-            "name": "互联网流量目的地",
-            "description": "根据你的 DNS 查询估算的目的地国家/地区。",
-            "queries_other": "{{count, number}} 次查询",
-            "topDomains": "查询最多的域名",
-            "queries_one": ""
+        "role": {
+          "label": "角色"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "仅显示被拦截的查询",
-        "raw": "原始 DNS 日志",
-        "empty": "暂无日志。",
-        "log": {
-            "actionBlock": "拦截",
-            "actionAllow": "允许",
-            "dnssec": "已通过 DNSSEC 验证。",
-            "clients": {
-                "nextdns-ios": "NextDNS iOS 应用程序",
-                "nextdns-android": "NextDNS Android 应用程序",
-                "nextdns-macos": "NextDNS macOS 应用程序",
-                "nextdns-windows": "NextDNS Windows 应用程序",
-                "nextdns-cli": "NextDNS CLI 客户端",
-                "nextdns-chromeos": "NextDNS ChromeOS 应用程序",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "MikroTik",
-                "apple-profile": "Apple 描述文件",
-                "yogadns": "YogaDNS",
-                "tailscale": "Tailscale"
-            },
-            "blockedBy": "被 <1>{{lists, list}}</1> 拦截。",
-            "allowedBy": "被 <1>{{lists, list}}</1> 允许。",
-            "manual": {
-                "deny": "已手动拦截。",
-                "allow": "已手动允许。"
-            },
-            "insights": {
-                "show": "显示跟踪器分析",
-                "hide": "隐藏跟踪器分析",
-                "categories": {
-                    "advertising": {
-                        "description": "提供广告或广告相关服务，例如数据收集、行为分析或再营销。"
-                    },
-                    "comments": {
-                        "description": "为文章和产品评论启用评论部分。"
-                    },
-                    "customer_interaction": {
-                        "description": "包括聊天、电子邮件消息、客户支持和其他交互工具。"
-                    },
-                    "essential": {
-                        "description": "包括标签管理器、隐私声明以及对网站功能至关重要的技术。"
-                    },
-                    "adult_advertsing": {
-                        "description": "提供通常出现在成人内容网站上的广告。"
-                    },
-                    "site_analytics": {
-                        "description": "收集和分析与网站使用情况和性能有关的数据。"
-                    },
-                    "social_media": {
-                        "description": "集成与社交媒体网站相关的功能。"
-                    },
-                    "audio_video_player": {
-                        "description": "使网站能够发布、分发和优化视频和音频内容。"
-                    },
-                    "cdn": {
-                        "description": "内容分发网络，为不同的网站功能提供资源，通常同时服务于许多不同的客户。"
-                    },
-                    "misc": {
-                        "description": "该跟踪器不属于其他任何类别，或尚未被标记。"
-                    },
-                    "pornvertising": {
-                        "description": "提供通常出现在成人内容网站上的广告。"
-                    },
-                    "hosting": {
-                        "description": "这是内容提供商或网站所有者使用的服务。"
-                    },
-                    "extensions": {
-                        "description": "用户设备上可以拦截和分析浏览器流量（中间人） 的软件。"
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "普遍程度已构成风险",
-                        "extremely": "极其普遍",
-                        "very": "非常普遍",
-                        "commonly": "普遍存在",
-                        "relatively": "较为普遍"
-                    },
-                    "summary": "{{prevalence}}<2>（跟踪 {{percent, percentage}} 的网络流量）</2>"
-                },
-                "ownedBy": "<0>拥有者：</0><1>{{company}}</1>",
-                "source": "跟踪器分析来自"
-            }
-        },
-        "settings": "日志选项",
-        "streaming": "实时日志更新",
-        "toggleTimeFormat": "切换时间戳格式"
-    },
-    "deviceSelector": {
-        "all": "全部设备",
-        "howto": "在设置指南页面了解如何识别设备。"
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "过去 30 分钟",
-            "6h": "过去 6 小时",
-            "24h": "过去 24 小时",
-            "7d": "过去 7 天",
-            "30d": "过去 30 天",
-            "3M": "过去 3 个月"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "复制 <1>{{name}}</1>",
+      "description": "将此配置文件的所有设置复制到新配置文件。",
+      "form": {
         "name": {
-            "name": "名称",
-            "description": "为此配置文件选择一个名称。"
+          "label": "名称",
+          "placeholder": "家庭、孩子、办公室……",
+          "errors": {
+            "required": "请输入一个名称。",
+            "taken": "你已有使用此名称的配置文件。"
+          }
         },
-        "logs": {
-            "name": "日志",
-            "description": "调整你的日志设置。",
-            "enable": "启用日志",
-            "privacy": {
-                "name": "隐私调整",
-                "ip": "记录客户端 IP 地址",
-                "domains": "记录域名"
-            },
-            "retention": {
-                "name": "保存时长",
-                "options": {
-                    "1h": "1 小时",
-                    "6h": "6 小时",
-                    "1d": "1 天",
-                    "1w": "1 周",
-                    "1m": "1 个月",
-                    "3m": "3 个月",
-                    "6m": "6 个月",
-                    "1y": "1 年",
-                    "2y": "2 年"
-                }
-            },
-            "location": {
-                "name": "存储位置",
-                "locations": {
-                    "us": {
-                        "name": "美国",
-                        "description": "日志将存储在美国境内。这是默认值。"
-                    },
-                    "eu": {
-                        "name": "欧盟",
-                        "description": "日志将存储在欧盟成员国内。"
-                    },
-                    "ch": {
-                        "name": "瑞士",
-                        "description": "日志将存储在瑞士苏黎世，该司法管辖区以严格的隐私法律而闻名。"
-                    }
-                },
-                "confirm": {
-                    "title": "更改存储位置",
-                    "text": "更改日志的存储位置将删除此配置文件的所有历史日志和统计数据。"
-                }
-            },
-            "download": {
-                "button": "下载日志"
-            },
-            "clear": {
-                "button": "清空日志",
-                "confirm": {
-                    "text": "确定要清空此配置文件的所有日志吗？此操作无法撤销。",
-                    "submit": "清空"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "拦截页面",
-            "description": "域名被拦截时显示拦截页面。这可能会稍微增加页面加载时间，某些情况下还可能出现 HTTPS 警告。停用后，被拦截的查询将以未指定地址（0.0.0.0 或 ::）应答。",
-            "enable": "启用拦截页面",
-            "ca": {
-                "name": "NextDNS 根证书",
-                "description": "安装并信任 <1>{{link}}</1> 提供的根证书，即可消除加载拦截页面时出现的 HTTPS 警告。请参阅<3>此处</3>的操作说明。"
-            }
-        },
-        "performance": {
-            "name": "性能",
-            "description": "加快浏览速度。",
-            "ecs": {
-                "name": "匿名 EDNS 客户端子网",
-                "description": "在不暴露你的 IP 地址的情况下，加快从内容分发网络获取数据的速度。",
-                "enable": "启用匿名 EDNS 客户端子网"
-            },
-            "cache": {
-                "name": "缓存加速",
-                "description": "通过强制设置最小 TTL（生存时间）来减少 DNS 查询次数。",
-                "enable": "启用缓存加速"
-            },
-            "flatten": {
-                "name": "CNAME 扁平化",
-                "description": "防止追踪 CNAME 的解析器发出不必要的查询，并避免中间域名干扰日志。",
-                "enable": "启用 CNAME 扁平化"
-            }
-        },
-        "ageVerification": {
-            "name": "绕过年龄验证",
-            "description": "自动绕过某些网站（例如成人内容网站）在允许访问前用于核实访客年龄的年龄验证检查。",
-            "acknowledgment": "启用此功能即表示你确认自己已达到访问相关内容所需的法定年龄。"
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 指的是一个去中心化、抗审查的在线生态系统，由基于区块链的域名注册系统（例如以太坊域名服务）和分布式内容存储与分发网络（例如 IPFS）等创新技术组成。启用后，NextDNS 将充当通往这个新 Web 的无过滤网关，让你无需安装任何东西即可亲身体验。",
-            "tips": "由于目前大多数浏览器只支持传统的顶级域名，直接访问 Web3 域名时，你应在末尾添加一个斜杠（“<1>/</1>”），例如使用“<3>vitalik.eth/</3>”而不是“<5>vitalik.eth</5>”。",
-            "enable": "启用 Web3"
-        },
-        "rewrites": {
-            "name": "重写",
-            "description": "设置或覆盖任何域名的 DNS 查询结果。重写规则同样适用于子域名，并支持使用本地 IP 地址作为查询结果。",
-            "new": "新建重写规则",
-            "form": {
-                "domain": {
-                    "label": "域名",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "请输入一个域名。",
-                        "ip": "请输入域名，而不是 IP 地址。",
-                        "invalid": "请输入有效的域名。",
-                        "taken": "你已有针对该域名的重写规则。"
-                    }
-                },
-                "answer": {
-                    "label": "查询结果",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "请输入查询结果。",
-                        "invalid": "查询结果应该是有效的 IP 地址或域名。"
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "访问权限",
-            "description": "向其他人提供对此配置文件的编辑或仅查看权限。",
-            "roles": {
-                "editor": "可编辑",
-                "viewer": "可查看"
-            },
-            "pending": "邀请已发送",
-            "form": {
-                "email": {
-                    "label": "电子邮件地址",
-                    "errors": {
-                        "required": "请输入电子邮件地址。",
-                        "invalid": "请输入有效的电子邮件地址。",
-                        "duplicate": "此电子邮件地址已被邀请。"
-                    }
-                },
-                "role": {
-                    "label": "角色"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "复制 <1>{{name}}</1>",
-            "description": "将此配置文件的所有设置复制到新配置文件。",
-            "form": {
-                "name": {
-                    "label": "名称",
-                    "placeholder": "家庭、孩子、办公室……",
-                    "errors": {
-                        "required": "请输入一个名称。",
-                        "taken": "你已有使用此名称的配置文件。"
-                    }
-                },
-                "button": "复制"
-            }
-        },
-        "delete": {
-            "button": "删除 <1>{{name}}</1>",
-            "warning": "这将永久删除此配置文件及其所有关联日志。",
-            "confirm": {
-                "text": "你确定要删除 <1>{{name}}</1> 吗？此操作无法撤销。"
-            }
-        },
-        "leave": {
-            "button": "离开 <1>{{name}}</1>",
-            "warning": "你将失去访问此配置文件的权限。",
-            "confirm": {
-                "text": "你确定要离开 <1>{{name}}</1> 吗？此操作无法撤销。"
-            }
-        }
+        "button": "复制"
+      }
+    },
+    "delete": {
+      "button": "删除 <1>{{name}}</1>",
+      "warning": "这将永久删除此配置文件及其所有关联日志。",
+      "confirm": {
+        "text": "你确定要删除 <1>{{name}}</1> 吗？此操作无法撤销。"
+      }
+    },
+    "leave": {
+      "button": "离开 <1>{{name}}</1>",
+      "warning": "你将失去访问此配置文件的权限。",
+      "confirm": {
+        "text": "你确定要离开 <1>{{name}}</1> 吗？此操作无法撤销。"
+      }
     }
+  }
 }

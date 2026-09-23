@@ -1,1398 +1,1398 @@
 {
-    "global": {
-        "beta": "beta",
-        "preview": "Acesso antecipado",
-        "cancel": "Cancelar",
-        "add": "Adicionar",
-        "save": "Salvar",
-        "continue": "Continuar",
-        "enable": "Ativar",
-        "change": "Alterar",
-        "create": "Criar",
-        "subscribe": "Assinar",
-        "invite": "Convidar",
-        "remove": "Remover",
-        "leave": "Sair",
-        "delete": "Excluir",
-        "close": "Fechar",
-        "back": "Voltar",
-        "disable": "Desativar",
-        "unnamedDevice": "Dispositivo #{{id}}",
-        "firstConfiguration": "Meu primeiro perfil",
-        "error": "Erro",
-        "networkError": "Erro de rede",
-        "requestFailed": "Falha na solicitação",
-        "noProfiles": "Ainda não há perfis.",
-        "search": "Pesquisar",
-        "clearSearch": "Limpar pesquisa",
-        "copy": "Copiar",
-        "actions": "Ações",
-        "expand": "Expandir",
-        "collapse": "Recolher"
+  "global": {
+    "beta": "beta",
+    "preview": "Acesso antecipado",
+    "cancel": "Cancelar",
+    "add": "Adicionar",
+    "save": "Salvar",
+    "continue": "Continuar",
+    "enable": "Ativar",
+    "change": "Alterar",
+    "create": "Criar",
+    "subscribe": "Assinar",
+    "invite": "Convidar",
+    "remove": "Remover",
+    "leave": "Sair",
+    "delete": "Excluir",
+    "close": "Fechar",
+    "back": "Voltar",
+    "disable": "Desativar",
+    "unnamedDevice": "Dispositivo #{{id}}",
+    "firstConfiguration": "Meu primeiro perfil",
+    "error": "Erro",
+    "networkError": "Erro de rede",
+    "requestFailed": "Falha na solicitação",
+    "noProfiles": "Ainda não há perfis.",
+    "search": "Pesquisar",
+    "clearSearch": "Limpar pesquisa",
+    "copy": "Copiar",
+    "actions": "Ações",
+    "expand": "Expandir",
+    "collapse": "Recolher"
+  },
+  "theme": {
+    "label": "Tema",
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "pages": {
+    "signup": "Cadastre-se",
+    "login": "Entrar",
+    "passwordReset": "Redefinir sua senha",
+    "account": "Conta",
+    "setup": "Instalação",
+    "security": "Segurança",
+    "privacy": "Privacidade",
+    "parentalcontrol": "Controle parental",
+    "denylist": "Lista negra",
+    "allowlist": "Lista branca",
+    "analytics": "Estatísticas",
+    "logs": "Registros",
+    "settings": "Configurações",
+    "help": "Ajuda"
+  },
+  "banners": {
+    "temporary": "Esta conta temporária irá expirar <1><0></0></1> e é acessível somente a partir deste navegador. Cadastre-se agora gratuitamente para salvar suas configurações.",
+    "nearQuota": "Você fez mais de {{queriesNearQuota, number}} consultas este mês, se aproximando da cota mensal gratuita de {{queriesQuota, number}} consultas. <5>Assine</5> para continuar usando o NextDNS.",
+    "overQuota": "Você fez mais de {{queriesQuota, number}} consultas este mês e todas as funcionalidades foram desativadas. <3>Assine</3> para continuar usando o NextDNS."
+  },
+  "account": {
+    "email": "E-mail",
+    "newEmail": "Novo e-mail",
+    "password": "Senha",
+    "newPassword": "Nova senha",
+    "currentPassword": "Senha atual",
+    "forgotPassword": "Esqueceu a senha?",
+    "savePassword": "Salvar senha",
+    "passwordResetInfo": "Digite o endereço de e-mail associado à sua conta e enviaremos um link para redefinir sua senha.",
+    "sendEmail": "Enviar e-mail",
+    "passwordResetLinkSentMessage": "Um link para redefinir sua senha foi enviado para <1>{{email}}</1>.",
+    "code": "Código 2FA",
+    "login": "Entrar",
+    "noAccountYet": "Ainda não tem conta? <1>Cadastre-se</1>",
+    "signup": "Cadastre-se",
+    "alreadyHaveAnAccount": "Já tem uma conta? <1>Entre</1>",
+    "convertingNotice": "Você está convertendo uma conta temporária em uma conta definitiva. Todas as suas configurações serão salvas.",
+    "convertingDeviceOnlyNotice": "Você está convertendo uma conta vinculada apenas a um dispositivo em uma conta completa. Todas as suas configurações serão salvas.",
+    "logout": "Sair",
+    "errors": {
+      "email": {
+        "required": "Digite um e-mail.",
+        "invalid": "Digite um e-mail válido.",
+        "taken": "Este e-mail já está sendo usado."
+      },
+      "password": {
+        "required": "Digite uma senha.",
+        "invalidCombination": "Combinação de e-mail/senha inválida."
+      },
+      "currentPassword": {
+        "required": "Digite sua senha atual.",
+        "incorrect": "A senha que você digitou está incorreta."
+      },
+      "code": {
+        "required": "Digite um código 2FA.",
+        "invalid": "Digite um código de 6 dígitos.",
+        "incorrect": "Código 2FA incorreto."
+      },
+      "resetPasswordToken": {
+        "invalid": "Token inválido ou expirado."
+      }
     },
-    "theme": {
-        "label": "Tema",
-        "system": "Sistema",
-        "light": "Claro",
-        "dark": "Escuro"
-    },
-    "pages": {
-        "signup": "Cadastre-se",
-        "login": "Entrar",
-        "passwordReset": "Redefinir sua senha",
-        "account": "Conta",
-        "setup": "Instalação",
-        "security": "Segurança",
-        "privacy": "Privacidade",
-        "parentalcontrol": "Controle parental",
-        "denylist": "Lista negra",
-        "allowlist": "Lista branca",
-        "analytics": "Estatísticas",
-        "logs": "Registros",
-        "settings": "Configurações",
-        "help": "Ajuda"
-    },
-    "banners": {
-        "temporary": "Esta conta temporária irá expirar <1><0></0></1> e é acessível somente a partir deste navegador. Cadastre-se agora gratuitamente para salvar suas configurações.",
-        "nearQuota": "Você fez mais de {{queriesNearQuota, number}} consultas este mês, se aproximando da cota mensal gratuita de {{queriesQuota, number}} consultas. <5>Assine</5> para continuar usando o NextDNS.",
-        "overQuota": "Você fez mais de {{queriesQuota, number}} consultas este mês e todas as funcionalidades foram desativadas. <3>Assine</3> para continuar usando o NextDNS."
-    },
-    "account": {
-        "email": "E-mail",
-        "newEmail": "Novo e-mail",
-        "password": "Senha",
-        "newPassword": "Nova senha",
-        "currentPassword": "Senha atual",
-        "forgotPassword": "Esqueceu a senha?",
-        "savePassword": "Salvar senha",
-        "passwordResetInfo": "Digite o endereço de e-mail associado à sua conta e enviaremos um link para redefinir sua senha.",
-        "sendEmail": "Enviar e-mail",
-        "passwordResetLinkSentMessage": "Um link para redefinir sua senha foi enviado para <1>{{email}}</1>.",
-        "code": "Código 2FA",
-        "login": "Entrar",
-        "noAccountYet": "Ainda não tem conta? <1>Cadastre-se</1>",
-        "signup": "Cadastre-se",
-        "alreadyHaveAnAccount": "Já tem uma conta? <1>Entre</1>",
-        "convertingNotice": "Você está convertendo uma conta temporária em uma conta definitiva. Todas as suas configurações serão salvas.",
-        "convertingDeviceOnlyNotice": "Você está convertendo uma conta vinculada apenas a um dispositivo em uma conta completa. Todas as suas configurações serão salvas.",
-        "logout": "Sair",
-        "errors": {
-            "email": {
-                "required": "Digite um e-mail.",
-                "invalid": "Digite um e-mail válido.",
-                "taken": "Este e-mail já está sendo usado."
-            },
-            "password": {
-                "required": "Digite uma senha.",
-                "invalidCombination": "Combinação de e-mail/senha inválida."
-            },
-            "currentPassword": {
-                "required": "Digite sua senha atual.",
-                "incorrect": "A senha que você digitou está incorreta."
-            },
-            "code": {
-                "required": "Digite um código 2FA.",
-                "invalid": "Digite um código de 6 dígitos.",
-                "incorrect": "Código 2FA incorreto."
-            },
-            "resetPasswordToken": {
-                "invalid": "Token inválido ou expirado."
-            }
-        },
-        "affiliation": {
-            "name": "Programa de afiliados",
-            "description": "Ajude-nos a divulgar o NextDNS compartilhando <1>{{link}}</1> e receba <3>{{share, percentage}}</3> dos pagamentos de assinatura das pessoas que você indicar, durante os primeiros <5>{{months, number}} meses</5> após o início da primeira assinatura paga de cada uma delas.",
-            "balance": {
-                "name": "Saldo"
-            },
-            "availableBalance": {
-                "name": "Saldo disponível",
-                "description": "O saldo fica disponível para resgate após um mês, a fim de cobrir potenciais reembolsos."
-            },
-            "payout": {
-                "button": "Resgatar",
-                "minimum": "Para resgatar, é necessário um saldo disponível de pelo menos {{amount, price}}.",
-                "form": {
-                    "paypalEmail": "E-mail do PayPal",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "Digite um e-mail do PayPal.",
-                            "invalid": "Digite um e-mail válido do PayPal."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "Uso gratuito",
-            "description": "O NextDNS pode ser usado gratuitamente até {{queries, number}} consultas por mês. Após esse limite, todas as funcionalidades serão temporariamente desativadas até o próximo mês.",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} consultas</1>",
-            "overQuota": {
-                "message": "Você fez mais de {{queries, number}} consultas este mês.",
-                "info": "O NextDNS continuará respondendo às consultas DNS, mas todas as funcionalidades estão temporariamente desativadas até o próximo mês."
-            },
-            "subscribe": {
-                "ios": "Para assinar o serviço, acesse my.nextdns.io no seu navegador.",
-                "upsell": "Obtenha consultas ilimitadas, a partir de {{amount, price}}/mês."
-            }
-        },
-        "subscription": {
-            "name": "Assinatura",
-            "plans": {
-                "pro": "Pro",
-                "business": "Empresarial",
-                "education": "Educacional"
-            },
-            "intervals": {
-                "month": "plano mensal",
-                "year": "plano anual"
-            },
-            "per": {
-                "month": "ao mês",
-                "year": "ao ano"
-            },
-            "units": {
-                "business_one": "{{count, number}} funcionário",
-                "business_other": "{{count, number}} funcionários",
-                "education_one": "{{count, number}} aluno",
-                "education_other": "{{count, number}} alunos"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "Sua assinatura irá expirar em {{date, date}}.",
-            "managedByApple": "Sua assinatura é gerenciada pela sua Conta Apple. Para alterá-la ou cancelá-la, use as configurações de assinatura da Apple.",
-            "manageOnApple": "Gerenciar assinatura na Apple",
-            "restart": {
-                "button": "Reativar assinatura"
-            },
-            "changePlan": {
-                "button": "Alterar plano"
-            },
-            "renewal": "Seu próximo pagamento automático será de {{amount, price}} em {{date, date}}.",
-            "changePaymentMethod": {
-                "button": "Alterar método de pagamento"
-            },
-            "cancel": {
-                "button": "Cancelar assinatura",
-                "confirm": {
-                    "text": "Sua assinatura atual permanecerá válida até {{date, date}}.",
-                    "submit": "Cancelar assinatura"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "Escolha um plano",
-                "addPaymentMethod": "Adicione um método de pagamento",
-                "included": "Todos os planos incluem <1>acesso a todas as funcionalidades</1>, <3>dispositivos ilimitados</3> e <5>consultas ilimitadas</5>.",
-                "savings": "Economize {{percent, percentage}} em relação ao plano mensal",
-                "familyOnly": "* Planos Pro são apenas para uso pessoal (e de familiares próximos).",
-                "unitsQuestion": {
-                    "business": "Quantos <1>funcionários</1> a sua empresa emprega?",
-                    "education": "Quantos <1>alunos</1> tem a sua escola (ou rede de ensino)?"
-                },
-                "unitsLabel": {
-                    "business": "Número de funcionários",
-                    "education": "Número de alunos"
-                },
-                "asYouGrow": {
-                    "business": "* Lembre-se de atualizar o seu plano à medida que o número de funcionários aumenta.",
-                    "education": "* Lembre-se de atualizar o seu plano à medida que o número de alunos aumenta."
-                },
-                "starting": {
-                    "business": "<0>A partir de </0><1>{{price, price}}</1><2> por mês para {{units, number}} funcionários</2>",
-                    "education": "<0>A partir de </0><1>{{price, price}}</1><2> por mês para {{units, number}} alunos</2>"
-                },
-                "card": {
-                    "number": "Número do cartão",
-                    "expiration": "Data de validade",
-                    "code": "Código de segurança",
-                    "stripe": "Usamos o Stripe — um dos principais gateways de pagamento — para processar pagamentos com cartão de forma segura, sem nunca ter acesso direto às informações do seu cartão."
-                },
-                "paypal": {
-                    "text": "Clique no botão “Ir para o PayPal” para assinar com o PayPal."
-                },
-                "bitpay": {
-                    "text": "Clique no botão “Ir para o BitPay” para pagar com criptomoedas.",
-                    "toYearly": "Nós não aceitamos pagamentos em criptomoedas para planos mensais. <1>Ao continuar, você será transferido automaticamente para o plano anual.</1>",
-                    "remainder": "Sua assinatura atual já está paga até {{date, date}}. Você será cobrado agora e o tempo restante será adicionado automaticamente à nova data de expiração."
-                },
-                "continueTo": "Ir para <1></1>"
-            }
-        },
-        "business": {
-            "name": "Empresa",
-            "description": "Para fins fiscais, precisamos do nome da sua empresa, endereço e número de identificação fiscal (CNPJ ou equivalente). Isso é exigido por lei e aparecerá em todas as faturas.",
-            "button": {
-                "add": "Adicionar informações da empresa",
-                "update": "Atualizar"
-            },
-            "form": {
-                "name": {
-                    "label": "Nome",
-                    "placeholder": "Empresa X Ltda.",
-                    "errors": {
-                        "required": "Digite o nome da sua empresa."
-                    }
-                },
-                "address": {
-                    "label": "Endereço",
-                    "placeholder": "Avenida Getúlio Vargas, 1909, Centro, 37200-000\nLavras, Minas Gerais\nBrasil",
-                    "errors": {
-                        "required": "Digite o endereço da sua empresa."
-                    }
-                },
-                "vatNumber": {
-                    "label": "Número de identificação fiscal (CNPJ ou equivalente)"
-                }
-            }
-        },
-        "invoices": {
-            "name": "Faturas",
-            "description": "Histórico de pagamento e todas as faturas da sua conta.",
-            "pending": "{{amount, price}} (Pendente)",
-            "show-more": "Exibir mais",
-            "show-less": "Exibir menos",
-            "invoice": {
-                "title": "Fatura #{{code}}",
-                "to": "Para: <1>{{email}}</1>",
-                "vatNumber": "Número de identificação fiscal (CNPJ ou equivalente): {{number}}",
-                "columns": {
-                    "plan": "Plano",
-                    "period": "Período",
-                    "amount": "Valor"
-                },
-                "vat": "IVA ({{rate, percentage}})",
-                "total": "Total",
-                "footer": {
-                    "reverseCharged": "IVA (ou equivalente) sujeito a cobrança reversa.",
-                    "currency": "Todos os valores mostrados estão em {{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "E-mail",
-            "description": "Altere o endereço de e-mail usado para acessar sua conta e receber notificações críticas.",
-            "button": "Alterar e-mail"
-        },
-        "changePassword": {
-            "name": "Senha",
-            "description": "Altere a senha usada para acessar sua conta e confirmar ações sensíveis.",
-            "button": "Alterar senha"
-        },
-        "2fa": {
-            "name": "Autenticação de dois fatores (2FA)",
-            "description": "A autenticação de dois fatores (2FA) é uma camada extra de segurança que requer um código adicional temporário de 6 dígitos ao entrar em sua conta.",
-            "enabled": "A 2FA está ativada para a sua conta.",
-            "enable": {
-                "button": "Ativar 2FA",
-                "secret": "Chave secreta de autenticação de dois fatores",
-                "modal": {
-                    "howto": "Use um aplicativo autenticador como o <1>Google Authenticator</1> ou um gerenciador de senhas compatível com 2FA. Você pode escanear o código QR, tocar nele para abrir o link <3>{{otpauth}}</3> ou copiar e colar sua chave secreta manualmente."
-                }
-            },
-            "recovery": {
-                "button": "Códigos de recuperação",
-                "modal": {
-                    "howto": "Use estes códigos de recuperação para acessar sua conta caso perca o acesso ao dispositivo e não consiga receber códigos de autenticação de dois fatores. Cada código só pode ser usado uma vez.",
-                    "download": "Baixar",
-                    "regen": "Gerar novamente"
-                }
-            },
-            "disable": {
-                "button": "Desativar 2FA"
-            }
-        },
-        "api": {
-            "description": "Crie e gerencie seus perfis por meio de programação. Leia a documentação em <1>{{link}}</1>.",
-            "copy": "Copiar chave de API",
-            "remove": "Remover chave de API",
-            "create": {
-                "button": "Gerar chave de API"
-            }
-        },
-        "delete": {
-            "button": "Excluir conta",
-            "warning": "Isso excluirá sua conta e todos os seus perfis para sempre.",
-            "confirm": {
-                "text": "Tem certeza de que deseja excluir a sua conta? Esta ação não pode ser desfeita."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "Expirado",
-                    "text": "Sua conta temporária expirou. Cadastre-se agora para salvar suas configurações e continuar usando o NextDNS. É grátis."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "Novo",
+    "affiliation": {
+      "name": "Programa de afiliados",
+      "description": "Ajude-nos a divulgar o NextDNS compartilhando <1>{{link}}</1> e receba <3>{{share, percentage}}</3> dos pagamentos de assinatura das pessoas que você indicar, durante os primeiros <5>{{months, number}} meses</5> após o início da primeira assinatura paga de cada uma delas.",
+      "balance": {
+        "name": "Saldo"
+      },
+      "availableBalance": {
+        "name": "Saldo disponível",
+        "description": "O saldo fica disponível para resgate após um mês, a fim de cobrir potenciais reembolsos."
+      },
+      "payout": {
+        "button": "Resgatar",
+        "minimum": "Para resgatar, é necessário um saldo disponível de pelo menos {{amount, price}}.",
         "form": {
-            "title": "Novo perfil",
-            "name": {
-                "label": "Nome",
-                "placeholder": "Casa, Crianças, Escritório, ...",
-                "errors": {
-                    "required": "Digite um nome.",
-                    "taken": "Você já tem um perfil com esse nome."
-                }
+          "paypalEmail": "E-mail do PayPal",
+          "errors": {
+            "paypalEmail": {
+              "required": "Digite um e-mail do PayPal.",
+              "invalid": "Digite um e-mail válido do PayPal."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "Tudo certo!",
-                "secondary": "Este dispositivo está usando o NextDNS com este perfil."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "Este dispositivo está usando o NextDNS sem perfil.",
-                    "secondary": {
-                        "clients": "Certifique-se de definir o ID do perfil mostrado abaixo nas configurações do aplicativo.",
-                        "firefox": "Certifique-se de definir o endpoint DNS-over-HTTPS mostrado abaixo no Firefox.",
-                        "doh": "Certifique-se de usar o endpoint DNS-over-HTTPS mostrado abaixo.",
-                        "dot": "Certifique-se de usar o endpoint DNS-over-TLS mostrado abaixo.",
-                        "ipv6": "Certifique-se de usar os endereços IPv6 mostrados abaixo.",
-                        "servers": "Certifique-se de usar os servidores DNS mostrados na seção “IP vinculado” abaixo (os servidores DNS mudam entre os perfis).",
-                        "link": "Certifique-se de vincular seu endereço IP na seção “IP vinculado” abaixo."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "Este dispositivo está usando o NextDNS com outro perfil.",
-                    "secondary": {
-                        "sameAccount": "Este dispositivo está usando “{{name}}”.",
-                        "otherAccount": "Certifique-se de estar usando um dos endpoints listados nesta página."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "Este dispositivo não está usando o NextDNS.",
-                "secondary": "Este dispositivo está usando “{{resolver}}” como resolvedor DNS."
-            },
-            "error": {
-                "primary": "Erro ao verificar o status atual.",
-                "secondary": "Fale conosco se o problema persistir após atualizar a página."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "Este dispositivo está usando o NextDNS com a Retransmissão Privada do iCloud.",
-                    "secondary": "Funcionalidades como o SafeSearch, o Modo restrito do YouTube e as reescritas não são compatíveis com a Retransmissão Privada do iCloud."
-                },
-                "blockpage": {
-                    "primary": "Este dispositivo está usando o NextDNS com a Retransmissão Privada do iCloud.",
-                    "secondary": "Ativar a configuração “Página de bloqueio” enquanto usa a Retransmissão Privada do iCloud interfere no bloqueio."
-                }
+    "usage": {
+      "name": "Uso gratuito",
+      "description": "O NextDNS pode ser usado gratuitamente até {{queries, number}} consultas por mês. Após esse limite, todas as funcionalidades serão temporariamente desativadas até o próximo mês.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} consultas</1>",
+      "overQuota": {
+        "message": "Você fez mais de {{queries, number}} consultas este mês.",
+        "info": "O NextDNS continuará respondendo às consultas DNS, mas todas as funcionalidades estão temporariamente desativadas até o próximo mês."
+      },
+      "subscribe": {
+        "ios": "Para assinar o serviço, acesse my.nextdns.io no seu navegador.",
+        "upsell": "Obtenha consultas ilimitadas, a partir de {{amount, price}}/mês."
+      }
+    },
+    "subscription": {
+      "name": "Assinatura",
+      "plans": {
+        "pro": "Pro",
+        "business": "Empresarial",
+        "education": "Educacional"
+      },
+      "intervals": {
+        "month": "plano mensal",
+        "year": "plano anual"
+      },
+      "per": {
+        "month": "ao mês",
+        "year": "ao ano"
+      },
+      "units": {
+        "business_one": "{{count, number}} funcionário",
+        "business_other": "{{count, number}} funcionários",
+        "education_one": "{{count, number}} aluno",
+        "education_other": "{{count, number}} alunos"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "Sua assinatura irá expirar em {{date, date}}.",
+      "managedByApple": "Sua assinatura é gerenciada pela sua Conta Apple. Para alterá-la ou cancelá-la, use as configurações de assinatura da Apple.",
+      "manageOnApple": "Gerenciar assinatura na Apple",
+      "restart": {
+        "button": "Reativar assinatura"
+      },
+      "changePlan": {
+        "button": "Alterar plano"
+      },
+      "renewal": "Seu próximo pagamento automático será de {{amount, price}} em {{date, date}}.",
+      "changePaymentMethod": {
+        "button": "Alterar método de pagamento"
+      },
+      "cancel": {
+        "button": "Cancelar assinatura",
+        "confirm": {
+          "text": "Sua assinatura atual permanecerá válida até {{date, date}}.",
+          "submit": "Cancelar assinatura"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "Escolha um plano",
+        "addPaymentMethod": "Adicione um método de pagamento",
+        "included": "Todos os planos incluem <1>acesso a todas as funcionalidades</1>, <3>dispositivos ilimitados</3> e <5>consultas ilimitadas</5>.",
+        "savings": "Economize {{percent, percentage}} em relação ao plano mensal",
+        "familyOnly": "* Planos Pro são apenas para uso pessoal (e de familiares próximos).",
+        "unitsQuestion": {
+          "business": "Quantos <1>funcionários</1> a sua empresa emprega?",
+          "education": "Quantos <1>alunos</1> tem a sua escola (ou rede de ensino)?"
+        },
+        "unitsLabel": {
+          "business": "Número de funcionários",
+          "education": "Número de alunos"
+        },
+        "asYouGrow": {
+          "business": "* Lembre-se de atualizar o seu plano à medida que o número de funcionários aumenta.",
+          "education": "* Lembre-se de atualizar o seu plano à medida que o número de alunos aumenta."
+        },
+        "starting": {
+          "business": "<0>A partir de </0><1>{{price, price}}</1><2> por mês para {{units, number}} funcionários</2>",
+          "education": "<0>A partir de </0><1>{{price, price}}</1><2> por mês para {{units, number}} alunos</2>"
+        },
+        "card": {
+          "number": "Número do cartão",
+          "expiration": "Data de validade",
+          "code": "Código de segurança",
+          "stripe": "Usamos o Stripe — um dos principais gateways de pagamento — para processar pagamentos com cartão de forma segura, sem nunca ter acesso direto às informações do seu cartão."
+        },
+        "paypal": {
+          "text": "Clique no botão “Ir para o PayPal” para assinar com o PayPal."
+        },
+        "bitpay": {
+          "text": "Clique no botão “Ir para o BitPay” para pagar com criptomoedas.",
+          "toYearly": "Nós não aceitamos pagamentos em criptomoedas para planos mensais. <1>Ao continuar, você será transferido automaticamente para o plano anual.</1>",
+          "remainder": "Sua assinatura atual já está paga até {{date, date}}. Você será cobrado agora e o tempo restante será adicionado automaticamente à nova data de expiração."
+        },
+        "continueTo": "Ir para <1></1>"
+      }
+    },
+    "business": {
+      "name": "Empresa",
+      "description": "Para fins fiscais, precisamos do nome da sua empresa, endereço e número de identificação fiscal (CNPJ ou equivalente). Isso é exigido por lei e aparecerá em todas as faturas.",
+      "button": {
+        "add": "Adicionar informações da empresa",
+        "update": "Atualizar"
+      },
+      "form": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Empresa X Ltda.",
+          "errors": {
+            "required": "Digite o nome da sua empresa."
+          }
+        },
+        "address": {
+          "label": "Endereço",
+          "placeholder": "Avenida Getúlio Vargas, 1909, Centro, 37200-000\nLavras, Minas Gerais\nBrasil",
+          "errors": {
+            "required": "Digite o endereço da sua empresa."
+          }
+        },
+        "vatNumber": {
+          "label": "Número de identificação fiscal (CNPJ ou equivalente)"
+        }
+      }
+    },
+    "invoices": {
+      "name": "Faturas",
+      "description": "Histórico de pagamento e todas as faturas da sua conta.",
+      "pending": "{{amount, price}} (Pendente)",
+      "show-more": "Exibir mais",
+      "show-less": "Exibir menos",
+      "invoice": {
+        "title": "Fatura #{{code}}",
+        "to": "Para: <1>{{email}}</1>",
+        "vatNumber": "Número de identificação fiscal (CNPJ ou equivalente): {{number}}",
+        "columns": {
+          "plan": "Plano",
+          "period": "Período",
+          "amount": "Valor"
+        },
+        "vat": "IVA ({{rate, percentage}})",
+        "total": "Total",
+        "footer": {
+          "reverseCharged": "IVA (ou equivalente) sujeito a cobrança reversa.",
+          "currency": "Todos os valores mostrados estão em {{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "E-mail",
+      "description": "Altere o endereço de e-mail usado para acessar sua conta e receber notificações críticas.",
+      "button": "Alterar e-mail"
+    },
+    "changePassword": {
+      "name": "Senha",
+      "description": "Altere a senha usada para acessar sua conta e confirmar ações sensíveis.",
+      "button": "Alterar senha"
+    },
+    "2fa": {
+      "name": "Autenticação de dois fatores (2FA)",
+      "description": "A autenticação de dois fatores (2FA) é uma camada extra de segurança que requer um código adicional temporário de 6 dígitos ao entrar em sua conta.",
+      "enabled": "A 2FA está ativada para a sua conta.",
+      "enable": {
+        "button": "Ativar 2FA",
+        "secret": "Chave secreta de autenticação de dois fatores",
+        "modal": {
+          "howto": "Use um aplicativo autenticador como o <1>Google Authenticator</1> ou um gerenciador de senhas compatível com 2FA. Você pode escanear o código QR, tocar nele para abrir o link <3>{{otpauth}}</3> ou copiar e colar sua chave secreta manualmente."
+        }
+      },
+      "recovery": {
+        "button": "Códigos de recuperação",
+        "modal": {
+          "howto": "Use estes códigos de recuperação para acessar sua conta caso perca o acesso ao dispositivo e não consiga receber códigos de autenticação de dois fatores. Cada código só pode ser usado uma vez.",
+          "download": "Baixar",
+          "regen": "Gerar novamente"
+        }
+      },
+      "disable": {
+        "button": "Desativar 2FA"
+      }
+    },
+    "api": {
+      "description": "Crie e gerencie seus perfis por meio de programação. Leia a documentação em <1>{{link}}</1>.",
+      "copy": "Copiar chave de API",
+      "remove": "Remover chave de API",
+      "create": {
+        "button": "Gerar chave de API"
+      }
+    },
+    "delete": {
+      "button": "Excluir conta",
+      "warning": "Isso excluirá sua conta e todos os seus perfis para sempre.",
+      "confirm": {
+        "text": "Tem certeza de que deseja excluir a sua conta? Esta ação não pode ser desfeita."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "Expirado",
+          "text": "Sua conta temporária expirou. Cadastre-se agora para salvar suas configurações e continuar usando o NextDNS. É grátis."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "Novo",
+    "form": {
+      "title": "Novo perfil",
+      "name": {
+        "label": "Nome",
+        "placeholder": "Casa, Crianças, Escritório, ...",
+        "errors": {
+          "required": "Digite um nome.",
+          "taken": "Você já tem um perfil com esse nome."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "Tudo certo!",
+        "secondary": "Este dispositivo está usando o NextDNS com este perfil."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "Este dispositivo está usando o NextDNS sem perfil.",
+          "secondary": {
+            "clients": "Certifique-se de definir o ID do perfil mostrado abaixo nas configurações do aplicativo.",
+            "firefox": "Certifique-se de definir o endpoint DNS-over-HTTPS mostrado abaixo no Firefox.",
+            "doh": "Certifique-se de usar o endpoint DNS-over-HTTPS mostrado abaixo.",
+            "dot": "Certifique-se de usar o endpoint DNS-over-TLS mostrado abaixo.",
+            "ipv6": "Certifique-se de usar os endereços IPv6 mostrados abaixo.",
+            "servers": "Certifique-se de usar os servidores DNS mostrados na seção “IP vinculado” abaixo (os servidores DNS mudam entre os perfis).",
+            "link": "Certifique-se de vincular seu endereço IP na seção “IP vinculado” abaixo."
+          }
+        },
+        "withConfiguration": {
+          "primary": "Este dispositivo está usando o NextDNS com outro perfil.",
+          "secondary": {
+            "sameAccount": "Este dispositivo está usando “{{name}}”.",
+            "otherAccount": "Certifique-se de estar usando um dos endpoints listados nesta página."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "Este dispositivo não está usando o NextDNS.",
+        "secondary": "Este dispositivo está usando “{{resolver}}” como resolvedor DNS."
+      },
+      "error": {
+        "primary": "Erro ao verificar o status atual.",
+        "secondary": "Fale conosco se o problema persistir após atualizar a página."
+      },
+      "apr": {
+        "ok": {
+          "primary": "Este dispositivo está usando o NextDNS com a Retransmissão Privada do iCloud.",
+          "secondary": "Funcionalidades como o SafeSearch, o Modo restrito do YouTube e as reescritas não são compatíveis com a Retransmissão Privada do iCloud."
+        },
+        "blockpage": {
+          "primary": "Este dispositivo está usando o NextDNS com a Retransmissão Privada do iCloud.",
+          "secondary": "Ativar a configuração “Página de bloqueio” enquanto usa a Retransmissão Privada do iCloud interfere no bloqueio."
+        }
+      }
+    },
+    "endpoints": {
+      "name": "Endpoints",
+      "description": "Configure o NextDNS com este perfil usando um dos endpoints abaixo.",
+      "help": "Não sabe como usá-los? Siga o <1>guia de instalação</1>."
+    },
+    "linkedIp": {
+      "name": "IP vinculado",
+      "description": "Se você não consegue configurar o NextDNS usando nossos aplicativos, DNS-over-TLS, DNS-over-HTTPS ou IPv6, use os servidores DNS abaixo e vincule o seu IP. Isso se destina principalmente ao uso em redes domésticas e não é recomendado em dispositivos móveis.",
+      "servers": {
+        "name": "Servidores DNS"
+      },
+      "ip": {
+        "name": "IP vinculado",
+        "link": "Vincular IP"
+      },
+      "showAdvanced": "Mostrar opções avançadas",
+      "ddns": {
+        "explanation": "Você pode usar DNS dinâmico (DDNS) para ter seu IP vinculado atualizado automaticamente.",
+        "set": "Configurar DDNS",
+        "status": "Você está usando <1>{{hostname}}</1> como nome de host DDNS. Seu IP será atualizado automaticamente a cada minuto.",
+        "unset": "Remover",
+        "form": {
+          "hostname": {
+            "label": "Nome de host DDNS",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "Digite um nome de host.",
+              "invalid": "Digite um nome de host válido.",
+              "ip": "Digite um nome de host, não um endereço IP.",
+              "error": "Ocorreu um erro ao obter o endereço IP associado a este nome de host.",
+              "empty": "Este nome de host não está retornando nenhum endereço IP.",
+              "different": "Por razões de segurança, ao adicionar um DNS dinâmico, o endereço IP retornado pelo nome de host DDNS deve ser igual ao seu endereço IP atual."
             }
+          }
+        }
+      },
+      "programmatically": "Você também pode atualizar programaticamente seu IP vinculado chamando:"
+    },
+    "guide": {
+      "name": "Guia de instalação",
+      "description": "Siga as instruções abaixo para configurar o NextDNS em seu dispositivo, navegador ou roteador.",
+      "or": "Ou",
+      "ipv4": {
+        "title": "IPv4 (com IP vinculado)"
+      },
+      "ipv6": {
+        "supported": "Sua rede suporta IPv6",
+        "notSupported": "Sua rede não suporta IPv6"
+      },
+      "tags": {
+        "recommended": "Recomendado",
+        "advanced": "Avançado"
+      },
+      "use": "Use o seguinte em <1>{{file}}</1>:",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "DNS particular",
+              "requirements": "Android 9 ou superior",
+              "steps": {
+                "1": "1. Vá para Configurações → Rede e Internet → DNS particular (em Avançado em algumas versões).",
+                "2": "2. Selecione a opção Nome do host do provedor de DNS particular.",
+                "3": "3. Insira <1>{{endpoint}}</1> e toque em Salvar."
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "Endpoints",
-            "description": "Configure o NextDNS com este perfil usando um dos endpoints abaixo.",
-            "help": "Não sabe como usá-los? Siga o <1>guia de instalação</1>."
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "Perfil de configuração",
+              "requirements": "iOS 14 ou superior",
+              "step": "Use nosso gerador de perfil de configuração da Apple, disponível em <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS para iOS",
+              "qrAlt": "Código de Clipe de App para instalar e configurar o NextDNS no iPhone ou iPad",
+              "qrText": "Escaneie este código para instalar e configurar o NextDNS no seu iPhone ou iPad",
+              "qrTextIos": "Escaneie este código com outro celular ou <1>toque aqui para configurar o NextDNS neste dispositivo</1>."
+            }
+          }
         },
-        "linkedIp": {
-            "name": "IP vinculado",
-            "description": "Se você não consegue configurar o NextDNS usando nossos aplicativos, DNS-over-TLS, DNS-over-HTTPS ou IPv6, use os servidores DNS abaixo e vincule o seu IP. Isso se destina principalmente ao uso em redes domésticas e não é recomendado em dispositivos móveis.",
-            "servers": {
-                "name": "Servidores DNS"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS sobre HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "Abra as <1>Configurações</1>.",
+                "Vá para <1>Rede e Internet</1>.",
+                "Clique em <1>Wi-Fi</1> (ou <3>Ethernet</3>).",
+                "Clique em <1>Propriedades de hardware</1>, ou ignore esta etapa se você clicou em <3>Ethernet</3>.",
+                "Clique no botão <1>Editar</1> ao lado de <3>Atribuição de servidor DNS</3>.",
+                "Selecione <1>Manual</1>.",
+                "Ative <1>IPv{{version}}</1>.",
+                "Insira <1>{{ip}}</1> como <3>DNS preferencial</3>, selecione <5>Ativado (modelo manual)</5> e insira <7>{{endpoint}}</7>.",
+                "Insira <1>{{ip}}</1> como <3>DNS alternativo</3>, selecione <5>Ativado (modelo manual)</5> e insira <7>{{endpoint}}</7>.",
+                "Clique em <1>Salvar</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS para Windows",
+              "steps": {
+                "1": "1. Baixe o instalador <1>aqui</1>.",
+                "2": "2. Após instalar, clique com o botão direito no ícone do NextDNS na área de notificação e abra “Settings...”. Defina <1>{{id}}</1> como “Configuration ID”.",
+                "3": "3. Clique com o botão direito no ícone do NextDNS na área de notificação e clique em “Enable”."
+              }
             },
             "ip": {
-                "name": "IP vinculado",
-                "link": "Vincular IP"
+              "steps": {
+                "1": "1. Abra o menu Iniciar, pesquise Painel de Controle e abra-o.",
+                "2": "2. Clique em Rede e Internet e, em seguida, em Central de Rede e Compartilhamento.",
+                "3": "3. Clique em Alterar as configurações do adaptador.",
+                "4": "4. Clique com o botão direito na rede Wi-Fi à qual você está conectado e clique em Propriedades.",
+                "5": "5. Selecione Protocolo IP Versão {{version}}.",
+                "6": "6. Clique em Propriedades.",
+                "7": "7. Selecione Usar os seguintes endereços de servidor DNS.",
+                "8": "8. Substitua os endereços atuais (se houver) por <1>{{dns1}}</1> e <3>{{dns2}}</3>.",
+                "9": "9. Clique em OK e depois em Fechar. Talvez seja necessário reiniciar seu navegador."
+              }
             },
-            "showAdvanced": "Mostrar opções avançadas",
-            "ddns": {
-                "explanation": "Você pode usar DNS dinâmico (DDNS) para ter seu IP vinculado atualizado automaticamente.",
-                "set": "Configurar DDNS",
-                "status": "Você está usando <1>{{hostname}}</1> como nome de host DDNS. Seu IP será atualizado automaticamente a cada minuto.",
-                "unset": "Remover",
-                "form": {
-                    "hostname": {
-                        "label": "Nome de host DDNS",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "Digite um nome de host.",
-                            "invalid": "Digite um nome de host válido.",
-                            "ip": "Digite um nome de host, não um endereço IP.",
-                            "error": "Ocorreu um erro ao obter o endereço IP associado a este nome de host.",
-                            "empty": "Este nome de host não está retornando nenhum endereço IP.",
-                            "different": "Por razões de segurança, ao adicionar um DNS dinâmico, o endereço IP retornado pelo nome de host DDNS deve ser igual ao seu endereço IP atual."
-                        }
-                    }
-                }
-            },
-            "programmatically": "Você também pode atualizar programaticamente seu IP vinculado chamando:"
-        },
-        "guide": {
-            "name": "Guia de instalação",
-            "description": "Siga as instruções abaixo para configurar o NextDNS em seu dispositivo, navegador ou roteador.",
-            "or": "Ou",
-            "ipv4": {
-                "title": "IPv4 (com IP vinculado)"
-            },
-            "ipv6": {
-                "supported": "Sua rede suporta IPv6",
-                "notSupported": "Sua rede não suporta IPv6"
-            },
-            "tags": {
-                "recommended": "Recomendado",
-                "advanced": "Avançado"
-            },
-            "use": "Use o seguinte em <1>{{file}}</1>:",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "DNS particular",
-                            "requirements": "Android 9 ou superior",
-                            "steps": {
-                                "1": "1. Vá para Configurações → Rede e Internet → DNS particular (em Avançado em algumas versões).",
-                                "2": "2. Selecione a opção Nome do host do provedor de DNS particular.",
-                                "3": "3. Insira <1>{{endpoint}}</1> e toque em Salvar."
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "Perfil de configuração",
-                            "requirements": "iOS 14 ou superior",
-                            "step": "Use nosso gerador de perfil de configuração da Apple, disponível em <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS para iOS",
-                            "qrAlt": "Código de Clipe de App para instalar e configurar o NextDNS no iPhone ou iPad",
-                            "qrText": "Escaneie este código para instalar e configurar o NextDNS no seu iPhone ou iPad",
-                            "qrTextIos": "Escaneie este código com outro celular ou <1>toque aqui para configurar o NextDNS neste dispositivo</1>."
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS sobre HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "Abra as <1>Configurações</1>.",
-                                "Vá para <1>Rede e Internet</1>.",
-                                "Clique em <1>Wi-Fi</1> (ou <3>Ethernet</3>).",
-                                "Clique em <1>Propriedades de hardware</1>, ou ignore esta etapa se você clicou em <3>Ethernet</3>.",
-                                "Clique no botão <1>Editar</1> ao lado de <3>Atribuição de servidor DNS</3>.",
-                                "Selecione <1>Manual</1>.",
-                                "Ative <1>IPv{{version}}</1>.",
-                                "Insira <1>{{ip}}</1> como <3>DNS preferencial</3>, selecione <5>Ativado (modelo manual)</5> e insira <7>{{endpoint}}</7>.",
-                                "Insira <1>{{ip}}</1> como <3>DNS alternativo</3>, selecione <5>Ativado (modelo manual)</5> e insira <7>{{endpoint}}</7>.",
-                                "Clique em <1>Salvar</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS para Windows",
-                            "steps": {
-                                "1": "1. Baixe o instalador <1>aqui</1>.",
-                                "2": "2. Após instalar, clique com o botão direito no ícone do NextDNS na área de notificação e abra “Settings...”. Defina <1>{{id}}</1> como “Configuration ID”.",
-                                "3": "3. Clique com o botão direito no ícone do NextDNS na área de notificação e clique em “Enable”."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Abra o menu Iniciar, pesquise Painel de Controle e abra-o.",
-                                "2": "2. Clique em Rede e Internet e, em seguida, em Central de Rede e Compartilhamento.",
-                                "3": "3. Clique em Alterar as configurações do adaptador.",
-                                "4": "4. Clique com o botão direito na rede Wi-Fi à qual você está conectado e clique em Propriedades.",
-                                "5": "5. Selecione Protocolo IP Versão {{version}}.",
-                                "6": "6. Clique em Propriedades.",
-                                "7": "7. Selecione Usar os seguintes endereços de servidor DNS.",
-                                "8": "8. Substitua os endereços atuais (se houver) por <1>{{dns1}}</1> e <3>{{dns2}}</3>.",
-                                "9": "9. Clique em OK e depois em Fechar. Talvez seja necessário reiniciar seu navegador."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. Instale o YogaDNS em <1>{{link}}</1>.",
-                                "2": "2. Siga as instruções para o NextDNS em <1>{{link}}</1> e use <3>{{id}}</3> como “Configuration ID”."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS para macOS",
-                            "steps": {
-                                "1": "1. <1>Baixe</1> e instale nosso aplicativo oficial.",
-                                "2": "2. Siga as instruções.",
-                                "3": "3. Quando o ID do perfil for solicitado, insira <1>{{id}}</1>."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur ou superior"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Abra os Ajustes do Sistema (Preferências do Sistema em versões mais antigas do macOS) e clique em Rede.",
-                                "2": "2. Selecione sua conexão de rede ativa e clique em Detalhes (Avançado em versões mais antigas do macOS).",
-                                "3": "3. Vá para a seção DNS.",
-                                "4": "4. Na lista Servidores DNS, remova todos os endereços (se houver) e adicione <1>{{dns1}}</1> e <3>{{dns2}}</3>.",
-                                "5": "5. Clique em OK e depois em Aplicar, se essa opção aparecer."
-                            }
-                        },
-                        "cli": {
-                            "title": "Cliente de linha de comando do NextDNS",
-                            "steps": {
-                                "1": "1. Execute o seguinte comando: <1>{{command}}</1>",
-                                "2": "2. Siga as instruções."
-                            },
-                            "manual": "Visite nosso repositório de código aberto em <1>{{link}}</1> para obter instruções de instalação manual."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "Cliente de linha de comando do NextDNS",
-                            "steps": {
-                                "1": "1. Execute o seguinte comando: <1>{{command}}</1>",
-                                "2": "2. Siga as instruções."
-                            },
-                            "manual": "Visite nosso repositório de código aberto em <1>{{link}}</1> para obter instruções de instalação manual."
-                        },
-                        "ip": {
-                            "step": "Mude seus servidores DNS para <1>{{dns1}}</1> e <3>{{dns2}}</3>."
-                        },
-                        "stubby": {
-                            "warning": "Certifique-se de que o Stubby esteja vinculado a <1>OpenSSL 1.1.1 ou superior</1>, pois as versões anteriores não irão funcionar com o NextDNS."
-                        },
-                        "unbound": {
-                            "warning": "Como resolvedor recursivo, o Unbound segue cadeias de CNAME. Isso pode resultar em <1>comportamento inesperado</1> quando usado com um resolvedor DNS com bloqueio, como o NextDNS. Veja <3>{{link}}</3>."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "ChromeOS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "DNS seguro",
-                            "steps": [
-                                "Abra as <1>Configurações</1>.",
-                                "Vá para <1>Privacidade e segurança</1>.",
-                                "Ative <1>Usar conexões seguras para procurar sites</1>.",
-                                "Selecione <1>Adicionar provedor de serviços de DNS personalizado</1> e insira <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "Mude seus servidores DNS para <1>{{dns1}}</1> e <3>{{dns2}}</3>."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "Navegadores",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. Vá para Configurações.",
-                                "2": "2. Na seção Privacidade e segurança, clique em Segurança.",
-                                "3": "3. Na seção Avançadas, ative Usar DNS seguro.",
-                                "4": "4. Selecione Adicionar provedor de serviços de DNS personalizado e insira <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Apenas Windows, macOS e Linux",
-                            "steps": {
-                                "1": "1. Abra Configurações (Preferências em algumas versões).",
-                                "2": "2. Clique em Privacidade e Segurança.",
-                                "3": "3. Role para baixo até DNS sobre HTTPS e abra Configurações avançadas, se essa opção aparecer.",
-                                "4": "4. Selecione Personalizado (Proteção maior ou Proteção máxima em algumas versões).",
-                                "5": "5. Selecione Personalizado no menu de provedores.",
-                                "6": "6. Insira <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. Abra as Configurações.",
-                                "2": "2. Vá para a seção Privacidade, pesquisa e serviços.",
-                                "3": "3. Em Segurança, ative Usar DNS seguro.",
-                                "4": "4. Selecione Escolher um provedor de serviços e insira <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. Abra as Configurações.",
-                                "2": "2. Na seção Privacidade e segurança, vá para Segurança.",
-                                "3": "3. Na seção Avançadas, ative Usar DNS seguro.",
-                                "4": "4. Selecione Adicionar provedor de serviços de DNS personalizado e insira <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "Roteadores",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS para roteadores",
-                            "requirements": "Funciona apenas em roteadores que aceitam arquivos executáveis",
-                            "step": "Visite nosso repositório de código aberto em <1>{{link}}</1> para obter instruções de instalação."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "Alguns roteadores podem não suportar a notação IPv6 acima. Nesse caso, use <1>{{dns1}}</1> e <3>{{dns2}}</3>."
-                            },
-                            "steps": {
-                                "1": "1. Abra as preferências do seu roteador. Normalmente, você pode acessá-las pelo navegador por meio de uma URL (como http://192.168.0.1/ ou http://192.168.1.1/).",
-                                "2": "2. Localize as configurações de DNS dentro da interface.",
-                                "3": "3. Remova todos os endereços (se houver) e adicione <1>{{dns1}}</1> e <3>{{dns2}}</3>.",
-                                "4": "4. Clique em Salvar (ou semelhante)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. Vá para Serviços → DNS Resolver. Na guia Configurações Gerais, role para baixo e, se necessário, clique em “Mostrar Opções Personalizadas” para exibir a caixa “Opções customizadas.”",
-                                "2": "2. Insira as seguintes linhas:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "Execute o seguinte:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "Acesse a documentação do Tailscale em <2>{{link}}</2> para instruções de configuração."
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. Instale o YogaDNS em <1>{{link}}</1>.",
+                "2": "2. Siga as instruções para o NextDNS em <1>{{link}}</1> e use <3>{{id}}</3> como “Configuration ID”."
+              }
             }
+          }
         },
-        "identify": {
-            "name": "Identifique seus dispositivos",
-            "description": "Siga as instruções abaixo para identificar seus dispositivos em Estatísticas e Registros.",
-            "apps": {
-                "name": "Aplicativos",
-                "instructions": "Ative “Send Device Name” (ou “Report Device Name” no Windows) nas configurações do aplicativo."
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS para macOS",
+              "steps": {
+                "1": "1. <1>Baixe</1> e instale nosso aplicativo oficial.",
+                "2": "2. Siga as instruções.",
+                "3": "3. Quando o ID do perfil for solicitado, insira <1>{{id}}</1>."
+              }
             },
-            "dot": {
-                "instructions": "Anteponha o nome ao domínio fornecido (o nome deve conter apenas <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> e <7>-</7>). Use <9>--</9> para espaços.",
-                "example": "Para “<1>John Router</1>”, use <3>John--Router-{{profile}}.dns.nextdns.io</3> como endpoint DNS-over-TLS."
+            "profile": {
+              "requirements": "macOS Big Sur ou superior"
             },
-            "doh": {
-                "instructions": "Acrescente o nome ao final da URL fornecida (o nome deve estar codificado para URL).",
-                "example": "Para “<1>John's Firefox</1>”, use <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> como endpoint DNS-over-HTTPS."
+            "ip": {
+              "steps": {
+                "1": "1. Abra os Ajustes do Sistema (Preferências do Sistema em versões mais antigas do macOS) e clique em Rede.",
+                "2": "2. Selecione sua conexão de rede ativa e clique em Detalhes (Avançado em versões mais antigas do macOS).",
+                "3": "3. Vá para a seção DNS.",
+                "4": "4. Na lista Servidores DNS, remova todos os endereços (se houver) e adicione <1>{{dns1}}</1> e <3>{{dns2}}</3>.",
+                "5": "5. Clique em OK e depois em Aplicar, se essa opção aparecer."
+              }
+            },
+            "cli": {
+              "title": "Cliente de linha de comando do NextDNS",
+              "steps": {
+                "1": "1. Execute o seguinte comando: <1>{{command}}</1>",
+                "2": "2. Siga as instruções."
+              },
+              "manual": "Visite nosso repositório de código aberto em <1>{{link}}</1> para obter instruções de instalação manual."
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "Cliente de linha de comando do NextDNS",
+              "steps": {
+                "1": "1. Execute o seguinte comando: <1>{{command}}</1>",
+                "2": "2. Siga as instruções."
+              },
+              "manual": "Visite nosso repositório de código aberto em <1>{{link}}</1> para obter instruções de instalação manual."
+            },
+            "ip": {
+              "step": "Mude seus servidores DNS para <1>{{dns1}}</1> e <3>{{dns2}}</3>."
+            },
+            "stubby": {
+              "warning": "Certifique-se de que o Stubby esteja vinculado a <1>OpenSSL 1.1.1 ou superior</1>, pois as versões anteriores não irão funcionar com o NextDNS."
+            },
+            "unbound": {
+              "warning": "Como resolvedor recursivo, o Unbound segue cadeias de CNAME. Isso pode resultar em <1>comportamento inesperado</1> quando usado com um resolvedor DNS com bloqueio, como o NextDNS. Veja <3>{{link}}</3>."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "ChromeOS",
+          "guides": {
+            "secure-dns": {
+              "title": "DNS seguro",
+              "steps": [
+                "Abra as <1>Configurações</1>.",
+                "Vá para <1>Privacidade e segurança</1>.",
+                "Ative <1>Usar conexões seguras para procurar sites</1>.",
+                "Selecione <1>Adicionar provedor de serviços de DNS personalizado</1> e insira <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "Mude seus servidores DNS para <1>{{dns1}}</1> e <3>{{dns2}}</3>."
+            }
+          }
+        },
+        "browsers": {
+          "name": "Navegadores",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. Vá para Configurações.",
+                "2": "2. Na seção Privacidade e segurança, clique em Segurança.",
+                "3": "3. Na seção Avançadas, ative Usar DNS seguro.",
+                "4": "4. Selecione Adicionar provedor de serviços de DNS personalizado e insira <1>{{endpoint}}</1>."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Apenas Windows, macOS e Linux",
+              "steps": {
+                "1": "1. Abra Configurações (Preferências em algumas versões).",
+                "2": "2. Clique em Privacidade e Segurança.",
+                "3": "3. Role para baixo até DNS sobre HTTPS e abra Configurações avançadas, se essa opção aparecer.",
+                "4": "4. Selecione Personalizado (Proteção maior ou Proteção máxima em algumas versões).",
+                "5": "5. Selecione Personalizado no menu de provedores.",
+                "6": "6. Insira <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. Abra as Configurações.",
+                "2": "2. Vá para a seção Privacidade, pesquisa e serviços.",
+                "3": "3. Em Segurança, ative Usar DNS seguro.",
+                "4": "4. Selecione Escolher um provedor de serviços e insira <1>{{endpoint}}</1>."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. Abra as Configurações.",
+                "2": "2. Na seção Privacidade e segurança, vá para Segurança.",
+                "3": "3. Na seção Avançadas, ative Usar DNS seguro.",
+                "4": "4. Selecione Adicionar provedor de serviços de DNS personalizado e insira <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "Roteadores",
+          "guides": {
+            "cli": {
+              "title": "NextDNS para roteadores",
+              "requirements": "Funciona apenas em roteadores que aceitam arquivos executáveis",
+              "step": "Visite nosso repositório de código aberto em <1>{{link}}</1> para obter instruções de instalação."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "Alguns roteadores podem não suportar a notação IPv6 acima. Nesse caso, use <1>{{dns1}}</1> e <3>{{dns2}}</3>."
+              },
+              "steps": {
+                "1": "1. Abra as preferências do seu roteador. Normalmente, você pode acessá-las pelo navegador por meio de uma URL (como http://192.168.0.1/ ou http://192.168.1.1/).",
+                "2": "2. Localize as configurações de DNS dentro da interface.",
+                "3": "3. Remova todos os endereços (se houver) e adicione <1>{{dns1}}</1> e <3>{{dns2}}</3>.",
+                "4": "4. Clique em Salvar (ou semelhante)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. Vá para Serviços → DNS Resolver. Na guia Configurações Gerais, role para baixo e, se necessário, clique em “Mostrar Opções Personalizadas” para exibir a caixa “Opções customizadas.”",
+                "2": "2. Insira as seguintes linhas:"
+              }
+            },
+            "mikrotik": {
+              "run": "Execute o seguinte:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "Acesse a documentação do Tailscale em <2>{{link}}</2> para instruções de configuração."
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "Feeds de inteligência de ameaças",
-            "description": "Bloqueie domínios conhecidos por distribuir malware, lançar ataques de phishing e hospedar servidores de comando e controle usando uma combinação dos feeds de inteligência de ameaças mais confiáveis — todos atualizados em tempo real.",
-            "enable": "Usar feeds de inteligência de ameaças"
-        },
-        "ai": {
-            "name": "Detecção de ameaças orientada por IA",
-            "description": "Bloqueie milhões de ameaças detectadas por nossa tecnologia de IA — um mecanismo proprietário de IA projetado do zero para DNS, com centenas de sinais, terabytes de dados de treinamento e tomada de decisões em tempo real. Inclui homógrafos de IDN, typosquatting, combosquatting, domínios DGA, falsificação de identidade de marcas, roubo de credenciais, distribuição de malware e sites de fachada usados para ocultar infraestrutura maliciosa.",
-            "enable": "Ativar detecção de ameaças orientada por IA"
-        },
-        "googleSafeBrowsing": {
-            "name": "Navegação segura do Google",
-            "description": "Bloqueie domínios de malware e phishing usando a Navegação segura do Google — uma tecnologia que examina bilhões de URLs por dia em busca de sites não seguros. Ao contrário da versão integrada em alguns navegadores, esta não associa seu endereço IP público a ameaças e não permite contornar o bloqueio.",
-            "enable": "Ativar Navegação segura do Google"
-        },
-        "cryptojacking": {
-            "name": "Criptojacking",
-            "description": "Evite o uso não autorizado de seus dispositivos para minerar criptomoedas.",
-            "enable": "Bloquear criptojacking"
-        },
-        "dnsRebinding": {
-            "name": "DNS rebinding",
-            "description": "Evite que invasores assumam o controle de seus dispositivos locais pela Internet, bloqueando automaticamente as respostas DNS que contêm endereços IP privados.",
-            "enable": "Bloquear DNS rebinding"
-        },
-        "homograph": {
-            "name": "Homógrafos de IDN",
-            "description": "Bloqueie nomes de domínio internacionalizados (IDNs) que se fazem passar por outros domínios usando caracteres visualmente semelhantes — por exemplo, substituindo a letra latina “e” pela letra cirílica “е”.",
-            "enable": "Bloquear homógrafos de IDN"
-        },
-        "typosquatting": {
-            "name": "Typosquatting",
-            "description": "Bloqueie domínios registrados por pessoas mal-intencionadas para atingir usuários que digitam incorretamente o endereço de um site no navegador — por exemplo, gooogle.com em vez de google.com.",
-            "enable": "Bloquear typosquatting"
-        },
-        "dga": {
-            "name": "Algoritmos de geração de domínios",
-            "description": "Bloqueie domínios gerados por algoritmos de geração de domínios (DGA) e usados por diversas famílias de malware como pontos de encontro com seus servidores de comando e controle.",
-            "enable": "Bloquear domínios DGA"
-        },
-        "nrd": {
-            "name": "Domínios recém-registrados",
-            "description": "Bloqueie domínios registrados há menos de 30 dias. Esses domínios são conhecidos por serem os preferidos de agentes de ameaças para lançar campanhas maliciosas.",
-            "enable": "Bloquear domínios recém-registrados"
-        },
-        "ddns": {
-            "name": "Nomes de host DNS dinâmicos",
-            "description": "Os serviços de DNS dinâmico (ou DDNS) permitem que pessoas mal-intencionadas configurem rapidamente nomes de host de forma gratuita e sem qualquer validação ou verificação de identidade. Embora os nomes de host DDNS legítimos raramente sejam acessados no uso diário, seus equivalentes maliciosos são amplamente usados em campanhas de phishing.",
-            "disclaimer": "Se você usa DDNS, observe que esta configuração não bloqueará os sites dos próprios serviços DDNS nem suas APIs de atualização.",
-            "enable": "Bloquear nomes de host DNS dinâmicos"
-        },
-        "parked": {
-            "name": "Domínios estacionados",
-            "description": "Domínios estacionados são sites de uma única página, geralmente repletos de anúncios e sem conteúdo útil. A monetização de domínios estacionados pode expor visitantes a golpes, páginas de phishing e downloads maliciosos por meio de redes de publicidade e redirecionamentos.",
-            "enable": "Bloquear domínios estacionados"
-        },
-        "tld": {
-            "name": "Domínios de nível superior (TLDs)",
-            "description": "Bloqueie todos os domínios e subdomínios pertencentes a TLDs específicos.",
-            "add": "Adicionar um TLD",
-            "sections": {
-                "spamhaus": "TLDs mais usados de forma abusiva segundo o Spamhaus",
-                "all": "Todos os TLDs"
-            }
-        },
-        "csam": {
-            "name": "Material de abuso sexual infantil (CSAM)",
-            "description": "Bloqueie domínios que hospedam material de abuso sexual infantil com a ajuda do Project Arachnid, operado pelo Canadian Centre for Child Protection. Nenhuma informação é transmitida ao Project Arachnid quando um domínio é bloqueado.",
-            "enable": "Bloquear material de abuso sexual infantil"
-        },
-        "newlyActiveDomains": {
-            "name": "Domínios recém-ativos",
-            "description": "Bloqueie domínios que estão sendo acessados pela primeira vez ou que historicamente têm pouca atividade. Isso previne ataques de dia zero e ameaças “adormecidas” ao exigir um histórico comprovado de uso legítimo antes de confiar em um domínio, neutralizando efetivamente as tentativas de “pré-aquecer” domínios maliciosos.",
-            "enable": "Bloquear domínios recém-ativos"
-        },
-        "freeHostingDomains": {
-            "name": "Domínios de hospedagem gratuita",
-            "description": "Bloqueie os subdomínios padrão fornecidos por serviços de hospedagem web gratuita (por exemplo, *.pages.dev, *.vercel.app, *.netlify.app). Esses “domínios de hospedagem gratuita” (FHDs) são amplamente explorados por invasores para hospedar sites de phishing e contornar filtros de reputação. Esta configuração não afeta sites legítimos que usam esses provedores com um nome de domínio personalizado.",
-            "enable": "Bloquear domínios de hospedagem gratuita"
-        },
-        "tunnelingEndpoints": {
-            "name": "Endpoints de tunelamento",
-            "description": "Bloqueie serviços que encaminham o tráfego local para a Internet pública por meio de túneis (por exemplo, ngrok, Cloudflare Tunnel). Essas ferramentas são frequentemente usadas por invasores para contornar firewalls e hospedar páginas de phishing em subdomínios aleatórios enquanto ocultam sua infraestrutura subjacente.",
-            "enable": "Bloquear endpoints de tunelamento"
-        },
-        "dataDropServices": {
-            "name": "Serviços de depósito de dados",
-            "description": "Bloqueie o acesso a serviços dedicados ao compartilhamento de texto, arquivos e dados JSON ou de configuração, ou à coleta de dados recebidos, incluindo requisições de webhooks, consultas DNS e e-mails. Isso inclui os usos legítimos desses serviços.",
-            "enable": "Bloquear serviços de depósito de dados"
-        },
-        "residentialHosting": {
-            "name": "Hospedagem residencial",
-            "description": "Bloqueie domínios que resolvem para endereços IP de faixas residenciais (de provedores de Internet), em vez de data centers comerciais. Serviços web legítimos raramente são hospedados em conexões domésticas, enquanto servidores de comando e controle (C2) de botnets e proxies de phishing frequentemente operam em roteadores domésticos comprometidos.",
-            "enable": "Bloquear hospedagem residencial"
-        },
-        "untrustedCertificates": {
-            "name": "Certificados não confiáveis",
-            "description": "Bloqueie domínios que apresentam certificados SSL/TLS assinados por autoridades certificadoras não confiáveis ou desconhecidas (por exemplo, certificados autoassinados). Embora sites legítimos usem quase exclusivamente certificados confiáveis, quase 60% dos servidores de comando e controle (C2) de malware genérico dependem de certificados autoassinados ou emitidos por autoridades não confiáveis para criptografar o tráfego sem deixar rastros documentais.",
-            "enable": "Bloquear certificados não confiáveis"
-        },
-        "fastFluxNetworks": {
-            "name": "Redes Fast Flux",
-            "description": "Bloqueie domínios que alternam rapidamente seus endereços IP entre dispositivos de uma rede distribuída de equipamentos comprometidos (botnets) para evitar a detecção. Esta heurística identifica anomalias específicas no tempo de vida (TTL) do DNS e na diversidade de endereços IP, características de infraestruturas maliciosas que as distinguem de redes de distribuição de conteúdo (CDNs) legítimas.",
-            "enable": "Bloquear redes Fast Flux"
-        },
-        "dnsDataExfiltration": {
-            "name": "Exfiltração de dados por DNS",
-            "description": "Bloqueie domínios que usam o protocolo DNS para extrair dados da sua rede de forma oculta ou receber comandos escondidos (C2). Esta heurística analisa padrões de consultas DNS em tempo real — como subdomínios anormalmente longos, alta entropia e tipos de consulta incomuns (por exemplo, TXT) — para detectar e interromper o roubo lento e discreto de dados e os beacons de malware (como Cobalt Strike) que contornam firewalls tradicionais.",
-            "enable": "Bloquear exfiltração de dados por DNS"
-        },
-        "dnsPayloadDelivery": {
-            "name": "Entrega de payload por DNS",
-            "description": "Evite que respostas DNS sejam usadas para entregar comandos ocultos ou payloads aos seus dispositivos. Consultas de tipos de registro que podem transportar dados arbitrários, mas são desnecessários para a navegação cotidiana — como TXT ou NULL — são totalmente bloqueadas. As cadeias CNAME são reduzidas ao endereço final, removendo registros intermediários que poderiam codificar dados ocultos. Para tipos de registro padrão, como A e AAAA, seções de resposta excessivamente grandes são truncadas aleatoriamente para corromper quaisquer dados codificados em vários registros, preservando o funcionamento normal do DNS.",
-            "enable": "Bloquear entrega de payload por DNS"
-        },
-        "decentralizedWebGateways": {
-            "name": "Gateways da web descentralizada",
-            "description": "Bloqueie gateways públicos que conectam a web descentralizada (por exemplo, IPFS) aos navegadores comuns. Invasores exploram amplamente esses serviços para hospedar páginas de phishing e malware “imutáveis”, permitindo que as ameaças persistam ao contornar os mecanismos tradicionais de remoção de conteúdo e os filtros de reputação.",
-            "enable": "Bloquear gateways da web descentralizada"
-        },
-        "highRiskTlds": {
-            "name": "TLDs de alto risco",
-            "description": "Bloqueie automaticamente domínios de nível superior (TLDs) em que, segundo as estatísticas, predomina a atividade maliciosa — por exemplo, .zip, .mov, .top. A lista é atualizada em tempo real com base em dados globais de reputação relacionados a abusos, protegendo você de vastas redes de domínios baratos e descartáveis usados para phishing e spam, sem necessidade de configuração manual.",
-            "enable": "Bloquear TLDs de alto risco"
+    "identify": {
+      "name": "Identifique seus dispositivos",
+      "description": "Siga as instruções abaixo para identificar seus dispositivos em Estatísticas e Registros.",
+      "apps": {
+        "name": "Aplicativos",
+        "instructions": "Ative “Send Device Name” (ou “Report Device Name” no Windows) nas configurações do aplicativo."
+      },
+      "dot": {
+        "instructions": "Anteponha o nome ao domínio fornecido (o nome deve conter apenas <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> e <7>-</7>). Use <9>--</9> para espaços.",
+        "example": "Para “<1>John Router</1>”, use <3>John--Router-{{profile}}.dns.nextdns.io</3> como endpoint DNS-over-TLS."
+      },
+      "doh": {
+        "instructions": "Acrescente o nome ao final da URL fornecida (o nome deve estar codificado para URL).",
+        "example": "Para “<1>John's Firefox</1>”, use <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> como endpoint DNS-over-HTTPS."
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "Feeds de inteligência de ameaças",
+      "description": "Bloqueie domínios conhecidos por distribuir malware, lançar ataques de phishing e hospedar servidores de comando e controle usando uma combinação dos feeds de inteligência de ameaças mais confiáveis — todos atualizados em tempo real.",
+      "enable": "Usar feeds de inteligência de ameaças"
+    },
+    "ai": {
+      "name": "Detecção de ameaças orientada por IA",
+      "description": "Bloqueie milhões de ameaças detectadas por nossa tecnologia de IA — um mecanismo proprietário de IA projetado do zero para DNS, com centenas de sinais, terabytes de dados de treinamento e tomada de decisões em tempo real. Inclui homógrafos de IDN, typosquatting, combosquatting, domínios DGA, falsificação de identidade de marcas, roubo de credenciais, distribuição de malware e sites de fachada usados para ocultar infraestrutura maliciosa.",
+      "enable": "Ativar detecção de ameaças orientada por IA"
+    },
+    "googleSafeBrowsing": {
+      "name": "Navegação segura do Google",
+      "description": "Bloqueie domínios de malware e phishing usando a Navegação segura do Google — uma tecnologia que examina bilhões de URLs por dia em busca de sites não seguros. Ao contrário da versão integrada em alguns navegadores, esta não associa seu endereço IP público a ameaças e não permite contornar o bloqueio.",
+      "enable": "Ativar Navegação segura do Google"
+    },
+    "cryptojacking": {
+      "name": "Mineração de criptomoedas",
+      "description": "Bloqueie domínios de mineração de criptomoedas para ajudar a prevenir o criptojacking — o uso não autorizado de seus dispositivos para minerar criptomoedas.",
+      "enable": "Bloquear mineração de criptomoedas"
+    },
+    "dnsRebinding": {
+      "name": "Endereços de rede local",
+      "description": "Bloqueie respostas DNS que contêm endereços de rede local para ajudar a proteger seus dispositivos contra ataques de DNS rebinding.",
+      "enable": "Bloquear endereços de rede local"
+    },
+    "homograph": {
+      "name": "Homógrafos de IDN",
+      "description": "Bloqueie nomes de domínio internacionalizados (IDNs) que se fazem passar por outros domínios usando caracteres visualmente semelhantes — por exemplo, substituindo a letra latina “e” pela letra cirílica “е”.",
+      "enable": "Bloquear homógrafos de IDN"
+    },
+    "typosquatting": {
+      "name": "Typosquatting",
+      "description": "Bloqueie domínios registrados por pessoas mal-intencionadas para atingir usuários que digitam incorretamente o endereço de um site no navegador — por exemplo, gooogle.com em vez de google.com.",
+      "enable": "Bloquear typosquatting"
+    },
+    "dga": {
+      "name": "Algoritmos de geração de domínios",
+      "description": "Bloqueie domínios gerados por algoritmos de geração de domínios (DGA) e usados por diversas famílias de malware como pontos de encontro com seus servidores de comando e controle.",
+      "enable": "Bloquear domínios DGA"
+    },
+    "nrd": {
+      "name": "Domínios recém-registrados",
+      "description": "Bloqueie domínios registrados há menos de 30 dias. Esses domínios são conhecidos por serem os preferidos de agentes de ameaças para lançar campanhas maliciosas.",
+      "enable": "Bloquear domínios recém-registrados"
+    },
+    "ddns": {
+      "name": "Nomes de host DNS dinâmicos",
+      "description": "Os serviços de DNS dinâmico (ou DDNS) permitem que pessoas mal-intencionadas configurem rapidamente nomes de host de forma gratuita e sem qualquer validação ou verificação de identidade. Embora os nomes de host DDNS legítimos raramente sejam acessados no uso diário, seus equivalentes maliciosos são amplamente usados em campanhas de phishing.",
+      "disclaimer": "Se você usa DDNS, observe que esta configuração não bloqueará os sites dos próprios serviços DDNS nem suas APIs de atualização.",
+      "enable": "Bloquear nomes de host DNS dinâmicos"
+    },
+    "parked": {
+      "name": "Domínios estacionados",
+      "description": "Domínios estacionados são sites de uma única página, geralmente repletos de anúncios e sem conteúdo útil. A monetização de domínios estacionados pode expor visitantes a golpes, páginas de phishing e downloads maliciosos por meio de redes de publicidade e redirecionamentos.",
+      "enable": "Bloquear domínios estacionados"
+    },
+    "tld": {
+      "name": "Domínios de nível superior (TLDs)",
+      "description": "Bloqueie todos os domínios e subdomínios pertencentes a TLDs específicos.",
+      "add": "Adicionar um TLD",
+      "sections": {
+        "spamhaus": "TLDs mais usados de forma abusiva segundo o Spamhaus",
+        "all": "Todos os TLDs"
+      }
+    },
+    "csam": {
+      "name": "Material de abuso sexual infantil (CSAM)",
+      "description": "Bloqueie domínios que hospedam material de abuso sexual infantil com a ajuda do Project Arachnid, operado pelo Canadian Centre for Child Protection. Nenhuma informação é transmitida ao Project Arachnid quando um domínio é bloqueado.",
+      "enable": "Bloquear material de abuso sexual infantil"
+    },
+    "newlyActiveDomains": {
+      "name": "Domínios recém-ativos",
+      "description": "Bloqueie domínios que estão sendo acessados pela primeira vez ou que historicamente têm pouca atividade. Isso previne ataques de dia zero e ameaças “adormecidas” ao exigir um histórico comprovado de uso legítimo antes de confiar em um domínio, neutralizando efetivamente as tentativas de “pré-aquecer” domínios maliciosos.",
+      "enable": "Bloquear domínios recém-ativos"
+    },
+    "freeHostingDomains": {
+      "name": "Domínios de hospedagem gratuita",
+      "description": "Bloqueie os subdomínios padrão fornecidos por serviços de hospedagem web gratuita (por exemplo, *.pages.dev, *.vercel.app, *.netlify.app). Esses “domínios de hospedagem gratuita” (FHDs) são amplamente explorados por invasores para hospedar sites de phishing e contornar filtros de reputação. Esta configuração não afeta sites legítimos que usam esses provedores com um nome de domínio personalizado.",
+      "enable": "Bloquear domínios de hospedagem gratuita"
+    },
+    "tunnelingEndpoints": {
+      "name": "Endpoints de tunelamento",
+      "description": "Bloqueie serviços que encaminham o tráfego local para a Internet pública por meio de túneis (por exemplo, ngrok, Cloudflare Tunnel). Essas ferramentas são frequentemente usadas por invasores para contornar firewalls e hospedar páginas de phishing em subdomínios aleatórios enquanto ocultam sua infraestrutura subjacente.",
+      "enable": "Bloquear endpoints de tunelamento"
+    },
+    "dataDropServices": {
+      "name": "Serviços de depósito de dados",
+      "description": "Bloqueie o acesso a serviços dedicados ao compartilhamento de texto, arquivos e dados JSON ou de configuração, ou à coleta de dados recebidos, incluindo requisições de webhooks, consultas DNS e e-mails. Isso inclui os usos legítimos desses serviços.",
+      "enable": "Bloquear serviços de depósito de dados"
+    },
+    "residentialHosting": {
+      "name": "Hospedagem residencial",
+      "description": "Bloqueie domínios que resolvem para endereços IP de faixas residenciais (de provedores de Internet), em vez de data centers comerciais. Serviços web legítimos raramente são hospedados em conexões domésticas, enquanto servidores de comando e controle (C2) de botnets e proxies de phishing frequentemente operam em roteadores domésticos comprometidos.",
+      "enable": "Bloquear hospedagem residencial"
+    },
+    "untrustedCertificates": {
+      "name": "Certificados não confiáveis",
+      "description": "Bloqueie domínios que apresentam certificados SSL/TLS assinados por autoridades certificadoras não confiáveis ou desconhecidas (por exemplo, certificados autoassinados). Embora sites legítimos usem quase exclusivamente certificados confiáveis, quase 60% dos servidores de comando e controle (C2) de malware genérico dependem de certificados autoassinados ou emitidos por autoridades não confiáveis para criptografar o tráfego sem deixar rastros documentais.",
+      "enable": "Bloquear certificados não confiáveis"
+    },
+    "fastFluxNetworks": {
+      "name": "Redes Fast Flux",
+      "description": "Bloqueie domínios que alternam rapidamente seus endereços IP entre dispositivos de uma rede distribuída de equipamentos comprometidos (botnets) para evitar a detecção. Esta heurística identifica anomalias específicas no tempo de vida (TTL) do DNS e na diversidade de endereços IP, características de infraestruturas maliciosas que as distinguem de redes de distribuição de conteúdo (CDNs) legítimas.",
+      "enable": "Bloquear redes Fast Flux"
+    },
+    "dnsDataExfiltration": {
+      "name": "Exfiltração de dados por DNS",
+      "description": "Bloqueie domínios que usam o protocolo DNS para extrair dados da sua rede de forma oculta ou receber comandos escondidos (C2). Esta heurística analisa padrões de consultas DNS em tempo real — como subdomínios anormalmente longos, alta entropia e tipos de consulta incomuns (por exemplo, TXT) — para detectar e interromper o roubo lento e discreto de dados e os beacons de malware (como Cobalt Strike) que contornam firewalls tradicionais.",
+      "enable": "Bloquear exfiltração de dados por DNS"
+    },
+    "dnsPayloadDelivery": {
+      "name": "Entrega de payload por DNS",
+      "description": "Limite os dados que as respostas DNS podem transportar para interferir na entrega de comandos ocultos ou payloads aos seus dispositivos, preservando a navegação cotidiana.",
+      "enable": "Interferir na entrega de payload por DNS"
+    },
+    "decentralizedWebGateways": {
+      "name": "Gateways da web descentralizada",
+      "description": "Bloqueie gateways públicos que conectam a web descentralizada (por exemplo, IPFS) aos navegadores comuns. Invasores exploram amplamente esses serviços para hospedar páginas de phishing e malware “imutáveis”, permitindo que as ameaças persistam ao contornar os mecanismos tradicionais de remoção de conteúdo e os filtros de reputação.",
+      "enable": "Bloquear gateways da web descentralizada"
+    },
+    "highRiskTlds": {
+      "name": "TLDs de alto risco",
+      "description": "Bloqueie automaticamente domínios de nível superior (TLDs) em que, segundo as estatísticas, predomina a atividade maliciosa — por exemplo, .zip, .mov, .top. A lista é atualizada em tempo real com base em dados globais de reputação relacionados a abusos, protegendo você de vastas redes de domínios baratos e descartáveis usados para phishing e spam, sem necessidade de configuração manual.",
+      "enable": "Bloquear TLDs de alto risco"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "Listas de bloqueio",
+      "description": "Bloqueie anúncios e rastreadores usando as listas de bloqueio mais populares disponíveis — todas atualizadas em tempo real.",
+      "add": "Adicionar uma lista de bloqueio",
+      "entries_one": "{{count, number}} item",
+      "entries_other": "{{count, number}} itens",
+      "updated": "Atualizada <1></1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "Lista de bloqueio de anúncios e rastreadores do NextDNS",
+          "description": "Uma lista de bloqueio abrangente para bloquear anúncios e rastreadores em todos os países. Esta é a lista de bloqueio recomendada para começar."
         }
+      },
+      "sortBy": {
+        "popularity": "Popularidade",
+        "name": "Nome",
+        "entries": "Itens",
+        "updated": "Recente"
+      }
     },
-    "privacy": {
-        "blocklists": {
-            "name": "Listas de bloqueio",
-            "description": "Bloqueie anúncios e rastreadores usando as listas de bloqueio mais populares disponíveis — todas atualizadas em tempo real.",
-            "add": "Adicionar uma lista de bloqueio",
-            "entries_one": "{{count, number}} item",
-            "entries_other": "{{count, number}} itens",
-            "updated": "Atualizada <1></1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "Lista de bloqueio de anúncios e rastreadores do NextDNS",
-                    "description": "Uma lista de bloqueio abrangente para bloquear anúncios e rastreadores em todos os países. Esta é a lista de bloqueio recomendada para começar."
-                }
-            },
-            "sortBy": {
-                "popularity": "Popularidade",
-                "name": "Nome",
-                "entries": "Itens",
-                "updated": "Recente"
-            }
+    "native": {
+      "name": "Proteção contra rastreamento nativo",
+      "description": "Bloqueie rastreadores — que muitas vezes operam no nível do sistema operacional — que monitoram uma ampla variedade de suas atividades em um dispositivo. Isso pode incluir todos os sites que você visita, tudo o que você digita ou sua localização o tempo todo.",
+      "add": "Adicionar",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "Celulares, tablets, smart TVs, roteadores"
         },
-        "native": {
-            "name": "Proteção contra rastreamento nativo",
-            "description": "Bloqueie rastreadores — que muitas vezes operam no nível do sistema operacional — que monitoram uma ampla variedade de suas atividades em um dispositivo. Isso pode incluir todos os sites que você visita, tudo o que você digita ou sua localização o tempo todo.",
-            "add": "Adicionar",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "Celulares, tablets, smart TVs, roteadores"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "Celulares e tablets"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "Celulares, tablets, smart TVs"
-                },
-                "alexa": {
-                    "name": "Alexa",
-                    "devices": "Dispositivos compatíveis com Alexa"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "Todas as versões"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "Todos os dispositivos Roku"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "Caixas de som"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "Celulares e tablets"
         },
-        "disguised": {
-            "name": "Bloquear rastreadores de terceiros disfarçados",
-            "description": "Detecte e bloqueie automaticamente rastreadores de terceiros que se fazem passar por recursos do próprio site para contornar proteções de privacidade dos navegadores, como o ITP.",
-            "enable": "Bloquear rastreadores de terceiros disfarçados"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "Celulares, tablets, smart TVs"
         },
-        "affiliate": {
-            "name": "Permitir links de afiliados e rastreamento",
-            "description": "Permita domínios de afiliados e rastreamento comuns em sites de ofertas, e-mails ou resultados de pesquisa. Geralmente, esses domínios só são acessados após clicar manualmente em um link.",
-            "relay": "Seu endereço IP será automaticamente ocultado desses sites para preservar sua privacidade.",
-            "enable": "Permitir links de afiliados e rastreamento"
+        "alexa": {
+          "name": "Alexa",
+          "devices": "Dispositivos compatíveis com Alexa"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "Todas as versões"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "Todos os dispositivos Roku"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "Caixas de som"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "Sites, aplicativos e jogos",
-            "description": "Restrinja o acesso a sites, aplicativos e jogos específicos.",
-            "add": "Adicionar um site, aplicativo ou jogo",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "X",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "Bloquear rastreadores de terceiros disfarçados",
+      "description": "Detecte e bloqueie automaticamente rastreadores de terceiros que se fazem passar por recursos do próprio site para contornar proteções de privacidade dos navegadores, como o ITP.",
+      "enable": "Bloquear rastreadores de terceiros disfarçados"
+    },
+    "affiliate": {
+      "name": "Permitir links de afiliados e rastreamento",
+      "description": "Permita domínios de afiliados e rastreamento comuns em sites de ofertas, e-mails ou resultados de pesquisa. Geralmente, esses domínios só são acessados após clicar manualmente em um link.",
+      "relay": "Seu endereço IP será automaticamente ocultado desses sites para preservar sua privacidade.",
+      "enable": "Permitir links de afiliados e rastreamento"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "Sites, aplicativos e jogos",
+      "description": "Restrinja o acesso a sites, aplicativos e jogos específicos.",
+      "add": "Adicionar um site, aplicativo ou jogo",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "X",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "Categorias",
+      "description": "Restrinja o acesso a categorias específicas de sites e aplicativos.",
+      "add": "Adicionar uma categoria",
+      "categories": {
+        "dating": {
+          "name": "Namoro",
+          "description": "Bloqueia todos os sites e aplicativos de namoro."
         },
+        "gambling": {
+          "name": "Jogos de azar",
+          "description": "Bloqueia conteúdo de jogos de azar."
+        },
+        "gaming": {
+          "name": "Jogos online",
+          "description": "Bloqueia sites de jogos online, aplicativos de jogos online e redes de jogos online (Xbox, PlayStation Network, etc.)."
+        },
+        "piracy": {
+          "name": "Pirataria",
+          "description": "Bloqueia sites e protocolos P2P, sites de streaming que infringem direitos autorais e sites genéricos de hospedagem de vídeo usados principalmente para distribuir ilegalmente conteúdo protegido por direitos autorais."
+        },
+        "porn": {
+          "name": "Pornografia",
+          "description": "Bloqueia conteúdo adulto e pornográfico. Inclui sites de acompanhantes, pornhub.com e domínios semelhantes."
+        },
+        "social-networks": {
+          "name": "Redes sociais",
+          "description": "Bloqueia todos os sites e aplicativos de redes sociais (Facebook, Instagram, TikTok, Reddit, etc.). Não bloqueia aplicativos de mensagens."
+        },
+        "video-streaming": {
+          "name": "Streaming de vídeo",
+          "description": "Bloqueia serviços de streaming de vídeo (YouTube, Netflix, Disney+, sites de streaming ilegal, sites de vídeos pornográficos, etc.) e redes sociais baseadas em vídeo (TikTok, etc.). Isso também pode ajudar a reduzir o uso de largura de banda em qualquer rede."
+        }
+      }
+    },
+    "recreation": {
+      "name": "Tempo de recreação",
+      "start": "Hora de início",
+      "end": "Hora de término",
+      "description": "Defina um período para cada dia da semana durante o qual alguns dos sites, aplicativos, jogos ou categorias acima não serão bloqueados — por exemplo, permitir o Facebook às segundas e terças-feiras entre 18h e 20h.",
+      "set": "Definir tempo de recreação",
+      "howto": "Use o botão <1></1> nas seções acima para ativar o tempo de recreação."
+    },
+    "safesearch": {
+      "name": "SafeSearch",
+      "description": "Filtre resultados explícitos nos principais mecanismos de pesquisa, incluindo imagens e vídeos. Isso também irá impedir o acesso a mecanismos de pesquisa que não suportam essa funcionalidade.",
+      "enable": "Forçar SafeSearch"
+    },
+    "youtubeRestricted": {
+      "name": "Modo restrito do YouTube",
+      "description": "Filtre vídeos adultos no YouTube e impeça que vídeos adultos incorporados sejam assistidos em outros sites. Isso também ocultará todos os comentários.",
+      "enable": "Forçar Modo restrito do YouTube"
+    },
+    "bypass": {
+      "name": "Bloquear métodos de evasão de bloqueio",
+      "description": "Impeça ou dificulte o uso de métodos que podem ajudar a contornar a filtragem do NextDNS na rede. Isso inclui VPNs, proxies, softwares relacionados ao Tor e provedores de DNS criptografado.",
+      "enable": "Bloquear métodos de evasão de bloqueio"
+    }
+  },
+  "xlist": {
+    "placeholder": "Adicionar um domínio...",
+    "errors": {
+      "required": "Digite um domínio.",
+      "ip": "Digite um domínio, não um endereço IP.",
+      "invalid": "Digite um domínio válido.",
+      "tld": "Parece que você está tentando bloquear um TLD inteiro. Use a funcionalidade “Domínios de nível superior (TLDs)” na seção Segurança.",
+      "exists": "Este domínio já foi adicionado."
+    },
+    "empty": "Ainda não há domínios.",
+    "denylist": {
+      "info": "Bloquear um domínio bloqueará automaticamente todos os seus subdomínios."
+    },
+    "allowlist": {
+      "info": "Permitir um domínio permitirá automaticamente todos os seus subdomínios. A permissão tem prioridade sobre todo o resto, incluindo as funcionalidades de segurança."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "all_one": "<0>{{count, number}}</0><1>consulta</1>",
+      "all_other": "<0>{{count, number}}</0><1>consultas</1>",
+      "blocked_one": "<0>{{count, number}}</0><1>consulta bloqueada</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>consultas bloqueadas</1>",
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>das consultas foram bloqueadas</1></1>"
+    },
+    "queries": {
+      "name": "Consultas",
+      "description": "Evolução das consultas ao longo do tempo.",
+      "queries": {
+        "all_one": "<0>{{count, number}}</0><1> consulta</1>",
+        "all_other": "<0>{{count, number}}</0><1> consultas</1>",
+        "blocked_one": "<0>{{count, number}}</0><1> consulta bloqueada</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> consultas bloqueadas</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "Domínios resolvidos",
+        "description": "Domínios resolvidos sem serem bloqueados por nenhuma configuração ou porque eles foram manualmente permitidos."
+      },
+      "blocked": {
+        "name": "Domínios bloqueados",
+        "description": "Domínios bloqueados por uma configuração de segurança, privacidade e/ou controle parental ou porque foram manualmente bloqueados."
+      },
+      "root": {
+        "name": "Domínios raiz",
+        "description": "Agregado de todas as consultas feitas para domínios raiz e todos os seus subdomínios."
+      },
+      "empty": "Ainda não há domínios."
+    },
+    "reasons": {
+      "name": "Motivos de bloqueio",
+      "description": "Configurações de segurança, privacidade e/ou controle parental que mais bloquearam consultas.",
+      "empty": "Nenhum domínio foi bloqueado ainda."
+    },
+    "devices": {
+      "name": "Dispositivos",
+      "description": "Dispositivos fazendo as consultas.",
+      "empty": "Ainda não há dispositivos.",
+      "unidentified": {
+        "name": "Dispositivos não identificados"
+      }
+    },
+    "ips": {
+      "name": "IPs",
+      "description": "Endereços IP fazendo as consultas.",
+      "empty": "Ainda não há IPs."
+    },
+    "gafam": {
+      "name": "Predominância do GAFAM",
+      "description": "“GAFAM” (Google, Amazon, Facebook (agora Meta), Apple e Microsoft) são as 5 empresas dominantes da Internet, que detêm muitos serviços populares, frequentemente com outros nomes — por exemplo, WhatsApp e Instagram, da Meta.",
+      "queries_one": "{{count, number}} consulta",
+      "queries_other": "{{count, number}} consultas",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Meta"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "Outras"
+        }
+      }
+    },
+    "encrypted": {
+      "name": "DNS criptografado",
+      "description": "Porcentagem de consultas feitas usando um transporte criptografado (DNS-over-HTTPS, DNS-over-TLS ou os aplicativos oficiais do NextDNS).",
+      "empty": "Ainda não há consultas."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "Porcentagem de consultas validadas com DNSSEC.",
+      "empty": "Ainda não há consultas."
+    },
+    "destination": {
+      "name": "Destino do tráfego",
+      "description": "Países de destino estimados, com base nas suas consultas DNS.",
+      "queries_one": "{{count, number}} consulta",
+      "queries_other": "{{count, number}} consultas",
+      "topDomains": "Principais domínios"
+    }
+  },
+  "logs": {
+    "blockedOnly": "Apenas consultas bloqueadas",
+    "raw": "Registros de DNS brutos",
+    "empty": "Ainda não há registros.",
+    "log": {
+      "actionBlock": "Bloquear",
+      "actionAllow": "Permitir",
+      "dnssec": "Validado com DNSSEC.",
+      "clients": {
+        "nextdns-ios": "NextDNS para iOS",
+        "nextdns-android": "NextDNS para Android",
+        "nextdns-macos": "NextDNS para macOS",
+        "nextdns-windows": "NextDNS para Windows",
+        "nextdns-cli": "Cliente CLI do NextDNS",
+        "nextdns-chromeos": "NextDNS para ChromeOS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "MikroTik",
+        "apple-profile": "Perfil de configuração da Apple",
+        "yogadns": "YogaDNS",
+        "tailscale": "Tailscale"
+      },
+      "blockedBy": "Bloqueado por <1>{{lists, list}}</1>.",
+      "allowedBy": "Permitido por <1>{{lists, list}}</1>.",
+      "manual": {
+        "deny": "Bloqueado manualmente.",
+        "allow": "Permitido manualmente."
+      },
+      "insights": {
+        "show": "Mostrar informações do rastreador",
+        "hide": "Ocultar informações do rastreador",
         "categories": {
-            "name": "Categorias",
-            "description": "Restrinja o acesso a categorias específicas de sites e aplicativos.",
-            "add": "Adicionar uma categoria",
-            "categories": {
-                "dating": {
-                    "name": "Namoro",
-                    "description": "Bloqueia todos os sites e aplicativos de namoro."
-                },
-                "gambling": {
-                    "name": "Jogos de azar",
-                    "description": "Bloqueia conteúdo de jogos de azar."
-                },
-                "gaming": {
-                    "name": "Jogos online",
-                    "description": "Bloqueia sites de jogos online, aplicativos de jogos online e redes de jogos online (Xbox, PlayStation Network, etc.)."
-                },
-                "piracy": {
-                    "name": "Pirataria",
-                    "description": "Bloqueia sites e protocolos P2P, sites de streaming que infringem direitos autorais e sites genéricos de hospedagem de vídeo usados principalmente para distribuir ilegalmente conteúdo protegido por direitos autorais."
-                },
-                "porn": {
-                    "name": "Pornografia",
-                    "description": "Bloqueia conteúdo adulto e pornográfico. Inclui sites de acompanhantes, pornhub.com e domínios semelhantes."
-                },
-                "social-networks": {
-                    "name": "Redes sociais",
-                    "description": "Bloqueia todos os sites e aplicativos de redes sociais (Facebook, Instagram, TikTok, Reddit, etc.). Não bloqueia aplicativos de mensagens."
-                },
-                "video-streaming": {
-                    "name": "Streaming de vídeo",
-                    "description": "Bloqueia serviços de streaming de vídeo (YouTube, Netflix, Disney+, sites de streaming ilegal, sites de vídeos pornográficos, etc.) e redes sociais baseadas em vídeo (TikTok, etc.). Isso também pode ajudar a reduzir o uso de largura de banda em qualquer rede."
-                }
-            }
+          "advertising": {
+            "description": "Fornece publicidade ou serviços relacionados a ela, como coleta de dados, análise comportamental ou retargeting."
+          },
+          "comments": {
+            "description": "Habilita seções de comentários para artigos e análises de produtos."
+          },
+          "customer_interaction": {
+            "description": "Inclui chat, mensagens de e-mail, suporte ao cliente e outras ferramentas de interação."
+          },
+          "essential": {
+            "description": "Inclui gerenciadores de tags, avisos de privacidade e tecnologias essenciais para a funcionalidade de um site."
+          },
+          "adult_advertsing": {
+            "description": "Oferece anúncios que geralmente aparecem em sites de conteúdo adulto."
+          },
+          "site_analytics": {
+            "description": "Coleta e analisa dados relacionados ao uso e desempenho do site."
+          },
+          "social_media": {
+            "description": "Integra recursos relacionados a redes sociais."
+          },
+          "audio_video_player": {
+            "description": "Permite que sites publiquem, distribuam e otimizem conteúdo de vídeo e áudio."
+          },
+          "cdn": {
+            "description": "Rede de distribuição de conteúdo que fornece recursos para diferentes utilitários dos sites e, geralmente, para vários clientes diferentes."
+          },
+          "misc": {
+            "description": "Este rastreador não se encaixa em nenhuma categoria ou ainda não foi rotulado."
+          },
+          "pornvertising": {
+            "description": "Oferece anúncios que geralmente aparecem em sites de conteúdo adulto."
+          },
+          "hosting": {
+            "description": "Este é um serviço usado pelo provedor de conteúdo ou proprietário do site."
+          },
+          "extensions": {
+            "description": "Software nos dispositivos dos usuários que pode interceptar e analisar o tráfego do navegador (man in the middle)."
+          }
         },
-        "recreation": {
-            "name": "Tempo de recreação",
-            "start": "Hora de início",
-            "end": "Hora de término",
-            "description": "Defina um período para cada dia da semana durante o qual alguns dos sites, aplicativos, jogos ou categorias acima não serão bloqueados — por exemplo, permitir o Facebook às segundas e terças-feiras entre 18h e 20h.",
-            "set": "Definir tempo de recreação",
-            "howto": "Use o botão <1></1> nas seções acima para ativar o tempo de recreação."
+        "prevalence": {
+          "intensity": {
+            "dangerously": "Perigosamente prevalente",
+            "extremely": "Extremamente prevalente",
+            "very": "Muito prevalente",
+            "commonly": "Comumente prevalente",
+            "relatively": "Relativamente prevalente"
+          },
+          "summary": "{{prevalence}} <2>(monitora {{percent, percentage}} do tráfego web)</2>"
         },
-        "safesearch": {
-            "name": "SafeSearch",
-            "description": "Filtre resultados explícitos nos principais mecanismos de pesquisa, incluindo imagens e vídeos. Isso também irá impedir o acesso a mecanismos de pesquisa que não suportam essa funcionalidade.",
-            "enable": "Forçar SafeSearch"
-        },
-        "youtubeRestricted": {
-            "name": "Modo restrito do YouTube",
-            "description": "Filtre vídeos adultos no YouTube e impeça que vídeos adultos incorporados sejam assistidos em outros sites. Isso também ocultará todos os comentários.",
-            "enable": "Forçar Modo restrito do YouTube"
-        },
-        "bypass": {
-            "name": "Bloquear métodos de evasão de bloqueio",
-            "description": "Impeça ou dificulte o uso de métodos que podem ajudar a contornar a filtragem do NextDNS na rede. Isso inclui VPNs, proxies, softwares relacionados ao Tor e provedores de DNS criptografado.",
-            "enable": "Bloquear métodos de evasão de bloqueio"
-        }
+        "ownedBy": "<0>Controlado por </0><1>{{company}}</1>",
+        "source": "Informações do rastreador fornecidas por"
+      }
     },
-    "xlist": {
-        "placeholder": "Adicionar um domínio...",
-        "errors": {
+    "settings": "Opções de registro",
+    "streaming": "Atualizações dos registros em tempo real",
+    "toggleTimeFormat": "Alternar formato de data e hora"
+  },
+  "deviceSelector": {
+    "all": "Todos os dispositivos",
+    "howto": "Aprenda como identificar seus dispositivos na página de instalação."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "Últimos 30 minutos",
+      "6h": "Últimas 6 horas",
+      "24h": "Últimas 24 horas",
+      "7d": "Últimos 7 dias",
+      "30d": "Últimos 30 dias",
+      "3M": "Últimos 3 meses"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "Nome",
+      "description": "Escolha um nome para este perfil."
+    },
+    "logs": {
+      "name": "Registros",
+      "description": "Ajuste suas configurações de registro.",
+      "enable": "Ativar registros",
+      "privacy": {
+        "name": "Ajustes de privacidade",
+        "ip": "Registrar endereços IP dos clientes",
+        "domains": "Registrar domínios"
+      },
+      "retention": {
+        "name": "Retenção",
+        "options": {
+          "1h": "1 hora",
+          "6h": "6 horas",
+          "1d": "1 dia",
+          "1w": "1 semana",
+          "1m": "1 mês",
+          "3m": "3 meses",
+          "6m": "6 meses",
+          "1y": "1 ano",
+          "2y": "2 anos"
+        }
+      },
+      "location": {
+        "name": "Local de armazenamento",
+        "locations": {
+          "us": {
+            "name": "Estados Unidos",
+            "description": "Os registros serão armazenados nos Estados Unidos. Este é o padrão."
+          },
+          "eu": {
+            "name": "União Europeia",
+            "description": "Os registros serão armazenados nos Estados-membros da União Europeia."
+          },
+          "ch": {
+            "name": "Suíça",
+            "description": "Os registros serão armazenados em Zurique, na Suíça — uma jurisdição conhecida por suas leis rígidas de privacidade."
+          }
+        },
+        "confirm": {
+          "title": "Alterar local de armazenamento",
+          "text": "Alterar o local de armazenamento dos registros excluirá todos os registros e estatísticas anteriores deste perfil."
+        }
+      },
+      "download": {
+        "button": "Baixar registros"
+      },
+      "clear": {
+        "button": "Limpar registros",
+        "confirm": {
+          "text": "Tem certeza de que deseja limpar todos os registros deste perfil? Esta ação não pode ser desfeita.",
+          "submit": "Limpar"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "Página de bloqueio",
+      "description": "Exiba uma página de bloqueio quando um domínio estiver sendo bloqueado. Isso pode aumentar ligeiramente o tempo de carregamento das páginas, e um aviso de HTTPS pode aparecer em alguns casos. Quando desativada, as consultas bloqueadas serão respondidas com o endereço não especificado (0.0.0.0 ou ::).",
+      "enable": "Ativar página de bloqueio",
+      "ca": {
+        "name": "Autoridade certificadora raiz do NextDNS",
+        "description": "Remova o aviso de HTTPS ao carregar a página de bloqueio instalando e confiando em nossa autoridade certificadora raiz em <1>{{link}}</1>. Leia as instruções de como fazer isso <3>aqui</3>."
+      }
+    },
+    "performance": {
+      "name": "Desempenho",
+      "description": "Acelere sua navegação.",
+      "ecs": {
+        "name": "Sub-rede de cliente EDNS anonimizada",
+        "description": "Acelere a entrega de dados de redes de distribuição de conteúdo sem expor seu endereço IP.",
+        "enable": "Ativar sub-rede de cliente EDNS anonimizada"
+      },
+      "cache": {
+        "name": "Aprimoramento de cache",
+        "description": "Reduza o número de consultas DNS impondo um TTL (tempo de vida) mínimo.",
+        "enable": "Ativar aprimoramento de cache"
+      },
+      "flatten": {
+        "name": "Nivelamento de CNAME",
+        "description": "Evite que resolvedores que seguem cadeias de CNAME façam consultas desnecessárias e poluam os registros com domínios intermediários.",
+        "enable": "Ativar nivelamento de CNAME"
+      }
+    },
+    "ageVerification": {
+      "name": "Contornar verificação de idade",
+      "description": "Contorne automaticamente as verificações de idade usadas por determinados sites, como sites de conteúdo adulto, para verificar a idade dos visitantes antes de permitir o acesso.",
+      "acknowledgment": "Ao ativar esta funcionalidade, você reconhece que tem a idade legal necessária para acessar o conteúdo."
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 refere-se a um ecossistema online descentralizado e resistente à censura, composto por tecnologias inovadoras, como registros de domínio baseados em blockchain (por exemplo, Ethereum Name Service) e redes de armazenamento e entrega de conteúdo distribuído (por exemplo, IPFS). Quando ativado, o NextDNS atuará como um gateway não filtrado para essa nova Web, permitindo que você a experimente em primeira mão sem a necessidade de instalar nada.",
+      "tips": "Como a maioria dos navegadores atualmente só suporta domínios de nível superior clássicos, adicione uma barra no final (“<1>/</1>”) ao tentar acessar um domínio Web3 diretamente (por exemplo, “<3>vitalik.eth/</3>” em vez de “<5>vitalik.eth</5>”).",
+      "enable": "Ativar Web3"
+    },
+    "rewrites": {
+      "name": "Reescritas",
+      "description": "Defina ou substitua a resposta DNS para qualquer domínio. As reescritas também se aplicam a subdomínios, e endereços IP locais são aceitos como respostas.",
+      "new": "Nova reescrita",
+      "form": {
+        "domain": {
+          "label": "Domínio",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
             "required": "Digite um domínio.",
             "ip": "Digite um domínio, não um endereço IP.",
             "invalid": "Digite um domínio válido.",
-            "tld": "Parece que você está tentando bloquear um TLD inteiro. Use a funcionalidade “Domínios de nível superior (TLDs)” na seção Segurança.",
-            "exists": "Este domínio já foi adicionado."
+            "taken": "Você já tem uma reescrita para esse domínio."
+          }
         },
-        "empty": "Ainda não há domínios.",
-        "denylist": {
-            "info": "Bloquear um domínio bloqueará automaticamente todos os seus subdomínios."
-        },
-        "allowlist": {
-            "info": "Permitir um domínio permitirá automaticamente todos os seus subdomínios. A permissão tem prioridade sobre todo o resto, incluindo as funcionalidades de segurança."
+        "answer": {
+          "label": "Resposta",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "Digite uma resposta.",
+            "invalid": "A resposta deve ser um endereço IP ou domínio válido."
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "all_one": "<0>{{count, number}}</0><1>consulta</1>",
-            "all_other": "<0>{{count, number}}</0><1>consultas</1>",
-            "blocked_one": "<0>{{count, number}}</0><1>consulta bloqueada</1>",
-            "blocked_other": "<0>{{count, number}}</0><1>consultas bloqueadas</1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>das consultas foram bloqueadas</1></1>"
+    "access": {
+      "name": "Acesso",
+      "description": "Conceda a outras pessoas acesso para editar ou apenas visualizar este perfil.",
+      "roles": {
+        "editor": "Editor",
+        "viewer": "Visualizador"
+      },
+      "pending": "Convite enviado",
+      "form": {
+        "email": {
+          "label": "E-mail",
+          "errors": {
+            "required": "Digite um endereço de e-mail.",
+            "invalid": "Digite um endereço de e-mail válido.",
+            "duplicate": "Este endereço de e-mail já foi convidado."
+          }
         },
-        "queries": {
-            "name": "Consultas",
-            "description": "Evolução das consultas ao longo do tempo.",
-            "queries": {
-                "all_one": "<0>{{count, number}}</0><1> consulta</1>",
-                "all_other": "<0>{{count, number}}</0><1> consultas</1>",
-                "blocked_one": "<0>{{count, number}}</0><1> consulta bloqueada</1>",
-                "blocked_other": "<0>{{count, number}}</0><1> consultas bloqueadas</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "Domínios resolvidos",
-                "description": "Domínios resolvidos sem serem bloqueados por nenhuma configuração ou porque eles foram manualmente permitidos."
-            },
-            "blocked": {
-                "name": "Domínios bloqueados",
-                "description": "Domínios bloqueados por uma configuração de segurança, privacidade e/ou controle parental ou porque foram manualmente bloqueados."
-            },
-            "root": {
-                "name": "Domínios raiz",
-                "description": "Agregado de todas as consultas feitas para domínios raiz e todos os seus subdomínios."
-            },
-            "empty": "Ainda não há domínios."
-        },
-        "reasons": {
-            "name": "Motivos do bloqueio",
-            "description": "Configurações de segurança, privacidade e/ou controle parental que mais bloquearam consultas.",
-            "empty": "Nenhum domínio foi bloqueado ainda."
-        },
-        "devices": {
-            "name": "Dispositivos",
-            "description": "Dispositivos fazendo as consultas.",
-            "empty": "Ainda não há dispositivos.",
-            "unidentified": {
-                "name": "Dispositivos não identificados"
-            }
-        },
-        "ips": {
-            "name": "IPs",
-            "description": "Endereços IP fazendo as consultas.",
-            "empty": "Ainda não há IPs."
-        },
-        "gafam": {
-            "name": "Predominância do GAFAM",
-            "description": "“GAFAM” (Google, Amazon, Facebook (agora Meta), Apple e Microsoft) são as 5 empresas dominantes da Internet, que detêm muitos serviços populares, frequentemente com outros nomes — por exemplo, WhatsApp e Instagram, da Meta.",
-            "queries_one": "{{count, number}} consulta",
-            "queries_other": "{{count, number}} consultas",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Meta"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "Outras"
-                }
-            }
-        },
-        "encrypted": {
-            "name": "DNS criptografado",
-            "description": "Porcentagem de consultas feitas usando um transporte criptografado (DNS-over-HTTPS, DNS-over-TLS ou os aplicativos oficiais do NextDNS).",
-            "empty": "Ainda não há consultas."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "Porcentagem de consultas validadas com DNSSEC.",
-            "empty": "Ainda não há consultas."
-        },
-        "destination": {
-            "name": "Destino do tráfego",
-            "description": "Países de destino estimados, com base nas suas consultas DNS.",
-            "queries_one": "{{count, number}} consulta",
-            "queries_other": "{{count, number}} consultas",
-            "topDomains": "Principais domínios"
+        "role": {
+          "label": "Nível de acesso"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "Apenas consultas bloqueadas",
-        "raw": "Registros de DNS brutos",
-        "empty": "Ainda não há registros.",
-        "log": {
-            "actionBlock": "Bloquear",
-            "actionAllow": "Permitir",
-            "dnssec": "Validado com DNSSEC.",
-            "clients": {
-                "nextdns-ios": "NextDNS para iOS",
-                "nextdns-android": "NextDNS para Android",
-                "nextdns-macos": "NextDNS para macOS",
-                "nextdns-windows": "NextDNS para Windows",
-                "nextdns-cli": "Cliente CLI do NextDNS",
-                "nextdns-chromeos": "NextDNS para ChromeOS",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "MikroTik",
-                "apple-profile": "Perfil de configuração da Apple",
-                "yogadns": "YogaDNS",
-                "tailscale": "Tailscale"
-            },
-            "blockedBy": "Bloqueado por <1>{{lists, list}}</1>.",
-            "allowedBy": "Permitido por <1>{{lists, list}}</1>.",
-            "manual": {
-                "deny": "Bloqueado manualmente.",
-                "allow": "Permitido manualmente."
-            },
-            "insights": {
-                "show": "Mostrar informações do rastreador",
-                "hide": "Ocultar informações do rastreador",
-                "categories": {
-                    "advertising": {
-                        "description": "Fornece publicidade ou serviços relacionados a ela, como coleta de dados, análise comportamental ou retargeting."
-                    },
-                    "comments": {
-                        "description": "Habilita seções de comentários para artigos e análises de produtos."
-                    },
-                    "customer_interaction": {
-                        "description": "Inclui chat, mensagens de e-mail, suporte ao cliente e outras ferramentas de interação."
-                    },
-                    "essential": {
-                        "description": "Inclui gerenciadores de tags, avisos de privacidade e tecnologias essenciais para a funcionalidade de um site."
-                    },
-                    "adult_advertsing": {
-                        "description": "Oferece anúncios que geralmente aparecem em sites de conteúdo adulto."
-                    },
-                    "site_analytics": {
-                        "description": "Coleta e analisa dados relacionados ao uso e desempenho do site."
-                    },
-                    "social_media": {
-                        "description": "Integra recursos relacionados a redes sociais."
-                    },
-                    "audio_video_player": {
-                        "description": "Permite que sites publiquem, distribuam e otimizem conteúdo de vídeo e áudio."
-                    },
-                    "cdn": {
-                        "description": "Rede de distribuição de conteúdo que fornece recursos para diferentes utilitários dos sites e, geralmente, para vários clientes diferentes."
-                    },
-                    "misc": {
-                        "description": "Este rastreador não se encaixa em nenhuma categoria ou ainda não foi rotulado."
-                    },
-                    "pornvertising": {
-                        "description": "Oferece anúncios que geralmente aparecem em sites de conteúdo adulto."
-                    },
-                    "hosting": {
-                        "description": "Este é um serviço usado pelo provedor de conteúdo ou proprietário do site."
-                    },
-                    "extensions": {
-                        "description": "Software nos dispositivos dos usuários que pode interceptar e analisar o tráfego do navegador (man in the middle)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "Perigosamente prevalente",
-                        "extremely": "Extremamente prevalente",
-                        "very": "Muito prevalente",
-                        "commonly": "Comumente prevalente",
-                        "relatively": "Relativamente prevalente"
-                    },
-                    "summary": "{{prevalence}} <2>(monitora {{percent, percentage}} do tráfego web)</2>"
-                },
-                "ownedBy": "<0>Controlado por </0><1>{{company}}</1>",
-                "source": "Informações do rastreador fornecidas por"
-            }
-        },
-        "settings": "Opções de registro",
-        "streaming": "Atualizações dos registros em tempo real",
-        "toggleTimeFormat": "Alternar formato de data e hora"
-    },
-    "deviceSelector": {
-        "all": "Todos os dispositivos",
-        "howto": "Aprenda como identificar seus dispositivos na página de instalação."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "Últimos 30 minutos",
-            "6h": "Últimas 6 horas",
-            "24h": "Últimas 24 horas",
-            "7d": "Últimos 7 dias",
-            "30d": "Últimos 30 dias",
-            "3M": "Últimos 3 meses"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "Duplicar <1>{{name}}</1>",
+      "description": "Copie todas as configurações deste perfil para um novo.",
+      "form": {
         "name": {
-            "name": "Nome",
-            "description": "Escolha um nome para este perfil."
+          "label": "Nome",
+          "placeholder": "Casa, Crianças, Escritório, ...",
+          "errors": {
+            "required": "Digite um nome.",
+            "taken": "Você já tem um perfil com esse nome."
+          }
         },
-        "logs": {
-            "name": "Registros",
-            "description": "Ajuste suas configurações de registro.",
-            "enable": "Ativar registros",
-            "privacy": {
-                "name": "Ajustes de privacidade",
-                "ip": "Registrar endereços IP dos clientes",
-                "domains": "Registrar domínios"
-            },
-            "retention": {
-                "name": "Retenção",
-                "options": {
-                    "1h": "1 hora",
-                    "6h": "6 horas",
-                    "1d": "1 dia",
-                    "1w": "1 semana",
-                    "1m": "1 mês",
-                    "3m": "3 meses",
-                    "6m": "6 meses",
-                    "1y": "1 ano",
-                    "2y": "2 anos"
-                }
-            },
-            "location": {
-                "name": "Local de armazenamento",
-                "locations": {
-                    "us": {
-                        "name": "Estados Unidos",
-                        "description": "Os registros serão armazenados nos Estados Unidos. Este é o padrão."
-                    },
-                    "eu": {
-                        "name": "União Europeia",
-                        "description": "Os registros serão armazenados nos Estados-membros da União Europeia."
-                    },
-                    "ch": {
-                        "name": "Suíça",
-                        "description": "Os registros serão armazenados em Zurique, na Suíça — uma jurisdição conhecida por suas leis rígidas de privacidade."
-                    }
-                },
-                "confirm": {
-                    "title": "Alterar local de armazenamento",
-                    "text": "Alterar o local de armazenamento dos registros excluirá todos os registros e estatísticas anteriores deste perfil."
-                }
-            },
-            "download": {
-                "button": "Baixar registros"
-            },
-            "clear": {
-                "button": "Limpar registros",
-                "confirm": {
-                    "text": "Tem certeza de que deseja limpar todos os registros deste perfil? Esta ação não pode ser desfeita.",
-                    "submit": "Limpar"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "Página de bloqueio",
-            "description": "Exiba uma página de bloqueio quando um domínio estiver sendo bloqueado. Isso pode aumentar ligeiramente o tempo de carregamento das páginas, e um aviso de HTTPS pode aparecer em alguns casos. Quando desativada, as consultas bloqueadas serão respondidas com o endereço não especificado (0.0.0.0 ou ::).",
-            "enable": "Ativar página de bloqueio",
-            "ca": {
-                "name": "Autoridade certificadora raiz do NextDNS",
-                "description": "Remova o aviso de HTTPS ao carregar a página de bloqueio instalando e confiando em nossa autoridade certificadora raiz em <1>{{link}}</1>. Leia as instruções de como fazer isso <3>aqui</3>."
-            }
-        },
-        "performance": {
-            "name": "Desempenho",
-            "description": "Acelere sua navegação.",
-            "ecs": {
-                "name": "Sub-rede de cliente EDNS anonimizada",
-                "description": "Acelere a entrega de dados de redes de distribuição de conteúdo sem expor seu endereço IP.",
-                "enable": "Ativar sub-rede de cliente EDNS anonimizada"
-            },
-            "cache": {
-                "name": "Aprimoramento de cache",
-                "description": "Reduza o número de consultas DNS impondo um TTL (tempo de vida) mínimo.",
-                "enable": "Ativar aprimoramento de cache"
-            },
-            "flatten": {
-                "name": "Nivelamento de CNAME",
-                "description": "Evite que resolvedores que seguem cadeias de CNAME façam consultas desnecessárias e poluam os registros com domínios intermediários.",
-                "enable": "Ativar nivelamento de CNAME"
-            }
-        },
-        "ageVerification": {
-            "name": "Contornar verificação de idade",
-            "description": "Contorne automaticamente as verificações de idade usadas por determinados sites, como sites de conteúdo adulto, para verificar a idade dos visitantes antes de permitir o acesso.",
-            "acknowledgment": "Ao ativar esta funcionalidade, você reconhece que tem a idade legal necessária para acessar o conteúdo."
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 refere-se a um ecossistema online descentralizado e resistente à censura, composto por tecnologias inovadoras, como registros de domínio baseados em blockchain (por exemplo, Ethereum Name Service) e redes de armazenamento e entrega de conteúdo distribuído (por exemplo, IPFS). Quando ativado, o NextDNS atuará como um gateway não filtrado para essa nova Web, permitindo que você a experimente em primeira mão sem a necessidade de instalar nada.",
-            "tips": "Como a maioria dos navegadores atualmente só suporta domínios de nível superior clássicos, adicione uma barra no final (“<1>/</1>”) ao tentar acessar um domínio Web3 diretamente (por exemplo, “<3>vitalik.eth/</3>” em vez de “<5>vitalik.eth</5>”).",
-            "enable": "Ativar Web3"
-        },
-        "rewrites": {
-            "name": "Reescritas",
-            "description": "Defina ou substitua a resposta DNS para qualquer domínio. As reescritas também se aplicam a subdomínios, e endereços IP locais são aceitos como respostas.",
-            "new": "Nova reescrita",
-            "form": {
-                "domain": {
-                    "label": "Domínio",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "Digite um domínio.",
-                        "ip": "Digite um domínio, não um endereço IP.",
-                        "invalid": "Digite um domínio válido.",
-                        "taken": "Você já tem uma reescrita para esse domínio."
-                    }
-                },
-                "answer": {
-                    "label": "Resposta",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "Digite uma resposta.",
-                        "invalid": "A resposta deve ser um endereço IP ou domínio válido."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "Acesso",
-            "description": "Conceda a outras pessoas acesso para editar ou apenas visualizar este perfil.",
-            "roles": {
-                "editor": "Editor",
-                "viewer": "Visualizador"
-            },
-            "pending": "Convite enviado",
-            "form": {
-                "email": {
-                    "label": "E-mail",
-                    "errors": {
-                        "required": "Digite um endereço de e-mail.",
-                        "invalid": "Digite um endereço de e-mail válido.",
-                        "duplicate": "Este endereço de e-mail já foi convidado."
-                    }
-                },
-                "role": {
-                    "label": "Nível de acesso"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "Duplicar <1>{{name}}</1>",
-            "description": "Copie todas as configurações deste perfil para um novo.",
-            "form": {
-                "name": {
-                    "label": "Nome",
-                    "placeholder": "Casa, Crianças, Escritório, ...",
-                    "errors": {
-                        "required": "Digite um nome.",
-                        "taken": "Você já tem um perfil com esse nome."
-                    }
-                },
-                "button": "Duplicar"
-            }
-        },
-        "delete": {
-            "button": "Excluir <1>{{name}}</1>",
-            "warning": "Isso excluirá este perfil e todos os registros associados a ele para sempre.",
-            "confirm": {
-                "text": "Tem certeza de que deseja excluir <1>{{name}}</1>? Esta ação não pode ser desfeita."
-            }
-        },
-        "leave": {
-            "button": "Sair de <1>{{name}}</1>",
-            "warning": "Você perderá o acesso a este perfil.",
-            "confirm": {
-                "text": "Tem certeza de que deseja sair de <1>{{name}}</1>? Esta ação não pode ser desfeita."
-            }
-        }
+        "button": "Duplicar"
+      }
+    },
+    "delete": {
+      "button": "Excluir <1>{{name}}</1>",
+      "warning": "Isso excluirá este perfil e todos os registros associados a ele para sempre.",
+      "confirm": {
+        "text": "Tem certeza de que deseja excluir <1>{{name}}</1>? Esta ação não pode ser desfeita."
+      }
+    },
+    "leave": {
+      "button": "Sair de <1>{{name}}</1>",
+      "warning": "Você perderá o acesso a este perfil.",
+      "confirm": {
+        "text": "Tem certeza de que deseja sair de <1>{{name}}</1>? Esta ação não pode ser desfeita."
+      }
     }
+  }
 }

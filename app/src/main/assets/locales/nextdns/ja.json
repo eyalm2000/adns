@@ -1,1398 +1,1389 @@
 {
-    "global": {
-        "beta": "ベータ",
-        "preview": "先行アクセス",
-        "cancel": "キャンセル",
-        "add": "追加",
-        "save": "保存",
-        "continue": "続行",
-        "enable": "有効化",
-        "change": "変更",
-        "create": "作成",
-        "subscribe": "サブスクリプションに登録",
-        "invite": "招待",
-        "remove": "削除",
-        "leave": "退出",
-        "delete": "削除",
-        "close": "閉じる",
-        "back": "戻る",
-        "disable": "無効化",
-        "unnamedDevice": "デバイス #{{id}}",
-        "firstConfiguration": "最初のプロファイル",
-        "error": "エラー",
-        "networkError": "ネットワークエラー",
-        "requestFailed": "リクエストに失敗しました",
-        "noProfiles": "プロファイルはまだありません。",
-        "search": "検索",
-        "clearSearch": "検索をクリア",
-        "copy": "コピー",
-        "actions": "操作",
-        "expand": "展開",
-        "collapse": "折りたたむ"
+  "global": {
+    "beta": "ベータ",
+    "preview": "先行アクセス",
+    "cancel": "キャンセル",
+    "add": "追加",
+    "save": "保存",
+    "continue": "続行",
+    "enable": "有効化",
+    "change": "変更",
+    "create": "作成",
+    "subscribe": "サブスクリプションに登録",
+    "invite": "招待",
+    "remove": "削除",
+    "leave": "退出",
+    "delete": "削除",
+    "close": "閉じる",
+    "back": "戻る",
+    "disable": "無効化",
+    "unnamedDevice": "デバイス #{{id}}",
+    "firstConfiguration": "最初のプロファイル",
+    "error": "エラー",
+    "networkError": "ネットワークエラー",
+    "requestFailed": "リクエストに失敗しました",
+    "noProfiles": "プロファイルはまだありません。",
+    "search": "検索",
+    "clearSearch": "検索をクリア",
+    "copy": "コピー",
+    "actions": "操作",
+    "expand": "展開",
+    "collapse": "折りたたむ"
+  },
+  "theme": {
+    "label": "テーマ",
+    "system": "システム",
+    "light": "ライト",
+    "dark": "ダーク"
+  },
+  "pages": {
+    "signup": "新規登録",
+    "login": "ログイン",
+    "passwordReset": "パスワードのリセット",
+    "account": "アカウント",
+    "setup": "セットアップ",
+    "security": "セキュリティ",
+    "privacy": "プライバシー",
+    "parentalcontrol": "ペアレンタルコントロール",
+    "denylist": "拒否リスト",
+    "allowlist": "許可リスト",
+    "analytics": "分析",
+    "logs": "ログ",
+    "settings": "設定",
+    "help": "ヘルプ"
+  },
+  "banners": {
+    "temporary": "この一時アカウントは <1><0></0></1>に有効期限が切れ、このブラウザからのみアクセスできます。設定を保存するには、今すぐ無料で登録してください。",
+    "nearQuota": "今月のクエリ数が {{queriesNearQuota, number}} 件を超え、月間無料上限の {{queriesQuota, number}} 件に近づいています。NextDNS を引き続き利用するには、<5>サブスクリプションに登録</5>してください。",
+    "overQuota": "今月のクエリ数が {{queriesQuota, number}} 件を超えたため、すべての機能が無効になっています。NextDNS を引き続き利用するには、<3>サブスクリプションに登録</3>してください。"
+  },
+  "account": {
+    "email": "メールアドレス",
+    "newEmail": "新しいメールアドレス",
+    "password": "パスワード",
+    "newPassword": "新しいパスワード",
+    "currentPassword": "現在のパスワード",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "savePassword": "パスワードを保存",
+    "passwordResetInfo": "アカウントに関連付けられているメールアドレスを入力してください。パスワードをリセットするためのリンクが送信されます。",
+    "sendEmail": "メールを送信",
+    "passwordResetLinkSentMessage": "パスワードをリセットするためのリンクが <1>{{email}}</1> に送信されました。",
+    "code": "二要素認証コード",
+    "login": "ログイン",
+    "noAccountYet": "まだアカウントをお持ちではありませんか？<1>新規登録</1>",
+    "signup": "新規登録",
+    "alreadyHaveAnAccount": "すでにアカウントをお持ちですか？<1>ログイン</1>",
+    "convertingNotice": "一時アカウントを正式なアカウントに変換しています。すべての設定が保存されます。",
+    "convertingDeviceOnlyNotice": "デバイス専用アカウントを正式なアカウントに変換しています。すべての設定が保存されます。",
+    "logout": "ログアウト",
+    "errors": {
+      "email": {
+        "required": "メールアドレスを入力してください。",
+        "invalid": "有効なメールアドレスを入力してください。",
+        "taken": "このメールアドレスは既に使用されています。"
+      },
+      "password": {
+        "required": "パスワードを入力してください。",
+        "invalidCombination": "メールアドレス/パスワードの組み合わせが無効です。"
+      },
+      "currentPassword": {
+        "required": "現在のパスワードを入力してください。",
+        "incorrect": "パスワードが間違っています。"
+      },
+      "code": {
+        "required": "二要素認証コードを入力してください。",
+        "invalid": "6 桁のコードを入力してください。",
+        "incorrect": "二要素認証コードが正しくありません。"
+      },
+      "resetPasswordToken": {
+        "invalid": "無効または期限切れのトークンです。"
+      }
     },
-    "theme": {
-        "label": "テーマ",
-        "system": "システム",
-        "light": "ライト",
-        "dark": "ダーク"
-    },
-    "pages": {
-        "signup": "新規登録",
-        "login": "ログイン",
-        "passwordReset": "パスワードのリセット",
-        "account": "アカウント",
-        "setup": "セットアップ",
-        "security": "セキュリティ",
-        "privacy": "プライバシー",
-        "parentalcontrol": "ペアレンタルコントロール",
-        "denylist": "拒否リスト",
-        "allowlist": "許可リスト",
-        "analytics": "分析",
-        "logs": "ログ",
-        "settings": "設定",
-        "help": "ヘルプ"
-    },
-    "banners": {
-        "temporary": "この一時アカウントは <1><0></0></1>に有効期限が切れ、このブラウザからのみアクセスできます。設定を保存するには、今すぐ無料で登録してください。",
-        "nearQuota": "今月のクエリ数が {{queriesNearQuota, number}} 件を超え、月間無料上限の {{queriesQuota, number}} 件に近づいています。NextDNS を引き続き利用するには、<5>サブスクリプションに登録</5>してください。",
-        "overQuota": "今月のクエリ数が {{queriesQuota, number}} 件を超えたため、すべての機能が無効になっています。NextDNS を引き続き利用するには、<3>サブスクリプションに登録</3>してください。"
-    },
-    "account": {
-        "email": "メールアドレス",
-        "newEmail": "新しいメールアドレス",
-        "password": "パスワード",
-        "newPassword": "新しいパスワード",
-        "currentPassword": "現在のパスワード",
-        "forgotPassword": "パスワードをお忘れですか？",
-        "savePassword": "パスワードを保存",
-        "passwordResetInfo": "アカウントに関連付けられているメールアドレスを入力してください。パスワードをリセットするためのリンクが送信されます。",
-        "sendEmail": "メールを送信",
-        "passwordResetLinkSentMessage": "パスワードをリセットするためのリンクが <1>{{email}}</1> に送信されました。",
-        "code": "二要素認証コード",
-        "login": "ログイン",
-        "noAccountYet": "まだアカウントをお持ちではありませんか？<1>新規登録</1>",
-        "signup": "新規登録",
-        "alreadyHaveAnAccount": "すでにアカウントをお持ちですか？<1>ログイン</1>",
-        "convertingNotice": "一時アカウントを正式なアカウントに変換しています。すべての設定が保存されます。",
-        "convertingDeviceOnlyNotice": "デバイス専用アカウントを正式なアカウントに変換しています。すべての設定が保存されます。",
-        "logout": "ログアウト",
-        "errors": {
-            "email": {
-                "required": "メールアドレスを入力してください。",
-                "invalid": "有効なメールアドレスを入力してください。",
-                "taken": "このメールアドレスは既に使用されています。"
-            },
-            "password": {
-                "required": "パスワードを入力してください。",
-                "invalidCombination": "メールアドレス/パスワードの組み合わせが無効です。"
-            },
-            "currentPassword": {
-                "required": "現在のパスワードを入力してください。",
-                "incorrect": "パスワードが間違っています。"
-            },
-            "code": {
-                "required": "二要素認証コードを入力してください。",
-                "invalid": "6 桁のコードを入力してください。",
-                "incorrect": "二要素認証コードが正しくありません。"
-            },
-            "resetPasswordToken": {
-                "invalid": "無効または期限切れのトークンです。"
-            }
-        },
-        "affiliation": {
-            "name": "アフィリエイト",
-            "description": "<1>{{link}}</1> を共有して NextDNS を広めると、紹介した各ユーザーが初めて有料サブスクリプションを開始してからの <5>{{months, number}} か月間</5>に支払うサブスクリプション料金の <3>{{share, percentage}}</3> を受け取れます。",
-            "balance": {
-                "name": "残高"
-            },
-            "availableBalance": {
-                "name": "出金可能残高",
-                "description": "返金に備え、残高は 1 か月後に出金可能となります。"
-            },
-            "payout": {
-                "button": "出金",
-                "minimum": "出金には、少なくとも {{amount, price}} の出金可能な残高が必要です。",
-                "form": {
-                    "paypalEmail": "PayPal のメールアドレス",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "PayPal のメールアドレスを入力してください。",
-                            "invalid": "有効な PayPal のメールアドレスを入力してください。"
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "無料利用枠",
-            "description": "NextDNS は、毎月最大 {{queries, number}} クエリまで無料で使用でき、上限に達した場合はすべての機能が翌月まで一時的に無効になります。",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} クエリ</1>",
-            "overQuota": {
-                "message": "今月は {{queries, number}} 件を超えるクエリを行いました。",
-                "info": "NextDNS は引き続き DNS クエリに応答しますが、すべての機能は来月まで一時的に無効になります。"
-            },
-            "subscribe": {
-                "ios": "サブスクリプションに登録するには、ブラウザで my.nextdns.io にアクセスしてください。",
-                "upsell": "月額 {{amount, price}} から、クエリを無制限にご利用いただけます。"
-            }
-        },
-        "subscription": {
-            "name": "サブスクリプション",
-            "plans": {
-                "pro": "Pro",
-                "business": "ビジネス",
-                "education": "教育"
-            },
-            "intervals": {
-                "month": "月額プラン",
-                "year": "年額プラン"
-            },
-            "per": {
-                "month": "月額",
-                "year": "年額"
-            },
-            "units": {
-                "business_other": "{{count, number}} 人の従業員",
-                "education_other": "{{count, number}} 人の生徒",
-                "education_one": "",
-                "business_one": ""
-            },
-            "planFull": "{{plan}}（{{interval}}）",
-            "planFullWithUnits": "{{plan}}（{{units}}、{{interval}}）",
-            "expires": "サブスクリプションの有効期限は {{date, date}}です。",
-            "managedByApple": "このサブスクリプションは Apple Account で管理されています。変更または解約するには、Apple のサブスクリプション設定をご利用ください。",
-            "manageOnApple": "Apple でサブスクリプションを管理",
-            "restart": {
-                "button": "サブスクリプションを再開"
-            },
-            "changePlan": {
-                "button": "プランを変更"
-            },
-            "renewal": "次回は {{date, date}}に {{amount, price}} が自動的に支払われます。",
-            "changePaymentMethod": {
-                "button": "お支払い方法を変更"
-            },
-            "cancel": {
-                "button": "サブスクリプションをキャンセル",
-                "confirm": {
-                    "text": "現在のサブスクリプションは {{date, date}}まで有効です。",
-                    "submit": "サブスクリプションをキャンセル"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "プランを選択",
-                "addPaymentMethod": "お支払い方法を追加",
-                "included": "すべてのプランには、<1>すべての機能へのアクセス</1>、<3>無制限のデバイス</3>、<5>無制限のクエリ</5>が含まれています。",
-                "savings": "月額プランと比べて {{percent, percentage}} お得",
-                "familyOnly": "* Pro プランは個人（および近しい家族）での使用に限ります。",
-                "unitsQuestion": {
-                    "business": "会社の<1>従業員</1>は何人ですか？",
-                    "education": "学校（または学区）の<1>生徒</1>は何人ですか？"
-                },
-                "unitsLabel": {
-                    "business": "従業員数",
-                    "education": "生徒数"
-                },
-                "asYouGrow": {
-                    "business": "* 従業員数が増えた場合、プランを更新する必要があります。",
-                    "education": "* 生徒数が増えた場合、プランを更新する必要があります。"
-                },
-                "starting": {
-                    "business": "<2>従業員 {{units, number}} 名、月額 </2><1>{{price, price}}</1><0> から</0>",
-                    "education": "<2>生徒 {{units, number}} 名、月額 </2><1>{{price, price}}</1><0> から</0>"
-                },
-                "card": {
-                    "number": "カード番号",
-                    "expiration": "有効期限",
-                    "code": "セキュリティコード",
-                    "stripe": "カード決済は、大手決済ゲートウェイである Stripe を利用して安全に処理されるため、当社がカード情報に直接アクセスすることは一切ありません。"
-                },
-                "paypal": {
-                    "text": "PayPal でサブスクリプションに登録するには、「PayPal に進む」ボタンをクリックしてください。"
-                },
-                "bitpay": {
-                    "text": "暗号通貨で支払うには、「BitPay に進む」ボタンをクリックしてください。",
-                    "toYearly": "暗号通貨による支払いは月額プランでは受け付けていません。<1>続行すると、自動的に年額プランに切り替わります。</1>",
-                    "remainder": "現在のサブスクリプションは {{date, date}}まで支払い済みです。今回の料金はすぐに請求され、現在の残り期間は新しい有効期限に自動的に加算されます。"
-                },
-                "continueTo": "<1></1> に進む"
-            }
-        },
-        "business": {
-            "name": "ビジネス",
-            "description": "税務上、法人名、住所、VAT 番号（または同等のもの）が必要です。これは法律で義務付けられており、すべての請求書に記載されます。",
-            "button": {
-                "add": "法人情報を追加",
-                "update": "更新"
-            },
-            "form": {
-                "name": {
-                    "label": "法人名",
-                    "placeholder": "会社名",
-                    "errors": {
-                        "required": "法人名を入力してください。"
-                    }
-                },
-                "address": {
-                    "label": "住所",
-                    "placeholder": "東京都千代田区永田町二丁目 3 番 1 号",
-                    "errors": {
-                        "required": "法人の住所を入力してください。"
-                    }
-                },
-                "vatNumber": {
-                    "label": "VAT 番号（または同等のもの）"
-                }
-            }
-        },
-        "invoices": {
-            "name": "請求書",
-            "description": "アカウントの請求履歴とすべての請求書。",
-            "pending": "{{amount, price}}（請求予定額）",
-            "show-more": "さらに表示",
-            "show-less": "一部のみ表示",
-            "invoice": {
-                "title": "請求書番号 {{code}}",
-                "to": "宛先：<1>{{email}}</1>",
-                "vatNumber": "VAT 番号（または同等のもの）：{{number}}",
-                "columns": {
-                    "plan": "プラン",
-                    "period": "期間",
-                    "amount": "金額"
-                },
-                "vat": "VAT（{{rate, percentage}}）",
-                "total": "合計",
-                "footer": {
-                    "reverseCharged": "VAT（または同等のもの）はリバースチャージ方式が適用されます。",
-                    "currency": "表示されている金額はすべて {{code}} です。"
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "メールアドレス",
-            "description": "アカウントへのログインと重要な通知の受信に使用するメールアドレスを変更します。",
-            "button": "メールアドレスを変更"
-        },
-        "changePassword": {
-            "name": "パスワード",
-            "description": "アカウントへのログインと、重要な操作の確認に使用するパスワードを変更します。",
-            "button": "パスワードを変更"
-        },
-        "2fa": {
-            "name": "二要素認証（2FA）",
-            "description": "二要素認証（2FA）は、アカウントにログインするときに認証アプリ等により生成される時間ベースの 6 桁のコードを必要とする追加のセキュリティレイヤーです。",
-            "enabled": "アカウントで二要素認証が有効になっています。",
-            "enable": {
-                "button": "二要素認証を有効化",
-                "secret": "二要素認証のシークレット",
-                "modal": {
-                    "howto": "<1>Google 認証システム</1>などの認証アプリ、または二要素認証に対応したパスワードマネージャーを使用してください。QR コードをスキャンするか、タップして <3>{{otpauth}}</3> リンクを開くか、シークレットを手動でコピーして貼り付けます。"
-                }
-            },
-            "recovery": {
-                "button": "リカバリーコード",
-                "modal": {
-                    "howto": "デバイスにアクセスできなくなり、二要素認証コードを受け取れない場合は、これらのリカバリーコードを使用してアカウントにアクセスしてください。各コードは一度しか使用できません。",
-                    "download": "ダウンロード",
-                    "regen": "再生成"
-                }
-            },
-            "disable": {
-                "button": "二要素認証を無効化"
-            }
-        },
-        "api": {
-            "description": "プロファイルをプログラムで作成および管理します。<1>{{link}}</1> にあるドキュメントをお読みください。",
-            "copy": "API キーをコピー",
-            "remove": "API キーを削除",
-            "create": {
-                "button": "API キーを生成"
-            }
-        },
-        "delete": {
-            "button": "アカウントを削除",
-            "warning": "アカウントとすべてのプロファイルが完全に削除されます。",
-            "confirm": {
-                "text": "アカウントを削除してもよろしいですか？この操作は元に戻せません。"
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "期限切れ",
-                    "text": "一時アカウントの有効期限が切れました。今すぐ新規登録して設定を保存し、NextDNS を引き続きご利用ください。登録は無料です。"
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "新規作成",
+    "affiliation": {
+      "name": "アフィリエイト",
+      "description": "<1>{{link}}</1> を共有して NextDNS を広めると、紹介した各ユーザーが初めて有料サブスクリプションを開始してからの <5>{{months, number}} か月間</5>に支払うサブスクリプション料金の <3>{{share, percentage}}</3> を受け取れます。",
+      "balance": {
+        "name": "残高"
+      },
+      "availableBalance": {
+        "name": "出金可能残高",
+        "description": "返金に備え、残高は 1 か月後に出金可能となります。"
+      },
+      "payout": {
+        "button": "出金",
+        "minimum": "出金には、少なくとも {{amount, price}} の出金可能な残高が必要です。",
         "form": {
-            "title": "新しいプロファイル",
-            "name": {
-                "label": "名前",
-                "placeholder": "自宅用、子供用、職場用、...",
-                "errors": {
-                    "required": "名前を入力してください。",
-                    "taken": "その名前のプロファイルは既に存在します。"
-                }
+          "paypalEmail": "PayPal のメールアドレス",
+          "errors": {
+            "paypalEmail": {
+              "required": "PayPal のメールアドレスを入力してください。",
+              "invalid": "有効な PayPal のメールアドレスを入力してください。"
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "問題なし",
-                "secondary": "このデバイスは、このプロファイルで NextDNS を使用しています。"
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "このデバイスは、プロファイルなしで NextDNS を使用しています。",
-                    "secondary": {
-                        "clients": "アプリの設定に、以下に表示されているプロファイル ID が設定されていることを確認してください。",
-                        "firefox": "Firefox で、以下に示す DNS-over-HTTPS エンドポイントが設定されていることを確認してください。",
-                        "doh": "以下に表示されている DNS-over-HTTPS エンドポイントを使用していることを確認してください。",
-                        "dot": "以下に示す DNS-over-TLS エンドポイントを使用していることを確認してください。",
-                        "ipv6": "以下に示す IPv6 アドレスを使用していることを確認してください。",
-                        "servers": "以下の「リンクされた IP」セクションに示されている DNS サーバーを使用していることを確認してください（DNS サーバーはプロファイルごとに異なります）。",
-                        "link": "以下の「リンクされた IP」セクションで IP アドレスをリンクしてください。"
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "このデバイスは、別のプロファイルで NextDNS を使用しています。",
-                    "secondary": {
-                        "sameAccount": "このデバイスは現在「{{name}}」を使用しています。",
-                        "otherAccount": "このページにリストされているエンドポイントのいずれかを使用していることを確認してください。"
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "このデバイスは NextDNS を使用していません。",
-                "secondary": "このデバイスは、現在 DNS リゾルバーとして「{{resolver}}」を使用しています。"
-            },
-            "error": {
-                "primary": "ステータスの確認中にエラーが発生しました。",
-                "secondary": "ページを更新してもこの問題が解決しない場合は、お問い合わせください。"
-            },
-            "apr": {
-                "ok": {
-                    "primary": "このデバイスは iCloud プライベートリレーと併用して NextDNS を使用しています。",
-                    "secondary": "セーフサーチ、YouTube の制限付きモード、書き換えなどの機能は、iCloud プライベートリレーと併用できません。"
-                },
-                "blockpage": {
-                    "primary": "このデバイスは iCloud プライベートリレーと併用して NextDNS を使用しています。",
-                    "secondary": "iCloud プライベートリレーの使用中にブロックページを有効にすると、ブロック機能に支障が生じます。"
-                }
+    "usage": {
+      "name": "無料利用枠",
+      "description": "NextDNS は、毎月最大 {{queries, number}} クエリまで無料で使用でき、上限に達した場合はすべての機能が翌月まで一時的に無効になります。",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} クエリ</1>",
+      "overQuota": {
+        "message": "今月は {{queries, number}} 件を超えるクエリを行いました。",
+        "info": "NextDNS は引き続き DNS クエリに応答しますが、すべての機能は来月まで一時的に無効になります。"
+      },
+      "subscribe": {
+        "ios": "サブスクリプションに登録するには、ブラウザで my.nextdns.io にアクセスしてください。",
+        "upsell": "月額 {{amount, price}} から、クエリを無制限にご利用いただけます。"
+      }
+    },
+    "subscription": {
+      "name": "サブスクリプション",
+      "plans": {
+        "pro": "Pro",
+        "business": "ビジネス",
+        "education": "教育"
+      },
+      "intervals": {
+        "month": "月額プラン",
+        "year": "年額プラン"
+      },
+      "per": {
+        "month": "月額",
+        "year": "年額"
+      },
+      "units": {
+        "business_other": "{{count, number}} 人の従業員",
+        "education_other": "{{count, number}} 人の生徒"
+      },
+      "planFull": "{{plan}}（{{interval}}）",
+      "planFullWithUnits": "{{plan}}（{{units}}、{{interval}}）",
+      "expires": "サブスクリプションの有効期限は {{date, date}}です。",
+      "managedByApple": "このサブスクリプションは Apple Account で管理されています。変更または解約するには、Apple のサブスクリプション設定をご利用ください。",
+      "manageOnApple": "Apple でサブスクリプションを管理",
+      "restart": {
+        "button": "サブスクリプションを再開"
+      },
+      "changePlan": {
+        "button": "プランを変更"
+      },
+      "renewal": "次回は {{date, date}}に {{amount, price}} が自動的に支払われます。",
+      "changePaymentMethod": {
+        "button": "お支払い方法を変更"
+      },
+      "cancel": {
+        "button": "サブスクリプションをキャンセル",
+        "confirm": {
+          "text": "現在のサブスクリプションは {{date, date}}まで有効です。",
+          "submit": "サブスクリプションをキャンセル"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "プランを選択",
+        "addPaymentMethod": "お支払い方法を追加",
+        "included": "すべてのプランには、<1>すべての機能へのアクセス</1>、<3>無制限のデバイス</3>、<5>無制限のクエリ</5>が含まれています。",
+        "savings": "月額プランと比べて {{percent, percentage}} お得",
+        "familyOnly": "* Pro プランは個人（および近しい家族）での使用に限ります。",
+        "unitsQuestion": {
+          "business": "会社の<1>従業員</1>は何人ですか？",
+          "education": "学校（または学区）の<1>生徒</1>は何人ですか？"
+        },
+        "unitsLabel": {
+          "business": "従業員数",
+          "education": "生徒数"
+        },
+        "asYouGrow": {
+          "business": "* 従業員数が増えた場合、プランを更新する必要があります。",
+          "education": "* 生徒数が増えた場合、プランを更新する必要があります。"
+        },
+        "starting": {
+          "business": "<2>従業員 {{units, number}} 名、月額 </2><1>{{price, price}}</1><0> から</0>",
+          "education": "<2>生徒 {{units, number}} 名、月額 </2><1>{{price, price}}</1><0> から</0>"
+        },
+        "card": {
+          "number": "カード番号",
+          "expiration": "有効期限",
+          "code": "セキュリティコード",
+          "stripe": "カード決済は、大手決済ゲートウェイである Stripe を利用して安全に処理されるため、当社がカード情報に直接アクセスすることは一切ありません。"
+        },
+        "paypal": {
+          "text": "PayPal でサブスクリプションに登録するには、「PayPal に進む」ボタンをクリックしてください。"
+        },
+        "bitpay": {
+          "text": "暗号通貨で支払うには、「BitPay に進む」ボタンをクリックしてください。",
+          "toYearly": "暗号通貨による支払いは月額プランでは受け付けていません。<1>続行すると、自動的に年額プランに切り替わります。</1>",
+          "remainder": "現在のサブスクリプションは {{date, date}}まで支払い済みです。今回の料金はすぐに請求され、現在の残り期間は新しい有効期限に自動的に加算されます。"
+        },
+        "continueTo": "<1></1> に進む"
+      }
+    },
+    "business": {
+      "name": "ビジネス",
+      "description": "税務上、法人名、住所、VAT 番号（または同等のもの）が必要です。これは法律で義務付けられており、すべての請求書に記載されます。",
+      "button": {
+        "add": "法人情報を追加",
+        "update": "更新"
+      },
+      "form": {
+        "name": {
+          "label": "法人名",
+          "placeholder": "会社名",
+          "errors": {
+            "required": "法人名を入力してください。"
+          }
+        },
+        "address": {
+          "label": "住所",
+          "placeholder": "東京都千代田区永田町二丁目 3 番 1 号",
+          "errors": {
+            "required": "法人の住所を入力してください。"
+          }
+        },
+        "vatNumber": {
+          "label": "VAT 番号（または同等のもの）"
+        }
+      }
+    },
+    "invoices": {
+      "name": "請求書",
+      "description": "アカウントの請求履歴とすべての請求書。",
+      "pending": "{{amount, price}}（請求予定額）",
+      "show-more": "さらに表示",
+      "show-less": "一部のみ表示",
+      "invoice": {
+        "title": "請求書番号 {{code}}",
+        "to": "宛先：<1>{{email}}</1>",
+        "vatNumber": "VAT 番号（または同等のもの）：{{number}}",
+        "columns": {
+          "plan": "プラン",
+          "period": "期間",
+          "amount": "金額"
+        },
+        "vat": "VAT（{{rate, percentage}}）",
+        "total": "合計",
+        "footer": {
+          "reverseCharged": "VAT（または同等のもの）はリバースチャージ方式が適用されます。",
+          "currency": "表示されている金額はすべて {{code}} です。"
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "メールアドレス",
+      "description": "アカウントへのログインと重要な通知の受信に使用するメールアドレスを変更します。",
+      "button": "メールアドレスを変更"
+    },
+    "changePassword": {
+      "name": "パスワード",
+      "description": "アカウントへのログインと、重要な操作の確認に使用するパスワードを変更します。",
+      "button": "パスワードを変更"
+    },
+    "2fa": {
+      "name": "二要素認証（2FA）",
+      "description": "二要素認証（2FA）は、アカウントにログインするときに認証アプリ等により生成される時間ベースの 6 桁のコードを必要とする追加のセキュリティレイヤーです。",
+      "enabled": "アカウントで二要素認証が有効になっています。",
+      "enable": {
+        "button": "二要素認証を有効化",
+        "secret": "二要素認証のシークレット",
+        "modal": {
+          "howto": "<1>Google 認証システム</1>などの認証アプリ、または二要素認証に対応したパスワードマネージャーを使用してください。QR コードをスキャンするか、タップして <3>{{otpauth}}</3> リンクを開くか、シークレットを手動でコピーして貼り付けます。"
+        }
+      },
+      "recovery": {
+        "button": "リカバリーコード",
+        "modal": {
+          "howto": "デバイスにアクセスできなくなり、二要素認証コードを受け取れない場合は、これらのリカバリーコードを使用してアカウントにアクセスしてください。各コードは一度しか使用できません。",
+          "download": "ダウンロード",
+          "regen": "再生成"
+        }
+      },
+      "disable": {
+        "button": "二要素認証を無効化"
+      }
+    },
+    "api": {
+      "description": "プロファイルをプログラムで作成および管理します。<1>{{link}}</1> にあるドキュメントをお読みください。",
+      "copy": "API キーをコピー",
+      "remove": "API キーを削除",
+      "create": {
+        "button": "API キーを生成"
+      }
+    },
+    "delete": {
+      "button": "アカウントを削除",
+      "warning": "アカウントとすべてのプロファイルが完全に削除されます。",
+      "confirm": {
+        "text": "アカウントを削除してもよろしいですか？この操作は元に戻せません。"
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "期限切れ",
+          "text": "一時アカウントの有効期限が切れました。今すぐ新規登録して設定を保存し、NextDNS を引き続きご利用ください。登録は無料です。"
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "新規作成",
+    "form": {
+      "title": "新しいプロファイル",
+      "name": {
+        "label": "名前",
+        "placeholder": "自宅用、子供用、職場用、...",
+        "errors": {
+          "required": "名前を入力してください。",
+          "taken": "その名前のプロファイルは既に存在します。"
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "問題なし",
+        "secondary": "このデバイスは、このプロファイルで NextDNS を使用しています。"
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "このデバイスは、プロファイルなしで NextDNS を使用しています。",
+          "secondary": {
+            "clients": "アプリの設定に、以下に表示されているプロファイル ID が設定されていることを確認してください。",
+            "firefox": "Firefox で、以下に示す DNS-over-HTTPS エンドポイントが設定されていることを確認してください。",
+            "doh": "以下に表示されている DNS-over-HTTPS エンドポイントを使用していることを確認してください。",
+            "dot": "以下に示す DNS-over-TLS エンドポイントを使用していることを確認してください。",
+            "ipv6": "以下に示す IPv6 アドレスを使用していることを確認してください。",
+            "servers": "以下の「リンクされた IP」セクションに示されている DNS サーバーを使用していることを確認してください（DNS サーバーはプロファイルごとに異なります）。",
+            "link": "以下の「リンクされた IP」セクションで IP アドレスをリンクしてください。"
+          }
+        },
+        "withConfiguration": {
+          "primary": "このデバイスは、別のプロファイルで NextDNS を使用しています。",
+          "secondary": {
+            "sameAccount": "このデバイスは現在「{{name}}」を使用しています。",
+            "otherAccount": "このページにリストされているエンドポイントのいずれかを使用していることを確認してください。"
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "このデバイスは NextDNS を使用していません。",
+        "secondary": "このデバイスは、現在 DNS リゾルバーとして「{{resolver}}」を使用しています。"
+      },
+      "error": {
+        "primary": "ステータスの確認中にエラーが発生しました。",
+        "secondary": "ページを更新してもこの問題が解決しない場合は、お問い合わせください。"
+      },
+      "apr": {
+        "ok": {
+          "primary": "このデバイスは iCloud プライベートリレーと併用して NextDNS を使用しています。",
+          "secondary": "セーフサーチ、YouTube の制限付きモード、書き換えなどの機能は、iCloud プライベートリレーと併用できません。"
+        },
+        "blockpage": {
+          "primary": "このデバイスは iCloud プライベートリレーと併用して NextDNS を使用しています。",
+          "secondary": "iCloud プライベートリレーの使用中にブロックページを有効にすると、ブロック機能に支障が生じます。"
+        }
+      }
+    },
+    "endpoints": {
+      "name": "エンドポイント",
+      "description": "以下のいずれかのエンドポイントを使用して、このプロファイルで NextDNS を設定します。",
+      "help": "これらの設定方法がわかりませんか？<1>セットアップガイド</1>をお読みください。"
+    },
+    "linkedIp": {
+      "name": "リンクされた IP",
+      "description": "当社のアプリ、DNS-over-TLS、DNS-over-HTTPS、または IPv6 を使用して NextDNS をセットアップできない場合は、以下の DNS サーバーを使用した上で IP をリンクしてください。これは主にホームネットワークでの使用を想定したものであり、モバイル環境での使用は推奨されません。",
+      "servers": {
+        "name": "DNS サーバー"
+      },
+      "ip": {
+        "name": "リンクされた IP",
+        "link": "IP をリンク"
+      },
+      "showAdvanced": "高度なオプションを表示",
+      "ddns": {
+        "explanation": "ダイナミック DNS（DDNS）を使用して、リンクされた IP を自動的に更新できます。",
+        "set": "DDNS を設定",
+        "status": "現在 <1>{{hostname}}</1> を DDNS ホスト名として使用しています。IP は毎分自動的に更新されます。",
+        "unset": "削除",
+        "form": {
+          "hostname": {
+            "label": "DDNS ホスト名",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "ホスト名を入力してください。",
+              "invalid": "有効なホスト名を入力してください。",
+              "ip": "IP アドレスではなく、ホスト名を入力してください。",
+              "error": "このホスト名から IP アドレスへの名前解決中にエラーが発生しました。",
+              "empty": "このホスト名から IP アドレスを解決することができませんでした。",
+              "different": "セキュリティ上の理由から、ダイナミック DNS を追加する場合、DDNS ホスト名から返される IP アドレスは現在ご使用中の IP アドレスと同じである必要があります。"
             }
+          }
+        }
+      },
+      "programmatically": "次の URL にアクセスすることで、リンクされた IP をプログラムから更新することもできます："
+    },
+    "guide": {
+      "name": "セットアップガイド",
+      "description": "次の手順に従って、デバイス、ブラウザ、またはルーターに NextDNS を設定します。",
+      "or": "または",
+      "ipv4": {
+        "title": "IPv4（リンクされた IP を使用）"
+      },
+      "ipv6": {
+        "supported": "このネットワークは IPv6 に対応しています",
+        "notSupported": "このネットワークは IPv6 に対応していません"
+      },
+      "tags": {
+        "recommended": "推奨",
+        "advanced": "上級者向け"
+      },
+      "use": "<1>{{file}}</1> で以下を使用してください：",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "プライベート DNS",
+              "requirements": "Android 9 以降",
+              "steps": {
+                "1": "1. 設定 → ネットワークとインターネット → プライベート DNS に移動します（一部のバージョンでは詳細設定の下にあります）。",
+                "2": "2.「プライベート DNS プロバイダのホスト名」オプションを選択します。",
+                "3": "3. <1>{{endpoint}}</1> を入力し、「保存」を押します。"
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "エンドポイント",
-            "description": "以下のいずれかのエンドポイントを使用して、このプロファイルで NextDNS を設定します。",
-            "help": "これらの設定方法がわかりませんか？<1>セットアップガイド</1>をお読みください。"
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "構成プロファイル",
+              "requirements": "iOS 14 以降",
+              "step": "<1>{{link}}</1> にある Apple 構成プロファイルジェネレーターを使用してください。"
+            },
+            "app": {
+              "title": "NextDNS（iOS 版）",
+              "qrAlt": "iPhone または iPad に NextDNS をインストールして設定するための App Clip コード",
+              "qrText": "このコードをスキャンして、お使いの iPhone または iPad に NextDNS をインストールして設定します",
+              "qrTextIos": "別のスマートフォンでこのコードをスキャンするか、<1>ここをタップしてこのデバイスで NextDNS を設定してください</1>。"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "リンクされた IP",
-            "description": "当社のアプリ、DNS-over-TLS、DNS-over-HTTPS、または IPv6 を使用して NextDNS をセットアップできない場合は、以下の DNS サーバーを使用した上で IP をリンクしてください。これは主にホームネットワークでの使用を想定したものであり、モバイル環境での使用は推奨されません。",
-            "servers": {
-                "name": "DNS サーバー"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS over HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "<1>設定</1>アプリを起動します。",
+                "<1>ネットワークとインターネット</1>に進みます。",
+                "<1>Wi-Fi</1>（または<3>イーサネット</3>）をクリックします。",
+                "<1>ハードウェアのプロパティ</1>をクリックします。<3>イーサネット</3>を選択した場合は、この手順を省略します。",
+                "<3>DNS サーバーの割り当て</3>の横にある<1>編集</1>ボタンをクリックします。",
+                "<1>手動</1>を選択します。",
+                "<1>IPv{{version}}</1> を有効にします。",
+                "<3>優先 DNS</3>に <1>{{ip}}</1> を入力し、<5>オン (手動テンプレート)</5>を選択して <7>{{endpoint}}</7> を入力します。",
+                "<3>代替 DNS</3>に <1>{{ip}}</1> を入力し、<5>オン (手動テンプレート)</5>を選択して <7>{{endpoint}}</7> を入力します。",
+                "<1>保存</1>をクリックします。"
+              ]
+            },
+            "app": {
+              "title": "NextDNS（Windows 版）",
+              "steps": {
+                "1": "1. インストーラーを<1>こちら</1>からダウンロードします。",
+                "2": "2. インストール後、システムトレイの NextDNS アイコンを右クリックして、「Settings...」を開きます。「Configuration ID」として <1>{{id}}</1> を設定します。",
+                "3": "3. システムトレイの NextDNS アイコンを右クリックして、「Enable」をクリックします。"
+              }
             },
             "ip": {
-                "name": "リンクされた IP",
-                "link": "IP をリンク"
+              "steps": {
+                "1": "1.「スタート」を開き、「コントロール パネル」を検索して開きます。",
+                "2": "2.「ネットワークとインターネット」、「ネットワークと共有センター」の順にクリックします。",
+                "3": "3.「アダプターの設定の変更」をクリックします。",
+                "4": "4. 接続している Wi-Fi ネットワークを右クリックして、「プロパティ」をクリックします。",
+                "5": "5.「インターネット プロトコル バージョン {{version}}」を選択します。",
+                "6": "6.「プロパティ」をクリックします。",
+                "7": "7.「次の DNS サーバーのアドレスを使う」を選択します。",
+                "8": "8. 現在のアドレス（存在する場合）を <1>{{dns1}}</1> と <3>{{dns2}}</3> で置き換えます。",
+                "9": "9.「OK」をクリックし、次に「閉じる」をクリックします。ブラウザを再起動する必要があるかもしれません。"
+              }
             },
-            "showAdvanced": "高度なオプションを表示",
-            "ddns": {
-                "explanation": "ダイナミック DNS（DDNS）を使用して、リンクされた IP を自動的に更新できます。",
-                "set": "DDNS を設定",
-                "status": "現在 <1>{{hostname}}</1> を DDNS ホスト名として使用しています。IP は毎分自動的に更新されます。",
-                "unset": "削除",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS ホスト名",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "ホスト名を入力してください。",
-                            "invalid": "有効なホスト名を入力してください。",
-                            "ip": "IP アドレスではなく、ホスト名を入力してください。",
-                            "error": "このホスト名から IP アドレスへの名前解決中にエラーが発生しました。",
-                            "empty": "このホスト名から IP アドレスを解決することができませんでした。",
-                            "different": "セキュリティ上の理由から、ダイナミック DNS を追加する場合、DDNS ホスト名から返される IP アドレスは現在ご使用中の IP アドレスと同じである必要があります。"
-                        }
-                    }
-                }
-            },
-            "programmatically": "次の URL にアクセスすることで、リンクされた IP をプログラムから更新することもできます："
-        },
-        "guide": {
-            "name": "セットアップガイド",
-            "description": "次の手順に従って、デバイス、ブラウザ、またはルーターに NextDNS を設定します。",
-            "or": "または",
-            "ipv4": {
-                "title": "IPv4（リンクされた IP を使用）"
-            },
-            "ipv6": {
-                "supported": "このネットワークは IPv6 に対応しています",
-                "notSupported": "このネットワークは IPv6 に対応していません"
-            },
-            "tags": {
-                "recommended": "推奨",
-                "advanced": "上級者向け"
-            },
-            "use": "<1>{{file}}</1> で以下を使用してください：",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "プライベート DNS",
-                            "requirements": "Android 9 以降",
-                            "steps": {
-                                "1": "1. 設定 → ネットワークとインターネット → プライベート DNS に移動します（一部のバージョンでは詳細設定の下にあります）。",
-                                "2": "2.「プライベート DNS プロバイダのホスト名」オプションを選択します。",
-                                "3": "3. <1>{{endpoint}}</1> を入力し、「保存」を押します。"
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "構成プロファイル",
-                            "requirements": "iOS 14 以降",
-                            "step": "<1>{{link}}</1> にある Apple 構成プロファイルジェネレーターを使用してください。"
-                        },
-                        "app": {
-                            "title": "NextDNS（iOS 版）",
-                            "qrAlt": "iPhone または iPad に NextDNS をインストールして設定するための App Clip コード",
-                            "qrText": "このコードをスキャンして、お使いの iPhone または iPad に NextDNS をインストールして設定します",
-                            "qrTextIos": "別のスマートフォンでこのコードをスキャンするか、<1>ここをタップしてこのデバイスで NextDNS を設定してください</1>。"
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS over HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "<1>設定</1>アプリを起動します。",
-                                "<1>ネットワークとインターネット</1>に進みます。",
-                                "<1>Wi-Fi</1>（または<3>イーサネット</3>）をクリックします。",
-                                "<1>ハードウェアのプロパティ</1>をクリックします。<3>イーサネット</3>を選択した場合は、この手順を省略します。",
-                                "<3>DNS サーバーの割り当て</3>の横にある<1>編集</1>ボタンをクリックします。",
-                                "<1>手動</1>を選択します。",
-                                "<1>IPv{{version}}</1> を有効にします。",
-                                "<3>優先 DNS</3>に <1>{{ip}}</1> を入力し、<5>オン (手動テンプレート)</5>を選択して <7>{{endpoint}}</7> を入力します。",
-                                "<3>代替 DNS</3>に <1>{{ip}}</1> を入力し、<5>オン (手動テンプレート)</5>を選択して <7>{{endpoint}}</7> を入力します。",
-                                "<1>保存</1>をクリックします。"
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS（Windows 版）",
-                            "steps": {
-                                "1": "1. インストーラーを<1>こちら</1>からダウンロードします。",
-                                "2": "2. インストール後、システムトレイの NextDNS アイコンを右クリックして、「Settings...」を開きます。「Configuration ID」として <1>{{id}}</1> を設定します。",
-                                "3": "3. システムトレイの NextDNS アイコンを右クリックして、「Enable」をクリックします。"
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1.「スタート」を開き、「コントロール パネル」を検索して開きます。",
-                                "2": "2.「ネットワークとインターネット」、「ネットワークと共有センター」の順にクリックします。",
-                                "3": "3.「アダプターの設定の変更」をクリックします。",
-                                "4": "4. 接続している Wi-Fi ネットワークを右クリックして、「プロパティ」をクリックします。",
-                                "5": "5.「インターネット プロトコル バージョン {{version}}」を選択します。",
-                                "6": "6.「プロパティ」をクリックします。",
-                                "7": "7.「次の DNS サーバーのアドレスを使う」を選択します。",
-                                "8": "8. 現在のアドレス（存在する場合）を <1>{{dns1}}</1> と <3>{{dns2}}</3> で置き換えます。",
-                                "9": "9.「OK」をクリックし、次に「閉じる」をクリックします。ブラウザを再起動する必要があるかもしれません。"
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. <1>{{link}}</1> から YogaDNS をインストールします。",
-                                "2": "2. <1>{{link}}</1> の NextDNS 向けの手順に従い、「Configuration ID」として <3>{{id}}</3> を使用します。"
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS（macOS 版）",
-                            "steps": {
-                                "1": "1. 公式アプリを<1>ダウンロード</1>してインストールします。",
-                                "2": "2. 画面の指示に従います。",
-                                "3": "3. プロファイル ID の入力を求められたら、<1>{{id}}</1> を入力します。"
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur 以降"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1.「システム設定」（古い macOS バージョンでは「システム環境設定」）を開き、「ネットワーク」をクリックします。",
-                                "2": "2. 使用中のネットワーク接続を選択し、「詳細」をクリックします。",
-                                "3": "3.「DNS」セクションに移動します。",
-                                "4": "4.「DNSサーバ」リストで、すべてのアドレス（存在する場合）を削除し、<1>{{dns1}}</1> と <3>{{dns2}}</3> を追加します。",
-                                "5": "5.「OK」をクリックし、「適用」が表示された場合はクリックします。"
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS コマンドラインクライアント",
-                            "steps": {
-                                "1": "1. 次のコマンドを実行します：<1>{{command}}</1>",
-                                "2": "2. 画面の指示に従います。"
-                            },
-                            "manual": "手動インストール手順については、<1>{{link}}</1> にあるオープンソースリポジトリをご覧ください。"
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS コマンドラインクライアント",
-                            "steps": {
-                                "1": "1. 次のコマンドを実行します：<1>{{command}}</1>",
-                                "2": "2. 画面の指示に従います。"
-                            },
-                            "manual": "手動インストール手順については、<1>{{link}}</1> にあるオープンソースリポジトリをご覧ください。"
-                        },
-                        "ip": {
-                            "step": "DNS サーバーを <1>{{dns1}}</1> と <3>{{dns2}}</3> に変更します。"
-                        },
-                        "stubby": {
-                            "warning": "Stubby が <1>OpenSSL 1.1.1 以降</1>とリンクされていることを確認してください。それ以前のバージョンでは NextDNS は動作しません。"
-                        },
-                        "unbound": {
-                            "warning": "Unbound は再帰リゾルバーとして CNAME を追跡します。この振る舞いにより NextDNS のようなブロッキング DNS リゾルバーと組み合わせて使用した場合に、<1>予期しない動作</1>が発生する可能性があります。詳細は <3>{{link}}</3> をご参照ください。"
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "ChromeOS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "セキュア DNS",
-                            "steps": [
-                                "<1>設定</1>アプリを起動します。",
-                                "<1>プライバシーとセキュリティ</1>に進みます。",
-                                "<1>サイトのルックアップに安全な接続を使用する</1>を有効にします。",
-                                "<1>カスタム DNS サービス プロバイダを追加</1>を選択し、<3>{{endpoint}}</3> を入力します。"
-                            ]
-                        },
-                        "ip": {
-                            "step": "DNS サーバーを <1>{{dns1}}</1> と <3>{{dns2}}</3> に変更します。"
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "ブラウザ",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1.「設定」に移動します。",
-                                "2": "2.「プライバシーとセキュリティ」セクションで、「セキュリティ」をクリックします。",
-                                "3": "3.「詳細設定」セクションで、「セキュア DNS を使用する」を有効にします。",
-                                "4": "4.「カスタム DNS サービス プロバイダを追加」を選択し、<1>{{endpoint}}</1> を入力します。"
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Windows、macOS、Linux のみ",
-                            "steps": {
-                                "1": "1.「設定」（一部のバージョンでは「環境設定」）を開きます。",
-                                "2": "2.「プライバシーとセキュリティ」をクリックします。",
-                                "3": "3.「DNS over HTTPS」まで下にスクロールし、「詳細設定」が表示された場合は開きます。",
-                                "4": "4.「カスタム」（一部のバージョンでは「強力な保護」または「最大限の保護」）を選択します。",
-                                "5": "5. プロバイダーのメニューで「URL を指定」を選択します。",
-                                "6": "6. <1>{{endpoint}}</1> と入力します。"
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1.「設定」を開きます。",
-                                "2": "2.「プライバシー/検索/サービス」セクションに移動します。",
-                                "3": "3.「セキュリティ」で「セキュリティで保護された DNS を使用する」を有効にします。",
-                                "4": "4.「サービス プロバイダーを選択する」を選択し、<1>{{endpoint}}</1> を入力します。"
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1.「設定」を開きます。",
-                                "2": "2.「プライバシーとセキュリティ」セクションで、「セキュリティ」に移動します。",
-                                "3": "3.「詳細設定」セクションで、「セキュア DNS を使用する」を有効にします。",
-                                "4": "4.「カスタム DNS サービス プロバイダを追加」を選択し、<1>{{endpoint}}</1> を入力します。"
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "ルーター",
-                    "guides": {
-                        "cli": {
-                            "title": "ルーター向け NextDNS",
-                            "requirements": "実行可能ファイルを実行できるルーターでのみ利用できます",
-                            "step": "インストール手順については、<1>{{link}}</1> にあるオープンソースリポジトリをご覧ください。"
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "一部のルーターは、上記の IPv6 表記をサポートしていない場合があります。その場合、<1>{{dns1}}</1> と <3>{{dns2}}</3> を使用します。"
-                            },
-                            "steps": {
-                                "1": "1. ルーターの設定を開きます。通常、ブラウザから URL（http://192.168.0.1/ や http://192.168.1.1/ など）を介してアクセスできます。",
-                                "2": "2. DNS 設定画面を見つけます。",
-                                "3": "3. すべてのアドレス（存在する場合）を削除し、<1>{{dns1}}</1> と <3>{{dns2}}</3> を追加します。",
-                                "4": "4.「保存」（または同等のボタン）をクリックします。"
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1.「Services」→「DNS Resolver」に移動します。「General Settings」タブで下にスクロールし、必要に応じて「Display Custom Options」をクリックして「Custom options」欄を表示します。",
-                                "2": "2. 次の行を入力します："
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "以下を実行します："
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "セットアップ手順については、Tailscale のドキュメント（<2>{{link}}</2>）をご覧ください。"
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. <1>{{link}}</1> から YogaDNS をインストールします。",
+                "2": "2. <1>{{link}}</1> の NextDNS 向けの手順に従い、「Configuration ID」として <3>{{id}}</3> を使用します。"
+              }
             }
+          }
         },
-        "identify": {
-            "name": "デバイスの識別",
-            "description": "以下の手順に従うことで、分析とログでデバイスを識別できます。",
-            "apps": {
-                "name": "アプリ",
-                "instructions": "アプリの設定で「Send Device Name」（Windows では「Report Device Name」）を有効にします。"
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS（macOS 版）",
+              "steps": {
+                "1": "1. 公式アプリを<1>ダウンロード</1>してインストールします。",
+                "2": "2. 画面の指示に従います。",
+                "3": "3. プロファイル ID の入力を求められたら、<1>{{id}}</1> を入力します。"
+              }
             },
-            "dot": {
-                "instructions": "表示されたドメイン名の前に識別名を付加します（識別名には半角英数 <1>a-z</1>、<3>A-Z</3>、<5>0-9</5> およびハイフン <7>-</7> のみが使用できます）。スペースの代わりには <9>--</9> を使用してください。",
-                "example": "例えば「<1>John Router</1>」の場合は、DNS-over-TLS エンドポイントとして <3>John--Router-{{profile}}.dns.nextdns.io</3> を使用します。"
+            "profile": {
+              "requirements": "macOS Big Sur 以降"
             },
-            "doh": {
-                "instructions": "提供された URL の末尾に識別名を追加します（識別名は URL エンコードする必要があります）。",
-                "example": "例えば「<1>John's Firefox</1>」の場合は、DNS-over-HTTPS エンドポイントとして <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> を使用します。"
+            "ip": {
+              "steps": {
+                "1": "1.「システム設定」（古い macOS バージョンでは「システム環境設定」）を開き、「ネットワーク」をクリックします。",
+                "2": "2. 使用中のネットワーク接続を選択し、「詳細」をクリックします。",
+                "3": "3.「DNS」セクションに移動します。",
+                "4": "4.「DNSサーバ」リストで、すべてのアドレス（存在する場合）を削除し、<1>{{dns1}}</1> と <3>{{dns2}}</3> を追加します。",
+                "5": "5.「OK」をクリックし、「適用」が表示された場合はクリックします。"
+              }
+            },
+            "cli": {
+              "title": "NextDNS コマンドラインクライアント",
+              "steps": {
+                "1": "1. 次のコマンドを実行します：<1>{{command}}</1>",
+                "2": "2. 画面の指示に従います。"
+              },
+              "manual": "手動インストール手順については、<1>{{link}}</1> にあるオープンソースリポジトリをご覧ください。"
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS コマンドラインクライアント",
+              "steps": {
+                "1": "1. 次のコマンドを実行します：<1>{{command}}</1>",
+                "2": "2. 画面の指示に従います。"
+              },
+              "manual": "手動インストール手順については、<1>{{link}}</1> にあるオープンソースリポジトリをご覧ください。"
+            },
+            "ip": {
+              "step": "DNS サーバーを <1>{{dns1}}</1> と <3>{{dns2}}</3> に変更します。"
+            },
+            "stubby": {
+              "warning": "Stubby が <1>OpenSSL 1.1.1 以降</1>とリンクされていることを確認してください。それ以前のバージョンでは NextDNS は動作しません。"
+            },
+            "unbound": {
+              "warning": "Unbound は再帰リゾルバーとして CNAME を追跡します。この振る舞いにより NextDNS のようなブロッキング DNS リゾルバーと組み合わせて使用した場合に、<1>予期しない動作</1>が発生する可能性があります。詳細は <3>{{link}}</3> をご参照ください。"
+            }
+          }
+        },
+        "chromeos": {
+          "name": "ChromeOS",
+          "guides": {
+            "secure-dns": {
+              "title": "セキュア DNS",
+              "steps": [
+                "<1>設定</1>アプリを起動します。",
+                "<1>プライバシーとセキュリティ</1>に進みます。",
+                "<1>サイトのルックアップに安全な接続を使用する</1>を有効にします。",
+                "<1>カスタム DNS サービス プロバイダを追加</1>を選択し、<3>{{endpoint}}</3> を入力します。"
+              ]
+            },
+            "ip": {
+              "step": "DNS サーバーを <1>{{dns1}}</1> と <3>{{dns2}}</3> に変更します。"
+            }
+          }
+        },
+        "browsers": {
+          "name": "ブラウザ",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1.「設定」に移動します。",
+                "2": "2.「プライバシーとセキュリティ」セクションで、「セキュリティ」をクリックします。",
+                "3": "3.「詳細設定」セクションで、「セキュア DNS を使用する」を有効にします。",
+                "4": "4.「カスタム DNS サービス プロバイダを追加」を選択し、<1>{{endpoint}}</1> を入力します。"
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Windows、macOS、Linux のみ",
+              "steps": {
+                "1": "1.「設定」（一部のバージョンでは「環境設定」）を開きます。",
+                "2": "2.「プライバシーとセキュリティ」をクリックします。",
+                "3": "3.「DNS over HTTPS」まで下にスクロールし、「詳細設定」が表示された場合は開きます。",
+                "4": "4.「カスタム」（一部のバージョンでは「強力な保護」または「最大限の保護」）を選択します。",
+                "5": "5. プロバイダーのメニューで「URL を指定」を選択します。",
+                "6": "6. <1>{{endpoint}}</1> と入力します。"
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1.「設定」を開きます。",
+                "2": "2.「プライバシー/検索/サービス」セクションに移動します。",
+                "3": "3.「セキュリティ」で「セキュリティで保護された DNS を使用する」を有効にします。",
+                "4": "4.「サービス プロバイダーを選択する」を選択し、<1>{{endpoint}}</1> を入力します。"
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1.「設定」を開きます。",
+                "2": "2.「プライバシーとセキュリティ」セクションで、「セキュリティ」に移動します。",
+                "3": "3.「詳細設定」セクションで、「セキュア DNS を使用する」を有効にします。",
+                "4": "4.「カスタム DNS サービス プロバイダを追加」を選択し、<1>{{endpoint}}</1> を入力します。"
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "ルーター",
+          "guides": {
+            "cli": {
+              "title": "ルーター向け NextDNS",
+              "requirements": "実行可能ファイルを実行できるルーターでのみ利用できます",
+              "step": "インストール手順については、<1>{{link}}</1> にあるオープンソースリポジトリをご覧ください。"
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "一部のルーターは、上記の IPv6 表記をサポートしていない場合があります。その場合、<1>{{dns1}}</1> と <3>{{dns2}}</3> を使用します。"
+              },
+              "steps": {
+                "1": "1. ルーターの設定を開きます。通常、ブラウザから URL（http://192.168.0.1/ や http://192.168.1.1/ など）を介してアクセスできます。",
+                "2": "2. DNS 設定画面を見つけます。",
+                "3": "3. すべてのアドレス（存在する場合）を削除し、<1>{{dns1}}</1> と <3>{{dns2}}</3> を追加します。",
+                "4": "4.「保存」（または同等のボタン）をクリックします。"
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1.「Services」→「DNS Resolver」に移動します。「General Settings」タブで下にスクロールし、必要に応じて「Display Custom Options」をクリックして「Custom options」欄を表示します。",
+                "2": "2. 次の行を入力します："
+              }
+            },
+            "mikrotik": {
+              "run": "以下を実行します："
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "セットアップ手順については、Tailscale のドキュメント（<2>{{link}}</2>）をご覧ください。"
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "脅威情報フィード",
-            "description": "最も信頼できる脅威情報フィードを組み合わせ、マルウェアの配布、フィッシング攻撃、コマンドアンドコントロールサーバーの運用に使われることが知られているドメインをブロックします。脅威情報フィードはすべてリアルタイムで更新されます。",
-            "enable": "脅威情報フィードを使用する"
-        },
-        "ai": {
-            "name": "AI による脅威検知",
-            "description": "当社の AI 技術によって検出された数百万の脅威をブロックします。数百のシグナル、テラバイト規模の学習データ、リアルタイムの意思決定を組み合わせた、DNS 用にゼロから設計された独自の AI エンジンです。対象には、IDN ホモグラフ、タイポスクワッティング、コンボスクワッティング、DGA ドメイン、ブランドのなりすまし、認証情報の窃取、マルウェアの配布、悪意のあるインフラを隠すために使われるおとりウェブサイトが含まれます。",
-            "enable": "AI による脅威検知を有効にする"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google セーフ ブラウジング",
-            "description": "Google セーフ ブラウジングを使用して、マルウェアやフィッシングのドメインをブロックします。この技術は、危険なウェブサイトを検出するために毎日数十億の URL を調べます。一部のブラウザに組み込まれたバージョンとは異なり、パブリック IP アドレスを脅威と関連付けず、ブロックの回避も許可しません。",
-            "enable": "Google セーフ ブラウジングを有効にする"
-        },
-        "cryptojacking": {
-            "name": "クリプトジャッキング",
-            "description": "暗号通貨をマイニングするためにデバイスが不正使用されることを防止します。",
-            "enable": "クリプトジャッキングをブロックする"
-        },
-        "dnsRebinding": {
-            "name": "DNS リバインディング",
-            "description": "プライベート IP アドレスを含む DNS 応答を自動的にブロックすることにより、攻撃者がインターネット経由でローカルデバイスを制御するのを防ぎます。",
-            "enable": "DNS リバインディングをブロックする"
-        },
-        "homograph": {
-            "name": "IDN ホモグラフ",
-            "description": "見た目の似た文字を使って他のドメインを偽装する国際化ドメイン名（IDN）をブロックします。たとえば、ラテン文字「e」をキリル文字「е」に置き換えたドメインなどです。",
-            "enable": "IDN ホモグラフをブロックする"
-        },
-        "typosquatting": {
-            "name": "タイポスクワッティング",
-            "description": "ブラウザにウェブサイトのアドレスを誤入力するユーザーを狙って、攻撃者が登録したドメインをブロックします。たとえば、google.com の代わりに gooogle.com と入力した場合などです。",
-            "enable": "タイポスクワッティングをブロックする"
-        },
-        "dga": {
-            "name": "ドメイン生成アルゴリズム",
-            "description": "ドメイン生成アルゴリズム（DGA）によって生成され、さまざまな系統のマルウェアがコマンドアンドコントロールサーバーとの通信の接点として使用するドメインをブロックします。",
-            "enable": "DGA ドメインをブロックする"
-        },
-        "nrd": {
-            "name": "新規登録ドメイン",
-            "description": "登録から 30 日未満のドメインをブロックします。これらのドメインは、攻撃者が悪意のあるキャンペーンを展開する際に好んで使用することが知られています。",
-            "enable": "新規登録ドメインをブロックする"
-        },
-        "ddns": {
-            "name": "ダイナミック DNS ホスト名",
-            "description": "ダイナミック DNS（DDNS）サービスを利用すると、攻撃者は検証や本人確認を受けることなく、無料ですばやくホスト名を設定できます。正当な DDNS ホスト名が日常的にアクセスされることはまれですが、悪意のある DDNS ホスト名はフィッシングキャンペーンで広く使用されています。",
-            "disclaimer": "DDNS を利用している場合、この設定は DDNS サービス自体のウェブサイトや更新用 API をブロックしないことにご注意ください。",
-            "enable": "ダイナミック DNS ホスト名をブロックする"
-        },
-        "parked": {
-            "name": "ドメインパーキングサイト",
-            "description": "ドメインパーキングサイトは、多くの場合、広告で埋め尽くされ、実質的な価値のない単一ページのウェブサイトです。ドメインパーキングの収益化に使われる広告ネットワークやリダイレクトによって、訪問者が詐欺、フィッシングページ、悪意のあるダウンロードに誘導されることがあります。",
-            "enable": "ドメインパーキングサイトをブロックする"
-        },
-        "tld": {
-            "name": "トップレベルドメイン（TLD）",
-            "description": "特定の TLD に属するすべてのドメインとサブドメインをブロックします。",
-            "add": "TLD を追加",
-            "sections": {
-                "spamhaus": "Spamhaus 調べ：最も悪用されている TLD",
-                "all": "すべての TLD"
-            }
-        },
-        "csam": {
-            "name": "児童性的虐待コンテンツ（CSAM）",
-            "description": "カナダ児童保護センターが運営する Project Arachnid の協力により、児童性的虐待コンテンツをホストするドメインをブロックします。ドメインをブロックしても、Project Arachnid に情報が送信されることはありません。",
-            "enable": "児童性的虐待コンテンツをブロックする"
-        },
-        "newlyActiveDomains": {
-            "name": "新規アクティブドメイン",
-            "description": "初めてアクセスされるドメインや、過去の利用が少ないドメインをブロックします。ドメインを信頼する前に、正当な利用実績が確認できることを必須とすることで、ゼロデイ攻撃や「潜伏型」の脅威を防ぎ、悪意のあるドメインに事前にアクセスして信頼性を装う「プレウォーミング」の試みを効果的に無力化します。",
-            "enable": "新規アクティブドメインをブロックする"
-        },
-        "freeHostingDomains": {
-            "name": "無料ホスティングドメイン",
-            "description": "無料のウェブホスティングサービスが標準で提供するサブドメイン（例：*.pages.dev、*.vercel.app、*.netlify.app）をブロックします。これらの「無料ホスティングドメイン」（FHD）は、フィッシングサイトの設置やレピュテーションフィルターの回避に広く悪用されています。独自ドメインでこれらのサービスを利用する正当なウェブサイトには影響しません。",
-            "enable": "無料ホスティングドメインをブロックする"
-        },
-        "tunnelingEndpoints": {
-            "name": "トンネリングエンドポイント",
-            "description": "ローカルのトラフィックをトンネル経由でインターネットに公開するサービス（例：ngrok、Cloudflare Tunnel）をブロックします。攻撃者はこれらのツールを頻繁に利用して、ファイアウォールを回避し、背後のインフラを隠しながらランダムなサブドメインでフィッシングページを公開します。",
-            "enable": "トンネリングエンドポイントをブロックする"
-        },
-        "dataDropServices": {
-            "name": "データドロップサービス",
-            "description": "テキスト、ファイル、JSON・設定データの共有や、Webhook リクエスト、DNS クエリ、メールなどの受信データの収集に特化したサービスへのアクセスをブロックします。これらのサービスの正当な利用も対象に含まれます。",
-            "enable": "データドロップサービスをブロックする"
-        },
-        "residentialHosting": {
-            "name": "住宅回線ホスティング",
-            "description": "商用データセンターではなく、インターネットサービスプロバイダー（ISP）の住宅向け IP アドレス範囲に名前解決されるドメインをブロックします。正当なウェブサービスが一般家庭向けの回線でホストされることはまれですが、ボットネットの C2 サーバーやフィッシング用プロキシは、侵害された家庭用ルーターで頻繁に稼働しています。",
-            "enable": "住宅回線ホスティングをブロックする"
-        },
-        "untrustedCertificates": {
-            "name": "信頼されていない証明書",
-            "description": "信頼されていない、または不明な認証局によって署名された SSL/TLS 証明書（自己署名証明書など）を提示するドメインをブロックします。正当なウェブサイトはほぼ例外なく信頼された証明書を使用しますが、広く流通するマルウェアのコマンドアンドコントロール（C2）サーバーの 60% 近くは、自己署名証明書や信頼されていない認証局が発行した証明書を利用して、追跡につながる記録を残さずに通信を暗号化しています。",
-            "enable": "信頼されていない証明書をブロックする"
-        },
-        "fastFluxNetworks": {
-            "name": "Fast Flux ネットワーク",
-            "description": "検出を逃れるために、侵害されたデバイスの分散ネットワーク（ボットネット）上で IP アドレスを高速に切り替えるドメインをブロックします。このヒューリスティックは、DNS の生存時間（TTL）や IP アドレスの多様性に見られる特定の異常を識別します。これらは悪意のあるインフラに特有のもので、正当なコンテンツ配信ネットワーク（CDN）とは異なります。",
-            "enable": "Fast Flux ネットワークをブロックする"
-        },
-        "dnsDataExfiltration": {
-            "name": "DNS データ持ち出し",
-            "description": "DNS プロトコルを利用してネットワークからデータを密かに持ち出したり、隠されたコマンド（C2）を受信したりするドメインをブロックします。このヒューリスティックは、異常に長いサブドメイン、高いエントロピー、通常とは異なるクエリタイプ（TXT など）といった DNS クエリのパターンをリアルタイムで分析し、従来のファイアウォールをすり抜ける、少量ずつ時間をかけたデータ窃取やマルウェアのビーコン通信（Cobalt Strike など）を検出して阻止します。",
-            "enable": "DNS データ持ち出しをブロックする"
-        },
-        "dnsPayloadDelivery": {
-            "name": "DNS ペイロード配信",
-            "description": "DNS 応答が、隠されたコマンドやペイロードをデバイスに送信するために利用されるのを防ぎます。TXT や NULL など、任意のデータを格納できるものの、日常的なウェブ閲覧には不要なレコードタイプへのクエリは、すべてブロックされます。CNAME チェーンは最終的なアドレスにフラット化され、隠されたデータを埋め込める中間レコードが取り除かれます。A や AAAA などの標準的なレコードタイプでは、大きすぎる応答セクションをランダムに切り詰めることで、通常の DNS 機能を維持しながら、複数のレコードにまたがって埋め込まれたデータを破壊します。",
-            "enable": "DNS ペイロード配信をブロックする"
-        },
-        "decentralizedWebGateways": {
-            "name": "分散型ウェブゲートウェイ",
-            "description": "分散型ウェブ（IPFS など）と通常のブラウザをつなぐ公開ゲートウェイをブロックします。攻撃者はこれらのサービスを広く悪用して、「改変できない」フィッシングページやマルウェアを公開し、従来の削除措置やレピュテーションフィルターを回避することで脅威を存続させます。",
-            "enable": "分散型ウェブゲートウェイをブロックする"
-        },
-        "highRiskTlds": {
-            "name": "高リスク TLD",
-            "description": "統計上、悪意のある活動が大半を占めるトップレベルドメイン（TLD）を自動的にブロックします（例：.zip、.mov、.top）。リストは世界中の不正利用に関するレピュテーションデータに基づいてリアルタイムで更新されるため、手動で設定することなく、フィッシングやスパムに使われる安価な使い捨てドメインの大規模なネットワークから保護します。",
-            "enable": "高リスク TLD をブロックする"
+    "identify": {
+      "name": "デバイスの識別",
+      "description": "以下の手順に従うことで、分析とログでデバイスを識別できます。",
+      "apps": {
+        "name": "アプリ",
+        "instructions": "アプリの設定で「Send Device Name」（Windows では「Report Device Name」）を有効にします。"
+      },
+      "dot": {
+        "instructions": "表示されたドメイン名の前に識別名を付加します（識別名には半角英数 <1>a-z</1>、<3>A-Z</3>、<5>0-9</5> およびハイフン <7>-</7> のみが使用できます）。スペースの代わりには <9>--</9> を使用してください。",
+        "example": "例えば「<1>John Router</1>」の場合は、DNS-over-TLS エンドポイントとして <3>John--Router-{{profile}}.dns.nextdns.io</3> を使用します。"
+      },
+      "doh": {
+        "instructions": "提供された URL の末尾に識別名を追加します（識別名は URL エンコードする必要があります）。",
+        "example": "例えば「<1>John's Firefox</1>」の場合は、DNS-over-HTTPS エンドポイントとして <3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> を使用します。"
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "脅威情報フィード",
+      "description": "最も信頼できる脅威情報フィードを組み合わせ、マルウェアの配布、フィッシング攻撃、コマンドアンドコントロールサーバーの運用に使われることが知られているドメインをブロックします。脅威情報フィードはすべてリアルタイムで更新されます。",
+      "enable": "脅威情報フィードを使用する"
+    },
+    "ai": {
+      "name": "AI による脅威検知",
+      "description": "当社の AI 技術によって検出された数百万の脅威をブロックします。数百のシグナル、テラバイト規模の学習データ、リアルタイムの意思決定を組み合わせた、DNS 用にゼロから設計された独自の AI エンジンです。対象には、IDN ホモグラフ、タイポスクワッティング、コンボスクワッティング、DGA ドメイン、ブランドのなりすまし、認証情報の窃取、マルウェアの配布、悪意のあるインフラを隠すために使われるおとりウェブサイトが含まれます。",
+      "enable": "AI による脅威検知を有効にする"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google セーフ ブラウジング",
+      "description": "Google セーフ ブラウジングを使用して、マルウェアやフィッシングのドメインをブロックします。この技術は、危険なウェブサイトを検出するために毎日数十億の URL を調べます。一部のブラウザに組み込まれたバージョンとは異なり、パブリック IP アドレスを脅威と関連付けず、ブロックの回避も許可しません。",
+      "enable": "Google セーフ ブラウジングを有効にする"
+    },
+    "cryptojacking": {
+      "name": "暗号通貨のマイニング",
+      "description": "暗号通貨のマイニングに使用されるドメインをブロックし、クリプトジャッキング（デバイスを無断で使用して暗号通貨をマイニングする行為）の防止に役立ちます。",
+      "enable": "暗号通貨のマイニングをブロックする"
+    },
+    "dnsRebinding": {
+      "name": "ローカルネットワークのアドレス",
+      "description": "ローカルネットワークのアドレスを含む DNS 応答をブロックし、DNS リバインディング攻撃からデバイスを保護するのに役立ちます。",
+      "enable": "ローカルネットワークのアドレスをブロックする"
+    },
+    "homograph": {
+      "name": "IDN ホモグラフ",
+      "description": "見た目の似た文字を使って他のドメインを偽装する国際化ドメイン名（IDN）をブロックします。たとえば、ラテン文字「e」をキリル文字「е」に置き換えたドメインなどです。",
+      "enable": "IDN ホモグラフをブロックする"
+    },
+    "typosquatting": {
+      "name": "タイポスクワッティング",
+      "description": "ブラウザにウェブサイトのアドレスを誤入力するユーザーを狙って、攻撃者が登録したドメインをブロックします。たとえば、google.com の代わりに gooogle.com と入力した場合などです。",
+      "enable": "タイポスクワッティングをブロックする"
+    },
+    "dga": {
+      "name": "ドメイン生成アルゴリズム",
+      "description": "ドメイン生成アルゴリズム（DGA）によって生成され、さまざまな系統のマルウェアがコマンドアンドコントロールサーバーとの通信の接点として使用するドメインをブロックします。",
+      "enable": "DGA ドメインをブロックする"
+    },
+    "nrd": {
+      "name": "新規登録ドメイン",
+      "description": "登録から 30 日未満のドメインをブロックします。これらのドメインは、攻撃者が悪意のあるキャンペーンを展開する際に好んで使用することが知られています。",
+      "enable": "新規登録ドメインをブロックする"
+    },
+    "ddns": {
+      "name": "ダイナミック DNS ホスト名",
+      "description": "ダイナミック DNS（DDNS）サービスを利用すると、攻撃者は検証や本人確認を受けることなく、無料ですばやくホスト名を設定できます。正当な DDNS ホスト名が日常的にアクセスされることはまれですが、悪意のある DDNS ホスト名はフィッシングキャンペーンで広く使用されています。",
+      "disclaimer": "DDNS を利用している場合、この設定は DDNS サービス自体のウェブサイトや更新用 API をブロックしないことにご注意ください。",
+      "enable": "ダイナミック DNS ホスト名をブロックする"
+    },
+    "parked": {
+      "name": "ドメインパーキングサイト",
+      "description": "ドメインパーキングサイトは、多くの場合、広告で埋め尽くされ、実質的な価値のない単一ページのウェブサイトです。ドメインパーキングの収益化に使われる広告ネットワークやリダイレクトによって、訪問者が詐欺、フィッシングページ、悪意のあるダウンロードに誘導されることがあります。",
+      "enable": "ドメインパーキングサイトをブロックする"
+    },
+    "tld": {
+      "name": "トップレベルドメイン（TLD）",
+      "description": "特定の TLD に属するすべてのドメインとサブドメインをブロックします。",
+      "add": "TLD を追加",
+      "sections": {
+        "spamhaus": "Spamhaus 調べ：最も悪用されている TLD",
+        "all": "すべての TLD"
+      }
+    },
+    "csam": {
+      "name": "児童性的虐待コンテンツ（CSAM）",
+      "description": "カナダ児童保護センターが運営する Project Arachnid の協力により、児童性的虐待コンテンツをホストするドメインをブロックします。ドメインをブロックしても、Project Arachnid に情報が送信されることはありません。",
+      "enable": "児童性的虐待コンテンツをブロックする"
+    },
+    "newlyActiveDomains": {
+      "name": "新規アクティブドメイン",
+      "description": "初めてアクセスされるドメインや、過去の利用が少ないドメインをブロックします。ドメインを信頼する前に、正当な利用実績が確認できることを必須とすることで、ゼロデイ攻撃や「潜伏型」の脅威を防ぎ、悪意のあるドメインに事前にアクセスして信頼性を装う「プレウォーミング」の試みを効果的に無力化します。",
+      "enable": "新規アクティブドメインをブロックする"
+    },
+    "freeHostingDomains": {
+      "name": "無料ホスティングドメイン",
+      "description": "無料のウェブホスティングサービスが標準で提供するサブドメイン（例：*.pages.dev、*.vercel.app、*.netlify.app）をブロックします。これらの「無料ホスティングドメイン」（FHD）は、フィッシングサイトの設置やレピュテーションフィルターの回避に広く悪用されています。独自ドメインでこれらのサービスを利用する正当なウェブサイトには影響しません。",
+      "enable": "無料ホスティングドメインをブロックする"
+    },
+    "tunnelingEndpoints": {
+      "name": "トンネリングエンドポイント",
+      "description": "ローカルのトラフィックをトンネル経由でインターネットに公開するサービス（例：ngrok、Cloudflare Tunnel）をブロックします。攻撃者はこれらのツールを頻繁に利用して、ファイアウォールを回避し、背後のインフラを隠しながらランダムなサブドメインでフィッシングページを公開します。",
+      "enable": "トンネリングエンドポイントをブロックする"
+    },
+    "dataDropServices": {
+      "name": "データドロップサービス",
+      "description": "テキスト、ファイル、JSON・設定データの共有や、Webhook リクエスト、DNS クエリ、メールなどの受信データの収集に特化したサービスへのアクセスをブロックします。これらのサービスの正当な利用も対象に含まれます。",
+      "enable": "データドロップサービスをブロックする"
+    },
+    "residentialHosting": {
+      "name": "住宅回線ホスティング",
+      "description": "商用データセンターではなく、インターネットサービスプロバイダー（ISP）の住宅向け IP アドレス範囲に名前解決されるドメインをブロックします。正当なウェブサービスが一般家庭向けの回線でホストされることはまれですが、ボットネットの C2 サーバーやフィッシング用プロキシは、侵害された家庭用ルーターで頻繁に稼働しています。",
+      "enable": "住宅回線ホスティングをブロックする"
+    },
+    "untrustedCertificates": {
+      "name": "信頼されていない証明書",
+      "description": "信頼されていない、または不明な認証局によって署名された SSL/TLS 証明書（自己署名証明書など）を提示するドメインをブロックします。正当なウェブサイトはほぼ例外なく信頼された証明書を使用しますが、広く流通するマルウェアのコマンドアンドコントロール（C2）サーバーの 60% 近くは、自己署名証明書や信頼されていない認証局が発行した証明書を利用して、追跡につながる記録を残さずに通信を暗号化しています。",
+      "enable": "信頼されていない証明書をブロックする"
+    },
+    "fastFluxNetworks": {
+      "name": "Fast Flux ネットワーク",
+      "description": "検出を逃れるために、侵害されたデバイスの分散ネットワーク（ボットネット）上で IP アドレスを高速に切り替えるドメインをブロックします。このヒューリスティックは、DNS の生存時間（TTL）や IP アドレスの多様性に見られる特定の異常を識別します。これらは悪意のあるインフラに特有のもので、正当なコンテンツ配信ネットワーク（CDN）とは異なります。",
+      "enable": "Fast Flux ネットワークをブロックする"
+    },
+    "dnsDataExfiltration": {
+      "name": "DNS データ持ち出し",
+      "description": "DNS プロトコルを利用してネットワークからデータを密かに持ち出したり、隠されたコマンド（C2）を受信したりするドメインをブロックします。このヒューリスティックは、異常に長いサブドメイン、高いエントロピー、通常とは異なるクエリタイプ（TXT など）といった DNS クエリのパターンをリアルタイムで分析し、従来のファイアウォールをすり抜ける、少量ずつ時間をかけたデータ窃取やマルウェアのビーコン通信（Cobalt Strike など）を検出して阻止します。",
+      "enable": "DNS データ持ち出しをブロックする"
+    },
+    "dnsPayloadDelivery": {
+      "name": "DNS ペイロード配信",
+      "description": "DNS 応答に含められるデータを制限し、日常的なウェブ閲覧を維持しながら、隠されたコマンドやペイロードがデバイスに配信されるのを妨げます。",
+      "enable": "DNS ペイロード配信を妨げる"
+    },
+    "decentralizedWebGateways": {
+      "name": "分散型ウェブゲートウェイ",
+      "description": "分散型ウェブ（IPFS など）と通常のブラウザをつなぐ公開ゲートウェイをブロックします。攻撃者はこれらのサービスを広く悪用して、「改変できない」フィッシングページやマルウェアを公開し、従来の削除措置やレピュテーションフィルターを回避することで脅威を存続させます。",
+      "enable": "分散型ウェブゲートウェイをブロックする"
+    },
+    "highRiskTlds": {
+      "name": "高リスク TLD",
+      "description": "統計上、悪意のある活動が大半を占めるトップレベルドメイン（TLD）を自動的にブロックします（例：.zip、.mov、.top）。リストは世界中の不正利用に関するレピュテーションデータに基づいてリアルタイムで更新されるため、手動で設定することなく、フィッシングやスパムに使われる安価な使い捨てドメインの大規模なネットワークから保護します。",
+      "enable": "高リスク TLD をブロックする"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "ブロックリスト",
+      "description": "利用可能な最も人気のあるブロックリストを使用して広告とトラッカーをブロックします。すべてのリストはリアルタイムで更新されます。",
+      "add": "ブロックリストを追加",
+      "entries_other": "{{count, number}} エントリ",
+      "updated": "<1></1>に更新",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS 広告・トラッカーブロックリスト",
+          "description": "すべての国で広告とトラッカーをブロックする包括的なブロックリストです。最初に使うブロックリストとして推奨します。"
         }
+      },
+      "sortBy": {
+        "popularity": "人気",
+        "name": "名前",
+        "entries": "エントリ数",
+        "updated": "更新日"
+      }
     },
-    "privacy": {
-        "blocklists": {
-            "name": "ブロックリスト",
-            "description": "利用可能な最も人気のあるブロックリストを使用して広告とトラッカーをブロックします。すべてのリストはリアルタイムで更新されます。",
-            "add": "ブロックリストを追加",
-            "entries_other": "{{count, number}} エントリ",
-            "updated": "<1></1>に更新",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS 広告・トラッカーブロックリスト",
-                    "description": "すべての国で広告とトラッカーをブロックする包括的なブロックリストです。最初に使うブロックリストとして推奨します。"
-                }
-            },
-            "sortBy": {
-                "popularity": "人気",
-                "name": "名前",
-                "entries": "エントリ数",
-                "updated": "更新日"
-            },
-            "entries_one": ""
+    "native": {
+      "name": "ネイティブトラッキング防止",
+      "description": "デバイス上の活動を広範囲に追跡するトラッカーをブロックします。これらは多くの場合、OS レベルで動作し、アクセスするすべてのウェブサイト、入力内容、常時の位置情報などを追跡する可能性があります。",
+      "add": "追加",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "スマートフォン、タブレット、スマートテレビ、ルーター"
         },
-        "native": {
-            "name": "ネイティブトラッキング防止",
-            "description": "デバイス上の活動を広範囲に追跡するトラッカーをブロックします。これらは多くの場合、OS レベルで動作し、アクセスするすべてのウェブサイト、入力内容、常時の位置情報などを追跡する可能性があります。",
-            "add": "追加",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "スマートフォン、タブレット、スマートテレビ、ルーター"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "スマートフォンとタブレット"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "スマートフォン、タブレット、スマートテレビ"
-                },
-                "alexa": {
-                    "name": "Alexa",
-                    "devices": "Alexa 対応デバイス"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "すべてのバージョン"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS、macOS、tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "すべての Roku デバイス"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "スピーカー"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "スマートフォンとタブレット"
         },
-        "disguised": {
-            "name": "偽装したサードパーティトラッカーをブロック",
-            "description": "ITP のようなブラウザのプライバシー保護を回避するために、自身をファーストパーティに偽装しているサードパーティのトラッカーを自動的に検出してブロックします。",
-            "enable": "偽装したサードパーティトラッカーをブロックする"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "スマートフォン、タブレット、スマートテレビ"
         },
-        "affiliate": {
-            "name": "アフィリエイトとトラッキングリンクを許可する",
-            "description": "セール情報サイト、メール、検索結果などでよく使われるアフィリエイトとトラッキングのドメインを許可します。これらは通常、手動でリンクをクリックした後にのみアクセスされます。",
-            "relay": "プライバシーを保護するため、これらのウェブサイトには IP アドレスが自動的に隠されます。",
-            "enable": "アフィリエイトとトラッキングリンクを許可する"
+        "alexa": {
+          "name": "Alexa",
+          "devices": "Alexa 対応デバイス"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "すべてのバージョン"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS、macOS、tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "すべての Roku デバイス"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "スピーカー"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "ウェブサイト、アプリ、ゲーム",
-            "description": "特定のウェブサイト、アプリ、ゲームへのアクセスを制限します。",
-            "add": "ウェブサイト、アプリ、ゲームを追加",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "フォートナイト",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "リーグ・オブ・レジェンド",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "ロブロックス",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "ティンダー",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "X",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "偽装したサードパーティトラッカーをブロック",
+      "description": "ITP のようなブラウザのプライバシー保護を回避するために、自身をファーストパーティに偽装しているサードパーティのトラッカーを自動的に検出してブロックします。",
+      "enable": "偽装したサードパーティトラッカーをブロックする"
+    },
+    "affiliate": {
+      "name": "アフィリエイトとトラッキングリンクを許可する",
+      "description": "セール情報サイト、メール、検索結果などでよく使われるアフィリエイトとトラッキングのドメインを許可します。これらは通常、手動でリンクをクリックした後にのみアクセスされます。",
+      "relay": "プライバシーを保護するため、これらのウェブサイトには IP アドレスが自動的に隠されます。",
+      "enable": "アフィリエイトとトラッキングリンクを許可する"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "ウェブサイト、アプリ、ゲーム",
+      "description": "特定のウェブサイト、アプリ、ゲームへのアクセスを制限します。",
+      "add": "ウェブサイト、アプリ、ゲームを追加",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "フォートナイト",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "リーグ・オブ・レジェンド",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "ロブロックス",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "ティンダー",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "X",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "カテゴリ",
+      "description": "特定のカテゴリのウェブサイトやアプリへのアクセスを制限します。",
+      "add": "カテゴリを追加",
+      "categories": {
+        "dating": {
+          "name": "出会い系サイト",
+          "description": "すべての出会い系サイトとアプリをブロックします。"
         },
+        "gambling": {
+          "name": "ギャンブル",
+          "description": "ギャンブルのコンテンツをブロックします。"
+        },
+        "gaming": {
+          "name": "オンラインゲーム",
+          "description": "オンラインゲームサイト、オンラインゲームアプリ、オンラインゲームネットワーク（Xbox、PlayStation Network など）をブロックします。"
+        },
+        "piracy": {
+          "name": "著作権侵害",
+          "description": "P2P ウェブサイトやプロトコル、著作権を侵害するストリーミングサイト、および著作権で保護されたコンテンツの違法配布に主に使われる一般的な動画ホスティングサイトをブロックします。"
+        },
+        "porn": {
+          "name": "ポルノ",
+          "description": "アダルトコンテンツやポルノコンテンツをブロックします。売春サイト、pornhub.com、および類似のドメインが含まれます。"
+        },
+        "social-networks": {
+          "name": "ソーシャルネットワーク",
+          "description": "すべてのソーシャルネットワークサイトとアプリ（Facebook、Instagram、TikTok、Reddit など）をブロックします。メッセージングアプリはブロックしません。"
+        },
+        "video-streaming": {
+          "name": "動画ストリーミング",
+          "description": "動画ストリーミングサービス（YouTube、Netflix、Disney+、違法ストリーミングサイト、動画ポルノサイトなど）および動画ベースのソーシャルネットワーク（TikTok など）をブロックします。また、あらゆるネットワークで帯域幅の使用量を削減するのに役立ちます。"
+        }
+      }
+    },
+    "recreation": {
+      "name": "娯楽時間",
+      "start": "開始時刻",
+      "end": "終了時刻",
+      "description": "上記のウェブサイト、アプリ、ゲーム、カテゴリの一部をブロックしない時間帯を、曜日ごとに設定します。たとえば、月曜日と火曜日の午後 6 時から 8 時まで Facebook を許可できます。",
+      "set": "娯楽時間を設定",
+      "howto": "娯楽時間を有効にするには、上記のセクションの <1></1> ボタンを使用します。"
+    },
+    "safesearch": {
+      "name": "セーフサーチ",
+      "description": "すべての主要な検索エンジンで、露骨な表現を含む検索結果（画像や動画を含む）をフィルタリングします。この機能をサポートしていない検索エンジンへのアクセスもブロックされます。",
+      "enable": "セーフサーチを強制する"
+    },
+    "youtubeRestricted": {
+      "name": "YouTube の制限付きモード",
+      "description": "YouTube の成人向け動画を除外し、埋め込まれた成人向け動画が他のウェブサイトで見られないようにブロックします。これにより、すべてのコメントも非表示になります。",
+      "enable": "YouTube の制限付きモードを強制する"
+    },
+    "bypass": {
+      "name": "フィルタリング回避手法をブロック",
+      "description": "ネットワーク上で NextDNS のフィルタリングを回避するために利用される手法の使用を防止または妨害します。これには、VPN、プロキシ、Tor 関連のソフトウェア、暗号化された DNS のプロバイダーが含まれます。",
+      "enable": "フィルタリング回避手法をブロックする"
+    }
+  },
+  "xlist": {
+    "placeholder": "ドメインを追加...",
+    "errors": {
+      "required": "ドメインを入力してください。",
+      "ip": "IP アドレスではなくドメインを入力してください。",
+      "invalid": "有効なドメインを入力してください。",
+      "tld": "TLD 全体をブロックしようとしているようです。「セキュリティ」セクションの「トップレベルドメイン（TLD）」機能を使用してください。",
+      "exists": "このドメインは既に追加されています。"
+    },
+    "empty": "ドメインはまだありません。",
+    "denylist": {
+      "info": "ドメインを拒否すると、そのすべてのサブドメインが自動的に拒否されます。"
+    },
+    "allowlist": {
+      "info": "ドメインを許可すると、そのすべてのサブドメインが自動的に許可されます。許可は、セキュリティ機能を含む他のすべてのものより優先されます。"
+    }
+  },
+  "analytics": {
+    "counters": {
+      "all_other": "<0>{{count, number}}</0><1>クエリ</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>ブロックされたクエリ</1>",
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0>の</0><1>クエリをブロック</1></1>"
+    },
+    "queries": {
+      "name": "クエリ",
+      "description": "クエリ数の推移。",
+      "queries": {
+        "all_other": "<0>{{count, number}}</0><1> クエリ</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> ブロックされたクエリ</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "解決されたドメイン",
+        "description": "フィルタリング設定に該当しなかった、または手動で許可されたために解決されたドメイン。"
+      },
+      "blocked": {
+        "name": "ブロックされたドメイン",
+        "description": "セキュリティ、プライバシー、ペアレンタルコントロールの設定によって、または手動で拒否されたためにブロックされたドメイン。"
+      },
+      "root": {
+        "name": "ルートドメイン",
+        "description": "ルートドメインとそのすべてのサブドメインに対して行われたすべてのクエリの集計。"
+      },
+      "empty": "ドメインはまだありません。"
+    },
+    "reasons": {
+      "name": "ブロックの理由",
+      "description": "最も多くのクエリをブロックしたセキュリティ、プライバシー、ペアレンタルコントロールの設定。",
+      "empty": "ブロックされたドメインはまだありません。"
+    },
+    "devices": {
+      "name": "デバイス",
+      "description": "クエリ元デバイス。",
+      "empty": "デバイスはまだありません。",
+      "unidentified": {
+        "name": "未識別のデバイス"
+      }
+    },
+    "ips": {
+      "name": "IP アドレス",
+      "description": "クエリ元 IP アドレス。",
+      "empty": "IP アドレスはまだありません。"
+    },
+    "gafam": {
+      "name": "GAFAM 占有率",
+      "description": "「GAFAM」（Google、Amazon、Facebook（現 Meta）、Apple、Microsoft）は、数多くの人気サービスを所有する主要なインターネット企業 5 社です。サービスは別の名前で運営されることも多く、Meta には WhatsApp や Instagram などがあります。",
+      "queries_other": "{{count, number}} クエリ",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Meta"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "その他"
+        }
+      }
+    },
+    "encrypted": {
+      "name": "暗号化された DNS",
+      "description": "暗号化されたトランスポート（DNS-over-HTTPS、DNS-over-TLS または公式の NextDNS アプリ）を使用して行われたクエリの割合。",
+      "empty": "クエリはまだありません。"
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "DNSSEC で検証されたクエリの割合。",
+      "empty": "クエリはまだありません。"
+    },
+    "destination": {
+      "name": "トラフィックの宛先",
+      "description": "DNS クエリに基づいて推定した宛先国。",
+      "queries_other": "{{count, number}} クエリ",
+      "topDomains": "上位ドメイン"
+    }
+  },
+  "logs": {
+    "blockedOnly": "ブロックされたクエリのみ",
+    "raw": "生の DNS ログ",
+    "empty": "ログはまだありません。",
+    "log": {
+      "actionBlock": "ブロック",
+      "actionAllow": "許可",
+      "dnssec": "DNSSEC で検証済み。",
+      "clients": {
+        "nextdns-ios": "NextDNS（iOS 版）",
+        "nextdns-android": "NextDNS（Android 版）",
+        "nextdns-macos": "NextDNS（macOS 版）",
+        "nextdns-windows": "NextDNS（Windows 版）",
+        "nextdns-cli": "NextDNS CLI クライアント",
+        "nextdns-chromeos": "NextDNS（ChromeOS 版）",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "MikroTik",
+        "apple-profile": "Apple 構成プロファイル",
+        "yogadns": "YogaDNS",
+        "tailscale": "Tailscale"
+      },
+      "blockedBy": "<1>{{lists, list}}</1> によりブロック。",
+      "allowedBy": "<1>{{lists, list}}</1> により許可。",
+      "manual": {
+        "deny": "手動で拒否。",
+        "allow": "手動で許可。"
+      },
+      "insights": {
+        "show": "トラッカーの詳細を表示",
+        "hide": "トラッカーの詳細を非表示",
         "categories": {
-            "name": "カテゴリ",
-            "description": "特定のカテゴリのウェブサイトやアプリへのアクセスを制限します。",
-            "add": "カテゴリを追加",
-            "categories": {
-                "dating": {
-                    "name": "出会い系サイト",
-                    "description": "すべての出会い系サイトとアプリをブロックします。"
-                },
-                "gambling": {
-                    "name": "ギャンブル",
-                    "description": "ギャンブルのコンテンツをブロックします。"
-                },
-                "gaming": {
-                    "name": "オンラインゲーム",
-                    "description": "オンラインゲームサイト、オンラインゲームアプリ、オンラインゲームネットワーク（Xbox、PlayStation Network など）をブロックします。"
-                },
-                "piracy": {
-                    "name": "著作権侵害",
-                    "description": "P2P ウェブサイトやプロトコル、著作権を侵害するストリーミングサイト、および著作権で保護されたコンテンツの違法配布に主に使われる一般的な動画ホスティングサイトをブロックします。"
-                },
-                "porn": {
-                    "name": "ポルノ",
-                    "description": "アダルトコンテンツやポルノコンテンツをブロックします。売春サイト、pornhub.com、および類似のドメインが含まれます。"
-                },
-                "social-networks": {
-                    "name": "ソーシャルネットワーク",
-                    "description": "すべてのソーシャルネットワークサイトとアプリ（Facebook、Instagram、TikTok、Reddit など）をブロックします。メッセージングアプリはブロックしません。"
-                },
-                "video-streaming": {
-                    "name": "動画ストリーミング",
-                    "description": "動画ストリーミングサービス（YouTube、Netflix、Disney+、違法ストリーミングサイト、動画ポルノサイトなど）および動画ベースのソーシャルネットワーク（TikTok など）をブロックします。また、あらゆるネットワークで帯域幅の使用量を削減するのに役立ちます。"
-                }
-            }
+          "advertising": {
+            "description": "データ収集、行動分析、リターゲティングなどの広告または広告関連サービスを提供します。"
+          },
+          "comments": {
+            "description": "記事や製品レビューのコメント欄を提供します。"
+          },
+          "customer_interaction": {
+            "description": "チャット、メールメッセージング、カスタマーサポート、その他の対話ツールが含まれます。"
+          },
+          "essential": {
+            "description": "タグマネージャー、プライバシーに関する通知、およびウェブサイトの機能にとって必要なテクノロジーが含まれます。"
+          },
+          "adult_advertsing": {
+            "description": "一般的にアダルトコンテンツサイトに表示される広告を配信します。"
+          },
+          "site_analytics": {
+            "description": "サイトの使用状況とパフォーマンスに関するデータを収集して分析します。"
+          },
+          "social_media": {
+            "description": "ソーシャルメディアサイトに関連する機能を埋め込みます。"
+          },
+          "audio_video_player": {
+            "description": "ウェブサイトで動画や音声コンテンツを公開、配信、最適化できるようにします。"
+          },
+          "cdn": {
+            "description": "さまざまなサイト機能向けのリソースを、通常は多数の異なる顧客に対して配信するコンテンツ配信ネットワーク。"
+          },
+          "misc": {
+            "description": "このトラッカーは他のカテゴリに適合しないか、まだラベル付けされていません。"
+          },
+          "pornvertising": {
+            "description": "一般的にアダルトコンテンツサイトに表示される広告を配信します。"
+          },
+          "hosting": {
+            "description": "これは、コンテンツプロバイダーまたはサイト所有者が使用するサービスです。"
+          },
+          "extensions": {
+            "description": "ブラウザのトラフィックを傍受して分析できる、ユーザーデバイス上のソフトウェア（中間者）。"
+          }
         },
-        "recreation": {
-            "name": "娯楽時間",
-            "start": "開始時刻",
-            "end": "終了時刻",
-            "description": "上記のウェブサイト、アプリ、ゲーム、カテゴリの一部をブロックしない時間帯を、曜日ごとに設定します。たとえば、月曜日と火曜日の午後 6 時から 8 時まで Facebook を許可できます。",
-            "set": "娯楽時間を設定",
-            "howto": "娯楽時間を有効にするには、上記のセクションの <1></1> ボタンを使用します。"
+        "prevalence": {
+          "intensity": {
+            "dangerously": "危険なほど蔓延している",
+            "extremely": "非常に広く普及している",
+            "very": "広く普及している",
+            "commonly": "よく見られる",
+            "relatively": "比較的普及している"
+          },
+          "summary": "{{prevalence}}<2>（ウェブトラフィックの {{percent, percentage}} を追跡）</2>"
         },
-        "safesearch": {
-            "name": "セーフサーチ",
-            "description": "すべての主要な検索エンジンで、露骨な表現を含む検索結果（画像や動画を含む）をフィルタリングします。この機能をサポートしていない検索エンジンへのアクセスもブロックされます。",
-            "enable": "セーフサーチを強制する"
-        },
-        "youtubeRestricted": {
-            "name": "YouTube の制限付きモード",
-            "description": "YouTube の成人向け動画を除外し、埋め込まれた成人向け動画が他のウェブサイトで見られないようにブロックします。これにより、すべてのコメントも非表示になります。",
-            "enable": "YouTube の制限付きモードを強制する"
-        },
-        "bypass": {
-            "name": "フィルタリング回避手法をブロック",
-            "description": "ネットワーク上で NextDNS のフィルタリングを回避するために利用される手法の使用を防止または妨害します。これには、VPN、プロキシ、Tor 関連のソフトウェア、暗号化された DNS のプロバイダーが含まれます。",
-            "enable": "フィルタリング回避手法をブロックする"
-        }
+        "ownedBy": "<0>所有者：</0><1>{{company}}</1>",
+        "source": "トラッカー情報の提供元："
+      }
     },
-    "xlist": {
-        "placeholder": "ドメインを追加...",
-        "errors": {
+    "settings": "ログのオプション",
+    "streaming": "ログのリアルタイム更新",
+    "toggleTimeFormat": "タイムスタンプの形式を切り替え"
+  },
+  "deviceSelector": {
+    "all": "すべてのデバイス",
+    "howto": "セットアップページで、デバイスを識別する方法をご確認ください。"
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "過去 30 分間",
+      "6h": "過去 6 時間",
+      "24h": "過去 24 時間",
+      "7d": "過去 7 日間",
+      "30d": "過去 30 日間",
+      "3M": "過去 3 か月間"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "名前",
+      "description": "このプロファイルの名前を指定してください。"
+    },
+    "logs": {
+      "name": "ログ",
+      "description": "ログ設定を微調整します。",
+      "enable": "ログを有効にする",
+      "privacy": {
+        "name": "プライバシー設定",
+        "ip": "クライアントの IP アドレスを記録する",
+        "domains": "ドメインを記録する"
+      },
+      "retention": {
+        "name": "ログ保持期間",
+        "options": {
+          "1h": "1 時間",
+          "6h": "6 時間",
+          "1d": "1 日",
+          "1w": "1 週間",
+          "1m": "1 か月",
+          "3m": "3 か月",
+          "6m": "6 か月",
+          "1y": "1 年",
+          "2y": "2 年"
+        }
+      },
+      "location": {
+        "name": "保存場所",
+        "locations": {
+          "us": {
+            "name": "アメリカ合衆国",
+            "description": "ログは米国内に保存されます。これがデフォルトです。"
+          },
+          "eu": {
+            "name": "欧州連合",
+            "description": "ログは欧州連合の加盟国内に保存されます。"
+          },
+          "ch": {
+            "name": "スイス",
+            "description": "ログは、厳格なプライバシー法で知られるスイスのチューリッヒに保存されます。"
+          }
+        },
+        "confirm": {
+          "title": "保存場所の変更",
+          "text": "ログの保存場所を変更すると、このプロファイルの過去のログと分析がすべて削除されます。"
+        }
+      },
+      "download": {
+        "button": "ログをダウンロード"
+      },
+      "clear": {
+        "button": "ログをクリア",
+        "confirm": {
+          "text": "このプロファイルのログをすべてクリアしてもよろしいですか？この操作は元に戻せません。",
+          "submit": "クリア"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "ブロックページ",
+      "description": "ドメインがブロックされているときにブロックページを表示します。これにより、ページの読み込み時間がわずかに長くなり、場合によっては HTTPS 警告が表示されることがあります。無効にすると、ブロックされたクエリは未指定のアドレス（0.0.0.0 または ::）で応答されます。",
+      "enable": "ブロックページを有効にする",
+      "ca": {
+        "name": "NextDNS ルート CA",
+        "description": "<1>{{link}}</1> にあるルート CA をインストールして信頼することで、ブロックページの読み込み時に表示される HTTPS 警告をなくすことができます。手順は<3>こちら</3>をお読みください。"
+      }
+    },
+    "performance": {
+      "name": "パフォーマンス",
+      "description": "ブラウジングを高速化します。",
+      "ecs": {
+        "name": "匿名化された EDNS クライアントサブネット",
+        "description": "IP アドレスを公開することなく、コンテンツ配信ネットワークからのデータ配信を高速化します。",
+        "enable": "匿名化された EDNS クライアントサブネットを有効にする"
+      },
+      "cache": {
+        "name": "キャッシュブースト",
+        "description": "最小 TTL（Time to live）を適用することで、DNS クエリを最小限に抑えます。",
+        "enable": "キャッシュブーストを有効にする"
+      },
+      "flatten": {
+        "name": "CNAME フラットニング",
+        "description": "CNAME を追跡するリゾルバーが不要なクエリを実行し、中間ドメインでログを汚染するのを防ぎます。",
+        "enable": "CNAME フラットニングを有効にする"
+      }
+    },
+    "ageVerification": {
+      "name": "年齢確認を回避",
+      "description": "アダルトコンテンツを扱うサイトなど、一部のウェブサイトがアクセスを許可する前に訪問者の年齢を確認するために行う年齢確認を自動的に回避します。",
+      "acknowledgment": "この機能を有効にすることにより、コンテンツへのアクセスに必要な法定年齢に達していることを確認します。"
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 は、ブロックチェーンベースのドメインレジストリ（Ethereum Name Service など）や分散コンテンツストレージおよび配信ネットワーク（IPFS など）などの革新的なテクノロジーで構成される、分散型で検閲に強いオンラインエコシステムを指します。有効にすると、NextDNS はこの新しいウェブへのフィルタリングされていないゲートウェイとして機能し、何もインストールせずに直接体験できるようになります。",
+      "tips": "現在、ほとんどのブラウザは従来のトップレベルドメインしかサポートしていないため、Web3 ドメインに直接アクセスする場合は、末尾にスラッシュ（「<1>/</1>」）を追加する必要があります（例：「<5>vitalik.eth</5>」ではなく「<3>vitalik.eth/</3>」）。",
+      "enable": "Web3 を有効にする"
+    },
+    "rewrites": {
+      "name": "書き換え",
+      "description": "任意のドメインの DNS 応答を設定または上書きします。書き換えはサブドメインにも適用され、応答アドレスとしてローカル IP アドレスも設定可能です。",
+      "new": "新しい書き換えルール",
+      "form": {
+        "domain": {
+          "label": "ドメイン",
+          "placeholder": "myprinter.lan、myinternetbox.com、...",
+          "errors": {
             "required": "ドメインを入力してください。",
             "ip": "IP アドレスではなくドメインを入力してください。",
             "invalid": "有効なドメインを入力してください。",
-            "tld": "TLD 全体をブロックしようとしているようです。「セキュリティ」セクションの「トップレベルドメイン（TLD）」機能を使用してください。",
-            "exists": "このドメインは既に追加されています。"
+            "taken": "そのドメインの書き換えルールは既に存在します。"
+          }
         },
-        "empty": "ドメインはまだありません。",
-        "denylist": {
-            "info": "ドメインを拒否すると、そのすべてのサブドメインが自動的に拒否されます。"
-        },
-        "allowlist": {
-            "info": "ドメインを許可すると、そのすべてのサブドメインが自動的に許可されます。許可は、セキュリティ機能を含む他のすべてのものより優先されます。"
+        "answer": {
+          "label": "応答",
+          "placeholder": "1.2.3.4、sub.example.org、...",
+          "errors": {
+            "required": "応答を入力してください。",
+            "invalid": "応答は有効な IP アドレスまたはドメインである必要があります。"
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "all_other": "<0>{{count, number}}</0><1>クエリ</1>",
-            "blocked_other": "<0>{{count, number}}</0><1>ブロックされたクエリ</1>",
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0>の</0><1>クエリをブロック</1></1>",
-            "blocked_one": "",
-            "all_one": ""
+    "access": {
+      "name": "アクセス",
+      "description": "このプロファイルへの編集アクセスまたは閲覧専用アクセスを他のユーザーに付与します。",
+      "roles": {
+        "editor": "編集者",
+        "viewer": "閲覧者"
+      },
+      "pending": "招待送信済み",
+      "form": {
+        "email": {
+          "label": "メールアドレス",
+          "errors": {
+            "required": "メールアドレスを入力してください。",
+            "invalid": "有効なメールアドレスを入力してください。",
+            "duplicate": "このメールアドレスは既に招待されています。"
+          }
         },
-        "queries": {
-            "name": "クエリ",
-            "description": "クエリ数の推移。",
-            "queries": {
-                "all_other": "<0>{{count, number}}</0><1> クエリ</1>",
-                "blocked_other": "<0>{{count, number}}</0><1> ブロックされたクエリ</1>",
-                "blocked_one": "",
-                "all_one": ""
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "解決されたドメイン",
-                "description": "フィルタリング設定に該当しなかった、または手動で許可されたために解決されたドメイン。"
-            },
-            "blocked": {
-                "name": "ブロックされたドメイン",
-                "description": "セキュリティ、プライバシー、ペアレンタルコントロールの設定によって、または手動で拒否されたためにブロックされたドメイン。"
-            },
-            "root": {
-                "name": "ルートドメイン",
-                "description": "ルートドメインとそのすべてのサブドメインに対して行われたすべてのクエリの集計。"
-            },
-            "empty": "ドメインはまだありません。"
-        },
-        "reasons": {
-            "name": "ブロックの理由",
-            "description": "最も多くのクエリをブロックしたセキュリティ、プライバシー、ペアレンタルコントロールの設定。",
-            "empty": "ブロックされたドメインはまだありません。"
-        },
-        "devices": {
-            "name": "デバイス",
-            "description": "クエリ元デバイス。",
-            "empty": "デバイスはまだありません。",
-            "unidentified": {
-                "name": "未識別のデバイス"
-            }
-        },
-        "ips": {
-            "name": "IP アドレス",
-            "description": "クエリ元 IP アドレス。",
-            "empty": "IP アドレスはまだありません。"
-        },
-        "gafam": {
-            "name": "GAFAM 占有率",
-            "description": "「GAFAM」（Google、Amazon、Facebook（現 Meta）、Apple、Microsoft）は、数多くの人気サービスを所有する主要なインターネット企業 5 社です。サービスは別の名前で運営されることも多く、Meta には WhatsApp や Instagram などがあります。",
-            "queries_other": "{{count, number}} クエリ",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Meta"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "その他"
-                }
-            },
-            "queries_one": ""
-        },
-        "encrypted": {
-            "name": "暗号化された DNS",
-            "description": "暗号化されたトランスポート（DNS-over-HTTPS、DNS-over-TLS または公式の NextDNS アプリ）を使用して行われたクエリの割合。",
-            "empty": "クエリはまだありません。"
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "DNSSEC で検証されたクエリの割合。",
-            "empty": "クエリはまだありません。"
-        },
-        "destination": {
-            "name": "トラフィックの宛先",
-            "description": "DNS クエリに基づいて推定した宛先国。",
-            "queries_other": "{{count, number}} クエリ",
-            "topDomains": "上位ドメイン",
-            "queries_one": ""
+        "role": {
+          "label": "権限"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "ブロックされたクエリのみ",
-        "raw": "生の DNS ログ",
-        "empty": "ログはまだありません。",
-        "log": {
-            "actionBlock": "ブロック",
-            "actionAllow": "許可",
-            "dnssec": "DNSSEC で検証済み。",
-            "clients": {
-                "nextdns-ios": "NextDNS（iOS 版）",
-                "nextdns-android": "NextDNS（Android 版）",
-                "nextdns-macos": "NextDNS（macOS 版）",
-                "nextdns-windows": "NextDNS（Windows 版）",
-                "nextdns-cli": "NextDNS CLI クライアント",
-                "nextdns-chromeos": "NextDNS（ChromeOS 版）",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "MikroTik",
-                "apple-profile": "Apple 構成プロファイル",
-                "yogadns": "YogaDNS",
-                "tailscale": "Tailscale"
-            },
-            "blockedBy": "<1>{{lists, list}}</1> によりブロック。",
-            "allowedBy": "<1>{{lists, list}}</1> により許可。",
-            "manual": {
-                "deny": "手動で拒否。",
-                "allow": "手動で許可。"
-            },
-            "insights": {
-                "show": "トラッカーの詳細を表示",
-                "hide": "トラッカーの詳細を非表示",
-                "categories": {
-                    "advertising": {
-                        "description": "データ収集、行動分析、リターゲティングなどの広告または広告関連サービスを提供します。"
-                    },
-                    "comments": {
-                        "description": "記事や製品レビューのコメント欄を提供します。"
-                    },
-                    "customer_interaction": {
-                        "description": "チャット、メールメッセージング、カスタマーサポート、その他の対話ツールが含まれます。"
-                    },
-                    "essential": {
-                        "description": "タグマネージャー、プライバシーに関する通知、およびウェブサイトの機能にとって必要なテクノロジーが含まれます。"
-                    },
-                    "adult_advertsing": {
-                        "description": "一般的にアダルトコンテンツサイトに表示される広告を配信します。"
-                    },
-                    "site_analytics": {
-                        "description": "サイトの使用状況とパフォーマンスに関するデータを収集して分析します。"
-                    },
-                    "social_media": {
-                        "description": "ソーシャルメディアサイトに関連する機能を埋め込みます。"
-                    },
-                    "audio_video_player": {
-                        "description": "ウェブサイトで動画や音声コンテンツを公開、配信、最適化できるようにします。"
-                    },
-                    "cdn": {
-                        "description": "さまざまなサイト機能向けのリソースを、通常は多数の異なる顧客に対して配信するコンテンツ配信ネットワーク。"
-                    },
-                    "misc": {
-                        "description": "このトラッカーは他のカテゴリに適合しないか、まだラベル付けされていません。"
-                    },
-                    "pornvertising": {
-                        "description": "一般的にアダルトコンテンツサイトに表示される広告を配信します。"
-                    },
-                    "hosting": {
-                        "description": "これは、コンテンツプロバイダーまたはサイト所有者が使用するサービスです。"
-                    },
-                    "extensions": {
-                        "description": "ブラウザのトラフィックを傍受して分析できる、ユーザーデバイス上のソフトウェア（中間者）。"
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "危険なほど蔓延している",
-                        "extremely": "非常に広く普及している",
-                        "very": "広く普及している",
-                        "commonly": "よく見られる",
-                        "relatively": "比較的普及している"
-                    },
-                    "summary": "{{prevalence}}<2>（ウェブトラフィックの {{percent, percentage}} を追跡）</2>"
-                },
-                "ownedBy": "<0>所有者：</0><1>{{company}}</1>",
-                "source": "トラッカー情報の提供元："
-            }
-        },
-        "settings": "ログのオプション",
-        "streaming": "ログのリアルタイム更新",
-        "toggleTimeFormat": "タイムスタンプの形式を切り替え"
-    },
-    "deviceSelector": {
-        "all": "すべてのデバイス",
-        "howto": "セットアップページで、デバイスを識別する方法をご確認ください。"
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "過去 30 分間",
-            "6h": "過去 6 時間",
-            "24h": "過去 24 時間",
-            "7d": "過去 7 日間",
-            "30d": "過去 30 日間",
-            "3M": "過去 3 か月間"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "<1>{{name}}</1> を複製",
+      "description": "このプロファイルのすべての設定を新しいプロファイルにコピーします。",
+      "form": {
         "name": {
-            "name": "名前",
-            "description": "このプロファイルの名前を指定してください。"
+          "label": "名前",
+          "placeholder": "自宅用、子供用、職場用、...",
+          "errors": {
+            "required": "名前を入力してください。",
+            "taken": "その名前のプロファイルは既に存在します。"
+          }
         },
-        "logs": {
-            "name": "ログ",
-            "description": "ログ設定を微調整します。",
-            "enable": "ログを有効にする",
-            "privacy": {
-                "name": "プライバシー設定",
-                "ip": "クライアントの IP アドレスを記録する",
-                "domains": "ドメインを記録する"
-            },
-            "retention": {
-                "name": "ログ保持期間",
-                "options": {
-                    "1h": "1 時間",
-                    "6h": "6 時間",
-                    "1d": "1 日",
-                    "1w": "1 週間",
-                    "1m": "1 か月",
-                    "3m": "3 か月",
-                    "6m": "6 か月",
-                    "1y": "1 年",
-                    "2y": "2 年"
-                }
-            },
-            "location": {
-                "name": "保存場所",
-                "locations": {
-                    "us": {
-                        "name": "アメリカ合衆国",
-                        "description": "ログは米国内に保存されます。これがデフォルトです。"
-                    },
-                    "eu": {
-                        "name": "欧州連合",
-                        "description": "ログは欧州連合の加盟国内に保存されます。"
-                    },
-                    "ch": {
-                        "name": "スイス",
-                        "description": "ログは、厳格なプライバシー法で知られるスイスのチューリッヒに保存されます。"
-                    }
-                },
-                "confirm": {
-                    "title": "保存場所の変更",
-                    "text": "ログの保存場所を変更すると、このプロファイルの過去のログと分析がすべて削除されます。"
-                }
-            },
-            "download": {
-                "button": "ログをダウンロード"
-            },
-            "clear": {
-                "button": "ログをクリア",
-                "confirm": {
-                    "text": "このプロファイルのログをすべてクリアしてもよろしいですか？この操作は元に戻せません。",
-                    "submit": "クリア"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "ブロックページ",
-            "description": "ドメインがブロックされているときにブロックページを表示します。これにより、ページの読み込み時間がわずかに長くなり、場合によっては HTTPS 警告が表示されることがあります。無効にすると、ブロックされたクエリは未指定のアドレス（0.0.0.0 または ::）で応答されます。",
-            "enable": "ブロックページを有効にする",
-            "ca": {
-                "name": "NextDNS ルート CA",
-                "description": "<1>{{link}}</1> にあるルート CA をインストールして信頼することで、ブロックページの読み込み時に表示される HTTPS 警告をなくすことができます。手順は<3>こちら</3>をお読みください。"
-            }
-        },
-        "performance": {
-            "name": "パフォーマンス",
-            "description": "ブラウジングを高速化します。",
-            "ecs": {
-                "name": "匿名化された EDNS クライアントサブネット",
-                "description": "IP アドレスを公開することなく、コンテンツ配信ネットワークからのデータ配信を高速化します。",
-                "enable": "匿名化された EDNS クライアントサブネットを有効にする"
-            },
-            "cache": {
-                "name": "キャッシュブースト",
-                "description": "最小 TTL（Time to live）を適用することで、DNS クエリを最小限に抑えます。",
-                "enable": "キャッシュブーストを有効にする"
-            },
-            "flatten": {
-                "name": "CNAME フラットニング",
-                "description": "CNAME を追跡するリゾルバーが不要なクエリを実行し、中間ドメインでログを汚染するのを防ぎます。",
-                "enable": "CNAME フラットニングを有効にする"
-            }
-        },
-        "ageVerification": {
-            "name": "年齢確認を回避",
-            "description": "アダルトコンテンツを扱うサイトなど、一部のウェブサイトがアクセスを許可する前に訪問者の年齢を確認するために行う年齢確認を自動的に回避します。",
-            "acknowledgment": "この機能を有効にすることにより、コンテンツへのアクセスに必要な法定年齢に達していることを確認します。"
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 は、ブロックチェーンベースのドメインレジストリ（Ethereum Name Service など）や分散コンテンツストレージおよび配信ネットワーク（IPFS など）などの革新的なテクノロジーで構成される、分散型で検閲に強いオンラインエコシステムを指します。有効にすると、NextDNS はこの新しいウェブへのフィルタリングされていないゲートウェイとして機能し、何もインストールせずに直接体験できるようになります。",
-            "tips": "現在、ほとんどのブラウザは従来のトップレベルドメインしかサポートしていないため、Web3 ドメインに直接アクセスする場合は、末尾にスラッシュ（「<1>/</1>」）を追加する必要があります（例：「<5>vitalik.eth</5>」ではなく「<3>vitalik.eth/</3>」）。",
-            "enable": "Web3 を有効にする"
-        },
-        "rewrites": {
-            "name": "書き換え",
-            "description": "任意のドメインの DNS 応答を設定または上書きします。書き換えはサブドメインにも適用され、応答アドレスとしてローカル IP アドレスも設定可能です。",
-            "new": "新しい書き換えルール",
-            "form": {
-                "domain": {
-                    "label": "ドメイン",
-                    "placeholder": "myprinter.lan、myinternetbox.com、...",
-                    "errors": {
-                        "required": "ドメインを入力してください。",
-                        "ip": "IP アドレスではなくドメインを入力してください。",
-                        "invalid": "有効なドメインを入力してください。",
-                        "taken": "そのドメインの書き換えルールは既に存在します。"
-                    }
-                },
-                "answer": {
-                    "label": "応答",
-                    "placeholder": "1.2.3.4、sub.example.org、...",
-                    "errors": {
-                        "required": "応答を入力してください。",
-                        "invalid": "応答は有効な IP アドレスまたはドメインである必要があります。"
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "アクセス",
-            "description": "このプロファイルへの編集アクセスまたは閲覧専用アクセスを他のユーザーに付与します。",
-            "roles": {
-                "editor": "編集者",
-                "viewer": "閲覧者"
-            },
-            "pending": "招待送信済み",
-            "form": {
-                "email": {
-                    "label": "メールアドレス",
-                    "errors": {
-                        "required": "メールアドレスを入力してください。",
-                        "invalid": "有効なメールアドレスを入力してください。",
-                        "duplicate": "このメールアドレスは既に招待されています。"
-                    }
-                },
-                "role": {
-                    "label": "権限"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "<1>{{name}}</1> を複製",
-            "description": "このプロファイルのすべての設定を新しいプロファイルにコピーします。",
-            "form": {
-                "name": {
-                    "label": "名前",
-                    "placeholder": "自宅用、子供用、職場用、...",
-                    "errors": {
-                        "required": "名前を入力してください。",
-                        "taken": "その名前のプロファイルは既に存在します。"
-                    }
-                },
-                "button": "複製"
-            }
-        },
-        "delete": {
-            "button": "<1>{{name}}</1> を削除",
-            "warning": "このプロファイルと関連するすべてのログが完全に削除されます。",
-            "confirm": {
-                "text": "<1>{{name}}</1> を削除してもよろしいですか？この操作は元に戻せません。"
-            }
-        },
-        "leave": {
-            "button": "<1>{{name}}</1> から退出",
-            "warning": "このプロファイルへのアクセス権が失われます。",
-            "confirm": {
-                "text": "<1>{{name}}</1> から退出してもよろしいですか？この操作は元に戻せません。"
-            }
-        }
+        "button": "複製"
+      }
+    },
+    "delete": {
+      "button": "<1>{{name}}</1> を削除",
+      "warning": "このプロファイルと関連するすべてのログが完全に削除されます。",
+      "confirm": {
+        "text": "<1>{{name}}</1> を削除してもよろしいですか？この操作は元に戻せません。"
+      }
+    },
+    "leave": {
+      "button": "<1>{{name}}</1> から退出",
+      "warning": "このプロファイルへのアクセス権が失われます。",
+      "confirm": {
+        "text": "<1>{{name}}</1> から退出してもよろしいですか？この操作は元に戻せません。"
+      }
     }
+  }
 }

@@ -707,14 +707,14 @@
       "enable": "Enable Google Safe Browsing"
     },
     "cryptojacking": {
-      "name": "Cryptojacking",
-      "description": "Prevent the unauthorized use of your devices to mine cryptocurrency.",
-      "enable": "Block Cryptojacking"
+      "name": "Cryptocurrency Mining",
+      "description": "Block cryptocurrency mining domains to help prevent cryptojacking—the unauthorized use of your devices to mine cryptocurrency.",
+      "enable": "Block Cryptocurrency Mining"
     },
     "dnsRebinding": {
-      "name": "DNS Rebinding",
-      "description": "Prevent attackers from taking control of your local devices through the Internet by automatically blocking DNS responses containing private IP addresses.",
-      "enable": "Block DNS Rebinding"
+      "name": "Local Network Addresses",
+      "description": "Block DNS responses containing local network addresses to help protect your devices from DNS rebinding attacks.",
+      "enable": "Block Local Network Addresses"
     },
     "homograph": {
       "name": "IDN Homographs",
@@ -803,8 +803,8 @@
     },
     "dnsPayloadDelivery": {
       "name": "DNS Payload Delivery",
-      "description": "Prevent DNS responses from being used to deliver hidden commands or payloads to your devices. Queries for record types that can carry arbitrary data but are unnecessary for everyday browsing — such as TXT or NULL — are blocked entirely. CNAME chains are flattened to their final address, removing intermediate records that could encode hidden data. For standard record types like A and AAAA, oversized answer sections are randomly truncated to corrupt any data encoded across multiple records, while preserving normal DNS functionality.",
-      "enable": "Block DNS Payload Delivery"
+      "description": "Limit the data DNS responses can carry to disrupt the delivery of hidden commands or payloads to your devices, while preserving everyday browsing.",
+      "enable": "Disrupt DNS Payload Delivery"
     },
     "decentralizedWebGateways": {
       "name": "Decentralized Web Gateways",
