@@ -1,6 +1,9 @@
-- Added 10 new NextDNS security settings, including unreleased settings
-- Added client information to log details
-- Added Indonesian translation
-- Minor bug fixes and improvements
+- Added DNSforge to the DNS server list (#47)
+- Allowed hyphens in NextDNS device names (#49)
+- Updated NextDNS security settings with upstream changes
+- Added Swedish localization and updated translations
+- Minor improvements and fixes
 
-**Full Changelog**: https://github.com/eyalm2000/adns/compare/v2.1.2...v2.1.5
+Special thanks to @RayManning for sponsoring!
+
+**Full Changelog**: https://github.com/eyalm2000/adns/compare/v2.1.5...v2.1.6

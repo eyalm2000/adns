@@ -1,0 +1,5 @@
+- Added DNSforge to the DNS server list
+- Allowed hyphens in NextDNS device names
+- Updated NextDNS security settings with upstream changes
+- Added Swedish localization and updated translations
+- Minor improvements and bug fixes
