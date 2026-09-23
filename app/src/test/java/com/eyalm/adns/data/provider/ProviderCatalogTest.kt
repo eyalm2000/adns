@@ -56,6 +56,42 @@ class ProviderCatalogTest {
                 )
             )
         )
+        assertEquals(
+            "dnsforge.de",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("dnsforge"),
+                    presetId = ResolverPresetId("normal"),
+                )
+            )
+        )
+        assertEquals(
+            "clean.dnsforge.de",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("dnsforge"),
+                    presetId = ResolverPresetId("clean"),
+                )
+            )
+        )
+        assertEquals(
+            "hard.dnsforge.de",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("dnsforge"),
+                    presetId = ResolverPresetId("hard"),
+                )
+            )
+        )
+        assertEquals(
+            "blank.dnsforge.de",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("dnsforge"),
+                    presetId = ResolverPresetId("blank"),
+                )
+            )
+        )
     }
 
     @Test

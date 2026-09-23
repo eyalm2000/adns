@@ -284,6 +284,16 @@
     <string name="provider_preset_opendns_standard_description">OpenDNS standard public resolver.</string>
     <string name="provider_preset_opendns_family">Family Shield</string>
     <string name="provider_preset_opendns_family_description">Blocks adult content.</string>
+    <string name="dnsforge">DNSforge</string>
+    <string name="the_public_dnsforge_dns_server">The public dnsforge.de DNS server hosted in Germany.</string>
+    <string name="provider_preset_dnsforge_normal">Normal</string>
+    <string name="provider_preset_dnsforge_normal_description">Blocks ads, trackers, and malware.</string>
+    <string name="provider_preset_dnsforge_clean">Clean</string>
+    <string name="provider_preset_dnsforge_clean_description">Blocks ads, trackers, malware, and adult content, and enables Safe Search where possible.</string>
+    <string name="provider_preset_dnsforge_hard">Hard</string>
+    <string name="provider_preset_dnsforge_hard_description">Strict blocking of ads, trackers, and malware with extensive blocklists.</string>
+    <string name="provider_preset_dnsforge_blank">Blank</string>
+    <string name="provider_preset_dnsforge_blank_description">Unfiltered DNS resolution without blocking.</string>
     <string name="reactivate">Reactivate</string>
     <string name="activation_status_active">PRIVATE DNS CONTROL ACTIVE</string>
     <string name="activation_status_control_only">NEXTDNS CONTROL-ONLY ACTIVE</string>

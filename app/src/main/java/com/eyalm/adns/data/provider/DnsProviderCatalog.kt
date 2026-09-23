@@ -91,6 +91,7 @@ class DnsProviderCatalog(
         val NEXTDNS = ProviderId("nextdns")
         val QUAD9 = ProviderId("quad9")
         val OPENDNS = ProviderId("opendns")
+        val DNSFORGE = ProviderId("dnsforge")
 
 
         val default: DnsProviderCatalog = DnsProviderCatalog(
@@ -220,6 +221,55 @@ class DnsProviderCatalog(
                             titleRes = R.string.provider_preset_opendns_family,
                             descriptionRes = R.string.provider_preset_opendns_family_description,
                             features = setOf(ResolverFeature.AdultContent),
+                        ),
+                    ),
+                ),
+                StandardProviderDefinition(
+                    id = DNSFORGE,
+                    titleRes = R.string.dnsforge,
+                    descriptionRes = R.string.the_public_dnsforge_dns_server,
+                    defaultPresetId = ResolverPresetId("normal"),
+                    presets = listOf(
+                        ResolverPreset(
+                            id = ResolverPresetId("normal"),
+                            hostname = "dnsforge.de",
+                            titleRes = R.string.provider_preset_dnsforge_normal,
+                            descriptionRes = R.string.provider_preset_dnsforge_normal_description,
+                            features = setOf(
+                                ResolverFeature.Ads,
+                                ResolverFeature.Trackers,
+                                ResolverFeature.Malware,
+                            ),
+                        ),
+                        ResolverPreset(
+                            id = ResolverPresetId("clean"),
+                            hostname = "clean.dnsforge.de",
+                            titleRes = R.string.provider_preset_dnsforge_clean,
+                            descriptionRes = R.string.provider_preset_dnsforge_clean_description,
+                            features = setOf(
+                                ResolverFeature.Ads,
+                                ResolverFeature.Trackers,
+                                ResolverFeature.Malware,
+                                ResolverFeature.AdultContent,
+                                ResolverFeature.SafeSearch,
+                            ),
+                        ),
+                        ResolverPreset(
+                            id = ResolverPresetId("hard"),
+                            hostname = "hard.dnsforge.de",
+                            titleRes = R.string.provider_preset_dnsforge_hard,
+                            descriptionRes = R.string.provider_preset_dnsforge_hard_description,
+                            features = setOf(
+                                ResolverFeature.Ads,
+                                ResolverFeature.Trackers,
+                                ResolverFeature.Malware,
+                            ),
+                        ),
+                        ResolverPreset(
+                            id = ResolverPresetId("blank"),
+                            hostname = "blank.dnsforge.de",
+                            titleRes = R.string.provider_preset_dnsforge_blank,
+                            descriptionRes = R.string.provider_preset_dnsforge_blank_description,
                         ),
                     ),
                 ),
