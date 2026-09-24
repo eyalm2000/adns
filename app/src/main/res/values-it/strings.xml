@@ -410,4 +410,14 @@
     <string name="unreleased">Non rilasciato</string>
     <string name="unreleased_warning_description">Questa impostazione è una funzionalità interna sperimentale non ancora rilasciata ufficialmente da NextDNS. La sua attivazione potrebbe causare malfunzionamenti imprevisti dei siti web, falsi positivi elevati o problemi di risoluzione DNS. NextDNS potrebbe modificarla o rimuoverla in qualsiasi momento.</string>
     <string name="unreleased_warning_enable">Comprendo i rischi, abilita</string>
+    <string name="dnsforge">DNSforge</string>
+    <string name="the_public_dnsforge_dns_server">Il server DNS pubblico di dnsforge.de ospitato in Germania.</string>
+    <string name="provider_preset_dnsforge_normal">Normale</string>
+    <string name="provider_preset_dnsforge_normal_description">Blocca annunci, tracker e malware.</string>
+    <string name="provider_preset_dnsforge_clean">Essenziale</string>
+    <string name="provider_preset_dnsforge_clean_description">Blocca annunci, tracker, malware, contenuti per adulti e abilita Ricerca sicura dove possibile.</string>
+    <string name="provider_preset_dnsforge_hard">Restrittivo</string>
+    <string name="provider_preset_dnsforge_hard_description">Blocco rigoroso di annunci, tracciatori e malware grazie a estese liste di blocco.</string>
+    <string name="provider_preset_dnsforge_blank">Vuoto</string>
+    <string name="provider_preset_dnsforge_blank_description">Risoluzione DNS non filtrata senza blocchi.</string>
 </resources>

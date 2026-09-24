@@ -707,14 +707,14 @@
       "enable": "Google Təhlükəsiz Baxışı aktivləşdirin"
     },
     "cryptojacking": {
-      "name": "Kripto-oğurluq",
-      "description": "Cihazlarınızdan kriptovalyuta mayninqi üçün icazəsiz istifadənin qarşısını alın.",
-      "enable": "Kripto-oğurluğun (cryptojacking) qarşısını alın"
+      "name": "Kriptovalyuta mayninqi",
+      "description": "Cihazlarınızın kriptovalyuta mayninqi üçün icazəsiz istifadəsi olan \"kripto-jekinq\"in (cryptojacking) qarşısını almağa kömək etmək məqsədilə kriptovalyuta mayninqi domenlərini bloklayın.",
+      "enable": "Kriptovalyuta Mayninqini Bloklayın"
     },
     "dnsRebinding": {
-      "name": "DNS yenidən bağlanması",
-      "description": "Şəxsi IP ünvanları ehtiva edən DNS cavablarını avtomatik bloklamaqla, hücumçuların internet vasitəsilə yerli cihazlarınıza nəzarəti ələ keçirməsinin qarşısını alın.",
-      "enable": "DNS yenidən bağlanmasını bloklayın"
+      "name": "Yerli şəbəkə ünvanları",
+      "description": "Cihazlarınızı DNS yenidən əlaqələndirmə (DNS rebinding) hücumlarından qorumağa kömək etmək üçün yerli şəbəkə ünvanlarını ehtiva edən DNS cavablarını bloklayın.",
+      "enable": "Yerli şəbəkə ünvanlarını bloklayın"
     },
     "homograph": {
       "name": "IDN homoqrafları",
@@ -803,8 +803,8 @@
     },
     "dnsPayloadDelivery": {
       "name": "DNS Yükünün Çatdırılması",
-      "description": "DNS cavablarının cihazlarınıza gizli əmrlər və ya faydalı yüklər (payloads) ötürmək üçün istifadə edilməsinin qarşısını alın. İxtiyari məlumat daşıya bilən, lakin gündəlik veb-sörfinq üçün zəruri olmayan qeyd növlərinə (məsələn, TXT və ya NULL) aid sorğular tamamilə bloklanır. CNAME zəncirləri son ünvanlarına qədər sadələşdirilir və beləliklə, gizli məlumatları kodlaşdıra bilən aralıq qeydlər aradan qaldırılır. A və AAAA kimi standart qeyd növləri üçün həddindən artıq böyük cavab bölmələri təsadüfi qaydada kəsilərək qısaldılır; bu, normal DNS funksionallığını qorumaqla yanaşı, çoxsaylı qeydlər arasında kodlaşdırılmış hər hansı məlumatın korlanmasını təmin edir.",
-      "enable": "DNS Yükünün Çatdırılmasını Bloklayın"
+      "description": "Gündəlik internetdə gəzişmə imkanını qoruyub saxlamaqla yanaşı, cihazlarınıza gizli əmrlərin və ya zərərli yüklərin çatdırılmasının qarşısını almaq üçün DNS cavablarının daşıya biləcəyi məlumat həcmini məhdudlaşdırın.",
+      "enable": "DNS Yükü Çatdırılmasını Pozun"
     },
     "decentralizedWebGateways": {
       "name": "Mərkəzləşdirilməmiş veb-şlüzlər",
