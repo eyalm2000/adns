@@ -293,4 +293,26 @@
     <string name="instant_toggle">تبديل لحظي</string>
     <string name="instant_toggle_description">فعل أو عطل نظام أسماء النطاقات الخاص (DNS) من خلال ADNS، أو الزر السريع، أو إختصار المشغل.</string>
     <string name="private_dns_automation">أتمتة نظام أسماء النطاقات الخاص (DNS)</string>
+    <string name="private_dns_automation_description">يقوم ADNS بتطبيق اسم مضيف نظام أسماء النطاقات (DNS) المشفر المحدد والتحقق منه نيابة عنك.</string>
+    <string name="runtime_notification_channel_name">حالت نظام أسماء النطاقات الخاص(DNS)</string>
+    <string name="runtime_notification_channel_description">يعرض حالة نظام أسماء النطاقات الخاص (Private DNS) لـ ADNS ويُبقي قواعد Wi-Fi المفعلة قيد التشغيل.</string>
+    <string name="runtime_notification_title">نظام أسماء النطاقات الخاص (Private DNS)</string>
+    <string name="runtime_notification_dns_enabled">نظام أسماء النطاقات الخاص (Private DNS) مفعل.</string>
+    <string name="runtime_notification_dns_disabled">نظام أسماء النطاقات الخاص (Private DNS) معطل.</string>
+    <string name="runtime_notification_wifi_monitoring">تقوم قواعد Wi-Fi بمراقبة الشبكة المتصلة.</string>
+    <string name="runtime_notification_wifi_suspended">نظام أسماء النطاقات الخاص (Private DNS) متوقف بسبب قواعد الشبكة .</string>
+    <string name="runtime_notification_wifi_external_change">تم تغيير نظام أسماء النطاقات الخاص (Private DNS) من خارج ADNS؛ تم إيقاف قاعدة الشبكة اللاسلكية (Wi-Fi) هذه مؤقتاً لحين مغادرتك للشبكة.</string>
+    <string name="notification_settings">إشعارات</string>
+    <string name="state_notification_description">عرض نظام أسماء النطاقات الخاص (Private DNS) المختار وحالته وإجراء التبديل.</string>
+    <string name="notification_permission">إذن الإشعارات</string>
+    <string name="notification_permission_required_description">إسمح بالإشعارات داخل إعدادات أندرويد لعرض حالة نظام أسماء النطاقات الخاص (Private DNS) وحالة المراقبه في الخلفية .</string>
+    <string name="app_notification_status">إشعرات التطبيق</string>
+    <string name="app_notifications_disabled_description">إشعارات ADNS معطله على مستوى التطبيق. فعلها من خلال إعدادات أندرويد.</string>
+    <string name="notification_channel_status">قناة إشعارات نظام أسماء النطاقات الخاص (Private DNS)</string>
+    <string name="notification_channel_disabled_description">قناة إشعارات نظام أسماء النطاقات الخاص (Private DNS) معطله. فعلها من خلال إعدادات أندرويد.</string>
+    <string name="battery_optimization">تحسين البطارية</string>
+    <string name="notification_battery_optimization_description">قد يؤدي تحسين البطارية إلى إيقاف الحالة الحالية أو مراقبة الشبكة اللاسلكية (Wi-Fi).</string>
+    <string name="runtime_service_status">وقت تشغيل الخدمة</string>
+    <string name="runtime_service_running">تعمل</string>
+    <string name="runtime_service_stopped">متوقفة</string>
 </resources>
