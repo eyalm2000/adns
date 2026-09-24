@@ -1,0 +1,3 @@
+- Added HaGeZi DNS to the DNS server list
+- Fixed missing text and empty settings items in non-English languages
+- Updated translations

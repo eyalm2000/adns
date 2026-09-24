@@ -1,9 +1,9 @@
-- Added DNSforge to the DNS server list (#47)
-- Allowed hyphens in NextDNS device names (#49)
-- Updated NextDNS security settings with upstream changes
-- Added Swedish localization and updated translations
-- Minor improvements and fixes
+A tiny patch update this time:
 
-Special thanks to @RayManning for sponsoring!
+- Fixed missing strings and empty settings items across non-English locales (2.1.6 broke some settings menus for international users - sorry about the inconvenience, the issue is now fixed!)
+- Added HaGeZi DNS to the DNS server list (#53)
+- Updated translations
 
-**Full Changelog**: https://github.com/eyalm2000/adns/compare/v2.1.5...v2.1.6
+P.S. We now have a new website! Visit the [Main](https://adns.eyalm.dev/) or [NextDNS](https://adns.eyalm.dev/nextdns/) landing pages, or browse the [Docs](https://adns.eyalm.dev/docs/)!
+
+**Full Changelog**: https://github.com/eyalm2000/adns/compare/v2.1.6...v2.1.7
