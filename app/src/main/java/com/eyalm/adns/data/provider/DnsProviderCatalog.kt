@@ -92,6 +92,7 @@ class DnsProviderCatalog(
         val QUAD9 = ProviderId("quad9")
         val OPENDNS = ProviderId("opendns")
         val DNSFORGE = ProviderId("dnsforge")
+        val HAGEZI = ProviderId("hagezi")
 
 
         val default: DnsProviderCatalog = DnsProviderCatalog(
@@ -270,6 +271,56 @@ class DnsProviderCatalog(
                             hostname = "blank.dnsforge.de",
                             titleRes = R.string.provider_preset_dnsforge_blank,
                             descriptionRes = R.string.provider_preset_dnsforge_blank_description,
+                        ),
+                    ),
+                ),
+                StandardProviderDefinition(
+                    id = HAGEZI,
+                    titleRes = R.string.hagezi_dns,
+                    descriptionRes = R.string.the_public_hagezi_dns_server,
+                    defaultPresetId = ResolverPresetId("root"),
+                    presets = listOf(
+                        ResolverPreset(
+                            id = ResolverPresetId("root"),
+                            hostname = "root.hagezi.org",
+                            titleRes = R.string.provider_preset_hagezi_root,
+                            descriptionRes = R.string.provider_preset_hagezi_root_description,
+                            features = setOf(
+                                ResolverFeature.Ads,
+                                ResolverFeature.Trackers,
+                                ResolverFeature.Malware,
+                            ),
+                        ),
+                        ResolverPreset(
+                            id = ResolverPresetId("wurzn"),
+                            hostname = "wurzn.hagezi.org",
+                            titleRes = R.string.provider_preset_hagezi_wurzn,
+                            descriptionRes = R.string.provider_preset_hagezi_wurzn_description,
+                            features = setOf(
+                                ResolverFeature.Ads,
+                                ResolverFeature.Trackers,
+                                ResolverFeature.Malware,
+                            ),
+                        ),
+                        ResolverPreset(
+                            id = ResolverPresetId("juuri"),
+                            hostname = "juuri.hagezi.org",
+                            titleRes = R.string.provider_preset_hagezi_juuri,
+                            descriptionRes = R.string.provider_preset_hagezi_juuri_description,
+                            features = setOf(
+                                ResolverFeature.Ads,
+                                ResolverFeature.Trackers,
+                                ResolverFeature.Malware,
+                            ),
+                        ),
+                        ResolverPreset(
+                            id = ResolverPresetId("ctif"),
+                            hostname = "ctif.hagezi.org",
+                            titleRes = R.string.provider_preset_hagezi_ctif,
+                            descriptionRes = R.string.provider_preset_hagezi_ctif_description,
+                            features = setOf(
+                                ResolverFeature.Malware,
+                            ),
                         ),
                     ),
                 ),

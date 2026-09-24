@@ -92,6 +92,42 @@ class ProviderCatalogTest {
                 )
             )
         )
+        assertEquals(
+            "root.hagezi.org",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("hagezi"),
+                    presetId = ResolverPresetId("root"),
+                )
+            )
+        )
+        assertEquals(
+            "wurzn.hagezi.org",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("hagezi"),
+                    presetId = ResolverPresetId("wurzn"),
+                )
+            )
+        )
+        assertEquals(
+            "juuri.hagezi.org",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("hagezi"),
+                    presetId = ResolverPresetId("juuri"),
+                )
+            )
+        )
+        assertEquals(
+            "ctif.hagezi.org",
+            catalog.resolveHostname(
+                DnsProviderSelection.Standard(
+                    providerId = ProviderId("hagezi"),
+                    presetId = ResolverPresetId("ctif"),
+                )
+            )
+        )
     }
 
     @Test

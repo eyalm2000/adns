@@ -294,6 +294,16 @@
     <string name="provider_preset_dnsforge_hard_description">Strict blocking of ads, trackers, and malware with extensive blocklists.</string>
     <string name="provider_preset_dnsforge_blank">Blank</string>
     <string name="provider_preset_dnsforge_blank_description">Unfiltered DNS resolution without blocking.</string>
+    <string name="hagezi_dns">HaGeZi DNS</string>
+    <string name="the_public_hagezi_dns_server">The public HaGeZi DNS servers hosted in the EU.</string>
+    <string name="provider_preset_hagezi_root">Root (Falkenstein)</string>
+    <string name="provider_preset_hagezi_root_description">Blocks ads, trackers, and malware (hosted in Falkenstein, Germany).</string>
+    <string name="provider_preset_hagezi_wurzn">Wurzn (Nuremberg)</string>
+    <string name="provider_preset_hagezi_wurzn_description">Blocks ads, trackers, and malware (hosted in Nuremberg, Germany).</string>
+    <string name="provider_preset_hagezi_juuri">Juuri (Helsinki)</string>
+    <string name="provider_preset_hagezi_juuri_description">Blocks ads, trackers, and malware (hosted in Helsinki, Finland).</string>
+    <string name="provider_preset_hagezi_ctif">Threats Only (Nuremberg)</string>
+    <string name="provider_preset_hagezi_ctif_description">Blocks phishing, malware, and scam domains without blocking ads or trackers (hosted in Nuremberg, Germany).</string>
     <string name="reactivate">Reactivate</string>
     <string name="activation_status_active">PRIVATE DNS CONTROL ACTIVE</string>
     <string name="activation_status_control_only">NEXTDNS CONTROL-ONLY ACTIVE</string>
