@@ -1,1398 +1,1310 @@
 {
-    "global": {
-        "beta": "beta",
-        "cancel": "Avbryt",
-        "add": "Legg til",
-        "save": "Lagre",
-        "continue": "Fortsett",
-        "enable": "Slå på",
-        "change": "Endre",
-        "create": "Opprett",
-        "subscribe": "Abonner",
-        "invite": "Inviter",
-        "remove": "Fjern",
-        "leave": "Forlat",
-        "delete": "Slett",
-        "close": "Lukk",
-        "back": "Tilbake",
-        "disable": "Deaktiver",
-        "unnamedDevice": "Enhet #{{id}}",
-        "firstConfiguration": "Min første konfigurasjon",
-        "copy": "",
-        "collapse": "",
-        "requestFailed": "",
-        "error": "",
-        "preview": "",
-        "expand": "",
-        "noProfiles": "",
-        "search": "",
-        "clearSearch": "",
-        "networkError": "",
-        "actions": ""
+  "global": {
+    "beta": "beta",
+    "cancel": "Avbryt",
+    "add": "Legg til",
+    "save": "Lagre",
+    "continue": "Fortsett",
+    "enable": "Slå på",
+    "change": "Endre",
+    "create": "Opprett",
+    "subscribe": "Abonner",
+    "invite": "Inviter",
+    "remove": "Fjern",
+    "leave": "Forlat",
+    "delete": "Slett",
+    "close": "Lukk",
+    "back": "Tilbake",
+    "disable": "Deaktiver",
+    "unnamedDevice": "Enhet #{{id}}",
+    "firstConfiguration": "Min første konfigurasjon"
+  },
+  "theme": {
+    "label": "Tema",
+    "system": "System",
+    "light": "Lyst",
+    "dark": "Mørkt"
+  },
+  "pages": {
+    "signup": "Registrer deg",
+    "login": "Logg Inn",
+    "passwordReset": "Tilbakestill passordet ditt",
+    "account": "Konto",
+    "setup": "Oppsett",
+    "security": "Sikkerhet",
+    "privacy": "Personvern",
+    "parentalcontrol": "Foreldrekontroll",
+    "denylist": "Blokkeringsliste",
+    "allowlist": "Tillatelsesliste",
+    "analytics": "Analyse",
+    "logs": "Logger",
+    "settings": "Innstillinger",
+    "help": "Hjelp"
+  },
+  "banners": {
+    "temporary": "Denne midlertidige kontoen utløper om <1> <0>{{in}}</0></1> og er bare tilgjengelig fra denne nettleseren. Opprett en gratis konto for å lagre innstillingene dine.",
+    "nearQuota": "Du har gjennomført mer enn {{queriesNearQuota, number}} spørringer denne måneden, og nærmer deg den gratis månedlige kvoten på {{queriesQuota, number}} spørringer. <5> Abonner </5> for å fortsette å bruke NextDNS.",
+    "overQuota": "Du har gjennomført mer enn {{queriesQuota, number}} spørringer denne måneden, og alle funksjonene er deaktivert. <3> Abonner </3> for å fortsette å bruke NextDNS."
+  },
+  "account": {
+    "email": "E-post",
+    "newEmail": "Ny e-post",
+    "password": "Passord",
+    "newPassword": "Nytt passord",
+    "currentPassword": "Nåværende passord",
+    "forgotPassword": "Glemt passord?",
+    "savePassword": "Lagre passord",
+    "passwordResetInfo": "Skriv inn e-postadressen som er knyttet til kontoen din, så sender vi deg en lenke for å tilbakestille passordet ditt.",
+    "sendEmail": "Send e-post",
+    "passwordResetLinkSentMessage": "En lenke for å tilbakestille passordet ditt ble sendt til <1>{{email}}</1> .",
+    "code": "2FA-kode",
+    "login": "Logg Inn",
+    "noAccountYet": "Ingen konto enda? <1> Registrer deg </1>",
+    "signup": "Registrer deg",
+    "alreadyHaveAnAccount": "Har du allerede en konto? <1> Logg inn </1>",
+    "convertingNotice": "Du konverterer en midlertidig konto til en ekte konto, alle innstillingene lagres.",
+    "convertingDeviceOnlyNotice": "Du konverterer en konto kun for enheten til en full konto, alle innstillingene dine blir lagret.",
+    "logout": "Logg ut",
+    "errors": {
+      "email": {
+        "required": "Vennligst skriv inn en e-post.",
+        "invalid": "Vennligst skriv inn en gyldig e-postadresse.",
+        "taken": "Denne e-postadressen er allerede brukt."
+      },
+      "password": {
+        "required": "Vennligst skriv inn passord.",
+        "invalidCombination": "Ugyldig kombinasjon av e-post / passord."
+      },
+      "currentPassword": {
+        "required": "Vennligst skriv inn ditt nåværende passord.",
+        "incorrect": "Passordet du skrev inn er feil."
+      },
+      "code": {
+        "required": "Angi en 2FA-kode.",
+        "invalid": "Angi en 6-sifret kode.",
+        "incorrect": "Feil 2FA-kode."
+      },
+      "resetPasswordToken": {
+        "invalid": "Ugyldig eller utløpt token."
+      }
     },
-    "theme": {
-        "label": "Tema",
-        "system": "System",
-        "light": "Lyst",
-        "dark": "Mørkt"
-    },
-    "pages": {
-        "signup": "Registrer deg",
-        "login": "Logg Inn",
-        "passwordReset": "Tilbakestill passordet ditt",
-        "account": "Konto",
-        "setup": "Oppsett",
-        "security": "Sikkerhet",
-        "privacy": "Personvern",
-        "parentalcontrol": "Foreldrekontroll",
-        "denylist": "Blokkeringsliste",
-        "allowlist": "Tillatelsesliste",
-        "analytics": "Analyse",
-        "logs": "Logger",
-        "settings": "Innstillinger",
-        "help": "Hjelp"
-    },
-    "banners": {
-        "temporary": "Denne midlertidige kontoen utløper om <1> <0>{{in}}</0></1> og er bare tilgjengelig fra denne nettleseren. Opprett en gratis konto for å lagre innstillingene dine.",
-        "nearQuota": "Du har gjennomført mer enn {{queriesNearQuota, number}} spørringer denne måneden, og nærmer deg den gratis månedlige kvoten på {{queriesQuota, number}} spørringer. <5> Abonner </5> for å fortsette å bruke NextDNS.",
-        "overQuota": "Du har gjennomført mer enn {{queriesQuota, number}} spørringer denne måneden, og alle funksjonene er deaktivert. <3> Abonner </3> for å fortsette å bruke NextDNS."
-    },
-    "account": {
-        "email": "E-post",
-        "newEmail": "Ny e-post",
-        "password": "Passord",
-        "newPassword": "Nytt passord",
-        "currentPassword": "Nåværende passord",
-        "forgotPassword": "Glemt passord?",
-        "savePassword": "Lagre passord",
-        "passwordResetInfo": "Skriv inn e-postadressen som er knyttet til kontoen din, så sender vi deg en lenke for å tilbakestille passordet ditt.",
-        "sendEmail": "Send e-post",
-        "passwordResetLinkSentMessage": "En lenke for å tilbakestille passordet ditt ble sendt til <1>{{email}}</1> .",
-        "code": "2FA-kode",
-        "login": "Logg Inn",
-        "noAccountYet": "Ingen konto enda? <1> Registrer deg </1>",
-        "signup": "Registrer deg",
-        "alreadyHaveAnAccount": "Har du allerede en konto? <1> Logg inn </1>",
-        "convertingNotice": "Du konverterer en midlertidig konto til en ekte konto, alle innstillingene lagres.",
-        "convertingDeviceOnlyNotice": "Du konverterer en konto kun for enheten til en full konto, alle innstillingene dine blir lagret.",
-        "logout": "Logg ut",
-        "errors": {
-            "email": {
-                "required": "Vennligst skriv inn en e-post.",
-                "invalid": "Vennligst skriv inn en gyldig e-postadresse.",
-                "taken": "Denne e-postadressen er allerede brukt."
-            },
-            "password": {
-                "required": "Vennligst skriv inn passord.",
-                "invalidCombination": "Ugyldig kombinasjon av e-post / passord."
-            },
-            "currentPassword": {
-                "required": "Vennligst skriv inn ditt nåværende passord.",
-                "incorrect": "Passordet du skrev inn er feil."
-            },
-            "code": {
-                "required": "Angi en 2FA-kode.",
-                "invalid": "Angi en 6-sifret kode.",
-                "incorrect": "Feil 2FA-kode."
-            },
-            "resetPasswordToken": {
-                "invalid": "Ugyldig eller utløpt token."
-            }
-        },
-        "affiliation": {
-            "name": "Tilhørighet",
-            "description": "Hjelp oss med å spre ordet ved å dele <1> {{link}} </1> og motta <3>{{share, percentage}}</3> av alle abonnementene for den første <5> {{months, number}} måneder </5> .",
-            "balance": {
-                "name": "Balansere"
-            },
-            "availableBalance": {
-                "name": "Tilgjengelig balanse",
-                "description": "Balanse blir tilgjengelig for utbetaling etter en måned for å dekke potensielle refusjoner."
-            },
-            "payout": {
-                "button": "Betal ut",
-                "minimum": "En tilgjengelig saldo på minst {{amount, price}} er nødvendig for utbetalinger.",
-                "form": {
-                    "paypalEmail": "PayPal e-post",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "Vennligst skriv inn en PayPal-e-post.",
-                            "invalid": "Vennligst skriv inn en gyldig PayPal-e-post."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "Gratis bruk",
-            "description": "NextDNS kan brukes gratis opptil {{queries, number}} spørsmål hver måned, hvoretter alle funksjoner blir deaktivert midlertidig til neste måned.",
-            "queries": "<0> {{current, number}} </0> <1> / {{quota, number}} spørsmål </1>",
-            "overQuota": {
-                "message": "Du har laget mer enn {{queries, number}} spørsmål denne måneden.",
-                "info": "NextDNS vil fortsette å svare på DNS-spørsmål, men alle funksjoner er midlertidig deaktivert til neste måned."
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "Få ubegrensede spørsmål fra {{amount, price}}/ måned."
-            }
-        },
-        "subscription": {
-            "name": "Abonnement",
-            "plans": {
-                "pro": "Pro",
-                "business": "Virksomhet",
-                "education": "utdanning"
-            },
-            "intervals": {
-                "month": "månedlig plan",
-                "year": "årsplan"
-            },
-            "per": {
-                "month": "per måned",
-                "year": "per år"
-            },
-            "units": {
-                "business_one": "{{count, number}} ansatt",
-                "business_other": "{{count, number}} ansatte",
-                "education_one": "{{count, number}} student",
-                "education_other": "{{count, number}} studenter"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "Abonnementet ditt utløper {{date, LL}}.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "Start abonnementet på nytt"
-            },
-            "changePlan": {
-                "button": "Endre plan"
-            },
-            "renewal": "Din neste automatiske betaling blir for {{amount, price}} på {{date, LL}}.",
-            "changePaymentMethod": {
-                "button": "Endre betalingsmåte"
-            },
-            "cancel": {
-                "button": "Avbestille abonnementet",
-                "confirm": {
-                    "text": "Det nåværende abonnementet ditt vil være gyldig til {{date, LL}}.",
-                    "submit": "Avbestille abonnementet"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "Velg en plan",
-                "addPaymentMethod": "Legg til en betalingsmåte",
-                "included": "Alle planer inkluderer <1> tilgang til alle funksjonene </1> , <3> ubegrensede enheter </3> og <5> ubegrensede spørsmål </5> .",
-                "savings": "Spar {{percent, percentage}} over den månedlige planen",
-                "familyOnly": "* Pro-planer er kun for personlig (og nær familie) bruk.",
-                "unitsQuestion": {
-                    "business": "Hvor mange <1> ansatte </1> bruker bedriften din?",
-                    "education": "Hvor mange <1> studenter </1> har skolen din (eller distriktet)?"
-                },
-                "asYouGrow": {
-                    "business": "* Husk å oppdatere planen etter hvert som antall ansatte øker.",
-                    "education": "* Husk å oppdatere planen etter hvert som antall studenter øker."
-                },
-                "starting": {
-                    "business": "<0> Starter kl </0> <1>{{price, price}}</1> <2> per måned for {{units, number}} ansatte </2>",
-                    "education": "<0> Starter kl </0> <1>{{price, price}}</1> <2> per måned for {{units, number}} studenter </2>"
-                },
-                "card": {
-                    "number": "Kortnummer",
-                    "expiration": "Utløpsdato",
-                    "code": "Sikkerhetskode",
-                    "stripe": "Vi bruker Stripe - en ledende betalingsportal - for å behandle kortbetalinger på en sikker måte uten å ha tilgang til kortinformasjonen din direkte."
-                },
-                "paypal": {
-                    "text": "Klikk på Fortsett til PayPal-knappen for å abonnere på PayPal."
-                },
-                "bitpay": {
-                    "text": "Klikk på Fortsett til BitPay-knappen for å betale med kryptovaluta.",
-                    "toYearly": "Vi aksepterer ikke kryptovaluta-betalinger for månedlige planer. <1> Ved å fortsette vil du automatisk bytte til årsplanen. </1>",
-                    "remainder": "Nåværende abonnement er allerede betalt til {{date, LL}}. Du blir belastet nå, og resten legges automatisk til den nye utløpsdatoen."
-                },
-                "continueTo": "Fortsett til <1> </1>",
-                "unitsLabel": {
-                    "education": "",
-                    "business": ""
-                }
-            }
-        },
-        "business": {
-            "name": "Virksomhet",
-            "description": "For skatteformål trenger vi firmanavnet, adressen og momsnummeret ditt (eller tilsvarende). Dette er lovpålagt og vil vises på alle fakturaer.",
-            "button": {
-                "add": "Legg til bedriftsinformasjon",
-                "update": "Oppdater"
-            },
-            "form": {
-                "name": {
-                    "label": "Navn",
-                    "placeholder": "ACME Inc.",
-                    "errors": {
-                        "required": "Vennligst skriv inn navnet på bedriften din."
-                    }
-                },
-                "address": {
-                    "label": "Adresse",
-                    "placeholder": "10 Downing St, Westminster&#10;London SW1A 2AA&#10;Storbritannia",
-                    "errors": {
-                        "required": "Vennligst skriv inn adressen til din bedrift."
-                    }
-                },
-                "vatNumber": {
-                    "label": "Mva-nummer (eller tilsvarende)"
-                }
-            }
-        },
-        "invoices": {
-            "name": "Fakturaer",
-            "description": "Faktureringslogg og alle fakturaer for kontoen din.",
-            "pending": "{{amount, price}} (venter)",
-            "show-more": "Vis mer",
-            "show-less": "Vis mindre",
-            "invoice": {
-                "title": "Faktura nr.{{code}}",
-                "to": "Til: <1>{{email}}</1>",
-                "vatNumber": "Mva-nummer (eller tilsvarende): {{number}}",
-                "columns": {
-                    "plan": "Plan",
-                    "period": "Periode",
-                    "amount": "Beløp"
-                },
-                "vat": "MVA ({{rate, percentage}})",
-                "total": "Total",
-                "footer": {
-                    "reverseCharged": "MVA (eller tilsvarende) omvendt belastet.",
-                    "currency": "Alle viste beløp er i {{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "E-post",
-            "description": "Endre e-postadressen som ble brukt til å logge inn på kontoen din og motta kritiske e-postvarsler.",
-            "button": "Endre e-post"
-        },
-        "changePassword": {
-            "name": "Passord",
-            "description": "Endre passordet som ble brukt til å logge inn på kontoen din og spurte når du utfør sensitive handlinger.",
-            "button": "Bytt passord"
-        },
-        "2fa": {
-            "name": "Tofaktorautentisering (2FA)",
-            "description": "Tofaktorautentisering (2FA) er et ekstra sikkerhetslag som krever en ekstra tidsbasert 6-sifret kode når du logger på kontoen din.",
-            "enabled": "2FA er aktivert for kontoen din.",
-            "enable": {
-                "button": "Aktiver 2FA",
-                "modal": {
-                    "howto": "Bruk en godkjenningsapp som <1> Google Authenticator </1> eller en passordbehandling som støtter 2FA. Du kan enten skanne QR-koden, trykke på den for å åpne <3>{{otpauth}}</3> lenke eller kopiere og lime inn hemmeligheten din manuelt."
-                },
-                "secret": ""
-            },
-            "recovery": {
-                "button": "Gjenopprettingskoder",
-                "modal": {
-                    "howto": "Bruk disse gjenopprettingskodene for å få tilgang til kontoen din i tilfelle du mister tilgang til enheten din og ikke kan motta tofaktorautentiseringskoder. Hver kode kan bare brukes en gang.",
-                    "download": "nedlasting",
-                    "regen": "Regenerer"
-                }
-            },
-            "disable": {
-                "button": "Deaktiver 2FA"
-            }
-        },
-        "api": {
-            "description": "Opprett og administrer profilene dine programmatisk. Les dokumentasjonen på <1>{{link}}</1>.",
-            "create": {
-                "button": "Generer API-nøkkel"
-            },
-            "copy": "",
-            "remove": ""
-        },
-        "delete": {
-            "button": "Slett konto",
-            "warning": "Dette vil slette kontoen din og alle konfigurasjonene dine for alltid.",
-            "confirm": {
-                "text": "Er du sikker på at du vil slette kontoen din? Denne handlingen kan ikke angres."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "Utløpt",
-                    "text": "Den midlertidige kontoen din har utløpt. Registrer deg nå for å lagre innstillingene og fortsette å bruke NextDNS, det er gratis."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "Ny",
+    "affiliation": {
+      "name": "Tilhørighet",
+      "description": "Hjelp oss med å spre ordet ved å dele <1> {{link}} </1> og motta <3>{{share, percentage}}</3> av alle abonnementene for den første <5> {{months, number}} måneder </5> .",
+      "balance": {
+        "name": "Balansere"
+      },
+      "availableBalance": {
+        "name": "Tilgjengelig balanse",
+        "description": "Balanse blir tilgjengelig for utbetaling etter en måned for å dekke potensielle refusjoner."
+      },
+      "payout": {
+        "button": "Betal ut",
+        "minimum": "En tilgjengelig saldo på minst {{amount, price}} er nødvendig for utbetalinger.",
         "form": {
-            "title": "Ny konfigurasjon",
-            "name": {
-                "label": "Navn",
-                "placeholder": "Hjem, barn, kontor, ...",
-                "errors": {
-                    "required": "Vennligst skriv inn et navn.",
-                    "taken": "Du har allerede en konfigurasjon med det navnet."
-                }
+          "paypalEmail": "PayPal e-post",
+          "errors": {
+            "paypalEmail": {
+              "required": "Vennligst skriv inn en PayPal-e-post.",
+              "invalid": "Vennligst skriv inn en gyldig PayPal-e-post."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "Helt fint!",
-                "secondary": "Denne enheten bruker NextDNS med denne konfigurasjonen."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "Denne enheten bruker NextDNS uten konfigurasjon.",
-                    "secondary": {
-                        "clients": "Forsikre deg om at du angir konfigurasjons-IDen som vises nedenfor i appinnstillingene.",
-                        "firefox": "Forsikre deg om at du angir DNS-over-HTTPS-endepunktet vist nedenfor i Firefox.",
-                        "doh": "Forsikre deg om at du bruker DNS-over-HTTPS-endepunktet vist nedenfor.",
-                        "dot": "Forsikre deg om at du bruker DNS-over-TLS-endepunktet vist nedenfor.",
-                        "ipv6": "Forsikre deg om at du bruker IPv6-adressene vist nedenfor.",
-                        "servers": "Forsikre deg om å bruke DNS-serverne som vises i delen Koblet IP nedenfor (DNS-servere skifter mellom konfigurasjoner).",
-                        "link": "Sørg for å koble IP-adressen din i delen Koblet IP nedenfor."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "Denne enheten bruker NextDNS med en annen konfigurasjon.",
-                    "secondary": {
-                        "sameAccount": "Denne enheten bruker for øyeblikket ”{{name}}”.",
-                        "otherAccount": "Forsikre deg om at du bruker et av endepunktene som er oppført på denne siden."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "Denne enheten bruker ikke NextDNS.",
-                "secondary": "Denne enheten bruker for øyeblikket ”{{resolver}}” som DNS-resolver."
-            },
-            "error": {
-                "primary": "Feil under kontroll av gjeldende status.",
-                "secondary": "Snakk med oss hvis dette problemet vedvarer etter oppdatering av siden."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
+    "usage": {
+      "name": "Gratis bruk",
+      "description": "NextDNS kan brukes gratis opptil {{queries, number}} spørsmål hver måned, hvoretter alle funksjoner blir deaktivert midlertidig til neste måned.",
+      "queries": "<0> {{current, number}} </0> <1> / {{quota, number}} spørsmål </1>",
+      "overQuota": {
+        "message": "Du har laget mer enn {{queries, number}} spørsmål denne måneden.",
+        "info": "NextDNS vil fortsette å svare på DNS-spørsmål, men alle funksjoner er midlertidig deaktivert til neste måned."
+      },
+      "subscribe": {
+        "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+        "upsell": "Få ubegrensede spørsmål fra {{amount, price}}/ måned."
+      }
+    },
+    "subscription": {
+      "name": "Abonnement",
+      "plans": {
+        "pro": "Pro",
+        "business": "Virksomhet",
+        "education": "utdanning"
+      },
+      "intervals": {
+        "month": "månedlig plan",
+        "year": "årsplan"
+      },
+      "per": {
+        "month": "per måned",
+        "year": "per år"
+      },
+      "units": {
+        "business_one": "{{count, number}} ansatt",
+        "business_other": "{{count, number}} ansatte",
+        "education_one": "{{count, number}} student",
+        "education_other": "{{count, number}} studenter"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "Abonnementet ditt utløper {{date, LL}}.",
+      "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
+      "manageOnApple": "Manage subscription on Apple",
+      "restart": {
+        "button": "Start abonnementet på nytt"
+      },
+      "changePlan": {
+        "button": "Endre plan"
+      },
+      "renewal": "Din neste automatiske betaling blir for {{amount, price}} på {{date, LL}}.",
+      "changePaymentMethod": {
+        "button": "Endre betalingsmåte"
+      },
+      "cancel": {
+        "button": "Avbestille abonnementet",
+        "confirm": {
+          "text": "Det nåværende abonnementet ditt vil være gyldig til {{date, LL}}.",
+          "submit": "Avbestille abonnementet"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "Velg en plan",
+        "addPaymentMethod": "Legg til en betalingsmåte",
+        "included": "Alle planer inkluderer <1> tilgang til alle funksjonene </1> , <3> ubegrensede enheter </3> og <5> ubegrensede spørsmål </5> .",
+        "savings": "Spar {{percent, percentage}} over den månedlige planen",
+        "familyOnly": "* Pro-planer er kun for personlig (og nær familie) bruk.",
+        "unitsQuestion": {
+          "business": "Hvor mange <1> ansatte </1> bruker bedriften din?",
+          "education": "Hvor mange <1> studenter </1> har skolen din (eller distriktet)?"
+        },
+        "asYouGrow": {
+          "business": "* Husk å oppdatere planen etter hvert som antall ansatte øker.",
+          "education": "* Husk å oppdatere planen etter hvert som antall studenter øker."
+        },
+        "starting": {
+          "business": "<0> Starter kl </0> <1>{{price, price}}</1> <2> per måned for {{units, number}} ansatte </2>",
+          "education": "<0> Starter kl </0> <1>{{price, price}}</1> <2> per måned for {{units, number}} studenter </2>"
+        },
+        "card": {
+          "number": "Kortnummer",
+          "expiration": "Utløpsdato",
+          "code": "Sikkerhetskode",
+          "stripe": "Vi bruker Stripe - en ledende betalingsportal - for å behandle kortbetalinger på en sikker måte uten å ha tilgang til kortinformasjonen din direkte."
+        },
+        "paypal": {
+          "text": "Klikk på Fortsett til PayPal-knappen for å abonnere på PayPal."
+        },
+        "bitpay": {
+          "text": "Klikk på Fortsett til BitPay-knappen for å betale med kryptovaluta.",
+          "toYearly": "Vi aksepterer ikke kryptovaluta-betalinger for månedlige planer. <1> Ved å fortsette vil du automatisk bytte til årsplanen. </1>",
+          "remainder": "Nåværende abonnement er allerede betalt til {{date, LL}}. Du blir belastet nå, og resten legges automatisk til den nye utløpsdatoen."
+        },
+        "continueTo": "Fortsett til <1> </1>"
+      }
+    },
+    "business": {
+      "name": "Virksomhet",
+      "description": "For skatteformål trenger vi firmanavnet, adressen og momsnummeret ditt (eller tilsvarende). Dette er lovpålagt og vil vises på alle fakturaer.",
+      "button": {
+        "add": "Legg til bedriftsinformasjon",
+        "update": "Oppdater"
+      },
+      "form": {
+        "name": {
+          "label": "Navn",
+          "placeholder": "ACME Inc.",
+          "errors": {
+            "required": "Vennligst skriv inn navnet på bedriften din."
+          }
+        },
+        "address": {
+          "label": "Adresse",
+          "placeholder": "10 Downing St, Westminster&#10;London SW1A 2AA&#10;Storbritannia",
+          "errors": {
+            "required": "Vennligst skriv inn adressen til din bedrift."
+          }
+        },
+        "vatNumber": {
+          "label": "Mva-nummer (eller tilsvarende)"
+        }
+      }
+    },
+    "invoices": {
+      "name": "Fakturaer",
+      "description": "Faktureringslogg og alle fakturaer for kontoen din.",
+      "pending": "{{amount, price}} (venter)",
+      "show-more": "Vis mer",
+      "show-less": "Vis mindre",
+      "invoice": {
+        "title": "Faktura nr.{{code}}",
+        "to": "Til: <1>{{email}}</1>",
+        "vatNumber": "Mva-nummer (eller tilsvarende): {{number}}",
+        "columns": {
+          "plan": "Plan",
+          "period": "Periode",
+          "amount": "Beløp"
+        },
+        "vat": "MVA ({{rate, percentage}})",
+        "total": "Total",
+        "footer": {
+          "reverseCharged": "MVA (eller tilsvarende) omvendt belastet.",
+          "currency": "Alle viste beløp er i {{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "E-post",
+      "description": "Endre e-postadressen som ble brukt til å logge inn på kontoen din og motta kritiske e-postvarsler.",
+      "button": "Endre e-post"
+    },
+    "changePassword": {
+      "name": "Passord",
+      "description": "Endre passordet som ble brukt til å logge inn på kontoen din og spurte når du utfør sensitive handlinger.",
+      "button": "Bytt passord"
+    },
+    "2fa": {
+      "name": "Tofaktorautentisering (2FA)",
+      "description": "Tofaktorautentisering (2FA) er et ekstra sikkerhetslag som krever en ekstra tidsbasert 6-sifret kode når du logger på kontoen din.",
+      "enabled": "2FA er aktivert for kontoen din.",
+      "enable": {
+        "button": "Aktiver 2FA",
+        "modal": {
+          "howto": "Bruk en godkjenningsapp som <1> Google Authenticator </1> eller en passordbehandling som støtter 2FA. Du kan enten skanne QR-koden, trykke på den for å åpne <3>{{otpauth}}</3> lenke eller kopiere og lime inn hemmeligheten din manuelt."
+        }
+      },
+      "recovery": {
+        "button": "Gjenopprettingskoder",
+        "modal": {
+          "howto": "Bruk disse gjenopprettingskodene for å få tilgang til kontoen din i tilfelle du mister tilgang til enheten din og ikke kan motta tofaktorautentiseringskoder. Hver kode kan bare brukes en gang.",
+          "download": "nedlasting",
+          "regen": "Regenerer"
+        }
+      },
+      "disable": {
+        "button": "Deaktiver 2FA"
+      }
+    },
+    "api": {
+      "description": "Opprett og administrer profilene dine programmatisk. Les dokumentasjonen på <1>{{link}}</1>.",
+      "create": {
+        "button": "Generer API-nøkkel"
+      }
+    },
+    "delete": {
+      "button": "Slett konto",
+      "warning": "Dette vil slette kontoen din og alle konfigurasjonene dine for alltid.",
+      "confirm": {
+        "text": "Er du sikker på at du vil slette kontoen din? Denne handlingen kan ikke angres."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "Utløpt",
+          "text": "Den midlertidige kontoen din har utløpt. Registrer deg nå for å lagre innstillingene og fortsette å bruke NextDNS, det er gratis."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "Ny",
+    "form": {
+      "title": "Ny konfigurasjon",
+      "name": {
+        "label": "Navn",
+        "placeholder": "Hjem, barn, kontor, ...",
+        "errors": {
+          "required": "Vennligst skriv inn et navn.",
+          "taken": "Du har allerede en konfigurasjon med det navnet."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "Helt fint!",
+        "secondary": "Denne enheten bruker NextDNS med denne konfigurasjonen."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "Denne enheten bruker NextDNS uten konfigurasjon.",
+          "secondary": {
+            "clients": "Forsikre deg om at du angir konfigurasjons-IDen som vises nedenfor i appinnstillingene.",
+            "firefox": "Forsikre deg om at du angir DNS-over-HTTPS-endepunktet vist nedenfor i Firefox.",
+            "doh": "Forsikre deg om at du bruker DNS-over-HTTPS-endepunktet vist nedenfor.",
+            "dot": "Forsikre deg om at du bruker DNS-over-TLS-endepunktet vist nedenfor.",
+            "ipv6": "Forsikre deg om at du bruker IPv6-adressene vist nedenfor.",
+            "servers": "Forsikre deg om å bruke DNS-serverne som vises i delen Koblet IP nedenfor (DNS-servere skifter mellom konfigurasjoner).",
+            "link": "Sørg for å koble IP-adressen din i delen Koblet IP nedenfor."
+          }
+        },
+        "withConfiguration": {
+          "primary": "Denne enheten bruker NextDNS med en annen konfigurasjon.",
+          "secondary": {
+            "sameAccount": "Denne enheten bruker for øyeblikket ”{{name}}”.",
+            "otherAccount": "Forsikre deg om at du bruker et av endepunktene som er oppført på denne siden."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "Denne enheten bruker ikke NextDNS.",
+        "secondary": "Denne enheten bruker for øyeblikket ”{{resolver}}” som DNS-resolver."
+      },
+      "error": {
+        "primary": "Feil under kontroll av gjeldende status.",
+        "secondary": "Snakk med oss hvis dette problemet vedvarer etter oppdatering av siden."
+      },
+      "apr": {
+        "ok": {
+          "primary": "This device is using NextDNS with iCloud Private Relay",
+          "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
+        },
+        "blockpage": {
+          "primary": "This device is using NextDNS with iCloud Private Relay.",
+          "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+        }
+      }
+    },
+    "endpoints": {
+      "name": "Endepunkter",
+      "description": "Sett opp NextDNS med denne konfigurasjonen ved hjelp av et av endepunktene nedenfor.",
+      "help": "Ikke sikker på hvordan du bruker disse? Følg <1> installasjonsveiledningen </1> ."
+    },
+    "linkedIp": {
+      "name": "Koblet IP",
+      "description": "Hvis du ikke klarer å konfigurere NextDNS ved hjelp av appene våre, DNS-over-TLS, DNS-over-HTTPS eller IPv6, kan du bruke DNS-serverne nedenfor og koble IP-en din. Dette er mest for bruk på hjemmenettverk og anbefales ikke på mobil.",
+      "servers": {
+        "name": "DNS-servere"
+      },
+      "ip": {
+        "name": "Koblet IP",
+        "link": "Link IP"
+      },
+      "showAdvanced": "Vis avanserte innstillinger",
+      "ddns": {
+        "explanation": "Du kan bruke Dynamic DNS (DDNS) for å få den tilknyttede IP-en din oppdatert automatisk.",
+        "set": "Konfigurer DDNS",
+        "status": "Du bruker for øyeblikket <1>{{hostname}}</1> som DDNS-vertsnavn, blir IP-en din automatisk oppdatert hvert minutt.",
+        "unset": "Ta vekk",
+        "form": {
+          "hostname": {
+            "label": "DDNS vertsnavn",
+            "placeholder": "eksempel.no-ip.org",
+            "errors": {
+              "required": "Angi et vertsnavn.",
+              "invalid": "Angi et gyldig vertsnavn.",
+              "ip": "Angi et vertsnavn, ikke en IP-adresse.",
+              "error": "Det oppstod en feil under henting av IP-adressen bak dette vertsnavnet.",
+              "empty": "Dette vertsnavnet returnerer ingen IP-adresse.",
+              "different": "Av sikkerhetsmessige grunner bør IP-adressen som returneres av DDNS-vertsnavnet være den samme som din nåværende IP-adresse når du legger til en dynamisk DNS."
             }
+          }
+        }
+      },
+      "programmatically": "Du kan også programmatisk oppdatere den koblede IP-en din ved å ringe:"
+    },
+    "guide": {
+      "name": "Installasjonsveiledning",
+      "description": "Følg instruksjonene nedenfor for å konfigurere NextDNS på enheten, nettleseren eller ruteren.",
+      "or": "Eller",
+      "ipv4": {
+        "title": "IPv4 (med lenket IP)"
+      },
+      "ipv6": {
+        "supported": "Nettverket ditt støtter IPv6",
+        "notSupported": "Nettverket ditt støtter ikke IPv6"
+      },
+      "tags": {
+        "recommended": "Anbefalt",
+        "advanced": "Avansert"
+      },
+      "use": "Bruk følgende i <1>{{file}}</1> :",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "Privat DNS",
+              "requirements": "Android 9 eller nyere",
+              "steps": {
+                "1": "1. Gå til Innstillinger → Nettverk og internett → Avansert → Privat DNS.",
+                "2": "2. Velg alternativet Vertsnavn for privat DNS-leverandør.",
+                "3": "3. Skriv inn <1>{{endpoint}}</1> og trykk Lagre."
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "Endepunkter",
-            "description": "Sett opp NextDNS med denne konfigurasjonen ved hjelp av et av endepunktene nedenfor.",
-            "help": "Ikke sikker på hvordan du bruker disse? Følg <1> installasjonsveiledningen </1> ."
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "Konfigurasjon Profil",
+              "requirements": "iOS 14 eller nyere",
+              "step": "Bruk vår Apple konfigurasjonsprofil-generator tilgjengelig på <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS for iOS"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "Koblet IP",
-            "description": "Hvis du ikke klarer å konfigurere NextDNS ved hjelp av appene våre, DNS-over-TLS, DNS-over-HTTPS eller IPv6, kan du bruke DNS-serverne nedenfor og koble IP-en din. Dette er mest for bruk på hjemmenettverk og anbefales ikke på mobil.",
-            "servers": {
-                "name": "DNS-servere"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS over HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "Åpne <1>Innstillinger</1>-appen.",
+                "Gå til <1>Nettverk & Internett</1>.",
+                "Klikk på <1>Wi-Fi</1> (eller <3>Ethernet</3>).",
+                "Klikk på <1>Maskinvareegenskaper</1>, eller ignorer dette trinnet hvis du klikket på <3>Ethernet</3>.",
+                "Klikk på <1>Rediger</1> knappen ved siden av <3>DNS-servertilordning</3>.",
+                "Velg <1>Manual</1>.",
+                "Aktiver <1>IPv{{version}}</1>.",
+                "Skriv inn <1>{{ip}}</1> som <3>Foretrukket DNS</3>, og velg deretter <5>På (manuell mal)</5> og skriv inn <7>{{endpoint}}</7>.",
+                "Skriv inn <1>{{ip}}</1> som <3>Alternativ DNS</3>, og velg deretter <5>På (manuell mal)</5> og skriv inn <7>{{endpoint}}</7>.",
+                "Klikk <1>Lagre</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS for Windows",
+              "steps": {
+                "1": "1. Last ned installasjonsprogrammet <1> her </1> .",
+                "2": "2. Etter installasjon høyreklikker du på NextDNS-ikonet i Systray og åpner deretter Innstillinger. Sett <1>{{id}}</1> som konfigurasjons-ID.",
+                "3": "3. Høyreklikk på NextDNS-ikonet i Systray, og klikk deretter på Enable."
+              }
             },
             "ip": {
-                "name": "Koblet IP",
-                "link": "Link IP"
+              "steps": {
+                "1": "1. Klikk på Start-menyen, og klikk deretter på Kontrollpanel.",
+                "2": "2. Klikk på Nettverk og Internett, deretter Nettverks- og delingssenter.",
+                "3": "3. Klikk på Endre adapterinnstillinger.",
+                "4": "4. Høyreklikk på Wi-Fi-nettverket du er koblet til, og klikk deretter Egenskaper.",
+                "5": "5. Velg Internet Protocol Version {{version}}.",
+                "6": "6. Klikk på Egenskaper.",
+                "7": "7. Klikk på Bruk følgende DNS-serveradresser.",
+                "8": "8. Erstatt gjeldende adresser (hvis noen) med <1>{{dns1}}</1> og <3>{{dns2}}</3> .",
+                "9": "9. Klikk OK og deretter Lukk. Du må kanskje starte nettleseren din på nytt."
+              }
             },
-            "showAdvanced": "Vis avanserte innstillinger",
-            "ddns": {
-                "explanation": "Du kan bruke Dynamic DNS (DDNS) for å få den tilknyttede IP-en din oppdatert automatisk.",
-                "set": "Konfigurer DDNS",
-                "status": "Du bruker for øyeblikket <1>{{hostname}}</1> som DDNS-vertsnavn, blir IP-en din automatisk oppdatert hvert minutt.",
-                "unset": "Ta vekk",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS vertsnavn",
-                        "placeholder": "eksempel.no-ip.org",
-                        "errors": {
-                            "required": "Angi et vertsnavn.",
-                            "invalid": "Angi et gyldig vertsnavn.",
-                            "ip": "Angi et vertsnavn, ikke en IP-adresse.",
-                            "error": "Det oppstod en feil under henting av IP-adressen bak dette vertsnavnet.",
-                            "empty": "Dette vertsnavnet returnerer ingen IP-adresse.",
-                            "different": "Av sikkerhetsmessige grunner bør IP-adressen som returneres av DDNS-vertsnavnet være den samme som din nåværende IP-adresse når du legger til en dynamisk DNS."
-                        }
-                    }
-                }
-            },
-            "programmatically": "Du kan også programmatisk oppdatere den koblede IP-en din ved å ringe:"
-        },
-        "guide": {
-            "name": "Installasjonsveiledning",
-            "description": "Følg instruksjonene nedenfor for å konfigurere NextDNS på enheten, nettleseren eller ruteren.",
-            "or": "Eller",
-            "ipv4": {
-                "title": "IPv4 (med lenket IP)"
-            },
-            "ipv6": {
-                "supported": "Nettverket ditt støtter IPv6",
-                "notSupported": "Nettverket ditt støtter ikke IPv6"
-            },
-            "tags": {
-                "recommended": "Anbefalt",
-                "advanced": "Avansert"
-            },
-            "use": "Bruk følgende i <1>{{file}}</1> :",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "Privat DNS",
-                            "requirements": "Android 9 eller nyere",
-                            "steps": {
-                                "1": "1. Gå til Innstillinger → Nettverk og internett → Avansert → Privat DNS.",
-                                "2": "2. Velg alternativet Vertsnavn for privat DNS-leverandør.",
-                                "3": "3. Skriv inn <1>{{endpoint}}</1> og trykk Lagre."
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "Konfigurasjon Profil",
-                            "requirements": "iOS 14 eller nyere",
-                            "step": "Bruk vår Apple konfigurasjonsprofil-generator tilgjengelig på <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS for iOS",
-                            "qrTextIos": "",
-                            "qrAlt": "",
-                            "qrText": ""
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS over HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "Åpne <1>Innstillinger</1>-appen.",
-                                "Gå til <1>Nettverk & Internett</1>.",
-                                "Klikk på <1>Wi-Fi</1> (eller <3>Ethernet</3>).",
-                                "Klikk på <1>Maskinvareegenskaper</1>, eller ignorer dette trinnet hvis du klikket på <3>Ethernet</3>.",
-                                "Klikk på <1>Rediger</1> knappen ved siden av <3>DNS-servertilordning</3>.",
-                                "Velg <1>Manual</1>.",
-                                "Aktiver <1>IPv{{version}}</1>.",
-                                "Skriv inn <1>{{ip}}</1> som <3>Foretrukket DNS</3>, og velg deretter <5>På (manuell mal)</5> og skriv inn <7>{{endpoint}}</7>.",
-                                "Skriv inn <1>{{ip}}</1> som <3>Alternativ DNS</3>, og velg deretter <5>På (manuell mal)</5> og skriv inn <7>{{endpoint}}</7>.",
-                                "Klikk <1>Lagre</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS for Windows",
-                            "steps": {
-                                "1": "1. Last ned installasjonsprogrammet <1> her </1> .",
-                                "2": "2. Etter installasjon høyreklikker du på NextDNS-ikonet i Systray og åpner deretter Innstillinger. Sett <1>{{id}}</1> som konfigurasjons-ID.",
-                                "3": "3. Høyreklikk på NextDNS-ikonet i Systray, og klikk deretter på Enable."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Klikk på Start-menyen, og klikk deretter på Kontrollpanel.",
-                                "2": "2. Klikk på Nettverk og Internett, deretter Nettverks- og delingssenter.",
-                                "3": "3. Klikk på Endre adapterinnstillinger.",
-                                "4": "4. Høyreklikk på Wi-Fi-nettverket du er koblet til, og klikk deretter Egenskaper.",
-                                "5": "5. Velg Internet Protocol Version {{version}}.",
-                                "6": "6. Klikk på Egenskaper.",
-                                "7": "7. Klikk på Bruk følgende DNS-serveradresser.",
-                                "8": "8. Erstatt gjeldende adresser (hvis noen) med <1>{{dns1}}</1> og <3>{{dns2}}</3> .",
-                                "9": "9. Klikk OK og deretter Lukk. Du må kanskje starte nettleseren din på nytt."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. Installer YogaDNS fra <1>{{link}}</1> .",
-                                "2": "2. Følg instruksjonene for NextDNS på <1>{{link}}</1> og bruk <3>{{id}}</3> som konfigurasjons-ID."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "Mac os",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS for macOS",
-                            "steps": {
-                                "1": "1. Installer vår offisielle app fra Mac App Store.",
-                                "2": "2. Klikk på Innstillinger i appens statuslinjemeny og gå til kategorien Konfigurasjon.",
-                                "3": "3. Merk av for \"Bruk tilpasset konfigurasjon\" og skriv inn <1>{{id}}</1> som konfigurasjons-ID."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur eller høyere"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Åpne Systemvalg, og klikk deretter på Nettverk.",
-                                "2": "2. Velg nettverket du er koblet til, og klikk deretter på Avansert-knappen.",
-                                "3": "3. Gå til DNS-delen.",
-                                "4": "4. I DNS-serverlisten fjerner du alle adressene (hvis noen) og legger til <1>{{dns1}}</1> og <3>{{dns2}}</3> .",
-                                "5": "5. Klikk OK, og klikk deretter Bruk."
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS Command Line Client",
-                            "steps": {
-                                "1": "1. Kjør følgende kommando: <1>{{command}}</1>",
-                                "2": "2. Følg instruksjonene."
-                            },
-                            "manual": "Gå over til vårt open source-arkiv på <1>{{link}}</1> for manuell installasjonsinstruksjon."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS Command Line Client",
-                            "steps": {
-                                "1": "1. Kjør følgende kommando: <1>{{command}}</1>",
-                                "2": "2. Følg instruksjonene."
-                            },
-                            "manual": "Gå over til vårt open source-arkiv på <1>{{link}}</1> for manuell installasjonsinstruksjon."
-                        },
-                        "ip": {
-                            "step": "Endre DNS-serverne til <1>{{dns1}}</1> og <3>{{dns2}}</3> ."
-                        },
-                        "stubby": {
-                            "warning": "Forsikre deg om at Stubby er koblet til <1> OpenSSL 1.1.1 eller høyere </1> siden tidligere versjoner ikke fungerer med NextDNS."
-                        },
-                        "unbound": {
-                            "warning": "Som en rekursiv resolver, jager Ubundet CNAME. Dette kan resultere i <1> uventet oppførsel </1> når den brukes sammen med en blokkerende DNS-resolver som NextDNS. Se <3>{{link}}</3> ."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "Chrome OS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "Sikker DNS",
-                            "steps": [
-                                "Åpne <1>Innstillinger</1>-appen.",
-                                "Gå til <1>Sikkerhet og personvern</1>.",
-                                "Aktiver <1>Bruk sikker DNS</1>.",
-                                "Velg <1>Med: Egendefinert</1>, skriv deretter inn <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "Endre DNS-serverne til <1>{{dns1}}</1> og <3>{{dns2}}</3> ."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "Nettlesere",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. Gå til Innstillinger.",
-                                "2": "2. Klikk på Sikkerhet i delen Personvern og sikkerhet.",
-                                "3": "3. I Avansert-delen aktiverer du Bruk sikker DNS.",
-                                "4": "4. Velg Med: Egendefinert, og skriv deretter inn <1>{{endpoint}}</1> ."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Bare Windows, macOS og Linux",
-                            "steps": {
-                                "1": "1. Åpne Innstillinger.",
-                                "2": "2. Click Privacy & Security.",
-                                "3": "3. Scroll down to Enable DNS over HTTPS.",
-                                "4": "4. Choose Increased Protection or Max Protection.",
-                                "5": "5. Select Custom in the menu.",
-                                "6": "6. Skriv inn <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. Åpne Innstillinger.",
-                                "2": "2. Gå til personvern, søk og tjenester seksjonen.",
-                                "3": "3. Under sikkerhet kan du aktivere sikker DNS for å spesifisere hvordan du oppsøker nettverksadressen for nettsteder.",
-                                "4": "4. Velg Velg en tjenesteleverandør, og skriv deretter inn <1>{{endpoint}}</1> ."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. Åpne Innstillinger.",
-                                "2": "2. For Personvern og sikkerhetsdelen (under Ytterligere innstillinger), gå til sikkerhet.",
-                                "3": "3. I Avansert seksjon, aktiver bruk sikker DNS.",
-                                "4": "4. Velg med: Egendefinert, skriv deretter <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "Rutere",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS for rutere",
-                            "requirements": "Fungerer bare på rutere som kan kjøre kjørbare filer",
-                            "step": "Gå over til vårt open source-arkiv på <1>{{link}}</1> for installasjonsinstruksjoner."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "Noen rutere støtter kanskje ikke IPv6-notasjonen ovenfor. I så fall bruker du <1>{{dns1}}</1> og <3>{{dns2}}</3> ."
-                            },
-                            "steps": {
-                                "1": "1. Åpne innstillingene for ruteren. Vanligvis har du tilgang til den fra nettleseren din via en URL (som http://192.168.0.1/ eller http://192.168.1.1/).",
-                                "2": "2. Finn DNS-innstillingene i grensesnittet.",
-                                "3": "3. Fjern alle adressene (hvis noen), og legg deretter til <1>{{dns1}}</1> og <3>{{dns2}}</3> .",
-                                "4": "4. Klikk på Lagre (eller lignende)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. Gå til Tjenester → DNS-resolver, og rull på kategorien Generelle innstillinger til boksen Egendefinerte alternativer.",
-                                "2": "2. Skriv inn følgende linjer:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "Kjør følgende:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "Gå over til Tailscale-dokumentasjonen på <2>{{link}}</2> for installasjonsinstruksjoner."
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. Installer YogaDNS fra <1>{{link}}</1> .",
+                "2": "2. Følg instruksjonene for NextDNS på <1>{{link}}</1> og bruk <3>{{id}}</3> som konfigurasjons-ID."
+              }
             }
+          }
         },
-        "identify": {
-            "name": "Identifiser enhetene dine",
-            "description": "Følg instruksjonene nedenfor for å identifisere enhetene dine i Analytics og Logs.",
-            "apps": {
-                "name": "Apper",
-                "instructions": "Aktiver \"Send enhetsnavn\" i appinnstillingene."
+        "macos": {
+          "name": "Mac os",
+          "guides": {
+            "app": {
+              "title": "NextDNS for macOS",
+              "steps": {
+                "1": "1. Installer vår offisielle app fra Mac App Store.",
+                "2": "2. Klikk på Innstillinger i appens statuslinjemeny og gå til kategorien Konfigurasjon.",
+                "3": "3. Merk av for \"Bruk tilpasset konfigurasjon\" og skriv inn <1>{{id}}</1> som konfigurasjons-ID."
+              }
             },
-            "dot": {
-                "instructions": "Legg navnet på det angitte domenet (navnet skal bare inneholde <1> az </1> , <3> AZ </3> , <5> 0-9 </5> og <7> - </7> ). Bruk <9> - </9> for mellomrom.",
-                "example": "For \"<1> John Router </1> \", vil du bruke <3> John - Router-{{configuration}}.dns.nextdns.io </3> som DNS-over-TLS-endepunkt."
+            "profile": {
+              "requirements": "macOS Big Sur eller høyere"
             },
-            "doh": {
-                "instructions": "Legg navnet til den angitte URL-en (navnet skal være URL-kodet).",
-                "example": "For \"<1> Johns Firefox </1> \", vil du bruke <3> https://dns.nextdns.io/{{configuration}}/ Johns%20Firefox </3> som DNS-over-HTTPS-sluttpunkt."
+            "ip": {
+              "steps": {
+                "1": "1. Åpne Systemvalg, og klikk deretter på Nettverk.",
+                "2": "2. Velg nettverket du er koblet til, og klikk deretter på Avansert-knappen.",
+                "3": "3. Gå til DNS-delen.",
+                "4": "4. I DNS-serverlisten fjerner du alle adressene (hvis noen) og legger til <1>{{dns1}}</1> og <3>{{dns2}}</3> .",
+                "5": "5. Klikk OK, og klikk deretter Bruk."
+              }
+            },
+            "cli": {
+              "title": "NextDNS Command Line Client",
+              "steps": {
+                "1": "1. Kjør følgende kommando: <1>{{command}}</1>",
+                "2": "2. Følg instruksjonene."
+              },
+              "manual": "Gå over til vårt open source-arkiv på <1>{{link}}</1> for manuell installasjonsinstruksjon."
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS Command Line Client",
+              "steps": {
+                "1": "1. Kjør følgende kommando: <1>{{command}}</1>",
+                "2": "2. Følg instruksjonene."
+              },
+              "manual": "Gå over til vårt open source-arkiv på <1>{{link}}</1> for manuell installasjonsinstruksjon."
+            },
+            "ip": {
+              "step": "Endre DNS-serverne til <1>{{dns1}}</1> og <3>{{dns2}}</3> ."
+            },
+            "stubby": {
+              "warning": "Forsikre deg om at Stubby er koblet til <1> OpenSSL 1.1.1 eller høyere </1> siden tidligere versjoner ikke fungerer med NextDNS."
+            },
+            "unbound": {
+              "warning": "Som en rekursiv resolver, jager Ubundet CNAME. Dette kan resultere i <1> uventet oppførsel </1> når den brukes sammen med en blokkerende DNS-resolver som NextDNS. Se <3>{{link}}</3> ."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "Chrome OS",
+          "guides": {
+            "secure-dns": {
+              "title": "Sikker DNS",
+              "steps": [
+                "Åpne <1>Innstillinger</1>-appen.",
+                "Gå til <1>Sikkerhet og personvern</1>.",
+                "Aktiver <1>Bruk sikker DNS</1>.",
+                "Velg <1>Med: Egendefinert</1>, skriv deretter inn <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "Endre DNS-serverne til <1>{{dns1}}</1> og <3>{{dns2}}</3> ."
+            }
+          }
+        },
+        "browsers": {
+          "name": "Nettlesere",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. Gå til Innstillinger.",
+                "2": "2. Klikk på Sikkerhet i delen Personvern og sikkerhet.",
+                "3": "3. I Avansert-delen aktiverer du Bruk sikker DNS.",
+                "4": "4. Velg Med: Egendefinert, og skriv deretter inn <1>{{endpoint}}</1> ."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Bare Windows, macOS og Linux",
+              "steps": {
+                "1": "1. Åpne Innstillinger.",
+                "2": "2. Click Privacy & Security.",
+                "3": "3. Scroll down to Enable DNS over HTTPS.",
+                "4": "4. Choose Increased Protection or Max Protection.",
+                "5": "5. Select Custom in the menu.",
+                "6": "6. Skriv inn <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. Åpne Innstillinger.",
+                "2": "2. Gå til personvern, søk og tjenester seksjonen.",
+                "3": "3. Under sikkerhet kan du aktivere sikker DNS for å spesifisere hvordan du oppsøker nettverksadressen for nettsteder.",
+                "4": "4. Velg Velg en tjenesteleverandør, og skriv deretter inn <1>{{endpoint}}</1> ."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. Åpne Innstillinger.",
+                "2": "2. For Personvern og sikkerhetsdelen (under Ytterligere innstillinger), gå til sikkerhet.",
+                "3": "3. I Avansert seksjon, aktiver bruk sikker DNS.",
+                "4": "4. Velg med: Egendefinert, skriv deretter <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "Rutere",
+          "guides": {
+            "cli": {
+              "title": "NextDNS for rutere",
+              "requirements": "Fungerer bare på rutere som kan kjøre kjørbare filer",
+              "step": "Gå over til vårt open source-arkiv på <1>{{link}}</1> for installasjonsinstruksjoner."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "Noen rutere støtter kanskje ikke IPv6-notasjonen ovenfor. I så fall bruker du <1>{{dns1}}</1> og <3>{{dns2}}</3> ."
+              },
+              "steps": {
+                "1": "1. Åpne innstillingene for ruteren. Vanligvis har du tilgang til den fra nettleseren din via en URL (som http://192.168.0.1/ eller http://192.168.1.1/).",
+                "2": "2. Finn DNS-innstillingene i grensesnittet.",
+                "3": "3. Fjern alle adressene (hvis noen), og legg deretter til <1>{{dns1}}</1> og <3>{{dns2}}</3> .",
+                "4": "4. Klikk på Lagre (eller lignende)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. Gå til Tjenester → DNS-resolver, og rull på kategorien Generelle innstillinger til boksen Egendefinerte alternativer.",
+                "2": "2. Skriv inn følgende linjer:"
+              }
+            },
+            "mikrotik": {
+              "run": "Kjør følgende:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "Gå over til Tailscale-dokumentasjonen på <2>{{link}}</2> for installasjonsinstruksjoner."
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "Threader Intelligence Feeds",
-            "description": "Blokkér domener som er kjent for å distribuere skadelig programvare, start phishing-angrep og vert kommando-og-kontroll-servere ved å bruke en blanding av de mest anerkjente feedsinformasjonen - alt oppdatert i sanntid.",
-            "enable": "Bruk Threader Intelligence Feeds"
-        },
-        "ai": {
-            "name": "AI-Drevet Trussel Deteksjon",
-            "description": "Blokker millioner av trusler oppdaget av vår AI-teknologi - en proprietær AI-motor designet fra bunnen av for DNS med hundrevis av signaler, terabyte med treningsdata og sanntids beslutningstaking.",
-            "enable": "Aktiver AI-Drevet Trussel Deteksjon"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google Safe Browsing",
-            "description": "Blokker skadelig programvare og phishing-domener ved hjelp av Google Safe Browsing - en teknologi som undersøker milliarder nettadresser per dag på jakt etter usikre nettsteder. I motsetning til versjonen som er innebygd i noen nettlesere, knytter dette ikke den offentlige IP-adressen din til trusler, og tillater ikke omgåelse av blokken.",
-            "enable": "Aktiver Google Safe Browsing"
-        },
-        "cryptojacking": {
-            "name": "Kryptojacking-beskyttelse",
-            "description": "Forhindre uautorisert bruk av enhetene dine for å utvinne kryptovaluta.",
-            "enable": "Aktiver Cryptojacking Protection"
-        },
-        "dnsRebinding": {
-            "name": "DNS-rebinding-beskyttelse",
-            "description": "Forhindre at angripere tar kontroll over lokale enheter via Internett ved automatisk å blokkere DNS-svar som inneholder private IP-adresser.",
-            "enable": "Aktiver DNS-rebinding-beskyttelse"
-        },
-        "homograph": {
-            "name": "IDN-homograf angriper beskyttelse",
-            "description": "Blokkér domener som utgir seg for andre domener ved å misbruke det store tegnsettet som ble gjort tilgjengelig med ankomsten av internasjonaliserte domenenavn (IDN) - for eksempel å erstatte den latinske bokstaven \"e\" med den kyrilliske bokstaven \"е\".",
-            "enable": "Aktiver beskyttelse mot homografangrep"
-        },
-        "typosquatting": {
-            "name": "Typosquatting beskyttelse",
-            "description": "Blokkér domener registrert av ondsinnede aktører som retter seg mot brukere som feilaktig skriver inn en nettadresse i nettleseren sin - f.eks. Gooogle.com i stedet for google.com.",
-            "enable": "Aktiver typosquatting-beskyttelse"
-        },
-        "dga": {
-            "name": "Domain Generation Algorithms (DGAs) Protection",
-            "description": "Blokkér domener generert av Domain Generation Algorithms (DGAs) sett i forskjellige familier av skadelig programvare som kan brukes som møteplasser med kommando- og kontrollserverne.",
-            "enable": "Aktiver DGA-beskyttelse"
-        },
-        "nrd": {
-            "name": "Blokker nye registrerte domener (NRDs)",
-            "description": "Blokker domener registrert for mindre enn 30 dager siden. Disse domenene er kjent for å være favorisert av trusselaktører for å starte ondsinnede kampanjer.",
-            "enable": "Blokker nye registrerte domener (NRDs)"
-        },
-        "ddns": {
-            "name": "Blokker dynamiske DNS-vertsnavn",
-            "description": "Dynamiske DNS (eller DDNS)-tjenester lar ondsinnede aktører raskt sette opp vertsnavn gratis og uten verifisering eller identitetsbekreftelse. Mens legitime DDNS-vertsnavn sjelden er i daglig bruk, er deres ondsinnede motparter mye brukt i phishing-kampanjer – f.eks. paypal-login.duckdns.org.",
-            "disclaimer": "Hvis du bruker DDNS, merk at denne innstillingen ikke vil blokkere DDNS-tjenestenes egen nettside eller deres oppdaterings-API.",
-            "enable": "Blokker dynamiske DNS-vertsnavn"
-        },
-        "parked": {
-            "name": "Blokker parkerte domener",
-            "description": "Parkerte domener er nettsteder med én side, ofte lastet med annonser og uten verdi. Inntektsgenerering av parkerte domener kan noen ganger blandes med mistenkelig praksis og ondsinnet innhold.",
-            "enable": "Blokker parkerte domener"
-        },
-        "tld": {
-            "name": "Blokker toppdomener (TLDs)",
-            "description": "Blokker alle domener og underdomener som tilhører spesifikke toppdomene.",
-            "add": "Legg til en toppdomene",
-            "sections": {
-                "spamhaus": "Spamhaus mest misbrukt toppdomene",
-                "all": "Alle toppdomene"
-            }
-        },
-        "csam": {
-            "name": "Blokker materiale om seksuelt misbruk av barn",
-            "description": "Blokkér domener som er vert for materiale om seksuelt misbruk av barn ved hjelp av Project Arachnid, som drives av Canadian Center for Child Protection. Ingen informasjon overføres tilbake til Project Arachnid når et domene er blokkert.",
-            "enable": "Blokker materiale om seksuelt misbruk av barn"
-        },
-        "freeHostingDomains": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "untrustedCertificates": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "tunnelingEndpoints": {
-            "description": "",
-            "name": "",
-            "enable": ""
-        },
-        "dnsPayloadDelivery": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "decentralizedWebGateways": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "dataDropServices": {
-            "enable": "",
-            "description": "",
-            "name": ""
-        },
-        "newlyActiveDomains": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "fastFluxNetworks": {
-            "enable": "",
-            "name": "",
-            "description": ""
-        },
-        "highRiskTlds": {
-            "name": "",
-            "enable": "",
-            "description": ""
-        },
-        "residentialHosting": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "dnsDataExfiltration": {
-            "description": "",
-            "name": "",
-            "enable": ""
+    "identify": {
+      "name": "Identifiser enhetene dine",
+      "description": "Følg instruksjonene nedenfor for å identifisere enhetene dine i Analytics og Logs.",
+      "apps": {
+        "name": "Apper",
+        "instructions": "Aktiver \"Send enhetsnavn\" i appinnstillingene."
+      },
+      "dot": {
+        "instructions": "Legg navnet på det angitte domenet (navnet skal bare inneholde <1> az </1> , <3> AZ </3> , <5> 0-9 </5> og <7> - </7> ). Bruk <9> - </9> for mellomrom.",
+        "example": "For \"<1> John Router </1> \", vil du bruke <3> John - Router-{{configuration}}.dns.nextdns.io </3> som DNS-over-TLS-endepunkt."
+      },
+      "doh": {
+        "instructions": "Legg navnet til den angitte URL-en (navnet skal være URL-kodet).",
+        "example": "For \"<1> Johns Firefox </1> \", vil du bruke <3> https://dns.nextdns.io/{{configuration}}/ Johns%20Firefox </3> som DNS-over-HTTPS-sluttpunkt."
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "Threader Intelligence Feeds",
+      "description": "Blokkér domener som er kjent for å distribuere skadelig programvare, start phishing-angrep og vert kommando-og-kontroll-servere ved å bruke en blanding av de mest anerkjente feedsinformasjonen - alt oppdatert i sanntid.",
+      "enable": "Bruk Threader Intelligence Feeds"
+    },
+    "ai": {
+      "name": "AI-Drevet Trussel Deteksjon",
+      "description": "Blokker millioner av trusler oppdaget av vår AI-teknologi - en proprietær AI-motor designet fra bunnen av for DNS med hundrevis av signaler, terabyte med treningsdata og sanntids beslutningstaking.",
+      "enable": "Aktiver AI-Drevet Trussel Deteksjon"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google Safe Browsing",
+      "description": "Blokker skadelig programvare og phishing-domener ved hjelp av Google Safe Browsing - en teknologi som undersøker milliarder nettadresser per dag på jakt etter usikre nettsteder. I motsetning til versjonen som er innebygd i noen nettlesere, knytter dette ikke den offentlige IP-adressen din til trusler, og tillater ikke omgåelse av blokken.",
+      "enable": "Aktiver Google Safe Browsing"
+    },
+    "cryptojacking": {
+      "name": "Kryptojacking-beskyttelse",
+      "description": "Forhindre uautorisert bruk av enhetene dine for å utvinne kryptovaluta.",
+      "enable": "Aktiver Cryptojacking Protection"
+    },
+    "dnsRebinding": {
+      "name": "DNS-rebinding-beskyttelse",
+      "description": "Forhindre at angripere tar kontroll over lokale enheter via Internett ved automatisk å blokkere DNS-svar som inneholder private IP-adresser.",
+      "enable": "Aktiver DNS-rebinding-beskyttelse"
+    },
+    "homograph": {
+      "name": "IDN-homograf angriper beskyttelse",
+      "description": "Blokkér domener som utgir seg for andre domener ved å misbruke det store tegnsettet som ble gjort tilgjengelig med ankomsten av internasjonaliserte domenenavn (IDN) - for eksempel å erstatte den latinske bokstaven \"e\" med den kyrilliske bokstaven \"е\".",
+      "enable": "Aktiver beskyttelse mot homografangrep"
+    },
+    "typosquatting": {
+      "name": "Typosquatting beskyttelse",
+      "description": "Blokkér domener registrert av ondsinnede aktører som retter seg mot brukere som feilaktig skriver inn en nettadresse i nettleseren sin - f.eks. Gooogle.com i stedet for google.com.",
+      "enable": "Aktiver typosquatting-beskyttelse"
+    },
+    "dga": {
+      "name": "Domain Generation Algorithms (DGAs) Protection",
+      "description": "Blokkér domener generert av Domain Generation Algorithms (DGAs) sett i forskjellige familier av skadelig programvare som kan brukes som møteplasser med kommando- og kontrollserverne.",
+      "enable": "Aktiver DGA-beskyttelse"
+    },
+    "nrd": {
+      "name": "Blokker nye registrerte domener (NRDs)",
+      "description": "Blokker domener registrert for mindre enn 30 dager siden. Disse domenene er kjent for å være favorisert av trusselaktører for å starte ondsinnede kampanjer.",
+      "enable": "Blokker nye registrerte domener (NRDs)"
+    },
+    "ddns": {
+      "name": "Blokker dynamiske DNS-vertsnavn",
+      "description": "Dynamiske DNS (eller DDNS)-tjenester lar ondsinnede aktører raskt sette opp vertsnavn gratis og uten verifisering eller identitetsbekreftelse. Mens legitime DDNS-vertsnavn sjelden er i daglig bruk, er deres ondsinnede motparter mye brukt i phishing-kampanjer – f.eks. paypal-login.duckdns.org.",
+      "disclaimer": "Hvis du bruker DDNS, merk at denne innstillingen ikke vil blokkere DDNS-tjenestenes egen nettside eller deres oppdaterings-API.",
+      "enable": "Blokker dynamiske DNS-vertsnavn"
+    },
+    "parked": {
+      "name": "Blokker parkerte domener",
+      "description": "Parkerte domener er nettsteder med én side, ofte lastet med annonser og uten verdi. Inntektsgenerering av parkerte domener kan noen ganger blandes med mistenkelig praksis og ondsinnet innhold.",
+      "enable": "Blokker parkerte domener"
+    },
+    "tld": {
+      "name": "Blokker toppdomener (TLDs)",
+      "description": "Blokker alle domener og underdomener som tilhører spesifikke toppdomene.",
+      "add": "Legg til en toppdomene",
+      "sections": {
+        "spamhaus": "Spamhaus mest misbrukt toppdomene",
+        "all": "Alle toppdomene"
+      }
+    },
+    "csam": {
+      "name": "Blokker materiale om seksuelt misbruk av barn",
+      "description": "Blokkér domener som er vert for materiale om seksuelt misbruk av barn ved hjelp av Project Arachnid, som drives av Canadian Center for Child Protection. Ingen informasjon overføres tilbake til Project Arachnid når et domene er blokkert.",
+      "enable": "Blokker materiale om seksuelt misbruk av barn"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "Blokkeringslister",
+      "description": "Blokker annonser og sporere ved hjelp av de mest populære blokkeringslistene som er tilgjengelige - alt oppdatert i sanntid.",
+      "add": "Legg til en blokkeringsliste",
+      "updated": "Oppdatert <1>{{ago}}</1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS Ads & Trackers Blocklist",
+          "description": "En omfattende blokkeringsliste for å blokkere annonser og trackere i alle land. Dette er den anbefalte startblokklisten."
         }
+      },
+      "sortBy": {
+        "popularity": "Popularitet",
+        "name": "Navn",
+        "entries": "Oppføringer",
+        "updated": "Nylig"
+      },
+      "entries_one": "{{count, number}} oppføring",
+      "entries_other": "{{count, number}} innganger"
     },
-    "privacy": {
-        "blocklists": {
-            "name": "Blokkeringslister",
-            "description": "Blokker annonser og sporere ved hjelp av de mest populære blokkeringslistene som er tilgjengelige - alt oppdatert i sanntid.",
-            "add": "Legg til en blokkeringsliste",
-            "updated": "Oppdatert <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS Ads & Trackers Blocklist",
-                    "description": "En omfattende blokkeringsliste for å blokkere annonser og trackere i alle land. Dette er den anbefalte startblokklisten."
-                }
-            },
-            "sortBy": {
-                "popularity": "Popularitet",
-                "name": "Navn",
-                "entries": "Oppføringer",
-                "updated": "Nylig"
-            },
-            "entries_one": "{{count, number}} oppføring",
-            "entries_other": "{{count, number}} innganger"
+    "native": {
+      "name": "Native Tracking Protection",
+      "description": "Blokkere bredspektret trackere - ofte på operativsystemnivå - som sporer aktiviteten din på en enhet. Dette kan omfatte alle nettstedene du besøker, alt du skriver eller posisjonen din til enhver tid.",
+      "add": "Legg til",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "Telefoner og nettbrett, smarte TV-er, rutere"
         },
-        "native": {
-            "name": "Native Tracking Protection",
-            "description": "Blokkere bredspektret trackere - ofte på operativsystemnivå - som sporer aktiviteten din på en enhet. Dette kan omfatte alle nettstedene du besøker, alt du skriver eller posisjonen din til enhver tid.",
-            "add": "Legg til",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "Telefoner og nettbrett, smarte TV-er, rutere"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "Telefoner og nettbrett"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "Telefoner, nettbrett, smarte TV-er"
-                },
-                "alexa": {
-                    "name": "Amazon Alexa",
-                    "devices": "Alexa-aktiverte enheter"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "Alle versjoner"
-                },
-                "apple": {
-                    "name": "eple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "Alle Roku-enheter"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "Høyttalere"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "Telefoner og nettbrett"
         },
-        "disguised": {
-            "name": "Blokkér forkledde tredjepartssporere",
-            "description": "Oppdag og blokker automatisk tredjepartssporere som forkler seg som førstepart for å omgå den nylige nettleserens personvern som ITP.",
-            "enable": "Blokkér forkledde tredjepartssporere"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "Telefoner, nettbrett, smarte TV-er"
         },
-        "affiliate": {
-            "name": "Tillat tilknytnings- og sporingslenker",
-            "description": "Tillat tilknyttede og sporingsdomener som er vanlige på nettsteder for tilbud, i e-post eller i søkeresultatene. De blir vanligvis bare ringt etter manuelt å klikke på en lenke.",
-            "relay": "Din IP-adresse vil automatisk bli skjult fra disse nettsidene for å bevare ditt personvern.",
-            "enable": "Tillat tilknytnings- og sporingslenker"
+        "alexa": {
+          "name": "Amazon Alexa",
+          "devices": "Alexa-aktiverte enheter"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "Alle versjoner"
+        },
+        "apple": {
+          "name": "eple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "Alle Roku-enheter"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "Høyttalere"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "Nettsteder, apper og spill",
-            "description": "Begrens tilgangen til bestemte nettsteder, apper og spill.",
-            "add": "Legg til et nettsted, en app eller et spill",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Snøstorm",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Uenighet",
-                "disneyplus": "Disney +",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "budbringer",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Damp",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Rykke",
-                "twitter": "Twitter",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "Hva skjer",
-                "xboxlive": "Xbox Live",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "Blokkér forkledde tredjepartssporere",
+      "description": "Oppdag og blokker automatisk tredjepartssporere som forkler seg som førstepart for å omgå den nylige nettleserens personvern som ITP.",
+      "enable": "Blokkér forkledde tredjepartssporere"
+    },
+    "affiliate": {
+      "name": "Tillat tilknytnings- og sporingslenker",
+      "description": "Tillat tilknyttede og sporingsdomener som er vanlige på nettsteder for tilbud, i e-post eller i søkeresultatene. De blir vanligvis bare ringt etter manuelt å klikke på en lenke.",
+      "relay": "Din IP-adresse vil automatisk bli skjult fra disse nettsidene for å bevare ditt personvern.",
+      "enable": "Tillat tilknytnings- og sporingslenker"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "Nettsteder, apper og spill",
+      "description": "Begrens tilgangen til bestemte nettsteder, apper og spill.",
+      "add": "Legg til et nettsted, en app eller et spill",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Snøstorm",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Uenighet",
+        "disneyplus": "Disney +",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "budbringer",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Damp",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Rykke",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "Hva skjer",
+        "xboxlive": "Xbox Live",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "Kategorier",
+      "description": "Begrens tilgangen til bestemte kategorier av nettsteder og apper.",
+      "add": "Legg til en kategori",
+      "categories": {
+        "dating": {
+          "name": "Dating",
+          "description": "Blokkerer alle datingsider og apper."
         },
+        "gambling": {
+          "name": "Gambling",
+          "description": "Blokkerer gamblinginnhold."
+        },
+        "gaming": {
+          "name": "Nettspill",
+          "description": "Blokkerer spillnettsteder, nettspillapper og nettspillnettverk (Xbox Live, PlayStation Network, etc.)."
+        },
+        "piracy": {
+          "name": "Piratkopiering",
+          "description": "Blokkerer P2P-nettsteder, protokoller, copyright-krenkende streaming-nettsteder og generiske video hosting-nettsteder som hovedsakelig brukes til ulovlig distribusjon av opphavsrettsbeskyttet innhold."
+        },
+        "porn": {
+          "name": "Porno",
+          "description": "Blokkerer voksen- og pornografisk innhold. Det inkluderer eskortsider, pornhub.com og lignende domener."
+        },
+        "social-networks": {
+          "name": "Sosiale nettverk",
+          "description": "Blokkerer alle sosiale nettverkssider og apper (Facebook, Instagram, TikTok, Reddit, etc.). Blokkerer ikke meldingsapper."
+        },
+        "video-streaming": {
+          "name": "Videostrømming",
+          "description": "Blokkerer videostrømmetjenester (YouTube, Netflix, Disney+, ulovlige strømmenettsteder, videopornonettsteder, etc.) og videobaserte sosiale nettverk (TikTok, etc.). Dette kan også bidra til å redusere båndbreddebruken på ethvert nettverk."
+        }
+      }
+    },
+    "recreation": {
+      "name": "Rekreasjonstid",
+      "description": "Angi en periode for hver dag i uken der noen av nettstedene, appene, spillene eller kategoriene ovenfor ikke vil bli blokkert - f.eks. Tillat Facebook på mandager og tirsdager mellom 18 og 20.",
+      "set": "Sett rekreasjonstid",
+      "howto": "Bruk <1></1> knappen i avsnittene ovenfor for å aktivere rekreasjonstid."
+    },
+    "safesearch": {
+      "name": "Sikkert søk",
+      "description": "Filtrer ut voksent innhold på alle de store søkemotorene, inkludert bilder og videoer. Dette vil også blokkere tilgangen til søkemotorer som ikke støtter denne funksjonen.",
+      "enable": "Håndheve Safe Search"
+    },
+    "youtubeRestricted": {
+      "name": "YouTube Begrenset modus",
+      "description": "Filtrer ut modne videoer på YouTube og blokker innebygde modne videoer fra å bli sett på andre nettsteder. Dette vil også skjule alle kommentarer.",
+      "enable": "Håndheve YouTube-begrenset modus"
+    },
+    "bypass": {
+      "name": "Blokkér forbikjøringsmetoder",
+      "description": "Forhindre eller hindre bruken av metoder som kan bidra til å omgå NextDNS-filtrering i nettverket. Dette inkluderer VPN-er, fullmakter, Tor-relatert programvare og krypterte DNS-leverandører.",
+      "enable": "Blokkér forbikjøringsmetoder"
+    }
+  },
+  "xlist": {
+    "placeholder": "Legg til et domene ...",
+    "errors": {
+      "required": "Vennligst skriv inn et domene.",
+      "ip": "Vennligst skriv inn et domene, ikke en IP-adresse.",
+      "invalid": "Vennligst skriv inn et gyldig domene.",
+      "tld": "Det ser ut til at du prøver å blokkere en hel TLD, vennligst bruk Block TLDs-funksjonen i sikkerhetsdelen.",
+      "exists": "Dette domenet er allerede lagt til."
+    },
+    "empty": "Ingen domener ennå.",
+    "denylist": {
+      "info": "Å nekte et domene vil automatisk nekte alle underdomenene."
+    },
+    "allowlist": {
+      "info": "Hvis du tillater et domene, vil alle underdomener automatisk tillates. Tillatelse går foran alt annet, inkludert sikkerhetsfunksjoner."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> av blokkerte spørsmål </1></1>",
+      "all_one": "<0> {{count, number}} </0> <1> spørring </1>",
+      "all_other": "<0> {{count, number}} </0> <1> spørsmål </1>",
+      "blocked_one": "<0> {{count, number}} </0> <1> blokkerte søket </1>",
+      "blocked_other": "<0> {{count, number}} </0> <1> blokkerte spørsmål </1>"
+    },
+    "queries": {
+      "name": "Spørringer",
+      "description": "Utvikling av spørsmål over tid.",
+      "queries": {
+        "all_one": "<0> {{count, number}} </0> <1> spørring </1>",
+        "all_other": "<0> {{count, number}} </0> <1> spørsmål </1>",
+        "blocked_one": "<0> {{count, number}} </0> <1> blokkerte søket </1>",
+        "blocked_other": "<0> {{count, number}} </0> <1> blokkerte spørsmål </1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "Løste domener",
+        "description": "Domener som løste seg uten å bli blokkert av noen innstilling eller fordi de var tillatt manuelt."
+      },
+      "blocked": {
+        "name": "Blokkerte domener",
+        "description": "Domener blokkert av en innstilling for sikkerhet, personvern og / eller foreldrekontroll eller fordi de ble nektet manuelt."
+      },
+      "root": {
+        "name": "Rotdomener",
+        "description": "Samlet antall spørsmål gjort for rotdomener og alle underdomener."
+      },
+      "empty": "Ingen domener ennå."
+    },
+    "reasons": {
+      "name": "Blokkerte grunner",
+      "description": "Innstillinger for sikkerhet, personvern og / eller foreldrekontroll som blokkerte flest spørsmål.",
+      "empty": "Ingen domener ble blokkert ennå."
+    },
+    "devices": {
+      "name": "Enheter",
+      "description": "Enheter som gjør spørsmålene.",
+      "empty": "Ingen enheter ennå.",
+      "unidentified": {
+        "name": "Uidentifiserte enheter"
+      }
+    },
+    "ips": {
+      "name": "IP-er",
+      "description": "IP-adresser som gjør spørsmålene.",
+      "empty": "Ingen IP-er ennå."
+    },
+    "gafam": {
+      "name": "GAFAM Dominans",
+      "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple og Microsoft) er de 5 dominerende internettbedriftene som eier mange populære tjenester, ofte opererer under et annet navn, for eksempel WhatsApp og Instagram for Facebook.",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Facebook"
+        },
+        "apple": {
+          "name": "eple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "Andre"
+        }
+      },
+      "queries_one": "{{count, number}} spørring",
+      "queries_other": "{{count, number}} spørsmål"
+    },
+    "encrypted": {
+      "name": "Kryptert DNS",
+      "description": "Prosentandelen av spørsmål gjort ved hjelp av en kryptert transport (DNS-over-HTTPS, DNS-over-TLS eller de offisielle NextDNS-appene).",
+      "empty": "Ingen spørsmål ennå."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "Andel spørsmål validert med DNSSEC.",
+      "empty": "Ingen spørsmål ennå."
+    },
+    "destination": {
+      "name": "Land for trafikkdestinasjon",
+      "description": "Land der internettrafikken din går.",
+      "topDomains": "Toppdomener",
+      "queries_one": "{{count, number}} spørring",
+      "queries_other": "{{count, number}} spørsmål"
+    }
+  },
+  "logs": {
+    "blockedOnly": "Bare blokkerte spørsmål",
+    "raw": "Rå DNS-logger",
+    "empty": "Ingen logger ennå.",
+    "log": {
+      "actionBlock": "Blokker",
+      "actionAllow": "Tillat",
+      "dnssec": "Validert med DNSSEC.",
+      "clients": {
+        "nextdns-ios": "NextDNS for iOS",
+        "nextdns-android": "NextDNS for Android",
+        "nextdns-macos": "NextDNS for macOS",
+        "nextdns-windows": "NextDNS for Windows",
+        "nextdns-cli": "NextDNS CLI-klient",
+        "nextdns-chromeos": "NextDNS for Chrome OS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Bølge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "Mikrotik",
+        "apple-profile": "Apple konfigurasjonsprofil"
+      },
+      "blockedBy": "Blokkert av <1>{{lists}}</1> .",
+      "allowedBy": "Tillatt av <1>{{lists}}</1> .",
+      "manual": {
+        "deny": "Manuelt nektet.",
+        "allow": "Manuelt tillatt."
+      },
+      "insights": {
+        "show": "Vis sporingsinnsikt",
+        "hide": "Skjul sporingsinnsikt",
         "categories": {
-            "name": "Kategorier",
-            "description": "Begrens tilgangen til bestemte kategorier av nettsteder og apper.",
-            "add": "Legg til en kategori",
-            "categories": {
-                "dating": {
-                    "name": "Dating",
-                    "description": "Blokkerer alle datingsider og apper."
-                },
-                "gambling": {
-                    "name": "Gambling",
-                    "description": "Blokkerer gamblinginnhold."
-                },
-                "gaming": {
-                    "name": "Nettspill",
-                    "description": "Blokkerer spillnettsteder, nettspillapper og nettspillnettverk (Xbox Live, PlayStation Network, etc.)."
-                },
-                "piracy": {
-                    "name": "Piratkopiering",
-                    "description": "Blokkerer P2P-nettsteder, protokoller, copyright-krenkende streaming-nettsteder og generiske video hosting-nettsteder som hovedsakelig brukes til ulovlig distribusjon av opphavsrettsbeskyttet innhold."
-                },
-                "porn": {
-                    "name": "Porno",
-                    "description": "Blokkerer voksen- og pornografisk innhold. Det inkluderer eskortsider, pornhub.com og lignende domener."
-                },
-                "social-networks": {
-                    "name": "Sosiale nettverk",
-                    "description": "Blokkerer alle sosiale nettverkssider og apper (Facebook, Instagram, TikTok, Reddit, etc.). Blokkerer ikke meldingsapper."
-                },
-                "video-streaming": {
-                    "name": "Videostrømming",
-                    "description": "Blokkerer videostrømmetjenester (YouTube, Netflix, Disney+, ulovlige strømmenettsteder, videopornonettsteder, etc.) og videobaserte sosiale nettverk (TikTok, etc.). Dette kan også bidra til å redusere båndbreddebruken på ethvert nettverk."
-                }
-            }
+          "advertising": {
+            "description": "Tilbyr reklame- eller annonseringsrelaterte tjenester som datainnsamling, atferdsanalyse eller retargeting."
+          },
+          "comments": {
+            "description": "Aktiverer kommentarseksjoner for artikler og produktanmeldelser."
+          },
+          "customer_interaction": {
+            "description": "Inkluderer chat, e-postmeldinger, kundesupport og andre interaksjonsverktøy."
+          },
+          "essential": {
+            "description": "Inkluderer tagchefer, personvernerklæringer og teknologier som er kritiske for funksjonaliteten til et nettsted."
+          },
+          "adult_advertsing": {
+            "description": "Leverer annonser som vanligvis vises på nettsteder for vokseninnhold."
+          },
+          "site_analytics": {
+            "description": "Samler inn og analyserer data relatert til bruk og ytelse på nettstedet."
+          },
+          "social_media": {
+            "description": "Integrerer funksjoner relatert til sosiale medier."
+          },
+          "audio_video_player": {
+            "description": "Gjør det mulig for nettsteder å publisere, distribuere og optimalisere video- og lydinnhold."
+          },
+          "cdn": {
+            "description": "Innholdsleveringsnettverk som leverer ressurser for forskjellige nettstedsbruk og vanligvis for mange forskjellige kunder."
+          },
+          "misc": {
+            "description": "Denne trackeren passer ikke i andre kategorier eller er ennå ikke merket."
+          },
+          "pornvertising": {
+            "description": "Leverer annonser som vanligvis vises på nettsteder for vokseninnhold."
+          },
+          "hosting": {
+            "description": "Dette er en tjeneste som brukes av innholdsleverandøren eller nettstedseieren."
+          },
+          "extensions": {
+            "description": "Programvare på brukerenheter som kan fange opp og analysere nettlesertrafikk (mann i midten)."
+          }
         },
-        "recreation": {
-            "name": "Rekreasjonstid",
-            "description": "Angi en periode for hver dag i uken der noen av nettstedene, appene, spillene eller kategoriene ovenfor ikke vil bli blokkert - f.eks. Tillat Facebook på mandager og tirsdager mellom 18 og 20.",
-            "set": "Sett rekreasjonstid",
-            "howto": "Bruk <1></1> knappen i avsnittene ovenfor for å aktivere rekreasjonstid.",
-            "end": "",
-            "start": ""
+        "prevalence": {
+          "intensity": {
+            "dangerously": "Farlig utbredt",
+            "extremely": "Ekstremt utbredt",
+            "very": "Veldig utbredt",
+            "commonly": "Vanligvis utbredt",
+            "relatively": "Relativt utbredt"
+          },
+          "summary": "{{prevalence}} <3> (spor {{percent, percentage}} av nettrafikken) </3>"
         },
-        "safesearch": {
-            "name": "Sikkert søk",
-            "description": "Filtrer ut voksent innhold på alle de store søkemotorene, inkludert bilder og videoer. Dette vil også blokkere tilgangen til søkemotorer som ikke støtter denne funksjonen.",
-            "enable": "Håndheve Safe Search"
-        },
-        "youtubeRestricted": {
-            "name": "YouTube Begrenset modus",
-            "description": "Filtrer ut modne videoer på YouTube og blokker innebygde modne videoer fra å bli sett på andre nettsteder. Dette vil også skjule alle kommentarer.",
-            "enable": "Håndheve YouTube-begrenset modus"
-        },
-        "bypass": {
-            "name": "Blokkér forbikjøringsmetoder",
-            "description": "Forhindre eller hindre bruken av metoder som kan bidra til å omgå NextDNS-filtrering i nettverket. Dette inkluderer VPN-er, fullmakter, Tor-relatert programvare og krypterte DNS-leverandører.",
-            "enable": "Blokkér forbikjøringsmetoder"
-        }
+        "ownedBy": "<0> Eies av </0> <1>{{company}}</1>",
+        "source": "Tracker innsikt fra"
+      }
+    }
+  },
+  "deviceSelector": {
+    "all": "Alle enheter",
+    "howto": "Lær hvordan du identifiserer enhetene dine på installasjonssiden."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "Siste 30 minutter",
+      "6h": "Siste 6 timer",
+      "24h": "Siste 24 timer",
+      "7d": "Siste 7 dager",
+      "30d": "Siste 30 dager",
+      "3M": "Siste 3 måneder"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "Navn",
+      "description": "Velg et navn for denne konfigurasjonen."
     },
-    "xlist": {
-        "placeholder": "Legg til et domene ...",
-        "errors": {
+    "logs": {
+      "name": "Tømmerstokker",
+      "description": "Finjuster loggene dine.",
+      "enable": "Aktiver logger",
+      "privacy": {
+        "name": "Personvernjusteringer",
+        "ip": "Logg klienter IP-er",
+        "domains": "Logg domener"
+      },
+      "retention": {
+        "name": "Bevaring",
+        "options": {
+          "1h": "1 time",
+          "6h": "6 timer",
+          "1d": "1 dag",
+          "1w": "1 uke",
+          "1m": "1 måned",
+          "3m": "3 måneder",
+          "6m": "6 måneder",
+          "1y": "1 år",
+          "2y": "2 år"
+        }
+      },
+      "location": {
+        "name": "Lagringssted",
+        "locations": {
+          "us": {
+            "name": "USA",
+            "description": "Logger vil bli lagret i USA. Dette er standard."
+          },
+          "eu": {
+            "name": "Den europeiske union",
+            "description": "Logger blir lagret i EU-landene."
+          },
+          "ch": {
+            "name": "Sveits",
+            "description": "Logger lagres i Zürich, Sveits - en jurisdiksjon kjent for sine sterke personvernlover."
+          }
+        },
+        "confirm": {
+          "title": "Endre lagringssted",
+          "text": "Hvis du endrer lagringsplasseringen til loggene, slettes alle tidligere logger og analyser for denne konfigurasjonen."
+        }
+      },
+      "download": {
+        "button": "Last ned logger"
+      },
+      "clear": {
+        "button": "Tøm logger",
+        "confirm": {
+          "text": "Er du sikker på at du vil slette alle loggene for denne konfigurasjonen? Denne handlingen kan ikke angres.",
+          "submit": "Klar"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "Blokkér side",
+      "description": "Vis en blokkeringsside når et domene blir blokkert. Dette kan øke sidens lastetid noe, og i noen tilfeller kan det vises en HTTPS-advarsel. Når deaktivert, vil blokkerte spørsmål bli besvart med den uspesifiserte adressen (0.0.0.0 eller: :).",
+      "enable": "Aktiver blokkeringsside",
+      "ca": {
+        "name": "NextDNS Root CA",
+        "description": "Fjern HTTPS-advarselen når du laster inn blokkeringssiden ved å installere og stole på vår rot-CA på <1>{{link}}</1> . Les instruksjonene om hvordan du gjør dette <3> her </3> ."
+      }
+    },
+    "performance": {
+      "name": "Opptreden",
+      "description": "Få raskere surfing.",
+      "ecs": {
+        "name": "Anonymisert EDNS Client Subnet",
+        "description": "Få raskere levering av data fra innholdsleveringsnettverk uten å avsløre IP-adressen din.",
+        "enable": "Aktiver anonymisert EDNS-klientnettnett"
+      },
+      "cache": {
+        "name": "Cache Boost",
+        "description": "Minimer DNS-spørsmål ved å håndheve et minimum TTL (Time to live).",
+        "enable": "Aktiver Cache Boost"
+      },
+      "flatten": {
+        "name": "CNAME utflating",
+        "description": "Forhindre CNAME-jagende resolvere fra å lage unødvendige spørsmål og forurense loggene med mellomliggende domener.",
+        "enable": "Aktiver CNAME-utflating"
+      }
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 refererer til et desentralisert og sensurbestandig nettøkosystem som består av innovative teknologier som blokkjedebaserte domeneregistre (f.eks. Ethereum Name Service) og distribuert innholdslagring og -leveringsnettverk (f.eks. IPFS). Når aktivert, vil NextDNS fungere som en ufiltrert inngangsport til dette nye nettet, slik at du kan oppleve det på egen hånd uten å måtte installere noe.",
+      "tips": "Siden de fleste nettlesere kun støtter klassiske toppdomener for øyeblikket, bør du legge til en skråstrek (\"<1>/</1>\") når du prøver å få direkte tilgang til et Web3-domene (f.eks. \"<3>vitalik.eth/ </3>\" i stedet for \"<5>vitalik.eth</5>\").",
+      "enable": "Aktiver Web3"
+    },
+    "rewrites": {
+      "name": "Omskriver",
+      "description": "Sett eller overstyr DNS-svaret for ethvert domene. Omskrivninger gjelder også underdomener, og lokale IP-adresser støttes som svar.",
+      "new": "Ny omskriving",
+      "form": {
+        "domain": {
+          "label": "Domene",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
             "required": "Vennligst skriv inn et domene.",
             "ip": "Vennligst skriv inn et domene, ikke en IP-adresse.",
             "invalid": "Vennligst skriv inn et gyldig domene.",
-            "tld": "Det ser ut til at du prøver å blokkere en hel TLD, vennligst bruk Block TLDs-funksjonen i sikkerhetsdelen.",
-            "exists": "Dette domenet er allerede lagt til."
+            "taken": "Du har allerede skrevet om det domenet."
+          }
         },
-        "empty": "Ingen domener ennå.",
-        "denylist": {
-            "info": "Å nekte et domene vil automatisk nekte alle underdomenene."
-        },
-        "allowlist": {
-            "info": "Hvis du tillater et domene, vil alle underdomener automatisk tillates. Tillatelse går foran alt annet, inkludert sikkerhetsfunksjoner."
+        "answer": {
+          "label": "Svar",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "Vennligst skriv inn et svar.",
+            "invalid": "Svaret skal være en gyldig IP-adresse eller et domene."
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> av blokkerte spørsmål </1></1>",
-            "all_one": "<0> {{count, number}} </0> <1> spørring </1>",
-            "all_other": "<0> {{count, number}} </0> <1> spørsmål </1>",
-            "blocked_one": "<0> {{count, number}} </0> <1> blokkerte søket </1>",
-            "blocked_other": "<0> {{count, number}} </0> <1> blokkerte spørsmål </1>"
+    "access": {
+      "name": "Tilgang",
+      "description": "Gi redigerings- eller visningstilgang til denne profilen til andre.",
+      "roles": {
+        "editor": "Redaktør",
+        "viewer": "Bruker"
+      },
+      "pending": "Invitasjon sendt",
+      "form": {
+        "email": {
+          "label": "E-post",
+          "errors": {
+            "required": "Angi en e-post.",
+            "invalid": "Oppgi en gyldig e-postadresse.",
+            "duplicate": "Denne e-postadressen har allerede blitt invitert."
+          }
         },
-        "queries": {
-            "name": "Spørringer",
-            "description": "Utvikling av spørsmål over tid.",
-            "queries": {
-                "all_one": "<0> {{count, number}} </0> <1> spørring </1>",
-                "all_other": "<0> {{count, number}} </0> <1> spørsmål </1>",
-                "blocked_one": "<0> {{count, number}} </0> <1> blokkerte søket </1>",
-                "blocked_other": "<0> {{count, number}} </0> <1> blokkerte spørsmål </1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "Løste domener",
-                "description": "Domener som løste seg uten å bli blokkert av noen innstilling eller fordi de var tillatt manuelt."
-            },
-            "blocked": {
-                "name": "Blokkerte domener",
-                "description": "Domener blokkert av en innstilling for sikkerhet, personvern og / eller foreldrekontroll eller fordi de ble nektet manuelt."
-            },
-            "root": {
-                "name": "Rotdomener",
-                "description": "Samlet antall spørsmål gjort for rotdomener og alle underdomener."
-            },
-            "empty": "Ingen domener ennå."
-        },
-        "reasons": {
-            "name": "Blokkerte grunner",
-            "description": "Innstillinger for sikkerhet, personvern og / eller foreldrekontroll som blokkerte flest spørsmål.",
-            "empty": "Ingen domener ble blokkert ennå."
-        },
-        "devices": {
-            "name": "Enheter",
-            "description": "Enheter som gjør spørsmålene.",
-            "empty": "Ingen enheter ennå.",
-            "unidentified": {
-                "name": "Uidentifiserte enheter"
-            }
-        },
-        "ips": {
-            "name": "IP-er",
-            "description": "IP-adresser som gjør spørsmålene.",
-            "empty": "Ingen IP-er ennå."
-        },
-        "gafam": {
-            "name": "GAFAM Dominans",
-            "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple og Microsoft) er de 5 dominerende internettbedriftene som eier mange populære tjenester, ofte opererer under et annet navn, for eksempel WhatsApp og Instagram for Facebook.",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "eple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "Andre"
-                }
-            },
-            "queries_one": "{{count, number}} spørring",
-            "queries_other": "{{count, number}} spørsmål"
-        },
-        "encrypted": {
-            "name": "Kryptert DNS",
-            "description": "Prosentandelen av spørsmål gjort ved hjelp av en kryptert transport (DNS-over-HTTPS, DNS-over-TLS eller de offisielle NextDNS-appene).",
-            "empty": "Ingen spørsmål ennå."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "Andel spørsmål validert med DNSSEC.",
-            "empty": "Ingen spørsmål ennå."
-        },
-        "destination": {
-            "name": "Land for trafikkdestinasjon",
-            "description": "Land der internettrafikken din går.",
-            "topDomains": "Toppdomener",
-            "queries_one": "{{count, number}} spørring",
-            "queries_other": "{{count, number}} spørsmål"
+        "role": {
+          "label": "Rolle"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "Bare blokkerte spørsmål",
-        "raw": "Rå DNS-logger",
-        "empty": "Ingen logger ennå.",
-        "log": {
-            "actionBlock": "Blokker",
-            "actionAllow": "Tillat",
-            "dnssec": "Validert med DNSSEC.",
-            "clients": {
-                "nextdns-ios": "NextDNS for iOS",
-                "nextdns-android": "NextDNS for Android",
-                "nextdns-macos": "NextDNS for macOS",
-                "nextdns-windows": "NextDNS for Windows",
-                "nextdns-cli": "NextDNS CLI-klient",
-                "nextdns-chromeos": "NextDNS for Chrome OS",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Bølge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Apple konfigurasjonsprofil",
-                "tailscale": "",
-                "yogadns": ""
-            },
-            "blockedBy": "Blokkert av <1>{{lists}}</1> .",
-            "allowedBy": "Tillatt av <1>{{lists}}</1> .",
-            "manual": {
-                "deny": "Manuelt nektet.",
-                "allow": "Manuelt tillatt."
-            },
-            "insights": {
-                "show": "Vis sporingsinnsikt",
-                "hide": "Skjul sporingsinnsikt",
-                "categories": {
-                    "advertising": {
-                        "description": "Tilbyr reklame- eller annonseringsrelaterte tjenester som datainnsamling, atferdsanalyse eller retargeting."
-                    },
-                    "comments": {
-                        "description": "Aktiverer kommentarseksjoner for artikler og produktanmeldelser."
-                    },
-                    "customer_interaction": {
-                        "description": "Inkluderer chat, e-postmeldinger, kundesupport og andre interaksjonsverktøy."
-                    },
-                    "essential": {
-                        "description": "Inkluderer tagchefer, personvernerklæringer og teknologier som er kritiske for funksjonaliteten til et nettsted."
-                    },
-                    "adult_advertsing": {
-                        "description": "Leverer annonser som vanligvis vises på nettsteder for vokseninnhold."
-                    },
-                    "site_analytics": {
-                        "description": "Samler inn og analyserer data relatert til bruk og ytelse på nettstedet."
-                    },
-                    "social_media": {
-                        "description": "Integrerer funksjoner relatert til sosiale medier."
-                    },
-                    "audio_video_player": {
-                        "description": "Gjør det mulig for nettsteder å publisere, distribuere og optimalisere video- og lydinnhold."
-                    },
-                    "cdn": {
-                        "description": "Innholdsleveringsnettverk som leverer ressurser for forskjellige nettstedsbruk og vanligvis for mange forskjellige kunder."
-                    },
-                    "misc": {
-                        "description": "Denne trackeren passer ikke i andre kategorier eller er ennå ikke merket."
-                    },
-                    "pornvertising": {
-                        "description": "Leverer annonser som vanligvis vises på nettsteder for vokseninnhold."
-                    },
-                    "hosting": {
-                        "description": "Dette er en tjeneste som brukes av innholdsleverandøren eller nettstedseieren."
-                    },
-                    "extensions": {
-                        "description": "Programvare på brukerenheter som kan fange opp og analysere nettlesertrafikk (mann i midten)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "Farlig utbredt",
-                        "extremely": "Ekstremt utbredt",
-                        "very": "Veldig utbredt",
-                        "commonly": "Vanligvis utbredt",
-                        "relatively": "Relativt utbredt"
-                    },
-                    "summary": "{{prevalence}} <3> (spor {{percent, percentage}} av nettrafikken) </3>"
-                },
-                "ownedBy": "<0> Eies av </0> <1>{{company}}</1>",
-                "source": "Tracker innsikt fra"
-            }
-        },
-        "streaming": "",
-        "settings": "",
-        "toggleTimeFormat": ""
-    },
-    "deviceSelector": {
-        "all": "Alle enheter",
-        "howto": "Lær hvordan du identifiserer enhetene dine på installasjonssiden."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "Siste 30 minutter",
-            "6h": "Siste 6 timer",
-            "24h": "Siste 24 timer",
-            "7d": "Siste 7 dager",
-            "30d": "Siste 30 dager",
-            "3M": "Siste 3 måneder"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "Dupliser <1>{{name}}</1>",
+      "description": "Kopier alle innstillingene i denne profilen til en ny.",
+      "form": {
         "name": {
-            "name": "Navn",
-            "description": "Velg et navn for denne konfigurasjonen."
+          "label": "Navn",
+          "placeholder": "Hjem, barn, kontor, ...",
+          "errors": {
+            "required": "Skriv inn et navn.",
+            "taken": "Du har allerede en profil med det navnet."
+          }
         },
-        "logs": {
-            "name": "Tømmerstokker",
-            "description": "Finjuster loggene dine.",
-            "enable": "Aktiver logger",
-            "privacy": {
-                "name": "Personvernjusteringer",
-                "ip": "Logg klienter IP-er",
-                "domains": "Logg domener"
-            },
-            "retention": {
-                "name": "Bevaring",
-                "options": {
-                    "1h": "1 time",
-                    "6h": "6 timer",
-                    "1d": "1 dag",
-                    "1w": "1 uke",
-                    "1m": "1 måned",
-                    "3m": "3 måneder",
-                    "6m": "6 måneder",
-                    "1y": "1 år",
-                    "2y": "2 år"
-                }
-            },
-            "location": {
-                "name": "Lagringssted",
-                "locations": {
-                    "us": {
-                        "name": "USA",
-                        "description": "Logger vil bli lagret i USA. Dette er standard."
-                    },
-                    "eu": {
-                        "name": "Den europeiske union",
-                        "description": "Logger blir lagret i EU-landene."
-                    },
-                    "ch": {
-                        "name": "Sveits",
-                        "description": "Logger lagres i Zürich, Sveits - en jurisdiksjon kjent for sine sterke personvernlover."
-                    }
-                },
-                "confirm": {
-                    "title": "Endre lagringssted",
-                    "text": "Hvis du endrer lagringsplasseringen til loggene, slettes alle tidligere logger og analyser for denne konfigurasjonen."
-                }
-            },
-            "download": {
-                "button": "Last ned logger"
-            },
-            "clear": {
-                "button": "Tøm logger",
-                "confirm": {
-                    "text": "Er du sikker på at du vil slette alle loggene for denne konfigurasjonen? Denne handlingen kan ikke angres.",
-                    "submit": "Klar"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "Blokkér side",
-            "description": "Vis en blokkeringsside når et domene blir blokkert. Dette kan øke sidens lastetid noe, og i noen tilfeller kan det vises en HTTPS-advarsel. Når deaktivert, vil blokkerte spørsmål bli besvart med den uspesifiserte adressen (0.0.0.0 eller: :).",
-            "enable": "Aktiver blokkeringsside",
-            "ca": {
-                "name": "NextDNS Root CA",
-                "description": "Fjern HTTPS-advarselen når du laster inn blokkeringssiden ved å installere og stole på vår rot-CA på <1>{{link}}</1> . Les instruksjonene om hvordan du gjør dette <3> her </3> ."
-            }
-        },
-        "performance": {
-            "name": "Opptreden",
-            "description": "Få raskere surfing.",
-            "ecs": {
-                "name": "Anonymisert EDNS Client Subnet",
-                "description": "Få raskere levering av data fra innholdsleveringsnettverk uten å avsløre IP-adressen din.",
-                "enable": "Aktiver anonymisert EDNS-klientnettnett"
-            },
-            "cache": {
-                "name": "Cache Boost",
-                "description": "Minimer DNS-spørsmål ved å håndheve et minimum TTL (Time to live).",
-                "enable": "Aktiver Cache Boost"
-            },
-            "flatten": {
-                "name": "CNAME utflating",
-                "description": "Forhindre CNAME-jagende resolvere fra å lage unødvendige spørsmål og forurense loggene med mellomliggende domener.",
-                "enable": "Aktiver CNAME-utflating"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 refererer til et desentralisert og sensurbestandig nettøkosystem som består av innovative teknologier som blokkjedebaserte domeneregistre (f.eks. Ethereum Name Service) og distribuert innholdslagring og -leveringsnettverk (f.eks. IPFS). Når aktivert, vil NextDNS fungere som en ufiltrert inngangsport til dette nye nettet, slik at du kan oppleve det på egen hånd uten å måtte installere noe.",
-            "tips": "Siden de fleste nettlesere kun støtter klassiske toppdomener for øyeblikket, bør du legge til en skråstrek (\"<1>/</1>\") når du prøver å få direkte tilgang til et Web3-domene (f.eks. \"<3>vitalik.eth/ </3>\" i stedet for \"<5>vitalik.eth</5>\").",
-            "enable": "Aktiver Web3"
-        },
-        "rewrites": {
-            "name": "Omskriver",
-            "description": "Sett eller overstyr DNS-svaret for ethvert domene. Omskrivninger gjelder også underdomener, og lokale IP-adresser støttes som svar.",
-            "new": "Ny omskriving",
-            "form": {
-                "domain": {
-                    "label": "Domene",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "Vennligst skriv inn et domene.",
-                        "ip": "Vennligst skriv inn et domene, ikke en IP-adresse.",
-                        "invalid": "Vennligst skriv inn et gyldig domene.",
-                        "taken": "Du har allerede skrevet om det domenet."
-                    }
-                },
-                "answer": {
-                    "label": "Svar",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "Vennligst skriv inn et svar.",
-                        "invalid": "Svaret skal være en gyldig IP-adresse eller et domene."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "Tilgang",
-            "description": "Gi redigerings- eller visningstilgang til denne profilen til andre.",
-            "roles": {
-                "editor": "Redaktør",
-                "viewer": "Bruker"
-            },
-            "pending": "Invitasjon sendt",
-            "form": {
-                "email": {
-                    "label": "E-post",
-                    "errors": {
-                        "required": "Angi en e-post.",
-                        "invalid": "Oppgi en gyldig e-postadresse.",
-                        "duplicate": "Denne e-postadressen har allerede blitt invitert."
-                    }
-                },
-                "role": {
-                    "label": "Rolle"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "Dupliser <1>{{name}}</1>",
-            "description": "Kopier alle innstillingene i denne profilen til en ny.",
-            "form": {
-                "name": {
-                    "label": "Navn",
-                    "placeholder": "Hjem, barn, kontor, ...",
-                    "errors": {
-                        "required": "Skriv inn et navn.",
-                        "taken": "Du har allerede en profil med det navnet."
-                    }
-                },
-                "button": "Dupliser"
-            }
-        },
-        "delete": {
-            "button": "Slett <1>{{name}}</1>",
-            "warning": "Dette vil slette denne konfigurasjonen og alle loggene som er tilknyttet den for alltid.",
-            "confirm": {
-                "text": "Er du sikker på at du vil slette <1>{{name}}</1> ? Denne handlingen kan ikke angres."
-            }
-        },
-        "leave": {
-            "button": "Forlat <1>{{name}}</1>",
-            "warning": "Du vil miste tilgang til denne profilen.",
-            "confirm": {
-                "text": "Er du sikker på at du vil forlate <1>{{name}}</1>? Dette kan ikke angres."
-            }
-        },
-        "ageVerification": {
-            "description": "",
-            "acknowledgment": "",
-            "name": ""
-        }
+        "button": "Dupliser"
+      }
+    },
+    "delete": {
+      "button": "Slett <1>{{name}}</1>",
+      "warning": "Dette vil slette denne konfigurasjonen og alle loggene som er tilknyttet den for alltid.",
+      "confirm": {
+        "text": "Er du sikker på at du vil slette <1>{{name}}</1> ? Denne handlingen kan ikke angres."
+      }
+    },
+    "leave": {
+      "button": "Forlat <1>{{name}}</1>",
+      "warning": "Du vil miste tilgang til denne profilen.",
+      "confirm": {
+        "text": "Er du sikker på at du vil forlate <1>{{name}}</1>? Dette kan ikke angres."
+      }
     }
+  }
 }

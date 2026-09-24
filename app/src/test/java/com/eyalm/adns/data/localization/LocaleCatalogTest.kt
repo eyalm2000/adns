@@ -33,6 +33,35 @@ class LocaleCatalogTest {
     }
 
     @Test
+    fun `catalog merge ignores blank or empty strings and preserves english fallback`() {
+        val english = mapOf(
+            "security" to mapOf(
+                "untrustedCertificates" to mapOf(
+                    "name" to "Untrusted Certificates",
+                    "description" to "Block untrusted certificates.",
+                ),
+            ),
+        )
+        val selected = mapOf(
+            "security" to mapOf(
+                "untrustedCertificates" to mapOf(
+                    "name" to "",
+                    "description" to "   ",
+                ),
+            ),
+        )
+
+        val merged = mergeCatalog(english, selected)
+
+        @Suppress("UNCHECKED_CAST")
+        val security = merged.getValue("security") as Map<String, Any>
+        @Suppress("UNCHECKED_CAST")
+        val certs = security.getValue("untrustedCertificates") as Map<String, Any>
+        assertEquals("Untrusted Certificates", certs["name"])
+        assertEquals("Block untrusted certificates.", certs["description"])
+    }
+
+    @Test
     fun `locale descriptors are sorted and describe independent catalog coverage`() {
         val locales = buildLocaleDescriptors(
             androidLocaleTags = setOf("en", "iw"),

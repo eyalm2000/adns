@@ -1,1398 +1,1310 @@
 {
-    "global": {
-        "beta": "בטא",
-        "cancel": "ביטול",
-        "add": "הוספה",
-        "save": "שמירה",
-        "continue": "המשך",
-        "enable": "הפעלה",
-        "change": "שינוי",
-        "create": "יצירה",
-        "subscribe": "הירשם כמנוי",
-        "invite": "הזמנה",
-        "remove": "הסרה",
-        "leave": "עזיבה",
-        "delete": "מחיקה",
-        "close": "סגירה",
-        "back": "חזרה",
-        "disable": "השבתה",
-        "unnamedDevice": "מכשיר #{{id}}",
-        "firstConfiguration": "הפרופיל הראשון שלי",
-        "copy": "",
-        "collapse": "",
-        "requestFailed": "",
-        "error": "",
-        "preview": "",
-        "expand": "",
-        "noProfiles": "",
-        "search": "",
-        "clearSearch": "",
-        "networkError": "",
-        "actions": ""
+  "global": {
+    "beta": "בטא",
+    "cancel": "ביטול",
+    "add": "הוספה",
+    "save": "שמירה",
+    "continue": "המשך",
+    "enable": "הפעלה",
+    "change": "שינוי",
+    "create": "יצירה",
+    "subscribe": "הירשם כמנוי",
+    "invite": "הזמנה",
+    "remove": "הסרה",
+    "leave": "עזיבה",
+    "delete": "מחיקה",
+    "close": "סגירה",
+    "back": "חזרה",
+    "disable": "השבתה",
+    "unnamedDevice": "מכשיר #{{id}}",
+    "firstConfiguration": "הפרופיל הראשון שלי"
+  },
+  "theme": {
+    "label": "עיצוב",
+    "system": "מערכת",
+    "light": "בהיר",
+    "dark": "כהה"
+  },
+  "pages": {
+    "signup": "הרשמה",
+    "login": "התחברות",
+    "passwordReset": "איפוס סיסמה",
+    "account": "חשבון",
+    "setup": "הגדרה",
+    "security": "אבטחה",
+    "privacy": "פרטיות",
+    "parentalcontrol": "בקרת הורים",
+    "denylist": "רשימת חסימה",
+    "allowlist": "רשימת היתרים",
+    "analytics": "אנליטיקה",
+    "logs": "יומנים",
+    "settings": "הגדרות",
+    "help": "עזרה"
+  },
+  "banners": {
+    "temporary": "חשבון זמני זה יפוג בעוד <1><0>{{in}}</0></1> והוא נגיש רק מדפדפן זה. הירשם עכשיו בחינם כדי לשמור את ההגדרות שלך.",
+    "nearQuota": "ביצעת יותר מ-{{queriesNearQuota, number}} שאילתות החודש, זה קרוב למכסה החודשית החינמית של {{queriesQuota, number}} שאילתות. <5>הירשם כמנוי</5> כדי להמשיך להשתמש ב-NextDNS.",
+    "overQuota": "ביצעת יותר מ-{{queriesQuota, number}} שאילתות החודש וכל התכונות הושבתו. <3>הירשם כמנוי</3> כדי להמשיך להשתמש ב-NextDNS."
+  },
+  "account": {
+    "email": "אימייל",
+    "newEmail": "אימייל חדש",
+    "password": "סיסמה",
+    "newPassword": "סיסמה חדשה",
+    "currentPassword": "סיסמה נוכחית",
+    "forgotPassword": "שכחת סיסמה?",
+    "savePassword": "שמור סיסמה",
+    "passwordResetInfo": "הזן את כתובת האימייל המשויכת לחשבון שלך ונשלח לך קישור לאיפוס הסיסמה.",
+    "sendEmail": "שלח אימייל",
+    "passwordResetLinkSentMessage": "קישור לאיפוס הסיסמה שלך נשלח אל <1>{{email}}</1>.",
+    "code": "קוד 2FA",
+    "login": "התחבר",
+    "noAccountYet": "עדיין אין לך חשבון? <1>הרשם</1>",
+    "signup": "הרשמה",
+    "alreadyHaveAnAccount": "כבר יש לך חשבון? <1>התחבר</1>",
+    "convertingNotice": "אתה המרת חשבון זמני לחשבון אמיתי, כל ההגדרות שלך יישמרו.",
+    "convertingDeviceOnlyNotice": "אתה המרת חשבון של מכשיר בלבד לחשבון מלא, כל ההגדרות שלך יישמרו.",
+    "logout": "התנתק",
+    "errors": {
+      "email": {
+        "required": "הזן אימייל.",
+        "invalid": "הזן כתובת אימייל תקינה.",
+        "taken": "אימייל זה כבר נמצא בשימוש."
+      },
+      "password": {
+        "required": "הזן סיסמה.",
+        "invalidCombination": "שילוב אימייל/סיסמה שגוי."
+      },
+      "currentPassword": {
+        "required": "הזן את הסיסמה הנוכחית שלך.",
+        "incorrect": "הסיסמה שהזנת אינה נכונה."
+      },
+      "code": {
+        "required": "הזן קוד 2FA.",
+        "invalid": "הזן קוד בן 6 ספרות.",
+        "incorrect": "קוד 2FA שגוי."
+      },
+      "resetPasswordToken": {
+        "invalid": "אסימון פג תוקף או לא תקין."
+      }
     },
-    "theme": {
-        "label": "עיצוב",
-        "system": "מערכת",
-        "light": "בהיר",
-        "dark": "כהה"
-    },
-    "pages": {
-        "signup": "הרשמה",
-        "login": "התחברות",
-        "passwordReset": "איפוס סיסמה",
-        "account": "חשבון",
-        "setup": "הגדרה",
-        "security": "אבטחה",
-        "privacy": "פרטיות",
-        "parentalcontrol": "בקרת הורים",
-        "denylist": "רשימת חסימה",
-        "allowlist": "רשימת היתרים",
-        "analytics": "אנליטיקה",
-        "logs": "יומנים",
-        "settings": "הגדרות",
-        "help": "עזרה"
-    },
-    "banners": {
-        "temporary": "חשבון זמני זה יפוג בעוד <1><0>{{in}}</0></1> והוא נגיש רק מדפדפן זה. הירשם עכשיו בחינם כדי לשמור את ההגדרות שלך.",
-        "nearQuota": "ביצעת יותר מ-{{queriesNearQuota, number}} שאילתות החודש, זה קרוב למכסה החודשית החינמית של {{queriesQuota, number}} שאילתות. <5>הירשם כמנוי</5> כדי להמשיך להשתמש ב-NextDNS.",
-        "overQuota": "ביצעת יותר מ-{{queriesQuota, number}} שאילתות החודש וכל התכונות הושבתו. <3>הירשם כמנוי</3> כדי להמשיך להשתמש ב-NextDNS."
-    },
-    "account": {
-        "email": "אימייל",
-        "newEmail": "אימייל חדש",
-        "password": "סיסמה",
-        "newPassword": "סיסמה חדשה",
-        "currentPassword": "סיסמה נוכחית",
-        "forgotPassword": "שכחת סיסמה?",
-        "savePassword": "שמור סיסמה",
-        "passwordResetInfo": "הזן את כתובת האימייל המשויכת לחשבון שלך ונשלח לך קישור לאיפוס הסיסמה.",
-        "sendEmail": "שלח אימייל",
-        "passwordResetLinkSentMessage": "קישור לאיפוס הסיסמה שלך נשלח אל <1>{{email}}</1>.",
-        "code": "קוד 2FA",
-        "login": "התחבר",
-        "noAccountYet": "עדיין אין לך חשבון? <1>הרשם</1>",
-        "signup": "הרשמה",
-        "alreadyHaveAnAccount": "כבר יש לך חשבון? <1>התחבר</1>",
-        "convertingNotice": "אתה המרת חשבון זמני לחשבון אמיתי, כל ההגדרות שלך יישמרו.",
-        "convertingDeviceOnlyNotice": "אתה המרת חשבון של מכשיר בלבד לחשבון מלא, כל ההגדרות שלך יישמרו.",
-        "logout": "התנתק",
-        "errors": {
-            "email": {
-                "required": "הזן אימייל.",
-                "invalid": "הזן כתובת אימייל תקינה.",
-                "taken": "אימייל זה כבר נמצא בשימוש."
-            },
-            "password": {
-                "required": "הזן סיסמה.",
-                "invalidCombination": "שילוב אימייל/סיסמה שגוי."
-            },
-            "currentPassword": {
-                "required": "הזן את הסיסמה הנוכחית שלך.",
-                "incorrect": "הסיסמה שהזנת אינה נכונה."
-            },
-            "code": {
-                "required": "הזן קוד 2FA.",
-                "invalid": "הזן קוד בן 6 ספרות.",
-                "incorrect": "קוד 2FA שגוי."
-            },
-            "resetPasswordToken": {
-                "invalid": "אסימון פג תוקף או לא תקין."
-            }
-        },
-        "affiliation": {
-            "name": "שותפים",
-            "description": "עזור לנו להפיץ את הבשורה על ידי שיתוף <1>{{link}}</1> וקבל <3>{{share, percentage}}</3> מכל המנויים במשך <5>{{months, number}} החודשים הראשונים</5>.",
-            "balance": {
-                "name": "יתרה"
-            },
-            "availableBalance": {
-                "name": "יתרה זמינה",
-                "description": "היתרה הופכת לזמינה לתשלום לאחר חודש על מנת לכסות החזרים פוטנציאליים."
-            },
-            "payout": {
-                "button": "משוך כספים",
-                "minimum": "נדרשת יתרה זמינה של לפחות {{amount, price}} עבור משיכת כספים.",
-                "form": {
-                    "paypalEmail": "אימייל של PayPal",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "הזן אימייל של PayPal.",
-                            "invalid": "הזן אימייל תקין של PayPal."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "שימוש חינם",
-            "description": "ניתן להשתמש ב-NextDNS בחינם עד {{queries, number}} שאילתות בכל חודש, לאחר מכן כל התכונות יושבתו זמנית עד החודש הבא.",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} שאילתות</1>",
-            "overQuota": {
-                "message": "ביצעת יותר מ-{{queries, number}} שאילתות החודש.",
-                "info": "NextDNS ימשיך לענות לשאילתות DNS אך כל התכונות מושבתות זמנית עד החודש הבא."
-            },
-            "subscribe": {
-                "ios": "כדי להירשם לשירות, עבור אל my.nextdns.io בדפדפן שלך.",
-                "upsell": "קבל שאילתות ללא הגבלה, החל מ-{{amount, price}}/חודש."
-            }
-        },
-        "subscription": {
-            "name": "מנוי",
-            "plans": {
-                "pro": "Pro",
-                "business": "עסקי",
-                "education": "חינוך"
-            },
-            "intervals": {
-                "month": "תוכנית חודשית",
-                "year": "תוכנית שנתית"
-            },
-            "per": {
-                "month": "לחודש",
-                "year": "לשנה"
-            },
-            "units": {
-                "business_one": "עובד {{count, number}}",
-                "business_other": "{{count, number}} עובדים",
-                "education_one": "סטודנט {{count, number}}",
-                "education_other": "{{count, number}} סטודנטים"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "המנוי שלך יפוג ב-{{date, date}}.",
-            "managedByApple": "המנוי שלך מנוהל באמצעות ה-Apple ID שלך. כדי לשנות או לבטל אותו, אנא השתמש בהגדרות המנוי של Apple.",
-            "manageOnApple": "נהל מנוי ב-Apple",
-            "restart": {
-                "button": "הפעל מחדש מנוי"
-            },
-            "changePlan": {
-                "button": "שנה תוכנית"
-            },
-            "renewal": "התשלום האוטומטי הבא שלך יהיה על סך {{amount, price}} ב-{{date, date}}.",
-            "changePaymentMethod": {
-                "button": "שנה אמצעי תשלום"
-            },
-            "cancel": {
-                "button": "בטל מנוי",
-                "confirm": {
-                    "text": "המנוי הנוכחי שלך יישאר בתוקף עד {{date, date}}.",
-                    "submit": "בטל מנוי"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "בחר תוכנית",
-                "addPaymentMethod": "הוסף אמצעי תשלום",
-                "included": "כל התוכניות כוללות <1>גישה לכל התכונות</1>, <3>מכשירים ללא הגבלה</3> ו-<5>שאילתות ללא הגבלה</5>.",
-                "savings": "חסוך {{percent, percentage}} בהשוואה לתוכנית החודשית",
-                "familyOnly": "* תוכניות Pro מיועדות לשימוש אישי (ומשפחה קרובה) בלבד.",
-                "unitsQuestion": {
-                    "business": "כמה <1>עובדים</1> מעסיק העסק שלך?",
-                    "education": "כמה <1>סטודנטים</1> יש בבית הספר (או במחוז) שלך?"
-                },
-                "asYouGrow": {
-                    "business": "* זכור לעדכן את התוכנית שלך ככל שמספר העובדים גדל.",
-                    "education": "* זכור לעדכן את התוכנית שלך ככל שמספר הסטודנטים גדל."
-                },
-                "starting": {
-                    "business": "<0>החל מ- </0><1>{{price, price}}</1><2> לחודש עבור {{units, number}} עובדים</2>",
-                    "education": "<0>החל מ- </0><1>{{price, price}}</1><2> לחודש עבור {{units, number}} סטודנטים</2>"
-                },
-                "card": {
-                    "number": "מספר כרטיס",
-                    "expiration": "תאריך תפוגה",
-                    "code": "קוד אבטחה",
-                    "stripe": "אנו משתמשים ב-Stripe — שער תשלומים מוביל — כדי לעבד תשלומי כרטיסים בצורה מאובטחת מבלי שתהיה לנו גישה ישירה לפרטי הכרטיס שלך."
-                },
-                "paypal": {
-                    "text": "לחץ על כפתור המשך ל-PayPal כדי להירשם עם PayPal."
-                },
-                "bitpay": {
-                    "text": "לחץ על כפתור המשך ל-BitPay כדי לשלם במטבע קריפטוגרפי.",
-                    "toYearly": "איננו מקבלים תשלומי מטבעות קריפטוגרפיים עבור תוכניות חודשיות. <1>בהמשך, תועבר אוטומטית לתוכנית השנתית.</1>",
-                    "remainder": "המנוי הנוכחי שלך כבר שולם עד {{date, date}}. תחויב כעת והשארית תתווסף אוטומטית לתאריך התפוגה החדש."
-                },
-                "continueTo": "המשך אל <1></1>",
-                "unitsLabel": {
-                    "education": "",
-                    "business": ""
-                }
-            }
-        },
-        "business": {
-            "name": "עסקי",
-            "description": "לצרכי מס, אנו זקוקים לשם העסק שלך, הכתובת ומספר המע\"מ (או שווה ערך). זה נדרש על פי חוק ויופיע בכל החשבוניות.",
-            "button": {
-                "add": "הוסף מידע עסקי",
-                "update": "עדכן"
-            },
-            "form": {
-                "name": {
-                    "label": "שם",
-                    "placeholder": "ACME Inc.",
-                    "errors": {
-                        "required": "הזן את שם העסק שלך."
-                    }
-                },
-                "address": {
-                    "label": "כתובת",
-                    "placeholder": "10 Downing St, Westminster\nLondon SW1A 2AA\nUnited Kingdom",
-                    "errors": {
-                        "required": "הזן את כתובת העסק שלך."
-                    }
-                },
-                "vatNumber": {
-                    "label": "מספר עוסק מורשה/ח.פ. (או שווה ערך)"
-                }
-            }
-        },
-        "invoices": {
-            "name": "חשבוניות",
-            "description": "היסטוריית חיובים וכל החשבוניות עבור החשבון שלך.",
-            "pending": "{{amount, price}} (ממתין)",
-            "show-more": "הצג עוד",
-            "show-less": "הצג פחות",
-            "invoice": {
-                "title": "חשבונית מס #{{code}}",
-                "to": "אל: <1>{{email}}</1>",
-                "vatNumber": "מספר מע\"מ (או שווה ערך): {{number}}",
-                "columns": {
-                    "plan": "תוכנית",
-                    "period": "תקופה",
-                    "amount": "סכום"
-                },
-                "vat": "מע\"מ ({{rate, percentage}})",
-                "total": "סה\"כ",
-                "footer": {
-                    "reverseCharged": "מע\"מ (או שווה ערך) בחיוב הפוך.",
-                    "currency": "כל הסכומים המוצגים הם ב-{{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "אימייל",
-            "description": "שנה את כתובת האימייל המשמשת להתחברות לחשבון שלך ולקבלת התראות קריטיות.",
-            "button": "שנה אימייל"
-        },
-        "changePassword": {
-            "name": "סיסמה",
-            "description": "שנה את הסיסמה המשמשת להתחברות לחשבון שלך ומתבקשת בעת ביצוע פעולות רגישות.",
-            "button": "שנה סיסמה"
-        },
-        "2fa": {
-            "name": "אימות דו-שלבי (2FA)",
-            "description": "אימות דו-שלבי (2FA) הוא שכבת אבטחה נוספת הדורשת קוד זמני נוסף בן 6 ספרות בעת התחברות לחשבון שלך.",
-            "enabled": "אימות דו-שלבי מופעל עבור החשבון שלך.",
-            "enable": {
-                "button": "הפעל 2FA",
-                "modal": {
-                    "howto": "השתמש באפליקציית אימות כמו <1>Google Authenticator</1> או במנהל סיסמאות התומך ב-2FA. אתה יכול לסרוק את קוד ה-QR, להקיש עליו כדי לפתוח את קישור <3>{{otpauth}}</3> או להעתיק ולהדביק את הסוד שלך באופן ידני."
-                },
-                "secret": ""
-            },
-            "recovery": {
-                "button": "קודי שחזור",
-                "modal": {
-                    "howto": "השתמש בקודי שחזור אלו כדי לגשת לחשבונך במקרה שאיבדת את הגישה למכשיר שלך ואינך יכול לקבל קודי אימות דו-שלבי. כל קוד ניתן לשימוש פעם אחת בלבד.",
-                    "download": "הורדה",
-                    "regen": "צור מחדש"
-                }
-            },
-            "disable": {
-                "button": "השבת 2FA"
-            }
-        },
-        "api": {
-            "description": "צור ונהל את הפרופילים שלך באופן תכנותי. קרא את התיעוד ב- <1>{{link}}</1>.",
-            "create": {
-                "button": "צור מפתח API"
-            },
-            "copy": "",
-            "remove": ""
-        },
-        "delete": {
-            "button": "מחק חשבון",
-            "warning": "פעולה זו תמחק את חשבונך ואת כל הפרופילים שלך לצמיתות.",
-            "confirm": {
-                "text": "האם אתה בטוח שברצונך למחוק את החשבון שלך? לא ניתן לבטל פעולה זו."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "פג תוקף",
-                    "text": "החשבון הזמני שלך פג תוקף. הירשם עכשיו כדי לשמור את ההגדרות שלך ולהמשיך להשתמש ב-NextDNS, זה בחינם."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "חדש",
+    "affiliation": {
+      "name": "שותפים",
+      "description": "עזור לנו להפיץ את הבשורה על ידי שיתוף <1>{{link}}</1> וקבל <3>{{share, percentage}}</3> מכל המנויים במשך <5>{{months, number}} החודשים הראשונים</5>.",
+      "balance": {
+        "name": "יתרה"
+      },
+      "availableBalance": {
+        "name": "יתרה זמינה",
+        "description": "היתרה הופכת לזמינה לתשלום לאחר חודש על מנת לכסות החזרים פוטנציאליים."
+      },
+      "payout": {
+        "button": "משוך כספים",
+        "minimum": "נדרשת יתרה זמינה של לפחות {{amount, price}} עבור משיכת כספים.",
         "form": {
-            "title": "פרופיל חדש",
-            "name": {
-                "label": "שם",
-                "placeholder": "בית, ילדים, משרד, ...",
-                "errors": {
-                    "required": "הזן שם.",
-                    "taken": "כבר יש לך פרופיל עם השם הזה."
-                }
+          "paypalEmail": "אימייל של PayPal",
+          "errors": {
+            "paypalEmail": {
+              "required": "הזן אימייל של PayPal.",
+              "invalid": "הזן אימייל תקין של PayPal."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "הכל תקין!",
-                "secondary": "מכשיר זה משתמש ב-NextDNS עם פרופיל זה."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "מכשיר זה משתמש ב-NextDNS ללא פרופיל.",
-                    "secondary": {
-                        "clients": "ודא שהגדרת את מזהה הפרופיל המוצג להלן בהגדרות האפליקציה.",
-                        "firefox": "ודא שהגדרת את נקודת הקצה של DNS-over-HTTPS המוצגת להלן ב-Firefox.",
-                        "doh": "ודא שאתה משתמש בנקודת הקצה של DNS-over-HTTPS המוצגת להלן.",
-                        "dot": "ודא שאתה משתמש בנקודת הקצה של DNS-over-TLS המוצגת להלן.",
-                        "ipv6": "ודא שאתה משתמש בכתובות ה-IPv6 המוצגות להלן.",
-                        "servers": "ודא שאתה משתמש בשרתי ה-DNS המוצגים בסעיף IP מקושר למטה (שרתי DNS משתנים בין פרופילים).",
-                        "link": "ודא שאתה מקשר את כתובת ה-IP שלך בסעיף IP מקושר להלן."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "מכשיר זה משתמש ב-NextDNS עם פרופיל אחר.",
-                    "secondary": {
-                        "sameAccount": "מכשיר זה משתמש כעת ב-”{{name}}”.",
-                        "otherAccount": "ודא שאתה משתמש באחת מנקודות הקצה המפורטות בדף זה."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "מכשיר זה אינו משתמש ב-NextDNS.",
-                "secondary": "מכשיר זה משתמש כעת ב-”{{resolver}}” כפותר DNS."
-            },
-            "error": {
-                "primary": "שגיאה במהלך בדיקת הסטטוס הנוכחי.",
-                "secondary": "אנא פנה אלינו אם בעיה זו נמשכת לאחר רענון הדף."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "מכשיר זה משתמש ב-NextDNS עם iCloud Private Relay",
-                    "secondary": "תכונות כמו חיפוש בטוח, מצב הגבלת תוכן ב-YouTube ושכתובים אינם תואמים ל-iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "מכשיר זה משתמש ב-NextDNS עם iCloud Private Relay.",
-                    "secondary": "הפעלת הגדרת דף החסימה בזמן שימוש ב-iCloud Private Relay מפריעה לחסימה."
-                }
+    "usage": {
+      "name": "שימוש חינם",
+      "description": "ניתן להשתמש ב-NextDNS בחינם עד {{queries, number}} שאילתות בכל חודש, לאחר מכן כל התכונות יושבתו זמנית עד החודש הבא.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} שאילתות</1>",
+      "overQuota": {
+        "message": "ביצעת יותר מ-{{queries, number}} שאילתות החודש.",
+        "info": "NextDNS ימשיך לענות לשאילתות DNS אך כל התכונות מושבתות זמנית עד החודש הבא."
+      },
+      "subscribe": {
+        "ios": "כדי להירשם לשירות, עבור אל my.nextdns.io בדפדפן שלך.",
+        "upsell": "קבל שאילתות ללא הגבלה, החל מ-{{amount, price}}/חודש."
+      }
+    },
+    "subscription": {
+      "name": "מנוי",
+      "plans": {
+        "pro": "Pro",
+        "business": "עסקי",
+        "education": "חינוך"
+      },
+      "intervals": {
+        "month": "תוכנית חודשית",
+        "year": "תוכנית שנתית"
+      },
+      "per": {
+        "month": "לחודש",
+        "year": "לשנה"
+      },
+      "units": {
+        "business_one": "עובד {{count, number}}",
+        "business_other": "{{count, number}} עובדים",
+        "education_one": "סטודנט {{count, number}}",
+        "education_other": "{{count, number}} סטודנטים"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "המנוי שלך יפוג ב-{{date, date}}.",
+      "managedByApple": "המנוי שלך מנוהל באמצעות ה-Apple ID שלך. כדי לשנות או לבטל אותו, אנא השתמש בהגדרות המנוי של Apple.",
+      "manageOnApple": "נהל מנוי ב-Apple",
+      "restart": {
+        "button": "הפעל מחדש מנוי"
+      },
+      "changePlan": {
+        "button": "שנה תוכנית"
+      },
+      "renewal": "התשלום האוטומטי הבא שלך יהיה על סך {{amount, price}} ב-{{date, date}}.",
+      "changePaymentMethod": {
+        "button": "שנה אמצעי תשלום"
+      },
+      "cancel": {
+        "button": "בטל מנוי",
+        "confirm": {
+          "text": "המנוי הנוכחי שלך יישאר בתוקף עד {{date, date}}.",
+          "submit": "בטל מנוי"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "בחר תוכנית",
+        "addPaymentMethod": "הוסף אמצעי תשלום",
+        "included": "כל התוכניות כוללות <1>גישה לכל התכונות</1>, <3>מכשירים ללא הגבלה</3> ו-<5>שאילתות ללא הגבלה</5>.",
+        "savings": "חסוך {{percent, percentage}} בהשוואה לתוכנית החודשית",
+        "familyOnly": "* תוכניות Pro מיועדות לשימוש אישי (ומשפחה קרובה) בלבד.",
+        "unitsQuestion": {
+          "business": "כמה <1>עובדים</1> מעסיק העסק שלך?",
+          "education": "כמה <1>סטודנטים</1> יש בבית הספר (או במחוז) שלך?"
+        },
+        "asYouGrow": {
+          "business": "* זכור לעדכן את התוכנית שלך ככל שמספר העובדים גדל.",
+          "education": "* זכור לעדכן את התוכנית שלך ככל שמספר הסטודנטים גדל."
+        },
+        "starting": {
+          "business": "<0>החל מ- </0><1>{{price, price}}</1><2> לחודש עבור {{units, number}} עובדים</2>",
+          "education": "<0>החל מ- </0><1>{{price, price}}</1><2> לחודש עבור {{units, number}} סטודנטים</2>"
+        },
+        "card": {
+          "number": "מספר כרטיס",
+          "expiration": "תאריך תפוגה",
+          "code": "קוד אבטחה",
+          "stripe": "אנו משתמשים ב-Stripe — שער תשלומים מוביל — כדי לעבד תשלומי כרטיסים בצורה מאובטחת מבלי שתהיה לנו גישה ישירה לפרטי הכרטיס שלך."
+        },
+        "paypal": {
+          "text": "לחץ על כפתור המשך ל-PayPal כדי להירשם עם PayPal."
+        },
+        "bitpay": {
+          "text": "לחץ על כפתור המשך ל-BitPay כדי לשלם במטבע קריפטוגרפי.",
+          "toYearly": "איננו מקבלים תשלומי מטבעות קריפטוגרפיים עבור תוכניות חודשיות. <1>בהמשך, תועבר אוטומטית לתוכנית השנתית.</1>",
+          "remainder": "המנוי הנוכחי שלך כבר שולם עד {{date, date}}. תחויב כעת והשארית תתווסף אוטומטית לתאריך התפוגה החדש."
+        },
+        "continueTo": "המשך אל <1></1>"
+      }
+    },
+    "business": {
+      "name": "עסקי",
+      "description": "לצרכי מס, אנו זקוקים לשם העסק שלך, הכתובת ומספר המע\"מ (או שווה ערך). זה נדרש על פי חוק ויופיע בכל החשבוניות.",
+      "button": {
+        "add": "הוסף מידע עסקי",
+        "update": "עדכן"
+      },
+      "form": {
+        "name": {
+          "label": "שם",
+          "placeholder": "ACME Inc.",
+          "errors": {
+            "required": "הזן את שם העסק שלך."
+          }
+        },
+        "address": {
+          "label": "כתובת",
+          "placeholder": "10 Downing St, Westminster\nLondon SW1A 2AA\nUnited Kingdom",
+          "errors": {
+            "required": "הזן את כתובת העסק שלך."
+          }
+        },
+        "vatNumber": {
+          "label": "מספר עוסק מורשה/ח.פ. (או שווה ערך)"
+        }
+      }
+    },
+    "invoices": {
+      "name": "חשבוניות",
+      "description": "היסטוריית חיובים וכל החשבוניות עבור החשבון שלך.",
+      "pending": "{{amount, price}} (ממתין)",
+      "show-more": "הצג עוד",
+      "show-less": "הצג פחות",
+      "invoice": {
+        "title": "חשבונית מס #{{code}}",
+        "to": "אל: <1>{{email}}</1>",
+        "vatNumber": "מספר מע\"מ (או שווה ערך): {{number}}",
+        "columns": {
+          "plan": "תוכנית",
+          "period": "תקופה",
+          "amount": "סכום"
+        },
+        "vat": "מע\"מ ({{rate, percentage}})",
+        "total": "סה\"כ",
+        "footer": {
+          "reverseCharged": "מע\"מ (או שווה ערך) בחיוב הפוך.",
+          "currency": "כל הסכומים המוצגים הם ב-{{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "אימייל",
+      "description": "שנה את כתובת האימייל המשמשת להתחברות לחשבון שלך ולקבלת התראות קריטיות.",
+      "button": "שנה אימייל"
+    },
+    "changePassword": {
+      "name": "סיסמה",
+      "description": "שנה את הסיסמה המשמשת להתחברות לחשבון שלך ומתבקשת בעת ביצוע פעולות רגישות.",
+      "button": "שנה סיסמה"
+    },
+    "2fa": {
+      "name": "אימות דו-שלבי (2FA)",
+      "description": "אימות דו-שלבי (2FA) הוא שכבת אבטחה נוספת הדורשת קוד זמני נוסף בן 6 ספרות בעת התחברות לחשבון שלך.",
+      "enabled": "אימות דו-שלבי מופעל עבור החשבון שלך.",
+      "enable": {
+        "button": "הפעל 2FA",
+        "modal": {
+          "howto": "השתמש באפליקציית אימות כמו <1>Google Authenticator</1> או במנהל סיסמאות התומך ב-2FA. אתה יכול לסרוק את קוד ה-QR, להקיש עליו כדי לפתוח את קישור <3>{{otpauth}}</3> או להעתיק ולהדביק את הסוד שלך באופן ידני."
+        }
+      },
+      "recovery": {
+        "button": "קודי שחזור",
+        "modal": {
+          "howto": "השתמש בקודי שחזור אלו כדי לגשת לחשבונך במקרה שאיבדת את הגישה למכשיר שלך ואינך יכול לקבל קודי אימות דו-שלבי. כל קוד ניתן לשימוש פעם אחת בלבד.",
+          "download": "הורדה",
+          "regen": "צור מחדש"
+        }
+      },
+      "disable": {
+        "button": "השבת 2FA"
+      }
+    },
+    "api": {
+      "description": "צור ונהל את הפרופילים שלך באופן תכנותי. קרא את התיעוד ב- <1>{{link}}</1>.",
+      "create": {
+        "button": "צור מפתח API"
+      }
+    },
+    "delete": {
+      "button": "מחק חשבון",
+      "warning": "פעולה זו תמחק את חשבונך ואת כל הפרופילים שלך לצמיתות.",
+      "confirm": {
+        "text": "האם אתה בטוח שברצונך למחוק את החשבון שלך? לא ניתן לבטל פעולה זו."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "פג תוקף",
+          "text": "החשבון הזמני שלך פג תוקף. הירשם עכשיו כדי לשמור את ההגדרות שלך ולהמשיך להשתמש ב-NextDNS, זה בחינם."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "חדש",
+    "form": {
+      "title": "פרופיל חדש",
+      "name": {
+        "label": "שם",
+        "placeholder": "בית, ילדים, משרד, ...",
+        "errors": {
+          "required": "הזן שם.",
+          "taken": "כבר יש לך פרופיל עם השם הזה."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "הכל תקין!",
+        "secondary": "מכשיר זה משתמש ב-NextDNS עם פרופיל זה."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "מכשיר זה משתמש ב-NextDNS ללא פרופיל.",
+          "secondary": {
+            "clients": "ודא שהגדרת את מזהה הפרופיל המוצג להלן בהגדרות האפליקציה.",
+            "firefox": "ודא שהגדרת את נקודת הקצה של DNS-over-HTTPS המוצגת להלן ב-Firefox.",
+            "doh": "ודא שאתה משתמש בנקודת הקצה של DNS-over-HTTPS המוצגת להלן.",
+            "dot": "ודא שאתה משתמש בנקודת הקצה של DNS-over-TLS המוצגת להלן.",
+            "ipv6": "ודא שאתה משתמש בכתובות ה-IPv6 המוצגות להלן.",
+            "servers": "ודא שאתה משתמש בשרתי ה-DNS המוצגים בסעיף IP מקושר למטה (שרתי DNS משתנים בין פרופילים).",
+            "link": "ודא שאתה מקשר את כתובת ה-IP שלך בסעיף IP מקושר להלן."
+          }
+        },
+        "withConfiguration": {
+          "primary": "מכשיר זה משתמש ב-NextDNS עם פרופיל אחר.",
+          "secondary": {
+            "sameAccount": "מכשיר זה משתמש כעת ב-”{{name}}”.",
+            "otherAccount": "ודא שאתה משתמש באחת מנקודות הקצה המפורטות בדף זה."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "מכשיר זה אינו משתמש ב-NextDNS.",
+        "secondary": "מכשיר זה משתמש כעת ב-”{{resolver}}” כפותר DNS."
+      },
+      "error": {
+        "primary": "שגיאה במהלך בדיקת הסטטוס הנוכחי.",
+        "secondary": "אנא פנה אלינו אם בעיה זו נמשכת לאחר רענון הדף."
+      },
+      "apr": {
+        "ok": {
+          "primary": "מכשיר זה משתמש ב-NextDNS עם iCloud Private Relay",
+          "secondary": "תכונות כמו חיפוש בטוח, מצב הגבלת תוכן ב-YouTube ושכתובים אינם תואמים ל-iCloud Private Relay."
+        },
+        "blockpage": {
+          "primary": "מכשיר זה משתמש ב-NextDNS עם iCloud Private Relay.",
+          "secondary": "הפעלת הגדרת דף החסימה בזמן שימוש ב-iCloud Private Relay מפריעה לחסימה."
+        }
+      }
+    },
+    "endpoints": {
+      "name": "נקודות קצה",
+      "description": "הגדר את NextDNS עם פרופיל זה באמצעות אחת מנקודות הקצה למטה.",
+      "help": "לא בטוח כיצד להשתמש בהן? עקוב אחר <1>מדריך ההגדרה</1>."
+    },
+    "linkedIp": {
+      "name": "IP מקושר",
+      "description": "אם אינך מצליח להגדיר את NextDNS באמצעות האפליקציות שלנו, DNS-over-TLS, DNS-over-HTTPS או IPv6, השתמש בשרתי ה-DNS שלמטה וקשר את ה-IP שלך. זה מיועד בעיקר לשימוש ברשתות ביתיות ואינו מומלץ לנייד.",
+      "servers": {
+        "name": "שרתי DNS"
+      },
+      "ip": {
+        "name": "IP מקושר",
+        "link": "קשר IP"
+      },
+      "showAdvanced": "הצג אפשרויות מתקדמות",
+      "ddns": {
+        "explanation": "תוכל להשתמש ב-Dynamic DNS (DDNS) כדי לעדכן את ה-IP המקושר שלך באופן אוטומטי.",
+        "set": "הגדר DDNS",
+        "status": "אתה משתמש כעת ב-<1>{{hostname}}</1> כשם מארח של DDNS, ה-IP שלך יעודכן אוטומטית מדי דקה.",
+        "unset": "הסר",
+        "form": {
+          "hostname": {
+            "label": "שם מארח של DDNS",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "הזן שם מארח.",
+              "invalid": "הזן שם מארח תקין.",
+              "ip": "הזן שם מארח, לא כתובת IP.",
+              "error": "אירעה שגיאה בעת קבלת כתובת ה-IP מאחורי שם מארח זה.",
+              "empty": "שם מארח זה אינו מחזיר כתובת IP כלשהי.",
+              "different": "מטעמי אבטחה, בעת הוספת Dynamic DNS, כתובת ה-IP המוחזרת על ידי שם המארח של DDNS צריכה להיות זהה לכתובת ה-IP הנוכחית שלך."
             }
+          }
+        }
+      },
+      "programmatically": "ניתן גם לעדכן באופן תכנותי את ה-IP המקושר שלך על ידי קריאה ל:"
+    },
+    "guide": {
+      "name": "מדריך הגדרה",
+      "description": "בצע את ההוראות להלן כדי להגדיר את NextDNS במכשיר, בדפדפן או בנתב שלך.",
+      "or": "או",
+      "ipv4": {
+        "title": "IPv4 (עם IP מקושר)"
+      },
+      "ipv6": {
+        "supported": "הרשת שלך תומכת ב-IPv6",
+        "notSupported": "הרשת שלך אינה תומכת ב-IPv6"
+      },
+      "tags": {
+        "recommended": "מומלץ",
+        "advanced": "מתקדם"
+      },
+      "use": "השתמש בבאים ב-<1>{{file}}</1>:",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "Private DNS",
+              "requirements": "Android 9 ומעלה",
+              "steps": {
+                "1": "1. עבור אל הגדרות ← רשת ואינטרנט ← מתקדם ← Private DNS (או DNS פרטי).",
+                "2": "2. בחר באפשרות שם מארח של ספק Private DNS.",
+                "3": "3. הזן <1>{{endpoint}}</1> ולחץ על שמירה."
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "נקודות קצה",
-            "description": "הגדר את NextDNS עם פרופיל זה באמצעות אחת מנקודות הקצה למטה.",
-            "help": "לא בטוח כיצד להשתמש בהן? עקוב אחר <1>מדריך ההגדרה</1>."
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "פרופיל תצורה",
+              "requirements": "iOS 14 ומעלה",
+              "step": "השתמש במחולל פרופילי התצורה של Apple הזמין בכתובת <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS עבור iOS"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "IP מקושר",
-            "description": "אם אינך מצליח להגדיר את NextDNS באמצעות האפליקציות שלנו, DNS-over-TLS, DNS-over-HTTPS או IPv6, השתמש בשרתי ה-DNS שלמטה וקשר את ה-IP שלך. זה מיועד בעיקר לשימוש ברשתות ביתיות ואינו מומלץ לנייד.",
-            "servers": {
-                "name": "שרתי DNS"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS over HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "פתח את אפליקציית <1>הגדרות</1>.",
+                "עבור אל <1>רשת ואינטרנט</1>.",
+                "לחץ על <1>Wi-Fi</1> (או <3>Ethernet</3>).",
+                "לחץ על <1>מאפייני חומרה</1>, או התעלם משלב זה אם לחצת על <3>Ethernet</3>.",
+                "לחץ על כפתור <1>עריכה</1> לצד <3>הקצאת שרת DNS</3>.",
+                "בחר <1>ידני</1>.",
+                "הפעל את <1>IPv{{version}}</1>.",
+                "הזן <1>{{ip}}</1> כ-<3>DNS מועדף</3>, ולאחר מכן בחר <5>מופעל (תבנית ידנית)</5> והזן <7>{{endpoint}}</7>.",
+                "הזן <1>{{ip}}</1> כ-<3>DNS חלופי</3>, ולאחר מכן בחר <5>מופעל (תבנית ידנית)</5> והזן <7>{{endpoint}}</7>.",
+                "לחץ על <1>שמירה</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS עבור Windows",
+              "steps": {
+                "1": "1. הורד את קובץ ההתקנה <1>כאן</1>.",
+                "2": "2. לאחר ההתקנה, לחץ לחיצה ימנית על סמל NextDNS במגש המערכת ואז פתח את ההגדרות. הגדר את <1>{{id}}</1> כמזהה תצורה.",
+                "3": "3. לחץ לחיצה ימנית על סמל NextDNS במגש המערכת, ולחץ על Enable."
+              }
             },
             "ip": {
-                "name": "IP מקושר",
-                "link": "קשר IP"
+              "steps": {
+                "1": "1. לחץ על תפריט התחל, ולאחר מכן לחץ על לוח הבקרה.",
+                "2": "2. לחץ על רשת ואינטרנט, ולאחר מכן על מרכז הרשת והשיתוף.",
+                "3": "3. לחץ על שנה הגדרות מתאם.",
+                "4": "4. לחץ לחיצה ימנית על רשת ה-Wi-Fi שאליה אתה מחובר, ולחץ על מאפיינים.",
+                "5": "5. בחר פרוטוקול אינטרנט גרסה {{version}}.",
+                "6": "6. לחץ על מאפיינים.",
+                "7": "7. לחץ על השתמש בכתובות שרתי ה-DNS הבאות.",
+                "8": "8. החלף את הכתובות הנוכחיות (אם ישנן) ב-<1>{{dns1}}</1> ו-<3>{{dns2}}</3>.",
+                "9": "9. לחץ על אישור, ולאחר מכן על סגור. ייתכן שתצטרך לאתחל מחדש את הדפדפן."
+              }
             },
-            "showAdvanced": "הצג אפשרויות מתקדמות",
-            "ddns": {
-                "explanation": "תוכל להשתמש ב-Dynamic DNS (DDNS) כדי לעדכן את ה-IP המקושר שלך באופן אוטומטי.",
-                "set": "הגדר DDNS",
-                "status": "אתה משתמש כעת ב-<1>{{hostname}}</1> כשם מארח של DDNS, ה-IP שלך יעודכן אוטומטית מדי דקה.",
-                "unset": "הסר",
-                "form": {
-                    "hostname": {
-                        "label": "שם מארח של DDNS",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "הזן שם מארח.",
-                            "invalid": "הזן שם מארח תקין.",
-                            "ip": "הזן שם מארח, לא כתובת IP.",
-                            "error": "אירעה שגיאה בעת קבלת כתובת ה-IP מאחורי שם מארח זה.",
-                            "empty": "שם מארח זה אינו מחזיר כתובת IP כלשהי.",
-                            "different": "מטעמי אבטחה, בעת הוספת Dynamic DNS, כתובת ה-IP המוחזרת על ידי שם המארח של DDNS צריכה להיות זהה לכתובת ה-IP הנוכחית שלך."
-                        }
-                    }
-                }
-            },
-            "programmatically": "ניתן גם לעדכן באופן תכנותי את ה-IP המקושר שלך על ידי קריאה ל:"
-        },
-        "guide": {
-            "name": "מדריך הגדרה",
-            "description": "בצע את ההוראות להלן כדי להגדיר את NextDNS במכשיר, בדפדפן או בנתב שלך.",
-            "or": "או",
-            "ipv4": {
-                "title": "IPv4 (עם IP מקושר)"
-            },
-            "ipv6": {
-                "supported": "הרשת שלך תומכת ב-IPv6",
-                "notSupported": "הרשת שלך אינה תומכת ב-IPv6"
-            },
-            "tags": {
-                "recommended": "מומלץ",
-                "advanced": "מתקדם"
-            },
-            "use": "השתמש בבאים ב-<1>{{file}}</1>:",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "Private DNS",
-                            "requirements": "Android 9 ומעלה",
-                            "steps": {
-                                "1": "1. עבור אל הגדרות ← רשת ואינטרנט ← מתקדם ← Private DNS (או DNS פרטי).",
-                                "2": "2. בחר באפשרות שם מארח של ספק Private DNS.",
-                                "3": "3. הזן <1>{{endpoint}}</1> ולחץ על שמירה."
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "פרופיל תצורה",
-                            "requirements": "iOS 14 ומעלה",
-                            "step": "השתמש במחולל פרופילי התצורה של Apple הזמין בכתובת <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS עבור iOS",
-                            "qrTextIos": "",
-                            "qrAlt": "",
-                            "qrText": ""
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS over HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "פתח את אפליקציית <1>הגדרות</1>.",
-                                "עבור אל <1>רשת ואינטרנט</1>.",
-                                "לחץ על <1>Wi-Fi</1> (או <3>Ethernet</3>).",
-                                "לחץ על <1>מאפייני חומרה</1>, או התעלם משלב זה אם לחצת על <3>Ethernet</3>.",
-                                "לחץ על כפתור <1>עריכה</1> לצד <3>הקצאת שרת DNS</3>.",
-                                "בחר <1>ידני</1>.",
-                                "הפעל את <1>IPv{{version}}</1>.",
-                                "הזן <1>{{ip}}</1> כ-<3>DNS מועדף</3>, ולאחר מכן בחר <5>מופעל (תבנית ידנית)</5> והזן <7>{{endpoint}}</7>.",
-                                "הזן <1>{{ip}}</1> כ-<3>DNS חלופי</3>, ולאחר מכן בחר <5>מופעל (תבנית ידנית)</5> והזן <7>{{endpoint}}</7>.",
-                                "לחץ על <1>שמירה</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS עבור Windows",
-                            "steps": {
-                                "1": "1. הורד את קובץ ההתקנה <1>כאן</1>.",
-                                "2": "2. לאחר ההתקנה, לחץ לחיצה ימנית על סמל NextDNS במגש המערכת ואז פתח את ההגדרות. הגדר את <1>{{id}}</1> כמזהה תצורה.",
-                                "3": "3. לחץ לחיצה ימנית על סמל NextDNS במגש המערכת, ולחץ על Enable."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. לחץ על תפריט התחל, ולאחר מכן לחץ על לוח הבקרה.",
-                                "2": "2. לחץ על רשת ואינטרנט, ולאחר מכן על מרכז הרשת והשיתוף.",
-                                "3": "3. לחץ על שנה הגדרות מתאם.",
-                                "4": "4. לחץ לחיצה ימנית על רשת ה-Wi-Fi שאליה אתה מחובר, ולחץ על מאפיינים.",
-                                "5": "5. בחר פרוטוקול אינטרנט גרסה {{version}}.",
-                                "6": "6. לחץ על מאפיינים.",
-                                "7": "7. לחץ על השתמש בכתובות שרתי ה-DNS הבאות.",
-                                "8": "8. החלף את הכתובות הנוכחיות (אם ישנן) ב-<1>{{dns1}}</1> ו-<3>{{dns2}}</3>.",
-                                "9": "9. לחץ על אישור, ולאחר מכן על סגור. ייתכן שתצטרך לאתחל מחדש את הדפדפן."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. התקן את YogaDNS מ-<1>{{link}}</1>.",
-                                "2": "2. בצע את ההוראות עבור NextDNS ב-<1>{{link}}</1> והשתמש ב-<3>{{id}}</3> כמזהה תצורה."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS עבור macOS",
-                            "steps": {
-                                "1": "1. התקן את האפליקציה הרשמית שלנו מחנות Mac App Store.",
-                                "2": "2. לחץ על העדפות בתפריט שורת המצב של האפליקציה ועבור לכרטיסייה Configuration.",
-                                "3": "3. סמן את \"Use Custom Configuration\" והזן <1>{{id}}</1> כמזהה תצורה."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur ומעלה"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. פתח את העדפות המערכת, ולאחר מכן לחץ על רשת.",
-                                "2": "2. בחר ברשת שאליה אתה מחובר, ולאחר מכן לחץ על הלחצן מתקדם.",
-                                "3": "3. עבור לסעיף DNS.",
-                                "4": "4. ברשימת שרתי ה-DNS, הסר את כל הכתובות (אם ישנן) והוסף את <1>{{dns1}}</1> ו-<3>{{dns2}}</3>.",
-                                "5": "5. לחץ על אישור, ולאחר מכן על החל."
-                            }
-                        },
-                        "cli": {
-                            "title": "לקוח שורת הפקודה של NextDNS",
-                            "steps": {
-                                "1": "1. הרץ את הפקודה הבאה: <1>{{command}}</1>",
-                                "2": "2. פעל לפי ההוראות."
-                            },
-                            "manual": "עבור אל מאגר הקוד הפתוח שלנו ב-<1>{{link}}</1> לקבלת הוראות התקנה ידניות."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "לקוח שורת הפקודה של NextDNS",
-                            "steps": {
-                                "1": "1. הרץ את הפקודה הבאה: <1>{{command}}</1>",
-                                "2": "2. פעל לפי ההוראות."
-                            },
-                            "manual": "עבור אל מאגר הקוד הפתוח שלנו ב-<1>{{link}}</1> לקבלת הוראות התקנה ידניות."
-                        },
-                        "ip": {
-                            "step": "שנה את שרתי ה-DNS שלך ל-<1>{{dns1}}</1> ו-<3>{{dns2}}</3>."
-                        },
-                        "stubby": {
-                            "warning": "ודא ש-Stubby מקושר עם <1>OpenSSL 1.1.1 ומעלה</1> כיוון שגרסאות קודמות לא יעבדו עם NextDNS."
-                        },
-                        "unbound": {
-                            "warning": "כפותר DNS רקורסיבי, Unbound עוקב אחר CNAME. הדבר עלול לגרום ל-<1>התנהגות לא צפויה</1> כאשר נעשה בו שימוש בשילוב עם פותר DNS חוסם כמו NextDNS. ראה <3>{{link}}</3>."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "ChromeOS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "Secure DNS",
-                            "steps": [
-                                "פתח את אפליקציית <1>הגדרות</1>.",
-                                "עבור אל <1>אבטחה ופרטיות</1>.",
-                                "הפעל את <1>השתמש ב-DNS מאובטח</1>.",
-                                "בחר <1>עם: מותאם אישית</1>, ואז הזן <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "שנה את שרתי ה-DNS שלך ל-<1>{{dns1}}</1> ו-<3>{{dns2}}</3>."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "דפדפנים",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. עבור אל הגדרות.",
-                                "2": "2. בסעיף פרטיות ואבטחה, לחץ על אבטחה.",
-                                "3": "3. בסעיף מתקדם, הפעל את השתמש ב-DNS מאובטח.",
-                                "4": "4. בחר עם: מותאם אישית, ואז הזן <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Windows, macOS ו-Linux בלבד",
-                            "steps": {
-                                "1": "1. פתח את אפשרויות/העדפות.",
-                                "2": "2. לחץ על פרטיות ואבטחה.",
-                                "3": "3. גלול למטה אל הפעל DNS מעל HTTPS.",
-                                "4": "4. בחר הגנה מוגברת או הגנה מרבית.",
-                                "5": "5. בחר מותאם אישית בתפריט.",
-                                "6": "6. הזן <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. פתח את הגדרות.",
-                                "2": "2. עבור לסעיף פרטיות, חיפוש ושירותים.",
-                                "3": "3. תחת אבטחה, הפעל את השתמש ב-DNS מאובטח כדי לציין כיצד לחפש את כתובת הרשת עבור אתרי אינטרנט.",
-                                "4": "4. בחר בחר ספק שירות, ולאחר מכן הזן <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. פתח את הגדרות.",
-                                "2": "2. בסעיף פרטיות ואבטחה (תחת הגדרות נוספות), עבור אל אבטחה.",
-                                "3": "3. בסעיף מתקדם, הפעל את השתמש ב-DNS מאובטח.",
-                                "4": "4. בחר עם: מותאם אישית, ואז הזן <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "נתבים",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS לנתבים",
-                            "requirements": "עובד רק על נתבים שיכולים להריץ קבצי הפעלה",
-                            "step": "עבור אל מאגר הקוד הפתוח שלנו ב-<1>{{link}}</1> לקבלת הוראות התקנה."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "ייתכן שנתבים מסוימים אינם תומכים ברישום IPv6 שלעיל. במקרה כזה, השתמש ב-<1>{{dns1}}</1> וב-<3>{{dns2}}</3>."
-                            },
-                            "steps": {
-                                "1": "1. פתח את ההעדפות עבור הנתב שלך. בדרך כלל תוכל לגשת אליו מהדפדפן שלך באמצעות כתובת URL (כמו http://192.168.0.1/ או http://192.168.1.1/).",
-                                "2": "2. אתר את הגדרות ה-DNS בתוך הממשק.",
-                                "3": "3. הסר את כל הכתובות (אם ישנן) והוסף את <1>{{dns1}}</1> ו-<3>{{dns2}}</3>.",
-                                "4": "4. לחץ על שמירה (או דומה)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. עבור אל Services ← DNS Resolver ובכרטיסייה General Settings גלול למטה לתיבה Custom Options.",
-                                "2": "2. הזן את השורות הבאות:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "הרץ את הבא:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "עבור אל התיעוד של Tailscale ב-<2>{{link}}</2> להוראות הגדרה."
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. התקן את YogaDNS מ-<1>{{link}}</1>.",
+                "2": "2. בצע את ההוראות עבור NextDNS ב-<1>{{link}}</1> והשתמש ב-<3>{{id}}</3> כמזהה תצורה."
+              }
             }
+          }
         },
-        "identify": {
-            "name": "זהה את המכשירים שלך",
-            "description": "בצע את ההוראות להלן כדי לזהות את המכשירים שלך באנליטיקה וביומנים.",
-            "apps": {
-                "name": "אפליקציות",
-                "instructions": "הפעל את \"שלח שם מכשיר\" בהגדרות האפליקציה."
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS עבור macOS",
+              "steps": {
+                "1": "1. התקן את האפליקציה הרשמית שלנו מחנות Mac App Store.",
+                "2": "2. לחץ על העדפות בתפריט שורת המצב של האפליקציה ועבור לכרטיסייה Configuration.",
+                "3": "3. סמן את \"Use Custom Configuration\" והזן <1>{{id}}</1> כמזהה תצורה."
+              }
             },
-            "dot": {
-                "instructions": "הוסף את השם בתחילת הדומיין שסופק (השם צריך להכיל רק <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> ו-<7>-</7>). השתמש ב-<9>--</9> עבור רווחים.",
-                "example": "עבור \"<1>John Router</1>\", תשתמש ב-<3>John--Router-{{profile}}.dns.nextdns.io</3> כנקודת הקצה שלך ל-DNS-over-TLS."
+            "profile": {
+              "requirements": "macOS Big Sur ומעלה"
             },
-            "doh": {
-                "instructions": "הוסף את השם בסוף כתובת ה-URL שסופקה (השם צריך להיות בקידוד URL).",
-                "example": "עבור \"<1>John's Firefox</1>\", תשתמש ב-<3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> כנקודת הקצה שלך ל-DNS-over-HTTPS."
+            "ip": {
+              "steps": {
+                "1": "1. פתח את העדפות המערכת, ולאחר מכן לחץ על רשת.",
+                "2": "2. בחר ברשת שאליה אתה מחובר, ולאחר מכן לחץ על הלחצן מתקדם.",
+                "3": "3. עבור לסעיף DNS.",
+                "4": "4. ברשימת שרתי ה-DNS, הסר את כל הכתובות (אם ישנן) והוסף את <1>{{dns1}}</1> ו-<3>{{dns2}}</3>.",
+                "5": "5. לחץ על אישור, ולאחר מכן על החל."
+              }
+            },
+            "cli": {
+              "title": "לקוח שורת הפקודה של NextDNS",
+              "steps": {
+                "1": "1. הרץ את הפקודה הבאה: <1>{{command}}</1>",
+                "2": "2. פעל לפי ההוראות."
+              },
+              "manual": "עבור אל מאגר הקוד הפתוח שלנו ב-<1>{{link}}</1> לקבלת הוראות התקנה ידניות."
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "לקוח שורת הפקודה של NextDNS",
+              "steps": {
+                "1": "1. הרץ את הפקודה הבאה: <1>{{command}}</1>",
+                "2": "2. פעל לפי ההוראות."
+              },
+              "manual": "עבור אל מאגר הקוד הפתוח שלנו ב-<1>{{link}}</1> לקבלת הוראות התקנה ידניות."
+            },
+            "ip": {
+              "step": "שנה את שרתי ה-DNS שלך ל-<1>{{dns1}}</1> ו-<3>{{dns2}}</3>."
+            },
+            "stubby": {
+              "warning": "ודא ש-Stubby מקושר עם <1>OpenSSL 1.1.1 ומעלה</1> כיוון שגרסאות קודמות לא יעבדו עם NextDNS."
+            },
+            "unbound": {
+              "warning": "כפותר DNS רקורסיבי, Unbound עוקב אחר CNAME. הדבר עלול לגרום ל-<1>התנהגות לא צפויה</1> כאשר נעשה בו שימוש בשילוב עם פותר DNS חוסם כמו NextDNS. ראה <3>{{link}}</3>."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "ChromeOS",
+          "guides": {
+            "secure-dns": {
+              "title": "Secure DNS",
+              "steps": [
+                "פתח את אפליקציית <1>הגדרות</1>.",
+                "עבור אל <1>אבטחה ופרטיות</1>.",
+                "הפעל את <1>השתמש ב-DNS מאובטח</1>.",
+                "בחר <1>עם: מותאם אישית</1>, ואז הזן <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "שנה את שרתי ה-DNS שלך ל-<1>{{dns1}}</1> ו-<3>{{dns2}}</3>."
+            }
+          }
+        },
+        "browsers": {
+          "name": "דפדפנים",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. עבור אל הגדרות.",
+                "2": "2. בסעיף פרטיות ואבטחה, לחץ על אבטחה.",
+                "3": "3. בסעיף מתקדם, הפעל את השתמש ב-DNS מאובטח.",
+                "4": "4. בחר עם: מותאם אישית, ואז הזן <1>{{endpoint}}</1>."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Windows, macOS ו-Linux בלבד",
+              "steps": {
+                "1": "1. פתח את אפשרויות/העדפות.",
+                "2": "2. לחץ על פרטיות ואבטחה.",
+                "3": "3. גלול למטה אל הפעל DNS מעל HTTPS.",
+                "4": "4. בחר הגנה מוגברת או הגנה מרבית.",
+                "5": "5. בחר מותאם אישית בתפריט.",
+                "6": "6. הזן <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. פתח את הגדרות.",
+                "2": "2. עבור לסעיף פרטיות, חיפוש ושירותים.",
+                "3": "3. תחת אבטחה, הפעל את השתמש ב-DNS מאובטח כדי לציין כיצד לחפש את כתובת הרשת עבור אתרי אינטרנט.",
+                "4": "4. בחר בחר ספק שירות, ולאחר מכן הזן <1>{{endpoint}}</1>."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. פתח את הגדרות.",
+                "2": "2. בסעיף פרטיות ואבטחה (תחת הגדרות נוספות), עבור אל אבטחה.",
+                "3": "3. בסעיף מתקדם, הפעל את השתמש ב-DNS מאובטח.",
+                "4": "4. בחר עם: מותאם אישית, ואז הזן <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "נתבים",
+          "guides": {
+            "cli": {
+              "title": "NextDNS לנתבים",
+              "requirements": "עובד רק על נתבים שיכולים להריץ קבצי הפעלה",
+              "step": "עבור אל מאגר הקוד הפתוח שלנו ב-<1>{{link}}</1> לקבלת הוראות התקנה."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "ייתכן שנתבים מסוימים אינם תומכים ברישום IPv6 שלעיל. במקרה כזה, השתמש ב-<1>{{dns1}}</1> וב-<3>{{dns2}}</3>."
+              },
+              "steps": {
+                "1": "1. פתח את ההעדפות עבור הנתב שלך. בדרך כלל תוכל לגשת אליו מהדפדפן שלך באמצעות כתובת URL (כמו http://192.168.0.1/ או http://192.168.1.1/).",
+                "2": "2. אתר את הגדרות ה-DNS בתוך הממשק.",
+                "3": "3. הסר את כל הכתובות (אם ישנן) והוסף את <1>{{dns1}}</1> ו-<3>{{dns2}}</3>.",
+                "4": "4. לחץ על שמירה (או דומה)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. עבור אל Services ← DNS Resolver ובכרטיסייה General Settings גלול למטה לתיבה Custom Options.",
+                "2": "2. הזן את השורות הבאות:"
+              }
+            },
+            "mikrotik": {
+              "run": "הרץ את הבא:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "עבור אל התיעוד של Tailscale ב-<2>{{link}}</2> להוראות הגדרה."
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "הזנות מודיעין איומים",
-            "description": "חסום דומיינים הידועים כמפיצי תוכנות זדוניות, משיקי התקפות דיוג ומארחי שרתי שליטה ובקרה באמצעות שילוב של הזנות מודיעין האיומים המוכרות ביותר — כולן מעודכנות בזמן אמת.",
-            "enable": "השתמש בהזנות מודיעין איומים"
-        },
-        "ai": {
-            "name": "גילוי איומים מונחה בינה מלאכותית",
-            "description": "חסום מיליוני איומים שזוהו על ידי טכנולוגיית הבינה המלאכותית שלנו — מנוע בינה מלאכותית קנייני שתוכנן מהיסוד עבור DNS עם מאות אותות, טרה-בייטים של נתוני אימון וקבלת החלטות בזמן אמת.",
-            "enable": "אפשר גילוי איומים מונחה בינה מלאכותית"
-        },
-        "googleSafeBrowsing": {
-            "name": "גלישה בטוחה של Google",
-            "description": "חסום דומיינים של תוכנות זדוניות ודיוג באמצעות גלישה בטוחה של Google — טכנולוגיה הבוחנת מיליארדי כתובות URL ביום ומחפשת אתרים לא בטוחים. בניגוד לגרסה המוטמעת בחלק מהדפדפנים, גרסה זו אינה משייכת את כתובת ה-IP הציבורית שלך לאיומים ואינה מאפשרת לעקוף את החסימה.",
-            "enable": "אפשר גלישה בטוחה של Google"
-        },
-        "cryptojacking": {
-            "name": "הגנה מפני חטיפת קריפטו",
-            "description": "מנע שימוש בלתי מורשה במכשירים שלך לצורך כריית מטבעות קריפטוגרפיים.",
-            "enable": "אפשר הגנה מפני חטיפת קריפטו"
-        },
-        "dnsRebinding": {
-            "name": "הגנה מפני קשירת DNS מחדש",
-            "description": "מנע מתוקפים להשתלט על המכשירים המקומיים שלך דרך האינטרנט על ידי חסימה אוטומטית של תגובות DNS המכילות כתובות IP פרטיות.",
-            "enable": "אפשר הגנה מפני קשירת DNS מחדש"
-        },
-        "homograph": {
-            "name": "הגנה מפני התקפות הומוגרף של IDN",
-            "description": "חסום דומיינים המתחזים לדומיינים אחרים על ידי שימוש לרעה בסט התווים הגדול שהתאפשר עם הגעתם של שמות דומיין בינלאומיים (IDN) — למשל, החלפת האות הלטינית \"e\" באות הקירילית \"е\".",
-            "enable": "אפשר הגנה מפני התקפות הומוגרף"
-        },
-        "typosquatting": {
-            "name": "הגנה מפני טעויות הקלדה (Typosquatting)",
-            "description": "חסום דומיינים שנרשמו על ידי גורמים זדוניים המטרגטים משתמשים המקלידים באופן שגוי כתובת אתר בדפדפן שלהם — למשל, gooogle.com במקום google.com.",
-            "enable": "אפשר הגנה מפני טעויות הקלדה"
-        },
-        "dga": {
-            "name": "הגנה מפני אלגוריתמים לייצור דומיינים (DGA)",
-            "description": "חסום דומיינים שנוצרו על ידי אלגוריתמים לייצור דומיינים (DGA) הנראים במשפחות שונות של תוכנות זדוניות שיכולים לשמש כנקודות מפגש עם שרתי השליטה והבקרה שלהם.",
-            "enable": "אפשר הגנה מפני DGA"
-        },
-        "nrd": {
-            "name": "חסום דומיינים שנרשמו לאחרונה (NRD)",
-            "description": "חסום דומיינים שנרשמו לפני פחות מ-30 יום. דומיינים אלה ידועים כמועדפים על גורמי איום לצורך השקת קמפיינים זדוניים.",
-            "enable": "חסום דומיינים שנרשמו לאחרונה (NRD)"
-        },
-        "ddns": {
-            "name": "חסום שמות מארח של Dynamic DNS",
-            "description": "שירותי Dynamic DNS (או DDNS) מאפשרים לגורמים זדוניים להגדיר במהירות שמות מארח בחינם וללא כל אימות או בדיקת זהות. בעוד שמות מארח לגיטימיים של DDNS כמעט ואינם נגישים בשימוש היומיומי, מקביליהם הזדוניים נמצאים בשימוש כבד בקמפיינים של דיוג — למשל, paypal‑login.duckdns.org.",
-            "disclaimer": "אם אתה משתמש ב-DDNS, שים לב שהגדרה זו לא תחסום את האתר של שירותי ה-DDNS עצמם או את ה-API לעדכון שלהם.",
-            "enable": "חסום שמות מארח של Dynamic DNS"
-        },
-        "parked": {
-            "name": "חסום דומיינים חונים (Parked Domains)",
-            "description": "דומיינים חונים הם אתרים של עמוד אחד העמוסים לעתים קרובות בפרסומות ונטולי כל ערך. מונטיזציה של דומיין חונה עלולה לפעמים להתערבב עם פרקטיקות חשודות ותוכן זדוני.",
-            "enable": "חסום דומיינים חונים"
-        },
-        "tld": {
-            "name": "חסום סיומות אינטרנט (TLDs)",
-            "description": "חסום את כל הדומיינים ותתי-הדומיינים השייכים ל-TLDs ספציפיים.",
-            "add": "הוסף סיומת (TLD)",
-            "sections": {
-                "spamhaus": "סיומות ה-TLD המנוצלות ביותר לפי Spamhaus",
-                "all": "כל סיומות ה-TLD"
-            }
-        },
-        "csam": {
-            "name": "חסום חומרים של התעללות מינית בילדים",
-            "description": "חסום דומיינים המארחים חומרים של התעללות מינית בילדים בעזרת Project Arachnid, המופעל על ידי המרכז הקנדי להגנת הילד. שום מידע אינו מועבר בחזרה ל-Project Arachnid כאשר דומיין נחסם.",
-            "enable": "חסום חומרים של התעללות מינית בילדים"
-        },
-        "freeHostingDomains": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "untrustedCertificates": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "tunnelingEndpoints": {
-            "description": "",
-            "name": "",
-            "enable": ""
-        },
-        "dnsPayloadDelivery": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "decentralizedWebGateways": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "dataDropServices": {
-            "enable": "",
-            "description": "",
-            "name": ""
-        },
-        "newlyActiveDomains": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "fastFluxNetworks": {
-            "enable": "",
-            "name": "",
-            "description": ""
-        },
-        "highRiskTlds": {
-            "name": "",
-            "enable": "",
-            "description": ""
-        },
-        "residentialHosting": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "dnsDataExfiltration": {
-            "description": "",
-            "name": "",
-            "enable": ""
+    "identify": {
+      "name": "זהה את המכשירים שלך",
+      "description": "בצע את ההוראות להלן כדי לזהות את המכשירים שלך באנליטיקה וביומנים.",
+      "apps": {
+        "name": "אפליקציות",
+        "instructions": "הפעל את \"שלח שם מכשיר\" בהגדרות האפליקציה."
+      },
+      "dot": {
+        "instructions": "הוסף את השם בתחילת הדומיין שסופק (השם צריך להכיל רק <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> ו-<7>-</7>). השתמש ב-<9>--</9> עבור רווחים.",
+        "example": "עבור \"<1>John Router</1>\", תשתמש ב-<3>John--Router-{{profile}}.dns.nextdns.io</3> כנקודת הקצה שלך ל-DNS-over-TLS."
+      },
+      "doh": {
+        "instructions": "הוסף את השם בסוף כתובת ה-URL שסופקה (השם צריך להיות בקידוד URL).",
+        "example": "עבור \"<1>John's Firefox</1>\", תשתמש ב-<3>https://dns.nextdns.io/{{profile}}/John's%20Firefox</3> כנקודת הקצה שלך ל-DNS-over-HTTPS."
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "הזנות מודיעין איומים",
+      "description": "חסום דומיינים הידועים כמפיצי תוכנות זדוניות, משיקי התקפות דיוג ומארחי שרתי שליטה ובקרה באמצעות שילוב של הזנות מודיעין האיומים המוכרות ביותר — כולן מעודכנות בזמן אמת.",
+      "enable": "השתמש בהזנות מודיעין איומים"
+    },
+    "ai": {
+      "name": "גילוי איומים מונחה בינה מלאכותית",
+      "description": "חסום מיליוני איומים שזוהו על ידי טכנולוגיית הבינה המלאכותית שלנו — מנוע בינה מלאכותית קנייני שתוכנן מהיסוד עבור DNS עם מאות אותות, טרה-בייטים של נתוני אימון וקבלת החלטות בזמן אמת.",
+      "enable": "אפשר גילוי איומים מונחה בינה מלאכותית"
+    },
+    "googleSafeBrowsing": {
+      "name": "גלישה בטוחה של Google",
+      "description": "חסום דומיינים של תוכנות זדוניות ודיוג באמצעות גלישה בטוחה של Google — טכנולוגיה הבוחנת מיליארדי כתובות URL ביום ומחפשת אתרים לא בטוחים. בניגוד לגרסה המוטמעת בחלק מהדפדפנים, גרסה זו אינה משייכת את כתובת ה-IP הציבורית שלך לאיומים ואינה מאפשרת לעקוף את החסימה.",
+      "enable": "אפשר גלישה בטוחה של Google"
+    },
+    "cryptojacking": {
+      "name": "הגנה מפני חטיפת קריפטו",
+      "description": "מנע שימוש בלתי מורשה במכשירים שלך לצורך כריית מטבעות קריפטוגרפיים.",
+      "enable": "אפשר הגנה מפני חטיפת קריפטו"
+    },
+    "dnsRebinding": {
+      "name": "הגנה מפני קשירת DNS מחדש",
+      "description": "מנע מתוקפים להשתלט על המכשירים המקומיים שלך דרך האינטרנט על ידי חסימה אוטומטית של תגובות DNS המכילות כתובות IP פרטיות.",
+      "enable": "אפשר הגנה מפני קשירת DNS מחדש"
+    },
+    "homograph": {
+      "name": "הגנה מפני התקפות הומוגרף של IDN",
+      "description": "חסום דומיינים המתחזים לדומיינים אחרים על ידי שימוש לרעה בסט התווים הגדול שהתאפשר עם הגעתם של שמות דומיין בינלאומיים (IDN) — למשל, החלפת האות הלטינית \"e\" באות הקירילית \"е\".",
+      "enable": "אפשר הגנה מפני התקפות הומוגרף"
+    },
+    "typosquatting": {
+      "name": "הגנה מפני טעויות הקלדה (Typosquatting)",
+      "description": "חסום דומיינים שנרשמו על ידי גורמים זדוניים המטרגטים משתמשים המקלידים באופן שגוי כתובת אתר בדפדפן שלהם — למשל, gooogle.com במקום google.com.",
+      "enable": "אפשר הגנה מפני טעויות הקלדה"
+    },
+    "dga": {
+      "name": "הגנה מפני אלגוריתמים לייצור דומיינים (DGA)",
+      "description": "חסום דומיינים שנוצרו על ידי אלגוריתמים לייצור דומיינים (DGA) הנראים במשפחות שונות של תוכנות זדוניות שיכולים לשמש כנקודות מפגש עם שרתי השליטה והבקרה שלהם.",
+      "enable": "אפשר הגנה מפני DGA"
+    },
+    "nrd": {
+      "name": "חסום דומיינים שנרשמו לאחרונה (NRD)",
+      "description": "חסום דומיינים שנרשמו לפני פחות מ-30 יום. דומיינים אלה ידועים כמועדפים על גורמי איום לצורך השקת קמפיינים זדוניים.",
+      "enable": "חסום דומיינים שנרשמו לאחרונה (NRD)"
+    },
+    "ddns": {
+      "name": "חסום שמות מארח של Dynamic DNS",
+      "description": "שירותי Dynamic DNS (או DDNS) מאפשרים לגורמים זדוניים להגדיר במהירות שמות מארח בחינם וללא כל אימות או בדיקת זהות. בעוד שמות מארח לגיטימיים של DDNS כמעט ואינם נגישים בשימוש היומיומי, מקביליהם הזדוניים נמצאים בשימוש כבד בקמפיינים של דיוג — למשל, paypal‑login.duckdns.org.",
+      "disclaimer": "אם אתה משתמש ב-DDNS, שים לב שהגדרה זו לא תחסום את האתר של שירותי ה-DDNS עצמם או את ה-API לעדכון שלהם.",
+      "enable": "חסום שמות מארח של Dynamic DNS"
+    },
+    "parked": {
+      "name": "חסום דומיינים חונים (Parked Domains)",
+      "description": "דומיינים חונים הם אתרים של עמוד אחד העמוסים לעתים קרובות בפרסומות ונטולי כל ערך. מונטיזציה של דומיין חונה עלולה לפעמים להתערבב עם פרקטיקות חשודות ותוכן זדוני.",
+      "enable": "חסום דומיינים חונים"
+    },
+    "tld": {
+      "name": "חסום סיומות אינטרנט (TLDs)",
+      "description": "חסום את כל הדומיינים ותתי-הדומיינים השייכים ל-TLDs ספציפיים.",
+      "add": "הוסף סיומת (TLD)",
+      "sections": {
+        "spamhaus": "סיומות ה-TLD המנוצלות ביותר לפי Spamhaus",
+        "all": "כל סיומות ה-TLD"
+      }
+    },
+    "csam": {
+      "name": "חסום חומרים של התעללות מינית בילדים",
+      "description": "חסום דומיינים המארחים חומרים של התעללות מינית בילדים בעזרת Project Arachnid, המופעל על ידי המרכז הקנדי להגנת הילד. שום מידע אינו מועבר בחזרה ל-Project Arachnid כאשר דומיין נחסם.",
+      "enable": "חסום חומרים של התעללות מינית בילדים"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "רשימות חסימה",
+      "description": "חסום פרסומות ועוקבים באמצעות רשימות החסימה הפופולריות ביותר הזמינות — כולן מעודכנות בזמן אמת.",
+      "add": "הוסף רשימת חסימה",
+      "updated": "עודכן לפני <1>{{ago}}</1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "רשימת החסימה של NextDNS לפרסומות ועוקבים",
+          "description": "רשימת חסימה מקיפה לחסימת פרסומות ועוקבים בכל המדינות. זוהי רשימת החסימה המומלצת למתחילים."
         }
+      },
+      "sortBy": {
+        "popularity": "פופולריות",
+        "name": "שם",
+        "entries": "פריטים",
+        "updated": "לאחרונה"
+      },
+      "entries_one": "פריט {{count, number}}",
+      "entries_other": "{{count, number}} פריטים"
     },
-    "privacy": {
-        "blocklists": {
-            "name": "רשימות חסימה",
-            "description": "חסום פרסומות ועוקבים באמצעות רשימות החסימה הפופולריות ביותר הזמינות — כולן מעודכנות בזמן אמת.",
-            "add": "הוסף רשימת חסימה",
-            "updated": "עודכן לפני <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "רשימת החסימה של NextDNS לפרסומות ועוקבים",
-                    "description": "רשימת חסימה מקיפה לחסימת פרסומות ועוקבים בכל המדינות. זוהי רשימת החסימה המומלצת למתחילים."
-                }
-            },
-            "sortBy": {
-                "popularity": "פופולריות",
-                "name": "שם",
-                "entries": "פריטים",
-                "updated": "לאחרונה"
-            },
-            "entries_one": "פריט {{count, number}}",
-            "entries_other": "{{count, number}} פריטים"
+    "native": {
+      "name": "הגנת מעקב מובנית",
+      "description": "חסום עוקבים רחבי טווח — הפועלים לרוב ברמת מערכת ההפעלה — העוקבים אחר הפעילות שלך במכשיר. זה יכול לכלול את כל האתרים שבהם אתה מבקר, כל מה שאתה מקליד או המיקום שלך בכל עת.",
+      "add": "הוסף",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "טלפונים וטאבלטים, טלוויזיות חכמות, נתבים"
         },
-        "native": {
-            "name": "הגנת מעקב מובנית",
-            "description": "חסום עוקבים רחבי טווח — הפועלים לרוב ברמת מערכת ההפעלה — העוקבים אחר הפעילות שלך במכשיר. זה יכול לכלול את כל האתרים שבהם אתה מבקר, כל מה שאתה מקליד או המיקום שלך בכל עת.",
-            "add": "הוסף",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "טלפונים וטאבלטים, טלוויזיות חכמות, נתבים"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "טלפונים וטאבלטים"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "טלפונים, טאבלטים, טלוויזיות חכמות"
-                },
-                "alexa": {
-                    "name": "Amazon Alexa",
-                    "devices": "מכשירים תומכי Alexa"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "כל הגרסאות"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "כל מכשירי Roku"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "רמקולים"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "טלפונים וטאבלטים"
         },
-        "disguised": {
-            "name": "חסום עוקבי צד שלישי מוסווים",
-            "description": "זהה וחסום אוטומטית עוקבי צד שלישי המתחזים לצד ראשון כדי לעקוף הגנות פרטיות של דפדפנים חדשים כמו ITP.",
-            "enable": "חסום עוקבי צד שלישי מוסווים"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "טלפונים, טאבלטים, טלוויזיות חכמות"
         },
-        "affiliate": {
-            "name": "אפשר קישורי שותפים ומעקב",
-            "description": "אפשר דומיינים של שותפים ומעקב הנפוצים באתרי דילים, באימיילים או בתוצאות חיפוש. אלה בדרך כלל נקראים רק לאחר לחיצה ידנית על קישור.",
-            "relay": "כתובת ה-IP שלך תוסתר אוטומטית מאתרים אלה כדי לשמור על פרטיותך.",
-            "enable": "אפשר קישורי שותפים ומעקב"
+        "alexa": {
+          "name": "Amazon Alexa",
+          "devices": "מכשירים תומכי Alexa"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "כל הגרסאות"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "כל מכשירי Roku"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "רמקולים"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "אתרי אינטרנט, אפליקציות ומשחקים",
-            "description": "הגבל את הגישה לאתרי אינטרנט, אפליקציות ומשחקים ספציפיים.",
-            "add": "הוסף אתר, אפליקציה או משחק",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "Twitter",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
+    "disguised": {
+      "name": "חסום עוקבי צד שלישי מוסווים",
+      "description": "זהה וחסום אוטומטית עוקבי צד שלישי המתחזים לצד ראשון כדי לעקוף הגנות פרטיות של דפדפנים חדשים כמו ITP.",
+      "enable": "חסום עוקבי צד שלישי מוסווים"
+    },
+    "affiliate": {
+      "name": "אפשר קישורי שותפים ומעקב",
+      "description": "אפשר דומיינים של שותפים ומעקב הנפוצים באתרי דילים, באימיילים או בתוצאות חיפוש. אלה בדרך כלל נקראים רק לאחר לחיצה ידנית על קישור.",
+      "relay": "כתובת ה-IP שלך תוסתר אוטומטית מאתרים אלה כדי לשמור על פרטיותך.",
+      "enable": "אפשר קישורי שותפים ומעקב"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "אתרי אינטרנט, אפליקציות ומשחקים",
+      "description": "הגבל את הגישה לאתרי אינטרנט, אפליקציות ומשחקים ספציפיים.",
+      "add": "הוסף אתר, אפליקציה או משחק",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox Live",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "קטגוריות",
+      "description": "הגבל את הגישה לקטגוריות ספציפיות של אתרים ואפליקציות.",
+      "add": "הוסף קטגוריה",
+      "categories": {
+        "dating": {
+          "name": "היכרויות",
+          "description": "חוסם את כל אתרי ואפליקציות ההיכרויות."
         },
+        "gambling": {
+          "name": "הימורים",
+          "description": "חוסם תכני הימורים."
+        },
+        "gaming": {
+          "name": "משחקים מקוונים",
+          "description": "חוסם אתרי משחקים מקוונים, אפליקציות משחקים מקוונים ורשתות משחקים מקוונות (Xbox Live, PlayStation Network וכו')."
+        },
+        "piracy": {
+          "name": "פיראטיות",
+          "description": "חוסם אתרי P2P, פרוטוקולים, אתרי הזרמת מדיה מפרי זכויות יוצרים ואתרי אירוח וידאו גנריים המשמשים בעיקר להפצה לא חוקית של תוכן המוגן בזכויות יוצרים."
+        },
+        "porn": {
+          "name": "פורנוגרפיה",
+          "description": "חוסם תוכן למבוגרים ופורנוגרפי. כולל אתרי ליווי, pornhub.com ודומיינים דומים."
+        },
+        "social-networks": {
+          "name": "רשתות חברתיות",
+          "description": "חוסם את כל אתרי ואפליקציות הרשתות החברתיות (Facebook, Instagram, TikTok, Reddit וכו'). אינו חוסם אפליקציות הודעות."
+        },
+        "video-streaming": {
+          "name": "הזרמת וידאו",
+          "description": "חוסם שירותי הזרמת וידאו (YouTube, Netflix, Disney+, אתרי הזרמה לא חוקיים, אתרי פורנו וידאו וכו') ורשתות חברתיות מבוססות וידאו (TikTok וכו'). זה יכול לעזור גם בהפחתת השימוש ברוחב הפס בכל רשת."
+        }
+      }
+    },
+    "recreation": {
+      "name": "זמן פנאי",
+      "description": "הגדר תקופה לכל יום בשבוע שבה חלק מאתרי האינטרנט, האפליקציות, המשחקים או הקטגוריות שלעיל לא ייחסמו — למשל, אפשר את Facebook בימי שני ושלישי בין השעות 18:00 ל-20:00.",
+      "set": "הגדר זמן פנאי",
+      "howto": "השתמש בלחצן <1></1> בסעיפים לעיל כדי לאפשר את זמן הפנאי."
+    },
+    "safesearch": {
+      "name": "חיפוש בטוח (SafeSearch)",
+      "description": "סנן תוצאות בוטות בכל מנועי החיפוש הגדולים, כולל תמונות וסרטונים. פעולה זו תחסום גם את הגישה למנועי חיפוש שאינם תומכים בתכונה זו.",
+      "enable": "אכוף חיפוש בטוח (SafeSearch)"
+    },
+    "youtubeRestricted": {
+      "name": "מצב הגבלת תוכן ב-YouTube",
+      "description": "סנן סרטונים למבוגרים ב-YouTube וחסום צפייה בסרטונים משובצים למבוגרים באתרים אחרים. פעולה זו תסתיר גם את כל התגובות.",
+      "enable": "אכוף מצב הגבלת תוכן ב-YouTube"
+    },
+    "bypass": {
+      "name": "חסום שיטות עקיפה",
+      "description": "מנע או עיכב את השימוש בשיטות שיכולות לעזור לעקוף את סינון ה-NextDNS ברשת. זה כולל VPN, פרוקסי, תוכנות הקשורות ל-Tor וספקי DNS מוצפנים.",
+      "enable": "חסום שיטות עקיפה"
+    }
+  },
+  "xlist": {
+    "placeholder": "הוסף דומיין...",
+    "errors": {
+      "required": "הזן דומיין.",
+      "ip": "הזן דומיין, לא כתובת IP.",
+      "invalid": "הזן דומיין תקין.",
+      "tld": "נראה שאתה מנסה לחסום סיומת TLD שלמה, אנא השתמש בתכונה 'חסום סיומות אינטרנט' בסעיף האבטחה.",
+      "exists": "דומיין זה כבר נוסף."
+    },
+    "empty": "אין עדיין דומיינים.",
+    "denylist": {
+      "info": "חסימת דומיין תחסום אוטומטית את כל תתי-הדומיינים שלו."
+    },
+    "allowlist": {
+      "info": "התרת דומיין תתיר אוטומטית את כל תתי-הדומיינים שלו. התרה מקבלת קדימות על פני כל דבר אחר, כולל תכונות אבטחה."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>מתוך השאילתות החסומות</1></1>",
+      "all_one": "<0>{{count, number}}</0><1>שאילתה</1>",
+      "all_other": "<0>{{count, number}}</0><1>שאילתות</1>",
+      "blocked_one": "<0>{{count, number}}</0><1>שאילתה חסומה</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>שאילתות חסומות</1>"
+    },
+    "queries": {
+      "name": "שאילתות",
+      "description": "התפתחות השאילתות לאורך זמן.",
+      "queries": {
+        "all_one": "<0>{{count, number}}</0><1> שאילתה</1>",
+        "all_other": "<0>{{count, number}}</0><1> שאילתות</1>",
+        "blocked_one": "<0>{{count, number}}</0><1> שאילתה חסומה</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> שאילתות חסומות</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "דומיינים שנפתרו",
+        "description": "דומיינים שנפתרו מבלי להיחסם על ידי הגדרה כלשהי או מכיוון שהותרו ידנית."
+      },
+      "blocked": {
+        "name": "דומיינים חסומים",
+        "description": "דומיינים שנחסמו על ידי הגדרת אבטחה, פרטיות ו/או בקרת הורים או מכיוון שנחסמו ידנית."
+      },
+      "root": {
+        "name": "דומיינים ראשיים (Root Domains)",
+        "description": "סיכום של כל השאילתות שנעשו עבור דומיינים ראשיים וכל תתי-הדומיינים שלהם."
+      },
+      "empty": "אין עדיין דומיינים."
+    },
+    "reasons": {
+      "name": "סיבות חסימה",
+      "description": "הגדרות אבטחה, פרטיות ו/או בקרת הורים שחסמו את מספר השאילתות הגבוה ביותר.",
+      "empty": "לא נחסמו דומיינים עדיין."
+    },
+    "devices": {
+      "name": "מכשירים",
+      "description": "מכשירים המבצעים את השאילתות.",
+      "empty": "אין עדיין מכשירים.",
+      "unidentified": {
+        "name": "מכשירים לא מזוהים"
+      }
+    },
+    "ips": {
+      "name": "כתובות IP",
+      "description": "כתובות IP המבצעות את השאילתות.",
+      "empty": "אין עדיין כתובות IP."
+    },
+    "gafam": {
+      "name": "דומיננטיות GAFAM",
+      "description": "ה-\"GAFAM\" (גוגל, אמזון, פייסבוק, אפל ומיקרוסופט) הן 5 חברות האינטרנט הדומיננטיות שבבעלותן שירותים פופולריים רבים, הפועלים לעיתים קרובות תחת שם אחר, למשל, WhatsApp ו-Instagram עבור Facebook.",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Facebook"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "אחרים"
+        }
+      },
+      "queries_one": "שאילתה {{count, number}}",
+      "queries_other": "{{count, number}} שאילתות"
+    },
+    "encrypted": {
+      "name": "DNS מוצפן",
+      "description": "אחוז השאילתות שבוצעו באמצעות תעבורה מוצפנת (DNS-over-HTTPS, DNS-over-TLS או אפליקציות NextDNS הרשמיות).",
+      "empty": "אין עדיין שאילתות."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "אחוז השאילתות שאומתו באמצעות DNSSEC.",
+      "empty": "אין עדיין שאילתות."
+    },
+    "destination": {
+      "name": "יעד התעבורה",
+      "description": "מדינות שאליהן מנותבת תנועת האינטרנט שלך.",
+      "topDomains": "הדומיינים המובילים",
+      "queries_one": "שאילתה {{count, number}}",
+      "queries_other": "{{count, number}} שאילתות"
+    }
+  },
+  "logs": {
+    "blockedOnly": "שאילתות חסומות בלבד",
+    "raw": "יומני DNS גולמיים",
+    "empty": "אין עדיין יומנים.",
+    "log": {
+      "actionBlock": "חסימה",
+      "actionAllow": "התרה",
+      "dnssec": "מאומת באמצעות DNSSEC.",
+      "clients": {
+        "nextdns-ios": "NextDNS עבור iOS",
+        "nextdns-android": "NextDNS עבור Android",
+        "nextdns-macos": "NextDNS עבור macOS",
+        "nextdns-windows": "NextDNS עבור Windows",
+        "nextdns-cli": "NextDNS CLI Client",
+        "nextdns-chromeos": "NextDNS עבור Chrome OS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "Mikrotik",
+        "apple-profile": "פרופיל תצורה של Apple"
+      },
+      "blockedBy": "נחסם על ידי <1>{{lists}}</1>.",
+      "allowedBy": "הותר על ידי <1>{{lists}}</1>.",
+      "manual": {
+        "deny": "נחסם ידנית.",
+        "allow": "הותר ידנית."
+      },
+      "insights": {
+        "show": "הצג תובנות מעקב",
+        "hide": "הסתר תובנות מעקב",
         "categories": {
-            "name": "קטגוריות",
-            "description": "הגבל את הגישה לקטגוריות ספציפיות של אתרים ואפליקציות.",
-            "add": "הוסף קטגוריה",
-            "categories": {
-                "dating": {
-                    "name": "היכרויות",
-                    "description": "חוסם את כל אתרי ואפליקציות ההיכרויות."
-                },
-                "gambling": {
-                    "name": "הימורים",
-                    "description": "חוסם תכני הימורים."
-                },
-                "gaming": {
-                    "name": "משחקים מקוונים",
-                    "description": "חוסם אתרי משחקים מקוונים, אפליקציות משחקים מקוונים ורשתות משחקים מקוונות (Xbox Live, PlayStation Network וכו')."
-                },
-                "piracy": {
-                    "name": "פיראטיות",
-                    "description": "חוסם אתרי P2P, פרוטוקולים, אתרי הזרמת מדיה מפרי זכויות יוצרים ואתרי אירוח וידאו גנריים המשמשים בעיקר להפצה לא חוקית של תוכן המוגן בזכויות יוצרים."
-                },
-                "porn": {
-                    "name": "פורנוגרפיה",
-                    "description": "חוסם תוכן למבוגרים ופורנוגרפי. כולל אתרי ליווי, pornhub.com ודומיינים דומים."
-                },
-                "social-networks": {
-                    "name": "רשתות חברתיות",
-                    "description": "חוסם את כל אתרי ואפליקציות הרשתות החברתיות (Facebook, Instagram, TikTok, Reddit וכו'). אינו חוסם אפליקציות הודעות."
-                },
-                "video-streaming": {
-                    "name": "הזרמת וידאו",
-                    "description": "חוסם שירותי הזרמת וידאו (YouTube, Netflix, Disney+, אתרי הזרמה לא חוקיים, אתרי פורנו וידאו וכו') ורשתות חברתיות מבוססות וידאו (TikTok וכו'). זה יכול לעזור גם בהפחתת השימוש ברוחב הפס בכל רשת."
-                }
-            }
+          "advertising": {
+            "description": "מספק פרסום או שירותים קשורים לפרסום כגון איסוף נתונים, ניתוח התנהגותי או פירסום מחדש (Retargeting)."
+          },
+          "comments": {
+            "description": "מאפשר אזורי תגובות לכתבות וביקורות מוצרים."
+          },
+          "customer_interaction": {
+            "description": "כולל צ'אט, הודעות דוא\"ל, תמיכת לקוחות וכלי אינטראקציה אחרים."
+          },
+          "essential": {
+            "description": "כולל מנהלי תגיות, הודעות פרטיות וטכנולוגיות קריטיות לתפקוד האתר."
+          },
+          "adult_advertsing": {
+            "description": "מספק פרסומות המופיעות בדרך כלל באתרי תוכן למבוגרים."
+          },
+          "site_analytics": {
+            "description": "אוסף ומנתח נתונים הקשורים לשימוש באתר ולביצועיו."
+          },
+          "social_media": {
+            "description": "משלב תכונות הקשורות לאתרי מדיה חברתית."
+          },
+          "audio_video_player": {
+            "description": "מאפשר לאתרים לפרסם, להפיץ ולבצע אופטימיזציה של תוכן וידאו ואודיו."
+          },
+          "cdn": {
+            "description": "רשת אספקת תוכן המספקת משאבים לכלי שירות שונים באתר ובדרך כלל ללקוחות רבים ושונים."
+          },
+          "misc": {
+            "description": "מעקב זה אינו מתאים לקטגוריות אחרות או שטרם תויג."
+          },
+          "pornvertising": {
+            "description": "מספק פרסומות המופיעות בדרך כלל באתרי תוכן למבוגרים."
+          },
+          "hosting": {
+            "description": "זהו שירות המשמש את ספק התוכן או בעל האתר."
+          },
+          "extensions": {
+            "description": "תוכנה במכשירי משתמש שיכולה ליירט ולנתח תעבורת דפדפן (Man in the middle)."
+          }
         },
-        "recreation": {
-            "name": "זמן פנאי",
-            "description": "הגדר תקופה לכל יום בשבוע שבה חלק מאתרי האינטרנט, האפליקציות, המשחקים או הקטגוריות שלעיל לא ייחסמו — למשל, אפשר את Facebook בימי שני ושלישי בין השעות 18:00 ל-20:00.",
-            "set": "הגדר זמן פנאי",
-            "howto": "השתמש בלחצן <1></1> בסעיפים לעיל כדי לאפשר את זמן הפנאי.",
-            "end": "",
-            "start": ""
+        "prevalence": {
+          "intensity": {
+            "dangerously": "נפוץ באופן מסוכן",
+            "extremely": "נפוץ ביותר",
+            "very": "נפוץ מאוד",
+            "commonly": "נפוץ בדרך כלל",
+            "relatively": "נפוץ יחסית"
+          },
+          "summary": "{{prevalence}} <3>(עוקב אחר {{percent, percentage}} מתעבורת האינטרנט)</3>"
         },
-        "safesearch": {
-            "name": "חיפוש בטוח (SafeSearch)",
-            "description": "סנן תוצאות בוטות בכל מנועי החיפוש הגדולים, כולל תמונות וסרטונים. פעולה זו תחסום גם את הגישה למנועי חיפוש שאינם תומכים בתכונה זו.",
-            "enable": "אכוף חיפוש בטוח (SafeSearch)"
-        },
-        "youtubeRestricted": {
-            "name": "מצב הגבלת תוכן ב-YouTube",
-            "description": "סנן סרטונים למבוגרים ב-YouTube וחסום צפייה בסרטונים משובצים למבוגרים באתרים אחרים. פעולה זו תסתיר גם את כל התגובות.",
-            "enable": "אכוף מצב הגבלת תוכן ב-YouTube"
-        },
-        "bypass": {
-            "name": "חסום שיטות עקיפה",
-            "description": "מנע או עיכב את השימוש בשיטות שיכולות לעזור לעקוף את סינון ה-NextDNS ברשת. זה כולל VPN, פרוקסי, תוכנות הקשורות ל-Tor וספקי DNS מוצפנים.",
-            "enable": "חסום שיטות עקיפה"
-        }
+        "ownedBy": "<0>בבעלות </0><1>{{company}}</1>",
+        "source": "תובנות מעקב מאת"
+      }
+    }
+  },
+  "deviceSelector": {
+    "all": "כל המכשירים",
+    "howto": "למד כיצד לזהות את המכשירים שלך בדף ההגדרה."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "30 הדקות האחרונות",
+      "6h": "6 השעות האחרונות",
+      "24h": "24 השעות האחרונות",
+      "7d": "7 הימים האחרונים",
+      "30d": "30 הימים האחרונים",
+      "3M": "3 החודשים האחרונים"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "שם",
+      "description": "בחר שם לפרופיל זה."
     },
-    "xlist": {
-        "placeholder": "הוסף דומיין...",
-        "errors": {
+    "logs": {
+      "name": "יומנים (Logs)",
+      "description": "כוונן עדין את הגדרות היומנים שלך.",
+      "enable": "אפשר יומנים (Logs)",
+      "privacy": {
+        "name": "התאמות פרטיות",
+        "ip": "רשום כתובות IP של לקוחות",
+        "domains": "רשום דומיינים"
+      },
+      "retention": {
+        "name": "שמירת נתונים",
+        "options": {
+          "1h": "שעה אחת",
+          "6h": "6 שעות",
+          "1d": "יום אחד",
+          "1w": "שבוע אחד",
+          "1m": "חודש אחד",
+          "3m": "3 חודשים",
+          "6m": "6 חודשים",
+          "1y": "שנה אחת",
+          "2y": "שנתיים"
+        }
+      },
+      "location": {
+        "name": "מיקום אחסון",
+        "locations": {
+          "us": {
+            "name": "ארצות הברית",
+            "description": "היומנים יאוחסנו בתוך ארצות הברית. זוהי ברירת המחדל."
+          },
+          "eu": {
+            "name": "האיחוד האירופי",
+            "description": "היומנים יאוחסנו בתוך מדינות חברות באיחוד האירופי."
+          },
+          "ch": {
+            "name": "שוויץ",
+            "description": "היומנים יאוחסנו בציריך, שוויץ — תחום שיפוט המוכר בחוקי הפרטיות החזקים שלו."
+          }
+        },
+        "confirm": {
+          "title": "שנה מיקום אחסון",
+          "text": "שינוי מיקום האחסון של היומנים ימחק את כל יומני העבר והאנליטיקה עבור פרופיל זה."
+        }
+      },
+      "download": {
+        "button": "הורד יומנים"
+      },
+      "clear": {
+        "button": "נקה יומנים",
+        "confirm": {
+          "text": "האם אתה בטוח שברצונך לנקות את כל היומנים עבור פרופיל זה? לא ניתן לבטל פעולה זו.",
+          "submit": "נקה"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "דף חסימה",
+      "description": "הצג דף חסימה כאשר דומיין נחסם. זה עשוי להאריך מעט את זמן טעינת העמוד ואזהרת HTTPS עשויה להופיע במקרים מסוימים. כאשר מושבת, שאילתות חסומות ייענו עם הכתובת הלא מוגדרת (0.0.0.0 או ::).",
+      "enable": "אפשר דף חסימה",
+      "ca": {
+        "name": "NextDNS Root CA",
+        "description": "הסר את אזהרת ה-HTTPS בעת טעינת דף החסימה על ידי התקנה ומתן אמון ב-root CA שלנו ב-<1>{{link}}</1>. קרא את ההוראות כיצד לעשות זאת <3>כאן</3>."
+      }
+    },
+    "performance": {
+      "name": "ביצועים",
+      "description": "האץ את הגלישה שלך.",
+      "ecs": {
+        "name": "Anonymized EDNS Client Subnet",
+        "description": "האץ את אספקת הנתונים מרשתות אספקת תוכן (CDN) מבלי לחשוף את כתובת ה-IP שלך.",
+        "enable": "אפשר Anonymized EDNS Client Subnet"
+      },
+      "cache": {
+        "name": "Cache Boost",
+        "description": "מזער שאילתות DNS על ידי אכיפת TTL (זמן חיים) מינימלי.",
+        "enable": "אפשר Cache Boost"
+      },
+      "flatten": {
+        "name": "שיטוח CNAME (CNAME Flattening)",
+        "description": "מנע מפותרים העוקבים אחר CNAME לבצע שאילתות מיותרות ולזהם את היומנים בדומיינים של ביניים.",
+        "enable": "אפשר שיטוח CNAME"
+      }
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 מתייחס למערכת אקולוגית מקוונת מבוזרת ועמידה בפני צנזורה המורכבת מטכנולוגיות חדשניות כגון רישומי דומיינים מבוססי בלוקצ'יין (למשל Ethereum Name Service) ורשתות אחסון ואספקת תוכן מבוזרות (למשל IPFS). כאשר מופעל, NextDNS יפעל כמעבר לא מסונן לאינטרנט החדש הזה, ויאפשר לך לחוות אותו ממקור ראשון ללא צורך להתקין דבר.",
+      "tips": "מכיוון שרוב הדפדפנים תומכים רק בסיומות אינטרנט קלאסיות כרגע, עליך להוסיף לוכסן בסוף (\"<1>/</1>\") כשאתה מנסה לגשת לדומיין Web3 ישירות (למשל \"<3>vitalik.eth/</3>\" במקום \"<5>vitalik.eth</5>\").",
+      "enable": "אפשר Web3"
+    },
+    "rewrites": {
+      "name": "שכתובים (Rewrites)",
+      "description": "קבע או עקוף את תגובת ה-DNS עבור כל דומיין. שכתובים חלים גם על תתי-דומיינים, וכתובות IP מקומיות נתמכות כתשובות.",
+      "new": "שכתוב חדש",
+      "form": {
+        "domain": {
+          "label": "דומיין",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
             "required": "הזן דומיין.",
             "ip": "הזן דומיין, לא כתובת IP.",
             "invalid": "הזן דומיין תקין.",
-            "tld": "נראה שאתה מנסה לחסום סיומת TLD שלמה, אנא השתמש בתכונה 'חסום סיומות אינטרנט' בסעיף האבטחה.",
-            "exists": "דומיין זה כבר נוסף."
+            "taken": "כבר יש לך שכתוב עבור הדומיין הזה."
+          }
         },
-        "empty": "אין עדיין דומיינים.",
-        "denylist": {
-            "info": "חסימת דומיין תחסום אוטומטית את כל תתי-הדומיינים שלו."
-        },
-        "allowlist": {
-            "info": "התרת דומיין תתיר אוטומטית את כל תתי-הדומיינים שלו. התרה מקבלת קדימות על פני כל דבר אחר, כולל תכונות אבטחה."
+        "answer": {
+          "label": "תשובה",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "הזן תשובה.",
+            "invalid": "התשובה צריכה להיות כתובת IP או דומיין תקינים."
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>מתוך השאילתות החסומות</1></1>",
-            "all_one": "<0>{{count, number}}</0><1>שאילתה</1>",
-            "all_other": "<0>{{count, number}}</0><1>שאילתות</1>",
-            "blocked_one": "<0>{{count, number}}</0><1>שאילתה חסומה</1>",
-            "blocked_other": "<0>{{count, number}}</0><1>שאילתות חסומות</1>"
+    "access": {
+      "name": "גישה",
+      "description": "ספק לאחרים גישת עריכה או צפייה בלבד לפרופיל זה.",
+      "roles": {
+        "editor": "עורך",
+        "viewer": "צופה"
+      },
+      "pending": "הזמנה נשלחה",
+      "form": {
+        "email": {
+          "label": "אימייל",
+          "errors": {
+            "required": "הזן אימייל.",
+            "invalid": "הזן כתובת אימייל תקינה.",
+            "duplicate": "אימייל זה כבר הוזמן."
+          }
         },
-        "queries": {
-            "name": "שאילתות",
-            "description": "התפתחות השאילתות לאורך זמן.",
-            "queries": {
-                "all_one": "<0>{{count, number}}</0><1> שאילתה</1>",
-                "all_other": "<0>{{count, number}}</0><1> שאילתות</1>",
-                "blocked_one": "<0>{{count, number}}</0><1> שאילתה חסומה</1>",
-                "blocked_other": "<0>{{count, number}}</0><1> שאילתות חסומות</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "דומיינים שנפתרו",
-                "description": "דומיינים שנפתרו מבלי להיחסם על ידי הגדרה כלשהי או מכיוון שהותרו ידנית."
-            },
-            "blocked": {
-                "name": "דומיינים חסומים",
-                "description": "דומיינים שנחסמו על ידי הגדרת אבטחה, פרטיות ו/או בקרת הורים או מכיוון שנחסמו ידנית."
-            },
-            "root": {
-                "name": "דומיינים ראשיים (Root Domains)",
-                "description": "סיכום של כל השאילתות שנעשו עבור דומיינים ראשיים וכל תתי-הדומיינים שלהם."
-            },
-            "empty": "אין עדיין דומיינים."
-        },
-        "reasons": {
-            "name": "סיבות חסימה",
-            "description": "הגדרות אבטחה, פרטיות ו/או בקרת הורים שחסמו את מספר השאילתות הגבוה ביותר.",
-            "empty": "לא נחסמו דומיינים עדיין."
-        },
-        "devices": {
-            "name": "מכשירים",
-            "description": "מכשירים המבצעים את השאילתות.",
-            "empty": "אין עדיין מכשירים.",
-            "unidentified": {
-                "name": "מכשירים לא מזוהים"
-            }
-        },
-        "ips": {
-            "name": "כתובות IP",
-            "description": "כתובות IP המבצעות את השאילתות.",
-            "empty": "אין עדיין כתובות IP."
-        },
-        "gafam": {
-            "name": "דומיננטיות GAFAM",
-            "description": "ה-\"GAFAM\" (גוגל, אמזון, פייסבוק, אפל ומיקרוסופט) הן 5 חברות האינטרנט הדומיננטיות שבבעלותן שירותים פופולריים רבים, הפועלים לעיתים קרובות תחת שם אחר, למשל, WhatsApp ו-Instagram עבור Facebook.",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "אחרים"
-                }
-            },
-            "queries_one": "שאילתה {{count, number}}",
-            "queries_other": "{{count, number}} שאילתות"
-        },
-        "encrypted": {
-            "name": "DNS מוצפן",
-            "description": "אחוז השאילתות שבוצעו באמצעות תעבורה מוצפנת (DNS-over-HTTPS, DNS-over-TLS או אפליקציות NextDNS הרשמיות).",
-            "empty": "אין עדיין שאילתות."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "אחוז השאילתות שאומתו באמצעות DNSSEC.",
-            "empty": "אין עדיין שאילתות."
-        },
-        "destination": {
-            "name": "יעד התעבורה",
-            "description": "מדינות שאליהן מנותבת תנועת האינטרנט שלך.",
-            "topDomains": "הדומיינים המובילים",
-            "queries_one": "שאילתה {{count, number}}",
-            "queries_other": "{{count, number}} שאילתות"
+        "role": {
+          "label": "תפקיד"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "שאילתות חסומות בלבד",
-        "raw": "יומני DNS גולמיים",
-        "empty": "אין עדיין יומנים.",
-        "log": {
-            "actionBlock": "חסימה",
-            "actionAllow": "התרה",
-            "dnssec": "מאומת באמצעות DNSSEC.",
-            "clients": {
-                "nextdns-ios": "NextDNS עבור iOS",
-                "nextdns-android": "NextDNS עבור Android",
-                "nextdns-macos": "NextDNS עבור macOS",
-                "nextdns-windows": "NextDNS עבור Windows",
-                "nextdns-cli": "NextDNS CLI Client",
-                "nextdns-chromeos": "NextDNS עבור Chrome OS",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "פרופיל תצורה של Apple",
-                "tailscale": "",
-                "yogadns": ""
-            },
-            "blockedBy": "נחסם על ידי <1>{{lists}}</1>.",
-            "allowedBy": "הותר על ידי <1>{{lists}}</1>.",
-            "manual": {
-                "deny": "נחסם ידנית.",
-                "allow": "הותר ידנית."
-            },
-            "insights": {
-                "show": "הצג תובנות מעקב",
-                "hide": "הסתר תובנות מעקב",
-                "categories": {
-                    "advertising": {
-                        "description": "מספק פרסום או שירותים קשורים לפרסום כגון איסוף נתונים, ניתוח התנהגותי או פירסום מחדש (Retargeting)."
-                    },
-                    "comments": {
-                        "description": "מאפשר אזורי תגובות לכתבות וביקורות מוצרים."
-                    },
-                    "customer_interaction": {
-                        "description": "כולל צ'אט, הודעות דוא\"ל, תמיכת לקוחות וכלי אינטראקציה אחרים."
-                    },
-                    "essential": {
-                        "description": "כולל מנהלי תגיות, הודעות פרטיות וטכנולוגיות קריטיות לתפקוד האתר."
-                    },
-                    "adult_advertsing": {
-                        "description": "מספק פרסומות המופיעות בדרך כלל באתרי תוכן למבוגרים."
-                    },
-                    "site_analytics": {
-                        "description": "אוסף ומנתח נתונים הקשורים לשימוש באתר ולביצועיו."
-                    },
-                    "social_media": {
-                        "description": "משלב תכונות הקשורות לאתרי מדיה חברתית."
-                    },
-                    "audio_video_player": {
-                        "description": "מאפשר לאתרים לפרסם, להפיץ ולבצע אופטימיזציה של תוכן וידאו ואודיו."
-                    },
-                    "cdn": {
-                        "description": "רשת אספקת תוכן המספקת משאבים לכלי שירות שונים באתר ובדרך כלל ללקוחות רבים ושונים."
-                    },
-                    "misc": {
-                        "description": "מעקב זה אינו מתאים לקטגוריות אחרות או שטרם תויג."
-                    },
-                    "pornvertising": {
-                        "description": "מספק פרסומות המופיעות בדרך כלל באתרי תוכן למבוגרים."
-                    },
-                    "hosting": {
-                        "description": "זהו שירות המשמש את ספק התוכן או בעל האתר."
-                    },
-                    "extensions": {
-                        "description": "תוכנה במכשירי משתמש שיכולה ליירט ולנתח תעבורת דפדפן (Man in the middle)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "נפוץ באופן מסוכן",
-                        "extremely": "נפוץ ביותר",
-                        "very": "נפוץ מאוד",
-                        "commonly": "נפוץ בדרך כלל",
-                        "relatively": "נפוץ יחסית"
-                    },
-                    "summary": "{{prevalence}} <3>(עוקב אחר {{percent, percentage}} מתעבורת האינטרנט)</3>"
-                },
-                "ownedBy": "<0>בבעלות </0><1>{{company}}</1>",
-                "source": "תובנות מעקב מאת"
-            }
-        },
-        "streaming": "",
-        "settings": "",
-        "toggleTimeFormat": ""
-    },
-    "deviceSelector": {
-        "all": "כל המכשירים",
-        "howto": "למד כיצד לזהות את המכשירים שלך בדף ההגדרה."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "30 הדקות האחרונות",
-            "6h": "6 השעות האחרונות",
-            "24h": "24 השעות האחרונות",
-            "7d": "7 הימים האחרונים",
-            "30d": "30 הימים האחרונים",
-            "3M": "3 החודשים האחרונים"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "שכפל את <1>{{name}}</1>",
+      "description": "העתק את כל ההגדרות של פרופיל זה לפרופיל חדש.",
+      "form": {
         "name": {
-            "name": "שם",
-            "description": "בחר שם לפרופיל זה."
+          "label": "שם",
+          "placeholder": "בית, ילדים, משרד, ...",
+          "errors": {
+            "required": "הזן שם.",
+            "taken": "כבר יש לך פרופיל עם השם הזה."
+          }
         },
-        "logs": {
-            "name": "יומנים (Logs)",
-            "description": "כוונן עדין את הגדרות היומנים שלך.",
-            "enable": "אפשר יומנים (Logs)",
-            "privacy": {
-                "name": "התאמות פרטיות",
-                "ip": "רשום כתובות IP של לקוחות",
-                "domains": "רשום דומיינים"
-            },
-            "retention": {
-                "name": "שמירת נתונים",
-                "options": {
-                    "1h": "שעה אחת",
-                    "6h": "6 שעות",
-                    "1d": "יום אחד",
-                    "1w": "שבוע אחד",
-                    "1m": "חודש אחד",
-                    "3m": "3 חודשים",
-                    "6m": "6 חודשים",
-                    "1y": "שנה אחת",
-                    "2y": "שנתיים"
-                }
-            },
-            "location": {
-                "name": "מיקום אחסון",
-                "locations": {
-                    "us": {
-                        "name": "ארצות הברית",
-                        "description": "היומנים יאוחסנו בתוך ארצות הברית. זוהי ברירת המחדל."
-                    },
-                    "eu": {
-                        "name": "האיחוד האירופי",
-                        "description": "היומנים יאוחסנו בתוך מדינות חברות באיחוד האירופי."
-                    },
-                    "ch": {
-                        "name": "שוויץ",
-                        "description": "היומנים יאוחסנו בציריך, שוויץ — תחום שיפוט המוכר בחוקי הפרטיות החזקים שלו."
-                    }
-                },
-                "confirm": {
-                    "title": "שנה מיקום אחסון",
-                    "text": "שינוי מיקום האחסון של היומנים ימחק את כל יומני העבר והאנליטיקה עבור פרופיל זה."
-                }
-            },
-            "download": {
-                "button": "הורד יומנים"
-            },
-            "clear": {
-                "button": "נקה יומנים",
-                "confirm": {
-                    "text": "האם אתה בטוח שברצונך לנקות את כל היומנים עבור פרופיל זה? לא ניתן לבטל פעולה זו.",
-                    "submit": "נקה"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "דף חסימה",
-            "description": "הצג דף חסימה כאשר דומיין נחסם. זה עשוי להאריך מעט את זמן טעינת העמוד ואזהרת HTTPS עשויה להופיע במקרים מסוימים. כאשר מושבת, שאילתות חסומות ייענו עם הכתובת הלא מוגדרת (0.0.0.0 או ::).",
-            "enable": "אפשר דף חסימה",
-            "ca": {
-                "name": "NextDNS Root CA",
-                "description": "הסר את אזהרת ה-HTTPS בעת טעינת דף החסימה על ידי התקנה ומתן אמון ב-root CA שלנו ב-<1>{{link}}</1>. קרא את ההוראות כיצד לעשות זאת <3>כאן</3>."
-            }
-        },
-        "performance": {
-            "name": "ביצועים",
-            "description": "האץ את הגלישה שלך.",
-            "ecs": {
-                "name": "Anonymized EDNS Client Subnet",
-                "description": "האץ את אספקת הנתונים מרשתות אספקת תוכן (CDN) מבלי לחשוף את כתובת ה-IP שלך.",
-                "enable": "אפשר Anonymized EDNS Client Subnet"
-            },
-            "cache": {
-                "name": "Cache Boost",
-                "description": "מזער שאילתות DNS על ידי אכיפת TTL (זמן חיים) מינימלי.",
-                "enable": "אפשר Cache Boost"
-            },
-            "flatten": {
-                "name": "שיטוח CNAME (CNAME Flattening)",
-                "description": "מנע מפותרים העוקבים אחר CNAME לבצע שאילתות מיותרות ולזהם את היומנים בדומיינים של ביניים.",
-                "enable": "אפשר שיטוח CNAME"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 מתייחס למערכת אקולוגית מקוונת מבוזרת ועמידה בפני צנזורה המורכבת מטכנולוגיות חדשניות כגון רישומי דומיינים מבוססי בלוקצ'יין (למשל Ethereum Name Service) ורשתות אחסון ואספקת תוכן מבוזרות (למשל IPFS). כאשר מופעל, NextDNS יפעל כמעבר לא מסונן לאינטרנט החדש הזה, ויאפשר לך לחוות אותו ממקור ראשון ללא צורך להתקין דבר.",
-            "tips": "מכיוון שרוב הדפדפנים תומכים רק בסיומות אינטרנט קלאסיות כרגע, עליך להוסיף לוכסן בסוף (\"<1>/</1>\") כשאתה מנסה לגשת לדומיין Web3 ישירות (למשל \"<3>vitalik.eth/</3>\" במקום \"<5>vitalik.eth</5>\").",
-            "enable": "אפשר Web3"
-        },
-        "rewrites": {
-            "name": "שכתובים (Rewrites)",
-            "description": "קבע או עקוף את תגובת ה-DNS עבור כל דומיין. שכתובים חלים גם על תתי-דומיינים, וכתובות IP מקומיות נתמכות כתשובות.",
-            "new": "שכתוב חדש",
-            "form": {
-                "domain": {
-                    "label": "דומיין",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "הזן דומיין.",
-                        "ip": "הזן דומיין, לא כתובת IP.",
-                        "invalid": "הזן דומיין תקין.",
-                        "taken": "כבר יש לך שכתוב עבור הדומיין הזה."
-                    }
-                },
-                "answer": {
-                    "label": "תשובה",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "הזן תשובה.",
-                        "invalid": "התשובה צריכה להיות כתובת IP או דומיין תקינים."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "גישה",
-            "description": "ספק לאחרים גישת עריכה או צפייה בלבד לפרופיל זה.",
-            "roles": {
-                "editor": "עורך",
-                "viewer": "צופה"
-            },
-            "pending": "הזמנה נשלחה",
-            "form": {
-                "email": {
-                    "label": "אימייל",
-                    "errors": {
-                        "required": "הזן אימייל.",
-                        "invalid": "הזן כתובת אימייל תקינה.",
-                        "duplicate": "אימייל זה כבר הוזמן."
-                    }
-                },
-                "role": {
-                    "label": "תפקיד"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "שכפל את <1>{{name}}</1>",
-            "description": "העתק את כל ההגדרות של פרופיל זה לפרופיל חדש.",
-            "form": {
-                "name": {
-                    "label": "שם",
-                    "placeholder": "בית, ילדים, משרד, ...",
-                    "errors": {
-                        "required": "הזן שם.",
-                        "taken": "כבר יש לך פרופיל עם השם הזה."
-                    }
-                },
-                "button": "שכפל"
-            }
-        },
-        "delete": {
-            "button": "מחק את <1>{{name}}</1>",
-            "warning": "פעולה זו תמחק את הפרופיל הזה ואת כל היומנים הקשורים אליו לתמיד.",
-            "confirm": {
-                "text": "האם אתה בטוח שברצונך למחוק את <1>{{name}}</1>? לא ניתן לבטל פעולה זו."
-            }
-        },
-        "leave": {
-            "button": "עזוב את <1>{{name}}</1>",
-            "warning": "תאבד את הגישה לפרופיל זה.",
-            "confirm": {
-                "text": "האם אתה בטוח שברצונך לעזוב את <1>{{name}}</1>? לא ניתן לבטל פעולה זו."
-            }
-        },
-        "ageVerification": {
-            "description": "",
-            "acknowledgment": "",
-            "name": ""
-        }
+        "button": "שכפל"
+      }
+    },
+    "delete": {
+      "button": "מחק את <1>{{name}}</1>",
+      "warning": "פעולה זו תמחק את הפרופיל הזה ואת כל היומנים הקשורים אליו לתמיד.",
+      "confirm": {
+        "text": "האם אתה בטוח שברצונך למחוק את <1>{{name}}</1>? לא ניתן לבטל פעולה זו."
+      }
+    },
+    "leave": {
+      "button": "עזוב את <1>{{name}}</1>",
+      "warning": "תאבד את הגישה לפרופיל זה.",
+      "confirm": {
+        "text": "האם אתה בטוח שברצונך לעזוב את <1>{{name}}</1>? לא ניתן לבטל פעולה זו."
+      }
     }
+  }
 }

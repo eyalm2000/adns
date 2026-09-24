@@ -66,7 +66,7 @@ object Locales {
         }
 
     fun getString(vararg path: String): String =
-        (getNode(*path) as? String) ?: missing(path)
+        (getNode(*path) as? String)?.takeIf { it.isNotBlank() } ?: missing(path)
 
     fun getPlainString(
         path: Array<out String>,

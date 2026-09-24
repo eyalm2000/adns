@@ -1,1398 +1,1310 @@
 {
-    "global": {
-        "beta": "beta",
-        "cancel": "Zrušit",
-        "add": "Přidat",
-        "save": "Uložit",
-        "continue": "Pokračovat",
-        "enable": "Povolit",
-        "change": "Změnit",
-        "create": "Vytvořit",
-        "subscribe": "Předplatit",
-        "invite": "Pozvat",
-        "remove": "Odstranit",
-        "leave": "Odejít",
-        "delete": "Smazat",
-        "close": "Zavřít",
-        "back": "Zpět",
-        "disable": "Vypnout",
-        "unnamedDevice": "Zařízení #{{id}}",
-        "firstConfiguration": "Moje první konfigurace",
-        "copy": "",
-        "collapse": "",
-        "requestFailed": "",
-        "error": "",
-        "preview": "",
-        "expand": "",
-        "noProfiles": "",
-        "search": "",
-        "clearSearch": "",
-        "networkError": "",
-        "actions": ""
+  "global": {
+    "beta": "beta",
+    "cancel": "Zrušit",
+    "add": "Přidat",
+    "save": "Uložit",
+    "continue": "Pokračovat",
+    "enable": "Povolit",
+    "change": "Změnit",
+    "create": "Vytvořit",
+    "subscribe": "Předplatit",
+    "invite": "Pozvat",
+    "remove": "Odstranit",
+    "leave": "Odejít",
+    "delete": "Smazat",
+    "close": "Zavřít",
+    "back": "Zpět",
+    "disable": "Vypnout",
+    "unnamedDevice": "Zařízení #{{id}}",
+    "firstConfiguration": "Moje první konfigurace"
+  },
+  "theme": {
+    "label": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "pages": {
+    "signup": "Registrovat",
+    "login": "Přihlásit se",
+    "passwordReset": "Obnovit heslo",
+    "account": "Účet",
+    "setup": "Konfigurace",
+    "security": "Bezpečnost",
+    "privacy": "Soukromí",
+    "parentalcontrol": "Rodičovská kontrola",
+    "denylist": "Seznam blokovaných",
+    "allowlist": "Seznam povolených",
+    "analytics": "Analytika",
+    "logs": "Protokoly",
+    "settings": "Nastavení",
+    "help": "Nápověda"
+  },
+  "banners": {
+    "temporary": "Tento dočasný účet vyprší za <1><0>{{in}}</0></1> a je přístupný pouze z tohoto prohlížeče. Zaregistrujte se nyní zdarma a uložte svá nastavení.",
+    "nearQuota": "Tento měsíc jste provedli více než {{queriesNearQuota, number}} dotazů a blížíte se bezplatné měsíční kvótě {{queriesQuota, number}} dotazů. <5>Předplaťte si službu</5> a pokračujte v používání NextDNS.",
+    "overQuota": "Tento měsíc jste provedli více než {{queriesQuota, number}} dotazů a všechny funkce byly deaktivovány. <3>Předplaťte si službu</3> a pokračujte v používání NextDNS."
+  },
+  "account": {
+    "email": "Email",
+    "newEmail": "Nový email",
+    "password": "Heslo",
+    "newPassword": "Nové heslo",
+    "currentPassword": "Aktuální heslo",
+    "forgotPassword": "Zapomněli jste heslo?",
+    "savePassword": "Uložit heslo",
+    "passwordResetInfo": "Zadejte e-mailovou adresu přidruženou k vašemu účtu a my vám zašleme odkaz na obnovení hesla.",
+    "sendEmail": "Poslat email",
+    "passwordResetLinkSentMessage": "Odkaz na obnovení hesla byl odeslán na <1>{{email}}</1>.",
+    "code": "2FA kód",
+    "login": "Přihlásit se",
+    "noAccountYet": "Ještě nemáte účet? <1>Zaregistrujte se</1>",
+    "signup": "Registrovat",
+    "alreadyHaveAnAccount": "Máte již účet? <1>Přihlaste se</1>",
+    "convertingNotice": "Převádíte dočasný účet na skutečný, všechna vaše nastavení budou uložena.",
+    "convertingDeviceOnlyNotice": "Převádíte účet jen pro zařízení na plnohodnotný účet, všechna vaše nastavení budou uložena.",
+    "logout": "Odhlásit se",
+    "errors": {
+      "email": {
+        "required": "Zadejte e-mail.",
+        "invalid": "Zadejte platný email.",
+        "taken": "Tento e-mail je již použit."
+      },
+      "password": {
+        "required": "Zadejte heslo.",
+        "invalidCombination": "Neplatná kombinace e-mailu a hesla."
+      },
+      "currentPassword": {
+        "required": "Zadejte své aktuální heslo.",
+        "incorrect": "Zadané heslo je nesprávné."
+      },
+      "code": {
+        "required": "Zadejte kód dvoufázového ověření.",
+        "invalid": "Zadejte šestimístný kód.",
+        "incorrect": "Nesprávný kód dvoufázového ověření."
+      },
+      "resetPasswordToken": {
+        "invalid": "Neplatný token nebo vypršela jeho platnost."
+      }
     },
-    "theme": {
-        "label": "Theme",
-        "system": "System",
-        "light": "Light",
-        "dark": "Dark"
-    },
-    "pages": {
-        "signup": "Registrovat",
-        "login": "Přihlásit se",
-        "passwordReset": "Obnovit heslo",
-        "account": "Účet",
-        "setup": "Konfigurace",
-        "security": "Bezpečnost",
-        "privacy": "Soukromí",
-        "parentalcontrol": "Rodičovská kontrola",
-        "denylist": "Seznam blokovaných",
-        "allowlist": "Seznam povolených",
-        "analytics": "Analytika",
-        "logs": "Protokoly",
-        "settings": "Nastavení",
-        "help": "Nápověda"
-    },
-    "banners": {
-        "temporary": "Tento dočasný účet vyprší za <1><0>{{in}}</0></1> a je přístupný pouze z tohoto prohlížeče. Zaregistrujte se nyní zdarma a uložte svá nastavení.",
-        "nearQuota": "Tento měsíc jste provedli více než {{queriesNearQuota, number}} dotazů a blížíte se bezplatné měsíční kvótě {{queriesQuota, number}} dotazů. <5>Předplaťte si službu</5> a pokračujte v používání NextDNS.",
-        "overQuota": "Tento měsíc jste provedli více než {{queriesQuota, number}} dotazů a všechny funkce byly deaktivovány. <3>Předplaťte si službu</3> a pokračujte v používání NextDNS."
-    },
-    "account": {
-        "email": "Email",
-        "newEmail": "Nový email",
-        "password": "Heslo",
-        "newPassword": "Nové heslo",
-        "currentPassword": "Aktuální heslo",
-        "forgotPassword": "Zapomněli jste heslo?",
-        "savePassword": "Uložit heslo",
-        "passwordResetInfo": "Zadejte e-mailovou adresu přidruženou k vašemu účtu a my vám zašleme odkaz na obnovení hesla.",
-        "sendEmail": "Poslat email",
-        "passwordResetLinkSentMessage": "Odkaz na obnovení hesla byl odeslán na <1>{{email}}</1>.",
-        "code": "2FA kód",
-        "login": "Přihlásit se",
-        "noAccountYet": "Ještě nemáte účet? <1>Zaregistrujte se</1>",
-        "signup": "Registrovat",
-        "alreadyHaveAnAccount": "Máte již účet? <1>Přihlaste se</1>",
-        "convertingNotice": "Převádíte dočasný účet na skutečný, všechna vaše nastavení budou uložena.",
-        "convertingDeviceOnlyNotice": "Převádíte účet jen pro zařízení na plnohodnotný účet, všechna vaše nastavení budou uložena.",
-        "logout": "Odhlásit se",
-        "errors": {
-            "email": {
-                "required": "Zadejte e-mail.",
-                "invalid": "Zadejte platný email.",
-                "taken": "Tento e-mail je již použit."
-            },
-            "password": {
-                "required": "Zadejte heslo.",
-                "invalidCombination": "Neplatná kombinace e-mailu a hesla."
-            },
-            "currentPassword": {
-                "required": "Zadejte své aktuální heslo.",
-                "incorrect": "Zadané heslo je nesprávné."
-            },
-            "code": {
-                "required": "Zadejte kód dvoufázového ověření.",
-                "invalid": "Zadejte šestimístný kód.",
-                "incorrect": "Nesprávný kód dvoufázového ověření."
-            },
-            "resetPasswordToken": {
-                "invalid": "Neplatný token nebo vypršela jeho platnost."
-            }
-        },
-        "affiliation": {
-            "name": "Affiliate program",
-            "description": "Pomozte nám rozšířit povědomí sdílením <1>{{link}}</1> a dostanete <3>{{share, percentage}}</3> ze všech předplatných během prvních <5>{{months, number}} měsíců</5>.",
-            "balance": {
-                "name": "Zůstatek"
-            },
-            "availableBalance": {
-                "name": "Dostupný zůstatek",
-                "description": "Zůstatek bude k dispozici k výplatě po měsíci, aby bylo pokryto případné vrácení peněz."
-            },
-            "payout": {
-                "button": "Vyplatit",
-                "minimum": "Pro vyplacení je nutný dostupný zůstatek alespoň {{amount, price}}.",
-                "form": {
-                    "paypalEmail": "E-mail PayPal",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "Zadejte e-mail PayPal.",
-                            "invalid": "Zadejte prosím platný e-mail PayPal."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "Bezplatný plán",
-            "description": "NextDNS lze použít zdarma až do {{queries, number}} dotazů každý měsíc, poté budou všechny funkce dočasně deaktivovány až do příštího měsíce.",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} dotazů </1>",
-            "overQuota": {
-                "message": "Tento měsíc jste provedli více než {{queries, number}} dotazů.",
-                "info": "NextDNS bude i nadále odpovídat na dotazy DNS, ale všechny funkce jsou až do příštího měsíce dočasně deaktivovány."
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "Získejte neomezené dotazy od {{amount, price}}/měsíc."
-            }
-        },
-        "subscription": {
-            "name": "Předplatné",
-            "plans": {
-                "pro": "Profi",
-                "business": "Pro firmy",
-                "education": "Školství"
-            },
-            "intervals": {
-                "month": "měsíční plán",
-                "year": "roční plán"
-            },
-            "per": {
-                "month": "měsíčně",
-                "year": "ročně"
-            },
-            "units": {
-                "business_one": "{{count, number}} zaměstnanec",
-                "business_other": "{{count, number}} zaměstnanců",
-                "education_one": "{{count, number}} student",
-                "education_other": "{{count, number}} studentů"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "Platnost vašeho předplatného vyprší {{date, LL}}.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "Restartujte předplatné"
-            },
-            "changePlan": {
-                "button": "Změnit plán"
-            },
-            "renewal": "Vaše další automatická platba bude ve výši {{amount, price}} dne {{date, date}}.",
-            "changePaymentMethod": {
-                "button": "Změňte platební metodu"
-            },
-            "cancel": {
-                "button": "Zrušit předplatné",
-                "confirm": {
-                    "text": "Vaše aktuální předplatné zůstane v platnosti do {{date, LL}}.",
-                    "submit": "Zrušit předplatné"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "Vyberte plán",
-                "addPaymentMethod": "Přidejte platební metodu",
-                "included": "Všechny plány zahrnují přístup <1> ke všem funkcím </1> , <3> neomezenému počtu zařízení </3> a <5> neomezenému počtu dotazů </5> .",
-                "savings": "Ušetřete {{percent, percentage}} díky měsíčnímu plánu",
-                "familyOnly": "* Profi plány jsou určeny pouze pro osobní (a blízkou rodinu).",
-                "unitsQuestion": {
-                    "business": "Kolik <1> zaměstnanců </1> zaměstnává vaše firma?",
-                    "education": "Kolik <1> studentů </1> má vaše škola?"
-                },
-                "asYouGrow": {
-                    "business": "* Nezapomeňte aktualizovat svůj plán s růstem počtu zaměstnanců.",
-                    "education": "* Nezapomeňte aktualizovat svůj plán s rostoucím počtem studentů."
-                },
-                "starting": {
-                    "business": "<0> Od </0> <1>{{price, price}}</1> <2> měsíčně za {{units, number}} zaměstnanců </2>",
-                    "education": "<0> Od </0> <1>{{price, price}}</1> <2> měsíčně za {{units, number}} studentů </2>"
-                },
-                "card": {
-                    "number": "Číslo karty",
-                    "expiration": "Datum konce platnosti",
-                    "code": "Bezpečnostní kód",
-                    "stripe": "Používáme Stripe – přední platební bránu – k bezpečnému zpracování plateb kartou bez přímého přístupu k informacím o vaší kartě."
-                },
-                "paypal": {
-                    "text": "Kliknutím na tlačítko Pokračovat na PayPal si službu předplaťte přes PayPal."
-                },
-                "bitpay": {
-                    "text": "Kliknutím na tlačítko Pokračovat na BitPay zaplatíte kryptoměnou.",
-                    "toYearly": "U měsíčních plánů nepřijímáme platby kryptoměnou. <1>Pokračováním se automaticky přepnete na roční plán.</1>",
-                    "remainder": "Vaše aktuální předplatné je již zaplaceno do {{date, LL}}. Nyní vám bude naúčtována celá částka a zbytek bude automaticky přidán k novému datu vypršení platnosti."
-                },
-                "continueTo": "Pokračujte na <1></1>",
-                "unitsLabel": {
-                    "education": "",
-                    "business": ""
-                }
-            }
-        },
-        "business": {
-            "name": "Pro firmy",
-            "description": "Pro daňové účely potřebujeme vaše obchodní jméno, adresu a DIČ (nebo ekvivalent). Toto je vyžadováno zákonem a objeví se na všech fakturách.",
-            "button": {
-                "add": "Přidejte informace o firmě",
-                "update": "Aktualizovat"
-            },
-            "form": {
-                "name": {
-                    "label": "Název",
-                    "placeholder": "ACME s.r.o.",
-                    "errors": {
-                        "required": "Zadejte název své firmy."
-                    }
-                },
-                "address": {
-                    "label": "Adresa",
-                    "placeholder": "Zlatá ulička u Daliborky 21/18&#10;119 00 Prague - Hradčany&#10;Česká Republika",
-                    "errors": {
-                        "required": "Zadejte adresu své firmy."
-                    }
-                },
-                "vatNumber": {
-                    "label": "DIČ (nebo ekvivalent)"
-                }
-            }
-        },
-        "invoices": {
-            "name": "Faktury",
-            "description": "Fakturační historie a všechny faktury k vašemu účtu.",
-            "pending": "{{amount, price}} (ve zpracování)",
-            "show-more": "Show more",
-            "show-less": "Show less",
-            "invoice": {
-                "title": "Faktura č. {{code}}",
-                "to": "Komu: <1>{{email}}</1>",
-                "vatNumber": "DIČ (nebo ekvivalent): {{number}}",
-                "columns": {
-                    "plan": "Plán",
-                    "period": "Období",
-                    "amount": "Částka"
-                },
-                "vat": "DPH ({{rate, percentage}})",
-                "total": "Celkem",
-                "footer": {
-                    "reverseCharged": "DPH (nebo ekvivalent) zpětně účtováno.",
-                    "currency": "Všechny zobrazené částky jsou v {{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "E-mailem",
-            "description": "Změňte e-mailovou adresu použitou k přihlášení k vašemu účtu a k přijímání důležitých e-mailových oznámení.",
-            "button": "Změnit e-mail"
-        },
-        "changePassword": {
-            "name": "Heslo",
-            "description": "Změňte heslo použité k přihlášení k vašemu účtu a při provádění citlivých operací.",
-            "button": "Změnit heslo"
-        },
-        "2fa": {
-            "name": "Dvoufaktorové ověření (2FA)",
-            "description": "Dvoufaktorové ověření (2FA) je další vrstva zabezpečení, která při přihlášení k vašemu účtu vyžaduje další, na čase založený, šestimístný kód.",
-            "enabled": "2FA je pro váš účet zapnuto.",
-            "enable": {
-                "button": "Zapnout 2FA",
-                "modal": {
-                    "howto": "Použijte ověřovací aplikaci, jako je <1>Google Authenticator</1> nebo správce hesel podporující 2FA. Můžete buď naskenovat QR kód, klepnutím na něj otevřete <3>{{otpauth}}</3> nebo zkopírujte a vložte své tajemství ručně."
-                },
-                "secret": ""
-            },
-            "recovery": {
-                "button": "Kódy pro obnovení",
-                "modal": {
-                    "howto": "Pomocí těchto kódů pro obnovení získáte přístup ke svému účtu v případě, že ztratíte přístup k zařízení a nebudete moci získat dvoufázové ověřovací kódy. Každý kód lze použít pouze jednou.",
-                    "download": "Stáhnout",
-                    "regen": "Obnovit"
-                }
-            },
-            "disable": {
-                "button": "Vypnout 2FA"
-            }
-        },
-        "api": {
-            "description": "Create and manage your profiles programmatically. Read the documentation at <1>{{link}}</1>.",
-            "create": {
-                "button": "Generate API key"
-            },
-            "copy": "",
-            "remove": ""
-        },
-        "delete": {
-            "button": "Odstranit účet",
-            "warning": "Tímto trvale odstraníte svůj účet a všechny vaše konfigurace.",
-            "confirm": {
-                "text": "Opravdu chcete odstranit svůj účet? Tuto akci nelze vrátit zpět."
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "Platnost vypršela",
-                    "text": "Platnost vašeho dočasného účtu vypršela. Zaregistrujte se a uložte si svá nastavení a pokračujte v používání NextDNS, je to zdarma."
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "Nový",
+    "affiliation": {
+      "name": "Affiliate program",
+      "description": "Pomozte nám rozšířit povědomí sdílením <1>{{link}}</1> a dostanete <3>{{share, percentage}}</3> ze všech předplatných během prvních <5>{{months, number}} měsíců</5>.",
+      "balance": {
+        "name": "Zůstatek"
+      },
+      "availableBalance": {
+        "name": "Dostupný zůstatek",
+        "description": "Zůstatek bude k dispozici k výplatě po měsíci, aby bylo pokryto případné vrácení peněz."
+      },
+      "payout": {
+        "button": "Vyplatit",
+        "minimum": "Pro vyplacení je nutný dostupný zůstatek alespoň {{amount, price}}.",
         "form": {
-            "title": "Nové nastavení",
-            "name": {
-                "label": "Název",
-                "placeholder": "Domov, děti, kancelář, ...",
-                "errors": {
-                    "required": "Zadejte prosím jméno.",
-                    "taken": "Konfiguraci s tímto názvem již máte."
-                }
+          "paypalEmail": "E-mail PayPal",
+          "errors": {
+            "paypalEmail": {
+              "required": "Zadejte e-mail PayPal.",
+              "invalid": "Zadejte prosím platný e-mail PayPal."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "Vše je v pořádku!",
-                "secondary": "Toto zařízení s touto konfigurací používá NextDNS."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "Toto zařízení používá NextDNS bez konfigurace.",
-                    "secondary": {
-                        "clients": "Ujistěte se, že jste nastavili ID konfigurace zobrazené níže v nastavení aplikace.",
-                        "firefox": "Ujistěte se, že jste nastavili koncový bod DNS-over-HTTPS zobrazený níže ve Firefoxu.",
-                        "doh": "Ujistěte se, že používáte koncový bod DNS-over-HTTPS zobrazený níže.",
-                        "dot": "Ujistěte se, že používáte koncový bod DNS-over-TLS uvedený níže.",
-                        "ipv6": "Ujistěte se, že používáte níže uvedené adresy IPv6.",
-                        "servers": "Ujistěte se, že používáte servery DNS uvedené v části Propojená IP níže (servery DNS se mezi konfiguracemi mění).",
-                        "link": "Nezapomeňte propojit svou IP adresu v části Propojená IP níže."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "Toto zařízení používá NextDNS s jinou konfigurací.",
-                    "secondary": {
-                        "sameAccount": "Toto zařízení aktuálně používá „{{name}}“.",
-                        "otherAccount": "Ujistěte se, že používáte jeden z koncových bodů uvedených na této stránce."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "Toto zařízení nepoužívá NextDNS.",
-                "secondary": "Toto zařízení aktuálně používá „{{resolver}}“ jako překladač DNS."
-            },
-            "error": {
-                "primary": "Chyba při kontrole aktuálního stavu.",
-                "secondary": "Pokud problém přetrvává i po obnovení stránky, dejte nám vědět."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
+    "usage": {
+      "name": "Bezplatný plán",
+      "description": "NextDNS lze použít zdarma až do {{queries, number}} dotazů každý měsíc, poté budou všechny funkce dočasně deaktivovány až do příštího měsíce.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} dotazů </1>",
+      "overQuota": {
+        "message": "Tento měsíc jste provedli více než {{queries, number}} dotazů.",
+        "info": "NextDNS bude i nadále odpovídat na dotazy DNS, ale všechny funkce jsou až do příštího měsíce dočasně deaktivovány."
+      },
+      "subscribe": {
+        "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+        "upsell": "Získejte neomezené dotazy od {{amount, price}}/měsíc."
+      }
+    },
+    "subscription": {
+      "name": "Předplatné",
+      "plans": {
+        "pro": "Profi",
+        "business": "Pro firmy",
+        "education": "Školství"
+      },
+      "intervals": {
+        "month": "měsíční plán",
+        "year": "roční plán"
+      },
+      "per": {
+        "month": "měsíčně",
+        "year": "ročně"
+      },
+      "units": {
+        "business_one": "{{count, number}} zaměstnanec",
+        "business_other": "{{count, number}} zaměstnanců",
+        "education_one": "{{count, number}} student",
+        "education_other": "{{count, number}} studentů"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "Platnost vašeho předplatného vyprší {{date, LL}}.",
+      "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
+      "manageOnApple": "Manage subscription on Apple",
+      "restart": {
+        "button": "Restartujte předplatné"
+      },
+      "changePlan": {
+        "button": "Změnit plán"
+      },
+      "renewal": "Vaše další automatická platba bude ve výši {{amount, price}} dne {{date, date}}.",
+      "changePaymentMethod": {
+        "button": "Změňte platební metodu"
+      },
+      "cancel": {
+        "button": "Zrušit předplatné",
+        "confirm": {
+          "text": "Vaše aktuální předplatné zůstane v platnosti do {{date, LL}}.",
+          "submit": "Zrušit předplatné"
+        }
+      },
+      "subscribe": {
+        "choosePlan": "Vyberte plán",
+        "addPaymentMethod": "Přidejte platební metodu",
+        "included": "Všechny plány zahrnují přístup <1> ke všem funkcím </1> , <3> neomezenému počtu zařízení </3> a <5> neomezenému počtu dotazů </5> .",
+        "savings": "Ušetřete {{percent, percentage}} díky měsíčnímu plánu",
+        "familyOnly": "* Profi plány jsou určeny pouze pro osobní (a blízkou rodinu).",
+        "unitsQuestion": {
+          "business": "Kolik <1> zaměstnanců </1> zaměstnává vaše firma?",
+          "education": "Kolik <1> studentů </1> má vaše škola?"
+        },
+        "asYouGrow": {
+          "business": "* Nezapomeňte aktualizovat svůj plán s růstem počtu zaměstnanců.",
+          "education": "* Nezapomeňte aktualizovat svůj plán s rostoucím počtem studentů."
+        },
+        "starting": {
+          "business": "<0> Od </0> <1>{{price, price}}</1> <2> měsíčně za {{units, number}} zaměstnanců </2>",
+          "education": "<0> Od </0> <1>{{price, price}}</1> <2> měsíčně za {{units, number}} studentů </2>"
+        },
+        "card": {
+          "number": "Číslo karty",
+          "expiration": "Datum konce platnosti",
+          "code": "Bezpečnostní kód",
+          "stripe": "Používáme Stripe – přední platební bránu – k bezpečnému zpracování plateb kartou bez přímého přístupu k informacím o vaší kartě."
+        },
+        "paypal": {
+          "text": "Kliknutím na tlačítko Pokračovat na PayPal si službu předplaťte přes PayPal."
+        },
+        "bitpay": {
+          "text": "Kliknutím na tlačítko Pokračovat na BitPay zaplatíte kryptoměnou.",
+          "toYearly": "U měsíčních plánů nepřijímáme platby kryptoměnou. <1>Pokračováním se automaticky přepnete na roční plán.</1>",
+          "remainder": "Vaše aktuální předplatné je již zaplaceno do {{date, LL}}. Nyní vám bude naúčtována celá částka a zbytek bude automaticky přidán k novému datu vypršení platnosti."
+        },
+        "continueTo": "Pokračujte na <1></1>"
+      }
+    },
+    "business": {
+      "name": "Pro firmy",
+      "description": "Pro daňové účely potřebujeme vaše obchodní jméno, adresu a DIČ (nebo ekvivalent). Toto je vyžadováno zákonem a objeví se na všech fakturách.",
+      "button": {
+        "add": "Přidejte informace o firmě",
+        "update": "Aktualizovat"
+      },
+      "form": {
+        "name": {
+          "label": "Název",
+          "placeholder": "ACME s.r.o.",
+          "errors": {
+            "required": "Zadejte název své firmy."
+          }
+        },
+        "address": {
+          "label": "Adresa",
+          "placeholder": "Zlatá ulička u Daliborky 21/18&#10;119 00 Prague - Hradčany&#10;Česká Republika",
+          "errors": {
+            "required": "Zadejte adresu své firmy."
+          }
+        },
+        "vatNumber": {
+          "label": "DIČ (nebo ekvivalent)"
+        }
+      }
+    },
+    "invoices": {
+      "name": "Faktury",
+      "description": "Fakturační historie a všechny faktury k vašemu účtu.",
+      "pending": "{{amount, price}} (ve zpracování)",
+      "show-more": "Show more",
+      "show-less": "Show less",
+      "invoice": {
+        "title": "Faktura č. {{code}}",
+        "to": "Komu: <1>{{email}}</1>",
+        "vatNumber": "DIČ (nebo ekvivalent): {{number}}",
+        "columns": {
+          "plan": "Plán",
+          "period": "Období",
+          "amount": "Částka"
+        },
+        "vat": "DPH ({{rate, percentage}})",
+        "total": "Celkem",
+        "footer": {
+          "reverseCharged": "DPH (nebo ekvivalent) zpětně účtováno.",
+          "currency": "Všechny zobrazené částky jsou v {{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "E-mailem",
+      "description": "Změňte e-mailovou adresu použitou k přihlášení k vašemu účtu a k přijímání důležitých e-mailových oznámení.",
+      "button": "Změnit e-mail"
+    },
+    "changePassword": {
+      "name": "Heslo",
+      "description": "Změňte heslo použité k přihlášení k vašemu účtu a při provádění citlivých operací.",
+      "button": "Změnit heslo"
+    },
+    "2fa": {
+      "name": "Dvoufaktorové ověření (2FA)",
+      "description": "Dvoufaktorové ověření (2FA) je další vrstva zabezpečení, která při přihlášení k vašemu účtu vyžaduje další, na čase založený, šestimístný kód.",
+      "enabled": "2FA je pro váš účet zapnuto.",
+      "enable": {
+        "button": "Zapnout 2FA",
+        "modal": {
+          "howto": "Použijte ověřovací aplikaci, jako je <1>Google Authenticator</1> nebo správce hesel podporující 2FA. Můžete buď naskenovat QR kód, klepnutím na něj otevřete <3>{{otpauth}}</3> nebo zkopírujte a vložte své tajemství ručně."
+        }
+      },
+      "recovery": {
+        "button": "Kódy pro obnovení",
+        "modal": {
+          "howto": "Pomocí těchto kódů pro obnovení získáte přístup ke svému účtu v případě, že ztratíte přístup k zařízení a nebudete moci získat dvoufázové ověřovací kódy. Každý kód lze použít pouze jednou.",
+          "download": "Stáhnout",
+          "regen": "Obnovit"
+        }
+      },
+      "disable": {
+        "button": "Vypnout 2FA"
+      }
+    },
+    "api": {
+      "description": "Create and manage your profiles programmatically. Read the documentation at <1>{{link}}</1>.",
+      "create": {
+        "button": "Generate API key"
+      }
+    },
+    "delete": {
+      "button": "Odstranit účet",
+      "warning": "Tímto trvale odstraníte svůj účet a všechny vaše konfigurace.",
+      "confirm": {
+        "text": "Opravdu chcete odstranit svůj účet? Tuto akci nelze vrátit zpět."
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "Platnost vypršela",
+          "text": "Platnost vašeho dočasného účtu vypršela. Zaregistrujte se a uložte si svá nastavení a pokračujte v používání NextDNS, je to zdarma."
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "Nový",
+    "form": {
+      "title": "Nové nastavení",
+      "name": {
+        "label": "Název",
+        "placeholder": "Domov, děti, kancelář, ...",
+        "errors": {
+          "required": "Zadejte prosím jméno.",
+          "taken": "Konfiguraci s tímto názvem již máte."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "Vše je v pořádku!",
+        "secondary": "Toto zařízení s touto konfigurací používá NextDNS."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "Toto zařízení používá NextDNS bez konfigurace.",
+          "secondary": {
+            "clients": "Ujistěte se, že jste nastavili ID konfigurace zobrazené níže v nastavení aplikace.",
+            "firefox": "Ujistěte se, že jste nastavili koncový bod DNS-over-HTTPS zobrazený níže ve Firefoxu.",
+            "doh": "Ujistěte se, že používáte koncový bod DNS-over-HTTPS zobrazený níže.",
+            "dot": "Ujistěte se, že používáte koncový bod DNS-over-TLS uvedený níže.",
+            "ipv6": "Ujistěte se, že používáte níže uvedené adresy IPv6.",
+            "servers": "Ujistěte se, že používáte servery DNS uvedené v části Propojená IP níže (servery DNS se mezi konfiguracemi mění).",
+            "link": "Nezapomeňte propojit svou IP adresu v části Propojená IP níže."
+          }
+        },
+        "withConfiguration": {
+          "primary": "Toto zařízení používá NextDNS s jinou konfigurací.",
+          "secondary": {
+            "sameAccount": "Toto zařízení aktuálně používá „{{name}}“.",
+            "otherAccount": "Ujistěte se, že používáte jeden z koncových bodů uvedených na této stránce."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "Toto zařízení nepoužívá NextDNS.",
+        "secondary": "Toto zařízení aktuálně používá „{{resolver}}“ jako překladač DNS."
+      },
+      "error": {
+        "primary": "Chyba při kontrole aktuálního stavu.",
+        "secondary": "Pokud problém přetrvává i po obnovení stránky, dejte nám vědět."
+      },
+      "apr": {
+        "ok": {
+          "primary": "This device is using NextDNS with iCloud Private Relay",
+          "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
+        },
+        "blockpage": {
+          "primary": "This device is using NextDNS with iCloud Private Relay.",
+          "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
+        }
+      }
+    },
+    "endpoints": {
+      "name": "Koncové body",
+      "description": "Nastavte NextDNS s touto konfigurací pomocí jednoho z níže uvedených koncových bodů.",
+      "help": "Nejste si jisti, jak je použít? Postupujte podle <1>Průvodce nastavením</1>."
+    },
+    "linkedIp": {
+      "name": "Propojená IP adresa",
+      "description": "Pokud nemůžete nastavit NextDNS pomocí našich aplikací, DNS-over-TLS, DNS-over-HTTPS nebo IPv6, použijte níže uvedené servery DNS a propojte svou IP. Toto je většinou pro použití v domácích sítích a nedoporučuje se pro mobilní zařízení.",
+      "servers": {
+        "name": "DNS servery"
+      },
+      "ip": {
+        "name": "Propojená IP adresa",
+        "link": "Propojit IP"
+      },
+      "showAdvanced": "Zobrazit pokročilé možnosti",
+      "ddns": {
+        "explanation": "Můžete použít Dynamické DNS (DDNS) k automatické aktualizaci vaší propojené IP.",
+        "set": "Nastavit DDNS",
+        "status": "Momentálně používáte <1>{{hostname}}</1> jako název hostitele DDNS. Vaše IP adresa bude každou minutu automaticky aktualizována.",
+        "unset": "Odstranit",
+        "form": {
+          "hostname": {
+            "label": "Název hostitele DDNS",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "Zadejte název hostitele.",
+              "invalid": "Zadejte platný název hostitele.",
+              "ip": "Zadejte název hostitele, nikoli IP adresu.",
+              "error": "Při získávání adresy IP za tímto názvem hostitele došlo k chybě.",
+              "empty": "Tento název hostitele nevrací žádnou IP adresu.",
+              "different": "Z bezpečnostních důvodů by při přidávání dynamického DNS měla být IP adresa vrácená názvem hostitele DDNS stejná jako vaše aktuální IP adresa."
             }
+          }
+        }
+      },
+      "programmatically": "Svou propojenou IP adresu můžete také programově aktualizovat voláním:"
+    },
+    "guide": {
+      "name": "Průvodce nastavením",
+      "description": "Nastavte NextDNS na svém zařízení, prohlížeči nebo routeru dle pokynů níže.",
+      "or": "Nebo",
+      "ipv4": {
+        "title": "IPv4 (s propojenou IP)"
+      },
+      "ipv6": {
+        "supported": "Vaše síť podporuje IPv6",
+        "notSupported": "Vaše síť nepodporuje IPv6"
+      },
+      "tags": {
+        "recommended": "Doporučeno",
+        "advanced": "Pokročilé"
+      },
+      "use": "V <1>{{file}}</1> použijte následující:",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "Soukromé DNS",
+              "requirements": "Android 9 a vyšší",
+              "steps": {
+                "1": "1. Přejděte do Nastavení → Síť a internet → Pokročilé → Soukromé DNS.",
+                "2": "2. Vyberte možnost Název hostitele poskytovatele Soukromého DNS.",
+                "3": "3. Zadejte <1>{{endpoint}}</1> a stiskněte Uložit."
+              }
+            }
+          }
         },
-        "endpoints": {
-            "name": "Koncové body",
-            "description": "Nastavte NextDNS s touto konfigurací pomocí jednoho z níže uvedených koncových bodů.",
-            "help": "Nejste si jisti, jak je použít? Postupujte podle <1>Průvodce nastavením</1>."
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "Konfigurační profil",
+              "requirements": "iOS 14 nebo vyšší",
+              "step": "Použijte náš generátor konfiguračních profilů Apple dostupný na <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS pro iOS"
+            }
+          }
         },
-        "linkedIp": {
-            "name": "Propojená IP adresa",
-            "description": "Pokud nemůžete nastavit NextDNS pomocí našich aplikací, DNS-over-TLS, DNS-over-HTTPS nebo IPv6, použijte níže uvedené servery DNS a propojte svou IP. Toto je většinou pro použití v domácích sítích a nedoporučuje se pro mobilní zařízení.",
-            "servers": {
-                "name": "DNS servery"
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS přes HTTPS",
+              "requirements": "Windows 11",
+              "steps": [
+                "Otevřete <1>Nastavení</1>.",
+                "Přejděte na <1>Síť a internet</1>.",
+                "Klikněte na <1>Wi-Fi</1> (nebo <3>Ethernet</3>).",
+                "Klikněte na <1>Vlastnosti hardwaru</1>, nebo tento krok ignorujte, pokud jste klikli na <3>Ethernet</3>.",
+                "Klikněte na tlačítko <1>Upravit</1> vedle <3>Přiřazení serveru DNS</3>.",
+                "Vyberte <1>Ručně</1>.",
+                "Povolte <1>IPv{{version}}</1>.",
+                "Zadejte <1>{{ip}}</1> jako <3>Upřednostňované DNS</3>, poté vyberte <5>Zapnuto (ruční šablona)</5> a zadejte <7>{{endpoint}}</7>.",
+                "Zadejte <1>{{ip}}</1> jako <3>Alternativní DNS</3>, poté vyberte <5>Zapnuto (ruční šablona)</5> a zadejte <7>{{endpoint}}</7>.",
+                "Klikněte na <1>Uložit</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS pro Windows",
+              "steps": {
+                "1": "1. Stáhněte si instalační program <1>zde</1>.",
+                "2": "2. Po instalaci klikněte pravým tlačítkem na ikonu NextDNS na Systray a poté otevřete Nastavení. Nastavit <1>{{id}}</1> jako ID konfigurace.",
+                "3": "3. Klikněte pravým tlačítkem na ikonu NextDNS na Systray a poté klikněte na Povolit."
+              }
             },
             "ip": {
-                "name": "Propojená IP adresa",
-                "link": "Propojit IP"
+              "steps": {
+                "1": "1. Klikněte na nabídku Start a poté na Ovládací panely.",
+                "2": "2. Klikněte na Síť a internet, poté Centrum sítí a sdílení.",
+                "3": "3. Klikněte na Změnit nastavení adaptéru.",
+                "4": "4. Klikněte pravým tlačítkem na síť Wi-Fi, ke které jste připojeni, a poté klikněte na Vlastnosti.",
+                "5": "5. Vyberte internetový protokol verze {{version}}.",
+                "6": "6. Klepněte na Vlastnosti.",
+                "7": "7. Klikněte na Použít následující adresy serverů DNS.",
+                "8": "8. Vyměňte aktuální adresy (pokud existují) za <1>{{dns1}}</1> a <3>{{dns2}}</3> .",
+                "9": "9. Klikněte na OK a poté na Zavřít. Možná budete muset restartovat prohlížeč."
+              }
             },
-            "showAdvanced": "Zobrazit pokročilé možnosti",
-            "ddns": {
-                "explanation": "Můžete použít Dynamické DNS (DDNS) k automatické aktualizaci vaší propojené IP.",
-                "set": "Nastavit DDNS",
-                "status": "Momentálně používáte <1>{{hostname}}</1> jako název hostitele DDNS. Vaše IP adresa bude každou minutu automaticky aktualizována.",
-                "unset": "Odstranit",
-                "form": {
-                    "hostname": {
-                        "label": "Název hostitele DDNS",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "Zadejte název hostitele.",
-                            "invalid": "Zadejte platný název hostitele.",
-                            "ip": "Zadejte název hostitele, nikoli IP adresu.",
-                            "error": "Při získávání adresy IP za tímto názvem hostitele došlo k chybě.",
-                            "empty": "Tento název hostitele nevrací žádnou IP adresu.",
-                            "different": "Z bezpečnostních důvodů by při přidávání dynamického DNS měla být IP adresa vrácená názvem hostitele DDNS stejná jako vaše aktuální IP adresa."
-                        }
-                    }
-                }
-            },
-            "programmatically": "Svou propojenou IP adresu můžete také programově aktualizovat voláním:"
-        },
-        "guide": {
-            "name": "Průvodce nastavením",
-            "description": "Nastavte NextDNS na svém zařízení, prohlížeči nebo routeru dle pokynů níže.",
-            "or": "Nebo",
-            "ipv4": {
-                "title": "IPv4 (s propojenou IP)"
-            },
-            "ipv6": {
-                "supported": "Vaše síť podporuje IPv6",
-                "notSupported": "Vaše síť nepodporuje IPv6"
-            },
-            "tags": {
-                "recommended": "Doporučeno",
-                "advanced": "Pokročilé"
-            },
-            "use": "V <1>{{file}}</1> použijte následující:",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "Soukromé DNS",
-                            "requirements": "Android 9 a vyšší",
-                            "steps": {
-                                "1": "1. Přejděte do Nastavení → Síť a internet → Pokročilé → Soukromé DNS.",
-                                "2": "2. Vyberte možnost Název hostitele poskytovatele Soukromého DNS.",
-                                "3": "3. Zadejte <1>{{endpoint}}</1> a stiskněte Uložit."
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "Konfigurační profil",
-                            "requirements": "iOS 14 nebo vyšší",
-                            "step": "Použijte náš generátor konfiguračních profilů Apple dostupný na <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS pro iOS",
-                            "qrTextIos": "",
-                            "qrAlt": "",
-                            "qrText": ""
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS přes HTTPS",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "Otevřete <1>Nastavení</1>.",
-                                "Přejděte na <1>Síť a internet</1>.",
-                                "Klikněte na <1>Wi-Fi</1> (nebo <3>Ethernet</3>).",
-                                "Klikněte na <1>Vlastnosti hardwaru</1>, nebo tento krok ignorujte, pokud jste klikli na <3>Ethernet</3>.",
-                                "Klikněte na tlačítko <1>Upravit</1> vedle <3>Přiřazení serveru DNS</3>.",
-                                "Vyberte <1>Ručně</1>.",
-                                "Povolte <1>IPv{{version}}</1>.",
-                                "Zadejte <1>{{ip}}</1> jako <3>Upřednostňované DNS</3>, poté vyberte <5>Zapnuto (ruční šablona)</5> a zadejte <7>{{endpoint}}</7>.",
-                                "Zadejte <1>{{ip}}</1> jako <3>Alternativní DNS</3>, poté vyberte <5>Zapnuto (ruční šablona)</5> a zadejte <7>{{endpoint}}</7>.",
-                                "Klikněte na <1>Uložit</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS pro Windows",
-                            "steps": {
-                                "1": "1. Stáhněte si instalační program <1>zde</1>.",
-                                "2": "2. Po instalaci klikněte pravým tlačítkem na ikonu NextDNS na Systray a poté otevřete Nastavení. Nastavit <1>{{id}}</1> jako ID konfigurace.",
-                                "3": "3. Klikněte pravým tlačítkem na ikonu NextDNS na Systray a poté klikněte na Povolit."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Klikněte na nabídku Start a poté na Ovládací panely.",
-                                "2": "2. Klikněte na Síť a internet, poté Centrum sítí a sdílení.",
-                                "3": "3. Klikněte na Změnit nastavení adaptéru.",
-                                "4": "4. Klikněte pravým tlačítkem na síť Wi-Fi, ke které jste připojeni, a poté klikněte na Vlastnosti.",
-                                "5": "5. Vyberte internetový protokol verze {{version}}.",
-                                "6": "6. Klepněte na Vlastnosti.",
-                                "7": "7. Klikněte na Použít následující adresy serverů DNS.",
-                                "8": "8. Vyměňte aktuální adresy (pokud existují) za <1>{{dns1}}</1> a <3>{{dns2}}</3> .",
-                                "9": "9. Klikněte na OK a poté na Zavřít. Možná budete muset restartovat prohlížeč."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. Nainstalujte YogaDNS z <1>{{link}}</1> .",
-                                "2": "2. Postupujte podle pokynů pro NextDNS na <1>{{link}}</1> a použijte <3>{{id}}</3> jako ID konfigurace."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS pro macOS",
-                            "steps": {
-                                "1": "1. Nainstalujte si naši oficiální aplikaci z Mac App Store.",
-                                "2": "2. Klikněte na Předvolby v nabídce stavového řádku aplikace a přejděte na kartu Konfigurace.",
-                                "3": "3. Zaškrtněte „Použít vlastní konfiguraci“ a zadejte <1>{{id}}</1> jako ID konfigurace."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur nebo vyšší"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Otevřete Předvolby systému a poté klikněte na Síť.",
-                                "2": "2. Vyberte síť, ke které jste připojeni, a klikněte na tlačítko Upřesnit.",
-                                "3": "3. Přejděte do části DNS.",
-                                "4": "4. V seznamu serverů DNS odeberte všechny adresy (pokud existují) a přidejte <1>{{dns1}}</1> a <3>{{dns2}}</3> .",
-                                "5": "5. Klikněte na OK a poté na Použít."
-                            }
-                        },
-                        "cli": {
-                            "title": "Klient příkazového řádku NextDNS",
-                            "steps": {
-                                "1": "1. Spusťte následující příkaz: <1>{{command}}</1>",
-                                "2": "2. Postupujte podle pokynů."
-                            },
-                            "manual": "Přejděte do našeho úložiště open-source v <1>{{link}}</1> pokyny pro ruční instalaci."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "Klient příkazového řádku NextDNS",
-                            "steps": {
-                                "1": "1. Spusťte následující příkaz: <1>{{command}}</1>",
-                                "2": "2. Postupujte podle pokynů."
-                            },
-                            "manual": "Přejděte do našeho úložiště open-source na <1>{{link}}</1> pro pokyny ruční instalace."
-                        },
-                        "ip": {
-                            "step": "Změňte své servery DNS na <1>{{dns1}}</1> a <3>{{dns2}}</3>."
-                        },
-                        "stubby": {
-                            "warning": "Ujistěte se, že je Stubby propojen s <1>OpenSSL 1.1.1 nebo vyšší</1>, protože předchozí verze nebudou s NextDNS fungovat."
-                        },
-                        "unbound": {
-                            "warning": "Jako rekurzivní resolver Unbound honí CNAME. To může mít za následek <1> neočekávané chování </1> při použití ve spojení s blokujícím překladačem DNS, jako je NextDNS. Viz <3>{{link}}</3> ."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "Chrome OS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "Zabezpečené DNS",
-                            "steps": [
-                                "Otevřete <1>Nastavení</1> aplikace.",
-                                "Přejděte do <1>Zabezpečení a soukromí</1>.",
-                                "Aktivujte <1>Použít zabezpečené DNS</1>.",
-                                "Vyberte <1>S: Vlastní</1>, poté zadejte <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "Změňte své servery DNS na <1>{{dns1}}</1> a <3>{{dns2}}</3>."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "Prohlížeče",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. Přejděte do Nastavení.",
-                                "2": "2. V části Ochrana osobních údajů a zabezpečení klikněte na Zabezpečení.",
-                                "3": "3. V části Pokročilé povolte Použít zabezpečené DNS.",
-                                "4": "4. Vyberte možnost S: Vlastní a zadejte <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Pouze Windows, macOS a Linux",
-                            "steps": {
-                                "1": "1. Open Preferences.",
-                                "2": "2. Click Privacy & Security.",
-                                "3": "3. Scroll down to Enable DNS over HTTPS.",
-                                "4": "4. Choose Increased Protection or Max Protection.",
-                                "5": "5. Select Custom in the menu.",
-                                "6": "6. Enter <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft Edge",
-                            "steps": {
-                                "1": "1. Otevřete Nastavení.",
-                                "2": "2. Přejděte do sekce Soukromí, vyhledávání a služby.",
-                                "3": "3. V části Bezpečnost povolte Použít zabezpečené DNS pro upřesnění jak vyhledávat síťovou adresu pro webové stránky.",
-                                "4": "4. Zvolte Vybrat poskytovatele služeb a poté zadejte <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "1. Přejděte do Nastavení.",
-                                "2": "2. V sekci Soukromí a zabezpečení (pod Dalším nastavením) přejděte do části Zabezpečení.",
-                                "3": "3. V sekci Pokročilé povolte Použít zabezpečené DNS.",
-                                "4": "4. Vyberte S: Vlastní, poté zadejte <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "Routery",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS pro routery",
-                            "requirements": "Funguje pouze na routerech, které mohou spouštět spustitelné soubory",
-                            "step": "Přejděte do našeho úložiště open-source na <1>{{link}}</1> pro pokyny k instalaci."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "Některé routery nemusí podporovat výše uvedenou notaci IPv6. V takovém případě použijte <1>{{dns1}}</1> a <3>{{dns2}}</3>."
-                            },
-                            "steps": {
-                                "1": "1. Otevřete předvolby routeru. Obvykle k němu máte přístup z prohlížeče prostřednictvím adresy URL (například http://192.168.0.1/ nebo http://192.168.1.1/).",
-                                "2": "2. Vyhledejte nastavení DNS uvnitř rozhraní.",
-                                "3": "3. Odeberte všechny adresy (pokud existují) a přidejte <1>{{dns1}}</1> a <3>{{dns2}}</3>.",
-                                "4": "4. Klikněte na Uložit (nebo podobné)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. Přejděte na Služby → Překladač DNS a na kartě Obecná nastavení přejděte dolů do pole Vlastní možnosti.",
-                                "2": "2. Zadejte následující řádky:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "Spusťte následující:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "Dokumentace pro Tailscale <2>{{link}}</2> pro návod k nastavení."
-                        }
-                    }
-                }
+            "yoga": {
+              "steps": {
+                "1": "1. Nainstalujte YogaDNS z <1>{{link}}</1> .",
+                "2": "2. Postupujte podle pokynů pro NextDNS na <1>{{link}}</1> a použijte <3>{{id}}</3> jako ID konfigurace."
+              }
             }
+          }
         },
-        "identify": {
-            "name": "Identifikujte svá zařízení",
-            "description": "Postupujte podle pokynů níže a identifikujte svá zařízení v Analytice a Protokolech.",
-            "apps": {
-                "name": "Aplikace",
-                "instructions": "V nastavení aplikace povolte možnost „Odeslat název zařízení“."
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS pro macOS",
+              "steps": {
+                "1": "1. Nainstalujte si naši oficiální aplikaci z Mac App Store.",
+                "2": "2. Klikněte na Předvolby v nabídce stavového řádku aplikace a přejděte na kartu Konfigurace.",
+                "3": "3. Zaškrtněte „Použít vlastní konfiguraci“ a zadejte <1>{{id}}</1> jako ID konfigurace."
+              }
             },
-            "dot": {
-                "instructions": "Přijdete název před zadanou doménu (název by měl obsahovat pouze <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> a <7>-</7>). Použijte <9>-</9> pro mezery.",
-                "example": "Pro „<1>Honza Router</1>\", použili byste <3>Honza--Router-{{configuration}}.dns.nextdns.io</3> jako váš koncový bod DNS-over-TLS."
+            "profile": {
+              "requirements": "macOS Big Sur nebo vyšší"
             },
-            "doh": {
-                "instructions": "Připojte název k zadané adrese URL (název by měl být zakódován do adresy URL).",
-                "example": "Pro „<1>Honzův Firefox</1>\", byste použili <3>https://dns.nextdns.io/{{configuration}}/Honzuv%20Firefox</3> jako váš koncový bod DNS-over-HTTPS."
+            "ip": {
+              "steps": {
+                "1": "1. Otevřete Předvolby systému a poté klikněte na Síť.",
+                "2": "2. Vyberte síť, ke které jste připojeni, a klikněte na tlačítko Upřesnit.",
+                "3": "3. Přejděte do části DNS.",
+                "4": "4. V seznamu serverů DNS odeberte všechny adresy (pokud existují) a přidejte <1>{{dns1}}</1> a <3>{{dns2}}</3> .",
+                "5": "5. Klikněte na OK a poté na Použít."
+              }
+            },
+            "cli": {
+              "title": "Klient příkazového řádku NextDNS",
+              "steps": {
+                "1": "1. Spusťte následující příkaz: <1>{{command}}</1>",
+                "2": "2. Postupujte podle pokynů."
+              },
+              "manual": "Přejděte do našeho úložiště open-source v <1>{{link}}</1> pokyny pro ruční instalaci."
             }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "Klient příkazového řádku NextDNS",
+              "steps": {
+                "1": "1. Spusťte následující příkaz: <1>{{command}}</1>",
+                "2": "2. Postupujte podle pokynů."
+              },
+              "manual": "Přejděte do našeho úložiště open-source na <1>{{link}}</1> pro pokyny ruční instalace."
+            },
+            "ip": {
+              "step": "Změňte své servery DNS na <1>{{dns1}}</1> a <3>{{dns2}}</3>."
+            },
+            "stubby": {
+              "warning": "Ujistěte se, že je Stubby propojen s <1>OpenSSL 1.1.1 nebo vyšší</1>, protože předchozí verze nebudou s NextDNS fungovat."
+            },
+            "unbound": {
+              "warning": "Jako rekurzivní resolver Unbound honí CNAME. To může mít za následek <1> neočekávané chování </1> při použití ve spojení s blokujícím překladačem DNS, jako je NextDNS. Viz <3>{{link}}</3> ."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "Chrome OS",
+          "guides": {
+            "secure-dns": {
+              "title": "Zabezpečené DNS",
+              "steps": [
+                "Otevřete <1>Nastavení</1> aplikace.",
+                "Přejděte do <1>Zabezpečení a soukromí</1>.",
+                "Aktivujte <1>Použít zabezpečené DNS</1>.",
+                "Vyberte <1>S: Vlastní</1>, poté zadejte <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "Změňte své servery DNS na <1>{{dns1}}</1> a <3>{{dns2}}</3>."
+            }
+          }
+        },
+        "browsers": {
+          "name": "Prohlížeče",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. Přejděte do Nastavení.",
+                "2": "2. V části Ochrana osobních údajů a zabezpečení klikněte na Zabezpečení.",
+                "3": "3. V části Pokročilé povolte Použít zabezpečené DNS.",
+                "4": "4. Vyberte možnost S: Vlastní a zadejte <1>{{endpoint}}</1>."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Pouze Windows, macOS a Linux",
+              "steps": {
+                "1": "1. Open Preferences.",
+                "2": "2. Click Privacy & Security.",
+                "3": "3. Scroll down to Enable DNS over HTTPS.",
+                "4": "4. Choose Increased Protection or Max Protection.",
+                "5": "5. Select Custom in the menu.",
+                "6": "6. Enter <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft Edge",
+              "steps": {
+                "1": "1. Otevřete Nastavení.",
+                "2": "2. Přejděte do sekce Soukromí, vyhledávání a služby.",
+                "3": "3. V části Bezpečnost povolte Použít zabezpečené DNS pro upřesnění jak vyhledávat síťovou adresu pro webové stránky.",
+                "4": "4. Zvolte Vybrat poskytovatele služeb a poté zadejte <1>{{endpoint}}</1>."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "1. Přejděte do Nastavení.",
+                "2": "2. V sekci Soukromí a zabezpečení (pod Dalším nastavením) přejděte do části Zabezpečení.",
+                "3": "3. V sekci Pokročilé povolte Použít zabezpečené DNS.",
+                "4": "4. Vyberte S: Vlastní, poté zadejte <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "Routery",
+          "guides": {
+            "cli": {
+              "title": "NextDNS pro routery",
+              "requirements": "Funguje pouze na routerech, které mohou spouštět spustitelné soubory",
+              "step": "Přejděte do našeho úložiště open-source na <1>{{link}}</1> pro pokyny k instalaci."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "Některé routery nemusí podporovat výše uvedenou notaci IPv6. V takovém případě použijte <1>{{dns1}}</1> a <3>{{dns2}}</3>."
+              },
+              "steps": {
+                "1": "1. Otevřete předvolby routeru. Obvykle k němu máte přístup z prohlížeče prostřednictvím adresy URL (například http://192.168.0.1/ nebo http://192.168.1.1/).",
+                "2": "2. Vyhledejte nastavení DNS uvnitř rozhraní.",
+                "3": "3. Odeberte všechny adresy (pokud existují) a přidejte <1>{{dns1}}</1> a <3>{{dns2}}</3>.",
+                "4": "4. Klikněte na Uložit (nebo podobné)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. Přejděte na Služby → Překladač DNS a na kartě Obecná nastavení přejděte dolů do pole Vlastní možnosti.",
+                "2": "2. Zadejte následující řádky:"
+              }
+            },
+            "mikrotik": {
+              "run": "Spusťte následující:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "Dokumentace pro Tailscale <2>{{link}}</2> pro návod k nastavení."
+            }
+          }
         }
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "Threat Intelligence zdroje",
-            "description": "Blokujte domény, o nichž je známo, že distribuují malware, spouští phishingové útoky a hostují C&C servery pomocí kombinace nejuznávanějších informačních zdrojů o hrozbách - vše aktualizováno v reálném čase.",
-            "enable": "Použít Threat Intelligence zdroje"
-        },
-        "ai": {
-            "name": "Detekce hrozeb řízená AI",
-            "description": "Blokujte miliony hrozeb detekovaných naší technologií umělé inteligence - vlastním systémem umělé inteligence navrženým od základu pro DNS se stovkami signálů, terabajty tréninkových dat a rozhodováním v reálném čase.",
-            "enable": "Povolte detekci hrozeb řízenou AI"
-        },
-        "googleSafeBrowsing": {
-            "name": "Bezpečné prohlížení Google",
-            "description": "Blokujte malwarové a phishingové domény pomocí Bezpečného prohlížení Google - technologie, která denně zkoumá miliardy adres URL a hledá nebezpečné webové stránky. Na rozdíl od verze zabudované v některých prohlížečích se nepřidružuje vaše veřejná IP adresa k hrozbám a neumožňuje blokování obejít.",
-            "enable": "Povolit Bezpečné prohlížení Google"
-        },
-        "cryptojacking": {
-            "name": "Ochrana proti cryptojackingu",
-            "description": "Zabraňte neoprávněnému použití vašich zařízení k těžbě kryptoměn.",
-            "enable": "Povolit ochranu proti kryptojackingu"
-        },
-        "dnsRebinding": {
-            "name": "Ochrana před DNS Rebinding",
-            "description": "Zabraňte útočníkům v převzetí kontroly nad vašimi místními zařízeními přes internet automatickým blokováním odpovědí DNS obsahujících soukromé IP adresy.",
-            "enable": "Povolit ochranu před DNS Rebinding"
-        },
-        "homograph": {
-            "name": "Ochrana proti homografickým IDN útokům",
-            "description": "Blokujte domény, které se vydávají za jiné domény, zneužitím velké znakové sady zpřístupněné s příchodem internacionalizovaných doménových jmen (IDN) - např. Nahrazením latinského písmene „e“ cyrilicí „е“.",
-            "enable": "Povolit ochranu proti homografickým IDN útokům"
-        },
-        "typosquatting": {
-            "name": "Ochrana proti překlepům",
-            "description": "Blokujte domény registrované škodlivými aktéry, kteří cílí na uživatele, kteří do svého prohlížeče nesprávně zadají adresu webových stránek - např. Gooogle.com místo google.com.",
-            "enable": "Povolit ochranu před překlepy"
-        },
-        "dga": {
-            "name": "Ochrana před algoritmy pro generování domén (DGA)",
-            "description": "Blokujte domény generované algoritmy generování domén (DGA) přítomné v různých rodinách malwaru, které lze s jejich C&C servery použít jako body setkání.",
-            "enable": "Povolit ochranu proti DGA"
-        },
-        "nrd": {
-            "name": "Blokovat nově registrované domény (NRD)",
-            "description": "Blokovat domény registrované před méně než 30 dny. Je známo, že tyto domény zvýhodňují aktéry při zahájení škodlivých kampaní.",
-            "enable": "Blokovat nově registrované domény (NRD)"
-        },
-        "ddns": {
-            "name": "Blokování dynamických názvů hostitelů DNS",
-            "description": "Dynamic DNS (DDNS) umožňují škodlivým subjektům rychle a zdarma nastavit hostitelská jména bez jakéhokoli ověřování nebo ověřování identity. Zatímco legální hostitelská jména DDNS jsou při každodenním používání využívána jen zřídka, jejich škodlivé protějšky jsou hojně využívány v phishingových kampaních — př. paypal-login.duckdns.org.",
-            "disclaimer": "Pokud používáte službu DDNS, nezapomeňte, že toto nastavení neblokuje vlastní webové stránky služeb DDNS ani jejich aktualizaci API.",
-            "enable": "Blokování Dynamic DNS názvů hostitelů"
-        },
-        "parked": {
-            "name": "Blokovat zaparkované domény",
-            "description": "Parkované domény jsou jednostránkové weby, které jsou často nabité reklamami a nemají žádnou hodnotu. Monetizace zaparkovaných domén se někdy může mísit s podezřelými praktikami a škodlivým obsahem.",
-            "enable": "Blokovat zaparkované domény"
-        },
-        "tld": {
-            "name": "Blokovat domény nejvyšší úrovně (TLD)",
-            "description": "Blokujte všechny domény a subdomény patřící konkrétním TLD.",
-            "add": "Přidat TLD",
-            "sections": {
-                "spamhaus": "Spamhaus Nejvíce Zneužívané TLD",
-                "all": "Všechny TLD"
-            }
-        },
-        "csam": {
-            "name": "Blokovat materiál pro sexuální zneužívání dětí",
-            "description": "Blokujte domény hostující materiál o pohlavním zneužívání dětí pomocí projektu Arachnid, který provozuje Kanadské centrum pro ochranu dětí. Při zablokování domény se do projektu Arachnid nepřenášejí žádné informace.",
-            "enable": "Blokovat materiál pro sexuální zneužívání dětí"
-        },
-        "freeHostingDomains": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "untrustedCertificates": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "tunnelingEndpoints": {
-            "description": "",
-            "name": "",
-            "enable": ""
-        },
-        "dnsPayloadDelivery": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "decentralizedWebGateways": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "dataDropServices": {
-            "enable": "",
-            "description": "",
-            "name": ""
-        },
-        "newlyActiveDomains": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "fastFluxNetworks": {
-            "enable": "",
-            "name": "",
-            "description": ""
-        },
-        "highRiskTlds": {
-            "name": "",
-            "enable": "",
-            "description": ""
-        },
-        "residentialHosting": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "dnsDataExfiltration": {
-            "description": "",
-            "name": "",
-            "enable": ""
+    "identify": {
+      "name": "Identifikujte svá zařízení",
+      "description": "Postupujte podle pokynů níže a identifikujte svá zařízení v Analytice a Protokolech.",
+      "apps": {
+        "name": "Aplikace",
+        "instructions": "V nastavení aplikace povolte možnost „Odeslat název zařízení“."
+      },
+      "dot": {
+        "instructions": "Přijdete název před zadanou doménu (název by měl obsahovat pouze <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> a <7>-</7>). Použijte <9>-</9> pro mezery.",
+        "example": "Pro „<1>Honza Router</1>\", použili byste <3>Honza--Router-{{configuration}}.dns.nextdns.io</3> jako váš koncový bod DNS-over-TLS."
+      },
+      "doh": {
+        "instructions": "Připojte název k zadané adrese URL (název by měl být zakódován do adresy URL).",
+        "example": "Pro „<1>Honzův Firefox</1>\", byste použili <3>https://dns.nextdns.io/{{configuration}}/Honzuv%20Firefox</3> jako váš koncový bod DNS-over-HTTPS."
+      }
+    }
+  },
+  "security": {
+    "feeds": {
+      "name": "Threat Intelligence zdroje",
+      "description": "Blokujte domény, o nichž je známo, že distribuují malware, spouští phishingové útoky a hostují C&C servery pomocí kombinace nejuznávanějších informačních zdrojů o hrozbách - vše aktualizováno v reálném čase.",
+      "enable": "Použít Threat Intelligence zdroje"
+    },
+    "ai": {
+      "name": "Detekce hrozeb řízená AI",
+      "description": "Blokujte miliony hrozeb detekovaných naší technologií umělé inteligence - vlastním systémem umělé inteligence navrženým od základu pro DNS se stovkami signálů, terabajty tréninkových dat a rozhodováním v reálném čase.",
+      "enable": "Povolte detekci hrozeb řízenou AI"
+    },
+    "googleSafeBrowsing": {
+      "name": "Bezpečné prohlížení Google",
+      "description": "Blokujte malwarové a phishingové domény pomocí Bezpečného prohlížení Google - technologie, která denně zkoumá miliardy adres URL a hledá nebezpečné webové stránky. Na rozdíl od verze zabudované v některých prohlížečích se nepřidružuje vaše veřejná IP adresa k hrozbám a neumožňuje blokování obejít.",
+      "enable": "Povolit Bezpečné prohlížení Google"
+    },
+    "cryptojacking": {
+      "name": "Ochrana proti cryptojackingu",
+      "description": "Zabraňte neoprávněnému použití vašich zařízení k těžbě kryptoměn.",
+      "enable": "Povolit ochranu proti kryptojackingu"
+    },
+    "dnsRebinding": {
+      "name": "Ochrana před DNS Rebinding",
+      "description": "Zabraňte útočníkům v převzetí kontroly nad vašimi místními zařízeními přes internet automatickým blokováním odpovědí DNS obsahujících soukromé IP adresy.",
+      "enable": "Povolit ochranu před DNS Rebinding"
+    },
+    "homograph": {
+      "name": "Ochrana proti homografickým IDN útokům",
+      "description": "Blokujte domény, které se vydávají za jiné domény, zneužitím velké znakové sady zpřístupněné s příchodem internacionalizovaných doménových jmen (IDN) - např. Nahrazením latinského písmene „e“ cyrilicí „е“.",
+      "enable": "Povolit ochranu proti homografickým IDN útokům"
+    },
+    "typosquatting": {
+      "name": "Ochrana proti překlepům",
+      "description": "Blokujte domény registrované škodlivými aktéry, kteří cílí na uživatele, kteří do svého prohlížeče nesprávně zadají adresu webových stránek - např. Gooogle.com místo google.com.",
+      "enable": "Povolit ochranu před překlepy"
+    },
+    "dga": {
+      "name": "Ochrana před algoritmy pro generování domén (DGA)",
+      "description": "Blokujte domény generované algoritmy generování domén (DGA) přítomné v různých rodinách malwaru, které lze s jejich C&C servery použít jako body setkání.",
+      "enable": "Povolit ochranu proti DGA"
+    },
+    "nrd": {
+      "name": "Blokovat nově registrované domény (NRD)",
+      "description": "Blokovat domény registrované před méně než 30 dny. Je známo, že tyto domény zvýhodňují aktéry při zahájení škodlivých kampaní.",
+      "enable": "Blokovat nově registrované domény (NRD)"
+    },
+    "ddns": {
+      "name": "Blokování dynamických názvů hostitelů DNS",
+      "description": "Dynamic DNS (DDNS) umožňují škodlivým subjektům rychle a zdarma nastavit hostitelská jména bez jakéhokoli ověřování nebo ověřování identity. Zatímco legální hostitelská jména DDNS jsou při každodenním používání využívána jen zřídka, jejich škodlivé protějšky jsou hojně využívány v phishingových kampaních — př. paypal-login.duckdns.org.",
+      "disclaimer": "Pokud používáte službu DDNS, nezapomeňte, že toto nastavení neblokuje vlastní webové stránky služeb DDNS ani jejich aktualizaci API.",
+      "enable": "Blokování Dynamic DNS názvů hostitelů"
+    },
+    "parked": {
+      "name": "Blokovat zaparkované domény",
+      "description": "Parkované domény jsou jednostránkové weby, které jsou často nabité reklamami a nemají žádnou hodnotu. Monetizace zaparkovaných domén se někdy může mísit s podezřelými praktikami a škodlivým obsahem.",
+      "enable": "Blokovat zaparkované domény"
+    },
+    "tld": {
+      "name": "Blokovat domény nejvyšší úrovně (TLD)",
+      "description": "Blokujte všechny domény a subdomény patřící konkrétním TLD.",
+      "add": "Přidat TLD",
+      "sections": {
+        "spamhaus": "Spamhaus Nejvíce Zneužívané TLD",
+        "all": "Všechny TLD"
+      }
+    },
+    "csam": {
+      "name": "Blokovat materiál pro sexuální zneužívání dětí",
+      "description": "Blokujte domény hostující materiál o pohlavním zneužívání dětí pomocí projektu Arachnid, který provozuje Kanadské centrum pro ochranu dětí. Při zablokování domény se do projektu Arachnid nepřenášejí žádné informace.",
+      "enable": "Blokovat materiál pro sexuální zneužívání dětí"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "Seznamy bloků",
+      "description": "Blokujte reklamy a sledovače pomocí nejpopulárnějších dostupných seznamů bloků - vše aktualizováno v reálném čase.",
+      "add": "Přidejte seznam bloků",
+      "updated": "Aktualizováno <1>{{ago}}</1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS blokační seznam Reklamy & Trackery",
+          "description": "Komplexní seznam k blokování reklam a trackerů ve všech zemích. Toto je doporučený seznam pro začátek."
         }
+      },
+      "sortBy": {
+        "popularity": "Popularity",
+        "name": "Name",
+        "entries": "Entries",
+        "updated": "Recent"
+      },
+      "entries_one": "{{count, number}} záznam",
+      "entries_other": "{{count, number}} záznamů"
     },
-    "privacy": {
-        "blocklists": {
-            "name": "Seznamy bloků",
-            "description": "Blokujte reklamy a sledovače pomocí nejpopulárnějších dostupných seznamů bloků - vše aktualizováno v reálném čase.",
-            "add": "Přidejte seznam bloků",
-            "updated": "Aktualizováno <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS blokační seznam Reklamy & Trackery",
-                    "description": "Komplexní seznam k blokování reklam a trackerů ve všech zemích. Toto je doporučený seznam pro začátek."
-                }
-            },
-            "sortBy": {
-                "popularity": "Popularity",
-                "name": "Name",
-                "entries": "Entries",
-                "updated": "Recent"
-            },
-            "entries_one": "{{count, number}} záznam",
-            "entries_other": "{{count, number}} záznamů"
+    "native": {
+      "name": "Ochrana proti nativnímu sledování",
+      "description": "Blokujte široké spektrum trackerů - často pracujících na úrovni operačního systému -, které sledují vaši aktivitu na zařízení. To by mohlo zahrnovat všechny webové stránky, které navštěvujete, vše co zadáváte, nebo vaši polohu za všech okolností.",
+      "add": "Přidat",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "Telefony a tablety, chytré televize, routery"
         },
-        "native": {
-            "name": "Ochrana proti nativnímu sledování",
-            "description": "Blokujte široké spektrum trackerů - často pracujících na úrovni operačního systému -, které sledují vaši aktivitu na zařízení. To by mohlo zahrnovat všechny webové stránky, které navštěvujete, vše co zadáváte, nebo vaši polohu za všech okolností.",
-            "add": "Přidat",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "Telefony a tablety, chytré televize, routery"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "Telefony a tablety"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "Telefony, tablety, chytré televize"
-                },
-                "alexa": {
-                    "name": "Amazon Alexa",
-                    "devices": "Zařízení podporující Alexa"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "Všechny verze"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "Všechna zařízení Roku"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "Reproduktory"
-                }
-            }
+        "huawei": {
+          "name": "Huawei",
+          "devices": "Telefony a tablety"
         },
-        "disguised": {
-            "name": "Blokujte maskované trackery třetích stran",
-            "description": "Automaticky detekovat a blokovat trackery třetích stran, které se maskují jako první strany, aby obešly nedávné ochrany soukromí prohlížeče, například ITP.",
-            "enable": "Blokovat maskované trackery třetích stran"
+        "samsung": {
+          "name": "Samsung",
+          "devices": "Telefony, tablety, chytré televize"
         },
-        "affiliate": {
-            "name": "Povolit Partnerské & sledovací odkazy",
-            "description": "Povolte partnerské a sledovací domény běžné na webových stránkách s nabídkami, v e-mailech nebo ve výsledcích vyhledávání. Ty se obvykle dají zavolat až po ručním kliknutí na odkaz.",
-            "relay": "Vaše IP adresa bude na těchto webových stránkách automaticky skryta, aby bylo zachováno vaše soukromí.",
-            "enable": "Povolit Partnerské & sledovací odkazy"
+        "alexa": {
+          "name": "Amazon Alexa",
+          "devices": "Zařízení podporující Alexa"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "Všechny verze"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "Všechna zařízení Roku"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "Reproduktory"
         }
+      }
     },
-    "parentalControl": {
-        "services": {
-            "name": "Webové stránky, aplikace a hry",
-            "description": "Omezit přístup na konkrétní webové stránky, aplikace a hry.",
-            "add": "Přidejte web, aplikaci nebo hru",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "BeReal",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney+",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google Chat",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Pára",
-                "telegram": "Telegram",
-                "tiktok": "Tik tak",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Škubnutí",
-                "twitter": "Cvrlikání",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "Youtube",
-                "zoom": "Zvětšení"
-            }
+    "disguised": {
+      "name": "Blokujte maskované trackery třetích stran",
+      "description": "Automaticky detekovat a blokovat trackery třetích stran, které se maskují jako první strany, aby obešly nedávné ochrany soukromí prohlížeče, například ITP.",
+      "enable": "Blokovat maskované trackery třetích stran"
+    },
+    "affiliate": {
+      "name": "Povolit Partnerské & sledovací odkazy",
+      "description": "Povolte partnerské a sledovací domény běžné na webových stránkách s nabídkami, v e-mailech nebo ve výsledcích vyhledávání. Ty se obvykle dají zavolat až po ručním kliknutí na odkaz.",
+      "relay": "Vaše IP adresa bude na těchto webových stránkách automaticky skryta, aby bylo zachováno vaše soukromí.",
+      "enable": "Povolit Partnerské & sledovací odkazy"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "Webové stránky, aplikace a hry",
+      "description": "Omezit přístup na konkrétní webové stránky, aplikace a hry.",
+      "add": "Přidejte web, aplikaci nebo hru",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "BeReal",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney+",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google Chat",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Pára",
+        "telegram": "Telegram",
+        "tiktok": "Tik tak",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Škubnutí",
+        "twitter": "Cvrlikání",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox Live",
+        "youtube": "Youtube",
+        "zoom": "Zvětšení"
+      }
+    },
+    "categories": {
+      "name": "Kategorie",
+      "description": "Omezte přístup na konkrétní kategorie webů a aplikací.",
+      "add": "Přidejte kategorii",
+      "categories": {
+        "dating": {
+          "name": "Chodit s někým",
+          "description": "Blokuje všechny seznamovací weby a aplikace."
         },
+        "gambling": {
+          "name": "Hazardní hry",
+          "description": "Blokuje obsah hazardních her."
+        },
+        "gaming": {
+          "name": "Online hry",
+          "description": "Blokuje online herní weby, online herní aplikace a online herní sítě (Xbox Live, PlayStation Network atd.)."
+        },
+        "piracy": {
+          "name": "Pirátství",
+          "description": "Blokuje weby P2P, protokoly, streamovací weby porušující autorská práva a obecné weby hostující video používané hlavně k nelegální distribuci obsahu chráněného autorskými právy."
+        },
+        "porn": {
+          "name": "Porno",
+          "description": "Blokuje obsah pro dospělé a pornografický obsah. Zahrnuje eskortní stránky, pornhub.com a podobné domény."
+        },
+        "social-networks": {
+          "name": "Sociální sítě",
+          "description": "Blokuje všechny weby a aplikace sociálních sítí (Facebook, Instagram, TikTok, reddit atd.). Neblokuje aplikace pro zasílání zpráv."
+        },
+        "video-streaming": {
+          "name": "Streamování videí",
+          "description": "Blokuje služby pro streamování videa (YouTube, Netflix, Disney+, nelegální weby pro streamování, weby s pornografií atd.) a video-sociální sítě (TikTok atd.). Může také pomoci snížit vytížení internetu na jakékoli síti."
+        }
+      }
+    },
+    "recreation": {
+      "name": "Období odpočinku",
+      "description": "Nastavte období pro každý den v týdnu, během kterého některé webové stránky, aplikace, hry nebo kategorie uvedené výše nebudou blokovány — např. povolte Facebook v pondělí a úterý mezi 18:00 a 20:00.",
+      "set": "Nastavit Období odpočinku",
+      "howto": "Použijte tlačítko <1></1> ve výše uvedených sekcích pro povolení Období odpočinku."
+    },
+    "safesearch": {
+      "name": "Bezpečné vyhledávání",
+      "description": "Odfiltrujte obsah pro dospělé ve všech hlavních vyhledávačích, včetně obrázků a videí. Tím se také zablokuje přístup k vyhledávačům, které tuto funkci nepodporují.",
+      "enable": "Vynutit bezpečné vyhledávání"
+    },
+    "youtubeRestricted": {
+      "name": "Omezený režim YouTube",
+      "description": "Odfiltrujte videa pro dospělé na YouTube a zablokujte sledování vložených videí pro dospělé na jiných webech. Tím se také skryjí všechny komentáře.",
+      "enable": "Vynutit omezený režim YouTube"
+    },
+    "bypass": {
+      "name": "Metody blokování obtoku",
+      "description": "Zabraňte nebo zabraňte použití metod, které mohou pomoci obejít filtrování NextDNS v síti. To zahrnuje VPN, proxy, software související s Tor a šifrované poskytovatele DNS.",
+      "enable": "Metody blokování obtoku"
+    }
+  },
+  "xlist": {
+    "placeholder": "Přidat doménu ...",
+    "errors": {
+      "required": "Zadejte prosím doménu.",
+      "ip": "Zadejte prosím doménu, nikoli IP adresu.",
+      "invalid": "Zadejte platnou doménu.",
+      "tld": "Vypadá to, že se pokoušíte blokovat celou TLD, použijte funkci Blokovat TLD v sekci Zabezpečení.",
+      "exists": "Tato doména již byla přidána."
+    },
+    "empty": "Zatím žádné domény.",
+    "denylist": {
+      "info": "Odepření domény automaticky zakáže všechny její subdomény."
+    },
+    "allowlist": {
+      "info": "Povolení domény automaticky povolí všechny její subdomény. Povolení má přednost před vším ostatním, včetně bezpečnostních funkcí."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>blokovaných dotazů</1></1>",
+      "all_one": "<0>{{count, number}}</0><1>dotaz</1>",
+      "all_other": "<0>{{count, number}}</0><1>dotazů</1>",
+      "blocked_one": "<0>{{count, number}}</0><1>blokovaný dotaz</1>",
+      "blocked_other": "<0>{{count, number}}</0><1>blokovaných dotazů</1>"
+    },
+    "queries": {
+      "name": "Dotazy",
+      "description": "Vývoj dotazů v čase.",
+      "queries": {
+        "all_one": "<0>{{count, number}}</0><1> dotaz</1>",
+        "all_other": "<0>{{count, number}}</0><1> dotazů</1>",
+        "blocked_one": "<0>{{count, number}}</0><1> blokovaný dotaz</1>",
+        "blocked_other": "<0>{{count, number}}</0><1> blokovaných dotazů</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "Přeložené domény",
+        "description": "Domény, které se přeložily, aniž by byly blokovány jakýmkoli nastavením, nebo proto, že byly ručně povoleny."
+      },
+      "blocked": {
+        "name": "Blokované domény",
+        "description": "Domény blokované nastavením Zabezpečení, Ochrana osobních údajů a/nebo Rodičovská kontrola nebo proto, že byly ručně zamítnuty."
+      },
+      "root": {
+        "name": "Kořenové domény",
+        "description": "Souhrn všech dotazů vytvořených pro kořenové domény a všech jejich subdomény."
+      },
+      "empty": "Zatím žádné domény."
+    },
+    "reasons": {
+      "name": "Důvody blokování",
+      "description": "Nastavení zabezpečení, soukromí a/nebo rodičovské kontroly, které zablokovalo většinu dotazů.",
+      "empty": "Zatím nebyly blokovány žádné domény."
+    },
+    "devices": {
+      "name": "Zařízení",
+      "description": "Zařízení provádějící dotazy.",
+      "empty": "Zatím žádná zařízení.",
+      "unidentified": {
+        "name": "Neidentifikovaná zařízení"
+      }
+    },
+    "ips": {
+      "name": "IP adresy",
+      "description": "IP adresy provádějící dotazy.",
+      "empty": "Zatím žádné IP adresy."
+    },
+    "gafam": {
+      "name": "Dominance GAFAM",
+      "description": "„GAFAM“ (Google, Amazon, Facebook, Apple a Microsoft) je 5 dominantních internetových společností, které vlastní mnoho populárních služeb, často provozovaných pod jiným názvem, např. WhatsApp a Instagram pro Facebook.",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Facebook"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "Ostatní"
+        }
+      },
+      "queries_one": "{{count, number}} dotaz",
+      "queries_other": "{{count, number}} dotazů"
+    },
+    "encrypted": {
+      "name": "Šifrované DNS",
+      "description": "Procento dotazů provedených pomocí šifrovaného přenosu (DNS-over-HTTPS, DNS-over-TLS nebo oficiální aplikace NextDNS).",
+      "empty": "Zatím žádné dotazy."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "Procento dotazů ověřených pomocí DNSSEC.",
+      "empty": "Zatím žádné dotazy."
+    },
+    "destination": {
+      "name": "Cílové země internetového provozu",
+      "description": "Země, kam směřuje váš internetový provoz.",
+      "topDomains": "Nejlepší domény",
+      "queries_one": "{{count, number}} dotaz",
+      "queries_other": "{{count, number}} dotazů"
+    }
+  },
+  "logs": {
+    "blockedOnly": "Pouze blokované dotazy",
+    "raw": "Nezpracované DNS protokoly",
+    "empty": "Zatím žádné protokoly.",
+    "log": {
+      "actionBlock": "Block",
+      "actionAllow": "Allow",
+      "dnssec": "Validováno s DNSSEC.",
+      "clients": {
+        "nextdns-ios": "NextDNS pro iOS",
+        "nextdns-android": "NextDNS pro Android",
+        "nextdns-macos": "NextDNS pro macOS",
+        "nextdns-windows": "NextDNS pro Windows",
+        "nextdns-cli": "Klient NextDNS CLI",
+        "nextdns-chromeos": "NextDNS pro Chrome OS",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Přepětí",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "Mikrotik",
+        "apple-profile": "Konfigurační profil Apple"
+      },
+      "blockedBy": "Blokováno <1>{{lists}}</1> .",
+      "allowedBy": "Povoleno <1>{{lists}}</1> .",
+      "manual": {
+        "deny": "Ručně zamítnuto.",
+        "allow": "Ručně povoleno."
+      },
+      "insights": {
+        "show": "Zobrazit Tracker Insights",
+        "hide": "Skrýt Tracker Insights",
         "categories": {
-            "name": "Kategorie",
-            "description": "Omezte přístup na konkrétní kategorie webů a aplikací.",
-            "add": "Přidejte kategorii",
-            "categories": {
-                "dating": {
-                    "name": "Chodit s někým",
-                    "description": "Blokuje všechny seznamovací weby a aplikace."
-                },
-                "gambling": {
-                    "name": "Hazardní hry",
-                    "description": "Blokuje obsah hazardních her."
-                },
-                "gaming": {
-                    "name": "Online hry",
-                    "description": "Blokuje online herní weby, online herní aplikace a online herní sítě (Xbox Live, PlayStation Network atd.)."
-                },
-                "piracy": {
-                    "name": "Pirátství",
-                    "description": "Blokuje weby P2P, protokoly, streamovací weby porušující autorská práva a obecné weby hostující video používané hlavně k nelegální distribuci obsahu chráněného autorskými právy."
-                },
-                "porn": {
-                    "name": "Porno",
-                    "description": "Blokuje obsah pro dospělé a pornografický obsah. Zahrnuje eskortní stránky, pornhub.com a podobné domény."
-                },
-                "social-networks": {
-                    "name": "Sociální sítě",
-                    "description": "Blokuje všechny weby a aplikace sociálních sítí (Facebook, Instagram, TikTok, reddit atd.). Neblokuje aplikace pro zasílání zpráv."
-                },
-                "video-streaming": {
-                    "name": "Streamování videí",
-                    "description": "Blokuje služby pro streamování videa (YouTube, Netflix, Disney+, nelegální weby pro streamování, weby s pornografií atd.) a video-sociální sítě (TikTok atd.). Může také pomoci snížit vytížení internetu na jakékoli síti."
-                }
-            }
+          "advertising": {
+            "description": "Poskytuje reklamu nebo služby související s reklamou, jako je sběr dat, analýza chování nebo přesměrování."
+          },
+          "comments": {
+            "description": "Povoluje sekce komentářů u článků a recenzí produktů."
+          },
+          "customer_interaction": {
+            "description": "Zahrnuje chat, e-mailové zprávy, zákaznickou podporu a další nástroje pro interakci."
+          },
+          "essential": {
+            "description": "Zahrnuje správce značek, oznámení o ochraně osobních údajů a technologie, které jsou zásadní pro funkčnost webu."
+          },
+          "adult_advertsing": {
+            "description": "Poskytuje reklamy, které se obvykle zobrazují na webech s obsahem pro dospělé."
+          },
+          "site_analytics": {
+            "description": "Shromažďuje a analyzuje data související s používáním a výkonem webu."
+          },
+          "social_media": {
+            "description": "Integruje funkce související se stránkami sociálních médií."
+          },
+          "audio_video_player": {
+            "description": "Umožňuje webům publikovat, distribuovat a optimalizovat video a zvukový obsah."
+          },
+          "cdn": {
+            "description": "Síť pro doručování obsahu, která poskytuje zdroje pro různé využití webu a obvykle pro mnoho různých zákazníků."
+          },
+          "misc": {
+            "description": "Tento sledovač se nehodí do jiných kategorií nebo dosud nebyl označen."
+          },
+          "pornvertising": {
+            "description": "Poskytuje reklamy, které se obvykle zobrazují na webech s obsahem pro dospělé."
+          },
+          "hosting": {
+            "description": "Toto je služba používaná poskytovatelem obsahu nebo vlastníkem webu."
+          },
+          "extensions": {
+            "description": "Software na uživatelských zařízeních, který dokáže zachytit a analyzovat provoz prohlížeče (muž uprostřed)."
+          }
         },
-        "recreation": {
-            "name": "Období odpočinku",
-            "description": "Nastavte období pro každý den v týdnu, během kterého některé webové stránky, aplikace, hry nebo kategorie uvedené výše nebudou blokovány — např. povolte Facebook v pondělí a úterý mezi 18:00 a 20:00.",
-            "set": "Nastavit Období odpočinku",
-            "howto": "Použijte tlačítko <1></1> ve výše uvedených sekcích pro povolení Období odpočinku.",
-            "end": "",
-            "start": ""
+        "prevalence": {
+          "intensity": {
+            "dangerously": "Nebezpečně převládající",
+            "extremely": "Extrémně převládající",
+            "very": "Velmi převládající",
+            "commonly": "Běžně převládající",
+            "relatively": "Relativně převládající"
+          },
+          "summary": "{{prevalence}} <3> (sleduje {{percent, percentage}} webového provozu) </3>"
         },
-        "safesearch": {
-            "name": "Bezpečné vyhledávání",
-            "description": "Odfiltrujte obsah pro dospělé ve všech hlavních vyhledávačích, včetně obrázků a videí. Tím se také zablokuje přístup k vyhledávačům, které tuto funkci nepodporují.",
-            "enable": "Vynutit bezpečné vyhledávání"
-        },
-        "youtubeRestricted": {
-            "name": "Omezený režim YouTube",
-            "description": "Odfiltrujte videa pro dospělé na YouTube a zablokujte sledování vložených videí pro dospělé na jiných webech. Tím se také skryjí všechny komentáře.",
-            "enable": "Vynutit omezený režim YouTube"
-        },
-        "bypass": {
-            "name": "Metody blokování obtoku",
-            "description": "Zabraňte nebo zabraňte použití metod, které mohou pomoci obejít filtrování NextDNS v síti. To zahrnuje VPN, proxy, software související s Tor a šifrované poskytovatele DNS.",
-            "enable": "Metody blokování obtoku"
-        }
+        "ownedBy": "<0> Vlastníkem </0> <1>{{company}}</1>",
+        "source": "Statistiky sledování z"
+      }
+    }
+  },
+  "deviceSelector": {
+    "all": "Všechna zařízení",
+    "howto": "Na stránce Nastavení se dozvíte, jak identifikovat vaše zařízení."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "Posledních 30 minut",
+      "6h": "Posledních 6 hodin",
+      "24h": "Posledních 24 hodin",
+      "7d": "Posledních 7 dní",
+      "30d": "Posledních 30 dní",
+      "3M": "Poslední 3 měsíce"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "Název",
+      "description": "Vyberte název této konfigurace."
     },
-    "xlist": {
-        "placeholder": "Přidat doménu ...",
-        "errors": {
+    "logs": {
+      "name": "Protokoly",
+      "description": "Dolaďte nastavení protokolů.",
+      "enable": "Povolit protokoly",
+      "privacy": {
+        "name": "Úpravy soukromí",
+        "ip": "Protokolovat IP adresy klientů",
+        "domains": "Zaznamenávat domény"
+      },
+      "retention": {
+        "name": "Zachování",
+        "options": {
+          "1h": "1 hodina",
+          "6h": "6 hodin",
+          "1d": "1 den",
+          "1w": "1 týden",
+          "1m": "1 měsíc",
+          "3m": "3 měsíce",
+          "6m": "6 měsíců",
+          "1y": "1 rok",
+          "2y": "2 roky"
+        }
+      },
+      "location": {
+        "name": "Místo uložení",
+        "locations": {
+          "us": {
+            "name": "Spojené státy",
+            "description": "Protokoly budou uloženy ve Spojených státech. Toto je výchozí nastavení."
+          },
+          "eu": {
+            "name": "Evropská unie",
+            "description": "Protokoly budou uloženy v členských státech Evropské unie."
+          },
+          "ch": {
+            "name": "Švýcarsko",
+            "description": "Protokoly budou uloženy ve švýcarském Curychu - jurisdikci známé svými silnými zákony na ochranu soukromí."
+          }
+        },
+        "confirm": {
+          "title": "Změnit místo uložení",
+          "text": "Změnou umístění úložiště protokolů odstraníte všechny minulé protokoly a analytiku této konfigurace."
+        }
+      },
+      "download": {
+        "button": "Stáhnout logy"
+      },
+      "clear": {
+        "button": "Vymazat protokoly",
+        "confirm": {
+          "text": "Opravdu chcete vymazat všechny protokoly této konfigurace? Tuto akci nelze vrátit zpět.",
+          "submit": "Vymazat"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "Blokovací stránka",
+      "description": "Zobrazit blokovací stránku při blokování domény. To může mírně prodloužit dobu načítání stránky a v některých případech se může zobrazit varování HTTPS. Pokud je zakázáno, blokované dotazy budou odpovídat na neurčenou adresu (0.0.0.0 nebo: :).",
+      "enable": "Povolit blokovací stránku",
+      "ca": {
+        "name": "Kořenová certifikační autorita NextDNS",
+        "description": "Odstraňte varování HTTPS při načítání blokovací stránky instalací a důvěřováním naší kořenové certifikační autoritě na <1>{{link}}</1>. Pokyny, jak to provést, si přečtěte <3>zde</3>."
+      }
+    },
+    "performance": {
+      "name": "Výkon",
+      "description": "Urychlete procházení webu.",
+      "ecs": {
+        "name": "Anonymizovaná podsíť klienta EDNS",
+        "description": "Urychlete doručování dat ze sítí pro doručování obsahu, aniž byste odhalili svou IP adresu.",
+        "enable": "Povolte anonymní podsíť klienta EDNS"
+      },
+      "cache": {
+        "name": "Zrychlení mezipaměti",
+        "description": "Minimalizujte dotazy DNS vynucením minimálního TTL (Time to live).",
+        "enable": "Povolit zrychlení mezipaměti"
+      },
+      "flatten": {
+        "name": "Zploštění CNAME",
+        "description": "Zabraňte tomu, aby překladače honící CNAME prováděli zbytečné dotazy, a znečišťovaly protokoly mezilehlými doménami.",
+        "enable": "Povolit sloučení CNAME"
+      }
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 označuje decentralizovaný online ekosystém odolný vůči cenzuře, který se skládá z inovativních technologií, jako jsou registry domén založené na blockchainu (např. Ethereum Name Service) a distribuované sítě pro ukládání a doručování obsahu (např. IPFS). Po aktivaci bude NextDNS fungovat jako nefiltrovaná brána do tohoto nového webu a umožní vám ho zažít na vlastní kůži, aniž byste museli cokoli instalovat.",
+      "tips": "Protože většina prohlížečů v současné době podporuje pouze klasické domény nejvyšší úrovně, měli byste při pokusu o přímý přístup k doméně Web3 přidat koncové lomítko (\"<1>/</1>\") (např. \"<3>vitalik.eth/</3>\" místo \"<5>vitalik.eth</5>\").",
+      "enable": "Povolení služby Web3"
+    },
+    "rewrites": {
+      "name": "Přepíše",
+      "description": "Nastavit nebo přepsat odpověď DNS pro libovolnou doménu. Přepisování platí i pro subdomény a jako odpovědi jsou podporovány místní adresy IP.",
+      "new": "Nové přepsání",
+      "form": {
+        "domain": {
+          "label": "Doména",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
             "required": "Zadejte prosím doménu.",
             "ip": "Zadejte prosím doménu, nikoli IP adresu.",
             "invalid": "Zadejte platnou doménu.",
-            "tld": "Vypadá to, že se pokoušíte blokovat celou TLD, použijte funkci Blokovat TLD v sekci Zabezpečení.",
-            "exists": "Tato doména již byla přidána."
+            "taken": "Již máte přepis pro tuto doménu."
+          }
         },
-        "empty": "Zatím žádné domény.",
-        "denylist": {
-            "info": "Odepření domény automaticky zakáže všechny její subdomény."
-        },
-        "allowlist": {
-            "info": "Povolení domény automaticky povolí všechny její subdomény. Povolení má přednost před vším ostatním, včetně bezpečnostních funkcí."
+        "answer": {
+          "label": "Odpovědět",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "Zadejte prosím odpověď.",
+            "invalid": "Odpověď by měla být platná IP adresa nebo doména."
+          }
         }
+      }
     },
-    "analytics": {
-        "counters": {
-            "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>blokovaných dotazů</1></1>",
-            "all_one": "<0>{{count, number}}</0><1>dotaz</1>",
-            "all_other": "<0>{{count, number}}</0><1>dotazů</1>",
-            "blocked_one": "<0>{{count, number}}</0><1>blokovaný dotaz</1>",
-            "blocked_other": "<0>{{count, number}}</0><1>blokovaných dotazů</1>"
+    "access": {
+      "name": "Přístup",
+      "description": "Poskytnout ostatním přístup k tomuto profilu pouze pro úpravy nebo prohlížení.",
+      "roles": {
+        "editor": "Editor",
+        "viewer": "Přihlížející"
+      },
+      "pending": "Pozvánka odeslána",
+      "form": {
+        "email": {
+          "label": "Email",
+          "errors": {
+            "required": "Zadejte e-mail.",
+            "invalid": "Zadejte platnou e-mailovou adresu.",
+            "duplicate": "Tento e-mail již byl pozván."
+          }
         },
-        "queries": {
-            "name": "Dotazy",
-            "description": "Vývoj dotazů v čase.",
-            "queries": {
-                "all_one": "<0>{{count, number}}</0><1> dotaz</1>",
-                "all_other": "<0>{{count, number}}</0><1> dotazů</1>",
-                "blocked_one": "<0>{{count, number}}</0><1> blokovaný dotaz</1>",
-                "blocked_other": "<0>{{count, number}}</0><1> blokovaných dotazů</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "Přeložené domény",
-                "description": "Domény, které se přeložily, aniž by byly blokovány jakýmkoli nastavením, nebo proto, že byly ručně povoleny."
-            },
-            "blocked": {
-                "name": "Blokované domény",
-                "description": "Domény blokované nastavením Zabezpečení, Ochrana osobních údajů a/nebo Rodičovská kontrola nebo proto, že byly ručně zamítnuty."
-            },
-            "root": {
-                "name": "Kořenové domény",
-                "description": "Souhrn všech dotazů vytvořených pro kořenové domény a všech jejich subdomény."
-            },
-            "empty": "Zatím žádné domény."
-        },
-        "reasons": {
-            "name": "Důvody blokování",
-            "description": "Nastavení zabezpečení, soukromí a/nebo rodičovské kontroly, které zablokovalo většinu dotazů.",
-            "empty": "Zatím nebyly blokovány žádné domény."
-        },
-        "devices": {
-            "name": "Zařízení",
-            "description": "Zařízení provádějící dotazy.",
-            "empty": "Zatím žádná zařízení.",
-            "unidentified": {
-                "name": "Neidentifikovaná zařízení"
-            }
-        },
-        "ips": {
-            "name": "IP adresy",
-            "description": "IP adresy provádějící dotazy.",
-            "empty": "Zatím žádné IP adresy."
-        },
-        "gafam": {
-            "name": "Dominance GAFAM",
-            "description": "„GAFAM“ (Google, Amazon, Facebook, Apple a Microsoft) je 5 dominantních internetových společností, které vlastní mnoho populárních služeb, často provozovaných pod jiným názvem, např. WhatsApp a Instagram pro Facebook.",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "Ostatní"
-                }
-            },
-            "queries_one": "{{count, number}} dotaz",
-            "queries_other": "{{count, number}} dotazů"
-        },
-        "encrypted": {
-            "name": "Šifrované DNS",
-            "description": "Procento dotazů provedených pomocí šifrovaného přenosu (DNS-over-HTTPS, DNS-over-TLS nebo oficiální aplikace NextDNS).",
-            "empty": "Zatím žádné dotazy."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "Procento dotazů ověřených pomocí DNSSEC.",
-            "empty": "Zatím žádné dotazy."
-        },
-        "destination": {
-            "name": "Cílové země internetového provozu",
-            "description": "Země, kam směřuje váš internetový provoz.",
-            "topDomains": "Nejlepší domény",
-            "queries_one": "{{count, number}} dotaz",
-            "queries_other": "{{count, number}} dotazů"
+        "role": {
+          "label": "Role"
         }
+      }
     },
-    "logs": {
-        "blockedOnly": "Pouze blokované dotazy",
-        "raw": "Nezpracované DNS protokoly",
-        "empty": "Zatím žádné protokoly.",
-        "log": {
-            "actionBlock": "Block",
-            "actionAllow": "Allow",
-            "dnssec": "Validováno s DNSSEC.",
-            "clients": {
-                "nextdns-ios": "NextDNS pro iOS",
-                "nextdns-android": "NextDNS pro Android",
-                "nextdns-macos": "NextDNS pro macOS",
-                "nextdns-windows": "NextDNS pro Windows",
-                "nextdns-cli": "Klient NextDNS CLI",
-                "nextdns-chromeos": "NextDNS pro Chrome OS",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Přepětí",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Konfigurační profil Apple",
-                "tailscale": "",
-                "yogadns": ""
-            },
-            "blockedBy": "Blokováno <1>{{lists}}</1> .",
-            "allowedBy": "Povoleno <1>{{lists}}</1> .",
-            "manual": {
-                "deny": "Ručně zamítnuto.",
-                "allow": "Ručně povoleno."
-            },
-            "insights": {
-                "show": "Zobrazit Tracker Insights",
-                "hide": "Skrýt Tracker Insights",
-                "categories": {
-                    "advertising": {
-                        "description": "Poskytuje reklamu nebo služby související s reklamou, jako je sběr dat, analýza chování nebo přesměrování."
-                    },
-                    "comments": {
-                        "description": "Povoluje sekce komentářů u článků a recenzí produktů."
-                    },
-                    "customer_interaction": {
-                        "description": "Zahrnuje chat, e-mailové zprávy, zákaznickou podporu a další nástroje pro interakci."
-                    },
-                    "essential": {
-                        "description": "Zahrnuje správce značek, oznámení o ochraně osobních údajů a technologie, které jsou zásadní pro funkčnost webu."
-                    },
-                    "adult_advertsing": {
-                        "description": "Poskytuje reklamy, které se obvykle zobrazují na webech s obsahem pro dospělé."
-                    },
-                    "site_analytics": {
-                        "description": "Shromažďuje a analyzuje data související s používáním a výkonem webu."
-                    },
-                    "social_media": {
-                        "description": "Integruje funkce související se stránkami sociálních médií."
-                    },
-                    "audio_video_player": {
-                        "description": "Umožňuje webům publikovat, distribuovat a optimalizovat video a zvukový obsah."
-                    },
-                    "cdn": {
-                        "description": "Síť pro doručování obsahu, která poskytuje zdroje pro různé využití webu a obvykle pro mnoho různých zákazníků."
-                    },
-                    "misc": {
-                        "description": "Tento sledovač se nehodí do jiných kategorií nebo dosud nebyl označen."
-                    },
-                    "pornvertising": {
-                        "description": "Poskytuje reklamy, které se obvykle zobrazují na webech s obsahem pro dospělé."
-                    },
-                    "hosting": {
-                        "description": "Toto je služba používaná poskytovatelem obsahu nebo vlastníkem webu."
-                    },
-                    "extensions": {
-                        "description": "Software na uživatelských zařízeních, který dokáže zachytit a analyzovat provoz prohlížeče (muž uprostřed)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "Nebezpečně převládající",
-                        "extremely": "Extrémně převládající",
-                        "very": "Velmi převládající",
-                        "commonly": "Běžně převládající",
-                        "relatively": "Relativně převládající"
-                    },
-                    "summary": "{{prevalence}} <3> (sleduje {{percent, percentage}} webového provozu) </3>"
-                },
-                "ownedBy": "<0> Vlastníkem </0> <1>{{company}}</1>",
-                "source": "Statistiky sledování z"
-            }
-        },
-        "streaming": "",
-        "settings": "",
-        "toggleTimeFormat": ""
-    },
-    "deviceSelector": {
-        "all": "Všechna zařízení",
-        "howto": "Na stránce Nastavení se dozvíte, jak identifikovat vaše zařízení."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "Posledních 30 minut",
-            "6h": "Posledních 6 hodin",
-            "24h": "Posledních 24 hodin",
-            "7d": "Posledních 7 dní",
-            "30d": "Posledních 30 dní",
-            "3M": "Poslední 3 měsíce"
-        }
-    },
-    "settings": {
+    "duplicate": {
+      "button": "Duplicate <1>{{name}}</1>",
+      "description": "Copy all settings of this profile to a new one.",
+      "form": {
         "name": {
-            "name": "Název",
-            "description": "Vyberte název této konfigurace."
+          "label": "Name",
+          "placeholder": "Home, Kids, Office, ...",
+          "errors": {
+            "required": "Enter a name.",
+            "taken": "You already have a profile with that name."
+          }
         },
-        "logs": {
-            "name": "Protokoly",
-            "description": "Dolaďte nastavení protokolů.",
-            "enable": "Povolit protokoly",
-            "privacy": {
-                "name": "Úpravy soukromí",
-                "ip": "Protokolovat IP adresy klientů",
-                "domains": "Zaznamenávat domény"
-            },
-            "retention": {
-                "name": "Zachování",
-                "options": {
-                    "1h": "1 hodina",
-                    "6h": "6 hodin",
-                    "1d": "1 den",
-                    "1w": "1 týden",
-                    "1m": "1 měsíc",
-                    "3m": "3 měsíce",
-                    "6m": "6 měsíců",
-                    "1y": "1 rok",
-                    "2y": "2 roky"
-                }
-            },
-            "location": {
-                "name": "Místo uložení",
-                "locations": {
-                    "us": {
-                        "name": "Spojené státy",
-                        "description": "Protokoly budou uloženy ve Spojených státech. Toto je výchozí nastavení."
-                    },
-                    "eu": {
-                        "name": "Evropská unie",
-                        "description": "Protokoly budou uloženy v členských státech Evropské unie."
-                    },
-                    "ch": {
-                        "name": "Švýcarsko",
-                        "description": "Protokoly budou uloženy ve švýcarském Curychu - jurisdikci známé svými silnými zákony na ochranu soukromí."
-                    }
-                },
-                "confirm": {
-                    "title": "Změnit místo uložení",
-                    "text": "Změnou umístění úložiště protokolů odstraníte všechny minulé protokoly a analytiku této konfigurace."
-                }
-            },
-            "download": {
-                "button": "Stáhnout logy"
-            },
-            "clear": {
-                "button": "Vymazat protokoly",
-                "confirm": {
-                    "text": "Opravdu chcete vymazat všechny protokoly této konfigurace? Tuto akci nelze vrátit zpět.",
-                    "submit": "Vymazat"
-                }
-            }
-        },
-        "blockpage": {
-            "name": "Blokovací stránka",
-            "description": "Zobrazit blokovací stránku při blokování domény. To může mírně prodloužit dobu načítání stránky a v některých případech se může zobrazit varování HTTPS. Pokud je zakázáno, blokované dotazy budou odpovídat na neurčenou adresu (0.0.0.0 nebo: :).",
-            "enable": "Povolit blokovací stránku",
-            "ca": {
-                "name": "Kořenová certifikační autorita NextDNS",
-                "description": "Odstraňte varování HTTPS při načítání blokovací stránky instalací a důvěřováním naší kořenové certifikační autoritě na <1>{{link}}</1>. Pokyny, jak to provést, si přečtěte <3>zde</3>."
-            }
-        },
-        "performance": {
-            "name": "Výkon",
-            "description": "Urychlete procházení webu.",
-            "ecs": {
-                "name": "Anonymizovaná podsíť klienta EDNS",
-                "description": "Urychlete doručování dat ze sítí pro doručování obsahu, aniž byste odhalili svou IP adresu.",
-                "enable": "Povolte anonymní podsíť klienta EDNS"
-            },
-            "cache": {
-                "name": "Zrychlení mezipaměti",
-                "description": "Minimalizujte dotazy DNS vynucením minimálního TTL (Time to live).",
-                "enable": "Povolit zrychlení mezipaměti"
-            },
-            "flatten": {
-                "name": "Zploštění CNAME",
-                "description": "Zabraňte tomu, aby překladače honící CNAME prováděli zbytečné dotazy, a znečišťovaly protokoly mezilehlými doménami.",
-                "enable": "Povolit sloučení CNAME"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 označuje decentralizovaný online ekosystém odolný vůči cenzuře, který se skládá z inovativních technologií, jako jsou registry domén založené na blockchainu (např. Ethereum Name Service) a distribuované sítě pro ukládání a doručování obsahu (např. IPFS). Po aktivaci bude NextDNS fungovat jako nefiltrovaná brána do tohoto nového webu a umožní vám ho zažít na vlastní kůži, aniž byste museli cokoli instalovat.",
-            "tips": "Protože většina prohlížečů v současné době podporuje pouze klasické domény nejvyšší úrovně, měli byste při pokusu o přímý přístup k doméně Web3 přidat koncové lomítko (\"<1>/</1>\") (např. \"<3>vitalik.eth/</3>\" místo \"<5>vitalik.eth</5>\").",
-            "enable": "Povolení služby Web3"
-        },
-        "rewrites": {
-            "name": "Přepíše",
-            "description": "Nastavit nebo přepsat odpověď DNS pro libovolnou doménu. Přepisování platí i pro subdomény a jako odpovědi jsou podporovány místní adresy IP.",
-            "new": "Nové přepsání",
-            "form": {
-                "domain": {
-                    "label": "Doména",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "Zadejte prosím doménu.",
-                        "ip": "Zadejte prosím doménu, nikoli IP adresu.",
-                        "invalid": "Zadejte platnou doménu.",
-                        "taken": "Již máte přepis pro tuto doménu."
-                    }
-                },
-                "answer": {
-                    "label": "Odpovědět",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "Zadejte prosím odpověď.",
-                        "invalid": "Odpověď by měla být platná IP adresa nebo doména."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "Přístup",
-            "description": "Poskytnout ostatním přístup k tomuto profilu pouze pro úpravy nebo prohlížení.",
-            "roles": {
-                "editor": "Editor",
-                "viewer": "Přihlížející"
-            },
-            "pending": "Pozvánka odeslána",
-            "form": {
-                "email": {
-                    "label": "Email",
-                    "errors": {
-                        "required": "Zadejte e-mail.",
-                        "invalid": "Zadejte platnou e-mailovou adresu.",
-                        "duplicate": "Tento e-mail již byl pozván."
-                    }
-                },
-                "role": {
-                    "label": "Role"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "Duplicate <1>{{name}}</1>",
-            "description": "Copy all settings of this profile to a new one.",
-            "form": {
-                "name": {
-                    "label": "Name",
-                    "placeholder": "Home, Kids, Office, ...",
-                    "errors": {
-                        "required": "Enter a name.",
-                        "taken": "You already have a profile with that name."
-                    }
-                },
-                "button": "Duplicate"
-            }
-        },
-        "delete": {
-            "button": "Smazat <1>{{name}}</1>",
-            "warning": "Tím se tato konfigurace a všechny protokoly s ní spojené navždy odstraní.",
-            "confirm": {
-                "text": "Opravdu chcete odstranit <1>{{name}}</1> ? Tuto akci nelze vrátit zpět."
-            }
-        },
-        "leave": {
-            "button": "Opustit <1>{{name}}</1>",
-            "warning": "Přístup k tomuto profilu bude ztracen.",
-            "confirm": {
-                "text": "Určitě chcete opustit <1>{{name}}</1>? Tuto akci nelze vzít zpět."
-            }
-        },
-        "ageVerification": {
-            "description": "",
-            "acknowledgment": "",
-            "name": ""
-        }
+        "button": "Duplicate"
+      }
+    },
+    "delete": {
+      "button": "Smazat <1>{{name}}</1>",
+      "warning": "Tím se tato konfigurace a všechny protokoly s ní spojené navždy odstraní.",
+      "confirm": {
+        "text": "Opravdu chcete odstranit <1>{{name}}</1> ? Tuto akci nelze vrátit zpět."
+      }
+    },
+    "leave": {
+      "button": "Opustit <1>{{name}}</1>",
+      "warning": "Přístup k tomuto profilu bude ztracen.",
+      "confirm": {
+        "text": "Určitě chcete opustit <1>{{name}}</1>? Tuto akci nelze vzít zpět."
+      }
     }
+  }
 }

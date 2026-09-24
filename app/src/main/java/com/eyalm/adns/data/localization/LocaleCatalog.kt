@@ -88,17 +88,25 @@ fun mergeCatalog(
     putAll(fallback)
     selected.forEach { (key, value) ->
         val base = fallback[key]
-        put(
-            key,
-            if (base is Map<*, *> && value is Map<*, *>) {
-                @Suppress("UNCHECKED_CAST")
-                mergeCatalog(
-                    base as Map<String, Any>,
-                    value as Map<String, Any>,
-                )
-            } else {
-                value
-            },
-        )
+        if (value is Map<*, *>) {
+            put(
+                key,
+                if (base is Map<*, *>) {
+                    @Suppress("UNCHECKED_CAST")
+                    mergeCatalog(
+                        base as Map<String, Any>,
+                        value as Map<String, Any>,
+                    )
+                } else {
+                    value
+                },
+            )
+        } else if (value is String) {
+            if (value.isNotBlank() || base == null) {
+                put(key, value)
+            }
+        } else {
+            put(key, value)
+        }
     }
 }

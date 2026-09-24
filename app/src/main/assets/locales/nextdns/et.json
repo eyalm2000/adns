@@ -1,1398 +1,1310 @@
 {
-    "global": {
-        "beta": "beeta",
-        "cancel": "Tühista",
-        "add": "Lisa",
-        "save": "Salvesta",
-        "continue": "Jätka",
-        "enable": "Luba",
-        "change": "Muuda",
-        "create": "Loo",
-        "subscribe": "Telli",
-        "invite": "Kutsu",
-        "remove": "Eemalda",
-        "leave": "Tagasi",
-        "delete": "Kustuta",
-        "close": "Sulge",
-        "back": "Tagasi",
-        "disable": "Keela",
-        "unnamedDevice": "Seadme #{{id}}",
-        "firstConfiguration": "Minu esimene konfiguratsioon",
-        "copy": "",
-        "collapse": "",
-        "requestFailed": "",
-        "error": "",
-        "preview": "",
-        "expand": "",
-        "noProfiles": "",
-        "search": "",
-        "clearSearch": "",
-        "networkError": "",
-        "actions": ""
+  "global": {
+    "beta": "beeta",
+    "cancel": "Tühista",
+    "add": "Lisa",
+    "save": "Salvesta",
+    "continue": "Jätka",
+    "enable": "Luba",
+    "change": "Muuda",
+    "create": "Loo",
+    "subscribe": "Telli",
+    "invite": "Kutsu",
+    "remove": "Eemalda",
+    "leave": "Tagasi",
+    "delete": "Kustuta",
+    "close": "Sulge",
+    "back": "Tagasi",
+    "disable": "Keela",
+    "unnamedDevice": "Seadme #{{id}}",
+    "firstConfiguration": "Minu esimene konfiguratsioon"
+  },
+  "theme": {
+    "label": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "pages": {
+    "signup": "Registreeru",
+    "login": "Logi sisse",
+    "passwordReset": "Taasta parool",
+    "account": "Konto",
+    "setup": "Seadistamine",
+    "security": "Turvalisus",
+    "privacy": "Privaatsus",
+    "parentalcontrol": "Vanemlik kontroll",
+    "denylist": "Must nimekiri",
+    "allowlist": "Lubatud loend",
+    "analytics": "Analüütika",
+    "logs": "Logid",
+    "settings": "Seaded",
+    "help": "Abi"
+  },
+  "banners": {
+    "temporary": "See ajutine konto aegub <1><0>{{in}}</0></1> ja sellele pääseb juurde ainult selle brauseri kaudu. Seadete salvestamiseks registreeri endale tasuta konto.",
+    "nearQuota": "Oled sel kuul teinud rohkem kui {{queriesNearQuota, number}} päringut. See on lähedal tasuta kuu kvoodile, mis on {{queriesQuota, number}} päringut. NextDNS-i kasutamise jätkamiseks <5>vormista tellimus</5>.",
+    "overQuota": "Oled sel kuul teinud rohkem kui {{queriesQuota, number}} päringut. Selle tõttu on kõik funktsioonid keelatud. NextDNS-i kasutamise jätkamiseks <3>vormista tellimus</3>."
+  },
+  "account": {
+    "email": "E-post",
+    "newEmail": "Uus e-post",
+    "password": "Parool",
+    "newPassword": "Uus parool",
+    "currentPassword": "Praegune parool",
+    "forgotPassword": "Unustasid parooli?",
+    "savePassword": "Salvesta parool",
+    "passwordResetInfo": "Sisesta oma e-posti aadress ning me saadame sellele parooli lähtestamise lingi.",
+    "sendEmail": "Saada e-post",
+    "passwordResetLinkSentMessage": "Parooli lähtestamise link saadeti aadressile <1>{{email}}</1>.",
+    "code": "2FA kood",
+    "login": "Logi sisse",
+    "noAccountYet": "Sul pole veel kontot? <1>Registreeru</1>",
+    "signup": "Registreeru",
+    "alreadyHaveAnAccount": "Sul on juba konto? <1>Logi sisse</1>",
+    "convertingNotice": "Oled muutmas ajutist kontot tavaliseks kontoks. Kõik seadistused kantakse üle.",
+    "convertingDeviceOnlyNotice": "Muudate ainult seadmele mõeldud konto täisväärtuslikuks kontoks, kõik teie seaded salvestatakse.",
+    "logout": "Logi välja",
+    "errors": {
+      "email": {
+        "required": "Sisesta e-posti aadress.",
+        "invalid": "Palun sisesta korrektne e-posti aadress.",
+        "taken": "Seda e-posti aadressi on juba kasutatud."
+      },
+      "password": {
+        "required": "Sisesta parool.",
+        "invalidCombination": "Vale e-post või parool."
+      },
+      "currentPassword": {
+        "required": "Sisesta oma praegune parool.",
+        "incorrect": "Sisestatud parool on vale."
+      },
+      "code": {
+        "required": "Sisesta 2FA kood.",
+        "invalid": "Sisesta 6-kohaline kood.",
+        "incorrect": "Vale 2FA kood."
+      },
+      "resetPasswordToken": {
+        "invalid": "Kehtetu või aegunud luba."
+      }
     },
-    "theme": {
-        "label": "Theme",
-        "system": "System",
-        "light": "Light",
-        "dark": "Dark"
-    },
-    "pages": {
-        "signup": "Registreeru",
-        "login": "Logi sisse",
-        "passwordReset": "Taasta parool",
-        "account": "Konto",
-        "setup": "Seadistamine",
-        "security": "Turvalisus",
-        "privacy": "Privaatsus",
-        "parentalcontrol": "Vanemlik kontroll",
-        "denylist": "Must nimekiri",
-        "allowlist": "Lubatud loend",
-        "analytics": "Analüütika",
-        "logs": "Logid",
-        "settings": "Seaded",
-        "help": "Abi"
-    },
-    "banners": {
-        "temporary": "See ajutine konto aegub <1><0>{{in}}</0></1> ja sellele pääseb juurde ainult selle brauseri kaudu. Seadete salvestamiseks registreeri endale tasuta konto.",
-        "nearQuota": "Oled sel kuul teinud rohkem kui {{queriesNearQuota, number}} päringut. See on lähedal tasuta kuu kvoodile, mis on {{queriesQuota, number}} päringut. NextDNS-i kasutamise jätkamiseks <5>vormista tellimus</5>.",
-        "overQuota": "Oled sel kuul teinud rohkem kui {{queriesQuota, number}} päringut. Selle tõttu on kõik funktsioonid keelatud. NextDNS-i kasutamise jätkamiseks <3>vormista tellimus</3>."
-    },
-    "account": {
-        "email": "E-post",
-        "newEmail": "Uus e-post",
-        "password": "Parool",
-        "newPassword": "Uus parool",
-        "currentPassword": "Praegune parool",
-        "forgotPassword": "Unustasid parooli?",
-        "savePassword": "Salvesta parool",
-        "passwordResetInfo": "Sisesta oma e-posti aadress ning me saadame sellele parooli lähtestamise lingi.",
-        "sendEmail": "Saada e-post",
-        "passwordResetLinkSentMessage": "Parooli lähtestamise link saadeti aadressile <1>{{email}}</1>.",
-        "code": "2FA kood",
-        "login": "Logi sisse",
-        "noAccountYet": "Sul pole veel kontot? <1>Registreeru</1>",
-        "signup": "Registreeru",
-        "alreadyHaveAnAccount": "Sul on juba konto? <1>Logi sisse</1>",
-        "convertingNotice": "Oled muutmas ajutist kontot tavaliseks kontoks. Kõik seadistused kantakse üle.",
-        "convertingDeviceOnlyNotice": "Muudate ainult seadmele mõeldud konto täisväärtuslikuks kontoks, kõik teie seaded salvestatakse.",
-        "logout": "Logi välja",
-        "errors": {
-            "email": {
-                "required": "Sisesta e-posti aadress.",
-                "invalid": "Palun sisesta korrektne e-posti aadress.",
-                "taken": "Seda e-posti aadressi on juba kasutatud."
-            },
-            "password": {
-                "required": "Sisesta parool.",
-                "invalidCombination": "Vale e-post või parool."
-            },
-            "currentPassword": {
-                "required": "Sisesta oma praegune parool.",
-                "incorrect": "Sisestatud parool on vale."
-            },
-            "code": {
-                "required": "Sisesta 2FA kood.",
-                "invalid": "Sisesta 6-kohaline kood.",
-                "incorrect": "Vale 2FA kood."
-            },
-            "resetPasswordToken": {
-                "invalid": "Kehtetu või aegunud luba."
-            }
-        },
-        "affiliation": {
-            "name": "Kaasturundus",
-            "description": "Aita meil sõna levitada! Jaga linki <1>{{link}}</1> ja saa <5>{{months, number}} kuu jooksul</5><3>{{share, percentage}}</3> kõigist tellimustest.",
-            "balance": {
-                "name": "Jääk"
-            },
-            "availableBalance": {
-                "name": "Kasutatav jääk",
-                "description": "Väljamakseid saab teha kuu aja pärast. Selle tingib asjaolu, et tellijad võivad selle aja sees raha tagasi küsida."
-            },
-            "payout": {
-                "button": "Maksa välja",
-                "minimum": "Väljamaksete tegemiseks peab minimaalne jääk olema vähemalt {{amount, price}}.",
-                "form": {
-                    "paypalEmail": "PayPali e-posti aadress",
-                    "errors": {
-                        "paypalEmail": {
-                            "required": "Palun sisesta oma PayPali e-posti aadress.",
-                            "invalid": "Palun sisesta korrektne PayPali e-posti aadress."
-                        }
-                    }
-                }
-            }
-        },
-        "usage": {
-            "name": "Tasuta kasutamine",
-            "description": "NextDNS-i platvorm pakub tasuta kasutamiseks kuni {{queries, number}} päringut iga kuu. Pärast limiidi täitumist lülitatakse kõik funktsioonid kuni järgmise kuuni ajutiselt välja.",
-            "queries": "<0>{{current, number}}</0><1> / {{quota, number}} päringut</1>",
-            "overQuota": {
-                "message": "Oled sel kuul teinud rohkem kui {{queries, number}} päringut.",
-                "info": "NextDNS jätkab DNS-i päringutele vastamist, kuid kõik funktsioonid on kuni järgmise kuuni ajutiselt välja lülitatud."
-            },
-            "subscribe": {
-                "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
-                "upsell": "Eemalda limiit ja naudi piiramatult päringuid. Alates {{amount, price}}/kuu."
-            }
-        },
-        "subscription": {
-            "name": "Tellimus",
-            "plans": {
-                "pro": "Pro",
-                "business": "Äri",
-                "education": "Haridus"
-            },
-            "intervals": {
-                "month": "igakuine",
-                "year": "aastane"
-            },
-            "per": {
-                "month": "kuus",
-                "year": "aastas"
-            },
-            "units": {
-                "business_one": "{{count, number}} töötaja",
-                "business_other": "{{count, number}} töötajat",
-                "education_one": "{{count, number}} õpilane",
-                "education_other": "{{count, number}} õpilast"
-            },
-            "planFull": "{{plan}} ({{interval}})",
-            "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
-            "expires": "Tellimus aegub {{date, LL}}.",
-            "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
-            "manageOnApple": "Manage subscription on Apple",
-            "restart": {
-                "button": "Alusta uue tellimusega"
-            },
-            "changePlan": {
-                "button": "Paketi muutmine"
-            },
-            "renewal": "Järgmine automaatne makse toimub summas {{amount, price}}, kuupäeval {{date, LL}}.",
-            "changePaymentMethod": {
-                "button": "Makseviisi muutmine"
-            },
-            "cancel": {
-                "button": "Tühista tellimus",
-                "confirm": {
-                    "text": "Praegune tellimus kehtib kuni {{date, LL}}.",
-                    "submit": "Tühista tellimus"
-                }
-            },
-            "subscribe": {
-                "choosePlan": "Vali pakett",
-                "addPaymentMethod": "Lisa makseviis",
-                "included": "Kõik paketid sisaldavad <1> juurdepääsu kõikidele funktsioonidele </1>, <3> piiramatul arvul seadmeid </3> ja <5> piiramatul arvul päringuid </5>.",
-                "savings": "{{percent, percentage}} odavam võrreldes igakuiste maksetega",
-                "familyOnly": "* Pro paketid on mõeldud ainult isiklikuks (ja perega) kasutamiseks.",
-                "unitsQuestion": {
-                    "business": "Mitu <1>töötajat</1> ettevõttes töötab?",
-                    "education": "Mitu <1>õpilast</1> koolis õpib?"
-                },
-                "asYouGrow": {
-                    "business": "* Ära unusta oma paketti värskendamist, kui töötajate arv kasvab.",
-                    "education": "* Ära unusta oma paketti värskendamist, kui õpilaste arv kasvab."
-                },
-                "starting": {
-                    "business": "<0>Alates </0><1>{{price, price}}</1><2>/kuus {{units, number}} töötajale</2>",
-                    "education": "<0>Alates </0><1>{{price, price}}</1><2>/kuus {{units, number}} õpilasele</2>"
-                },
-                "card": {
-                    "number": "Kaardi number",
-                    "expiration": "Aegumiskuupäev",
-                    "code": "Turvakood",
-                    "stripe": "Me kasutame kaardimaksete turvaliseks töötlemiseks Stripe'i. Tegemist on maailma ühe juhtiva makseteenuse pakkujaga."
-                },
-                "paypal": {
-                    "text": "Tellimimaks läbi PayPali, vajuta nupule „Ava PayPal“."
-                },
-                "bitpay": {
-                    "text": "Tellimimaks läbi krüptoraha, vajuta nupule „Ava BitPay“.",
-                    "toYearly": "Me ei aktsepteeri krüptoraha makseid igakuiste maksete näol. <1> Jätkates lülitatakse tellimise periood automaatselt ümber aastasele paketile. </1>",
-                    "remainder": "Praeguse tellimuse eest on juba tasutud kuupäevani {{date, LL}}. Järgnevalt toimub makse ning allesjäänud aeg lisatakse automaatselt uuele aegumiskuupäevale juurde."
-                },
-                "continueTo": "Ava <1> </1>",
-                "unitsLabel": {
-                    "education": "",
-                    "business": ""
-                }
-            }
-        },
-        "business": {
-            "name": "Äri",
-            "description": "Vajame maksudega seonduvalt ärinime, aadressi ja käibemaksukohustuslase numbrit. Seda nõuab seadus ja see kuvatakse kõikidel arvetel.",
-            "button": {
-                "add": "Lisa ettevõtte andmed",
-                "update": "Uuenda"
-            },
-            "form": {
-                "name": {
-                    "label": "Nimi",
-                    "placeholder": "Firma OÜ.",
-                    "errors": {
-                        "required": "Sisesta ettevõtte nimi."
-                    }
-                },
-                "address": {
-                    "label": "Aadress",
-                    "placeholder": "Lossi plats 1a&#10;Tallinn&#10;Eesti Vabariik",
-                    "errors": {
-                        "required": "Sisesta ettevõtte aadress."
-                    }
-                },
-                "vatNumber": {
-                    "label": "KMKR nr"
-                }
-            }
-        },
-        "invoices": {
-            "name": "Arved",
-            "description": "Sooritatud maksed ja konto arved.",
-            "pending": "{{amount, price}} (Ootel)",
-            "show-more": "Show more",
-            "show-less": "Show less",
-            "invoice": {
-                "title": "Arve nr {{code}}",
-                "to": "Saaja: <1>{{email}}</1>",
-                "vatNumber": "KMKR nr: {{number}}",
-                "columns": {
-                    "plan": "Pakett",
-                    "period": "Periood",
-                    "amount": "Summa"
-                },
-                "vat": "KM ({{rate, percentage}})",
-                "total": "Kokku",
-                "footer": {
-                    "reverseCharged": "KM pöördmaksustamine.",
-                    "currency": "Kõik kuvatud summad on vääringus {{code}}."
-                }
-            }
-        },
-        "changeEmail": {
-            "name": "E-post",
-            "description": "Muuda e-posti aadressi, mida kasutad kontosse logimiseks ja kriitiliste e-posti teatiste saamiseks.",
-            "button": "Muuda e-posti aadressi"
-        },
-        "changePassword": {
-            "name": "Parool",
-            "description": "Muuda oma kontole parooli. Lisaks küsitakse seda parooli tundlike toimingute tegemisel.",
-            "button": "Muuda parooli"
-        },
-        "2fa": {
-            "name": "Kaheastmeline kinnitamine (2FA)",
-            "description": "Kaheastmeline kinnitamine (2FA) on täiendav turvakiht, mis nõuab kontole sisselogimisel täiendavat, ajapõhist 6-kohalist koodi.",
-            "enabled": "2FA sisselülitatud.",
-            "enable": {
-                "button": "Lülita 2FA sisse",
-                "modal": {
-                    "howto": "Kasuta autentimisrakendust, näiteks <1>Google Authenticator'i</1> või 2FA-d toetavat paroolihaldurit. Saad kas QR-koodi skannida, vajutada sellele, et avada <3>{{otpauth}}</3> või kopeerida ja kleepida oma saladus käsitsi."
-                },
-                "secret": ""
-            },
-            "recovery": {
-                "button": "Taastekoodid",
-                "modal": {
-                    "howto": "Kasuta neid taastekoode oma kontole juurdepääsuks juhul, kui kaotad juurdepääsu oma seadmele. Iga koodi saab kasutada ainult üks kord.",
-                    "download": "Laadi alla",
-                    "regen": "Loo uuesti"
-                }
-            },
-            "disable": {
-                "button": "Lülita 2FA välja"
-            }
-        },
-        "api": {
-            "description": "Create and manage your profiles programmatically. Read the documentation at <1>{{link}}</1>.",
-            "create": {
-                "button": "Generate API key"
-            },
-            "copy": "",
-            "remove": ""
-        },
-        "delete": {
-            "button": "Kustuta konto",
-            "warning": "See kustutab konto ja kõik selles olevad konfiguratsioonid.",
-            "confirm": {
-                "text": "Oled kindel, et soovid oma konto kustutada? Seda toimingut ei saa tagasi võtta!"
-            }
-        },
-        "temporary": {
-            "expired": {
-                "modal": {
-                    "title": "Aegunud",
-                    "text": "Ajutine konto on aegunud. Selleks, et oma seadistused salvestada ja NextDNS-i kasutamist jätkata, loo endale konto. See on tasuta!"
-                }
-            }
-        }
-    },
-    "configurationSelector": {
-        "new": "Uus",
+    "affiliation": {
+      "name": "Kaasturundus",
+      "description": "Aita meil sõna levitada! Jaga linki <1>{{link}}</1> ja saa <5>{{months, number}} kuu jooksul</5><3>{{share, percentage}}</3> kõigist tellimustest.",
+      "balance": {
+        "name": "Jääk"
+      },
+      "availableBalance": {
+        "name": "Kasutatav jääk",
+        "description": "Väljamakseid saab teha kuu aja pärast. Selle tingib asjaolu, et tellijad võivad selle aja sees raha tagasi küsida."
+      },
+      "payout": {
+        "button": "Maksa välja",
+        "minimum": "Väljamaksete tegemiseks peab minimaalne jääk olema vähemalt {{amount, price}}.",
         "form": {
-            "title": "Uus konfiguratsioon",
-            "name": {
-                "label": "Nimi",
-                "placeholder": "Kodu, lapsed, kontor, ...",
-                "errors": {
-                    "required": "Palun sisesta nimi.",
-                    "taken": "Selle nimega konfiguratsioon on juba olemas."
-                }
+          "paypalEmail": "PayPali e-posti aadress",
+          "errors": {
+            "paypalEmail": {
+              "required": "Palun sisesta oma PayPali e-posti aadress.",
+              "invalid": "Palun sisesta korrektne PayPali e-posti aadress."
             }
+          }
         }
+      }
     },
-    "setup": {
-        "status": {
-            "ok": {
-                "primary": "Kõik on hästi!",
-                "secondary": "Seade kasutab NextDNS-i (selle konfiguratsiooniga)."
-            },
-            "mismatch": {
-                "withoutConfiguration": {
-                    "primary": "Seade kasutab NextDNS-i (ilma konfiguratsioonita).",
-                    "secondary": {
-                        "clients": "Veendu, et kasutad rakenduse seadetes allpool kuvatud konfiguratsiooni ID-d.",
-                        "firefox": "Veendu, et oled Firefoxis määranud allpool kuvatud DNS-over-HTTPS kirje.",
-                        "doh": "Veendu, et kasutad allpool kuvatud DNS-over-HTTPS kirjet.",
-                        "dot": "Veendu, et kasutad allpool kuvatud DNS-over-TLS kirjed.",
-                        "ipv6": "Veendu, et kasutad allpool kuvatud IPv6 aadresse.",
-                        "servers": "Veendu, et kasutad allpool näidatud „Seotud IP“ jaotises olevaid DNS-servereid (DNS-serverid muutuvad konfiguratsioonide vahel).",
-                        "link": "Veendu, et oled oma IP-aadressi allpool olevas jaotises „Seotud IP“ sidunud."
-                    }
-                },
-                "withConfiguration": {
-                    "primary": "See seade kasutab teistsuguse konfiguratsiooniga NextDNS-i.",
-                    "secondary": {
-                        "sameAccount": "Seade kasutab hetkel „{{name}}“.",
-                        "otherAccount": "Veendu, et kasutad ühte sellel lehel loetletud lõpp-punkti."
-                    }
-                }
-            },
-            "unconfigured": {
-                "primary": "See seade ei kasuta NextDNS-i.",
-                "secondary": "See seade kasutab hetkel „{{resolver}}” DNS-i."
-            },
-            "error": {
-                "primary": "Oleku kontrollimisel ilmnes viga.",
-                "secondary": "Võta meiega ühendust, kui see probleem püsib pärast lehe värskendamist."
-            },
-            "apr": {
-                "ok": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay",
-                    "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
-                },
-                "blockpage": {
-                    "primary": "This device is using NextDNS with iCloud Private Relay.",
-                    "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
-                }
-            }
-        },
-        "endpoints": {
-            "name": "Lõpp-punktid",
-            "description": "Kasutamaks NextDNS-i selle konfiguratsiooniga, vali üks alloleva lõpp-punkti.",
-            "help": "Sa pole kindel, kuidas neid kasutada? Vaata meie <1>häälestusjuhendit</1>."
-        },
-        "linkedIp": {
-            "name": "Seotud IP",
-            "description": "Kui NextDNS-i kasutamine ei ole võimalik läbi meie rakenduste, DNS-over-TLS, DNS-over-HTTPS või IPv6 abil, siis kasuta allolevaid DNS-servereid ja seo oma IP aadress. See sobib enamasti kasutamiseks koduvõrkudes ning pole soovitatav mobiilseadmetes kasutamiseks.",
-            "servers": {
-                "name": "DNS serverid"
-            },
-            "ip": {
-                "name": "Seotav IP",
-                "link": "Seo IP"
-            },
-            "showAdvanced": "Kuva rohkem valikud",
-            "ddns": {
-                "explanation": "Seotud IP-de automaatseks värskendamiseks saab kasutada Dünaamilist DNS-i (DDNS).",
-                "set": "Konfigureeri DDNS",
-                "status": "Kasutad praegu <1>{{hostname}}</1> DDNS-i hosti nimena. IP-d värskendatakse automaatselt iga minuti järel.",
-                "unset": "Eemalda",
-                "form": {
-                    "hostname": {
-                        "label": "DDNS-i hosti nimi",
-                        "placeholder": "example.no-ip.org",
-                        "errors": {
-                            "required": "Palun sisesta hosti nimi.",
-                            "invalid": "Palun sisesta kehtiv hosti nimi.",
-                            "ip": "Palun sisesta hosti nimi, mitte IP-aadress.",
-                            "error": "Selle hosti nime IP-aadressi hankimisel ilmnes viga.",
-                            "empty": "See hosti nimi ei tagasta ühtegi IP-aadressi.",
-                            "different": "Turvalisuse huvides peaks dünaamilise DNS-i lisamisel olema DDNS-i host inime tagastatud IP-aadress sama, mis sinu praegune IP-aadress."
-                        }
-                    }
-                }
-            },
-            "programmatically": "Samuti saab seotud IP-d programmiliselt värskendada, andes käsu:"
-        },
-        "guide": {
-            "name": "Häälestusjuhend",
-            "description": "Järgi allolevaid juhiseid, et seadistada NextDNS oma seadmes, brauseris või ruuteris.",
-            "or": "Või",
-            "ipv4": {
-                "title": "IPv4 (lingitud IP-ga)"
-            },
-            "ipv6": {
-                "supported": "Sinu võrk toetab IPv6-d",
-                "notSupported": "Sinu võrk ei toeta IPv6-d"
-            },
-            "tags": {
-                "recommended": "Soovitatav",
-                "advanced": "Edasijõudnutele"
-            },
-            "use": "Kasuta failis <1>{{file}}</1> järgnevaid andmeid:",
-            "platforms": {
-                "android": {
-                    "name": "Android",
-                    "guides": {
-                        "private": {
-                            "title": "Privaatne DNS",
-                            "requirements": "Android 9 või uuem",
-                            "steps": {
-                                "1": "1. Vali Seaded → Ühendused → Veel ühendusseadeid→ Privaatne DNS.",
-                                "2": "2. Vali suvand „Privaatse DNS-i pakkuja hosti nimi“.",
-                                "3": "3. Sisesta <1>{{endpoint}}</1> ja vajuta Salvesta."
-                            }
-                        }
-                    }
-                },
-                "ios": {
-                    "name": "iOS",
-                    "guides": {
-                        "profile": {
-                            "title": "Konfiguratsiooniprofiil",
-                            "requirements": "iOS 14 või uuem",
-                            "step": "Kasutage meie Apple'i konfiguratsiooniprofiili generaatorit, mis on saadaval aadressil  <1>{{link}}</1>."
-                        },
-                        "app": {
-                            "title": "NextDNS iOS-ile",
-                            "qrTextIos": "",
-                            "qrAlt": "",
-                            "qrText": ""
-                        }
-                    }
-                },
-                "windows": {
-                    "name": "Windows",
-                    "guides": {
-                        "dns-over-https": {
-                            "title": "DNS HTTPS-i kaudu",
-                            "requirements": "Windows 11",
-                            "steps": [
-                                "Avage rakendus Seaded.",
-                                "Avage <1>Võrk ja internet</1>.",
-                                "Klõpsake <1>Wi-Fi</1> (või <3>Ethernet</3>).",
-                                "Klõpsake <1>Riistvara atribuudid</1> või ignoreerige seda sammu, kui klõpsasite <3>Ethernet</3>.",
-                                "Klõpsake nuppu <1>Muuda</1> <3>DNS-serveri määramise kõrval</3>.",
-                                "Valige <1>Käsitsi</1>.",
-                                "Luba <1>IPv{{version}}</1>.",
-                                "Sisestage <1>{{ip}}</1> kui <3>Eelistatud DNS</3>, seejärel valige <5>Sees (käsitsi mall)</5> ja sisestage <7>{{endpoint}}</7>.",
-                                "Enter <1>{{ip}}</1> as <3>Alternate DNS</3>, then select <5>On (manual template)</5> and enter <7>{{endpoint}}</7>.",
-                                "Klõpsake käsul <1>Salvesta</1>."
-                            ]
-                        },
-                        "app": {
-                            "title": "NextDNS Windowsile",
-                            "steps": {
-                                "1": "1. Laadi paigaldusprogramm alla <1>siit</1>.",
-                                "2": "2. Pärast paigaldamist tee parem klikk NextDNS-i Süsteemisalve ikoonil ning ava Seaded. Seejärel määra konfiguratsiooni ID-na <1>{{id}}</1>.",
-                                "3": "3. Tee parem klikk Süsteemisalve ikoonil NextDNS ning kliki nupul Lülita sisse."
-                            }
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Kliki Start menüül ja vali Juhtpaneel.",
-                                "2": "2. Kliki „Võrk ja internet“, seejärel vali „Võrk- ja ühiskasutuskeskus“.",
-                                "3": "3. Kliki vasakul olevale „Muuda adapteri sätteid“ nupule.",
-                                "4": "4. Tee paremklikk WiFi võrgul, millega oled ühendatud ja seejärel vali „Atribuudid“.",
-                                "5": "5. Vali „Interneti-protokolli versioon {{version}}“.",
-                                "6": "6. Kliki „Atribuudid“.",
-                                "7": "7. Kliki „Kasuta järgmisi DNS-serveri aadresse“.",
-                                "8": "8. Asenda olemas olevad aadressid (kui neid on) väärtustega <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
-                                "9": "9. Kliki nuppu „OK“ ja seejärel „Sule“. Võimalik, et pead seadete jõustamiseks brauseri taaskäivitama."
-                            }
-                        },
-                        "yoga": {
-                            "steps": {
-                                "1": "1. Paigalda YogaDNS aadressilt <1>{{link}}</1>.",
-                                "2": "2. Järgi juhiseid aadressil <1>{{link}}</1> ja kasuta konfiguratsiooni ID-na <3>{{id}}</3>."
-                            }
-                        }
-                    }
-                },
-                "macos": {
-                    "name": "macOS",
-                    "guides": {
-                        "app": {
-                            "title": "NextDNS macOS-i jaoks",
-                            "steps": {
-                                "1": "1. Paigalda meie ametlik rakendus Maci App Store'ist.",
-                                "2": "2. Kliki rakenduse olekuriba „Preferences“ ja liigu vahekaardile „Configuration“.",
-                                "3": "3. Märgista valik „Use Custom Configuration“ ja sisesta konfiguratsiooni ID-na <1>{{id}}</1>."
-                            }
-                        },
-                        "profile": {
-                            "requirements": "macOS Big Sur või kõrgem"
-                        },
-                        "ip": {
-                            "steps": {
-                                "1": "1. Ava „System Preferences“, seejärel kliki valikul „Network“.",
-                                "2": "2. Vali võrk, millega oled ühendatud ning kliki valikul „Advanced“.",
-                                "3": "3. Mine jaotisse DNS.",
-                                "4": "4. Eemalda loendist „DNS Servers“ kõik aadressid (kui neid on) ja lisa seejärel <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
-                                "5": "5. Kliki „OK“, seejärel kliki nupul „Apply“."
-                            }
-                        },
-                        "cli": {
-                            "title": "NextDNS-i käsurea klient (Command-Line Client)",
-                            "steps": {
-                                "1": "1. Käivita järgmine käsk: <1>{{command}}</1>",
-                                "2": "2. Järgi juhiseid."
-                            },
-                            "manual": "Käsitsi paigaldamise juhiste jaoks ava meie avatud lähtekoodi varamu: <1>{{link}}</1>."
-                        }
-                    }
-                },
-                "linux": {
-                    "name": "Linux",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS-i käsurea klient (Command-Line Client)",
-                            "steps": {
-                                "1": "1. Käivita järgmine käsk: <1>{{command}}</1>",
-                                "2": "2. Järgi juhiseid."
-                            },
-                            "manual": "Käsitsi paigaldamise juhiste jaoks ava meie avatud lähtekoodi varamu: <1>{{link}}</1>."
-                        },
-                        "ip": {
-                            "step": "Muuda DNS-serveri väärtusteks <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
-                        },
-                        "stubby": {
-                            "warning": "Veendu, et Stubby on lingitud <1>OpenSSL versioon 1.1.1 või uuemaga</1>, sest eelmised versioonid ei tööta NextDNS-iga."
-                        },
-                        "unbound": {
-                            "warning": "Rekursiivse lahendajana ajab Unbound taga CNAME-sid. See võib põhjustada <1>ettearvamatut käitumist</1> kui seda kasutatakse koos blokeeriva DNS-lahendusega nagu NextDNS. Vaata lähemalt <3>{{link}}</3>."
-                        }
-                    }
-                },
-                "chromeos": {
-                    "name": "Chrome OS",
-                    "guides": {
-                        "secure-dns": {
-                            "title": "Turvaline DNS",
-                            "steps": [
-                                "Avage rakendus <1>Seaded</1>.",
-                                "Avage jaotis <1>Turvalisus ja privaatsus</1>.",
-                                "Lubage <1>Kasuta turvalist DNS-i</1>.",
-                                "Valige <1>Kohandatud: kohandatud</1>, seejärel sisestage <3>{{endpoint}}</3>."
-                            ]
-                        },
-                        "ip": {
-                            "step": "Muuda DNS-serveri väärtusteks <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
-                        }
-                    }
-                },
-                "browsers": {
-                    "name": "Brauserid",
-                    "guides": {
-                        "chrome": {
-                            "title": "Google Chrome",
-                            "steps": {
-                                "1": "1. Ava menüü „Seaded“.",
-                                "2": "2. Klõpsake jaotises Privaatsus ja turvalisus valikut Turvalisus.",
-                                "3": "3. Jaotises Täpsem lubage Kasuta turvalist DNS-i.",
-                                "4": "4. Valige With: Custom, seejärel sisestage <1>{{endpoint}}</1> ."
-                            }
-                        },
-                        "firefox": {
-                            "title": "Firefox",
-                            "requirements": "Ainult Windowsis, macOSis ja Linuxis",
-                            "steps": {
-                                "1": "1. Open Preferences.",
-                                "2": "2. Click Privacy & Security.",
-                                "3": "3. Scroll down to Enable DNS over HTTPS.",
-                                "4": "4. Choose Increased Protection or Max Protection.",
-                                "5": "5. Select Custom in the menu.",
-                                "6": "6. Enter <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "edge": {
-                            "title": "Microsoft edge",
-                            "steps": {
-                                "1": "Avage Seaded.",
-                                "2": "Mine lehele Privaatsus, otsing, ja teenused osa.",
-                                "3": "Turvalisuse all luba Kasuta turvalist DNS-i  täpsustada kuidas otsida veebisaitide võrguaadresse.",
-                                "4": "Valige Vali teenusepakkuja seejärel sisestage <1>{{endpoint}}</1>."
-                            }
-                        },
-                        "brave": {
-                            "title": "Brave",
-                            "steps": {
-                                "1": "Avage Seaded",
-                                "2": "Jaotises Privaatsus ja turvalisus (jaotises Täiendavad sätted), klõpsake nuppu Turvalisus",
-                                "3": "Jaotises Täpsemalt luba Kasuta turvalist dns",
-                                "4": "Valige Koos: Kohandatud, seejärel sisestage <1>{{endpoint}}</1>."
-                            }
-                        }
-                    }
-                },
-                "routers": {
-                    "name": "Ruuterid",
-                    "guides": {
-                        "cli": {
-                            "title": "NextDNS ruuteritele",
-                            "requirements": "Töötab ainult ruuterites, mis võivad käitada käivitatavaid faile",
-                            "step": "Paigaldamise juhiste jaoks ava meie avatud lähtekoodi varamu: <1>{{link}}</1>."
-                        },
-                        "ip": {
-                            "ipv6": {
-                                "warning": "Mõni ruuter ei pruugi ülaltoodud IPv6 tähistust toetada. Sel juhul kasuta <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
-                            },
-                            "steps": {
-                                "1": "1. Avage ruuteri seadistuspaneel. Tavaliselt pääseb sellele ligi brauserist, kasutades selleks ruuteri URL-i (nt http://192.168.0.1/ või http://192.168.1.1/).",
-                                "2": "2. Leia üles DNS-i seaded.",
-                                "3": "3. Eemalda kõik aadressid (kui neid on) ja asenda need väärtustega <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
-                                "4": "4. Kliki nupul „Save“ (või sarnasel nupul)."
-                            }
-                        },
-                        "pfsense": {
-                            "steps": {
-                                "1": "1. Ava „Services → DNS Resolver“ ja keri vahekaardil „General Settings“ alla, kuniks näed „Custom Options“ kastikest.",
-                                "2": "2. Sisesta järgmised read:"
-                            }
-                        },
-                        "mikrotik": {
-                            "run": "Käivita järgmised käsud:"
-                        }
-                    }
-                },
-                "vpn": {
-                    "guides": {
-                        "tailscale": {
-                            "manual": "Minge üle Tailscale dokumentatsiooni juurde aadressil <2>{{link}}</2> seadistamisjuhiste saamiseks."
-                        }
-                    }
-                }
-            }
-        },
-        "identify": {
-            "name": "Tuvasta oma seadmed",
-            "description": "Oma seadmete tuvastamiseks menüüdes „Analüütika“ ja „Logid“ järgi allolevaid juhiseid.",
-            "apps": {
-                "name": "Rakenduse kasutamisel",
-                "instructions": "Luba rakenduse seadetes valik „Saada seadme nimi”."
-            },
-            "dot": {
-                "instructions": "Lisa domeenile juurde nimi (nimi peab sisaldama ainult <1> az </1>, <3> Az </3>, <5> 0-9 </5> ja <7> - </7>). Tühiku jaoks kasuta <9> - </9>.",
-                "example": "Näiteks „<1>Ema telefon</1>“ jaoks kasuta DNS-over-TLS korral domeeni: <3>Ema--telefon-{{configuration}}.dns.nextdns.io </3>."
-            },
-            "doh": {
-                "instructions": "Lisa nimi URL-i lõppu (nimi peaks olema URL-i lõpus).",
-                "example": "Näiteks „<1>Ema Firefox</1>“ jaoks kasuta DNS-over-HTTPS korral: <3>https://dns.nextdns.io/{{configuration}}/Ema%20Firefox</3>."
-            }
+    "usage": {
+      "name": "Tasuta kasutamine",
+      "description": "NextDNS-i platvorm pakub tasuta kasutamiseks kuni {{queries, number}} päringut iga kuu. Pärast limiidi täitumist lülitatakse kõik funktsioonid kuni järgmise kuuni ajutiselt välja.",
+      "queries": "<0>{{current, number}}</0><1> / {{quota, number}} päringut</1>",
+      "overQuota": {
+        "message": "Oled sel kuul teinud rohkem kui {{queries, number}} päringut.",
+        "info": "NextDNS jätkab DNS-i päringutele vastamist, kuid kõik funktsioonid on kuni järgmise kuuni ajutiselt välja lülitatud."
+      },
+      "subscribe": {
+        "ios": "To subscribe to the service, go to my.nextdns.io in your browser.",
+        "upsell": "Eemalda limiit ja naudi piiramatult päringuid. Alates {{amount, price}}/kuu."
+      }
+    },
+    "subscription": {
+      "name": "Tellimus",
+      "plans": {
+        "pro": "Pro",
+        "business": "Äri",
+        "education": "Haridus"
+      },
+      "intervals": {
+        "month": "igakuine",
+        "year": "aastane"
+      },
+      "per": {
+        "month": "kuus",
+        "year": "aastas"
+      },
+      "units": {
+        "business_one": "{{count, number}} töötaja",
+        "business_other": "{{count, number}} töötajat",
+        "education_one": "{{count, number}} õpilane",
+        "education_other": "{{count, number}} õpilast"
+      },
+      "planFull": "{{plan}} ({{interval}})",
+      "planFullWithUnits": "{{plan}} ({{units}}, {{interval}})",
+      "expires": "Tellimus aegub {{date, LL}}.",
+      "managedByApple": "Your subscription is managed through your Apple ID. To change or cancel it, please use Apple's subscription settings.",
+      "manageOnApple": "Manage subscription on Apple",
+      "restart": {
+        "button": "Alusta uue tellimusega"
+      },
+      "changePlan": {
+        "button": "Paketi muutmine"
+      },
+      "renewal": "Järgmine automaatne makse toimub summas {{amount, price}}, kuupäeval {{date, LL}}.",
+      "changePaymentMethod": {
+        "button": "Makseviisi muutmine"
+      },
+      "cancel": {
+        "button": "Tühista tellimus",
+        "confirm": {
+          "text": "Praegune tellimus kehtib kuni {{date, LL}}.",
+          "submit": "Tühista tellimus"
         }
+      },
+      "subscribe": {
+        "choosePlan": "Vali pakett",
+        "addPaymentMethod": "Lisa makseviis",
+        "included": "Kõik paketid sisaldavad <1> juurdepääsu kõikidele funktsioonidele </1>, <3> piiramatul arvul seadmeid </3> ja <5> piiramatul arvul päringuid </5>.",
+        "savings": "{{percent, percentage}} odavam võrreldes igakuiste maksetega",
+        "familyOnly": "* Pro paketid on mõeldud ainult isiklikuks (ja perega) kasutamiseks.",
+        "unitsQuestion": {
+          "business": "Mitu <1>töötajat</1> ettevõttes töötab?",
+          "education": "Mitu <1>õpilast</1> koolis õpib?"
+        },
+        "asYouGrow": {
+          "business": "* Ära unusta oma paketti värskendamist, kui töötajate arv kasvab.",
+          "education": "* Ära unusta oma paketti värskendamist, kui õpilaste arv kasvab."
+        },
+        "starting": {
+          "business": "<0>Alates </0><1>{{price, price}}</1><2>/kuus {{units, number}} töötajale</2>",
+          "education": "<0>Alates </0><1>{{price, price}}</1><2>/kuus {{units, number}} õpilasele</2>"
+        },
+        "card": {
+          "number": "Kaardi number",
+          "expiration": "Aegumiskuupäev",
+          "code": "Turvakood",
+          "stripe": "Me kasutame kaardimaksete turvaliseks töötlemiseks Stripe'i. Tegemist on maailma ühe juhtiva makseteenuse pakkujaga."
+        },
+        "paypal": {
+          "text": "Tellimimaks läbi PayPali, vajuta nupule „Ava PayPal“."
+        },
+        "bitpay": {
+          "text": "Tellimimaks läbi krüptoraha, vajuta nupule „Ava BitPay“.",
+          "toYearly": "Me ei aktsepteeri krüptoraha makseid igakuiste maksete näol. <1> Jätkates lülitatakse tellimise periood automaatselt ümber aastasele paketile. </1>",
+          "remainder": "Praeguse tellimuse eest on juba tasutud kuupäevani {{date, LL}}. Järgnevalt toimub makse ning allesjäänud aeg lisatakse automaatselt uuele aegumiskuupäevale juurde."
+        },
+        "continueTo": "Ava <1> </1>"
+      }
     },
-    "security": {
-        "feeds": {
-            "name": "„Threat Intelligence“ vood",
-            "description": "Blokeerib teadaolevad pahavara levitamise-, andmepüügirünnakute- ning käsu-ja kontrollserverite domeene. Selleks kasutatakse segu kõige mainekamatest ohuteabe voogudest. Ohuteavet värskendatakse reaalajas.",
-            "enable": "Lülita „Threat Intelligence“ vood sisse"
-        },
-        "ai": {
-            "name": "AI-Sõidetud Ohu tuvastamine",
-            "description": "Blokeeri miljoneid ohte meie poolt tuvastatud AI tehnoloogia - varaline AI maapinnast konstrueeritud mootor \neest DNS sadade signaalidega terabaiti treeningandmeid ja reaalajas otsuste langetamist.",
-            "enable": "Luba AI-Sõidetud Ohu tuvastamine"
-        },
-        "googleSafeBrowsing": {
-            "name": "Google'i ohutu sirvimine",
-            "description": "Blokeerige pahavara ja andmepüügidomeenid Google'i turvalise sirvimise abil - tehnoloogia, mis uurib päevas miljardeid URL-e, otsides ohtlikke veebisaite. Erinevalt mõnes brauseris manustatud versioonist ei seota see teie avalikku IP-aadressi ohtudega ega võimalda blokeerimisest mööda minna.",
-            "enable": "Luba $t(security.googleSafeBrowsing.name)"
-        },
-        "cryptojacking": {
-            "name": "Krüptojacking kaitse",
-            "description": "Vältige oma seadmete loata kasutamist krüptoraha kaevandamiseks.",
-            "enable": "Luba $t(security.cryptojacking.name)"
-        },
-        "dnsRebinding": {
-            "name": "DNS Rebinding Protection",
-            "description": "Takistage ründajatel Interneti kaudu teie kohalike seadmete juhtimist, blokeerides automaatselt privaatseid IP-aadresse sisaldavad DNS-vastused.",
-            "enable": "Luba $t(security.dnsRebinding.name)"
-        },
-        "homograph": {
-            "name": "IDN-i homograafi rünnakute kaitse",
-            "description": "Blokeerige domeenid, kes esinevad teistena domeenidena, kuritarvitades rahvusvaheliste domeeninimede (IDN) saabumisel kättesaadavaks tehtud suurt märgistikku - nt asendades ladina tähe \"e\" kirillitsa tähega \"е\".",
-            "enable": "Tähekombinatsioonide ärakasutamise vastane kaitse"
-        },
-        "typosquatting": {
-            "name": "Kirjavigade vastane kaitse",
-            "description": "Blokeerib pahatahtlike inimeste registreeritud domeene, mis sihivad kasutajaid, kes sisestavad kogemata vale veebisaidi aadressi - nt google.com asemel gooogle.com.",
-            "enable": "Lülita Kirjavigade vastane kaitse sisse"
-        },
-        "dga": {
-            "name": "Domeeni genereerimise algoritmide (DGA) kaitse",
-            "description": "Blokeerib Domeenide genereerimise algoritmide (DGA) poolt genereeritud domeene, mida näeb erinevates pahavara perekondades ja mida saab kasutada nende käsu- ja juhtserveritena.",
-            "enable": "Lülita DGA kaitse sisse"
-        },
-        "nrd": {
-            "name": "Värskelt registreeritud domeenide (NRD) blokeerimine",
-            "description": "Blokeerib vähem kui 30 päeva tagasi registreeritud domeene. Reeglina eelistavad küberrünnakuid tegevad inimesed just neid domeene pahatahtlike kampaaniate käivitamiseks ära kasutada.",
-            "enable": "Blokeeri Värskelt registreeritud domeene (NRD)"
-        },
-        "ddns": {
-            "name": "Blokeerige dünaamilised DNS-i hostinimed",
-            "description": "Dünaamilised DNS-i (või DDNS-i) teenused võimaldavad pahatahtlikel osalejatel kiiresti tasuta ja ilma valideerimise või identiteedi kinnitamiseta hostinimesid seadistada. Kuigi legitiimsetele DDNS-i hostinimedele pääsetakse igapäevases kasutuses harva juurde, kasutatakse nende pahatahtlikke vasteid andmepüügikampaaniates palju – nt paypal-login.duckdns.org.",
-            "disclaimer": "Kui kasutate DDNS-i, pange tähele, et see säte ei blokeeri DDNS-teenuste enda veebisaiti ega nende värskenduse API-t.",
-            "enable": "Blokeerige dünaamilised DNS-i hostinimed"
-        },
-        "parked": {
-            "name": "Pargitud domeenide blokeerimine",
-            "description": "Pargitud domeenid on ühe lehega veebisaidid, mis on sageli reklaamidega koormatud ja millel puudub igasugune väärtus või otstarve. Pargitud domeeniga raha tegemine võib mõnikord seostuda kahtlaste tavade ja pahatahtliku sisuga.",
-            "enable": "Blokeeri Pargitud domeenid"
-        },
-        "tld": {
-            "name": "Blokeeri tippdomeenid (TLD)",
-            "description": "Blokeerib kõik konkreetsetele TLD-le kuuluvad domeenid ja alamdomeenid.",
-            "add": "TLD lisamine",
-            "sections": {
-                "spamhaus": "Spamhous'i poolt kirja pandud TLD-d",
-                "all": "Kõik TLD-d"
-            }
-        },
-        "csam": {
-            "name": "Blokeeri laste seksuaalse väärkohtlemise materjale",
-            "description": "Blokeerib lapse seksuaalse väärkohtlemise materjale majutavad domeenid Kanada lastekaitsekeskuse hallatava Project Arachnid abil. Domeeni blokeerimise korral ei edastata teavet Project Arachnidile.",
-            "enable": "Blokeeri laste seksuaalse väärkohtlemise materjale"
-        },
-        "freeHostingDomains": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "untrustedCertificates": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "tunnelingEndpoints": {
-            "description": "",
-            "name": "",
-            "enable": ""
-        },
-        "dnsPayloadDelivery": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "decentralizedWebGateways": {
-            "name": "",
-            "description": "",
-            "enable": ""
-        },
-        "dataDropServices": {
-            "enable": "",
-            "description": "",
-            "name": ""
-        },
-        "newlyActiveDomains": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "fastFluxNetworks": {
-            "enable": "",
-            "name": "",
-            "description": ""
-        },
-        "highRiskTlds": {
-            "name": "",
-            "enable": "",
-            "description": ""
-        },
-        "residentialHosting": {
-            "description": "",
-            "enable": "",
-            "name": ""
-        },
-        "dnsDataExfiltration": {
-            "description": "",
-            "name": "",
-            "enable": ""
-        }
-    },
-    "privacy": {
-        "blocklists": {
-            "name": "Blokeerimisloendid",
-            "description": "Blokeeri reklaame ja jälitajaid, kasutades selleks kõige populaarsemaid saadaolevaid blokeerimisloendeid. Neid loendeid värskendatakse reaalajas.",
-            "add": "Blokeerimisloendi lisamine",
-            "updated": "Värskendatud <1>{{ago}}</1>",
-            "blocklists": {
-                "nextdns-recommended": {
-                    "name": "NextDNS-i Reklaamide ja jälitajate vastane blokeerimisloend",
-                    "description": "Põhjalik blokeerimisloend reklaamide ja jälitajate blokeerimiseks kõikides riikides. See on soovitatav blokeerimisloend."
-                }
-            },
-            "sortBy": {
-                "popularity": "Popularity",
-                "name": "Name",
-                "entries": "Entries",
-                "updated": "Recent"
-            },
-            "entries_one": "{{count, number}} kirje",
-            "entries_other": "{{count, number}} kirjed"
-        },
-        "native": {
-            "name": "Päritolu põhine jälitamiskaitse",
-            "description": "Blokeerige laia spektriga jälgijad - mis töötavad sageli operatsioonisüsteemi tasemel - mis jälgivad teie tegevust seadmes. See võib hõlmata kõiki külastatud veebisaite, kõike, mida sisestate, või teie asukohta kogu aeg.",
-            "add": "Lisa",
-            "systems": {
-                "xiaomi": {
-                    "name": "Xiaomi",
-                    "devices": "Telefonid ja tahvelarvutid, nutitelerid, ruuterid"
-                },
-                "huawei": {
-                    "name": "Huawei",
-                    "devices": "Telefonid ja tahvelarvutid"
-                },
-                "samsung": {
-                    "name": "Samsung",
-                    "devices": "Telefonid, tahvelarvutid, nutitelerid"
-                },
-                "alexa": {
-                    "name": "Amazon Alexa",
-                    "devices": "Alexa toega seadmed"
-                },
-                "windows": {
-                    "name": "Windows",
-                    "devices": "Kõik versioonid"
-                },
-                "apple": {
-                    "name": "Apple",
-                    "devices": "iOS, macOS, tvOS"
-                },
-                "roku": {
-                    "name": "Roku",
-                    "devices": "Kõik Roku seadmed"
-                },
-                "sonos": {
-                    "name": "Sonos",
-                    "devices": "Kõlarid"
-                }
-            }
-        },
-        "disguised": {
-            "name": "Blokeeri varjatud kolmanda osapoole jälitajaid",
-            "description": "Tuvastab ja blokeerib automaatselt kolmanda osapoole jälgijad, kes maskeerivad end esimese osapoolena, et mööda hiilida uusimatest brauseri privaatsuse kaitsetest, näiteks ITP-st.",
-            "enable": "Blokeeri varjatud kolmanda osapoole jälitajaid"
-        },
-        "affiliate": {
-            "name": "Luba sidusettevõtte ja jälgimise lingid",
-            "description": "Lubage sidusettevõtete ja jälgimisdomeenid, mis on levinud tehingute veebisaitidel, e-kirjades või otsingutulemites. Neile helistatakse tavaliselt alles pärast lingil käsitsi klõpsamist.",
-            "relay": "Sinu IP-aadress peidetakse automaatselt nendelt veebisaitidelt, et säilitada teie privaatsust.",
-            "enable": "$t(privacy.affiliate.name)"
-        }
-    },
-    "parentalControl": {
-        "services": {
-            "name": "Veebisaidid, rakendused ja mängud",
-            "description": "Piira juurdepääsu kindlatele veebisaitidele, rakendustele ja mängudele.",
-            "add": "Lisa veebisait, rakendus või mäng",
-            "services": {
-                "9gag": "9GAG",
-                "amazon": "Amazon",
-                "bereal": "Ole realistlik",
-                "blizzard": "Blizzard",
-                "chatgpt": "ChatGPT",
-                "dailymotion": "Dailymotion",
-                "discord": "Discord",
-                "disneyplus": "Disney +",
-                "ebay": "eBay",
-                "facebook": "Facebook",
-                "fortnite": "Fortnite",
-                "google-chat": "Google'i vestlus",
-                "hbomax": "HBO Max",
-                "hulu": "Hulu",
-                "imgur": "Imgur",
-                "instagram": "Instagram",
-                "leagueoflegends": "League of Legends",
-                "mastodon": "Mastodon",
-                "messenger": "Messenger",
-                "minecraft": "Minecraft",
-                "netflix": "Netflix",
-                "pinterest": "Pinterest",
-                "playstation-network": "PlayStation Network",
-                "primevideo": "Prime Video",
-                "reddit": "Reddit",
-                "roblox": "Roblox",
-                "signal": "Signal",
-                "skype": "Skype",
-                "snapchat": "Snapchat",
-                "spotify": "Spotify",
-                "steam": "Steam",
-                "telegram": "Telegram",
-                "tiktok": "TikTok",
-                "tinder": "Tinder",
-                "tumblr": "Tumblr",
-                "twitch": "Twitch",
-                "twitter": "Twitter",
-                "vimeo": "Vimeo",
-                "vk": "VK",
-                "whatsapp": "WhatsApp",
-                "xboxlive": "Xbox Live",
-                "youtube": "YouTube",
-                "zoom": "Zoom"
-            }
-        },
-        "categories": {
-            "name": "Kategooriad",
-            "description": "Piira ligipääs teatud kategooria veebisaitidele ja rakendustele.",
-            "add": "Lisa kategooria",
-            "categories": {
-                "dating": {
-                    "name": "Tutvumislehed",
-                    "description": "Blokeerib kõik tutvumisveebisaidid ja -rakendused."
-                },
-                "gambling": {
-                    "name": "Hasartmängud",
-                    "description": "Blokeerib hasartmängude sisu."
-                },
-                "gaming": {
-                    "name": "Online-mängud",
-                    "description": "Blokeerib võrgumängude veebisaidid, võrgumängurakendused ja võrgumänguvõrgud (Xbox Live, PlayStation Network jne)."
-                },
-                "piracy": {
-                    "name": "Piraatlus",
-                    "description": "Blokeerib P2P veebisaidid, protokollid, autoriõigusi rikkuvad voogesitusveebisaidid ja spetsiifilised videohostimise veebisaidid, mida kasutatakse peamiselt autoriõigustega kaitstud sisu ebaseaduslikuks levitamiseks."
-                },
-                "porn": {
-                    "name": "Pornograafia",
-                    "description": "Blokeerib täiskasvanute mõeldud ning pornograafilist sisu. See hõlmab eskortsaite, pornhub.com ja muid sarnaseid domeene."
-                },
-                "social-networks": {
-                    "name": "Sotsiaalvõrgustikud",
-                    "description": "Blokeerib kõik sotsiaalvõrgustike veebisaidid ja rakendused (Facebook, Instagram, TikTok, Reddit jne). Blokeering ei laiene sõnumirakendustele."
-                },
-                "video-streaming": {
-                    "name": "Video voogesitus",
-                    "description": "Blokeerib video voogedastusteenused (YouTube, Netflix, Disney+, ebaseaduslikud voogesituse veebisaidid, videoporno veebisaidid jne) ja videopõhised suhtlusvõrgustikud (TikTok jne). See võib samuti aidata vähendada ribalaiuse kasutamist mis tahes võrgus."
-                }
-            }
-        },
-        "recreation": {
-            "name": "Puhkeaeg",
-            "description": "Määrake periood iga nädalapäeva jaoks mida mõned ülaltoodud veebisaidid, rakendused, mängud või kategooriad ei blokeerita — nt luba FaceBook esmaspäeviti ja teisipäeviti ajavahemikus 18.00 juurde 20.00.",
-            "set": "Määrake puhkeaeg",
-            "howto": "Kasuta <1></1> nuppu ülaltoodud jaotistes puhkeaja lubamiseks.",
-            "end": "",
-            "start": ""
-        },
-        "safesearch": {
-            "name": "Ohutu otsing",
-            "description": "Filtreerib kõikides suuremates otsingumootorites täiskasvanutele mõeldud sisu, sealhulgas pilte ja videoid. Lisaks blokeeritakse juurdepääsu otsingumootoritele, mis sellist funktsiooni ei toeta.",
-            "enable": "Jõusta $t(parentalControl.safesearch.name)"
-        },
-        "youtubeRestricted": {
-            "name": "YouTube'i piiratud režiim",
-            "description": "Filtreerige YouTube'is täiskasvanutele mõeldud videod ja blokeerige manustatud täiskasvanutele mõeldud videote vaatamine muudel veebisaitidel. See peidab ka kõik kommentaarid.",
-            "enable": "Jõusta $t(parentalControl.youtubeRestricted.name)"
-        },
-        "bypass": {
-            "name": "Blokeeri möödaviigu meetodid",
-            "description": "Ennetage või takistage selliste meetodite kasutamist, mis võivad aidata NextDNS-i võrgus filtreerimisest mööda hiilida. See hõlmab VPN-i, puhverservereid, Toriga seotud tarkvara ja krüptitud DNS-i pakkujaid.",
-            "enable": "$t(parentalControl.bypass.name)"
-        }
-    },
-    "xlist": {
-        "placeholder": "Domeeni lisamine ...",
-        "errors": {
-            "required": "Sisesta domeen.",
-            "ip": "Palun sisesta domeen, mitte IP-aadress.",
-            "invalid": "Palun kontrolli domeeni vormingut.",
-            "tld": "Näib, et proovite blokeerida tervet TLD-d. Palun kasutage jaotises Turvalisus Blokeeri TLD-sid.",
-            "exists": "See domeen on juba lisatud."
-        },
-        "empty": "Domeenid puuduvad.",
-        "denylist": {
-            "info": "Domeeni keelamine keelab automaatselt kõik selle alamdomeenid."
-        },
-        "allowlist": {
-            "info": "Domeeni lubamine lubab automaatselt kõik selle alamdomeenid. Lubamine on ülimuslik kõige muu, sealhulgas turvaelementide ees."
-        }
-    },
-    "analytics": {
-        "counters": {
-            "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> nendest on blokeeritud päringuid</1></1>",
-            "all_one": "<0> {{count, number}} </0> <1> päring </1>",
-            "all_other": "<0> {{count, number}} </0> <1> päringut </1>",
-            "blocked_one": "<0> {{count, number}} </0> <1> blokeeritud päring</1>",
-            "blocked_other": "<0> {{count, number}} </0> <1> blokeeritud päringut</1>"
-        },
-        "queries": {
-            "name": "Päringud",
-            "description": "Päringute muutumine ajas.",
-            "queries": {
-                "all_one": "<0> {{count, number}} </0> <1> päring</1>",
-                "all_other": "<0> {{count, number}} </0> <1> päringut</1>",
-                "blocked_one": "<0> {{count, number}} </0> <1> blokeeritud päring</1>",
-                "blocked_other": "<0> {{count, number}} </0> <1> blokeeritud päringut</1>"
-            }
-        },
-        "domains": {
-            "resolved": {
-                "name": "Lahendatud domeenid",
-                "description": "Domeenid, mis lahendati ilma ühegi seadega blokeerimata või seetõttu, et neid lubati käsitsi."
-            },
-            "blocked": {
-                "name": "Blokeeritud domeenid",
-                "description": "Domeenid on blokeeritud turvalisuse, privaatsuse ja / või vanemliku järelevalve seadega või seetõttu, et need keelati käsitsi."
-            },
-            "root": {
-                "name": "Juurdomeenid",
-                "description": "Kõigi juurdomeenide ja nende alamdomeenide kohta tehtud päringute koond."
-            },
-            "empty": "Domeenid puuduvad."
-        },
-        "reasons": {
-            "name": "Blokeeritud põhjused",
-            "description": "Turvalisuse, privaatsuse ja / või vanemliku järelevalve seaded, mis blokeerisid kõige rohkem päringuid.",
-            "empty": "Ühtegi domeeni ei olnud veel blokeeritud."
-        },
-        "devices": {
-            "name": "Seadmed",
-            "description": "Päringuid esitavad seadmed.",
-            "empty": "Seadmeid ei ole veel.",
-            "unidentified": {
-                "name": "Tuvastamata seadmed"
-            }
-        },
-        "ips": {
-            "name": "IP-d",
-            "description": "Päringuid esitavad IP-aadressid.",
-            "empty": "IP-sid pole veel."
-        },
-        "gafam": {
-            "name": "GAFAMi domineerimine",
-            "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple ja Microsoft) on viis domineerivat Interneti-ettevõtet, kellele kuulub palju populaarseid teenuseid, mis tegutsevad sageli erineva nime all, nt WhatsApp ja Instagram for Facebook.",
-            "companies": {
-                "google": {
-                    "name": "Google"
-                },
-                "amazon": {
-                    "name": "Amazon"
-                },
-                "facebook": {
-                    "name": "Facebook"
-                },
-                "apple": {
-                    "name": "Apple"
-                },
-                "microsoft": {
-                    "name": "Microsoft"
-                },
-                "others": {
-                    "name": "Teised"
-                }
-            },
-            "queries_one": "{{count, number}} päring",
-            "queries_other": "{{count, number}} päringut"
-        },
-        "encrypted": {
-            "name": "Krüpteeritud DNS",
-            "description": "Krüpteeritud transpordi (DNS-over-HTTPS, DNS-over-TLS või ametlikud NextDNS-i rakendused) abil tehtud päringute protsent.",
-            "empty": "Päringuid pole veel."
-        },
-        "dnssec": {
-            "name": "DNSSEC",
-            "description": "DNSSEC-iga kinnitatud päringute protsent.",
-            "empty": "Päringuid pole veel."
-        },
-        "destination": {
-            "name": "Võrguliikluse sihtriigid",
-            "description": "Riigid, kuhu võrguliiklus läheb.",
-            "topDomains": "Domeenide TOP",
-            "queries_one": "{{count, number}} päring",
-            "queries_other": "{{count, number}} päringut"
-        }
-    },
-    "logs": {
-        "blockedOnly": "Ainult blokeeritud päringud",
-        "raw": "Toores DNS palgid",
-        "empty": "Logi pole veel tekkinud.",
-        "log": {
-            "actionBlock": "Block",
-            "actionAllow": "Allow",
-            "dnssec": "Kinnitatud DNSSEC-iga.",
-            "clients": {
-                "nextdns-ios": "NextDNS iOS-ile",
-                "nextdns-android": "NextDNS Androidile",
-                "nextdns-macos": "NextDNS macOS-ile",
-                "nextdns-windows": "NextDNS Windowsile",
-                "nextdns-cli": "NextDNS CLI Client",
-                "nextdns-chromeos": "NextDNS Chrome OS-ile",
-                "firefox": "Firefox",
-                "google-chrome": "Google Chrome",
-                "dnscrypt": "DNSCrypt",
-                "intra": "Intra",
-                "surge": "Surge",
-                "https-dns-proxy": "https_dns_proxy",
-                "mikrotik": "Mikrotik",
-                "apple-profile": "Apple Konfiguratsiooniprofiil",
-                "tailscale": "",
-                "yogadns": ""
-            },
-            "blockedBy": "Päringu blokeeris <1>{{lists}}</1>.",
-            "allowedBy": "Päringu lubas <1>{{lists}}</1>.",
-            "manual": {
-                "deny": "Käsitsi keelatud.",
-                "allow": "Käsitsi lubatud."
-            },
-            "insights": {
-                "show": "Kuva Jälitaja üksikasjad",
-                "hide": "Peida Jälitaja üksikasjad",
-                "categories": {
-                    "advertising": {
-                        "description": "Pakub reklaami või reklaamiga seotud teenuseid, nagu andmete kogumine, käitumisanalüüs või uuesti sihtimine."
-                    },
-                    "comments": {
-                        "description": "Lubab artiklite ja toodete ülevaadete kommentaaride jaotised."
-                    },
-                    "customer_interaction": {
-                        "description": "Sisaldab vestlust, e-posti sõnumside, klienditoe ja muid suhtlusvahendeid."
-                    },
-                    "essential": {
-                        "description": "Sisaldab märgendihaldureid, privaatsusteateid ja tehnoloogiaid, mis on veebisaidi funktsionaalsuse jaoks üliolulised."
-                    },
-                    "adult_advertsing": {
-                        "description": "Pakub reklaame, mis ilmuvad tavaliselt täiskasvanutele mõeldud sisusaitidel."
-                    },
-                    "site_analytics": {
-                        "description": "Kogub ja analüüsib saidi kasutamise ja jõudlusega seotud andmeid."
-                    },
-                    "social_media": {
-                        "description": "Integreerib sotsiaalmeedia saitidega seotud funktsioone."
-                    },
-                    "audio_video_player": {
-                        "description": "Võimaldab veebisaitidel video- ja helisisu avaldada, levitada ja optimeerida."
-                    },
-                    "cdn": {
-                        "description": "Sisu edastusvõrk, mis pakub ressursse saidi eri kasutusalade jaoks ja tavaliselt paljude erinevate klientide jaoks."
-                    },
-                    "misc": {
-                        "description": "See jälgija ei sobi teistesse kategooriatesse või pole sellele veel silti lisatud."
-                    },
-                    "pornvertising": {
-                        "description": "Pakub reklaame, mis ilmuvad tavaliselt täiskasvanutele mõeldud sisusaitidel."
-                    },
-                    "hosting": {
-                        "description": "Seda teenust kasutab sisupakkuja või saidi omanik."
-                    },
-                    "extensions": {
-                        "description": "Kasutaja seadmetes olev tarkvara, mis suudab brauseriliiklust pealt vaadata ja analüüsida (mees keskel)."
-                    }
-                },
-                "prevalence": {
-                    "intensity": {
-                        "dangerously": "Ohtlikult levinud",
-                        "extremely": "Äärmiselt levinud",
-                        "very": "Väga levinud",
-                        "commonly": "Üldiselt levinud",
-                        "relatively": "Suhteliselt levinud"
-                    },
-                    "summary": "{{prevalence}} <3> (jälgib {{percent, percentage}} veebiliiklusest) </3>"
-                },
-                "ownedBy": "<0> Omanik </0> <1>{{company}}</1>",
-                "source": "Jälitaja ülevaate allikas"
-            }
-        },
-        "streaming": "",
-        "settings": "",
-        "toggleTimeFormat": ""
-    },
-    "deviceSelector": {
-        "all": "Kõik seadmed",
-        "howto": "Lisateavet seadmete tuvastamise kohta leiad lehelt „Seadistamine“."
-    },
-    "timeRangeSelector": {
-        "ranges": {
-            "30m": "Viimased 30 minutit",
-            "6h": "Viimased 6 tundi",
-            "24h": "Viimased 24 tundi",
-            "7d": "Viimased 7 päeva",
-            "30d": "Viimased 30 päeva",
-            "3M": "Viimased 3 kuud"
-        }
-    },
-    "settings": {
+    "business": {
+      "name": "Äri",
+      "description": "Vajame maksudega seonduvalt ärinime, aadressi ja käibemaksukohustuslase numbrit. Seda nõuab seadus ja see kuvatakse kõikidel arvetel.",
+      "button": {
+        "add": "Lisa ettevõtte andmed",
+        "update": "Uuenda"
+      },
+      "form": {
         "name": {
-            "name": "Nimi",
-            "description": "Vali sellele konfiguratsioonile nimi."
+          "label": "Nimi",
+          "placeholder": "Firma OÜ.",
+          "errors": {
+            "required": "Sisesta ettevõtte nimi."
+          }
         },
-        "logs": {
-            "name": "Logid",
-            "description": "Häälesta logimise seadeid.",
-            "enable": "Lülita logimine sisse",
-            "privacy": {
-                "name": "Privaatsuse häälestamine",
-                "ip": "Logi seadmete IP-d",
-                "domains": "Logi domeenid"
-            },
-            "retention": {
-                "name": "Säilitamine",
-                "options": {
-                    "1h": "1 tund",
-                    "6h": "6 tundi",
-                    "1d": "1 päev",
-                    "1w": "1 nädal",
-                    "1m": "1 kuu",
-                    "3m": "3 kuud",
-                    "6m": "6 kuud",
-                    "1y": "1 aasta",
-                    "2y": "2 aastat"
-                }
-            },
-            "location": {
-                "name": "Logiandmete asukoht",
-                "locations": {
-                    "us": {
-                        "name": "Ameerika Ühendriigid",
-                        "description": "Logisid hoitakse Ameerika Ühendriikides. See on vaikimisi valik."
-                    },
-                    "eu": {
-                        "name": "Euroopa Liit",
-                        "description": "Logisid hoitakse Euroopa Liidu liikmesriikides."
-                    },
-                    "ch": {
-                        "name": "Šveits",
-                        "description": "Logisid hoitakse Šveitsis, Zürichis. Tegemist on jurisdiktsiooniga, mis on tuntud oma tugevate privaatsusseaduste poolest."
-                    }
-                },
-                "confirm": {
-                    "title": "Muuda salvestuskohta",
-                    "text": "Logide salvestuskoha muutmine kustutab selle konfiguratsiooni kõik varasemad logid ja analüütika."
-                }
-            },
-            "download": {
-                "button": "Lae alla palgid"
-            },
-            "clear": {
-                "button": "Kustuta logid",
-                "confirm": {
-                    "text": "Oled kindel, et soovid selle konfiguratsiooni kõik logid kustutada? Seda toimingut ei saa tagasi võtta.",
-                    "submit": "Kustuta"
-                }
-            }
+        "address": {
+          "label": "Aadress",
+          "placeholder": "Lossi plats 1a&#10;Tallinn&#10;Eesti Vabariik",
+          "errors": {
+            "required": "Sisesta ettevõtte aadress."
+          }
+        },
+        "vatNumber": {
+          "label": "KMKR nr"
+        }
+      }
+    },
+    "invoices": {
+      "name": "Arved",
+      "description": "Sooritatud maksed ja konto arved.",
+      "pending": "{{amount, price}} (Ootel)",
+      "show-more": "Show more",
+      "show-less": "Show less",
+      "invoice": {
+        "title": "Arve nr {{code}}",
+        "to": "Saaja: <1>{{email}}</1>",
+        "vatNumber": "KMKR nr: {{number}}",
+        "columns": {
+          "plan": "Pakett",
+          "period": "Periood",
+          "amount": "Summa"
+        },
+        "vat": "KM ({{rate, percentage}})",
+        "total": "Kokku",
+        "footer": {
+          "reverseCharged": "KM pöördmaksustamine.",
+          "currency": "Kõik kuvatud summad on vääringus {{code}}."
+        }
+      }
+    },
+    "changeEmail": {
+      "name": "E-post",
+      "description": "Muuda e-posti aadressi, mida kasutad kontosse logimiseks ja kriitiliste e-posti teatiste saamiseks.",
+      "button": "Muuda e-posti aadressi"
+    },
+    "changePassword": {
+      "name": "Parool",
+      "description": "Muuda oma kontole parooli. Lisaks küsitakse seda parooli tundlike toimingute tegemisel.",
+      "button": "Muuda parooli"
+    },
+    "2fa": {
+      "name": "Kaheastmeline kinnitamine (2FA)",
+      "description": "Kaheastmeline kinnitamine (2FA) on täiendav turvakiht, mis nõuab kontole sisselogimisel täiendavat, ajapõhist 6-kohalist koodi.",
+      "enabled": "2FA sisselülitatud.",
+      "enable": {
+        "button": "Lülita 2FA sisse",
+        "modal": {
+          "howto": "Kasuta autentimisrakendust, näiteks <1>Google Authenticator'i</1> või 2FA-d toetavat paroolihaldurit. Saad kas QR-koodi skannida, vajutada sellele, et avada <3>{{otpauth}}</3> või kopeerida ja kleepida oma saladus käsitsi."
+        }
+      },
+      "recovery": {
+        "button": "Taastekoodid",
+        "modal": {
+          "howto": "Kasuta neid taastekoode oma kontole juurdepääsuks juhul, kui kaotad juurdepääsu oma seadmele. Iga koodi saab kasutada ainult üks kord.",
+          "download": "Laadi alla",
+          "regen": "Loo uuesti"
+        }
+      },
+      "disable": {
+        "button": "Lülita 2FA välja"
+      }
+    },
+    "api": {
+      "description": "Create and manage your profiles programmatically. Read the documentation at <1>{{link}}</1>.",
+      "create": {
+        "button": "Generate API key"
+      }
+    },
+    "delete": {
+      "button": "Kustuta konto",
+      "warning": "See kustutab konto ja kõik selles olevad konfiguratsioonid.",
+      "confirm": {
+        "text": "Oled kindel, et soovid oma konto kustutada? Seda toimingut ei saa tagasi võtta!"
+      }
+    },
+    "temporary": {
+      "expired": {
+        "modal": {
+          "title": "Aegunud",
+          "text": "Ajutine konto on aegunud. Selleks, et oma seadistused salvestada ja NextDNS-i kasutamist jätkata, loo endale konto. See on tasuta!"
+        }
+      }
+    }
+  },
+  "configurationSelector": {
+    "new": "Uus",
+    "form": {
+      "title": "Uus konfiguratsioon",
+      "name": {
+        "label": "Nimi",
+        "placeholder": "Kodu, lapsed, kontor, ...",
+        "errors": {
+          "required": "Palun sisesta nimi.",
+          "taken": "Selle nimega konfiguratsioon on juba olemas."
+        }
+      }
+    }
+  },
+  "setup": {
+    "status": {
+      "ok": {
+        "primary": "Kõik on hästi!",
+        "secondary": "Seade kasutab NextDNS-i (selle konfiguratsiooniga)."
+      },
+      "mismatch": {
+        "withoutConfiguration": {
+          "primary": "Seade kasutab NextDNS-i (ilma konfiguratsioonita).",
+          "secondary": {
+            "clients": "Veendu, et kasutad rakenduse seadetes allpool kuvatud konfiguratsiooni ID-d.",
+            "firefox": "Veendu, et oled Firefoxis määranud allpool kuvatud DNS-over-HTTPS kirje.",
+            "doh": "Veendu, et kasutad allpool kuvatud DNS-over-HTTPS kirjet.",
+            "dot": "Veendu, et kasutad allpool kuvatud DNS-over-TLS kirjed.",
+            "ipv6": "Veendu, et kasutad allpool kuvatud IPv6 aadresse.",
+            "servers": "Veendu, et kasutad allpool näidatud „Seotud IP“ jaotises olevaid DNS-servereid (DNS-serverid muutuvad konfiguratsioonide vahel).",
+            "link": "Veendu, et oled oma IP-aadressi allpool olevas jaotises „Seotud IP“ sidunud."
+          }
+        },
+        "withConfiguration": {
+          "primary": "See seade kasutab teistsuguse konfiguratsiooniga NextDNS-i.",
+          "secondary": {
+            "sameAccount": "Seade kasutab hetkel „{{name}}“.",
+            "otherAccount": "Veendu, et kasutad ühte sellel lehel loetletud lõpp-punkti."
+          }
+        }
+      },
+      "unconfigured": {
+        "primary": "See seade ei kasuta NextDNS-i.",
+        "secondary": "See seade kasutab hetkel „{{resolver}}” DNS-i."
+      },
+      "error": {
+        "primary": "Oleku kontrollimisel ilmnes viga.",
+        "secondary": "Võta meiega ühendust, kui see probleem püsib pärast lehe värskendamist."
+      },
+      "apr": {
+        "ok": {
+          "primary": "This device is using NextDNS with iCloud Private Relay",
+          "secondary": "Features like SafeSearch, Youtube Restricted Mode and Rewrites are not compatible with iCloud Private Relay."
         },
         "blockpage": {
-            "name": "Blokeeringu lehekülg",
-            "description": "Domeeni blokeerimise korral kuvatakse blokeerimisleht. See võib lehe laadimisaega veidi pikendada ja mõnel juhul võib ilmuda HTTPS-i hoiatus. Väljalülitatuna vastatakse blokeeritud päringutele täpsustamata aadressiga (0.0.0.0 või: :).",
-            "enable": "Lülita Blokeeringu lehekülg sisse",
-            "ca": {
-                "name": "JärgmineDNS-i juur CA",
-                "description": "Blokeerimislehe laadimisel eemaldage HTTPS-hoiatus, installides ja usaldades meie juur-CA-d aadressil <1>{{link}}</1> . Siit saate lugeda juhiseid selle kohta, kuidas seda teha <3> </3> ."
-            }
-        },
-        "performance": {
-            "name": "Kiirus",
-            "description": "Kiirenda sirvimist.",
-            "ecs": {
-                "name": "Anonüümseks muudetud EDNS-i kliendi alamvõrk",
-                "description": "Kiirendage andmete edastamist sisuvõrkudest ilma oma IP-aadressi paljastamata.",
-                "enable": "Luba $t(settings.performance.ecs.name)"
-            },
-            "cache": {
-                "name": "Vahemälu suurendamine",
-                "description": "Minimeerige DNS-päringud, kehtestades minimaalse TTL-i (aeg elada).",
-                "enable": "Luba $t(settings.performance.cache.name)"
-            },
-            "flatten": {
-                "name": "CNAME lamenemine",
-                "description": "Takistage CNAME-i jälitavaid lahendajaid tarbetute päringute esitamises ja saastake logisid vahedomeenidega.",
-                "enable": "Luba $t(settings.performance.flatten.name)"
-            }
-        },
-        "web3": {
-            "name": "Web3",
-            "description": "Web3 viitab detsentraliseeritud ja tsensuurikindlale veebipõhisele ökosüsteemile, mis koosneb uuenduslikest tehnoloogiatest, nagu plokiahelapõhised domeeniregistrid (nt Ethereum Name Service) ja hajutatud sisu salvestus- ja edastusvõrgud (nt IPFS). Kui NextDNS on aktiveeritud, toimib see filtreerimata väravana sellesse uude veebi, võimaldades teil seda vahetult kogeda, ilma et oleks vaja midagi paigaldada.",
-            "tips": "Kuna enamik brausereid toetab praegu ainult klassikalisi tippdomeene, peaksite Web3 domeenile otse juurde pääsedes lisama lõpus kaldkriipsu (\"<1>/</1>\") (nt \"<3>vitalik.eth/\" </3>\" asemel \"<5>vitalik.eth</5>\").",
-            "enable": "Luba Web3"
-        },
-        "rewrites": {
-            "name": "Kirjutab ümber",
-            "description": "Määrake või tühistage mis tahes domeeni DNS-vastus. Ümberkirjutamine kehtib ka alamdomeenide kohta ja vastusena toetatakse kohalikke IP-aadresse.",
-            "new": "Uus ümberkirjutamine",
-            "form": {
-                "domain": {
-                    "label": "Domeen",
-                    "placeholder": "myprinter.lan, myinternetbox.com, ...",
-                    "errors": {
-                        "required": "Palun sisesta domeen.",
-                        "ip": "Sisesta domeen, mitte IP-aadress.",
-                        "invalid": "Palun kontrolli domeeni vormingut.",
-                        "taken": "Teil on selle domeeni jaoks juba kirjutatud."
-                    }
-                },
-                "answer": {
-                    "label": "Vastus",
-                    "placeholder": "1.2.3.4, sub.example.org, ...",
-                    "errors": {
-                        "required": "Palun sisesta vastus.",
-                        "invalid": "Vastus peaks olema korrektne IP-aadress või domeen."
-                    }
-                }
-            }
-        },
-        "access": {
-            "name": "Juurdepääs",
-            "description": "Andke teistele selle profiili muutmis- või vaatamisõigus.",
-            "roles": {
-                "editor": "Toimetaja",
-                "viewer": "Vaataja"
-            },
-            "pending": "Kutse saadetud",
-            "form": {
-                "email": {
-                    "label": "Meil",
-                    "errors": {
-                        "required": "Sisestage e-posti aadress.",
-                        "invalid": "Sisestage kehtiv emaili aadress.",
-                        "duplicate": "See meil on juba kutsutud."
-                    }
-                },
-                "role": {
-                    "label": "Roll"
-                }
-            }
-        },
-        "duplicate": {
-            "button": "Duplicate <1>{{name}}</1>",
-            "description": "Copy all settings of this profile to a new one.",
-            "form": {
-                "name": {
-                    "label": "Name",
-                    "placeholder": "Home, Kids, Office, ...",
-                    "errors": {
-                        "required": "Enter a name.",
-                        "taken": "You already have a profile with that name."
-                    }
-                },
-                "button": "Duplicate"
-            }
-        },
-        "delete": {
-            "button": "Kustuta <1>{{name}}</1>",
-            "warning": "Kustutab jäädavalt selle konfiguratsiooni ja kõik sellega seonduvad logid.",
-            "confirm": {
-                "text": "Oled kindel, et soovid kustutada <1>{{name}}</1>? Seda toimingut ei saa tagasi võtta."
-            }
-        },
-        "leave": {
-            "button": "Lahku <1>{{name}}</1>",
-            "warning": "Kaotate juurdepääsu sellele profiilile.",
-            "confirm": {
-                "text": "Kas soovite kindlasti <1>{{name}}</1> lahkuda? Seda toimingut ei saa tagasi võtta."
-            }
-        },
-        "ageVerification": {
-            "description": "",
-            "acknowledgment": "",
-            "name": ""
+          "primary": "This device is using NextDNS with iCloud Private Relay.",
+          "secondary": "Enabling the Block Page setting while using iCloud Private Relay interferes with blocking."
         }
+      }
+    },
+    "endpoints": {
+      "name": "Lõpp-punktid",
+      "description": "Kasutamaks NextDNS-i selle konfiguratsiooniga, vali üks alloleva lõpp-punkti.",
+      "help": "Sa pole kindel, kuidas neid kasutada? Vaata meie <1>häälestusjuhendit</1>."
+    },
+    "linkedIp": {
+      "name": "Seotud IP",
+      "description": "Kui NextDNS-i kasutamine ei ole võimalik läbi meie rakenduste, DNS-over-TLS, DNS-over-HTTPS või IPv6 abil, siis kasuta allolevaid DNS-servereid ja seo oma IP aadress. See sobib enamasti kasutamiseks koduvõrkudes ning pole soovitatav mobiilseadmetes kasutamiseks.",
+      "servers": {
+        "name": "DNS serverid"
+      },
+      "ip": {
+        "name": "Seotav IP",
+        "link": "Seo IP"
+      },
+      "showAdvanced": "Kuva rohkem valikud",
+      "ddns": {
+        "explanation": "Seotud IP-de automaatseks värskendamiseks saab kasutada Dünaamilist DNS-i (DDNS).",
+        "set": "Konfigureeri DDNS",
+        "status": "Kasutad praegu <1>{{hostname}}</1> DDNS-i hosti nimena. IP-d värskendatakse automaatselt iga minuti järel.",
+        "unset": "Eemalda",
+        "form": {
+          "hostname": {
+            "label": "DDNS-i hosti nimi",
+            "placeholder": "example.no-ip.org",
+            "errors": {
+              "required": "Palun sisesta hosti nimi.",
+              "invalid": "Palun sisesta kehtiv hosti nimi.",
+              "ip": "Palun sisesta hosti nimi, mitte IP-aadress.",
+              "error": "Selle hosti nime IP-aadressi hankimisel ilmnes viga.",
+              "empty": "See hosti nimi ei tagasta ühtegi IP-aadressi.",
+              "different": "Turvalisuse huvides peaks dünaamilise DNS-i lisamisel olema DDNS-i host inime tagastatud IP-aadress sama, mis sinu praegune IP-aadress."
+            }
+          }
+        }
+      },
+      "programmatically": "Samuti saab seotud IP-d programmiliselt värskendada, andes käsu:"
+    },
+    "guide": {
+      "name": "Häälestusjuhend",
+      "description": "Järgi allolevaid juhiseid, et seadistada NextDNS oma seadmes, brauseris või ruuteris.",
+      "or": "Või",
+      "ipv4": {
+        "title": "IPv4 (lingitud IP-ga)"
+      },
+      "ipv6": {
+        "supported": "Sinu võrk toetab IPv6-d",
+        "notSupported": "Sinu võrk ei toeta IPv6-d"
+      },
+      "tags": {
+        "recommended": "Soovitatav",
+        "advanced": "Edasijõudnutele"
+      },
+      "use": "Kasuta failis <1>{{file}}</1> järgnevaid andmeid:",
+      "platforms": {
+        "android": {
+          "name": "Android",
+          "guides": {
+            "private": {
+              "title": "Privaatne DNS",
+              "requirements": "Android 9 või uuem",
+              "steps": {
+                "1": "1. Vali Seaded → Ühendused → Veel ühendusseadeid→ Privaatne DNS.",
+                "2": "2. Vali suvand „Privaatse DNS-i pakkuja hosti nimi“.",
+                "3": "3. Sisesta <1>{{endpoint}}</1> ja vajuta Salvesta."
+              }
+            }
+          }
+        },
+        "ios": {
+          "name": "iOS",
+          "guides": {
+            "profile": {
+              "title": "Konfiguratsiooniprofiil",
+              "requirements": "iOS 14 või uuem",
+              "step": "Kasutage meie Apple'i konfiguratsiooniprofiili generaatorit, mis on saadaval aadressil  <1>{{link}}</1>."
+            },
+            "app": {
+              "title": "NextDNS iOS-ile"
+            }
+          }
+        },
+        "windows": {
+          "name": "Windows",
+          "guides": {
+            "dns-over-https": {
+              "title": "DNS HTTPS-i kaudu",
+              "requirements": "Windows 11",
+              "steps": [
+                "Avage rakendus Seaded.",
+                "Avage <1>Võrk ja internet</1>.",
+                "Klõpsake <1>Wi-Fi</1> (või <3>Ethernet</3>).",
+                "Klõpsake <1>Riistvara atribuudid</1> või ignoreerige seda sammu, kui klõpsasite <3>Ethernet</3>.",
+                "Klõpsake nuppu <1>Muuda</1> <3>DNS-serveri määramise kõrval</3>.",
+                "Valige <1>Käsitsi</1>.",
+                "Luba <1>IPv{{version}}</1>.",
+                "Sisestage <1>{{ip}}</1> kui <3>Eelistatud DNS</3>, seejärel valige <5>Sees (käsitsi mall)</5> ja sisestage <7>{{endpoint}}</7>.",
+                "Enter <1>{{ip}}</1> as <3>Alternate DNS</3>, then select <5>On (manual template)</5> and enter <7>{{endpoint}}</7>.",
+                "Klõpsake käsul <1>Salvesta</1>."
+              ]
+            },
+            "app": {
+              "title": "NextDNS Windowsile",
+              "steps": {
+                "1": "1. Laadi paigaldusprogramm alla <1>siit</1>.",
+                "2": "2. Pärast paigaldamist tee parem klikk NextDNS-i Süsteemisalve ikoonil ning ava Seaded. Seejärel määra konfiguratsiooni ID-na <1>{{id}}</1>.",
+                "3": "3. Tee parem klikk Süsteemisalve ikoonil NextDNS ning kliki nupul Lülita sisse."
+              }
+            },
+            "ip": {
+              "steps": {
+                "1": "1. Kliki Start menüül ja vali Juhtpaneel.",
+                "2": "2. Kliki „Võrk ja internet“, seejärel vali „Võrk- ja ühiskasutuskeskus“.",
+                "3": "3. Kliki vasakul olevale „Muuda adapteri sätteid“ nupule.",
+                "4": "4. Tee paremklikk WiFi võrgul, millega oled ühendatud ja seejärel vali „Atribuudid“.",
+                "5": "5. Vali „Interneti-protokolli versioon {{version}}“.",
+                "6": "6. Kliki „Atribuudid“.",
+                "7": "7. Kliki „Kasuta järgmisi DNS-serveri aadresse“.",
+                "8": "8. Asenda olemas olevad aadressid (kui neid on) väärtustega <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
+                "9": "9. Kliki nuppu „OK“ ja seejärel „Sule“. Võimalik, et pead seadete jõustamiseks brauseri taaskäivitama."
+              }
+            },
+            "yoga": {
+              "steps": {
+                "1": "1. Paigalda YogaDNS aadressilt <1>{{link}}</1>.",
+                "2": "2. Järgi juhiseid aadressil <1>{{link}}</1> ja kasuta konfiguratsiooni ID-na <3>{{id}}</3>."
+              }
+            }
+          }
+        },
+        "macos": {
+          "name": "macOS",
+          "guides": {
+            "app": {
+              "title": "NextDNS macOS-i jaoks",
+              "steps": {
+                "1": "1. Paigalda meie ametlik rakendus Maci App Store'ist.",
+                "2": "2. Kliki rakenduse olekuriba „Preferences“ ja liigu vahekaardile „Configuration“.",
+                "3": "3. Märgista valik „Use Custom Configuration“ ja sisesta konfiguratsiooni ID-na <1>{{id}}</1>."
+              }
+            },
+            "profile": {
+              "requirements": "macOS Big Sur või kõrgem"
+            },
+            "ip": {
+              "steps": {
+                "1": "1. Ava „System Preferences“, seejärel kliki valikul „Network“.",
+                "2": "2. Vali võrk, millega oled ühendatud ning kliki valikul „Advanced“.",
+                "3": "3. Mine jaotisse DNS.",
+                "4": "4. Eemalda loendist „DNS Servers“ kõik aadressid (kui neid on) ja lisa seejärel <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
+                "5": "5. Kliki „OK“, seejärel kliki nupul „Apply“."
+              }
+            },
+            "cli": {
+              "title": "NextDNS-i käsurea klient (Command-Line Client)",
+              "steps": {
+                "1": "1. Käivita järgmine käsk: <1>{{command}}</1>",
+                "2": "2. Järgi juhiseid."
+              },
+              "manual": "Käsitsi paigaldamise juhiste jaoks ava meie avatud lähtekoodi varamu: <1>{{link}}</1>."
+            }
+          }
+        },
+        "linux": {
+          "name": "Linux",
+          "guides": {
+            "cli": {
+              "title": "NextDNS-i käsurea klient (Command-Line Client)",
+              "steps": {
+                "1": "1. Käivita järgmine käsk: <1>{{command}}</1>",
+                "2": "2. Järgi juhiseid."
+              },
+              "manual": "Käsitsi paigaldamise juhiste jaoks ava meie avatud lähtekoodi varamu: <1>{{link}}</1>."
+            },
+            "ip": {
+              "step": "Muuda DNS-serveri väärtusteks <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
+            },
+            "stubby": {
+              "warning": "Veendu, et Stubby on lingitud <1>OpenSSL versioon 1.1.1 või uuemaga</1>, sest eelmised versioonid ei tööta NextDNS-iga."
+            },
+            "unbound": {
+              "warning": "Rekursiivse lahendajana ajab Unbound taga CNAME-sid. See võib põhjustada <1>ettearvamatut käitumist</1> kui seda kasutatakse koos blokeeriva DNS-lahendusega nagu NextDNS. Vaata lähemalt <3>{{link}}</3>."
+            }
+          }
+        },
+        "chromeos": {
+          "name": "Chrome OS",
+          "guides": {
+            "secure-dns": {
+              "title": "Turvaline DNS",
+              "steps": [
+                "Avage rakendus <1>Seaded</1>.",
+                "Avage jaotis <1>Turvalisus ja privaatsus</1>.",
+                "Lubage <1>Kasuta turvalist DNS-i</1>.",
+                "Valige <1>Kohandatud: kohandatud</1>, seejärel sisestage <3>{{endpoint}}</3>."
+              ]
+            },
+            "ip": {
+              "step": "Muuda DNS-serveri väärtusteks <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
+            }
+          }
+        },
+        "browsers": {
+          "name": "Brauserid",
+          "guides": {
+            "chrome": {
+              "title": "Google Chrome",
+              "steps": {
+                "1": "1. Ava menüü „Seaded“.",
+                "2": "2. Klõpsake jaotises Privaatsus ja turvalisus valikut Turvalisus.",
+                "3": "3. Jaotises Täpsem lubage Kasuta turvalist DNS-i.",
+                "4": "4. Valige With: Custom, seejärel sisestage <1>{{endpoint}}</1> ."
+              }
+            },
+            "firefox": {
+              "title": "Firefox",
+              "requirements": "Ainult Windowsis, macOSis ja Linuxis",
+              "steps": {
+                "1": "1. Open Preferences.",
+                "2": "2. Click Privacy & Security.",
+                "3": "3. Scroll down to Enable DNS over HTTPS.",
+                "4": "4. Choose Increased Protection or Max Protection.",
+                "5": "5. Select Custom in the menu.",
+                "6": "6. Enter <1>{{endpoint}}</1>."
+              }
+            },
+            "edge": {
+              "title": "Microsoft edge",
+              "steps": {
+                "1": "Avage Seaded.",
+                "2": "Mine lehele Privaatsus, otsing, ja teenused osa.",
+                "3": "Turvalisuse all luba Kasuta turvalist DNS-i  täpsustada kuidas otsida veebisaitide võrguaadresse.",
+                "4": "Valige Vali teenusepakkuja seejärel sisestage <1>{{endpoint}}</1>."
+              }
+            },
+            "brave": {
+              "title": "Brave",
+              "steps": {
+                "1": "Avage Seaded",
+                "2": "Jaotises Privaatsus ja turvalisus (jaotises Täiendavad sätted), klõpsake nuppu Turvalisus",
+                "3": "Jaotises Täpsemalt luba Kasuta turvalist dns",
+                "4": "Valige Koos: Kohandatud, seejärel sisestage <1>{{endpoint}}</1>."
+              }
+            }
+          }
+        },
+        "routers": {
+          "name": "Ruuterid",
+          "guides": {
+            "cli": {
+              "title": "NextDNS ruuteritele",
+              "requirements": "Töötab ainult ruuterites, mis võivad käitada käivitatavaid faile",
+              "step": "Paigaldamise juhiste jaoks ava meie avatud lähtekoodi varamu: <1>{{link}}</1>."
+            },
+            "ip": {
+              "ipv6": {
+                "warning": "Mõni ruuter ei pruugi ülaltoodud IPv6 tähistust toetada. Sel juhul kasuta <1>{{dns1}}</1> ja <3>{{dns2}}</3>."
+              },
+              "steps": {
+                "1": "1. Avage ruuteri seadistuspaneel. Tavaliselt pääseb sellele ligi brauserist, kasutades selleks ruuteri URL-i (nt http://192.168.0.1/ või http://192.168.1.1/).",
+                "2": "2. Leia üles DNS-i seaded.",
+                "3": "3. Eemalda kõik aadressid (kui neid on) ja asenda need väärtustega <1>{{dns1}}</1> ja <3>{{dns2}}</3>.",
+                "4": "4. Kliki nupul „Save“ (või sarnasel nupul)."
+              }
+            },
+            "pfsense": {
+              "steps": {
+                "1": "1. Ava „Services → DNS Resolver“ ja keri vahekaardil „General Settings“ alla, kuniks näed „Custom Options“ kastikest.",
+                "2": "2. Sisesta järgmised read:"
+              }
+            },
+            "mikrotik": {
+              "run": "Käivita järgmised käsud:"
+            }
+          }
+        },
+        "vpn": {
+          "guides": {
+            "tailscale": {
+              "manual": "Minge üle Tailscale dokumentatsiooni juurde aadressil <2>{{link}}</2> seadistamisjuhiste saamiseks."
+            }
+          }
+        }
+      }
+    },
+    "identify": {
+      "name": "Tuvasta oma seadmed",
+      "description": "Oma seadmete tuvastamiseks menüüdes „Analüütika“ ja „Logid“ järgi allolevaid juhiseid.",
+      "apps": {
+        "name": "Rakenduse kasutamisel",
+        "instructions": "Luba rakenduse seadetes valik „Saada seadme nimi”."
+      },
+      "dot": {
+        "instructions": "Lisa domeenile juurde nimi (nimi peab sisaldama ainult <1> az </1>, <3> Az </3>, <5> 0-9 </5> ja <7> - </7>). Tühiku jaoks kasuta <9> - </9>.",
+        "example": "Näiteks „<1>Ema telefon</1>“ jaoks kasuta DNS-over-TLS korral domeeni: <3>Ema--telefon-{{configuration}}.dns.nextdns.io </3>."
+      },
+      "doh": {
+        "instructions": "Lisa nimi URL-i lõppu (nimi peaks olema URL-i lõpus).",
+        "example": "Näiteks „<1>Ema Firefox</1>“ jaoks kasuta DNS-over-HTTPS korral: <3>https://dns.nextdns.io/{{configuration}}/Ema%20Firefox</3>."
+      }
     }
+  },
+  "security": {
+    "feeds": {
+      "name": "„Threat Intelligence“ vood",
+      "description": "Blokeerib teadaolevad pahavara levitamise-, andmepüügirünnakute- ning käsu-ja kontrollserverite domeene. Selleks kasutatakse segu kõige mainekamatest ohuteabe voogudest. Ohuteavet värskendatakse reaalajas.",
+      "enable": "Lülita „Threat Intelligence“ vood sisse"
+    },
+    "ai": {
+      "name": "AI-Sõidetud Ohu tuvastamine",
+      "description": "Blokeeri miljoneid ohte meie poolt tuvastatud AI tehnoloogia - varaline AI maapinnast konstrueeritud mootor \neest DNS sadade signaalidega terabaiti treeningandmeid ja reaalajas otsuste langetamist.",
+      "enable": "Luba AI-Sõidetud Ohu tuvastamine"
+    },
+    "googleSafeBrowsing": {
+      "name": "Google'i ohutu sirvimine",
+      "description": "Blokeerige pahavara ja andmepüügidomeenid Google'i turvalise sirvimise abil - tehnoloogia, mis uurib päevas miljardeid URL-e, otsides ohtlikke veebisaite. Erinevalt mõnes brauseris manustatud versioonist ei seota see teie avalikku IP-aadressi ohtudega ega võimalda blokeerimisest mööda minna.",
+      "enable": "Luba $t(security.googleSafeBrowsing.name)"
+    },
+    "cryptojacking": {
+      "name": "Krüptojacking kaitse",
+      "description": "Vältige oma seadmete loata kasutamist krüptoraha kaevandamiseks.",
+      "enable": "Luba $t(security.cryptojacking.name)"
+    },
+    "dnsRebinding": {
+      "name": "DNS Rebinding Protection",
+      "description": "Takistage ründajatel Interneti kaudu teie kohalike seadmete juhtimist, blokeerides automaatselt privaatseid IP-aadresse sisaldavad DNS-vastused.",
+      "enable": "Luba $t(security.dnsRebinding.name)"
+    },
+    "homograph": {
+      "name": "IDN-i homograafi rünnakute kaitse",
+      "description": "Blokeerige domeenid, kes esinevad teistena domeenidena, kuritarvitades rahvusvaheliste domeeninimede (IDN) saabumisel kättesaadavaks tehtud suurt märgistikku - nt asendades ladina tähe \"e\" kirillitsa tähega \"е\".",
+      "enable": "Tähekombinatsioonide ärakasutamise vastane kaitse"
+    },
+    "typosquatting": {
+      "name": "Kirjavigade vastane kaitse",
+      "description": "Blokeerib pahatahtlike inimeste registreeritud domeene, mis sihivad kasutajaid, kes sisestavad kogemata vale veebisaidi aadressi - nt google.com asemel gooogle.com.",
+      "enable": "Lülita Kirjavigade vastane kaitse sisse"
+    },
+    "dga": {
+      "name": "Domeeni genereerimise algoritmide (DGA) kaitse",
+      "description": "Blokeerib Domeenide genereerimise algoritmide (DGA) poolt genereeritud domeene, mida näeb erinevates pahavara perekondades ja mida saab kasutada nende käsu- ja juhtserveritena.",
+      "enable": "Lülita DGA kaitse sisse"
+    },
+    "nrd": {
+      "name": "Värskelt registreeritud domeenide (NRD) blokeerimine",
+      "description": "Blokeerib vähem kui 30 päeva tagasi registreeritud domeene. Reeglina eelistavad küberrünnakuid tegevad inimesed just neid domeene pahatahtlike kampaaniate käivitamiseks ära kasutada.",
+      "enable": "Blokeeri Värskelt registreeritud domeene (NRD)"
+    },
+    "ddns": {
+      "name": "Blokeerige dünaamilised DNS-i hostinimed",
+      "description": "Dünaamilised DNS-i (või DDNS-i) teenused võimaldavad pahatahtlikel osalejatel kiiresti tasuta ja ilma valideerimise või identiteedi kinnitamiseta hostinimesid seadistada. Kuigi legitiimsetele DDNS-i hostinimedele pääsetakse igapäevases kasutuses harva juurde, kasutatakse nende pahatahtlikke vasteid andmepüügikampaaniates palju – nt paypal-login.duckdns.org.",
+      "disclaimer": "Kui kasutate DDNS-i, pange tähele, et see säte ei blokeeri DDNS-teenuste enda veebisaiti ega nende värskenduse API-t.",
+      "enable": "Blokeerige dünaamilised DNS-i hostinimed"
+    },
+    "parked": {
+      "name": "Pargitud domeenide blokeerimine",
+      "description": "Pargitud domeenid on ühe lehega veebisaidid, mis on sageli reklaamidega koormatud ja millel puudub igasugune väärtus või otstarve. Pargitud domeeniga raha tegemine võib mõnikord seostuda kahtlaste tavade ja pahatahtliku sisuga.",
+      "enable": "Blokeeri Pargitud domeenid"
+    },
+    "tld": {
+      "name": "Blokeeri tippdomeenid (TLD)",
+      "description": "Blokeerib kõik konkreetsetele TLD-le kuuluvad domeenid ja alamdomeenid.",
+      "add": "TLD lisamine",
+      "sections": {
+        "spamhaus": "Spamhous'i poolt kirja pandud TLD-d",
+        "all": "Kõik TLD-d"
+      }
+    },
+    "csam": {
+      "name": "Blokeeri laste seksuaalse väärkohtlemise materjale",
+      "description": "Blokeerib lapse seksuaalse väärkohtlemise materjale majutavad domeenid Kanada lastekaitsekeskuse hallatava Project Arachnid abil. Domeeni blokeerimise korral ei edastata teavet Project Arachnidile.",
+      "enable": "Blokeeri laste seksuaalse väärkohtlemise materjale"
+    }
+  },
+  "privacy": {
+    "blocklists": {
+      "name": "Blokeerimisloendid",
+      "description": "Blokeeri reklaame ja jälitajaid, kasutades selleks kõige populaarsemaid saadaolevaid blokeerimisloendeid. Neid loendeid värskendatakse reaalajas.",
+      "add": "Blokeerimisloendi lisamine",
+      "updated": "Värskendatud <1>{{ago}}</1>",
+      "blocklists": {
+        "nextdns-recommended": {
+          "name": "NextDNS-i Reklaamide ja jälitajate vastane blokeerimisloend",
+          "description": "Põhjalik blokeerimisloend reklaamide ja jälitajate blokeerimiseks kõikides riikides. See on soovitatav blokeerimisloend."
+        }
+      },
+      "sortBy": {
+        "popularity": "Popularity",
+        "name": "Name",
+        "entries": "Entries",
+        "updated": "Recent"
+      },
+      "entries_one": "{{count, number}} kirje",
+      "entries_other": "{{count, number}} kirjed"
+    },
+    "native": {
+      "name": "Päritolu põhine jälitamiskaitse",
+      "description": "Blokeerige laia spektriga jälgijad - mis töötavad sageli operatsioonisüsteemi tasemel - mis jälgivad teie tegevust seadmes. See võib hõlmata kõiki külastatud veebisaite, kõike, mida sisestate, või teie asukohta kogu aeg.",
+      "add": "Lisa",
+      "systems": {
+        "xiaomi": {
+          "name": "Xiaomi",
+          "devices": "Telefonid ja tahvelarvutid, nutitelerid, ruuterid"
+        },
+        "huawei": {
+          "name": "Huawei",
+          "devices": "Telefonid ja tahvelarvutid"
+        },
+        "samsung": {
+          "name": "Samsung",
+          "devices": "Telefonid, tahvelarvutid, nutitelerid"
+        },
+        "alexa": {
+          "name": "Amazon Alexa",
+          "devices": "Alexa toega seadmed"
+        },
+        "windows": {
+          "name": "Windows",
+          "devices": "Kõik versioonid"
+        },
+        "apple": {
+          "name": "Apple",
+          "devices": "iOS, macOS, tvOS"
+        },
+        "roku": {
+          "name": "Roku",
+          "devices": "Kõik Roku seadmed"
+        },
+        "sonos": {
+          "name": "Sonos",
+          "devices": "Kõlarid"
+        }
+      }
+    },
+    "disguised": {
+      "name": "Blokeeri varjatud kolmanda osapoole jälitajaid",
+      "description": "Tuvastab ja blokeerib automaatselt kolmanda osapoole jälgijad, kes maskeerivad end esimese osapoolena, et mööda hiilida uusimatest brauseri privaatsuse kaitsetest, näiteks ITP-st.",
+      "enable": "Blokeeri varjatud kolmanda osapoole jälitajaid"
+    },
+    "affiliate": {
+      "name": "Luba sidusettevõtte ja jälgimise lingid",
+      "description": "Lubage sidusettevõtete ja jälgimisdomeenid, mis on levinud tehingute veebisaitidel, e-kirjades või otsingutulemites. Neile helistatakse tavaliselt alles pärast lingil käsitsi klõpsamist.",
+      "relay": "Sinu IP-aadress peidetakse automaatselt nendelt veebisaitidelt, et säilitada teie privaatsust.",
+      "enable": "$t(privacy.affiliate.name)"
+    }
+  },
+  "parentalControl": {
+    "services": {
+      "name": "Veebisaidid, rakendused ja mängud",
+      "description": "Piira juurdepääsu kindlatele veebisaitidele, rakendustele ja mängudele.",
+      "add": "Lisa veebisait, rakendus või mäng",
+      "services": {
+        "9gag": "9GAG",
+        "amazon": "Amazon",
+        "bereal": "Ole realistlik",
+        "blizzard": "Blizzard",
+        "chatgpt": "ChatGPT",
+        "dailymotion": "Dailymotion",
+        "discord": "Discord",
+        "disneyplus": "Disney +",
+        "ebay": "eBay",
+        "facebook": "Facebook",
+        "fortnite": "Fortnite",
+        "google-chat": "Google'i vestlus",
+        "hbomax": "HBO Max",
+        "hulu": "Hulu",
+        "imgur": "Imgur",
+        "instagram": "Instagram",
+        "leagueoflegends": "League of Legends",
+        "mastodon": "Mastodon",
+        "messenger": "Messenger",
+        "minecraft": "Minecraft",
+        "netflix": "Netflix",
+        "pinterest": "Pinterest",
+        "playstation-network": "PlayStation Network",
+        "primevideo": "Prime Video",
+        "reddit": "Reddit",
+        "roblox": "Roblox",
+        "signal": "Signal",
+        "skype": "Skype",
+        "snapchat": "Snapchat",
+        "spotify": "Spotify",
+        "steam": "Steam",
+        "telegram": "Telegram",
+        "tiktok": "TikTok",
+        "tinder": "Tinder",
+        "tumblr": "Tumblr",
+        "twitch": "Twitch",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "vk": "VK",
+        "whatsapp": "WhatsApp",
+        "xboxlive": "Xbox Live",
+        "youtube": "YouTube",
+        "zoom": "Zoom"
+      }
+    },
+    "categories": {
+      "name": "Kategooriad",
+      "description": "Piira ligipääs teatud kategooria veebisaitidele ja rakendustele.",
+      "add": "Lisa kategooria",
+      "categories": {
+        "dating": {
+          "name": "Tutvumislehed",
+          "description": "Blokeerib kõik tutvumisveebisaidid ja -rakendused."
+        },
+        "gambling": {
+          "name": "Hasartmängud",
+          "description": "Blokeerib hasartmängude sisu."
+        },
+        "gaming": {
+          "name": "Online-mängud",
+          "description": "Blokeerib võrgumängude veebisaidid, võrgumängurakendused ja võrgumänguvõrgud (Xbox Live, PlayStation Network jne)."
+        },
+        "piracy": {
+          "name": "Piraatlus",
+          "description": "Blokeerib P2P veebisaidid, protokollid, autoriõigusi rikkuvad voogesitusveebisaidid ja spetsiifilised videohostimise veebisaidid, mida kasutatakse peamiselt autoriõigustega kaitstud sisu ebaseaduslikuks levitamiseks."
+        },
+        "porn": {
+          "name": "Pornograafia",
+          "description": "Blokeerib täiskasvanute mõeldud ning pornograafilist sisu. See hõlmab eskortsaite, pornhub.com ja muid sarnaseid domeene."
+        },
+        "social-networks": {
+          "name": "Sotsiaalvõrgustikud",
+          "description": "Blokeerib kõik sotsiaalvõrgustike veebisaidid ja rakendused (Facebook, Instagram, TikTok, Reddit jne). Blokeering ei laiene sõnumirakendustele."
+        },
+        "video-streaming": {
+          "name": "Video voogesitus",
+          "description": "Blokeerib video voogedastusteenused (YouTube, Netflix, Disney+, ebaseaduslikud voogesituse veebisaidid, videoporno veebisaidid jne) ja videopõhised suhtlusvõrgustikud (TikTok jne). See võib samuti aidata vähendada ribalaiuse kasutamist mis tahes võrgus."
+        }
+      }
+    },
+    "recreation": {
+      "name": "Puhkeaeg",
+      "description": "Määrake periood iga nädalapäeva jaoks mida mõned ülaltoodud veebisaidid, rakendused, mängud või kategooriad ei blokeerita — nt luba FaceBook esmaspäeviti ja teisipäeviti ajavahemikus 18.00 juurde 20.00.",
+      "set": "Määrake puhkeaeg",
+      "howto": "Kasuta <1></1> nuppu ülaltoodud jaotistes puhkeaja lubamiseks."
+    },
+    "safesearch": {
+      "name": "Ohutu otsing",
+      "description": "Filtreerib kõikides suuremates otsingumootorites täiskasvanutele mõeldud sisu, sealhulgas pilte ja videoid. Lisaks blokeeritakse juurdepääsu otsingumootoritele, mis sellist funktsiooni ei toeta.",
+      "enable": "Jõusta $t(parentalControl.safesearch.name)"
+    },
+    "youtubeRestricted": {
+      "name": "YouTube'i piiratud režiim",
+      "description": "Filtreerige YouTube'is täiskasvanutele mõeldud videod ja blokeerige manustatud täiskasvanutele mõeldud videote vaatamine muudel veebisaitidel. See peidab ka kõik kommentaarid.",
+      "enable": "Jõusta $t(parentalControl.youtubeRestricted.name)"
+    },
+    "bypass": {
+      "name": "Blokeeri möödaviigu meetodid",
+      "description": "Ennetage või takistage selliste meetodite kasutamist, mis võivad aidata NextDNS-i võrgus filtreerimisest mööda hiilida. See hõlmab VPN-i, puhverservereid, Toriga seotud tarkvara ja krüptitud DNS-i pakkujaid.",
+      "enable": "$t(parentalControl.bypass.name)"
+    }
+  },
+  "xlist": {
+    "placeholder": "Domeeni lisamine ...",
+    "errors": {
+      "required": "Sisesta domeen.",
+      "ip": "Palun sisesta domeen, mitte IP-aadress.",
+      "invalid": "Palun kontrolli domeeni vormingut.",
+      "tld": "Näib, et proovite blokeerida tervet TLD-d. Palun kasutage jaotises Turvalisus Blokeeri TLD-sid.",
+      "exists": "See domeen on juba lisatud."
+    },
+    "empty": "Domeenid puuduvad.",
+    "denylist": {
+      "info": "Domeeni keelamine keelab automaatselt kõik selle alamdomeenid."
+    },
+    "allowlist": {
+      "info": "Domeeni lubamine lubab automaatselt kõik selle alamdomeenid. Lubamine on ülimuslik kõige muu, sealhulgas turvaelementide ees."
+    }
+  },
+  "analytics": {
+    "counters": {
+      "percentBlocked": "<0>{{percent, percentage}}</0> <1> <0> </0> <1> nendest on blokeeritud päringuid</1></1>",
+      "all_one": "<0> {{count, number}} </0> <1> päring </1>",
+      "all_other": "<0> {{count, number}} </0> <1> päringut </1>",
+      "blocked_one": "<0> {{count, number}} </0> <1> blokeeritud päring</1>",
+      "blocked_other": "<0> {{count, number}} </0> <1> blokeeritud päringut</1>"
+    },
+    "queries": {
+      "name": "Päringud",
+      "description": "Päringute muutumine ajas.",
+      "queries": {
+        "all_one": "<0> {{count, number}} </0> <1> päring</1>",
+        "all_other": "<0> {{count, number}} </0> <1> päringut</1>",
+        "blocked_one": "<0> {{count, number}} </0> <1> blokeeritud päring</1>",
+        "blocked_other": "<0> {{count, number}} </0> <1> blokeeritud päringut</1>"
+      }
+    },
+    "domains": {
+      "resolved": {
+        "name": "Lahendatud domeenid",
+        "description": "Domeenid, mis lahendati ilma ühegi seadega blokeerimata või seetõttu, et neid lubati käsitsi."
+      },
+      "blocked": {
+        "name": "Blokeeritud domeenid",
+        "description": "Domeenid on blokeeritud turvalisuse, privaatsuse ja / või vanemliku järelevalve seadega või seetõttu, et need keelati käsitsi."
+      },
+      "root": {
+        "name": "Juurdomeenid",
+        "description": "Kõigi juurdomeenide ja nende alamdomeenide kohta tehtud päringute koond."
+      },
+      "empty": "Domeenid puuduvad."
+    },
+    "reasons": {
+      "name": "Blokeeritud põhjused",
+      "description": "Turvalisuse, privaatsuse ja / või vanemliku järelevalve seaded, mis blokeerisid kõige rohkem päringuid.",
+      "empty": "Ühtegi domeeni ei olnud veel blokeeritud."
+    },
+    "devices": {
+      "name": "Seadmed",
+      "description": "Päringuid esitavad seadmed.",
+      "empty": "Seadmeid ei ole veel.",
+      "unidentified": {
+        "name": "Tuvastamata seadmed"
+      }
+    },
+    "ips": {
+      "name": "IP-d",
+      "description": "Päringuid esitavad IP-aadressid.",
+      "empty": "IP-sid pole veel."
+    },
+    "gafam": {
+      "name": "GAFAMi domineerimine",
+      "description": "\"GAFAM\" (Google, Amazon, Facebook, Apple ja Microsoft) on viis domineerivat Interneti-ettevõtet, kellele kuulub palju populaarseid teenuseid, mis tegutsevad sageli erineva nime all, nt WhatsApp ja Instagram for Facebook.",
+      "companies": {
+        "google": {
+          "name": "Google"
+        },
+        "amazon": {
+          "name": "Amazon"
+        },
+        "facebook": {
+          "name": "Facebook"
+        },
+        "apple": {
+          "name": "Apple"
+        },
+        "microsoft": {
+          "name": "Microsoft"
+        },
+        "others": {
+          "name": "Teised"
+        }
+      },
+      "queries_one": "{{count, number}} päring",
+      "queries_other": "{{count, number}} päringut"
+    },
+    "encrypted": {
+      "name": "Krüpteeritud DNS",
+      "description": "Krüpteeritud transpordi (DNS-over-HTTPS, DNS-over-TLS või ametlikud NextDNS-i rakendused) abil tehtud päringute protsent.",
+      "empty": "Päringuid pole veel."
+    },
+    "dnssec": {
+      "name": "DNSSEC",
+      "description": "DNSSEC-iga kinnitatud päringute protsent.",
+      "empty": "Päringuid pole veel."
+    },
+    "destination": {
+      "name": "Võrguliikluse sihtriigid",
+      "description": "Riigid, kuhu võrguliiklus läheb.",
+      "topDomains": "Domeenide TOP",
+      "queries_one": "{{count, number}} päring",
+      "queries_other": "{{count, number}} päringut"
+    }
+  },
+  "logs": {
+    "blockedOnly": "Ainult blokeeritud päringud",
+    "raw": "Toores DNS palgid",
+    "empty": "Logi pole veel tekkinud.",
+    "log": {
+      "actionBlock": "Block",
+      "actionAllow": "Allow",
+      "dnssec": "Kinnitatud DNSSEC-iga.",
+      "clients": {
+        "nextdns-ios": "NextDNS iOS-ile",
+        "nextdns-android": "NextDNS Androidile",
+        "nextdns-macos": "NextDNS macOS-ile",
+        "nextdns-windows": "NextDNS Windowsile",
+        "nextdns-cli": "NextDNS CLI Client",
+        "nextdns-chromeos": "NextDNS Chrome OS-ile",
+        "firefox": "Firefox",
+        "google-chrome": "Google Chrome",
+        "dnscrypt": "DNSCrypt",
+        "intra": "Intra",
+        "surge": "Surge",
+        "https-dns-proxy": "https_dns_proxy",
+        "mikrotik": "Mikrotik",
+        "apple-profile": "Apple Konfiguratsiooniprofiil"
+      },
+      "blockedBy": "Päringu blokeeris <1>{{lists}}</1>.",
+      "allowedBy": "Päringu lubas <1>{{lists}}</1>.",
+      "manual": {
+        "deny": "Käsitsi keelatud.",
+        "allow": "Käsitsi lubatud."
+      },
+      "insights": {
+        "show": "Kuva Jälitaja üksikasjad",
+        "hide": "Peida Jälitaja üksikasjad",
+        "categories": {
+          "advertising": {
+            "description": "Pakub reklaami või reklaamiga seotud teenuseid, nagu andmete kogumine, käitumisanalüüs või uuesti sihtimine."
+          },
+          "comments": {
+            "description": "Lubab artiklite ja toodete ülevaadete kommentaaride jaotised."
+          },
+          "customer_interaction": {
+            "description": "Sisaldab vestlust, e-posti sõnumside, klienditoe ja muid suhtlusvahendeid."
+          },
+          "essential": {
+            "description": "Sisaldab märgendihaldureid, privaatsusteateid ja tehnoloogiaid, mis on veebisaidi funktsionaalsuse jaoks üliolulised."
+          },
+          "adult_advertsing": {
+            "description": "Pakub reklaame, mis ilmuvad tavaliselt täiskasvanutele mõeldud sisusaitidel."
+          },
+          "site_analytics": {
+            "description": "Kogub ja analüüsib saidi kasutamise ja jõudlusega seotud andmeid."
+          },
+          "social_media": {
+            "description": "Integreerib sotsiaalmeedia saitidega seotud funktsioone."
+          },
+          "audio_video_player": {
+            "description": "Võimaldab veebisaitidel video- ja helisisu avaldada, levitada ja optimeerida."
+          },
+          "cdn": {
+            "description": "Sisu edastusvõrk, mis pakub ressursse saidi eri kasutusalade jaoks ja tavaliselt paljude erinevate klientide jaoks."
+          },
+          "misc": {
+            "description": "See jälgija ei sobi teistesse kategooriatesse või pole sellele veel silti lisatud."
+          },
+          "pornvertising": {
+            "description": "Pakub reklaame, mis ilmuvad tavaliselt täiskasvanutele mõeldud sisusaitidel."
+          },
+          "hosting": {
+            "description": "Seda teenust kasutab sisupakkuja või saidi omanik."
+          },
+          "extensions": {
+            "description": "Kasutaja seadmetes olev tarkvara, mis suudab brauseriliiklust pealt vaadata ja analüüsida (mees keskel)."
+          }
+        },
+        "prevalence": {
+          "intensity": {
+            "dangerously": "Ohtlikult levinud",
+            "extremely": "Äärmiselt levinud",
+            "very": "Väga levinud",
+            "commonly": "Üldiselt levinud",
+            "relatively": "Suhteliselt levinud"
+          },
+          "summary": "{{prevalence}} <3> (jälgib {{percent, percentage}} veebiliiklusest) </3>"
+        },
+        "ownedBy": "<0> Omanik </0> <1>{{company}}</1>",
+        "source": "Jälitaja ülevaate allikas"
+      }
+    }
+  },
+  "deviceSelector": {
+    "all": "Kõik seadmed",
+    "howto": "Lisateavet seadmete tuvastamise kohta leiad lehelt „Seadistamine“."
+  },
+  "timeRangeSelector": {
+    "ranges": {
+      "30m": "Viimased 30 minutit",
+      "6h": "Viimased 6 tundi",
+      "24h": "Viimased 24 tundi",
+      "7d": "Viimased 7 päeva",
+      "30d": "Viimased 30 päeva",
+      "3M": "Viimased 3 kuud"
+    }
+  },
+  "settings": {
+    "name": {
+      "name": "Nimi",
+      "description": "Vali sellele konfiguratsioonile nimi."
+    },
+    "logs": {
+      "name": "Logid",
+      "description": "Häälesta logimise seadeid.",
+      "enable": "Lülita logimine sisse",
+      "privacy": {
+        "name": "Privaatsuse häälestamine",
+        "ip": "Logi seadmete IP-d",
+        "domains": "Logi domeenid"
+      },
+      "retention": {
+        "name": "Säilitamine",
+        "options": {
+          "1h": "1 tund",
+          "6h": "6 tundi",
+          "1d": "1 päev",
+          "1w": "1 nädal",
+          "1m": "1 kuu",
+          "3m": "3 kuud",
+          "6m": "6 kuud",
+          "1y": "1 aasta",
+          "2y": "2 aastat"
+        }
+      },
+      "location": {
+        "name": "Logiandmete asukoht",
+        "locations": {
+          "us": {
+            "name": "Ameerika Ühendriigid",
+            "description": "Logisid hoitakse Ameerika Ühendriikides. See on vaikimisi valik."
+          },
+          "eu": {
+            "name": "Euroopa Liit",
+            "description": "Logisid hoitakse Euroopa Liidu liikmesriikides."
+          },
+          "ch": {
+            "name": "Šveits",
+            "description": "Logisid hoitakse Šveitsis, Zürichis. Tegemist on jurisdiktsiooniga, mis on tuntud oma tugevate privaatsusseaduste poolest."
+          }
+        },
+        "confirm": {
+          "title": "Muuda salvestuskohta",
+          "text": "Logide salvestuskoha muutmine kustutab selle konfiguratsiooni kõik varasemad logid ja analüütika."
+        }
+      },
+      "download": {
+        "button": "Lae alla palgid"
+      },
+      "clear": {
+        "button": "Kustuta logid",
+        "confirm": {
+          "text": "Oled kindel, et soovid selle konfiguratsiooni kõik logid kustutada? Seda toimingut ei saa tagasi võtta.",
+          "submit": "Kustuta"
+        }
+      }
+    },
+    "blockpage": {
+      "name": "Blokeeringu lehekülg",
+      "description": "Domeeni blokeerimise korral kuvatakse blokeerimisleht. See võib lehe laadimisaega veidi pikendada ja mõnel juhul võib ilmuda HTTPS-i hoiatus. Väljalülitatuna vastatakse blokeeritud päringutele täpsustamata aadressiga (0.0.0.0 või: :).",
+      "enable": "Lülita Blokeeringu lehekülg sisse",
+      "ca": {
+        "name": "JärgmineDNS-i juur CA",
+        "description": "Blokeerimislehe laadimisel eemaldage HTTPS-hoiatus, installides ja usaldades meie juur-CA-d aadressil <1>{{link}}</1> . Siit saate lugeda juhiseid selle kohta, kuidas seda teha <3> </3> ."
+      }
+    },
+    "performance": {
+      "name": "Kiirus",
+      "description": "Kiirenda sirvimist.",
+      "ecs": {
+        "name": "Anonüümseks muudetud EDNS-i kliendi alamvõrk",
+        "description": "Kiirendage andmete edastamist sisuvõrkudest ilma oma IP-aadressi paljastamata.",
+        "enable": "Luba $t(settings.performance.ecs.name)"
+      },
+      "cache": {
+        "name": "Vahemälu suurendamine",
+        "description": "Minimeerige DNS-päringud, kehtestades minimaalse TTL-i (aeg elada).",
+        "enable": "Luba $t(settings.performance.cache.name)"
+      },
+      "flatten": {
+        "name": "CNAME lamenemine",
+        "description": "Takistage CNAME-i jälitavaid lahendajaid tarbetute päringute esitamises ja saastake logisid vahedomeenidega.",
+        "enable": "Luba $t(settings.performance.flatten.name)"
+      }
+    },
+    "web3": {
+      "name": "Web3",
+      "description": "Web3 viitab detsentraliseeritud ja tsensuurikindlale veebipõhisele ökosüsteemile, mis koosneb uuenduslikest tehnoloogiatest, nagu plokiahelapõhised domeeniregistrid (nt Ethereum Name Service) ja hajutatud sisu salvestus- ja edastusvõrgud (nt IPFS). Kui NextDNS on aktiveeritud, toimib see filtreerimata väravana sellesse uude veebi, võimaldades teil seda vahetult kogeda, ilma et oleks vaja midagi paigaldada.",
+      "tips": "Kuna enamik brausereid toetab praegu ainult klassikalisi tippdomeene, peaksite Web3 domeenile otse juurde pääsedes lisama lõpus kaldkriipsu (\"<1>/</1>\") (nt \"<3>vitalik.eth/\" </3>\" asemel \"<5>vitalik.eth</5>\").",
+      "enable": "Luba Web3"
+    },
+    "rewrites": {
+      "name": "Kirjutab ümber",
+      "description": "Määrake või tühistage mis tahes domeeni DNS-vastus. Ümberkirjutamine kehtib ka alamdomeenide kohta ja vastusena toetatakse kohalikke IP-aadresse.",
+      "new": "Uus ümberkirjutamine",
+      "form": {
+        "domain": {
+          "label": "Domeen",
+          "placeholder": "myprinter.lan, myinternetbox.com, ...",
+          "errors": {
+            "required": "Palun sisesta domeen.",
+            "ip": "Sisesta domeen, mitte IP-aadress.",
+            "invalid": "Palun kontrolli domeeni vormingut.",
+            "taken": "Teil on selle domeeni jaoks juba kirjutatud."
+          }
+        },
+        "answer": {
+          "label": "Vastus",
+          "placeholder": "1.2.3.4, sub.example.org, ...",
+          "errors": {
+            "required": "Palun sisesta vastus.",
+            "invalid": "Vastus peaks olema korrektne IP-aadress või domeen."
+          }
+        }
+      }
+    },
+    "access": {
+      "name": "Juurdepääs",
+      "description": "Andke teistele selle profiili muutmis- või vaatamisõigus.",
+      "roles": {
+        "editor": "Toimetaja",
+        "viewer": "Vaataja"
+      },
+      "pending": "Kutse saadetud",
+      "form": {
+        "email": {
+          "label": "Meil",
+          "errors": {
+            "required": "Sisestage e-posti aadress.",
+            "invalid": "Sisestage kehtiv emaili aadress.",
+            "duplicate": "See meil on juba kutsutud."
+          }
+        },
+        "role": {
+          "label": "Roll"
+        }
+      }
+    },
+    "duplicate": {
+      "button": "Duplicate <1>{{name}}</1>",
+      "description": "Copy all settings of this profile to a new one.",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Home, Kids, Office, ...",
+          "errors": {
+            "required": "Enter a name.",
+            "taken": "You already have a profile with that name."
+          }
+        },
+        "button": "Duplicate"
+      }
+    },
+    "delete": {
+      "button": "Kustuta <1>{{name}}</1>",
+      "warning": "Kustutab jäädavalt selle konfiguratsiooni ja kõik sellega seonduvad logid.",
+      "confirm": {
+        "text": "Oled kindel, et soovid kustutada <1>{{name}}</1>? Seda toimingut ei saa tagasi võtta."
+      }
+    },
+    "leave": {
+      "button": "Lahku <1>{{name}}</1>",
+      "warning": "Kaotate juurdepääsu sellele profiilile.",
+      "confirm": {
+        "text": "Kas soovite kindlasti <1>{{name}}</1> lahkuda? Seda toimingut ei saa tagasi võtta."
+      }
+    }
+  }
 }
