@@ -420,4 +420,14 @@
     <string name="provider_preset_dnsforge_hard_description">Geniş bloklama siyahıları vasitəsilə reklamların, izləyicilərin və zərərli proqramların ciddi şəkildə bloklanması.</string>
     <string name="provider_preset_dnsforge_blank">Boş</string>
     <string name="provider_preset_dnsforge_blank_description">Bloklama olmadan filtrlənməmiş DNS həlli.</string>
+    <string name="hagezi_dns">HaGeZi DNS</string>
+    <string name="the_public_hagezi_dns_server">Avropa İttifaqında yerləşən ictimai HaGeZi DNS serverləri.</string>
+    <string name="provider_preset_hagezi_root">Root (Falkenşteyn)</string>
+    <string name="provider_preset_hagezi_root_description">Reklamları, izləyiciləri və zərərli proqramları bloklayır (Almaniyanın Falkenşteyn şəhərində yerləşir).</string>
+    <string name="provider_preset_hagezi_wurzn">Vurtsn (Nürnberq)</string>
+    <string name="provider_preset_hagezi_wurzn_description">Reklamları, izləyiciləri və zərərli proqramları bloklayır (Almaniyanın Nürnberq şəhərində yerləşir).</string>
+    <string name="provider_preset_hagezi_juuri">Juuri (Helsinki)</string>
+    <string name="provider_preset_hagezi_juuri_description">Reklamları, izləyiciləri və zərərli proqramları bloklayır (Finlandiyanın Helsinki şəhərində yerləşir).</string>
+    <string name="provider_preset_hagezi_ctif">Yalnız təhdidlər (Nürnberq)</string>
+    <string name="provider_preset_hagezi_ctif_description">Reklamları və ya izləyiciləri bloklamadan fişinq, zərərli proqram və fırıldaqçılıq domenlərini bloklayır (Almaniyanın Nürnberq şəhərində yerləşir).</string>
 </resources>

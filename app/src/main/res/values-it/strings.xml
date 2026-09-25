@@ -420,4 +420,14 @@
     <string name="provider_preset_dnsforge_hard_description">Blocco rigoroso di annunci, tracciatori e malware grazie a estese liste di blocco.</string>
     <string name="provider_preset_dnsforge_blank">Vuoto</string>
     <string name="provider_preset_dnsforge_blank_description">Risoluzione DNS non filtrata senza blocchi.</string>
+    <string name="hagezi_dns">HaGeZi DNS</string>
+    <string name="the_public_hagezi_dns_server">I server DNS pubblici di HaGeZi DNS ospitati in UE.</string>
+    <string name="provider_preset_hagezi_root">Root (Falkenstein)</string>
+    <string name="provider_preset_hagezi_root_description">Blocca annunci, tracker e malware (ospitato a Falkenstein, Germania).</string>
+    <string name="provider_preset_hagezi_wurzn">Wurzn (Norimberga)</string>
+    <string name="provider_preset_hagezi_wurzn_description">Blocca annunci, tracker e malware (ospitato a Norimberga, Germania).</string>
+    <string name="provider_preset_hagezi_juuri">Juuri (Helsinki)</string>
+    <string name="provider_preset_hagezi_juuri_description">Blocca annunci, tracker e malware (ospitato a Helsinki, Finlandia).</string>
+    <string name="provider_preset_hagezi_ctif">Solo minacce (Nuremberg)</string>
+    <string name="provider_preset_hagezi_ctif_description">Blocca i domini phishing, malware e truffa senza bloccare annunci o tracker (ospitato a Norimberga, Germania).</string>
 </resources>

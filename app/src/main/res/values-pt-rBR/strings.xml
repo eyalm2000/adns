@@ -410,4 +410,15 @@
     <string name="unreleased_warning_title">Funcionalidade não lançada</string>
     <string name="unreleased_warning_description">Essa configuração é um recurso interno experimental que ainda não foi lançado oficialmente pela NextDNS. Ativá-la pode causar falhas inesperadas em sites, um número elevado de falsos positivos ou falhas na resolução de DNS. A NextDNS pode alterá-la ou removê-la a qualquer momento.</string>
     <string name="unreleased_warning_enable">Entendo o risco, ativar</string>
+    <string name="dnsforge">DNSforge</string>
+    <string name="the_public_dnsforge_dns_server">O servidor de DNS público dnsforge.de hospedado na Alemanha.</string>
+    <string name="provider_preset_dnsforge_normal">Básico</string>
+    <string name="provider_preset_dnsforge_normal_description">Bloqueia propagandas, rastreadores e malwares.</string>
+    <string name="provider_preset_dnsforge_clean">Aprimorado</string>
+    <string name="provider_preset_dnsforge_clean_description">Bloqueia propagandas, rastreadores, malwares, conteúdo adulto e utiliza o \"Safe Search\" quando possível.</string>
+    <string name="provider_preset_dnsforge_hard">Avançado</string>
+    <string name="provider_preset_dnsforge_hard_description">Bloqueio rigoroso de anúncios, rastreadores e malwares utilizando listas de bloqueios extensos.</string>
+    <string name="provider_preset_dnsforge_blank">Vazio</string>
+    <string name="provider_preset_dnsforge_blank_description">Resolução DNS não filtrada sem bloqueio.</string>
+    <string name="hagezi_dns">HaGeZi DNS</string>
 </resources>
