@@ -607,7 +607,7 @@
               "requirements": "Tylko dla Windows, macOS i Linux",
               "steps": {
                 "1": "1. Otwórz Ustawienia (Preferencje w niektórych wersjach).",
-                "2": "2. Kliknij Prywatność i bezpieczeństwo.",
+                "2": "2. Kliknij Prywatność i bezpieczeństwo (Prywatność i bezpieczeństwo w niektórych wersjach).",
                 "3": "3. Przewiń w dół do sekcji DNS poprzez HTTPS i otwórz Ustawienia zaawansowane, jeśli ta opcja jest widoczna.",
                 "4": "4. Wybierz opcję Własne ustawienia (Zwiększona ochrona lub Maksymalna ochrona w niektórych wersjach).",
                 "5": "5. W menu wyboru dostawcy wybierz opcję Własny adres.",

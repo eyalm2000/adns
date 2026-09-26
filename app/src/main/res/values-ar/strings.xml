@@ -349,4 +349,25 @@
     <string name="wifi_rules_invalid_ssid">أدخل إسم الشبكة اللاسلكية (Wi-Fi).</string>
     <string name="wifi_rules_remove">أزل قاعدة الشبكة اللاسلكية (Wi-Fi)</string>
     <string name="wifi_rules_remove_message">نظام أسماء النطاقات الخاص (Private DNS) لن يتوقف مؤقتا في إسم هذه الشبكة اللاسلكية (Wi-Fi).</string>
+    <string name="color_scheme_system">ألوان النظام</string>
+    <string name="save">حفظ</string>
+    <string name="nextdns_checking_connection">جاري التحقق من الإتصال…</string>
+    <string name="nextdns_checking_connection_description">إختبار هذا الجهاز وفقاً للملف الشخصي المختار.</string>
+    <string name="nextdns_connection_offline">تعذّر فحص الاتصال أثناء عدم الاتصال بالشبكة</string>
+    <string name="nextdns_connection_offline_description">إتصل بالشبكة وأعد التحميل لفحص هذا الجهاز.</string>
+    <string name="nextdns_unknown_resolver">موزع غير معروف</string>
+    <string name="block_domain">حظر نطاق</string>
+    <string name="allow_domain">السماح بالنطاق</string>
+    <string name="resolved">موزع</string>
+    <string name="unencrypted_over">غير مشفَّر عبر</string>
+    <string name="over">عبر</string>
+    <string name="from">مِن</string>
+    <string name="root_domain_label">جذر النطاق</string>
+    <string name="query_type_label">نوع الاستعلام</string>
+    <string name="analytics_protocols_title">القواعد والأنظمة المعتمدة للاتصال (Protocols)</string>
+    <string name="analytics_protocols_description">القواعد والأنظمة المعتمدة للاتصال (Protocols) لنظام أسماء النطاقات (DNS) المُستخدمة لإرسال الاستعلامات إلى NextDNS.</string>
+    <string name="analytics_protocols_empty">لا تتوفر قواعد وأنظمة معتمدة للاتصال (Protocols) حتى الآن.</string>
+    <string name="analytics_query_types_title">أنواع الاستعلامات</string>
+    <string name="analytics_query_types_description">أنواع سجلات نظام أسماء النطاقات (DNS).</string>
+    <string name="analytics_query_types_empty">لا تتوفر أنواع استعلامات حتى الآن.</string>
 </resources>
