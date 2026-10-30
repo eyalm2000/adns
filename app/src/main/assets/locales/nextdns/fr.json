@@ -213,7 +213,7 @@
         "bitpay": {
           "text": "Cliquez sur le bouton Continuer avec BitPay pour payer avec des cryptomonnaies.",
           "toYearly": "Nous n'acceptons pas les paiements en cryptomonnaie pour les forfaits mensuels. <1>En continuant, vous passerez automatiquement au forfait annuel.</1>",
-          "remainder": "Votre abonnement actuel est déjà payé jusqu'au {{date, date}}. Vous serez facturé maintenant et le reste sera automatiquement ajouté à la nouvelle date d'expiration."
+          "remainder": "Votre abonnement actuel est déjà payé jusqu'au {{date, date}}. Vous serez facturé(e) maintenant et le solde sera automatiquement ajouté à la nouvelle date d'expiration."
         },
         "continueTo": "Continuer avec <1></1>"
       }
@@ -320,7 +320,7 @@
       "expired": {
         "modal": {
           "title": "Expiré",
-          "text": "Votre compte temporaire a expiré. Inscrivez-vous gratuitement pour enregistrer vos paramètres et continuer à utiliser NextDNS."
+          "text": "Votre compte temporaire a expiré. Inscrivez-vous dès maintenant pour enregistrer vos paramètres et continuer à utiliser NextDNS. C'est gratuit."
         }
       }
     }
@@ -502,7 +502,7 @@
                 "1": "1. Ouvrez Démarrer, recherchez Panneau de configuration, puis ouvrez-le.",
                 "2": "2. Cliquez sur Réseau et Internet, puis sur Centre Réseau et partage.",
                 "3": "3. Cliquez sur Modifier les paramètres de la carte.",
-                "4": "4. Cliquez avec le bouton droit sur la carte avec laquelle vous êtes connecté, puis cliquez sur Propriétés.",
+                "4": "4. Cliquez avec le bouton droit de la souris sur le réseau Wi-Fi auquel vous êtes connecté, puis cliquez sur « Propriétés ».",
                 "5": "5. Sélectionnez Protocole Internet version {{version}}.",
                 "6": "6. Cliquez sur Propriétés.",
                 "7": "7. Sélectionnez « Utiliser l'adresse de serveur DNS suivante : ».",
@@ -1022,7 +1022,7 @@
       "all_other": "<0>{{count, number}}</0><1>requêtes</1>",
       "blocked_one": "<0>{{count, number}}</0><1>requête bloquée</1>",
       "blocked_other": "<0>{{count, number}}</0><1>requêtes bloquées</1>",
-      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>de requêtes bloquées</1></1>"
+      "percentBlocked": "<0>{{percent, percentage}}</0><1><0> </0><1>des requêtes bloquées</1></1>"
     },
     "queries": {
       "name": "Requêtes",
@@ -1050,7 +1050,7 @@
       "empty": "Aucun domaine pour l'instant."
     },
     "reasons": {
-      "name": "Raisons de blocage",
+      "name": "Motifs de blocage",
       "description": "Paramètres de sécurité, de confidentialité et/ou de contrôle parental qui ont bloqué le plus de requêtes.",
       "empty": "Aucun domaine n'a encore été bloqué."
     },
@@ -1175,7 +1175,7 @@
             "description": "Réseau de diffusion de contenu (CDN) qui fournit des ressources pour différentes fonctions d'un site, généralement pour de nombreux clients différents."
           },
           "misc": {
-            "description": "Ce traqueur ne rentre dans aucune catégorie ou n'a pas encore été catégorisé."
+            "description": "Ce traceur n'entre dans aucune autre catégorie ou n'a pas encore été classé."
           },
           "pornvertising": {
             "description": "Diffuse des publicités qui apparaissent généralement sur les sites de contenu pour adultes."
@@ -1226,7 +1226,7 @@
     },
     "logs": {
       "name": "Logs",
-      "description": "Réglez vos options de logs.",
+      "description": "Affinez vos paramètres de journalisation.",
       "enable": "Activer les logs",
       "privacy": {
         "name": "Ajustements de confidentialité",
@@ -1303,7 +1303,7 @@
       },
       "flatten": {
         "name": "Aplatissement CNAME",
-        "description": "Empêchez les résolveurs poursuivant les CNAME d'effectuer des requêtes inutiles et de polluer les logs avec des domaines intermédiaires.",
+        "description": "Empêcher les résolveurs effectuant une recherche CNAME d'envoyer des requêtes inutiles et de polluer les journaux avec des domaines intermédiaires.",
         "enable": "Activer l'aplatissement CNAME"
       }
     },
