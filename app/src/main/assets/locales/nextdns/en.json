@@ -678,7 +678,7 @@
       "description": "Follow the instructions below to identify your devices in Analytics and Logs.",
       "apps": {
         "name": "Apps",
-        "instructions": "Enable \"Send Device Name\" (or \"Report Device Name\" on Windows) in the app settings."
+        "instructions": "Current apps send device names automatically. If your app has a “Send Device Name” or “Report Device Name” setting, enable it."
       },
       "dot": {
         "instructions": "Prepend the name to the provided domain (the name should only contain <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> and <7>-</7>). Use <9>--</9> for spaces.",
@@ -838,8 +838,13 @@
         "updated": "Recent"
       }
     },
+    "rotatingAds": {
+      "name": "Block Rotating Ad Domains",
+      "description": "Block ads that hide behind constantly changing domains. New domains can be blocked instantly by identifying the advertising infrastructure behind them — before popular blocklists have time to catch up.",
+      "enable": "Block Rotating Ad Domains"
+    },
     "native": {
-      "name": "Native Tracking Protection",
+      "name": "Native Tracking",
       "description": "Block trackers — often operating at the operating system level — that monitor a broad range of your activity on a device. This could include all the websites you visit, everything you type or your location at all times.",
       "add": "Add",
       "systems": {
@@ -874,6 +879,10 @@
         "sonos": {
           "name": "Sonos",
           "devices": "Speakers"
+        },
+        "lg": {
+          "name": "LG",
+          "devices": "Smart TVs"
         }
       }
     },
@@ -883,10 +892,10 @@
       "enable": "Block Disguised Third-Party Trackers"
     },
     "affiliate": {
-      "name": "Allow Affiliate & Tracking Links",
-      "description": "Allow affiliate & tracking domains common on deals websites, in emails or in search results. Those usually only get called after manually clicking on a link.",
-      "relay": "Your IP address will automatically be hidden from those websites to preserve your privacy.",
-      "enable": "Allow Affiliate & Tracking Links"
+      "name": "Allow Tracking Links",
+      "description": "Allow tracking links in emails, search results, and deal websites. These are only triggered by a click.",
+      "relay": "Your IP address is automatically hidden from tracking services to protect your privacy.",
+      "enable": "Allow Tracking Links"
     }
   },
   "parentalControl": {
@@ -945,6 +954,14 @@
       "description": "Restrict access to specific categories of websites and apps.",
       "add": "Add a category",
       "categories": {
+        "ai-assistants": {
+          "name": "AI Assistants",
+          "description": "Blocks AI assistants such as ChatGPT, Claude, Gemini, and Muse."
+        },
+        "remote-access-tools": {
+          "name": "Remote Access Tools",
+          "description": "Blocks tools such as AnyDesk and TeamViewer that allow remote control of your devices and can be misused in tech support scams."
+        },
         "dating": {
           "name": "Dating",
           "description": "Blocks all dating websites & apps."
@@ -965,9 +982,13 @@
           "name": "Porn",
           "description": "Blocks adult and pornographic content. It includes escort sites, pornhub.com and similar domains."
         },
+        "messaging": {
+          "name": "Messaging",
+          "description": "Blocks personal messaging apps such as WhatsApp, Signal, and Discord."
+        },
         "social-networks": {
-          "name": "Social Networks",
-          "description": "Blocks all social networking sites and apps (Facebook, Instagram, TikTok, Reddit, etc.). Does not block messaging apps."
+          "name": "Social Media",
+          "description": "Blocks social media sites and apps such as Facebook, Instagram, TikTok, and Reddit."
         },
         "video-streaming": {
           "name": "Video Streaming",

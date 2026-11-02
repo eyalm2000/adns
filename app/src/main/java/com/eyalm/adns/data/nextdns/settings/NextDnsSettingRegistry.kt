@@ -33,6 +33,7 @@ object NextDnsSettingRegistry {
     val privacy = SettingsPageSpec(
         page = "privacy",
         settings = listOf(
+            booleanSetting("privacy", "rotatingAdDomains", "privacy", "rotatingAds", maturity = FeatureMaturity.EARLY_ACCESS),
             booleanSetting("privacy", "disguisedTrackers", "privacy", "disguised"),
             booleanSetting("privacy", "allowAffiliate", "privacy", "affiliate"),
         ),

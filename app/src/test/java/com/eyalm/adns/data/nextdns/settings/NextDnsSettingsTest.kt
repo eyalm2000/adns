@@ -110,6 +110,7 @@ class NextDnsSettingsTest {
             "aiThreatDetection" to FeatureMaturity.STABLE,
             "googleSafeBrowsing" to FeatureMaturity.STABLE,
             "nrd" to FeatureMaturity.STABLE,
+            "newlyActiveDomains" to FeatureMaturity.EARLY_ACCESS,
             "freeHostingDomains" to FeatureMaturity.EARLY_ACCESS,
             "ddns" to FeatureMaturity.STABLE,
             "tunnelingEndpoints" to FeatureMaturity.EARLY_ACCESS,

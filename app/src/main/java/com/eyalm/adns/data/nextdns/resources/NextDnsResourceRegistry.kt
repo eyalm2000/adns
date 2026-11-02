@@ -111,7 +111,6 @@ object NextDnsResourceRegistry {
             source = NextDnsResourceSource.LOCALE,
             localePath = listOf("privacy", "native", "systems"),
             parentPage = NextDnsResourceSpec.ParentPage.PRIVACY,
-            isBeta = true,
         ),
     )
 
