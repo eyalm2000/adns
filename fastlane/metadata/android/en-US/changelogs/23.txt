@@ -1,0 +1,7 @@
+- Enabled Arabic, French, and Portuguese locales
+- Updated NextDNS settings:
+  - Added Block Rotating Ad Domains setting
+  - Added LG Smart TVs to Native Tracking and graduated it out of beta
+  - Retired deprecated security settings (IDN Homographs and Typosquatting)
+- Fixed long domain names getting truncated in analytics details
+- Updated translations
