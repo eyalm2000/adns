@@ -102,6 +102,7 @@ fun StatItemDetailsBottomSheet(
                         DomainTitleText(
                             domain = item.title,
                             style = MaterialTheme.typography.titleLarge,
+                            maxLines = 3,
                         )
                     } else {
                         Text(
@@ -109,7 +110,7 @@ fun StatItemDetailsBottomSheet(
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.onSurface,
-                            maxLines = 1,
+                            maxLines = 3,
                             overflow = TextOverflow.Ellipsis
                         )
                     }
