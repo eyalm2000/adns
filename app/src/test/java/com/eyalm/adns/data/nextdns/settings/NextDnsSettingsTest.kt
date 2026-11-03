@@ -126,8 +126,6 @@ class NextDnsSettingsTest {
             "parking" to FeatureMaturity.STABLE,
             "highRiskTlds" to FeatureMaturity.EARLY_ACCESS,
             "dga" to FeatureMaturity.STABLE,
-            "idnHomographs" to FeatureMaturity.STABLE,
-            "typosquatting" to FeatureMaturity.STABLE,
             "csam" to FeatureMaturity.STABLE,
         )
 

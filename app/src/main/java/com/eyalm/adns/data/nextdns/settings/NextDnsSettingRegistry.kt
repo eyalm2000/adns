@@ -24,8 +24,6 @@ object NextDnsSettingRegistry {
             booleanSetting("security", "parking", "security", "parked"),
             booleanSetting("security", "highRiskTlds", "security", "highRiskTlds", FeatureMaturity.EARLY_ACCESS),
             booleanSetting("security", "dga", "security", "dga"),
-            booleanSetting("security", "idnHomographs", "security", "homograph"),
-            booleanSetting("security", "typosquatting", "security", "typosquatting"),
             booleanSetting("security", "csam", "security", "csam"),
         ),
     )

@@ -2,6 +2,7 @@
   "global": {
     "beta": "beta",
     "preview": "Early Access",
+    "new": "New",
     "cancel": "Cancel",
     "add": "Add",
     "save": "Save",
@@ -715,16 +716,6 @@
       "name": "Local Network Addresses",
       "description": "Block DNS responses containing local network addresses to help protect your devices from DNS rebinding attacks.",
       "enable": "Block Local Network Addresses"
-    },
-    "homograph": {
-      "name": "IDN Homographs",
-      "description": "Block internationalized domain names (IDNs) that impersonate other domains using look-alike characters — e.g., replacing the Latin letter “e” with the Cyrillic letter “е”.",
-      "enable": "Block IDN Homographs"
-    },
-    "typosquatting": {
-      "name": "Typosquatting",
-      "description": "Block domains registered by malicious actors that target users who incorrectly type a website address into their browser — e.g., gooogle.com instead of google.com.",
-      "enable": "Block Typosquatting"
     },
     "dga": {
       "name": "Domain Generation Algorithms",
