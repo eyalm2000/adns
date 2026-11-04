@@ -28,7 +28,8 @@
     "copy": "Copia",
     "actions": "Azioni",
     "expand": "Espandi",
-    "collapse": "Comprimi"
+    "collapse": "Comprimi",
+    "new": "Nuovo"
   },
   "theme": {
     "label": "Tema",
@@ -678,7 +679,7 @@
       "description": "Segui le istruzioni seguenti per identificare i tuoi dispositivi in Statistiche e Log.",
       "apps": {
         "name": "App",
-        "instructions": "Abilita «Send Device Name» (o «Report Device Name» su Windows) nelle impostazioni dell'app."
+        "instructions": "Le app attuali inviano il nome del dispositivo automaticamente. Se la tua app ha un'impostazione «Invia nome dispositivo» o «Segnala nome dispositivo», abilitala."
       },
       "dot": {
         "instructions": "Anteponi il nome al dominio fornito (il nome deve contenere solo <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> e <7>-</7>). Usa <9>--</9> per gli spazi.",
@@ -839,7 +840,7 @@
       }
     },
     "native": {
-      "name": "Protezione dal tracciamento nativo",
+      "name": "Tracciamento nativo",
       "description": "Blocca i tracker — che spesso operano a livello di sistema operativo — che monitorano molti aspetti della tua attività su un dispositivo. Ciò potrebbe includere tutti i siti web che visiti, tutto ciò che digiti o la tua posizione in ogni momento.",
       "add": "Aggiungi",
       "systems": {
@@ -874,6 +875,10 @@
         "sonos": {
           "name": "Sonos",
           "devices": "Altoparlanti"
+        },
+        "lg": {
+          "name": "LG",
+          "devices": "Smart TV"
         }
       }
     },
@@ -883,10 +888,15 @@
       "enable": "Blocca i tracker di terze parti mascherati"
     },
     "affiliate": {
-      "name": "Consenti i link di affiliazione e tracciamento",
-      "description": "Consenti domini di affiliazione e tracciamento comuni sui siti web di offerte, nelle email o nei risultati di ricerca. Di solito vengono contattati solo dopo aver fatto clic manualmente su un collegamento.",
-      "relay": "Il tuo indirizzo IP verrà automaticamente nascosto a quei siti web per preservare la tua privacy.",
-      "enable": "Consenti i link di affiliazione e tracciamento"
+      "name": "Consenti i link di tracciamento",
+      "description": "Consenti domini di tracciamento nelle email,nei risultati di ricerca o nei siti web di offerte. Vengono attivati solo da un click.",
+      "relay": "Il tuo indirizzo IP è nascosto automaticamente ai servizi di tracciamento per preservare la tua privacy.",
+      "enable": "Consenti i link di tracciamento"
+    },
+    "rotatingAds": {
+      "name": "Blocca i domini pubblicitari rotanti",
+      "description": "Blocca gli annunci pubblicitari che si nascondono dietro domini in costante mutamento. I nuovi domini possono essere bloccati all'istante identificando l'infrastruttura pubblicitaria che vi sta alle spalle, prima ancora che le liste di blocco più diffuse abbiano il tempo di aggiornarsi.",
+      "enable": "Blocca i domini pubblicitari rotanti"
     }
   },
   "parentalControl": {
@@ -966,12 +976,24 @@
           "description": "Blocca i contenuti per adulti e pornografici. Sono inclusi siti di escort, pornhub.com e domini simili."
         },
         "social-networks": {
-          "name": "Social network",
-          "description": "Blocca tutti i siti e le app dei social network (Facebook, Instagram, TikTok, Reddit, ecc.). Sono escluse le app di messaggistica."
+          "name": "Social media",
+          "description": "Blocca siti e app di social media come Facebook, Instagram, TikTok e Reddit."
         },
         "video-streaming": {
           "name": "Streaming video",
           "description": "Blocca i servizi di streaming video (YouTube, Netflix, Disney+, siti web di streaming illegali, siti web di video porno, ecc.) e i social network basati sui video (TikTok, ecc.). Questo può anche aiutare a ridurre l'utilizzo della larghezza di banda su qualsiasi rete."
+        },
+        "ai-assistants": {
+          "name": "Assistenti AI",
+          "description": "Blocca gli assistenti AI come ChatGPT, Claude, Gemini e Muse."
+        },
+        "remote-access-tools": {
+          "name": "Strumenti di accesso remoto",
+          "description": "Blocca strumenti come AnyDesk e TeamViewer che consentono il controllo remoto dei tuoi dispositivi e che possono essere utilizzati impropriamente nelle truffe di finto supporto tecnico."
+        },
+        "messaging": {
+          "name": "Messaggistica",
+          "description": "Blocca le app di messaggistica personale come WhatsApp, Signal e Discord."
         }
       }
     },
