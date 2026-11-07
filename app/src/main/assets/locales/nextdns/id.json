@@ -28,7 +28,8 @@
     "copy": "Salin",
     "actions": "Tindakan",
     "expand": "Perluas",
-    "collapse": "Ciutkan"
+    "collapse": "Ciutkan",
+    "new": "Baru"
   },
   "theme": {
     "label": "Tema",
@@ -678,7 +679,7 @@
       "description": "Ikuti petunjuk di bawah ini untuk mengidentifikasi perangkat Anda di Analitik dan Log.",
       "apps": {
         "name": "Aplikasi",
-        "instructions": "Aktifkan \"Kirim Nama Perangkat\" (atau \"Laporkan Nama Perangkat\" di Windows) di pengaturan aplikasi."
+        "instructions": "Aplikasi versi terkini mengirimkan nama perangkat secara otomatis. Jika aplikasi Anda memiliki pengaturan “Kirim Nama Perangkat” atau “Laporkan Nama Perangkat”, aktifkan pengaturan tersebut."
       },
       "dot": {
         "instructions": "Tambahkan nama ke domain yang disediakan (nama hanya boleh berisi <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> dan <7>-</7>). Gunakan <9>--</9> untuk spasi.",
@@ -839,7 +840,7 @@
       "entries_other": "{{count, number}} daftar"
     },
     "native": {
-      "name": "Perlindungan Native Tracking",
+      "name": "Pelacakan Bawaan",
       "description": "Blokir pelacak — yang sering beroperasi pada tingkat sistem operasi — yang memantau berbagai aktivitas Anda di perangkat. Aktivitas ini dapat mencakup semua situs web yang Anda kunjungi, semua yang Anda ketik, atau lokasi Anda setiap saat.",
       "add": "Tambah",
       "systems": {
@@ -874,6 +875,10 @@
         "sonos": {
           "name": "Sonos",
           "devices": "Speaker"
+        },
+        "lg": {
+          "name": "LG",
+          "devices": "TV Pintar"
         }
       }
     },
@@ -883,10 +888,15 @@
       "enable": "Blokir Pelacak Pihak Ketiga Tersamar"
     },
     "affiliate": {
-      "name": "Izinkan Tautan Afiliasi & Pelacakan",
-      "description": "Izinkan afiliasi & domain pelacakan umum di situs web penawaran, dalam email atau dalam hasil penelusuran. Mereka biasanya hanya dipanggil setelah mengklik tautan secara manual.",
-      "relay": "Alamat IP Anda akan secara otomatis disembunyikan dari situs web tersebut untuk menjaga privasi Anda.",
-      "enable": "Izinkan Tautan Afiliasi & Pelacakan"
+      "name": "Izinkan Tautan Pelacakan",
+      "description": "Izinkan tautan pelacakan dalam email, hasil pencarian, dan situs penawaran. Tautan ini hanya diaktifkan saat diklik.",
+      "relay": "Alamat IP Anda secara otomatis disembunyikan dari layanan pelacakan untuk melindungi privasi Anda.",
+      "enable": "Izinkan Tautan Pelacakan"
+    },
+    "rotatingAds": {
+      "name": "Blokir Domain Iklan yang Terus Berganti",
+      "description": "Blokir iklan yang bersembunyi di balik domain yang terus berganti. Domain baru dapat langsung diblokir dengan mengidentifikasi infrastruktur periklanan di baliknya — sebelum daftar blokir populer sempat diperbarui.",
+      "enable": "Blokir Domain Iklan yang Terus Berganti"
     }
   },
   "parentalControl": {
@@ -966,12 +976,24 @@
           "description": "Blokir konten dewasa dan pornografi. Ini termasuk situs pendamping, pornhub.com dan domain serupa."
         },
         "social-networks": {
-          "name": "Jejaring Sosial",
-          "description": "Memblokir semua situs dan aplikasi jejaring sosial (Facebook, Instagram, TikTok, Reddit, dll.). Tidak memblokir aplikasi perpesanan."
+          "name": "Media Sosial",
+          "description": "Memblokir situs dan aplikasi media sosial seperti Facebook, Instagram, TikTok, dan Reddit."
         },
         "video-streaming": {
           "name": "Streaming Video",
           "description": "Blokir layanan streaming video (YouTube, Netflix, Disney+, situs web streaming ilegal, situs web porno video, dll.) dan jejaring sosial berbasis video (TikTok, dll.). Ini juga dapat membantu mengurangi penggunaan bandwidth di jaringan apa pun."
+        },
+        "ai-assistants": {
+          "name": "Asisten AI",
+          "description": "Memblokir asisten AI seperti ChatGPT, Claude, Gemini, dan Muse."
+        },
+        "remote-access-tools": {
+          "name": "Alat Akses Jarak Jauh",
+          "description": "Memblokir alat seperti AnyDesk dan TeamViewer yang memungkinkan kendali jarak jauh atas perangkat Anda dan dapat disalahgunakan dalam penipuan berkedok dukungan teknis."
+        },
+        "messaging": {
+          "name": "Perpesanan",
+          "description": "Memblokir aplikasi perpesanan pribadi seperti WhatsApp, Signal, dan Discord."
         }
       }
     },

@@ -28,7 +28,8 @@
     "copy": "Kopyalayın",
     "actions": "Fəaliyyətlər",
     "expand": "Genişləndir",
-    "collapse": "Çöküş"
+    "collapse": "Çöküş",
+    "new": "Yeni"
   },
   "theme": {
     "label": "Mövzu",
@@ -664,7 +665,7 @@
       "description": "Analitika və Qeydlərdə cihazlarınızı müəyyən etmək üçün aşağıdakı təlimatları izləyin.",
       "apps": {
         "name": "Tətbiqlər",
-        "instructions": "Tətbiq parametrlərində \"Cihaz adını göndər\" (və ya Windows-da \"Cihaz adını bildir\") seçimini aktivləşdirin."
+        "instructions": "Hazırkı tətbiqlər cihaz adlarını avtomatik göndərir. Əgər tətbiqinizdə “Cihaz adını göndər” və ya “Cihaz adını bildir” kimi bir parametr varsa, onu aktivləşdirin."
       },
       "dot": {
         "instructions": "Verilən domenin adından əvvəl yazın (ad yalnız <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> və <7>-</7> olmalıdır). Boşluqlar üçün <9>--</9> istifadə edin.",
@@ -839,7 +840,7 @@
       "entries_other": "{{count, number}} yazı"
     },
     "native": {
-      "name": "Daxili izləmədən qorunma",
+      "name": "Yerli İzləmə",
       "description": "Cihazınızdakı genişmiqyaslı fəaliyyətinizi izləyən — çox vaxt əməliyyat sistemi səviyyəsində işləyən — izləyiciləri bloklayın. Bura daxil olduğunuz bütün veb-saytlar, yazdığınız hər şey və ya istənilən vaxt olduğunuz məkan daxil ola bilər.",
       "add": "Əlavə et",
       "systems": {
@@ -874,6 +875,10 @@
         "sonos": {
           "name": "Sonos",
           "devices": "Məruzəçilər"
+        },
+        "lg": {
+          "name": "LG",
+          "devices": "Smart televizor"
         }
       }
     },
@@ -883,10 +888,15 @@
       "enable": "Maskalanmış üçüncü tərəf izləyicilərini bloklayın"
     },
     "affiliate": {
-      "name": "Affiliate və izləmə linklərinə icazə verin",
-      "description": "Endirim saytlarında, e-poçtlarda və ya axtarış nəticələrində tez-tez rast gəlinən tərəfdaş (affiliate) və izləmə domenlərinə icazə verin. Bunlar adətən yalnız hansısa keçidə əl ilə klikləndikdən sonra işə düşür.",
-      "relay": "Məxfiliyinizi qorumaq üçün IP ünvanınız həmin veb-saytlardan avtomatik olaraq gizlədiləcək.",
-      "enable": "Affiliate və izləmə linklərinə icazə verin"
+      "name": "İzləmə linklərinə icazə verin",
+      "description": "E-poçtlarda, axtarış nəticələrində və endirim saytlarında izləmə linklərinə icazə verin. Bunlar yalnız üzərlərinə klikləndikdə işə düşür.",
+      "relay": "Məxfiliyinizi qorumaq üçün IP ünvanınız izləmə xidmətlərindən avtomatik olaraq gizlədilir.",
+      "enable": "İzləmə linklərinə icazə verin"
+    },
+    "rotatingAds": {
+      "name": "Reklam Dövrü Domenlərini Bloklayın",
+      "description": "Daim dəyişən domenlərin arxasında gizlənən reklamları bloklayın. Yeni domenlərin arxasında duran reklam infrastrukturunu müəyyən etməklə, onları dərhal — məşhur bloklama siyahıları hələ məsələdən xəbər tutmamışdan əvvəl — bloklamaq mümkündür.",
+      "enable": "Reklam Dövrü Domenlərini Bloklayın"
     }
   },
   "parentalControl": {
@@ -966,12 +976,24 @@
           "description": "Yetkinlər üçün nəzərdə tutulmuş və pornoqrafik məzmunu bloklayır. Buraya eskort saytları, pornhub.com və oxşar domenlər daxildir."
         },
         "social-networks": {
-          "name": "Sosial şəbəkələr",
-          "description": "Bütün sosial şəbəkə saytlarını və tətbiqlərini (Facebook, Instagram, TikTok, Reddit və s.) bloklayır. Mesajlaşma tətbiqlərini bloklamır."
+          "name": "Sosial media",
+          "description": "Facebook, Instagram, TikTok və Reddit kimi sosial media saytlarını və tətbiqlərini bloklayır."
         },
         "video-streaming": {
           "name": "Video yayımı",
           "description": "Video yayım xidmətlərini (YouTube, Netflix, Disney+, qeyri-qanuni yayım saytları, pornoqrafik video saytları və s.) və video əsaslı sosial şəbəkələri (TikTok və s.) bloklayır. Bu, həmçinin istənilən şəbəkədə bant genişliyi istifadəsini azaltmağa kömək edə bilər."
+        },
+        "ai-assistants": {
+          "name": "Süni intellekt köməkçiləri",
+          "description": "ChatGPT, Claude, Gemini və Muse kimi süni intellekt köməkçilərini bloklayır."
+        },
+        "remote-access-tools": {
+          "name": "Məsafədən Giriş Alətləri",
+          "description": "Cihazlarınızın uzaqdan idarə olunmasına imkan verən və texniki dəstək fırıldaqçılığında sui-istifadə oluna bilən AnyDesk və TeamViewer kimi alətləri bloklayır."
+        },
+        "messaging": {
+          "name": "Mesajlaşma",
+          "description": "WhatsApp, Signal və Discord kimi fərdi mesajlaşma tətbiqlərini bloklayır."
         }
       }
     },
