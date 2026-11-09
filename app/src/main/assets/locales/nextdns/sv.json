@@ -28,7 +28,8 @@
     "copy": "Kopiera",
     "actions": "Åtgärder",
     "expand": "Fäll ut",
-    "collapse": "Fäll ihop"
+    "collapse": "Fäll ihop",
+    "new": "Ny"
   },
   "theme": {
     "label": "Tema",
@@ -678,7 +679,7 @@
       "description": "Följ instruktionerna nedan för att identifiera dina enheter i Statistik och Loggar.",
       "apps": {
         "name": "Appar",
-        "instructions": "Aktivera ”Send Device Name” (eller ”Report Device Name” i Windows) i appens inställningar."
+        "instructions": "Moderna appar skickar enhetsnamn automatiskt. Om appen har en inställning för ”Send Device Name” eller ”Report Device Name” aktiverar du den."
       },
       "dot": {
         "instructions": "Lägg till namnet framför den angivna domänen (namnet får endast innehålla <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> och <7>-</7>). Använd <9>--</9> för mellanslag.",
@@ -839,7 +840,7 @@
       }
     },
     "native": {
-      "name": "Skydd mot inbyggd spårning",
+      "name": "Inbyggd spårning",
       "description": "Blockera spårare som övervakar en stor del av din aktivitet på en enhet, ofta på operativsystemnivå. Det kan omfatta alla webbplatser du besöker, allt du skriver eller var du befinner dig vid varje tidpunkt.",
       "add": "Lägg till",
       "systems": {
@@ -874,6 +875,10 @@
         "sonos": {
           "name": "Sonos",
           "devices": "Högtalare"
+        },
+        "lg": {
+          "name": "LG",
+          "devices": "Smarta TV-apparater"
         }
       }
     },
@@ -883,10 +888,15 @@
       "enable": "Blockera förklädda tredjepartsspårare"
     },
     "affiliate": {
-      "name": "Tillåt affiliatelänkar och spårningslänkar",
-      "description": "Tillåt domäner för affiliatelänkar och spårningslänkar som är vanliga på erbjudandesajter, i e-post eller i sökresultat. De anropas vanligtvis bara när du själv klickar på en länk.",
-      "relay": "Din IP-adress döljs automatiskt för dessa webbplatser för att skydda din integritet.",
-      "enable": "Tillåt affiliatelänkar och spårningslänkar"
+      "name": "Tillåt spårningslänkar",
+      "description": "Tillåt spårningslänkar i e-post, sökresultat och erbjudandesajter. De aktiveras bara när du klickar på dem.",
+      "relay": "Din IP-adress döljs automatiskt för spårningstjänster för att skydda din integritet.",
+      "enable": "Tillåt spårningslänkar"
+    },
+    "rotatingAds": {
+      "name": "Blockera roterande annonsdomäner",
+      "description": "Blockera annonser som döljer sig bakom ständigt skiftande domäner. Nya domäner kan blockeras direkt genom att identifiera annonsinfrastrukturen bakom dem, innan vanliga blockeringslistor hinner uppdateras.",
+      "enable": "Blockera roterande annonsdomäner"
     }
   },
   "parentalControl": {
@@ -966,12 +976,23 @@
           "description": "Blockerar vuxeninnehåll och pornografiskt innehåll. Det omfattar eskortsajter, pornhub.com och liknande domäner."
         },
         "social-networks": {
-          "name": "Sociala nätverk",
-          "description": "Blockerar alla webbplatser och appar för sociala nätverk (Facebook, Instagram, TikTok, Reddit osv.). Blockerar inte meddelandeappar."
+          "name": "Sociala medier",
+          "description": "Blockerar sociala medier och appar som Facebook, Instagram, TikTok och Reddit."
         },
         "video-streaming": {
           "name": "Videostreaming",
           "description": "Blockerar videostreamingtjänster (YouTube, Netflix, Disney+, olagliga streamingwebbplatser, pornografiska videowebbplatser osv.) och videobaserade sociala nätverk (TikTok osv.). Detta kan också bidra till att minska bandbreddsanvändningen i nätverket."
+        },
+        "ai-assistants": {
+          "name": "AI-assistenttjänster",
+          "description": "Blockerar AI-assistenttjänster som ChatGPT, Claude, Gemini och Muse."
+        },
+        "remote-access-tools": {
+          "name": "Fjärråtkomstverktyg"
+        },
+        "messaging": {
+          "name": "Meddelanden",
+          "description": "Blockerar privata meddelandeappar som WhatsApp, Signal och Discord."
         }
       }
     },

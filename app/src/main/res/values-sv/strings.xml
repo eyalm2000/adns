@@ -410,4 +410,24 @@
     <string name="unreleased_warning_title">Ej lanserad funktion</string>
     <string name="unreleased_warning_description">Den här inställningen är en experimentell intern funktion som NextDNS ännu inte officiellt har lanserat. Om du aktiverar den kan webbplatser fungera oväntat, felaktiga positiva träffar bli många eller DNS-upplösningen misslyckas. NextDNS kan ändra eller ta bort den när som helst.</string>
     <string name="unreleased_warning_enable">Jag förstår riskerna, aktivera</string>
+    <string name="dnsforge">DNSforge</string>
+    <string name="the_public_dnsforge_dns_server">Den offentliga DNSforge DNS-servern som driftas i Tyskland.</string>
+    <string name="provider_preset_dnsforge_normal">Normal</string>
+    <string name="provider_preset_dnsforge_normal_description">Blockerar annonser, spårare och skadlig programvara.</string>
+    <string name="provider_preset_dnsforge_clean">Ren</string>
+    <string name="provider_preset_dnsforge_clean_description">Blockerar annonser, spårare, skadlig programvara och vuxeninnehåll samt aktiverar SafeSearch när det är möjligt.</string>
+    <string name="provider_preset_dnsforge_hard">Strikt</string>
+    <string name="provider_preset_dnsforge_hard_description">Strikt blockering av annonser, spårare och skadlig programvara med omfattande blockeringslistor.</string>
+    <string name="provider_preset_dnsforge_blank">Obegränsad</string>
+    <string name="provider_preset_dnsforge_blank_description">Ofiltrerad DNS-upplösning utan blockering.</string>
+    <string name="hagezi_dns">HaGeZi DNS</string>
+    <string name="the_public_hagezi_dns_server">De offentliga HaGeZi DNS-servrarna som driftas i EU.</string>
+    <string name="provider_preset_hagezi_root">Root (Falkenstein)</string>
+    <string name="provider_preset_hagezi_root_description">Blockerar annonser, spårare och skadlig programvara. Driftas i Falkenstein i Tyskland.</string>
+    <string name="provider_preset_hagezi_wurzn">Wurzn (Nürnberg)</string>
+    <string name="provider_preset_hagezi_wurzn_description">Blockerar annonser, spårare och skadlig programvara. Driftas i Nürnberg i Tyskland.</string>
+    <string name="provider_preset_hagezi_juuri">Juuri (Helsingfors)</string>
+    <string name="provider_preset_hagezi_juuri_description">Blockerar annonser, spårare och skadlig programvara. Driftas i Helsingfors i Finland.</string>
+    <string name="provider_preset_hagezi_ctif">Endast hot (Nürnberg)</string>
+    <string name="provider_preset_hagezi_ctif_description">Blockerar nätfiske-, skadeprograms- och bedrägeridomäner utan att blockera annonser eller spårare. Driftas i Nürnberg i Tyskland.</string>
 </resources>

@@ -368,4 +368,16 @@
     <string name="country_code">國家代碼</string>
     <string name="max_graph_items_reached">圖表一次最多顯示六個項目</string>
     <string name="privacy_policy">隱私權政策</string>
+    <string name="next">下一步</string>
+    <string name="client">用戶端</string>
+    <string name="dnsforge">DNSforge</string>
+    <string name="the_public_dnsforge_dns_server">位於德國 dnsforge.de 的公共 DNS 伺服器。</string>
+    <string name="provider_preset_dnsforge_normal_description">阻擋廣告、追蹤程式和惡意程式。</string>
+    <string name="provider_preset_dnsforge_clean_description">阻擋廣告、追蹤程式、惡意程式與成人內容，並且在可以的情況下開啟安全搜尋。</string>
+    <string name="provider_preset_dnsforge_hard_description">用延伸的阻擋清單來加強阻擋廣告、追蹤程式和惡意程式。</string>
+    <string name="hagezi_dns">HaGeZi DNS</string>
+    <string name="the_public_hagezi_dns_server">位於歐洲的 HaGeZi DNS 公共伺服器。</string>
+    <string name="provider_preset_hagezi_root_description">阻擋廣告、追蹤程式和惡意程式（伺服器位於德國 Falkenstein）。</string>
+    <string name="provider_preset_hagezi_wurzn">Wurzn（紐倫堡）</string>
+    <string name="provider_preset_hagezi_wurzn_description">阻擋廣告、追蹤程式和惡意程式（伺服器位於德國紐倫堡）。</string>
 </resources>
