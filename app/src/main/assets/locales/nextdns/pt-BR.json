@@ -28,7 +28,8 @@
     "copy": "Copiar",
     "actions": "Ações",
     "expand": "Expandir",
-    "collapse": "Recolher"
+    "collapse": "Recolher",
+    "new": "Novo"
   },
   "theme": {
     "label": "Tema",
@@ -678,7 +679,7 @@
       "description": "Siga as instruções abaixo para identificar seus dispositivos em Estatísticas e Registros.",
       "apps": {
         "name": "Aplicativos",
-        "instructions": "Ative “Send Device Name” (ou “Report Device Name” no Windows) nas configurações do aplicativo."
+        "instructions": "Os apps atuais enviam os nomes dos dispositivos automaticamente. Se o seu aplicativo tiver uma configuração do tipo “Enviar nome do dispositivo” ou “Reportar nome do dispositivo”, ative-a."
       },
       "dot": {
         "instructions": "Anteponha o nome ao domínio fornecido (o nome deve conter apenas <1>a-z</1>, <3>A-Z</3>, <5>0-9</5> e <7>-</7>). Use <9>--</9> para espaços.",
@@ -839,7 +840,7 @@
       }
     },
     "native": {
-      "name": "Proteção contra rastreamento nativo",
+      "name": "Rastreamento nativo",
       "description": "Bloqueie rastreadores — que muitas vezes operam no nível do sistema operacional — que monitoram uma ampla variedade de suas atividades em um dispositivo. Isso pode incluir todos os sites que você visita, tudo o que você digita ou sua localização o tempo todo.",
       "add": "Adicionar",
       "systems": {
@@ -874,6 +875,10 @@
         "sonos": {
           "name": "Sonos",
           "devices": "Caixas de som"
+        },
+        "lg": {
+          "name": "LG",
+          "devices": "Smart TVs"
         }
       }
     },
@@ -883,10 +888,15 @@
       "enable": "Bloquear rastreadores de terceiros disfarçados"
     },
     "affiliate": {
-      "name": "Permitir links de afiliados e rastreamento",
-      "description": "Permita domínios de afiliados e rastreamento comuns em sites de ofertas, e-mails ou resultados de pesquisa. Geralmente, esses domínios só são acessados após clicar manualmente em um link.",
-      "relay": "Seu endereço IP será automaticamente ocultado desses sites para preservar sua privacidade.",
-      "enable": "Permitir links de afiliados e rastreamento"
+      "name": "Permitir links de rastreamento",
+      "description": "Permita links de rastreamento em e-mails, resultados de pesquisa e sites de cupons/ofertas. Eles são apenas acessados quando clicados.",
+      "relay": "Seu endereço IP é ocultado automaticamente dos serviços de rastreamento para garantir sua privacidade.",
+      "enable": "Permitir links de rastreamento"
+    },
+    "rotatingAds": {
+      "name": "Bloquear domínios rotativos de anúncios",
+      "description": "Bloqueie anúncios que se escondem atrás de domínios em constante mudança. Novos domínios podem ser bloqueados instantaneamente ao identificar a infraestrutura de anúncios por trás deles — antes que as listas de bloqueio mais conhecidas tenham tempo de se atualizar.",
+      "enable": "Bloquear domínios rotativos de anúncios"
     }
   },
   "parentalControl": {
@@ -967,11 +977,22 @@
         },
         "social-networks": {
           "name": "Redes sociais",
-          "description": "Bloqueia todos os sites e aplicativos de redes sociais (Facebook, Instagram, TikTok, Reddit, etc.). Não bloqueia aplicativos de mensagens."
+          "description": "Bloqueia todos os sites e aplicativos de redes sociais como Facebook, Instagram, TikTok e Reddit."
         },
         "video-streaming": {
           "name": "Streaming de vídeo",
           "description": "Bloqueia serviços de streaming de vídeo (YouTube, Netflix, Disney+, sites de streaming ilegal, sites de vídeos pornográficos, etc.) e redes sociais baseadas em vídeo (TikTok, etc.). Isso também pode ajudar a reduzir o uso de largura de banda em qualquer rede."
+        },
+        "ai-assistants": {
+          "name": "Assistentes IA",
+          "description": "Bloqueia assistentes de IA como ChatGPT, Claude, Gemini e Muse."
+        },
+        "remote-access-tools": {
+          "name": "Ferramentas de acesso remoto",
+          "description": "Bloqueia ferramentas como o AnyDesk e o TeamViewer que permitem o controle remoto de seus dispositivos e podem ser utilizadas indevidamente em golpes relacionados a suporte técnico."
+        },
+        "messaging": {
+          "description": "Bloqueia aplicativos de mensagens como WhatsApp, Signal e Discord."
         }
       }
     },

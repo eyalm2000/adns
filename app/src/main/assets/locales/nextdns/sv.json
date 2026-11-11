@@ -988,7 +988,8 @@
           "description": "Blockerar AI-assistenttjänster som ChatGPT, Claude, Gemini och Muse."
         },
         "remote-access-tools": {
-          "name": "Fjärråtkomstverktyg"
+          "name": "Fjärråtkomstverktyg",
+          "description": "Blockerar verktyg som AnyDesk och TeamViewer, vilka möjliggör fjärrstyrning av dina enheter och kan missbrukas i bedrägerier som utger sig för att vara teknisk support."
         },
         "messaging": {
           "name": "Meddelanden",
