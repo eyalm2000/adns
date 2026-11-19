@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.recreation.RecreationScheduleError
 import com.eyalm.adns.data.nextdns.recreation.RecreationScheduleValidation
@@ -59,7 +60,8 @@ fun RecreationSection(
     canEdit: Boolean,
     refreshRevision: Long = 0,
 ) {
-    val viewModel: RecreationViewModel = viewModel(key = "recreation-$profileId")
+    val epoch = rememberAccountEpoch()
+    val viewModel: RecreationViewModel = viewModel(key = "recreation-${epoch.sequence}-$profileId")
     val state by viewModel.state.collectAsState()
 
     LaunchedEffect(profileId, refreshRevision, canEdit) {

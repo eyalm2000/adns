@@ -1,6 +1,6 @@
 package com.eyalm.adns.data.nextdns.api
 
-import com.eyalm.adns.data.nextdns.auth.SessionInvalidationGate
+import com.eyalm.adns.data.account.AccountCredentialRef
 import java.util.concurrent.atomic.AtomicInteger
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -26,15 +26,12 @@ class NextDnsSessionExpiryInterceptorTest {
     }
 
     @Test
-    fun `many unauthorized responses invalidate one session`() {
-        val invalidations = AtomicInteger(0)
-        val gate = SessionInvalidationGate()
+    fun `unauthorized responses report the credential the request was issued with`() {
+        val reported = mutableListOf<AccountCredentialRef?>()
+        val issuedWith = AccountCredentialRef("account-a", 7)
         val client = OkHttpClient.Builder()
-            .addInterceptor(
-                NextDnsSessionExpiryInterceptor {
-                    if (gate.invalidateOnce()) invalidations.incrementAndGet()
-                }
-            )
+            .addInterceptor(AccountRequestTaggingInterceptor { issuedWith })
+            .addInterceptor(NextDnsSessionExpiryInterceptor { reported += it })
             .build()
         server.enqueue(MockResponse().setResponseCode(401))
         server.enqueue(MockResponse().setResponseCode(401))
@@ -45,15 +42,30 @@ class NextDnsSessionExpiryInterceptorTest {
             ).execute().close()
         }
 
-        assertEquals(1, invalidations.get())
+        assertEquals(listOf<AccountCredentialRef?>(issuedWith, issuedWith), reported)
     }
 
+    @Test
+    fun `unauthorized response of an unauthenticated request reports no credential`() {
+        val reported = mutableListOf<AccountCredentialRef?>()
+        val client = OkHttpClient.Builder()
+            .addInterceptor(AccountRequestTaggingInterceptor { null })
+            .addInterceptor(NextDnsSessionExpiryInterceptor { reported += it })
+            .build()
+        server.enqueue(MockResponse().setResponseCode(401))
+
+        client.newCall(
+            Request.Builder().url(server.url("/profiles")).build()
+        ).execute().close()
+
+        assertEquals(listOf<AccountCredentialRef?>(null), reported)
+    }
     @Test
     fun `authRequired forbidden response invalidates session without consuming body`() {
         val invalidations = AtomicInteger(0)
         val client = OkHttpClient.Builder()
             .addInterceptor(
-                NextDnsSessionExpiryInterceptor(invalidations::incrementAndGet)
+                NextDnsSessionExpiryInterceptor { invalidations.incrementAndGet() }
             )
             .build()
         val body = """{"errors":[{"code":"authRequired"}]}"""
@@ -78,7 +90,7 @@ class NextDnsSessionExpiryInterceptorTest {
         val invalidations = AtomicInteger(0)
         val client = OkHttpClient.Builder()
             .addInterceptor(
-                NextDnsSessionExpiryInterceptor(invalidations::incrementAndGet)
+                NextDnsSessionExpiryInterceptor { invalidations.incrementAndGet() }
             )
             .build()
         server.enqueue(

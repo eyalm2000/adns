@@ -2,13 +2,12 @@ package com.eyalm.adns.data.network
 
 import android.content.Context
 import com.eyalm.adns.data.TokenManager
+import com.eyalm.adns.data.nextdns.api.addAccountAuthentication
 import com.eyalm.adns.data.nextdns.api.NextDnsApi
 import com.eyalm.adns.data.nextdns.api.NextDnsApiKeyAuthApi
-import com.eyalm.adns.data.nextdns.api.NextDnsApiKeyInterceptor
 import com.eyalm.adns.data.nextdns.api.NextDnsCookieAuthApi
 import com.eyalm.adns.data.nextdns.api.NextDnsIpv4Api
 import com.eyalm.adns.data.nextdns.api.NextDnsLinkIpApi
-import com.eyalm.adns.data.nextdns.api.NextDnsSessionExpiryInterceptor
 import com.eyalm.adns.data.nextdns.auth.NextDnsSessionManager
 import com.eyalm.adns.data.nextdns.connection.NextDnsConnectionApi
 import okhttp3.OkHttpClient
@@ -65,16 +64,11 @@ object ApiClient {
             .build()
 
         val authenticatedClient = baseClient.newBuilder()
-            .addInterceptor(
-                NextDnsSessionExpiryInterceptor(
-                    onUnauthorized = sessionManager::unauthorized,
-                )
-            )
-            .addNetworkInterceptor(
-                NextDnsApiKeyInterceptor(
-                    apiKeyProvider = tokenManager::getApiKey,
-                    allowedHosts = setOf(API_HOST, IPV4_API_HOST),
-                )
+            .addAccountAuthentication(
+                currentRef = tokenManager::credentialRef,
+                apiKeyFor = tokenManager::apiKeyFor,
+                onUnauthorized = sessionManager::unauthorized,
+                allowedHosts = setOf(API_HOST, IPV4_API_HOST),
             )
             .build()
 

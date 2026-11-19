@@ -72,6 +72,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.model.ListIcon
 import com.eyalm.adns.data.nextdns.resources.BlocklistSort
@@ -111,7 +112,8 @@ fun GenericListScreen(
     val navigationViewModel: SettingsViewModel = viewModel()
     val listSetting = navigationViewModel.currentListSetting ?: return
     val profile = profileState.selected ?: return
-    val listViewModel: ResourceListViewModel = viewModel()
+    val epoch = rememberAccountEpoch()
+    val listViewModel: ResourceListViewModel = viewModel(key = "list-${epoch.sequence}")
     val listState by listViewModel.state.collectAsState()
     val context = LocalContext.current
     val memberships = listState.memberships

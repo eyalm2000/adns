@@ -4,11 +4,13 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.eyalm.adns.R
+import com.eyalm.adns.data.account.AccountEpoch
 import com.eyalm.adns.data.nextdns.analytics.AnalyticsScope
 import com.eyalm.adns.data.nextdns.analytics.AnalyticsSeriesResult
 import com.eyalm.adns.data.nextdns.analytics.ListCard
 import com.eyalm.adns.data.nextdns.analytics.NextDnsAnalyticsRepository
 import com.eyalm.adns.data.nextdns.analytics.StatRow
+import com.eyalm.adns.data.nextdns.analytics.mergeAnalyticsPage
 import com.eyalm.adns.data.nextdns.api.TrackerInfo
 import com.eyalm.adns.data.nextdns.auth.NextDnsManagementSession
 import com.eyalm.adns.data.nextdns.auth.NextDnsSessionManager
@@ -67,12 +69,23 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
     private val _effects = MutableSharedFlow<StatsCardDetailEffect>(extraBufferCapacity = 4)
     val effects = _effects.asSharedFlow()
 
+    private var knownEpoch = sessionManager.accountEpoch.value
+
+    // The account the current list and series were requested for.
+    private var epoch: AccountEpoch = knownEpoch
     private var nextCursor: String? = null
     private var loadGeneration = 0L
     private var firstPageJob: Job? = null
     private var seriesJob: Job? = null
 
     init {
+        viewModelScope.launch {
+            sessionManager.accountEpoch.collect { current ->
+                if (current == knownEpoch) return@collect
+                knownEpoch = current
+                resetForAccountChange()
+            }
+        }
         viewModelScope.launch {
             sessionManager.state.collect { session ->
                 if (session == NextDnsManagementSession.Expired) {
@@ -112,7 +125,7 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
         val configChanged = current.profileId != profileId || current.card?.key != card.key || current.scope != scope
         if (!force && !configChanged && (current.initialLoading || current.items.isNotEmpty())) return
 
-        val generation = ++loadGeneration
+        val generation = nextGeneration()
         nextCursor = null
         val graphAllowed = isGraphSupported(card)
         if (configChanged) {
@@ -141,7 +154,7 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
         val profileId = _state.value.profileId ?: return
         val card = _state.value.card ?: return
         val scope = _state.value.scope
-        val generation = ++loadGeneration
+        val generation = nextGeneration()
         nextCursor = null
         if (isGraphSupported(card)) {
             loadSeries(profileId, card, scope, generation)
@@ -225,10 +238,16 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
             ) {
                 is ApiResult.Success -> {
                     if (!isCurrent(profileId, card.key, scope, generation)) return@launch
-                    nextCursor = result.value.cursor
+                    val merged = mergeAnalyticsPage(
+                        shown = _state.value.items,
+                        page = result.value.rows,
+                        requestedCursor = cursor,
+                        returnedCursor = result.value.cursor,
+                    )
+                    nextCursor = merged.nextCursor
                     _state.update {
                         it.copy(
-                            items = it.items + result.value.rows,
+                            items = merged.rows,
                             loadingNextPage = false,
                             hasMorePages = nextCursor != null,
                         )
@@ -314,10 +333,16 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
             ) {
                 is ApiResult.Success -> {
                     if (!isCurrent(profileId, card.key, scope, generation)) return@launch
-                    nextCursor = result.value.cursor
+                    val merged = mergeAnalyticsPage(
+                        shown = emptyList(),
+                        page = result.value.rows,
+                        requestedCursor = null,
+                        returnedCursor = result.value.cursor,
+                    )
+                    nextCursor = merged.nextCursor
                     _state.update {
                         it.copy(
-                            items = result.value.rows,
+                            items = merged.rows,
                             initialLoading = false,
                             refreshing = false,
                             hasMorePages = nextCursor != null,
@@ -340,6 +365,28 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
         }
     }
 
+    private fun nextGeneration(): Long {
+        epoch = sessionManager.accountEpoch.value
+        return ++loadGeneration
+    }
+
+    /** Drops everything loaded for the previous account and, if possible, loads it again. */
+    private fun resetForAccountChange() {
+        val profileId = _state.value.profileId
+        val card = _state.value.card
+        val scope = _state.value.scope
+        cancelJobs()
+        nextCursor = null
+        _state.value = StatsCardDetailUiState(profileId = profileId, card = card, scope = scope)
+        if (
+            profileId != null &&
+            card != null &&
+            sessionManager.state.value == NextDnsManagementSession.Active
+        ) {
+            load(profileId, card, scope, force = true)
+        }
+    }
+
     private fun isCurrent(
         profileId: String,
         cardKey: String,
@@ -347,6 +394,7 @@ class StatsCardDetailViewModel(application: Application) : AndroidViewModel(appl
         generation: Long,
     ): Boolean =
         generation == loadGeneration &&
+            epoch == sessionManager.accountEpoch.value &&
             _state.value.profileId == profileId &&
             _state.value.card?.key == cardKey &&
             _state.value.scope == scope

@@ -66,6 +66,7 @@ import androidx.core.net.toUri
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.BuildConfig
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.security.ProtectionLockCard
 import com.eyalm.adns.data.AppRuntimeRepositories
 import com.eyalm.adns.data.dns.DnsDisableBehavior
 import com.eyalm.adns.data.nextdns.resources.NextDnsResourceRegistry
@@ -280,6 +281,9 @@ fun MainSettingsScreen(
                         add(SettingsNavigationEntry(stringResource(R.string.appearance), stringResource(R.string.appearance_description), Icons.Filled.Palette, onAppearancePageClick))
                     },
                 )
+            }
+            item {
+                ProtectionLockCard()
             }
 
 

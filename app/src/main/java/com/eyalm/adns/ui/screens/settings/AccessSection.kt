@@ -27,6 +27,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.access.AccessEntry
 import com.eyalm.adns.data.nextdns.access.AccessError
@@ -48,7 +49,8 @@ fun AccessSection(
     profileId: String,
     refreshRevision: Long = 0,
 ) {
-    val viewModel: AccessViewModel = viewModel(key = "access-$profileId")
+    val epoch = rememberAccountEpoch()
+    val viewModel: AccessViewModel = viewModel(key = "access-${epoch.sequence}-$profileId")
     val state by viewModel.state.collectAsState()
 
     LaunchedEffect(profileId, refreshRevision) {

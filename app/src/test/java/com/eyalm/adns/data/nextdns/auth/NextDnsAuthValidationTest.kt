@@ -16,16 +16,6 @@ class NextDnsAuthValidationTest {
     }
 
     @Test
-    fun `session invalidation emits once until reset`() {
-        val gate = SessionInvalidationGate()
-
-        assertTrue(gate.invalidateOnce())
-        assertFalse(gate.invalidateOnce())
-        gate.reset()
-        assertTrue(gate.invalidateOnce())
-    }
-
-    @Test
     fun `successful JSON login response is accepted`() {
         assertEquals(
             PasswordLoginResponse.Accepted,

@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.eyalm.adns.R
+import com.eyalm.adns.data.account.AccountEpoch
 import com.eyalm.adns.data.nextdns.api.NextDnsDeviceItem
 import com.eyalm.adns.data.nextdns.api.NextDnsLogEntry
 import com.eyalm.adns.data.nextdns.analytics.NextDnsAnalyticsRepository
@@ -62,8 +63,19 @@ class LogsViewModel(application: Application) : AndroidViewModel(application) {
     private var loadGeneration = 0L
     private var firstPageJob: Job? = null
     private var searchJob: Job? = null
+    private var knownEpoch = sessionManager.accountEpoch.value
+
+    // The account the current list was requested for.
+    private var epoch: AccountEpoch = knownEpoch
 
     init {
+        viewModelScope.launch {
+            sessionManager.accountEpoch.collect { current ->
+                if (current == knownEpoch) return@collect
+                knownEpoch = current
+                resetForAccountChange()
+            }
+        }
         viewModelScope.launch {
             sessionManager.state.collect { session ->
                 if (session == NextDnsManagementSession.Expired) {
@@ -175,9 +187,13 @@ class LogsViewModel(application: Application) : AndroidViewModel(application) {
         if (action in _state.value.pendingActions) return
         _state.update { it.copy(pendingActions = it.pendingActions + action) }
 
+        val requestEpoch = sessionManager.accountEpoch.value
         viewModelScope.launch {
             val result = repository.applyRule(profileId, list, domain)
-            if (_state.value.profileId != profileId) return@launch
+            if (
+                requestEpoch != sessionManager.accountEpoch.value ||
+                _state.value.profileId != profileId
+            ) return@launch
             _state.update { it.copy(pendingActions = it.pendingActions - action) }
             val listName = getApplication<Application>().getString(
                 if (list == DomainRuleList.Allow) R.string.allowlist else R.string.denylist
@@ -219,6 +235,7 @@ class LogsViewModel(application: Application) : AndroidViewModel(application) {
         val profileId = current.profileId ?: return
         val query = current.query
         val generation = ++loadGeneration
+        epoch = sessionManager.accountEpoch.value
         nextCursor = null
         firstPageJob?.cancel()
         _state.update {
@@ -261,10 +278,14 @@ class LogsViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private fun loadDevices(profileId: String) {
+        val requestEpoch = sessionManager.accountEpoch.value
         viewModelScope.launch {
             when (val result = analyticsRepository.getDevices(profileId)) {
                 is ApiResult.Success -> {
-                    if (_state.value.profileId == profileId) {
+                    if (
+                        requestEpoch == sessionManager.accountEpoch.value &&
+                        _state.value.profileId == profileId
+                    ) {
                         _state.update { it.copy(devices = result.value) }
                     }
                 }
@@ -274,12 +295,30 @@ class LogsViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    /**
+     * Drops the log list, the device list and the filters of the previous account, and loads the
+     * same profile again for the new one. Filters are cleared because a device id from one
+     * account means nothing in another.
+     */
+    private fun resetForAccountChange() {
+        val profileId = _state.value.profileId
+        loadGeneration++
+        firstPageJob?.cancel()
+        searchJob?.cancel()
+        nextCursor = null
+        _state.value = LogsUiState(profileId = profileId)
+        if (profileId != null && sessionManager.state.value == NextDnsManagementSession.Active) {
+            load(profileId, force = true)
+        }
+    }
+
     private fun isCurrent(
         profileId: String,
         query: LogsQuery,
         generation: Long,
     ): Boolean =
         generation == loadGeneration &&
+            epoch == sessionManager.accountEpoch.value &&
             _state.value.profileId == profileId &&
             _state.value.query == query
 

@@ -1,117 +1,44 @@
 package com.eyalm.adns.data
 
 import android.content.Context
-import android.util.Base64
-import androidx.core.content.edit
-import com.google.crypto.tink.Aead
-import com.google.crypto.tink.aead.AeadConfig
-import com.google.crypto.tink.aead.AesGcmKeyManager
-import com.google.crypto.tink.integration.android.AndroidKeysetManager
+import com.eyalm.adns.data.account.AccountCredentialRef
+import com.eyalm.adns.data.account.AccountStorageException
+import com.eyalm.adns.data.account.NextDnsAccountRepository
+import com.eyalm.adns.data.account.NextDnsAccounts
+import com.eyalm.adns.data.account.SignInResult
 
-class TokenManager private constructor(context: Context) {
-    private val prefs = context.applicationContext
-        .getSharedPreferences("secure_prefs", Context.MODE_PRIVATE)
-
-    private val apiKeyLock = Any()
-    private val emailLock = Any()
-
-    @Volatile
-    private var apiKeyLoaded = false
-
-    @Volatile
-    private var cachedApiKey: String? = null
-
-    @Volatile
-    private var emailLoaded = false
-
-    @Volatile
-    private var cachedEmail: String? = null
-
-    private val aead: Aead by lazy {
-        AeadConfig.register() // Registers the encryption algorithms with Tink
-
-        val keysetHandle = AndroidKeysetManager.Builder()
-            .withSharedPref(context, "tink_keyset", "tink_prefs_internal")
-            .withKeyTemplate(AesGcmKeyManager.aes256GcmTemplate())
-            .withMasterKeyUri("android-keystore://secure_string_master_key")
-            .build()
-            .keysetHandle
-
-        keysetHandle.getPrimitive(Aead::class.java)
-    }
-
-    fun saveApiKey(value: String) {
-        val encryptedBytes = aead.encrypt(value.toByteArray(Charsets.UTF_8), null)
-        val base64Encoded = Base64.encodeToString(encryptedBytes, Base64.DEFAULT)
-        synchronized(apiKeyLock) {
-            prefs.edit { putString("api_key", base64Encoded) }
-            cachedApiKey = value
-            apiKeyLoaded = true
-        }
-    }
-
-    fun getApiKey(): String? {
-        if (apiKeyLoaded) return cachedApiKey
-
-        return synchronized(apiKeyLock) {
-            if (!apiKeyLoaded) {
-                cachedApiKey = decryptPreference("api_key")
-                apiKeyLoaded = true
-            }
-            cachedApiKey
-        }
-    }
+/**
+ * Credential access for the active NextDNS account.
+ *
+ * Storage, encryption and migration live in [NextDnsAccountRepository]; this class keeps the
+ * single-account surface the rest of the app already uses.
+ */
+class TokenManager private constructor(private val accounts: NextDnsAccountRepository) {
+    fun getApiKey(): String? = accounts.activeApiKey()
 
     fun hasToken(): Boolean = getApiKey() != null
 
-    fun destroyApiKey() {
-        synchronized(apiKeyLock) {
-            prefs.edit { remove("api_key") }
-            cachedApiKey = null
-            apiKeyLoaded = true
-        }
-    }
+    /** Label (email) of the active account, or null while it has no valid credential. */
+    fun getEmail(): String? =
+        accounts.snapshot.value.active?.takeIf { it.hasCredential }?.label
 
-    fun saveEmail(value: String) {
-        val encryptedBytes = aead.encrypt(value.toByteArray(Charsets.UTF_8), null)
-        val base64Encoded = Base64.encodeToString(encryptedBytes, Base64.DEFAULT)
-        synchronized(emailLock) {
-            prefs.edit { putString("email", base64Encoded) }
-            cachedEmail = value
-            emailLoaded = true
-        }
-    }
+    /** Names the active account's current credential, for attributing a request to it. */
+    fun credentialRef(): AccountCredentialRef? = accounts.currentRef()
 
-    fun getEmail(): String? {
-        if (emailLoaded) return cachedEmail
+    /** Returns the key only if [ref] is still the account's current credential. */
+    fun apiKeyFor(ref: AccountCredentialRef?): String? = accounts.apiKeyFor(ref)
 
-        return synchronized(emailLock) {
-            if (!emailLoaded) {
-                cachedEmail = decryptPreference("email")
-                emailLoaded = true
-            }
-            cachedEmail
+    /**
+     * Stores the credential and makes its account active. [loginEmail] is the email typed at a
+     * password sign-in (null for API-key sign-ins); it lets a returning account be recognised
+     * after its key expired. Blocking: call off the main thread.
+     * Throws [AccountStorageException] (it contains no secrets) if the account could not be stored.
+     */
+    fun signIn(label: String, apiKey: String, loginEmail: String? = null): String =
+        when (val result = accounts.signIn(label, apiKey, loginEmail)) {
+            is SignInResult.Success -> result.accountId
+            SignInResult.Failed -> throw AccountStorageException()
         }
-    }
-
-    fun destroyEmail() {
-        synchronized(emailLock) {
-            prefs.edit { remove("email") }
-            cachedEmail = null
-            emailLoaded = true
-        }
-    }
-
-    private fun decryptPreference(name: String): String? {
-        val base64Encoded = prefs.getString(name, null) ?: return null
-        return try {
-            val encryptedBytes = Base64.decode(base64Encoded, Base64.DEFAULT)
-            val decryptedBytes = aead.decrypt(encryptedBytes, null)
-            String(decryptedBytes, Charsets.UTF_8)
-        } catch (_: Exception) {
-            null
-        }
-    }
 
     companion object {
         @Volatile
@@ -119,7 +46,9 @@ class TokenManager private constructor(context: Context) {
 
         fun getInstance(context: Context): TokenManager =
             instance ?: synchronized(this) {
-                instance ?: TokenManager(context.applicationContext).also { instance = it }
+                instance ?: TokenManager(
+                    NextDnsAccounts.getInstance(context.applicationContext)
+                ).also { instance = it }
             }
     }
 }
