@@ -76,6 +76,12 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.google.gson.JsonParser
+import com.google.gson.GsonBuilder
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.material3.TextButton
+import androidx.compose.foundation.text.selection.SelectionContainer
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.api.NextDnsLogEntry
 import com.eyalm.adns.data.nextdns.api.TrackerInfo
@@ -122,7 +128,10 @@ fun LogsScreen(
     val devices = state.devices
 
     var showConfig by remember(profileId) { mutableStateOf(true) }
-    var selectedLog by remember(profileId) { mutableStateOf<NextDnsLogEntry?>(null) }
+    val accountEpoch = rememberAccountEpoch()
+    var selectedLog by remember(profileId, accountEpoch.sequence) {
+        mutableStateOf<NextDnsLogEntry?>(null)
+    }
 
     LaunchedEffect(profileId, profileState.logsRevision) {
         viewModel.load(profileId, force = profileState.logsRevision > 0)
@@ -536,15 +545,17 @@ fun LogDetailsBottomSheet(
                     val protocolAnnotated = remember(log, resolvedLabel, unencryptedOverLabel, overLabel, fromLabel) {
                         buildAnnotatedString {
                             append(resolvedLabel)
-                            append(" ")
-                            if (!log.encrypted) {
-                                append(unencryptedOverLabel)
-                            } else {
-                                append(overLabel)
-                            }
-                            append(" ")
-                            withStyle(SpanStyle(fontWeight = FontWeight.Bold)) {
-                                append(log.protocol)
+                            if (log.protocol.isNotBlank()) {
+                                append(" ")
+                                if (!log.encrypted) {
+                                    append(unencryptedOverLabel)
+                                } else {
+                                    append(overLabel)
+                                }
+                                append(" ")
+                                withStyle(SpanStyle(fontWeight = FontWeight.Bold)) {
+                                    append(log.protocol)
+                                }
                             }
                             log.clientIp?.takeIf(String::isNotBlank)?.let { ip ->
                                 append(" ")
@@ -566,6 +577,20 @@ fun LogDetailsBottomSheet(
                         label = resolvedLabel,
                         value = relativeTime
                     )
+                    if (log.timestamp.isNotBlank()) {
+                        BottomSheetDetailRow(
+                            icon = Icons.Outlined.Schedule,
+                            label = stringResource(R.string.log_timestamp_label),
+                            value = log.timestamp
+                        )
+                    }
+                    if (log.status != "unknown") {
+                        BottomSheetDetailRow(
+                            icon = Icons.Outlined.Dns,
+                            label = stringResource(R.string.log_status_label),
+                            value = log.status
+                        )
+                    }
 
                     log.root?.takeIf(String::isNotBlank)?.let { rootDom ->
                         BottomSheetDetailRow(
@@ -614,6 +639,7 @@ fun LogDetailsBottomSheet(
                 }
             }
 
+            RawDataSection(log = log)
             if (trackerLoading) {
                 Box(
                     modifier = Modifier
@@ -725,3 +751,76 @@ fun LogDetailsBottomSheet(
         }
     }
 }
+
+/**
+ * What is behind the details above. It states where each kind of information comes from, because
+ * the API returns log entries and ADNS does not capture network traffic.
+ */
+@Composable
+private fun RawDataSection(log: NextDnsLogEntry) {
+    var expanded by remember(log) { mutableStateOf(false) }
+    val formatted = remember(log) { log.rawJson?.let(::formatRawJson) }
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        TextButton(onClick = { expanded = !expanded }) {
+            Text(
+                stringResource(
+                    if (expanded) R.string.log_raw_data_hide else R.string.log_raw_data_show
+                )
+            )
+        }
+        if (expanded) {
+            ExpressiveCard(
+                modifier = Modifier.fillMaxWidth(),
+                containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+            ) {
+                Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Text(
+                        text = stringResource(R.string.log_raw_api_title),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                    )
+                    Text(
+                        text = stringResource(R.string.log_raw_api_note),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    SelectionContainer {
+                        Text(
+                            text = formatted ?: stringResource(R.string.log_raw_unavailable),
+                            style = MaterialTheme.typography.bodySmall,
+                            fontFamily = FontFamily.Monospace,
+                        )
+                    }
+                    Text(
+                        text = stringResource(R.string.log_decoded_title),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                    )
+                    Text(
+                        text = stringResource(R.string.log_decoded_note),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Text(
+                        text = stringResource(R.string.log_packet_title),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                    )
+                    Text(
+                        text = stringResource(R.string.log_packet_note),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+        }
+    }
+}
+
+/** Indents the API's JSON for reading. The content is not changed. */
+internal fun formatRawJson(raw: String): String = runCatching {
+    GsonBuilder().setPrettyPrinting().create().toJson(JsonParser.parseString(raw))
+}.getOrDefault(raw)

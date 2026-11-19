@@ -40,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.model.ListIcon
 import com.eyalm.adns.data.nextdns.model.countryFlag
@@ -87,7 +88,9 @@ fun GenericCategoryScreen(
     onLogsCleared: () -> Unit = {},
 ) {
     val navigationViewModel: SettingsViewModel = viewModel()
-    val scalarViewModel: ScalarSettingsViewModel = viewModel()
+    val epoch = rememberAccountEpoch()
+    val scalarViewModel: ScalarSettingsViewModel =
+        viewModel(key = "scalar-${epoch.sequence}")
     val scalarSettings by scalarViewModel.state.collectAsState()
     val context = LocalContext.current
     val snackbarHostState = remember { SnackbarHostState() }

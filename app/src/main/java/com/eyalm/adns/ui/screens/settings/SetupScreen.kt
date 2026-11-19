@@ -53,6 +53,7 @@ import androidx.compose.ui.layout.layout
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.setup.LinkedIpContent
 import com.eyalm.adns.data.nextdns.setup.DdnsValidationError
@@ -89,8 +90,10 @@ fun SetupScreen(
         return
     }
 
-    val viewModel: SetupViewModel = viewModel(key = "setup-$profileId")
-    val connectionViewModel: NextDnsConnectionStatusViewModel = viewModel(key = "connection-$profileId")
+    val epoch = rememberAccountEpoch()
+    val viewModel: SetupViewModel = viewModel(key = "setup-${epoch.sequence}-$profileId")
+    val connectionViewModel: NextDnsConnectionStatusViewModel =
+        viewModel(key = "connection-${epoch.sequence}-$profileId")
     val settingsViewModel: SettingsViewModel = viewModel()
     val state by viewModel.state.collectAsState()
     val connectionState by connectionViewModel.state.collectAsState()

@@ -3,7 +3,10 @@ package com.eyalm.adns.data.nextdns.auth
 import android.content.Context
 import com.eyalm.adns.R
 import com.eyalm.adns.data.TokenManager
+import com.eyalm.adns.data.account.AccountStorageException
 import com.eyalm.adns.data.network.ApiClient
+import com.eyalm.adns.data.nextdns.api.NextDnsApiKeyAuthApi
+import com.eyalm.adns.data.nextdns.api.NextDnsCookieAuthApi
 import com.eyalm.adns.data.nextdns.api.NextDnsLoginRequest
 import com.eyalm.adns.data.nextdns.api.NextDnsErrorParser
 import com.google.gson.JsonParser
@@ -12,11 +15,20 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.IOException
 
-class NextDnsAuthRepository(context: Context) {
-    private val appContext = context.applicationContext
-    private val tokenManager = TokenManager.getInstance(context.applicationContext)
-    private val sessionManager = NextDnsSessionManager.getInstance(context.applicationContext)
-
+class NextDnsAuthRepository internal constructor(
+    private val cookieAuthApi: NextDnsCookieAuthApi,
+    private val apiKeyAuthApi: NextDnsApiKeyAuthApi,
+    private val storeAccount: (label: String, apiKey: String, loginEmail: String?) -> Unit,
+    private val apiKeyAccountLabel: () -> String,
+) {
+    constructor(context: Context) : this(
+        cookieAuthApi = ApiClient.nextDnsCookieAuthApi,
+        apiKeyAuthApi = ApiClient.nextDnsApiKeyAuthApi,
+        storeAccount = TokenManager.getInstance(context.applicationContext)::signIn,
+        apiKeyAccountLabel = {
+            context.applicationContext.getString(R.string.api_key_account)
+        },
+    )
     private var pendingKey: PendingKey? = null
 
     suspend fun login(state: NextDnsLoginUiState): NextDnsLoginOutcome =
@@ -44,7 +56,7 @@ class NextDnsAuthRepository(context: Context) {
         }
 
         try {
-            val response = ApiClient.nextDnsCookieAuthApi.login(
+            val response = cookieAuthApi.login(
                 NextDnsLoginRequest(email, password, code)
             )
             val raw = response.body()?.string()
@@ -76,7 +88,7 @@ class NextDnsAuthRepository(context: Context) {
                 )
             }
 
-            val keyResponse = ApiClient.nextDnsCookieAuthApi
+            val keyResponse = cookieAuthApi
                 .exchangeCookieForApiKey(cookie)
             if (!keyResponse.isSuccessful) {
                 return@withContext failureForProvisioningStatus(keyResponse.code())
@@ -103,7 +115,7 @@ class NextDnsAuthRepository(context: Context) {
     private suspend fun loginWithApiKey(apiKey: String): NextDnsLoginOutcome =
         withContext(Dispatchers.IO) {
             try {
-                val response = ApiClient.nextDnsApiKeyAuthApi.verifyApiKey(apiKey)
+                val response = apiKeyAuthApi.verifyApiKey(apiKey)
                 if (!response.isSuccessful) {
                     return@withContext NextDnsLoginOutcome.Failure(
                         if (response.code() == 401 || response.code() == 403) {
@@ -138,7 +150,7 @@ class NextDnsAuthRepository(context: Context) {
         email: String,
     ): NextDnsLoginOutcome {
         val response = try {
-            ApiClient.nextDnsApiKeyAuthApi.verifyApiKey(apiKey)
+            apiKeyAuthApi.verifyApiKey(apiKey)
         } catch (error: CancellationException) {
             throw error
         } catch (_: IOException) {
@@ -155,15 +167,22 @@ class NextDnsAuthRepository(context: Context) {
         val profiles = response.body()?.data
             ?: return NextDnsLoginOutcome.Failure(NextDnsLoginFailure.Unknown)
 
-        persistSession(apiKey, email)
+        // This also runs for a retry with a pending key, outside the caller's try block, so a
+        // storage failure has to be turned into a result here. Only that failure is caught: other
+        // errors and coroutine cancellation still propagate. The pending key is kept, so the user
+        // can retry without signing in again, and an existing session is not touched.
+        try {
+            persistSession(apiKey, email)
+        } catch (_: AccountStorageException) {
+            return NextDnsLoginOutcome.Failure(NextDnsLoginFailure.Unknown)
+        }
         pendingKey = null
         return NextDnsLoginOutcome.Authenticated(profiles)
     }
 
     private fun persistSession(apiKey: String, email: String?) {
-        tokenManager.saveApiKey(apiKey)
-        tokenManager.saveEmail(email ?: appContext.getString(R.string.api_key_account))
-        sessionManager.authenticated()
+        // The session state follows the stored account; there is nothing else to update.
+        storeAccount(email ?: apiKeyAccountLabel(), apiKey, email)
     }
 
     private fun failureForProvisioningStatus(status: Int): NextDnsLoginOutcome.Failure =

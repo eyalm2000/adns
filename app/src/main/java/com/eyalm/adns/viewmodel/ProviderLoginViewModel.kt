@@ -36,6 +36,18 @@ class ProviderLoginViewModel(application: Application) : AndroidViewModel(applic
     private val sessionManager = NextDnsSessionManager.getInstance(application)
     private var resumeRequested = false
 
+    /**
+     * True when the user adds another account to an app that is already signed in. The new
+     * account gets its own profile for statistics and logs, and the device DNS setting is left
+     * as it is.
+     */
+    var addAccountMode = false
+        private set
+
+    fun configure(addAccount: Boolean) {
+        addAccountMode = addAccount
+    }
+
     val flowState = flow.state
     private val _results = MutableSharedFlow<ProviderLoginResult>(extraBufferCapacity = 1)
     val results = _results.asSharedFlow()
@@ -233,7 +245,11 @@ class ProviderLoginViewModel(application: Application) : AndroidViewModel(applic
     fun commitSelectedProfile() {
         val profile = selectedProfile ?: return
         viewModelScope.launch {
-            if (profileRepository.selectProfile(profile) is DnsConfigurationResult.Changed) {
+            val result = profileRepository.selectProfile(
+                profile,
+                applyToDevice = !addAccountMode,
+            )
+            if (result is DnsConfigurationResult.Changed) {
                 _results.emit(
                     ProviderLoginResult.Completed(
                         providerId = DnsProviderCatalog.NEXTDNS.value,

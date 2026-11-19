@@ -3,7 +3,6 @@ package com.eyalm.adns
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.BackHandler
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -53,6 +52,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.data.DnsRepository
 import com.eyalm.adns.data.Locales
+import com.eyalm.adns.ui.security.setProtectedContent
 import com.eyalm.adns.data.activation.ActivationMode
 import com.eyalm.adns.data.activation.ActivationRepositories
 import com.eyalm.adns.data.localization.AppLocaleRepository
@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         handleShortcutIntent(intent)
 
-        setContent {
+        setProtectedContent {
             AdnsTheme {
                 val isEnabled by viewModel.adBlockingState.collectAsState()
                 val runningTime by viewModel.runningTimeFlow.collectAsState()

@@ -2,7 +2,6 @@ package com.eyalm.adns
 
 import android.os.Bundle
 import androidx.activity.compose.BackHandler
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.AnimatedContent
@@ -25,6 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.ui.screens.providerLogin.Login
 import com.eyalm.adns.data.Locales
+import com.eyalm.adns.ui.security.setProtectedContent
 import com.eyalm.adns.data.localization.AppLocaleRepository
 import com.eyalm.adns.ui.screens.providerLogin.ProfileOptionPage
 import com.eyalm.adns.ui.screens.providerLogin.SuccessLoginScreen
@@ -34,6 +34,11 @@ import com.eyalm.adns.viewmodel.ProviderLoginResult
 import com.eyalm.adns.viewmodel.ProviderLoginStep
 
 class ProviderLoginActivity : AppCompatActivity() {
+    companion object {
+        /** Set when another account is added to an app that is already signed in. */
+        const val EXTRA_ADD_ACCOUNT = "add_account"
+    }
+
 
     @OptIn(ExperimentalMaterial3ExpressiveApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,9 +47,12 @@ class ProviderLoginActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
 
-        setContent {
+        setProtectedContent {
 
             val viewModel: ProviderLoginViewModel = viewModel()
+            LaunchedEffect(viewModel) {
+                viewModel.configure(addAccount = intent.getBooleanExtra(EXTRA_ADD_ACCOUNT, false))
+            }
 
             AdnsTheme {
                 val flowState by viewModel.flowState.collectAsState()

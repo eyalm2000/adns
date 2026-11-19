@@ -34,7 +34,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import android.content.Intent
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -45,9 +47,13 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.eyalm.adns.ProviderLoginActivity
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
+import com.eyalm.adns.data.provider.DnsProviderCatalog
 import com.eyalm.adns.ui.components.ProfilesList
 import com.eyalm.adns.ui.components.dialogs.DestructiveConfirmationDialog
+import com.eyalm.adns.ui.components.settings.LoadingError
 import com.eyalm.adns.ui.screens.providerLogin.CreateProfileDialog
 import com.eyalm.adns.ui.theme.pageTitle
 import com.eyalm.adns.viewmodel.SettingsViewModel
@@ -60,8 +66,21 @@ fun AccountSettingsScreen(
     canControlPrivateDns: Boolean = true,
 ) {
     val viewModel: SettingsViewModel = viewModel()
-    val connectionViewModel: NextDnsConnectionStatusViewModel = viewModel()
-    val email = viewModel.email
+    val epoch = rememberAccountEpoch()
+    val connectionViewModel: NextDnsConnectionStatusViewModel =
+        viewModel(key = "account-connection-${epoch.sequence}")
+    val accountsSnapshot by viewModel.accountsState.collectAsState()
+    // The active account's name; it follows renames and switches without waiting for a refresh.
+    val email = accountsSnapshot.active?.takeIf { it.hasCredential }?.label
+    val context = LocalContext.current
+    val addAccount = {
+        context.startActivity(
+            Intent(context, ProviderLoginActivity::class.java).apply {
+                putExtra("provider", DnsProviderCatalog.NEXTDNS.value)
+                putExtra(ProviderLoginActivity.EXTRA_ADD_ACCOUNT, true)
+            }
+        )
+    }
     val profileSession by viewModel.profileSessionState.collectAsState()
     val connectionState by connectionViewModel.state.collectAsState()
     val selectedProfile = profileSession.selected
@@ -243,6 +262,24 @@ fun AccountSettingsScreen(
                         }
                     }
                 }
+                profileSession.error?.let { error ->
+                    item {
+                        LoadingError(
+                            error = error,
+                            onRetry = { viewModel.refreshProfileSession(force = true) },
+                        )
+                    }
+                }
+                item {
+                    AccountsSection(
+                        accounts = accountsSnapshot,
+                        busy = viewModel.accountActionInProgress,
+                        onSwitch = viewModel::switchAccount,
+                        onRename = viewModel::renameAccount,
+                        onRemove = viewModel::removeAccount,
+                        onAddAccount = addAccount,
+                    )
+                }
                 item {
                     NextDnsConnectionStatusSection(
                         status = connectionState.connection,
@@ -252,6 +289,15 @@ fun AccountSettingsScreen(
                             connectionViewModel.refresh(selectedProfile, force = true)
                         },
                     )
+                }
+                if (profileSession.selectedProfileMissing) {
+                    item {
+                        Text(
+                            text = stringResource(R.string.selected_profile_missing),
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.error,
+                        )
+                    }
                 }
                 item {
                     ProfilesList(

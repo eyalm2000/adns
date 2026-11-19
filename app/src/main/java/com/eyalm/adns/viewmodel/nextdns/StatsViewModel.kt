@@ -4,6 +4,8 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.eyalm.adns.data.DnsRepository
+import com.eyalm.adns.data.account.AccountEpoch
+import com.eyalm.adns.data.account.AccountScopedCache
 import com.eyalm.adns.data.provider.DnsProviderSelection
 import com.eyalm.adns.data.nextdns.api.NextDnsDeviceItem
 import com.eyalm.adns.data.nextdns.api.NextDnsStatsGraphResponse
@@ -63,8 +65,15 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
     private val _state = MutableStateFlow(StatsUiState())
     val state = _state.asStateFlow()
 
-    private val graphCache = mutableMapOf<AnalyticsScope, NextDnsStatsGraphResponse>()
-    private val cardCache = mutableMapOf<AnalyticsScope, Map<String, CardState>>()
+    // Both caches empty themselves when the active account changes and refuse late writes.
+    private val graphCache = AccountScopedCache<AnalyticsScope, NextDnsStatsGraphResponse>(
+        sessionManager.accountEpoch::value
+    )
+    private val cardCache = AccountScopedCache<AnalyticsScope, Map<String, CardState>>(
+        sessionManager.accountEpoch::value
+    )
+    private var knownEpoch = sessionManager.accountEpoch.value
+    private var scopeEpoch = knownEpoch
     private var scopeGeneration = 0L
     private var deviceGeneration = 0L
     private var scopeJob: Job? = null
@@ -73,19 +82,23 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
 
     init {
         viewModelScope.launch {
-            dnsRepository.getDnsUrlFlow().collectLatest {
-                val provider = dnsRepository.currentSelection()
-                val profileId = profileRepository.currentProfileId()
-                if (
-                    provider is DnsProviderSelection.Enhanced &&
-                    profileId != null &&
-                    sessionManager.state.value == NextDnsManagementSession.Active
-                ) {
-                    activateProfile(profileId)
-                } else {
-                    clearForUnavailableProvider()
-                }
+            sessionManager.accountEpoch.collect { epoch ->
+                if (epoch == knownEpoch) return@collect
+                knownEpoch = epoch
+                cancelRequests()
+                graphCache.clear()
+                cardCache.clear()
+                _state.value = StatsUiState()
+                syncWithSelection()
             }
+        }
+        viewModelScope.launch {
+            // The profile is chosen per account. It changes when the user picks another profile
+            // for the active account, not only when the device DNS setting changes.
+            sessionManager.activeProfileId.collect { syncWithSelection() }
+        }
+        viewModelScope.launch {
+            dnsRepository.getDnsUrlFlow().collectLatest { syncWithSelection() }
         }
         viewModelScope.launch {
             sessionManager.state.collect { session ->
@@ -173,6 +186,23 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    /**
+     * Shows the statistics of the active account's profile while NextDNS is the selected provider
+     * and the session is active, and nothing otherwise.
+     */
+    private fun syncWithSelection() {
+        val profileId = profileRepository.currentProfileId()
+        if (
+            dnsRepository.currentSelection() is DnsProviderSelection.Enhanced &&
+            profileId != null &&
+            sessionManager.state.value == NextDnsManagementSession.Active
+        ) {
+            activateProfile(profileId)
+        } else {
+            clearForUnavailableProvider()
+        }
+    }
+
     private fun activateProfile(profileId: String) {
         val current = _state.value
         if (current.profileId == profileId && (current.initialLoading || current.graph != null)) return
@@ -193,11 +223,16 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun loadDevices(profileId: String) {
         val generation = ++deviceGeneration
+        val requestEpoch = sessionManager.accountEpoch.value
         _state.update { it.copy(devicesLoading = true) }
         viewModelScope.launch {
             when (val result = analyticsRepository.getDevices(profileId)) {
                 is ApiResult.Success -> {
-                    if (!isCurrentProfile(profileId) || generation != deviceGeneration) return@launch
+                    if (
+                        requestEpoch != sessionManager.accountEpoch.value ||
+                        !isCurrentProfile(profileId) ||
+                        generation != deviceGeneration
+                    ) return@launch
                     _state.update { current ->
                         current.copy(
                             devices = result.value,
@@ -215,7 +250,11 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
                 }
 
                 else -> {
-                    if (isCurrentProfile(profileId) && generation == deviceGeneration) {
+                    if (
+                        requestEpoch == sessionManager.accountEpoch.value &&
+                        isCurrentProfile(profileId) &&
+                        generation == deviceGeneration
+                    ) {
                         _state.update { it.copy(devicesLoading = false) }
                     }
                 }
@@ -230,6 +269,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         refreshing: Boolean = false,
     ) {
         val generation = ++scopeGeneration
+        scopeEpoch = sessionManager.accountEpoch.value
         scopeJob?.cancel()
         cardJob?.cancel()
         prefetchJob?.cancel()
@@ -259,7 +299,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             when (val result = analyticsRepository.getGraph(profileId, scope)) {
                 is ApiResult.Success -> {
                     if (!isCurrent(profileId, scope, generation)) return@launch
-                    graphCache[scope] = result.value
+                    graphCache.put(scopeEpoch, scope, result.value)
                     _state.update {
                         it.copy(
                             graph = result.value,
@@ -304,6 +344,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         }
 
         val initial = loadingCards()
+        val epoch = scopeEpoch
         _state.update { it.copy(cards = initial) }
         cardJob = viewModelScope.launch {
             supervisorScope {
@@ -329,7 +370,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
                         }
 
                         val currentCache = cardCache[scope] ?: initial
-                        cardCache[scope] = currentCache + (card.key to cardState)
+                        cardCache.put(epoch, scope, currentCache + (card.key to cardState))
                         if (isCurrent(profileId, scope, generation)) {
                             _state.update { current ->
                                 current.copy(cards = current.cards + (card.key to cardState))
@@ -346,6 +387,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         selectedScope: AnalyticsScope,
         generation: Long,
     ) {
+        val epoch = scopeEpoch
         prefetchJob = viewModelScope.launch {
             AnalyticsPeriod.entries
                 .filterNot { it == selectedScope.period }
@@ -354,7 +396,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
                     val scope = selectedScope.copy(period = period)
                     if (scope in graphCache) return@forEach
                     when (val result = analyticsRepository.getGraph(profileId, scope)) {
-                        is ApiResult.Success -> graphCache[scope] = result.value
+                        is ApiResult.Success -> graphCache.put(epoch, scope, result.value)
                         else -> Unit
                     }
                 }
@@ -370,6 +412,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         generation: Long,
     ): Boolean =
         generation == scopeGeneration &&
+            scopeEpoch == sessionManager.accountEpoch.value &&
             _state.value.profileId == profileId &&
             _state.value.scope == scope
 

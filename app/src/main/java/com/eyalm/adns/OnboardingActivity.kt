@@ -3,7 +3,6 @@ package com.eyalm.adns
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.BackHandler
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.AnimatedContent
@@ -25,6 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.data.activation.ActivationMode
 import com.eyalm.adns.data.Locales
+import com.eyalm.adns.ui.security.setProtectedContent
 import com.eyalm.adns.data.localization.AppLocaleRepository
 import com.eyalm.adns.data.provider.DnsProviderCatalog
 import com.eyalm.adns.data.provider.DnsProviderSelection
@@ -51,7 +51,7 @@ class OnboardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Locales.sync(this, AppLocaleRepository(this).selectedTag())
         enableEdgeToEdge()
-        setContent {
+        setProtectedContent {
             val onboardingViewModel: OnboardingViewModel = viewModel()
             val providerLoginViewModel: ProviderLoginViewModel = viewModel()
             val onboardingState by onboardingViewModel.state.collectAsState()

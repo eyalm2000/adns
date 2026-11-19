@@ -36,6 +36,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.eyalm.adns.R
+import com.eyalm.adns.ui.components.rememberAccountEpoch
 import com.eyalm.adns.data.Locales
 import com.eyalm.adns.data.nextdns.api.NextDnsProfile
 import com.eyalm.adns.domain.nextdns.ProfileCapabilities
@@ -54,7 +55,9 @@ fun LogsActionsSection(
     capabilities: ProfileCapabilities,
     onLogsCleared: () -> Unit,
 ) {
-    val viewModel: ProfileActionsViewModel = viewModel(key = "log-actions-${profile.id}")
+    val epoch = rememberAccountEpoch()
+    val viewModel: ProfileActionsViewModel =
+        viewModel(key = "log-actions-${epoch.sequence}-${profile.id}")
     val state by viewModel.state.collectAsState()
     val context = LocalContext.current
     val createDocument = rememberLauncherForActivityResult(
@@ -177,7 +180,9 @@ fun ProfileActionsSection(
     onProfileListChanged: () -> Unit,
     onOpenProfileSettings: () -> Unit,
 ) {
-    val viewModel: ProfileActionsViewModel = viewModel(key = "profile-actions-${profile.id}")
+    val epoch = rememberAccountEpoch()
+    val viewModel: ProfileActionsViewModel =
+        viewModel(key = "profile-actions-${epoch.sequence}-${profile.id}")
     val state by viewModel.state.collectAsState()
     val context = LocalContext.current
 

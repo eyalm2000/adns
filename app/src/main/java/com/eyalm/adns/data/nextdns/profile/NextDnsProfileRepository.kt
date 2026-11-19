@@ -6,6 +6,9 @@ import androidx.core.content.edit
 import com.eyalm.adns.data.AppRuntimeRepositories
 import com.eyalm.adns.data.DnsRepository
 import com.eyalm.adns.data.TokenManager
+import com.eyalm.adns.data.account.AccountUpdateResult
+import com.eyalm.adns.data.account.NextDnsAccounts
+import com.eyalm.adns.data.account.profileIdFromNextDnsHostname
 import com.eyalm.adns.data.dns.DnsConfigurationResult
 import com.eyalm.adns.data.provider.DnsProviderCatalog
 import com.eyalm.adns.data.provider.DnsProviderSelection
@@ -38,13 +41,19 @@ class NextDnsProfileRepository(
         appContext.getSharedPreferences("adns_settings", Context.MODE_PRIVATE)
     private val dnsRepository = DnsRepository(appContext)
     private val tokenManager = TokenManager.getInstance(appContext)
+    private val accounts = NextDnsAccounts.getInstance(appContext)
     private val gson = Gson()
 
-    fun currentProfileId(): String? =
-        sharedPreferences.getString("enhanced_url", null)?.let { url ->
-            val cleanUrl = url.removeSuffix(".dns.nextdns.io")
-            if ('-' in cleanUrl) cleanUrl.substringAfterLast('-') else cleanUrl
-        }
+    /**
+     * The profile the app uses for the active account's statistics, logs and settings. Each
+     * account has its own. It is null when the active account has not chosen one; the device DNS
+     * profile of another account is never used as a stand-in.
+     */
+    fun currentProfileId(): String? = accounts.snapshot.value.activeProfileId
+
+    /** The profile in the device-wide DNS hostname (`enhanced_url`). Not account specific. */
+    private fun deviceProfileId(): String? =
+        profileIdFromNextDnsHostname(sharedPreferences.getString("enhanced_url", null))
 
     suspend fun email(): String = withContext(Dispatchers.IO) {
         tokenManager.getEmail().orEmpty()
@@ -93,22 +102,55 @@ class NextDnsProfileRepository(
         }
     }
 
+    /**
+     * Chooses [profile] for the active account. With [applyToDevice] the device-wide DNS setting
+     * is changed to it as well (what choosing a profile always did); without it only the app's
+     * own profile for this account changes and the device DNS is left alone.
+     */
     suspend fun selectProfile(
         profile: NextDnsProfile,
         deviceName: String? = DEFAULT_NEXTDNS_DEVICE_NAME,
+        applyToDevice: Boolean = true,
     ): DnsConfigurationResult {
+        if (!applyToDevice) {
+            return if (selectAppProfile(profile.id) == AccountUpdateResult.Applied) {
+                DnsConfigurationResult.Changed(
+                    dnsRepository.currentSelection(),
+                    appliedToDevice = false,
+                )
+            } else {
+                DnsConfigurationResult.InvalidSelection
+            }
+        }
         return selectProfileId(profile.id, deviceName)
     }
 
     suspend fun selectProfileId(
         profileId: String,
         deviceName: String? = DEFAULT_NEXTDNS_DEVICE_NAME,
-    ): DnsConfigurationResult = selectProfileHostname(
-        nextDnsProfileHostname(profileId, deviceName)
-    )
+    ): DnsConfigurationResult {
+        val result = selectProfileHostname(nextDnsProfileHostname(profileId, deviceName))
+        // The app's profile follows the device selection here, as it always did. If it cannot be
+        // stored the selection is reported as failed, so it is not shown as done.
+        if (result is DnsConfigurationResult.Changed &&
+            selectAppProfile(profileId) != AccountUpdateResult.Applied
+        ) {
+            return DnsConfigurationResult.InvalidSelection
+        }
+        return result
+    }
+
+    /** Sets, or with null clears, the app's profile for the active account. */
+    suspend fun selectAppProfile(profileId: String?): AccountUpdateResult =
+        withContext(Dispatchers.IO) {
+            val accountId = accounts.snapshot.value.activeAccountId
+                ?: return@withContext AccountUpdateResult.NotFound
+            accounts.setSelectedProfile(accountId, profileId)
+        }
 
     suspend fun setDeviceName(deviceName: String): DnsConfigurationResult? {
-        val profileId = currentProfileId() ?: return null
+        // The device name belongs to the device DNS hostname, so it keeps that hostname's profile.
+        val profileId = deviceProfileId() ?: return null
         return selectProfileHostname(nextDnsProfileHostname(profileId, deviceName))
     }
 
@@ -123,19 +165,42 @@ class NextDnsProfileRepository(
     }
 
     suspend fun clearSelectedProfile() {
+        selectAppProfile(null)
         if (dnsRepository.currentSelection() is DnsProviderSelection.Enhanced) {
             if (!selectFallbackProvider()) return
         }
-        dnsRepository.clearEnhancedHostname()
+        val result = dnsRepository.clearEnhancedHostname()
+        if (result is com.eyalm.adns.data.provider.ProviderSelectionUpdateResult.Saved) {
+            recordSelectedHostname(null)
+        }
     }
 
-    suspend fun signOut() {
-        NextDnsSessionManager.getInstance(appContext).signedOut()
+    /** Signs out the active account. Nothing changes unless [AccountUpdateResult.Applied] is returned. */
+    suspend fun signOut(): AccountUpdateResult = withContext(Dispatchers.IO) {
+        // If another account can be used it takes over in the same write instead of leaving the
+        // app signed out with accounts that nobody can switch to.
+        NextDnsSessionManager.getInstance(appContext).signedOut(activateFallback = true)
     }
+
+    /** Makes [accountId] the active account. Only an account that has a key can be activated. */
+    suspend fun switchAccount(accountId: String): AccountUpdateResult =
+        withContext(Dispatchers.IO) {
+            val target = accounts.snapshot.value.accounts.firstOrNull { it.id == accountId }
+                ?: return@withContext AccountUpdateResult.NotFound
+            if (!target.hasCredential) return@withContext AccountUpdateResult.Invalid
+            accounts.setActive(accountId)
+        }
+
+    suspend fun renameAccount(accountId: String, label: String): AccountUpdateResult =
+        withContext(Dispatchers.IO) { accounts.rename(accountId, label) }
+
+    /** Removes one account. If it was the active one the next usable account takes over. */
+    suspend fun removeAccount(accountId: String): AccountUpdateResult =
+        withContext(Dispatchers.IO) { accounts.remove(accountId, activateFallback = true) }
 
     private suspend fun selectProfileHostname(hostname: String): DnsConfigurationResult {
         val capabilities = AppRuntimeRepositories.capabilities(appContext).current()
-        return if (capabilities.canControlPrivateDns) {
+        val result = if (capabilities.canControlPrivateDns) {
             dnsRepository.changeEnhancedSelection(hostname)
         } else {
             when (dnsRepository.stageEnhancedSelection(hostname)) {
@@ -149,7 +214,18 @@ class NextDnsProfileRepository(
                     DnsConfigurationResult.InvalidSelection
             }
         }
+        if (result is DnsConfigurationResult.Changed) recordSelectedHostname(hostname)
+        return result
     }
+
+    // The device-wide hostname (enhanced_url) stays authoritative in this stage. It is also
+    // recorded on the active account so each account keeps its own selected profile.
+    private suspend fun recordSelectedHostname(hostname: String?) =
+        withContext(Dispatchers.IO) {
+            accounts.snapshot.value.activeAccountId?.let { accountId ->
+                accounts.setSelectedHostname(accountId, hostname)
+            }
+        }
 
     private suspend fun selectFallbackProvider(): Boolean {
         val fallback = DnsProviderSelection.Standard(
@@ -308,3 +384,10 @@ private fun <T> ApiResult<JsonObject>.asFailure(): ApiResult<T> = when (this) {
     is ApiResult.SerializationFailure -> this
     is ApiResult.Success -> error("Success cannot be converted to a failure")
 }
+
+/**
+ * Whether [profileId] is one of the profiles the active account was just given by NextDNS. A
+ * profile is only ever chosen from that list, never from an id typed or stored elsewhere.
+ */
+internal fun isProfileOfAccount(available: List<NextDnsProfile>, profileId: String): Boolean =
+    available.any { it.id == profileId }

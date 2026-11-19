@@ -3,6 +3,7 @@ package com.eyalm.adns.viewmodel
 import android.app.Application
 import android.app.StatusBarManager
 import android.content.ComponentName
+import android.os.SystemClock
 import android.widget.Toast
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -11,6 +12,9 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.eyalm.adns.R
 import com.eyalm.adns.data.DnsRepository
+import com.eyalm.adns.data.account.AccountEpoch
+import com.eyalm.adns.data.account.AccountUpdateResult
+import com.eyalm.adns.data.account.NextDnsAccounts
 import com.eyalm.adns.data.dns.DnsConfigurationResult
 import com.eyalm.adns.data.dns.DnsDisableBehavior
 import com.eyalm.adns.data.nextdns.api.NextDnsProfile
@@ -18,6 +22,7 @@ import com.eyalm.adns.data.nextdns.auth.NextDnsManagementSession
 import com.eyalm.adns.data.nextdns.auth.NextDnsSessionManager
 import com.eyalm.adns.data.nextdns.profile.DEFAULT_NEXTDNS_DEVICE_NAME
 import com.eyalm.adns.data.nextdns.profile.NextDnsProfileRepository
+import com.eyalm.adns.data.nextdns.profile.isProfileOfAccount
 import com.eyalm.adns.data.nextdns.resources.NextDnsResourceSpec
 import com.eyalm.adns.data.provider.DnsProviderCatalog
 import com.eyalm.adns.data.provider.DnsProviderSelection
@@ -42,6 +47,8 @@ data class ProfileSessionState(
     val capabilities: ProfileCapabilities = ProfileRole.Unknown.capabilities(),
     val logsRevision: Long = 0,
     val error: ApiResult<*>? = null,
+    /** The profile this account had chosen no longer exists for it, so the choice was cleared. */
+    val selectedProfileMissing: Boolean = false,
 )
 
 class SettingsViewModel(application: Application) : AndroidViewModel(application) {
@@ -66,6 +73,14 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     private val repository = DnsRepository(application)
     private val profileRepository = NextDnsProfileRepository(application)
     private val nextDnsSessionManager = NextDnsSessionManager.getInstance(application)
+    private val accounts = NextDnsAccounts.getInstance(application)
+
+    /** The configured accounts (labels and status only, never keys). */
+    val accountsState = accounts.snapshot
+
+    /** True while an account switch, rename or removal is being stored. */
+    var accountActionInProgress by mutableStateOf(false)
+        private set
 
     private val _profileSessionState = MutableStateFlow(
         ProfileSessionState(
@@ -74,8 +89,31 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     )
     val profileSessionState = _profileSessionState.asStateFlow()
     private var profileLoadGeneration = 0L
+    private var knownEpoch: AccountEpoch = nextDnsSessionManager.accountEpoch.value
+
+    // When the profile list was last loaded successfully, and for which account.
+    private var lastProfileRefreshEpoch: AccountEpoch? = null
+    private var lastProfileRefreshAtMs = 0L
 
     init {
+        viewModelScope.launch {
+            yield()
+            nextDnsSessionManager.accountEpoch.collect { epoch ->
+                if (epoch == knownEpoch) return@collect
+                knownEpoch = epoch
+                // Profiles and their settings belong to the previous account.
+                profileLoadGeneration++
+                invalidateProfileScopedState()
+                email = null
+                setPage(Page.MAIN)
+                _profileSessionState.value = ProfileSessionState(
+                    selectedProfileId = profileRepository.currentProfileId(),
+                )
+                if (nextDnsSessionManager.state.value == NextDnsManagementSession.Active) {
+                    refreshProfileSession(force = true)
+                }
+            }
+        }
         viewModelScope.launch {
             // Defer the first StateFlow emission until all ViewModel properties are initialized.
             yield()
@@ -103,6 +141,18 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun refreshProfileSession(force: Boolean = false) {
         if (nextDnsSessionManager.state.value != NextDnsManagementSession.Active) return
+        val requestEpoch = nextDnsSessionManager.accountEpoch.value
+        val shouldRefresh = shouldRefreshProfiles(
+            forced = force,
+            hasProfiles = _profileSessionState.value.profiles.isNotEmpty(),
+            selectionChanged =
+                _profileSessionState.value.selectedProfileId != profileRepository.currentProfileId(),
+            lastSuccessEpoch = lastProfileRefreshEpoch,
+            currentEpoch = requestEpoch,
+            lastSuccessAtMs = lastProfileRefreshAtMs,
+            nowMs = SystemClock.elapsedRealtime(),
+        )
+        if (!shouldRefresh) return
         val generation = ++profileLoadGeneration
         val previous = _profileSessionState.value
         val selectedProfileId = profileRepository.currentProfileId()
@@ -125,9 +175,17 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         )
         viewModelScope.launch {
             val result = profileRepository.profiles()
-            if (generation != profileLoadGeneration) return@launch
+            if (
+                generation != profileLoadGeneration ||
+                requestEpoch != nextDnsSessionManager.accountEpoch.value
+            ) return@launch
             when (result) {
-                is ApiResult.Success -> publishProfileSession(result.value)
+                is ApiResult.Success -> {
+                    publishProfileSession(result.value)
+                    lastProfileRefreshEpoch = requestEpoch
+                    lastProfileRefreshAtMs = SystemClock.elapsedRealtime()
+                    dropMissingProfileSelection(result.value, requestEpoch)
+                }
                 else -> {
                     _profileSessionState.value = _profileSessionState.value.copy(
                         loading = false,
@@ -151,12 +209,18 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
             }
             val wasSelected = profileRepository.currentProfileId() == removedProfileId
             if (wasSelected) {
+                val applyToDevice = accounts.snapshot.value.accounts.size <= 1
                 remaining.firstOrNull()?.let { fallback ->
                     profileRepository.selectProfile(
                         fallback,
                         profileRepository.deviceName(),
+                        applyToDevice,
                     )
-                } ?: profileRepository.clearSelectedProfile()
+                } ?: if (applyToDevice) {
+                    profileRepository.clearSelectedProfile()
+                } else {
+                    profileRepository.selectAppProfile(null)
+                }
                 refreshProvider()
             }
             invalidateProfileScopedState()
@@ -169,7 +233,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         }
     }
 
-    fun onProfileRenamed() = refreshProfileSession()
+    fun onProfileRenamed() = refreshProfileSession(force = true)
 
     private fun publishProfileSession(availableProfiles: List<NextDnsProfile>) {
         val previous = _profileSessionState.value
@@ -301,11 +365,26 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         private set
 
     fun setProfile(profile: NextDnsProfile) {
+        val requestEpoch = nextDnsSessionManager.accountEpoch.value
         viewModelScope.launch {
+            // Only a profile the active account itself was given by NextDNS can be chosen.
+            if (!isProfileOfAccount(_profileSessionState.value.profiles, profile.id)) {
+                showMessage(R.string.account_action_failed)
+                return@launch
+            }
             val currentName = profileRepository.deviceName()
             val nameToSet = currentName.ifEmpty { DEFAULT_NEXTDNS_DEVICE_NAME }
-            profileRepository.selectProfile(profile, nameToSet)
+            // With one account, choosing a profile also sets the device DNS, as it always did.
+            // With several accounts it only sets this account's profile, so working with another
+            // account can never change the device DNS by accident.
+            val applyToDevice = accounts.snapshot.value.accounts.size <= 1
+            profileRepository.selectProfile(profile, nameToSet, applyToDevice)
+            if (requestEpoch != nextDnsSessionManager.accountEpoch.value) return@launch
             nextDnsDeviceName = profileRepository.deviceName()
+            if (profileRepository.currentProfileId() != profile.id) {
+                showMessage(R.string.account_action_failed)
+                return@launch
+            }
             val knownProfiles = _profileSessionState.value.profiles
             val updatedProfiles = if (knownProfiles.any { it.id == profile.id }) {
                 knownProfiles.map { if (it.id == profile.id) profile else it }
@@ -316,6 +395,70 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
             refreshProvider()
             refreshProfileSession()
         }
+    }
+
+    fun switchAccount(accountId: String) =
+        runAccountAction(R.string.account_switched) { profileRepository.switchAccount(accountId) }
+
+    fun renameAccount(accountId: String, label: String) =
+        runAccountAction(R.string.done) { profileRepository.renameAccount(accountId, label) }
+
+    fun removeAccount(accountId: String) =
+        runAccountAction(R.string.account_removed) { profileRepository.removeAccount(accountId) }
+
+    private fun runAccountAction(
+        successMessage: Int,
+        action: suspend () -> AccountUpdateResult,
+    ) {
+        if (accountActionInProgress) return
+        accountActionInProgress = true
+        viewModelScope.launch {
+            try {
+                val result = action()
+                // Only a stored change is reported as done; anything else is shown as a failure.
+                showMessage(
+                    if (result == AccountUpdateResult.Applied) {
+                        successMessage
+                    } else {
+                        R.string.account_action_failed
+                    }
+                )
+            } finally {
+                accountActionInProgress = false
+            }
+        }
+    }
+
+    /**
+     * If the profile this account had chosen is not among the profiles NextDNS just returned for
+     * it (deleted, or no longer shared), the choice is cleared. Another profile is never picked
+     * for the user, and a profile of another account is never used instead.
+     */
+    private fun dropMissingProfileSelection(
+        available: List<NextDnsProfile>,
+        requestEpoch: AccountEpoch,
+    ) {
+        val stored = profileRepository.currentProfileId() ?: return
+        if (isProfileOfAccount(available, stored)) return
+        viewModelScope.launch {
+            if (requestEpoch != nextDnsSessionManager.accountEpoch.value) return@launch
+            if (profileRepository.currentProfileId() != stored) return@launch
+            if (profileRepository.selectAppProfile(null) != AccountUpdateResult.Applied) return@launch
+            if (requestEpoch != nextDnsSessionManager.accountEpoch.value) return@launch
+            _profileSessionState.value = _profileSessionState.value.copy(
+                selectedProfileId = null,
+                selected = null,
+                selectedProfileMissing = true,
+            )
+        }
+    }
+
+    private fun showMessage(message: Int) {
+        Toast.makeText(
+            getApplication(),
+            getApplication<Application>().getString(message),
+            Toast.LENGTH_SHORT,
+        ).show()
     }
 
     fun updateDeviceName(name: String) {
@@ -348,7 +491,12 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     fun logout() {
         profileLoadGeneration++
         viewModelScope.launch {
-            profileRepository.signOut()
+            // PersistFailed means the sign-out could not be stored and nothing changed, so the
+            // session is still valid: keep showing it instead of pretending to be signed out.
+            if (profileRepository.signOut() == AccountUpdateResult.PersistFailed) {
+                refreshProfileSession(force = true)
+                return@launch
+            }
             invalidateProfileScopedState()
             _profileSessionState.value = ProfileSessionState(
                 loading = false,
@@ -378,3 +526,27 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun getListParentPage(): Page = listParentPage
 }
+
+/** A refresh nobody asked for is skipped if the same account was refreshed this recently. */
+internal const val PROFILE_REFRESH_MIN_INTERVAL_MS = 30_000L
+
+/**
+ * Whether the profile list should be requested again. A refresh the user asked for, an empty
+ * list, a changed selection, another account, or a clock that went backwards always refreshes;
+ * otherwise a recent successful load for the same account is reused. This keeps coming back to
+ * the app from sending a request every time, without ever hiding a change the user made.
+ */
+internal fun shouldRefreshProfiles(
+    forced: Boolean,
+    hasProfiles: Boolean,
+    selectionChanged: Boolean,
+    lastSuccessEpoch: AccountEpoch?,
+    currentEpoch: AccountEpoch,
+    lastSuccessAtMs: Long,
+    nowMs: Long,
+): Boolean = forced ||
+    !hasProfiles ||
+    selectionChanged ||
+    lastSuccessEpoch != currentEpoch ||
+    nowMs < lastSuccessAtMs ||
+    nowMs - lastSuccessAtMs >= PROFILE_REFRESH_MIN_INTERVAL_MS
